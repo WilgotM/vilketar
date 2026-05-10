@@ -100,6 +100,96 @@
     "pageViews": 264112
   },
   {
+    "fact": "Det sjunde inseglet har premiär.",
+    "image": "7th_Seal_logo.jpg",
+    "pageViews": 260000,
+    "qid": "Q217189",
+    "subtitle": "Film av Ingmar Bergman",
+    "title": "”Det sjunde inseglet” har premiär",
+    "wikipediaSlug": "Det_sjunde_inseglet",
+    "year": 1957
+  },
+  {
+    "fact": "Sällskapsresan har premiär.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q1765389",
+    "subtitle": "Svensk filmkomedi",
+    "title": "”Sällskapsresan” har premiär",
+    "wikipediaSlug": "S%C3%A4llskapsresan",
+    "year": 1980
+  },
+  {
+    "fact": "Den första filmen om Jönssonligan har premiär.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q378302",
+    "subtitle": "Svensk filmserie",
+    "title": "Jönssonligan får sin första film",
+    "wikipediaSlug": "J%C3%B6nssonligan",
+    "year": 1981
+  },
+  {
+    "fact": "Fanny och Alexander har premiär.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q165651",
+    "subtitle": "Film av Ingmar Bergman",
+    "title": "”Fanny och Alexander” har premiär",
+    "wikipediaSlug": "Fanny_och_Alexander",
+    "year": 1982
+  },
+  {
+    "fact": "Den moderna filmserien om Martin Beck startar.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "manual-Beck_(filmserie)",
+    "subtitle": "Svensk filmserie",
+    "title": "Beck får sin första film",
+    "wikipediaSlug": "Beck_(filmserie)",
+    "year": 1997
+  },
+  {
+    "fact": "Fucking Åmål har premiär.",
+    "image": "Fucking_Åmål.jpg",
+    "pageViews": 260000,
+    "qid": "Q304394",
+    "subtitle": "Svensk film",
+    "title": "”Fucking Åmål” har premiär",
+    "wikipediaSlug": "Fucking_%C3%85m%C3%A5l",
+    "year": 1998
+  },
+  {
+    "fact": "Män som hatar kvinnor har premiär.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q276343",
+    "subtitle": "Svensk film",
+    "title": "”Män som hatar kvinnor” har premiär",
+    "wikipediaSlug": "M%C3%A4n_som_hatar_kvinnor_(film)",
+    "year": 2009
+  },
+  {
+    "fact": "Snabba Cash har premiär.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q2068245",
+    "subtitle": "Svensk film",
+    "title": "”Snabba Cash” har premiär",
+    "wikipediaSlug": "Snabba_cash",
+    "year": 2010
+  },
+  {
+    "fact": "En man som heter Ove har premiär.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q21935502",
+    "subtitle": "Svensk film",
+    "title": "”En man som heter Ove” har premiär",
+    "wikipediaSlug": "En_man_som_heter_Ove_(film)",
+    "year": 2015
+  },
+  {
     "qid": "Q17337292",
     "title": "”Sicario” släpps",
     "subtitle": "Film directed by Denis Villeneuve",
@@ -140,6 +230,16 @@
     "pageViews": 241021
   },
   {
+    "fact": "Hundraåringen som klev ut genom fönstret och försvann har premiär.",
+    "image": "Hundraåringen_logo_(film).svg",
+    "pageViews": 240000,
+    "qid": "Q10527185",
+    "subtitle": "Svensk filmkomedi",
+    "title": "”Hundraåringen” har premiär",
+    "wikipediaSlug": "Hundra%C3%A5ringen_som_klev_ut_genom_f%C3%B6nstret_och_f%C3%B6rsvann_(film)",
+    "year": 2013
+  },
+  {
     "qid": "Q27411",
     "title": "”Scream” släpps",
     "subtitle": "Amerikansk skräckfilm från 1996 i regi av Wes Craven",
@@ -168,6 +268,66 @@
     "wikipediaSlug": "Matrix",
     "image": "The_Matrix.png",
     "pageViews": 223554
+  },
+  {
+    "fact": "Persona har premiär.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q695255",
+    "subtitle": "Film av Ingmar Bergman",
+    "title": "”Persona” har premiär",
+    "wikipediaSlug": "Persona_(film)",
+    "year": 1966
+  },
+  {
+    "fact": "Utvandrarna har premiär.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "manual-Utvandrarna_(film%2C_1971)",
+    "subtitle": "Svensk film",
+    "title": "”Utvandrarna” har premiär",
+    "wikipediaSlug": "Utvandrarna_(film%2C_1971)",
+    "year": 1971
+  },
+  {
+    "fact": "Wallander börjar filmatiseras.",
+    "image": "Rolf_Lassgård_(Berlin_Film_Festival_2009).jpg",
+    "pageViews": 220000,
+    "qid": "Q21996819",
+    "subtitle": "Svensk kriminalserie",
+    "title": "Wallander blir filmserie",
+    "wikipediaSlug": "Kurt_Wallander_(filmer)",
+    "year": 1994
+  },
+  {
+    "fact": "Ondskan har premiär.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q1382421",
+    "subtitle": "Svensk film",
+    "title": "”Ondskan” har premiär",
+    "wikipediaSlug": "Ondskan_(film)",
+    "year": 2003
+  },
+  {
+    "fact": "Så som i himmelen har premiär.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q912049",
+    "subtitle": "Svensk film",
+    "title": "”Så som i himmelen” har premiär",
+    "wikipediaSlug": "S%C3%A5_som_i_himmelen",
+    "year": 2004
+  },
+  {
+    "fact": "Låt den rätte komma in har premiär.",
+    "image": "Låt-den-rätte-komma-in-logotyp.png",
+    "pageViews": 220000,
+    "qid": "Q144756",
+    "subtitle": "Svensk film",
+    "title": "”Låt den rätte komma in” har premiär",
+    "wikipediaSlug": "L%C3%A5t_den_r%C3%A4tte_komma_in_(film)",
+    "year": 2008
   },
   {
     "qid": "Q153723",
@@ -218,6 +378,16 @@
     "wikipediaSlug": "Shutter_Island",
     "image": "Shutterislandposter.jpg",
     "pageViews": 201255
+  },
+  {
+    "fact": "Änglagård har premiär.",
+    "image": "",
+    "pageViews": 200000,
+    "qid": "Q1767472",
+    "subtitle": "Svensk film",
+    "title": "”Änglagård” har premiär",
+    "wikipediaSlug": "%C3%84nglag%C3%A5rd",
+    "year": 1992
   },
   {
     "qid": "Q83808444",
@@ -288,6 +458,16 @@
     "wikipediaSlug": "Nyckeln_till_frihet",
     "image": "ShawshankRedemptionMoviePoster.jpg",
     "pageViews": 180889
+  },
+  {
+    "fact": "Nybyggarna har premiär.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q1171481",
+    "subtitle": "Svensk film",
+    "title": "”Nybyggarna” har premiär",
+    "wikipediaSlug": "Nybyggarna_(film)",
+    "year": 1972
   },
   {
     "qid": "Q104123",

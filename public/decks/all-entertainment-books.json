@@ -10,6 +10,26 @@
     "pageViews": 323816
   },
   {
+    "fact": "Den första boken om Alfons Åberg ges ut.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q1316142",
+    "subtitle": "Svensk barnboksfigur",
+    "title": "Alfons Åberg ges ut",
+    "wikipediaSlug": "Alfons_%C3%85berg",
+    "year": 1972
+  },
+  {
+    "fact": "Män som hatar kvinnor ges ut.",
+    "image": "Disambig_grey.svg",
+    "pageViews": 260000,
+    "qid": "Q1770863",
+    "subtitle": "Roman av Stieg Larsson",
+    "title": "”Män som hatar kvinnor” ges ut",
+    "wikipediaSlug": "M%C3%A4n_som_hatar_kvinnor",
+    "year": 2005
+  },
+  {
     "qid": "Q2307397",
     "title": "”Det tysta ropet” ges ut",
     "subtitle": "Book by Harlan Ellison",
@@ -28,6 +48,76 @@
     "wikipediaSlug": "Flugornas_herre",
     "image": "LordOfTheFliesBookCover.jpg",
     "pageViews": 230366
+  },
+  {
+    "fact": "Nils Holgerssons underbara resa genom Sverige ges ut.",
+    "image": "Nils_Holgersson_band_1-Illustration_1.jpg",
+    "pageViews": 220000,
+    "qid": "Q726254",
+    "subtitle": "Bok av Selma Lagerlöf",
+    "title": "Nils Holgerssons resa ges ut",
+    "wikipediaSlug": "Nils_Holgerssons_underbara_resa_genom_Sverige",
+    "year": 1906
+  },
+  {
+    "fact": "Evert Taube debuterar som författare och visdiktare.",
+    "image": "Evert_Taube_1961.JPG",
+    "pageViews": 220000,
+    "qid": "Q455625",
+    "subtitle": "Svensk vissångare",
+    "title": "Evert Taube debuterar",
+    "wikipediaSlug": "Evert_Taube",
+    "year": 1920
+  },
+  {
+    "fact": "Utvandrarna ges ut.",
+    "image": "Originalmanuskriptet-Utvandrarna.jpg",
+    "pageViews": 220000,
+    "qid": "Q7731890",
+    "subtitle": "Roman av Vilhelm Moberg",
+    "title": "”Utvandrarna” ges ut",
+    "wikipediaSlug": "Utvandrarna_(roman)",
+    "year": 1949
+  },
+  {
+    "fact": "Karlsson på taket ges ut.",
+    "image": "Karlsson-on-the-Roof_1992_stamp_of_Russia.jpg",
+    "pageViews": 220000,
+    "qid": "Q1500349",
+    "subtitle": "Barnbok av Astrid Lindgren",
+    "title": "Karlsson på taket ges ut",
+    "wikipediaSlug": "Karlsson_p%C3%A5_taket",
+    "year": 1955
+  },
+  {
+    "fact": "Bröderna Lejonhjärta ges ut.",
+    "image": "Astrid_Lindgrens_Värld_-_Bröderna_Lejonhjärta.jpg",
+    "pageViews": 220000,
+    "qid": "Q1142693",
+    "subtitle": "Barnbok av Astrid Lindgren",
+    "title": "”Bröderna Lejonhjärta” ges ut",
+    "wikipediaSlug": "Br%C3%B6derna_Lejonhj%C3%A4rta",
+    "year": 1973
+  },
+  {
+    "fact": "Pettson och Findus debuterar i bokform.",
+    "image": "Pettson_och_Findus.JPG",
+    "pageViews": 220000,
+    "qid": "Q164639",
+    "subtitle": "Svensk barnboksserie",
+    "title": "Pettson och Findus debuterar",
+    "wikipediaSlug": "Pettson_och_Findus",
+    "year": 1984
+  },
+  {
+    "fact": "En man som heter Ove ges ut.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q22815069",
+    "subtitle": "Roman av Fredrik Backman",
+    "title": "”En man som heter Ove” ges ut",
+    "wikipediaSlug": "En_man_som_heter_Ove",
+    "year": 2012
   },
   {
     "qid": "Q150827",
@@ -50,6 +140,46 @@
     "pageViews": 182735
   },
   {
+    "fact": "Röda rummet ges ut.",
+    "image": "The_Red_Room_1879.jpg",
+    "pageViews": 180000,
+    "qid": "Q178563",
+    "subtitle": "Roman av August Strindberg",
+    "title": "”Röda rummet” ges ut",
+    "wikipediaSlug": "R%C3%B6da_rummet",
+    "year": 1879
+  },
+  {
+    "fact": "Gösta Berlings saga ges ut.",
+    "image": "Gösta_Berlings_saga_1919.djvu",
+    "pageViews": 180000,
+    "qid": "Q1559656",
+    "subtitle": "Roman av Selma Lagerlöf",
+    "title": "”Gösta Berlings saga” ges ut",
+    "wikipediaSlug": "G%C3%B6sta_Berlings_saga",
+    "year": 1891
+  },
+  {
+    "fact": "Mio, min Mio ges ut.",
+    "image": "Mio_min_Mio.jpg",
+    "pageViews": 180000,
+    "qid": "Q178688",
+    "subtitle": "Barnbok av Astrid Lindgren",
+    "title": "”Mio, min Mio” ges ut",
+    "wikipediaSlug": "Mio%2C_min_Mio",
+    "year": 1954
+  },
+  {
+    "fact": "Madicken ges ut.",
+    "image": "Astrid_Lindgrens_Värld_-_Madicken.jpg",
+    "pageViews": 180000,
+    "qid": "Q1803190",
+    "subtitle": "Barnbok av Astrid Lindgren",
+    "title": "Madicken ges ut",
+    "wikipediaSlug": "Madicken",
+    "year": 1960
+  },
+  {
     "fact": "Emil i Lönneberga ges ut.",
     "image": "Emil_and_pig,_Astrid_Lindgrens_Värld_2014.jpg",
     "pageViews": 180000,
@@ -60,6 +190,16 @@
     "year": 1963
   },
   {
+    "fact": "Lilla spöket Laban ges ut.",
+    "image": "Lilla_spöket_Laban,_konst_i_Karlstad.jpg",
+    "pageViews": 180000,
+    "qid": "Q7747599",
+    "subtitle": "Svensk barnboksfigur",
+    "title": "Lilla spöket Laban ges ut",
+    "wikipediaSlug": "Lilla_sp%C3%B6ket_Laban",
+    "year": 1965
+  },
+  {
     "fact": "Ronja Rövardotter ges ut.",
     "image": "Ronja_och_Mattis,_Astrid_Lindgrens_Värld_2014.jpg",
     "pageViews": 180000,
@@ -68,6 +208,36 @@
     "title": "”Ronja Rövardotter” ges ut",
     "wikipediaSlug": "Ronja_r%C3%B6vardotter",
     "year": 1981
+  },
+  {
+    "fact": "Sune debuterar som svensk barn- och ungdomsfigur.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "manual-Sune_(bokserie)",
+    "subtitle": "Svensk bokserie",
+    "title": "Sune debuterar",
+    "wikipediaSlug": "Sune_(bokserie)",
+    "year": 1984
+  },
+  {
+    "fact": "Mamma Mu dyker upp i radio.",
+    "image": "Mamma-mu-och-krakan.jpg",
+    "pageViews": 180000,
+    "qid": "Q6745311",
+    "subtitle": "Svensk barnboksfigur",
+    "title": "Mamma Mu dyker upp",
+    "wikipediaSlug": "Mamma_Mu",
+    "year": 1985
+  },
+  {
+    "fact": "Bert debuterar i bokform.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "manual-Bert_(bokserie)",
+    "subtitle": "Svensk bokserie",
+    "title": "Bert debuterar",
+    "wikipediaSlug": "Bert_(bokserie)",
+    "year": 1987
   },
   {
     "qid": "Q15228",

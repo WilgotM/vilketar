@@ -10,6 +10,16 @@
     "pageViews": 2486615
   },
   {
+    "fact": "Kalle Anka och hans vänner önskar God Jul börjar visas i svensk tv.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q1755521",
+    "subtitle": "Svensk tv-tradition",
+    "title": "Kalle Anka visas på julafton",
+    "wikipediaSlug": "Kalle_Anka_och_hans_v%C3%A4nner_%C3%B6nskar_God_Jul",
+    "year": 1960
+  },
+  {
     "qid": "Q8683",
     "title": "kalla kriget börjar",
     "subtitle": "Motsättningar mellan USA och Sovjetunionen och deras allierade 1945–1991",
@@ -18,5 +28,55 @@
     "wikipediaSlug": "Kalla_kriget",
     "image": "NATO_vs._Warsaw_Pact_(1949-1990).svg",
     "pageViews": 260571
+  },
+  {
+    "fact": "Sveriges stormaktstid tar sin början.",
+    "image": "Svenska_Stormaktsväldet_(1560_-_1815).svg",
+    "pageViews": 260000,
+    "qid": "Q215443",
+    "subtitle": "Svensk historisk epok",
+    "title": "Stormaktstiden börjar",
+    "wikipediaSlug": "Stormaktstiden",
+    "year": 1611
+  },
+  {
+    "fact": "Midsommarfirandet får modern placering i kalendern.",
+    "image": "NZ7_8755_(52170703205).jpg",
+    "pageViews": 260000,
+    "qid": "Q154502",
+    "subtitle": "Svensk högtid",
+    "title": "Midsommarafton blir officiell helgdag",
+    "wikipediaSlug": "Midsommar",
+    "year": 1953
+  },
+  {
+    "fact": "Det moderna offentliga luciafirandet etableras.",
+    "image": "Lucia_2017_D81_4616_(39002373982).jpg",
+    "pageViews": 220000,
+    "qid": "Q883628",
+    "subtitle": "Svensk tradition",
+    "title": "Luciafirande får modern form",
+    "wikipediaSlug": "Lucia",
+    "year": 1927
+  },
+  {
+    "fact": "Sveriges nationaldag blir allmän helgdag.",
+    "image": "National_Day_of_Sweden_2016_12.jpg",
+    "pageViews": 220000,
+    "qid": "Q1348730",
+    "subtitle": "Svensk högtid",
+    "title": "Sveriges nationaldag blir helgdag",
+    "wikipediaSlug": "Sveriges_nationaldag",
+    "year": 2005
+  },
+  {
+    "fact": "Kräftskivan etableras som svensk sensommartradition.",
+    "image": "Kräftskiva,_Häringe_slott,_1991.jpg",
+    "pageViews": 180000,
+    "qid": "Q255208",
+    "subtitle": "Svensk mattradition",
+    "title": "Kräftskivan blir svensk tradition",
+    "wikipediaSlug": "Kr%C3%A4ftskiva",
+    "year": 1900
   }
 ]

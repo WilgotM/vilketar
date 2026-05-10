@@ -100,6 +100,26 @@
     "pageViews": 303378
   },
   {
+    "fact": "Kalle Anka och hans vänner önskar God Jul börjar visas i svensk tv.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q1755521",
+    "subtitle": "Svensk tv-tradition",
+    "title": "Kalle Anka visas på julafton",
+    "wikipediaSlug": "Kalle_Anka_och_hans_v%C3%A4nner_%C3%B6nskar_God_Jul",
+    "year": 1960
+  },
+  {
+    "fact": "Loreen blir första kvinna att vinna Eurovision två gånger.",
+    "image": "Loreen_-_Melodifestivalen_2023,_Malmö_118_(cropped).jpg",
+    "pageViews": 300000,
+    "qid": "Q483376",
+    "subtitle": "Svensk artist",
+    "title": "Loreen vinner Eurovision igen",
+    "wikipediaSlug": "Loreen",
+    "year": 2023
+  },
+  {
     "qid": "Q1079",
     "title": "”Breaking Bad”",
     "subtitle": "Amerikansk TV-serie 2008–2013",
@@ -130,6 +150,56 @@
     "pageViews": 273391
   },
   {
+    "fact": "Electrolux grundas.",
+    "image": "Electrolux_Stadshagen_2012.jpg",
+    "pageViews": 260000,
+    "qid": "Q505922",
+    "subtitle": "Svenskt vitvaruföretag",
+    "title": "Electrolux grundas",
+    "wikipediaSlug": "Electrolux",
+    "year": 1919
+  },
+  {
+    "fact": "Fem myror är fler än fyra elefanter börjar sändas.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q5442718",
+    "subtitle": "Svenskt barnprogram",
+    "title": "”Fem myror” börjar sändas",
+    "wikipediaSlug": "Fem_myror_%C3%A4r_fler_%C3%A4n_fyra_elefanter",
+    "year": 1973
+  },
+  {
+    "fact": "Absolut Vodka lanseras internationellt.",
+    "image": "Absolut_Vodka_logo.svg",
+    "pageViews": 260000,
+    "qid": "Q332378",
+    "subtitle": "Svenskt spritvarumärke",
+    "title": "Absolut Vodka lanseras",
+    "wikipediaSlug": "Absolut_Vodka",
+    "year": 1979
+  },
+  {
+    "fact": "Sveriges Television bildas.",
+    "image": "Kontorshuset_(Sveriges_Television),_juni_2022a.jpg",
+    "pageViews": 260000,
+    "qid": "Q215363",
+    "subtitle": "Svenskt tv-bolag",
+    "title": "Sveriges Television bildas",
+    "wikipediaSlug": "Sveriges_Television",
+    "year": 1979
+  },
+  {
+    "fact": "Den första filmen om Jönssonligan har premiär.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q378302",
+    "subtitle": "Svensk filmserie",
+    "title": "Jönssonligan får sin första film",
+    "wikipediaSlug": "J%C3%B6nssonligan",
+    "year": 1981
+  },
+  {
     "fact": "På spåret börjar sändas i SVT.",
     "image": "",
     "pageViews": 260000,
@@ -138,6 +208,56 @@
     "title": "”På spåret” börjar sändas",
     "wikipediaSlug": "P%C3%A5_sp%C3%A5ret",
     "year": 1987
+  },
+  {
+    "fact": "TV4 börjar sända.",
+    "image": "TV4sweden_logo.svg",
+    "pageViews": 260000,
+    "qid": "Q1466723",
+    "subtitle": "Svensk tv-kanal",
+    "title": "TV4 börjar sända",
+    "wikipediaSlug": "TV4",
+    "year": 1990
+  },
+  {
+    "fact": "Expedition Robinson börjar sändas i Sverige.",
+    "image": "Robinson_Haparanda,_2021,_örådet_inspelning_bild_2.jpg",
+    "pageViews": 260000,
+    "qid": "Q3359114",
+    "subtitle": "Svenskt realityprogram",
+    "title": "”Expedition Robinson” börjar sändas",
+    "wikipediaSlug": "Robinson_(TV-serie)",
+    "year": 1997
+  },
+  {
+    "fact": "Den moderna filmserien om Martin Beck startar.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "manual-Beck_(filmserie)",
+    "subtitle": "Svensk filmserie",
+    "title": "Beck får sin första film",
+    "wikipediaSlug": "Beck_(filmserie)",
+    "year": 1997
+  },
+  {
+    "fact": "Zara Larsson vinner TV-programmet Talang.",
+    "image": "Zara_Larsson_Midnight_Sun_European_Tour_(cropped)_(cropped).jpg",
+    "pageViews": 260000,
+    "qid": "Q4177928",
+    "subtitle": "Svensk popartist",
+    "title": "Zara Larsson vinner Talang",
+    "wikipediaSlug": "Zara_Larsson",
+    "year": 2008
+  },
+  {
+    "fact": "Bron börjar sändas.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q1211796",
+    "subtitle": "Svensk-dansk tv-serie",
+    "title": "”Bron” börjar sändas",
+    "wikipediaSlug": "Bron_(TV-serie)",
+    "year": 2011
   },
   {
     "qid": "Q11622",
@@ -200,6 +320,106 @@
     "pageViews": 224286
   },
   {
+    "fact": "Utvandrarna ges ut.",
+    "image": "Originalmanuskriptet-Utvandrarna.jpg",
+    "pageViews": 220000,
+    "qid": "Q7731890",
+    "subtitle": "Roman av Vilhelm Moberg",
+    "title": "”Utvandrarna” ges ut",
+    "wikipediaSlug": "Utvandrarna_(roman)",
+    "year": 1949
+  },
+  {
+    "fact": "Miljonprogrammet startar.",
+    "image": "Tensta_2009d.jpg",
+    "pageViews": 220000,
+    "qid": "Q1935602",
+    "subtitle": "Svenskt bostadsprogram",
+    "title": "Miljonprogrammet startar",
+    "wikipediaSlug": "Miljonprogrammet",
+    "year": 1965
+  },
+  {
+    "fact": "Utvandrarna har premiär.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "manual-Utvandrarna_(film%2C_1971)",
+    "subtitle": "Svensk film",
+    "title": "”Utvandrarna” har premiär",
+    "wikipediaSlug": "Utvandrarna_(film%2C_1971)",
+    "year": 1971
+  },
+  {
+    "fact": "Allsång på Skansen börjar sändas i tv.",
+    "image": "Artisterna_i_Allsång_på_Skansen_2013.jpg",
+    "pageViews": 220000,
+    "qid": "Q1757014",
+    "subtitle": "Svenskt musikprogram",
+    "title": "Allsång på Skansen börjar sändas",
+    "wikipediaSlug": "Alls%C3%A5ng_p%C3%A5_Skansen",
+    "year": 1979
+  },
+  {
+    "fact": "Pettson och Findus debuterar i bokform.",
+    "image": "Pettson_och_Findus.JPG",
+    "pageViews": 220000,
+    "qid": "Q164639",
+    "subtitle": "Svensk barnboksserie",
+    "title": "Pettson och Findus debuterar",
+    "wikipediaSlug": "Pettson_och_Findus",
+    "year": 1984
+  },
+  {
+    "fact": "Bolibompa börjar sändas i SVT.",
+    "image": "Bolibompadraken.jpeg",
+    "pageViews": 220000,
+    "qid": "Q10432417",
+    "subtitle": "Svenskt barnprogram",
+    "title": "”Bolibompa” börjar sändas",
+    "wikipediaSlug": "Bolibompa",
+    "year": 1987
+  },
+  {
+    "fact": "Bingolotto börjar sändas i lokal-tv.",
+    "image": "Bingolottoreklamskylt.jpg",
+    "pageViews": 220000,
+    "qid": "Q4579330",
+    "subtitle": "Svenskt tv-program",
+    "title": "”Bingolotto” börjar sändas",
+    "wikipediaSlug": "Bingolotto",
+    "year": 1989
+  },
+  {
+    "fact": "Rederiet börjar sändas i SVT.",
+    "image": "Birka_Princess_1986c.jpg",
+    "pageViews": 220000,
+    "qid": "Q3354779",
+    "subtitle": "Svensk tv-serie",
+    "title": "”Rederiet” börjar sändas",
+    "wikipediaSlug": "Rederiet",
+    "year": 1992
+  },
+  {
+    "fact": "Wallander börjar filmatiseras.",
+    "image": "Rolf_Lassgård_(Berlin_Film_Festival_2009).jpg",
+    "pageViews": 220000,
+    "qid": "Q21996819",
+    "subtitle": "Svensk kriminalserie",
+    "title": "Wallander blir filmserie",
+    "wikipediaSlug": "Kurt_Wallander_(filmer)",
+    "year": 1994
+  },
+  {
+    "fact": "Idol börjar sändas i Sverige.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q1656877",
+    "subtitle": "Svenskt tv-program",
+    "title": "”Idol” börjar sändas",
+    "wikipediaSlug": "Idol_(Sverige)",
+    "year": 2004
+  },
+  {
     "fact": "Solsidan börjar sändas i TV4.",
     "image": "",
     "pageViews": 220000,
@@ -207,6 +427,16 @@
     "subtitle": "Svensk tv-serie",
     "title": "”Solsidan” börjar sändas",
     "wikipediaSlug": "Solsidan",
+    "year": 2010
+  },
+  {
+    "fact": "Så mycket bättre börjar sändas i TV4.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q2757779",
+    "subtitle": "Svenskt musikprogram",
+    "title": "”Så mycket bättre” börjar sändas",
+    "wikipediaSlug": "S%C3%A5_mycket_b%C3%A4ttre",
     "year": 2010
   },
   {
@@ -228,6 +458,16 @@
     "wikipediaSlug": "Buffy_och_vampyrerna",
     "image": "Buffy_the_vampire_slayer.svg",
     "pageViews": 213223
+  },
+  {
+    "fact": "Rapport börjar sändas i Sveriges Television.",
+    "image": "",
+    "pageViews": 200000,
+    "qid": "manual-Rapport_(TV-program)",
+    "subtitle": "Svenskt nyhetsprogram",
+    "title": "”Rapport” börjar sändas",
+    "wikipediaSlug": "Rapport_(TV-program)",
+    "year": 1969
   },
   {
     "qid": "Q34316",
@@ -288,6 +528,136 @@
     "wikipediaSlug": "Fargo_(TV-serie)",
     "image": "Fargo_(TV_logo).svg",
     "pageViews": 180026
+  },
+  {
+    "fact": "Hylands hörna börjar sändas i tv.",
+    "image": "Hylands_Hörna_1960-tal.jpg",
+    "pageViews": 180000,
+    "qid": "Q4579633",
+    "subtitle": "Svenskt tv-program",
+    "title": "”Hylands hörna” börjar sändas",
+    "wikipediaSlug": "Hylands_h%C3%B6rna",
+    "year": 1962
+  },
+  {
+    "fact": "Fråga Lund börjar sändas i SVT.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q10499639",
+    "subtitle": "Svenskt tv-program",
+    "title": "”Fråga Lund” börjar sändas",
+    "wikipediaSlug": "Fr%C3%A5ga_Lund",
+    "year": 1962
+  },
+  {
+    "fact": "Sune debuterar som svensk barn- och ungdomsfigur.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "manual-Sune_(bokserie)",
+    "subtitle": "Svensk bokserie",
+    "title": "Sune debuterar",
+    "wikipediaSlug": "Sune_(bokserie)",
+    "year": 1984
+  },
+  {
+    "fact": "Björnes magasin börjar sändas i SVT.",
+    "image": "Björne_från_Björnes_magasin_docka.jpg",
+    "pageViews": 180000,
+    "qid": "Q4991945",
+    "subtitle": "Svenskt barnprogram",
+    "title": "”Björnes magasin” börjar sändas",
+    "wikipediaSlug": "Bj%C3%B6rnes_magasin",
+    "year": 1987
+  },
+  {
+    "fact": "Bert debuterar i bokform.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "manual-Bert_(bokserie)",
+    "subtitle": "Svensk bokserie",
+    "title": "Bert debuterar",
+    "wikipediaSlug": "Bert_(bokserie)",
+    "year": 1987
+  },
+  {
+    "fact": "Tre kronor börjar sändas i TV4.",
+    "image": "Farstahallen.jpg",
+    "pageViews": 180000,
+    "qid": "Q4579718",
+    "subtitle": "Svensk tv-serie",
+    "title": "”Tre kronor” börjar sändas",
+    "wikipediaSlug": "Tre_Kronor_(TV-serie)",
+    "year": 1994
+  },
+  {
+    "fact": "NileCity 105,6 börjar sändas i SVT.",
+    "image": "NileCity_105,6_logotyp.png",
+    "pageViews": 180000,
+    "qid": "Q1785682",
+    "subtitle": "Svenskt humorprogram",
+    "title": "”NileCity 105,6” börjar sändas",
+    "wikipediaSlug": "NileCity_105%2C6",
+    "year": 1995
+  },
+  {
+    "fact": "Parlamentet börjar sändas i TV4.",
+    "image": "Parlamentet_bild_1.jpg",
+    "pageViews": 180000,
+    "qid": "Q3369191",
+    "subtitle": "Svenskt humorprogram",
+    "title": "”Parlamentet” börjar sändas",
+    "wikipediaSlug": "Parlamentet",
+    "year": 1999
+  },
+  {
+    "fact": "Hipp Hipp! börjar sändas i SVT.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q5768311",
+    "subtitle": "Svenskt humorprogram",
+    "title": "”Hipp Hipp!” börjar sändas",
+    "wikipediaSlug": "Hipp_Hipp!",
+    "year": 2001
+  },
+  {
+    "fact": "Doobidoo börjar sändas i SVT.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q5296965",
+    "subtitle": "Svenskt tv-program",
+    "title": "”Doobidoo” börjar sändas",
+    "wikipediaSlug": "Doobidoo",
+    "year": 2005
+  },
+  {
+    "fact": "Grotesco börjar sändas i SVT.",
+    "image": "Grotesco_(cropped).jpg",
+    "pageViews": 180000,
+    "qid": "Q49094906",
+    "subtitle": "Svenskt humorprogram",
+    "title": "”Grotesco” börjar sändas",
+    "wikipediaSlug": "Grotesco",
+    "year": 2007
+  },
+  {
+    "fact": "Historieätarna börjar sändas i SVT.",
+    "image": "Erik_Haag_och_Lotta_Lundgren_2014.jpg",
+    "pageViews": 180000,
+    "qid": "Q10524624",
+    "subtitle": "Svenskt tv-program",
+    "title": "”Historieätarna” börjar sändas",
+    "wikipediaSlug": "Historie%C3%A4tarna",
+    "year": 2012
+  },
+  {
+    "fact": "Vår tid är nu börjar sändas i SVT.",
+    "image": "Vår_tid_är_nu_-_Calle_och_Nina.jpg",
+    "pageViews": 180000,
+    "qid": "Q28154022",
+    "subtitle": "Svensk tv-serie",
+    "title": "”Vår tid är nu” börjar sändas",
+    "wikipediaSlug": "V%C3%A5r_tid_%C3%A4r_nu",
+    "year": 2017
   },
   {
     "qid": "Q478360",

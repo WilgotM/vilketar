@@ -10,14 +10,54 @@
     "pageViews": 731304
   },
   {
+    "fact": "Greta Thunberg inleder sin skolstrejk för klimatet.",
+    "image": "Greta_Thunberg_in_November_in_Stockholm_(cropped)(2).jpg",
+    "pageViews": 420000,
+    "qid": "Q56434717",
+    "subtitle": "Svensk klimataktivist",
+    "title": "Greta Thunberg skolstrejkar",
+    "wikipediaSlug": "Greta_Thunberg",
+    "year": 2018
+  },
+  {
+    "fact": "Metoo får stort genomslag även i Sverige.",
+    "image": "Metoo-manifestation_2017_Stockholm.jpg",
+    "pageViews": 300000,
+    "qid": "Q42133786",
+    "subtitle": "Social rörelse",
+    "title": "Metoo får globalt genomslag",
+    "wikipediaSlug": "Metoo",
+    "year": 2017
+  },
+  {
     "fact": "Sverige går över till högertrafik.",
-    "image": "",
+    "image": "Kungsgatan_1967.jpg",
     "pageViews": 260000,
     "qid": "Q376921",
     "subtitle": "Svensk trafikomläggning",
     "title": "Högertrafiken införs",
     "wikipediaSlug": "H%C3%B6gertrafikoml%C3%A4ggningen",
     "year": 1967
+  },
+  {
+    "fact": "Sverige folkomröstar om kärnkraften.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q6980136",
+    "subtitle": "Svensk folkomröstning",
+    "title": "Sverige röstar om kärnkraft",
+    "wikipediaSlug": "Folkomr%C3%B6stningen_om_k%C3%A4rnkraften_i_Sverige_1980",
+    "year": 1980
+  },
+  {
+    "fact": "Sverige folkomröstar om att införa euron.",
+    "image": "EMU-omröstningen_2003_kommunvis.png",
+    "pageViews": 220000,
+    "qid": "Q4352712",
+    "subtitle": "Svensk folkomröstning",
+    "title": "Sverige röstar om euron",
+    "wikipediaSlug": "Folkomr%C3%B6stningen_om_inf%C3%B6rande_av_euron_i_Sverige_2003",
+    "year": 2003
   },
   {
     "qid": "Q6534",

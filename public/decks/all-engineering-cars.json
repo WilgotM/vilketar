@@ -1,5 +1,25 @@
 [
   {
+    "fact": "Koenigsegg grundas.",
+    "image": "Koenigsegg-logo-1994-2048x2048.png",
+    "pageViews": 260000,
+    "qid": "Q35594",
+    "subtitle": "Svensk sportbilstillverkare",
+    "title": "Koenigsegg grundas",
+    "wikipediaSlug": "Koenigsegg",
+    "year": 1994
+  },
+  {
+    "fact": "Polestar blir ett fristående elbilsmärke.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q4047174",
+    "subtitle": "Svenskt elbilsmärke",
+    "title": "Polestar blir bilmärke",
+    "wikipediaSlug": "Polestar",
+    "year": 2017
+  },
+  {
     "qid": "Q226062",
     "title": "Chevrolet Impala debuterar",
     "subtitle": "Car model by General Motors",

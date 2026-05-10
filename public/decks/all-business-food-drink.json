@@ -1,5 +1,95 @@
 [
   {
+    "fact": "Absolut Vodka lanseras internationellt.",
+    "image": "Absolut_Vodka_logo.svg",
+    "pageViews": 260000,
+    "qid": "Q332378",
+    "subtitle": "Svenskt spritvarumärke",
+    "title": "Absolut Vodka lanseras",
+    "wikipediaSlug": "Absolut_Vodka",
+    "year": 1979
+  },
+  {
+    "fact": "Köttbullar etableras i svensk matkultur.",
+    "image": "Kottbullar.jpg",
+    "pageViews": 220000,
+    "qid": "Q4831844",
+    "subtitle": "Svensk maträtt",
+    "title": "Köttbullar blir husmanskost",
+    "wikipediaSlug": "K%C3%B6ttbullar",
+    "year": 1755
+  },
+  {
+    "fact": "Snus blir vanligt i Sverige.",
+    "image": "Legal_Status_of_Snus.png",
+    "pageViews": 220000,
+    "qid": "Q842813",
+    "subtitle": "Svensk tobaksprodukt",
+    "title": "Snus blir vanligt i Sverige",
+    "wikipediaSlug": "Snus",
+    "year": 1800
+  },
+  {
+    "fact": "Semlan etableras som svensk klassiker.",
+    "image": "Semla_2026_01.jpg",
+    "pageViews": 220000,
+    "qid": "Q1139319",
+    "subtitle": "Svenskt bakverk",
+    "title": "Semlan blir svensk klassiker",
+    "wikipediaSlug": "Semla",
+    "year": 1900
+  },
+  {
+    "fact": "Marabou grundas.",
+    "image": "Marabou_chocolate.jpg",
+    "pageViews": 220000,
+    "qid": "Q1812718",
+    "subtitle": "Svenskt chokladvarumärke",
+    "title": "Marabou grundas",
+    "wikipediaSlug": "Marabou",
+    "year": 1916
+  },
+  {
+    "fact": "Kanelbullen blir vanlig i Sverige.",
+    "image": "Kanelbulle.jpg",
+    "pageViews": 220000,
+    "qid": "Q254979",
+    "subtitle": "Svenskt bakverk",
+    "title": "Kanelbullen blir populär",
+    "wikipediaSlug": "Kanelbulle",
+    "year": 1920
+  },
+  {
+    "fact": "Ahlgrens bilar lanseras.",
+    "image": "Ahlgrens_bilar.jpg",
+    "pageViews": 220000,
+    "qid": "Q1772569",
+    "subtitle": "Svenskt godis",
+    "title": "Ahlgrens bilar lanseras",
+    "wikipediaSlug": "Ahlgrens_bilar",
+    "year": 1953
+  },
+  {
+    "fact": "Kalles kaviar lanseras.",
+    "image": "Egg_sandwich.jpg",
+    "pageViews": 220000,
+    "qid": "Q3071782",
+    "subtitle": "Svenskt smörgåspålägg",
+    "title": "Kalles kaviar lanseras",
+    "wikipediaSlug": "Kalles_kaviar",
+    "year": 1954
+  },
+  {
+    "fact": "Oatly grundas.",
+    "image": "Oatly.jpg",
+    "pageViews": 220000,
+    "qid": "Q10605824",
+    "subtitle": "Svenskt livsmedelsföretag",
+    "title": "Oatly grundas",
+    "wikipediaSlug": "Oatly",
+    "year": 1994
+  },
+  {
     "qid": "Q38076",
     "title": "McDonald’s grundas",
     "subtitle": "Amerikansk snabbmatskedja",
@@ -8,6 +98,76 @@
     "wikipediaSlug": "McDonald%E2%80%99s",
     "image": "McDonald's_Golden_Arches.svg",
     "pageViews": 195236
+  },
+  {
+    "fact": "Ostkaka blir en del av svensk matkultur.",
+    "image": "Ostkaka.jpg",
+    "pageViews": 180000,
+    "qid": "Q1853883",
+    "subtitle": "Svensk maträtt",
+    "title": "Ostkaka blir svensk klassiker",
+    "wikipediaSlug": "Ostkaka",
+    "year": 1500
+  },
+  {
+    "fact": "Gevalia grundas.",
+    "image": "Kafferosteri_Gävle.JPG",
+    "pageViews": 180000,
+    "qid": "Q3268492",
+    "subtitle": "Svenskt kaffevarumärke",
+    "title": "Gevalia grundas",
+    "wikipediaSlug": "Gevalia",
+    "year": 1853
+  },
+  {
+    "fact": "Kräftskivan etableras som svensk sensommartradition.",
+    "image": "Kräftskiva,_Häringe_slott,_1991.jpg",
+    "pageViews": 180000,
+    "qid": "Q255208",
+    "subtitle": "Svensk mattradition",
+    "title": "Kräftskivan blir svensk tradition",
+    "wikipediaSlug": "Kr%C3%A4ftskiva",
+    "year": 1900
+  },
+  {
+    "fact": "Löfbergs grundas i Karlstad.",
+    "image": "Löfbergs_lila_skrapan.JPG",
+    "pageViews": 180000,
+    "qid": "Q1879666",
+    "subtitle": "Svenskt kafferosteri",
+    "title": "Löfbergs grundas",
+    "wikipediaSlug": "L%C3%B6fbergs",
+    "year": 1906
+  },
+  {
+    "fact": "Kexchoklad lanseras.",
+    "image": "KitKat_opened.jpg",
+    "pageViews": 180000,
+    "qid": "Q10545209",
+    "subtitle": "Svenskt godis",
+    "title": "Kexchoklad lanseras",
+    "wikipediaSlug": "Kexchoklad",
+    "year": 1938
+  },
+  {
+    "fact": "Surströmming blir en etablerad svensk handelsvara.",
+    "image": "Surströmming.jpg",
+    "pageViews": 180000,
+    "qid": "Q778396",
+    "subtitle": "Svensk maträtt",
+    "title": "Surströmming blir handelsvara",
+    "wikipediaSlug": "Surstr%C3%B6mming",
+    "year": 1940
+  },
+  {
+    "fact": "Falukorv får skyddad beteckning i Sverige.",
+    "image": "Falukorv.jpg",
+    "pageViews": 180000,
+    "qid": "Q1395035",
+    "subtitle": "Svensk korv",
+    "title": "Falukorven får skyddad beteckning",
+    "wikipediaSlug": "Falukorv",
+    "year": 1973
   },
   {
     "qid": "Q2813",

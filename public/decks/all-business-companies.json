@@ -20,6 +20,16 @@
     "year": 1927
   },
   {
+    "fact": "Ericsson grundas.",
+    "image": "Ericsson_(2018).svg",
+    "pageViews": 300000,
+    "qid": "Q52618",
+    "subtitle": "Svenskt telekomföretag",
+    "title": "Ericsson grundas",
+    "wikipediaSlug": "Ericsson",
+    "year": 1876
+  },
+  {
     "fact": "H&M grundas i Västerås.",
     "image": "H&M-Logo.svg",
     "pageViews": 280000,
@@ -30,6 +40,156 @@
     "year": 1947
   },
   {
+    "fact": "Electrolux grundas.",
+    "image": "Electrolux_Stadshagen_2012.jpg",
+    "pageViews": 260000,
+    "qid": "Q505922",
+    "subtitle": "Svenskt vitvaruföretag",
+    "title": "Electrolux grundas",
+    "wikipediaSlug": "Electrolux",
+    "year": 1919
+  },
+  {
+    "fact": "Saab grundas.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q219501",
+    "subtitle": "Svenskt industriföretag",
+    "title": "Saab grundas",
+    "wikipediaSlug": "Saab_AB",
+    "year": 1937
+  },
+  {
+    "fact": "ICA bildas.",
+    "image": "ICA_logo.svg",
+    "pageViews": 260000,
+    "qid": "Q1663776",
+    "subtitle": "Svensk dagligvarukedja",
+    "title": "ICA bildas",
+    "wikipediaSlug": "Ica",
+    "year": 1938
+  },
+  {
+    "fact": "Tetra Pak grundas.",
+    "image": "TetraPak-Logo_EN.svg",
+    "pageViews": 260000,
+    "qid": "Q659200",
+    "subtitle": "Svenskt förpackningsföretag",
+    "title": "Tetra Pak grundas",
+    "wikipediaSlug": "Tetra_Pak",
+    "year": 1951
+  },
+  {
+    "fact": "Systembolaget bildas i sin moderna form.",
+    "image": "Systembolaget_logo_(new).svg",
+    "pageViews": 260000,
+    "qid": "Q1476113",
+    "subtitle": "Svenskt detaljhandelsmonopol",
+    "title": "Systembolaget bildas",
+    "wikipediaSlug": "Systembolaget",
+    "year": 1955
+  },
+  {
+    "fact": "Absolut Vodka lanseras internationellt.",
+    "image": "Absolut_Vodka_logo.svg",
+    "pageViews": 260000,
+    "qid": "Q332378",
+    "subtitle": "Svenskt spritvarumärke",
+    "title": "Absolut Vodka lanseras",
+    "wikipediaSlug": "Absolut_Vodka",
+    "year": 1979
+  },
+  {
+    "fact": "Koenigsegg grundas.",
+    "image": "Koenigsegg-logo-1994-2048x2048.png",
+    "pageViews": 260000,
+    "qid": "Q35594",
+    "subtitle": "Svensk sportbilstillverkare",
+    "title": "Koenigsegg grundas",
+    "wikipediaSlug": "Koenigsegg",
+    "year": 1994
+  },
+  {
+    "fact": "SAS bildas genom skandinaviskt samarbete.",
+    "image": "SAS_Group_logo.svg",
+    "pageViews": 240000,
+    "qid": "Q1345441",
+    "subtitle": "Skandinaviskt flygbolag",
+    "title": "SAS bildas",
+    "wikipediaSlug": "SAS_Group",
+    "year": 1946
+  },
+  {
+    "fact": "Husqvarna grundas som gevärsfaktori.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q899356",
+    "subtitle": "Svenskt industriföretag",
+    "title": "Husqvarna grundas",
+    "wikipediaSlug": "Husqvarna",
+    "year": 1689
+  },
+  {
+    "fact": "Statens Järnvägar bildas.",
+    "image": "SJ_(rail_operator)_logo.svg",
+    "pageViews": 220000,
+    "qid": "Q8301325",
+    "subtitle": "Svensk järnvägsaktör",
+    "title": "SJ bildas",
+    "wikipediaSlug": "SJ",
+    "year": 1856
+  },
+  {
+    "fact": "Scania bildas genom en sammanslagning.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q219960",
+    "subtitle": "Svensk fordonstillverkare",
+    "title": "Scania bildas",
+    "wikipediaSlug": "Scania",
+    "year": 1911
+  },
+  {
+    "fact": "Marabou grundas.",
+    "image": "Marabou_chocolate.jpg",
+    "pageViews": 220000,
+    "qid": "Q1812718",
+    "subtitle": "Svenskt chokladvarumärke",
+    "title": "Marabou grundas",
+    "wikipediaSlug": "Marabou",
+    "year": 1916
+  },
+  {
+    "fact": "Fjällräven grundas.",
+    "image": "(heavy_breathing)_(29072903755).jpg",
+    "pageViews": 220000,
+    "qid": "Q1422481",
+    "subtitle": "Svenskt friluftsföretag",
+    "title": "Fjällräven grundas",
+    "wikipediaSlug": "Fj%C3%A4llr%C3%A4ven",
+    "year": 1960
+  },
+  {
+    "fact": "Oatly grundas.",
+    "image": "Oatly.jpg",
+    "pageViews": 220000,
+    "qid": "Q10605824",
+    "subtitle": "Svenskt livsmedelsföretag",
+    "title": "Oatly grundas",
+    "wikipediaSlug": "Oatly",
+    "year": 1994
+  },
+  {
+    "fact": "Polestar blir ett fristående elbilsmärke.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q4047174",
+    "subtitle": "Svenskt elbilsmärke",
+    "title": "Polestar blir bilmärke",
+    "wikipediaSlug": "Polestar",
+    "year": 2017
+  },
+  {
     "qid": "Q38076",
     "title": "McDonald’s grundas",
     "subtitle": "Amerikansk snabbmatskedja",
@@ -38,6 +198,76 @@
     "wikipediaSlug": "McDonald%E2%80%99s",
     "image": "McDonald's_Golden_Arches.svg",
     "pageViews": 195236
+  },
+  {
+    "fact": "Gevalia grundas.",
+    "image": "Kafferosteri_Gävle.JPG",
+    "pageViews": 180000,
+    "qid": "Q3268492",
+    "subtitle": "Svenskt kaffevarumärke",
+    "title": "Gevalia grundas",
+    "wikipediaSlug": "Gevalia",
+    "year": 1853
+  },
+  {
+    "fact": "Cloetta grundas.",
+    "image": "Cloetta_entre.jpg",
+    "pageViews": 180000,
+    "qid": "Q3437039",
+    "subtitle": "Svenskt konfektyrföretag",
+    "title": "Cloetta grundas",
+    "wikipediaSlug": "Cloetta",
+    "year": 1862
+  },
+  {
+    "fact": "Pressbyrån grundas.",
+    "image": "Convenience_store_at_Stockholm_central_station.jpg",
+    "pageViews": 180000,
+    "qid": "Q2489072",
+    "subtitle": "Svensk butikskedja",
+    "title": "Pressbyrån grundas",
+    "wikipediaSlug": "Pressbyr%C3%A5n",
+    "year": 1899
+  },
+  {
+    "fact": "Den kooperativa dagligvarurörelsen etableras i Sverige.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q106684510",
+    "subtitle": "Svensk dagligvarurörelse",
+    "title": "Coop Sverige bildas",
+    "wikipediaSlug": "Coop_Sverige",
+    "year": 1899
+  },
+  {
+    "fact": "Löfbergs grundas i Karlstad.",
+    "image": "Löfbergs_lila_skrapan.JPG",
+    "pageViews": 180000,
+    "qid": "Q1879666",
+    "subtitle": "Svenskt kafferosteri",
+    "title": "Löfbergs grundas",
+    "wikipediaSlug": "L%C3%B6fbergs",
+    "year": 1906
+  },
+  {
+    "fact": "Apoteket bildas som statligt bolag.",
+    "image": "Apotekets_huvudkontor_September_2014_01.jpg",
+    "pageViews": 180000,
+    "qid": "Q1785637",
+    "subtitle": "Svenskt apoteksbolag",
+    "title": "Apoteket bildas",
+    "wikipediaSlug": "Apoteket",
+    "year": 1971
+  },
+  {
+    "fact": "Fjällrävens ryggsäck Kånken lanseras.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "manual-K%C3%A5nken",
+    "subtitle": "Svensk ryggsäck",
+    "title": "Kånken lanseras",
+    "wikipediaSlug": "K%C3%A5nken",
+    "year": 1978
   },
   {
     "fact": "Klarna grundas i Stockholm.",
