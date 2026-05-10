@@ -3,6 +3,7 @@ import Link from "next/link";
 import * as styles from "../styles/button.css";
 
 interface Props {
+  className?: string;
   fullWidth?: boolean;
   href: string;
   leadingIcon?: "play" | "group";
@@ -96,6 +97,7 @@ function TrailingIcon(props: { icon: "chevron" | "play" }) {
 
 export default function ButtonLink(props: Props) {
   const {
+    className,
     fullWidth = false,
     href,
     leadingIcon,
@@ -107,11 +109,15 @@ export default function ButtonLink(props: Props) {
 
   return (
     <Link
-      className={classNames(styles.button, {
-        [styles.fullWidth]: fullWidth,
-        [styles.minimal]: minimal,
-        [styles.withTrailingIcon]: trailingIcon,
-      })}
+      className={classNames(
+        styles.button,
+        {
+          [styles.fullWidth]: fullWidth,
+          [styles.minimal]: minimal,
+          [styles.withTrailingIcon]: trailingIcon,
+        },
+        className,
+      )}
       href={href}
       onClick={onClick}
       prefetch

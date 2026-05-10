@@ -1,16 +1,25 @@
 import { readFile, writeFile } from "fs/promises";
 import path from "path";
 import { Card } from "../../types/cards";
+import { buildGeneratedSportMomentCards } from "./build-sport-moment-cards";
 
 const PUBLIC_DECKS_DIR = path.join(process.cwd(), "public/decks");
 const INDEX_FILE = path.join(PUBLIC_DECKS_DIR, "index.json");
 
 const CLASSICS_DECK_ID = "all-swedish-classics-all";
 const CLASSICS_GROUP_ID = "all-swedish-classics";
+const SPORT_MOMENTS_DECK_ID = "all-sport-sportogonblick";
+
+type DifficultyCounts = {
+  easy: number;
+  normal: number;
+  hard: number;
+};
 
 type HandpickedCard = {
   deckIds: string[];
   fact: string;
+  image?: string;
   pageTitle: string;
   pageViews: number;
   subtitle: string;
@@ -272,11 +281,274 @@ const CARDS: HandpickedCard[] = [
   },
 ];
 
-function countDifficulty(cards: Card[]) {
+const SPORT_CARDS: HandpickedCard[] = [
+  {
+    deckIds: [
+      SPORT_MOMENTS_DECK_ID,
+      "all-sweden",
+      "all-sweden-allt",
+      "all-sport-svensk-sport",
+    ],
+    fact: "Sverige spelar VM-final i fotboll på Råsunda mot Brasilien.",
+    image: "Pele_con_brasil_(cropped).jpg",
+    pageTitle: "Världsmästerskapet i fotboll 1958",
+    pageViews: 360_000,
+    subtitle: "Fotbolls-VM på hemmaplan",
+    title: "Sverige spelar VM-final i fotboll",
+    year: 1958,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Diego Maradona leder Argentina till VM-guld i Mexiko.",
+    pageTitle: "Världsmästerskapet i fotboll 1986",
+    pageViews: 460_000,
+    subtitle: "Klassiskt fotbolls-VM",
+    title: "Maradona dominerar fotbolls-VM",
+    year: 1986,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Danmark vinner EM i fotboll efter finalseger mot Tyskland.",
+    image: "Peter_Schmeichel-2011.jpeg",
+    pageTitle: "Finalen av Europamästerskapet i fotboll 1992",
+    pageViews: 260_000,
+    subtitle: "Nordisk fotbollsskräll",
+    title: "Danmark vinner fotbolls-EM",
+    year: 1992,
+  },
+  {
+    deckIds: [
+      SPORT_MOMENTS_DECK_ID,
+      "all-sweden",
+      "all-sweden-allt",
+      "all-sport-svensk-sport",
+    ],
+    fact: "Sverige tar VM-brons i fotboll i USA.",
+    pageTitle: "Världsmästerskapet i fotboll 1994",
+    pageViews: 420_000,
+    subtitle: "Svenskt fotbollsminne",
+    title: "Sverige tar VM-brons i fotboll",
+    year: 1994,
+  },
+  {
+    deckIds: [
+      SPORT_MOMENTS_DECK_ID,
+      "all-sweden",
+      "all-sweden-allt",
+      "all-sport-svensk-sport",
+    ],
+    fact: "Tre Kronor tar OS-guld i ishockey efter Peter Forsbergs berömda straff.",
+    image: "Peter_Forsberg_2016-03-17_001_(cropped).jpg",
+    pageTitle: "Ishockey vid olympiska vinterspelen 1994",
+    pageViews: 320_000,
+    subtitle: "Svenskt ishockeyminne",
+    title: "Tre Kronor tar OS-guld",
+    year: 1994,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Bosmandomen förändrar villkoren för spelare och klubbar i europeisk fotboll.",
+    image: "Jean-Marc_Bosman_Panini_Standard_Liege_(cropped).png",
+    pageTitle: "Bosmandomen",
+    pageViews: 300_000,
+    subtitle: "Avgörande fotbollsdom",
+    title: "Bosmandomen förändrar fotbollen",
+    year: 1995,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Manchester United vänder Champions League-finalen mot Bayern München på tilläggstid.",
+    pageTitle: "Uefa Champions League",
+    pageViews: 360_000,
+    subtitle: "Champions League-drama",
+    title: "Manchester United vänder finalen",
+    year: 1999,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Luís Figo lämnar Barcelona för Real Madrid och blir en symbol för Galácticos-eran.",
+    pageTitle: "Luís Figo",
+    pageViews: 260_000,
+    subtitle: "Omtalad spelarövergång",
+    title: "Figo går till Real Madrid",
+    year: 2000,
+  },
+  {
+    deckIds: [
+      SPORT_MOMENTS_DECK_ID,
+      "all-sweden",
+      "all-sweden-allt",
+      "all-sport-svensk-sport",
+    ],
+    fact: "Sverige tar silver i damernas fotbolls-VM efter final mot Tyskland.",
+    image: "Victoria_Svensson.jpg",
+    pageTitle: "Världsmästerskapet i fotboll för damer 2003",
+    pageViews: 240_000,
+    subtitle: "Svenskt damlandslagsminne",
+    title: "Sverige spelar VM-final i damfotboll",
+    year: 2003,
+  },
+  {
+    deckIds: [
+      SPORT_MOMENTS_DECK_ID,
+      "all-sweden",
+      "all-sweden-allt",
+      "all-sport-svensk-sport",
+    ],
+    fact: "Carolina Klüft vinner OS-guld i sjukamp i Aten.",
+    pageTitle: "Carolina Klüft",
+    pageViews: 220_000,
+    subtitle: "Svensk friidrottsklassiker",
+    title: "Carolina Klüft vinner OS-guld",
+    year: 2004,
+  },
+  {
+    deckIds: [
+      SPORT_MOMENTS_DECK_ID,
+      "all-sweden",
+      "all-sweden-allt",
+      "all-sport-svensk-sport",
+    ],
+    fact: "Sverige tar OS-guld i ishockey i Turin med flera NHL-stjärnor i laget.",
+    image:
+      "Henrik_Lundqvist_awarded_as_the_best_goalie_of_all_time_in_Swedish_hockey-2.jpg",
+    pageTitle: "Henrik Lundqvist",
+    pageViews: 250_000,
+    subtitle: "Svenskt ishockeyminne",
+    title: "Tre Kronor tar OS-guld igen",
+    year: 2006,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Cristiano Ronaldo lämnar Manchester United för Real Madrid.",
+    pageTitle: "Cristiano Ronaldo",
+    pageViews: 520_000,
+    subtitle: "Stor spelarövergång",
+    title: "Cristiano Ronaldo går till Real Madrid",
+    year: 2009,
+  },
+  {
+    deckIds: [
+      SPORT_MOMENTS_DECK_ID,
+      "all-sweden",
+      "all-sweden-allt",
+      "all-sport-svensk-sport",
+    ],
+    fact: "Zlatan Ibrahimović lämnar Inter för Barcelona.",
+    pageTitle: "Zlatan Ibrahimović",
+    pageViews: 380_000,
+    subtitle: "Svensk spelarövergång",
+    title: "Zlatan går till Barcelona",
+    year: 2009,
+  },
+  {
+    deckIds: [
+      SPORT_MOMENTS_DECK_ID,
+      "all-sweden",
+      "all-sweden-allt",
+      "all-sport-svensk-sport",
+    ],
+    fact: "Sarah Sjöström vinner OS-guld på 100 meter fjärilsim.",
+    pageTitle: "Sarah Sjöström",
+    pageViews: 260_000,
+    subtitle: "Svenskt simminne",
+    title: "Sarah Sjöström vinner OS-guld",
+    year: 2016,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Usain Bolt avslutar sin olympiska guldera i Rio de Janeiro.",
+    pageTitle: "Usain Bolt",
+    pageViews: 460_000,
+    subtitle: "Olympisk friidrottsikon",
+    title: "Bolt tar sitt sista OS-guld",
+    year: 2016,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Neymar lämnar Barcelona för Paris Saint-Germain i fotbollens dyraste övergång.",
+    pageTitle: "Neymar",
+    pageViews: 480_000,
+    subtitle: "Rekordstor spelarövergång",
+    title: "Neymar blir dyraste fotbollsspelaren",
+    year: 2017,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Frankrike vinner herrarnas fotbolls-VM efter final mot Kroatien.",
+    pageTitle: "Världsmästerskapet i fotboll 2018",
+    pageViews: 420_000,
+    subtitle: "Modernt fotbolls-VM",
+    title: "Frankrike vinner fotbolls-VM",
+    year: 2018,
+  },
+  {
+    deckIds: [
+      SPORT_MOMENTS_DECK_ID,
+      "all-sweden",
+      "all-sweden-allt",
+      "all-sport-svensk-sport",
+    ],
+    fact: "Armand Duplantis sätter världsrekord i stavhopp.",
+    pageTitle: "Armand Duplantis",
+    pageViews: 300_000,
+    subtitle: "Svenskt friidrottsminne",
+    title: "Duplantis sätter världsrekord",
+    year: 2020,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Lionel Messi lämnar Barcelona och skriver på för Paris Saint-Germain.",
+    pageTitle: "Lionel Messi",
+    pageViews: 520_000,
+    subtitle: "Historisk spelarövergång",
+    title: "Messi lämnar Barcelona",
+    year: 2021,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Argentina vinner herrarnas fotbolls-VM efter finaldramat mot Frankrike.",
+    image: "Lionel_Messi_Player_of_the_Year_2011.jpg",
+    pageTitle: "Världsmästerskapet i fotboll 2022",
+    pageViews: 500_000,
+    subtitle: "Fotbollsfinal med Messi",
+    title: "Argentina vinner fotbolls-VM",
+    year: 2022,
+  },
+];
+
+function countDifficulty(cards: Card[]): DifficultyCounts {
+  const uniqueCards = Array.from(
+    new Map(cards.map((card) => [card.qid, card])).values(),
+  );
+
   return {
-    easy: cards.filter((card) => (card.pageViews ?? 0) >= 250_000).length,
-    normal: cards.filter((card) => (card.pageViews ?? 0) >= 100_000).length,
-    hard: cards.filter((card) => (card.pageViews ?? 0) >= 50_000).length,
+    easy: uniqueCards.filter((card) => (card.pageViews ?? 0) >= 250_000).length,
+    normal: uniqueCards.filter((card) => (card.pageViews ?? 0) >= 100_000)
+      .length,
+    hard: uniqueCards.filter((card) => (card.pageViews ?? 0) >= 50_000).length,
+  };
+}
+
+function addDifficultyCounts(left: DifficultyCounts, right: DifficultyCounts) {
+  return {
+    easy: left.easy + right.easy,
+    normal: left.normal + right.normal,
+    hard: left.hard + right.hard,
+  };
+}
+
+function readDifficultyCounts(value: unknown): DifficultyCounts {
+  if (!value || typeof value !== "object") {
+    return { easy: 0, normal: 0, hard: 0 };
+  }
+
+  const counts = value as Partial<Record<"easy" | "normal" | "hard", unknown>>;
+
+  return {
+    easy: typeof counts.easy === "number" ? counts.easy : 0,
+    normal: typeof counts.normal === "number" ? counts.normal : 0,
+    hard: typeof counts.hard === "number" ? counts.hard : 0,
   };
 }
 
@@ -350,12 +622,19 @@ async function getPageMetadataWithRetry(pageTitle: string) {
 
 async function readDeck(deckId: string): Promise<Card[]> {
   const filePath = path.join(PUBLIC_DECKS_DIR, `${deckId}.json`);
-  return JSON.parse(await readFile(filePath, "utf8")) as Card[];
+  try {
+    return JSON.parse(await readFile(filePath, "utf8")) as Card[];
+  } catch {
+    return [];
+  }
 }
 
 async function writeDeck(deckId: string, cards: Card[]) {
   const filePath = path.join(PUBLIC_DECKS_DIR, `${deckId}.json`);
-  const sortedCards = cards.sort(
+  const dedupedCards = Array.from(
+    new Map(cards.map((card) => [card.qid, card])).values(),
+  );
+  const sortedCards = dedupedCards.sort(
     (left, right) =>
       (right.pageViews ?? 0) - (left.pageViews ?? 0) || left.year - right.year,
   );
@@ -370,8 +649,9 @@ async function main() {
     Awaited<ReturnType<typeof getPageMetadata>>
   >();
   const classicsCards: Card[] = [];
+  const sportMomentCards: Card[] = [];
 
-  for (const card of CARDS) {
+  for (const card of [...CARDS, ...SPORT_CARDS]) {
     const metadata =
       metadataByTitle.get(card.pageTitle) ??
       (await getPageMetadataWithRetry(card.pageTitle));
@@ -380,7 +660,7 @@ async function main() {
 
     const runtimeCard: Card = {
       fact: card.fact,
-      image: metadata.image,
+      image: card.image ?? metadata.image,
       pageViews: card.pageViews,
       qid: metadata.qid,
       subtitle: card.subtitle,
@@ -388,7 +668,13 @@ async function main() {
       wikipediaSlug: slugFromTitle(metadata.title),
       year: card.year,
     };
-    classicsCards.push(runtimeCard);
+    if (CARDS.includes(card)) {
+      classicsCards.push(runtimeCard);
+    }
+
+    if (card.deckIds.includes(SPORT_MOMENTS_DECK_ID)) {
+      sportMomentCards.push(runtimeCard);
+    }
 
     for (const deckId of card.deckIds) {
       const cards = cardsByDeckId.get(deckId) ?? (await readDeck(deckId));
@@ -403,11 +689,15 @@ async function main() {
     }
   }
 
+  const generatedSportCards = await buildGeneratedSportMomentCards();
+  sportMomentCards.push(...generatedSportCards);
+
   for (const [deckId, cards] of cardsByDeckId) {
     await writeDeck(deckId, cards);
   }
 
   await writeDeck(CLASSICS_DECK_ID, classicsCards);
+  await writeDeck(SPORT_MOMENTS_DECK_ID, sportMomentCards);
 
   const index = JSON.parse(await readFile(INDEX_FILE, "utf8")) as {
     children: Array<Record<string, unknown>>;
@@ -444,6 +734,54 @@ async function main() {
       return child.id === "all-sweden";
     });
     index.children.splice(Math.max(swedenIndex + 1, 0), 0, classicsNode);
+  }
+
+  const sportNode = index.children.find((child) => child.id === "all-sport") as
+    | { children?: Array<Record<string, unknown>>; difficultyCounts?: unknown }
+    | undefined;
+  if (sportNode) {
+    const sportMomentCounts = countDifficulty(sportMomentCards);
+    const svenskSportCards =
+      cardsByDeckId.get("all-sport-svensk-sport") ??
+      (await readDeck("all-sport-svensk-sport"));
+    const svenskSportCounts = countDifficulty(svenskSportCards);
+    const sportMomentNode = {
+      id: SPORT_MOMENTS_DECK_ID,
+      slug: "sportogonblick",
+      title: "Sportögonblick",
+      themeHue: 144,
+      frequency: 2.6,
+      difficultyCounts: sportMomentCounts,
+      minScore: 1000,
+    };
+    const svenskSportNode = {
+      id: "all-sport-svensk-sport",
+      slug: "svensk-sport",
+      title: "Svensk sport",
+      themeHue: 120,
+      frequency: 2,
+      difficultyCounts: svenskSportCounts,
+      minScore: 1000,
+    };
+    const children = sportNode.children ?? [];
+    const remainingChildren = children.filter((child) => {
+      return (
+        child.id !== SPORT_MOMENTS_DECK_ID &&
+        child.id !== "all-sport-svensk-sport"
+      );
+    });
+    const nextChildren = [
+      sportMomentNode,
+      svenskSportNode,
+      ...remainingChildren,
+    ];
+
+    sportNode.children = nextChildren;
+    sportNode.difficultyCounts = nextChildren.reduce<DifficultyCounts>(
+      (sum, child) =>
+        addDifficultyCounts(sum, readDifficultyCounts(child.difficultyCounts)),
+      { easy: 0, normal: 0, hard: 0 },
+    );
   }
 
   await writeFile(INDEX_FILE, `${JSON.stringify(index, null, 2)}\n`);

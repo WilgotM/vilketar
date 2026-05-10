@@ -9,6 +9,12 @@ export interface FeaturedFreePlayDeck {
 
 export const FEATURED_FREE_PLAY_DECKS: readonly FeaturedFreePlayDeck[] = [
   {
+    key: "featured-sport-moments",
+    routeSlug: "sportogonblick",
+    slugPath: ["sport", "sportogonblick"],
+    text: "Sportögonblick",
+  },
+  {
     key: "featured-swedish-classics",
     routeSlug: "svenska-klassiker",
     slugPath: ["svenska-klassiker", "allt"],

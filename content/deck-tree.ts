@@ -1358,8 +1358,21 @@ const rootDeckDefinition: DeckDefinition = {
       frequency: 0.1,
       children: [
         {
+          slug: "sportogonblick",
+          title: "Sportögonblick",
+          frequency: 2.6,
+          hidden: true,
+        },
+        {
+          slug: "svensk-sport",
+          title: "Svensk sport",
+          themeHue: 120,
+          frequency: 2,
+          hidden: true,
+        },
+        {
           slug: "teams",
-          title: "Teams",
+          title: "Lag",
           frequency: 1.2,
           sources: [
             footballClubsFoundingYear,
@@ -1373,7 +1386,7 @@ const rootDeckDefinition: DeckDefinition = {
         },
         {
           slug: "stadiums",
-          title: "Stadiums",
+          title: "Arenor",
           frequency: 0.85,
           sources: [stadiumsOpeningYear],
         },

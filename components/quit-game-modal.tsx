@@ -4,13 +4,25 @@ import Button from "./button";
 import * as styles from "../styles/quit-game-modal.css";
 
 interface Props {
+  body?: string;
+  cancelText?: string;
+  confirmText?: string;
   onCancel: () => void;
   onConfirm: () => void;
   open: boolean;
+  title?: string;
 }
 
 export default function QuitGameModal(props: Props) {
-  const { onCancel, onConfirm, open } = props;
+  const {
+    body = "Du förlorar framstegen i den här rundan.",
+    cancelText = "Stanna kvar",
+    confirmText = "Lämna",
+    onCancel,
+    onConfirm,
+    open,
+    title = "Lämna matchen?",
+  } = props;
 
   React.useEffect(() => {
     if (!open) {
@@ -55,14 +67,12 @@ export default function QuitGameModal(props: Props) {
             transition={{ duration: 0.2, ease: "easeOut" }}
           >
             <h2 className={styles.title} id="quit-game-modal-title">
-              Abandon game?
+              {title}
             </h2>
-            <p className={styles.body}>
-              You&apos;ll lose all progress in the current game.
-            </p>
+            <p className={styles.body}>{body}</p>
             <div className={styles.actions}>
-              <Button fullWidth onClick={onConfirm} text="Yes" />
-              <Button fullWidth minimal onClick={onCancel} text="No" />
+              <Button fullWidth onClick={onConfirm} text={confirmText} />
+              <Button fullWidth minimal onClick={onCancel} text={cancelText} />
             </div>
           </motion.div>
         </motion.div>

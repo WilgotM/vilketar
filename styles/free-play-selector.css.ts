@@ -60,6 +60,49 @@ export const rootSelectorNav = style({
   width: "100%",
 });
 
+export const landingSelector = style({
+  display: "flex",
+  flexDirection: "column",
+  gap: vars.space.lg,
+  width: "100%",
+});
+
+export const categoryDropdown = style({
+  display: "flex",
+  flexDirection: "column",
+  gap: vars.space.md,
+  width: "100%",
+});
+
+export const categoryDropdownButton = style({
+  listStyle: "none",
+  selectors: {
+    "&::-webkit-details-marker": {
+      display: "none",
+    },
+  },
+});
+
+export const dropdownChevron = style({
+  borderBottom: "0.125rem solid currentColor",
+  borderRight: "0.125rem solid currentColor",
+  display: "inline-block",
+  height: "0.55rem",
+  transform: "rotate(45deg) translateY(-0.125rem)",
+  transition: `transform ${vars.duration.fast} ${vars.easing.standard}`,
+  width: "0.55rem",
+  selectors: {
+    [`${categoryDropdown}[open] &`]: {
+      transform: "rotate(225deg) translateY(-0.125rem)",
+    },
+  },
+});
+
+export const categoryDropdownPanel = style({
+  paddingTop: vars.space.md,
+  width: "100%",
+});
+
 export const selectorBody = style({
   width: "100%",
 });

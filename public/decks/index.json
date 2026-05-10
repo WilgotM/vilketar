@@ -1655,9 +1655,9 @@
     },
     {
       "difficultyCounts": {
-        "easy": 9,
-        "normal": 38,
-        "hard": 116
+        "easy": 162,
+        "normal": 458,
+        "hard": 535
       },
       "id": "all-sport",
       "minScore": 1000,
@@ -1667,15 +1667,28 @@
       "frequency": 0.1,
       "children": [
         {
+          "id": "all-sport-sportogonblick",
+          "slug": "sportogonblick",
+          "title": "Sportögonblick",
+          "themeHue": 144,
+          "frequency": 2.6,
+          "difficultyCounts": {
+            "easy": 147,
+            "normal": 413,
+            "hard": 413
+          },
+          "minScore": 1000
+        },
+        {
           "id": "all-sport-svensk-sport",
           "slug": "svensk-sport",
           "title": "Svensk sport",
           "themeHue": 120,
           "frequency": 2,
           "difficultyCounts": {
-            "easy": 1,
-            "normal": 2,
-            "hard": 3
+            "easy": 7,
+            "normal": 9,
+            "hard": 9
           },
           "minScore": 1000
         },

@@ -3,6 +3,7 @@ import ButtonLink from "./button-link";
 import PageShell from "./page-shell";
 import SiteFooter from "./site-footer";
 import SiteHero from "./site-hero";
+import * as buttonStyles from "../styles/button.css";
 import * as styles from "../styles/home-screen.css";
 
 function ScatterDots() {
@@ -139,6 +140,13 @@ export default function HomeScreen() {
                 href="/daily"
                 leadingIcon="play"
                 text="Dagens spel"
+              />
+              <ButtonLink
+                className={buttonStyles.swedishClassics}
+                fullWidth
+                href="/play/featured/svenska-klassiker"
+                leadingIcon="play"
+                text="Svenska klassiker"
               />
               <ButtonLink
                 fullWidth

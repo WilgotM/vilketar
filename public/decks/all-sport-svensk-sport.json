@@ -1,8 +1,8 @@
 [
   {
     "fact": "Sverige tar VM-brons i fotboll i USA.",
-    "image": "1994_FIFA_World_Cup.svg",
-    "pageViews": 300000,
+    "image": "",
+    "pageViews": 420000,
     "qid": "Q101751",
     "subtitle": "Svenskt fotbollsminne",
     "title": "Sverige tar VM-brons i fotboll",
@@ -10,9 +10,29 @@
     "year": 1994
   },
   {
-    "fact": "Tre Kronor tar OS-guld i ishockey i Lillehammer.",
-    "image": "",
-    "pageViews": 240000,
+    "fact": "Zlatan Ibrahimović lämnar Inter för Barcelona.",
+    "image": "Zlatan_Ibrahimović_June_2018.jpg",
+    "pageViews": 380000,
+    "qid": "Q46896",
+    "subtitle": "Svensk spelarövergång",
+    "title": "Zlatan går till Barcelona",
+    "wikipediaSlug": "Zlatan_Ibrahimovi%C4%87",
+    "year": 2009
+  },
+  {
+    "fact": "Sverige spelar VM-final i fotboll på Råsunda mot Brasilien.",
+    "image": "Pele_con_brasil_(cropped).jpg",
+    "pageViews": 360000,
+    "qid": "Q132533",
+    "subtitle": "Fotbolls-VM på hemmaplan",
+    "title": "Sverige spelar VM-final i fotboll",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1958",
+    "year": 1958
+  },
+  {
+    "fact": "Tre Kronor tar OS-guld i ishockey efter Peter Forsbergs berömda straff.",
+    "image": "Peter_Forsberg_2016-03-17_001_(cropped).jpg",
+    "pageViews": 320000,
     "qid": "Q653041",
     "subtitle": "Svenskt ishockeyminne",
     "title": "Tre Kronor tar OS-guld",
@@ -20,14 +40,54 @@
     "year": 1994
   },
   {
-    "qid": "Q46896",
-    "title": "Zlatan Ibrahimović föds",
-    "subtitle": "Svensk fotbollsspelare",
-    "year": 1981,
-    "fact": "Zlatan Ibrahimović föds.",
-    "wikipediaSlug": "Zlatan_Ibrahimovi%C4%87",
-    "image": "Zlatan Ibrahimović June 2018.jpg",
-    "pageViews": 65000
+    "fact": "Armand Duplantis sätter världsrekord i stavhopp.",
+    "image": "Armand_Duplantis_after_his_6.0_m_jump-1.jpg",
+    "pageViews": 300000,
+    "qid": "Q20740797",
+    "subtitle": "Svenskt friidrottsminne",
+    "title": "Duplantis sätter världsrekord",
+    "wikipediaSlug": "Armand_Duplantis",
+    "year": 2020
+  },
+  {
+    "fact": "Sarah Sjöström vinner OS-guld på 100 meter fjärilsim.",
+    "image": "Sarah_Sjöström_2013.jpg",
+    "pageViews": 260000,
+    "qid": "Q235315",
+    "subtitle": "Svenskt simminne",
+    "title": "Sarah Sjöström vinner OS-guld",
+    "wikipediaSlug": "Sarah_Sj%C3%B6str%C3%B6m",
+    "year": 2016
+  },
+  {
+    "fact": "Sverige tar OS-guld i ishockey i Turin med flera NHL-stjärnor i laget.",
+    "image": "Henrik_Lundqvist_awarded_as_the_best_goalie_of_all_time_in_Swedish_hockey-2.jpg",
+    "pageViews": 250000,
+    "qid": "Q362157",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Tre Kronor tar OS-guld igen",
+    "wikipediaSlug": "Henrik_Lundqvist",
+    "year": 2006
+  },
+  {
+    "fact": "Sverige tar silver i damernas fotbolls-VM efter final mot Tyskland.",
+    "image": "Victoria_Svensson.jpg",
+    "pageViews": 240000,
+    "qid": "Q500308",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Sverige spelar VM-final i damfotboll",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2003",
+    "year": 2003
+  },
+  {
+    "fact": "Carolina Klüft vinner OS-guld i sjukamp i Aten.",
+    "image": "Carolina_Klüft_in_2025-4-2.jpg",
+    "pageViews": 220000,
+    "qid": "Q223672",
+    "subtitle": "Svensk friidrottsklassiker",
+    "title": "Carolina Klüft vinner OS-guld",
+    "wikipediaSlug": "Carolina_Kl%C3%BCft",
+    "year": 2004
   },
   {
     "qid": "Q272786",
@@ -88,16 +148,6 @@
     "wikipediaSlug": "Sarah_Sj%C3%B6str%C3%B6m",
     "image": "Sarah Sjöström 2015.jpg",
     "pageViews": 24000
-  },
-  {
-    "qid": "Q270414",
-    "title": "Carolina Klüft vinner OS-guld",
-    "subtitle": "Svensk friidrottare",
-    "year": 2004,
-    "fact": "Carolina Klüft vinner OS-guld.",
-    "wikipediaSlug": "Carolina_Kl%C3%BCft",
-    "image": "Carolina Kluft 2007 Osaka.jpg",
-    "pageViews": 22000
   },
   {
     "qid": "Q106581",

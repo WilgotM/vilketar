@@ -1,4 +1,6 @@
 import { style } from "@vanilla-extract/css";
+import { zIndex } from "./foundation";
+import { vars } from "./theme.css";
 
 export const page = style({
   display: "flex",
@@ -22,4 +24,17 @@ export const boardFrame = style({
   minHeight: 0,
   position: "relative",
   width: "100%",
+});
+
+export const gameControls = style({
+  left: vars.space.lg,
+  position: "absolute",
+  top: vars.space.lg,
+  zIndex: zIndex.overlay,
+});
+
+export const leaveButton = style({
+  minHeight: "40px",
+  paddingLeft: vars.space.lg,
+  paddingRight: vars.space.lg,
 });

@@ -102,7 +102,6 @@ function SelectorList(props: {
     featuredItems = [],
     items,
     onSelectPlayRoute,
-    onSelectRootView,
     rootView = "browse",
     showAllButton = true,
   } = props;
@@ -115,34 +114,37 @@ function SelectorList(props: {
   return (
     <div className={styles.transitionSection}>
       {showLandingActions ? (
-        <div className={styles.rootSelectorNav}>
+        <div className={styles.landingSelector}>
           <AllCategoryLink
             href={allHref}
             onSelectPlayRoute={onSelectPlayRoute}
             selectionRoute={allSelectionRoute}
           />
-          <button
-            className={classNames(
-              buttonStyles.button,
-              buttonStyles.fullWidth,
-              buttonStyles.minimal,
-            )}
-            onClick={() => onSelectRootView?.("featured")}
-            type="button"
-          >
-            Utvalt
-          </button>
-          <button
-            className={classNames(
-              buttonStyles.button,
-              buttonStyles.fullWidth,
-              buttonStyles.minimal,
-            )}
-            onClick={() => onSelectRootView?.("browse")}
-            type="button"
-          >
-            Bläddra
-          </button>
+          <div className={styles.selectorBody}>
+            <SelectorOptionGrid
+              items={featuredItems}
+              onSelectPlayRoute={onSelectPlayRoute}
+            />
+          </div>
+          <details className={styles.categoryDropdown}>
+            <summary
+              className={classNames(
+                buttonStyles.button,
+                buttonStyles.fullWidth,
+                buttonStyles.minimal,
+                styles.categoryDropdownButton,
+              )}
+            >
+              <span>Alla kategorier</span>
+              <span aria-hidden="true" className={styles.dropdownChevron} />
+            </summary>
+            <div className={styles.categoryDropdownPanel}>
+              <SelectorOptionGrid
+                items={items}
+                onSelectPlayRoute={onSelectPlayRoute}
+              />
+            </div>
+          </details>
         </div>
       ) : null}
       {showFeaturedView ? (

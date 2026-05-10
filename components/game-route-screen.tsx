@@ -1,3 +1,5 @@
+import classNames from "classnames";
+import { useRouter } from "next/router";
 import React from "react";
 import { getSelectionRoutePath } from "../lib/categories";
 import { DAILY_DIFFICULTY, getCurrentUtcDateKey } from "../lib/daily";
@@ -29,11 +31,13 @@ import { useNavigationSource } from "./navigation-source-provider";
 import QuitGameModal from "./quit-game-modal";
 import RouteIntroScreen from "./route-intro-screen";
 import SiteHeader from "./site-header";
+import * as buttonStyles from "../styles/button.css";
 import * as styles from "../styles/game-route-screen.css";
 
 interface Props {
   hideHeader?: boolean;
   mode: GameMode;
+  onQuitGame?: () => void;
   onResetGame?: () => void;
   selectionRoute?: SelectionRoute;
   skipRouteIntro?: boolean;
@@ -88,16 +92,19 @@ export default function GameRouteScreen(props: Props) {
   const {
     hideHeader = false,
     mode,
+    onQuitGame,
     onResetGame,
     selectionRoute,
     skipRouteIntro = false,
   } = props;
+  const router = useRouter();
   const [fontsReady, setFontsReady] = React.useState(false);
   const [state, setState] = React.useState<GameState | null>(null);
   const [stateReady, setStateReady] = React.useState(false);
   const [runNonce, setRunNonce] = React.useState(0);
   const [highscore, setHighscore] = React.useState(0);
   const [entryReady, setEntryReady] = React.useState(false);
+  const [quitPromptOpen, setQuitPromptOpen] = React.useState(false);
   const [showRouteIntro, setShowRouteIntro] = React.useState(false);
   const [restoredFromSnapshot, setRestoredFromSnapshot] = React.useState(false);
   const freePlayDifficulty = useFreePlayDifficulty();
@@ -383,11 +390,55 @@ export default function GameRouteScreen(props: Props) {
     fontsReady &&
     state !== null &&
     state.lives > 0;
+  const quitModalCopy =
+    mode === "daily"
+      ? {
+          body: "Dagens spel sparas resten av dagen, så du kan fortsätta senare.",
+          confirmText: "Lämna och fortsätt senare",
+        }
+      : {
+          body: "Du förlorar framstegen i den här rundan.",
+          confirmText: "Lämna",
+        };
 
   const backConfirmation = useBackConfirmation({
     enabled: shouldConfirmBeforeQuit,
-    onConfirmExit: resetGame,
+    onConfirmExit: mode === "daily" ? () => undefined : resetGame,
   });
+
+  const requestQuitGame = React.useCallback(() => {
+    if (shouldConfirmBeforeQuit) {
+      setQuitPromptOpen(true);
+      return;
+    }
+
+    if (onQuitGame) {
+      onQuitGame();
+      return;
+    }
+
+    resetGame();
+  }, [onQuitGame, resetGame, shouldConfirmBeforeQuit]);
+
+  const cancelQuitGame = React.useCallback(() => {
+    setQuitPromptOpen(false);
+  }, []);
+
+  const confirmQuitGame = React.useCallback(() => {
+    setQuitPromptOpen(false);
+
+    if (onQuitGame) {
+      onQuitGame();
+      return;
+    }
+
+    if (mode === "daily") {
+      void router.push("/");
+      return;
+    }
+
+    resetGame();
+  }, [mode, onQuitGame, resetGame, router]);
 
   const updateHighscore = React.useCallback(
     (score: number) => {
@@ -431,6 +482,19 @@ export default function GameRouteScreen(props: Props) {
     return (
       <div className={styles.pageWithoutHeader}>
         <div className={styles.boardFrame}>
+          <div className={styles.gameControls}>
+            <button
+              className={classNames(
+                buttonStyles.button,
+                buttonStyles.minimal,
+                styles.leaveButton,
+              )}
+              onClick={requestQuitGame}
+              type="button"
+            >
+              Lämna
+            </button>
+          </div>
           <Board
             key={`${routePath}:${runNonce}`}
             dailyDateKey={mode === "daily" ? dateKey : undefined}
@@ -449,6 +513,13 @@ export default function GameRouteScreen(props: Props) {
             onCancel={backConfirmation.cancelNavigation}
             onConfirm={backConfirmation.confirmNavigation}
             open={backConfirmation.isPromptOpen}
+            {...quitModalCopy}
+          />
+          <QuitGameModal
+            onCancel={cancelQuitGame}
+            onConfirm={confirmQuitGame}
+            open={quitPromptOpen}
+            {...quitModalCopy}
           />
         </div>
       </div>
@@ -459,6 +530,19 @@ export default function GameRouteScreen(props: Props) {
     <div className={styles.page}>
       <SiteHeader />
       <div className={styles.boardFrame}>
+        <div className={styles.gameControls}>
+          <button
+            className={classNames(
+              buttonStyles.button,
+              buttonStyles.minimal,
+              styles.leaveButton,
+            )}
+            onClick={requestQuitGame}
+            type="button"
+          >
+            Lämna
+          </button>
+        </div>
         <Board
           key={`${routePath}:${runNonce}`}
           dailyDateKey={mode === "daily" ? dateKey : undefined}
@@ -477,6 +561,13 @@ export default function GameRouteScreen(props: Props) {
           onCancel={backConfirmation.cancelNavigation}
           onConfirm={backConfirmation.confirmNavigation}
           open={backConfirmation.isPromptOpen}
+          {...quitModalCopy}
+        />
+        <QuitGameModal
+          onCancel={cancelQuitGame}
+          onConfirm={confirmQuitGame}
+          open={quitPromptOpen}
+          {...quitModalCopy}
         />
       </div>
     </div>

@@ -1,0 +1,953 @@
+# Image Reveal Audit Report
+
+This report lists cards where the image filename contains a year that might reveal the answer or cause confusion.
+
+## Critical Reveals (302)
+The image filename contains the exact year of the event.
+
+| Deck | Title | Year | Image Filename |
+| :--- | :--- | :--- | :--- |
+| all-entertainment-books.json | ”Frankenstein” ges ut | 1818 | `Christie's_auction_scan_of_Frankenstein_1818.jpg` |
+| all-entertainment-books.json | ”Den store Gatsby” ges ut | 1925 | `The_Great_Gatsby_Cover_1925_Retouched.jpg` |
+| all-entertainment-books.json | ”Lolita” ges ut | 1955 | `Lolita_1955.JPG` |
+| all-entertainment-books.json | ”Hundra år av ensamhet” ges ut | 1967 | `Cien_años_de_soledad_(book_cover,_1967).jpg` |
+| all-entertainment-books.json | ”Mannen i det höga slottet” ges ut | 1962 | `The_Man_in_the_High_Castle_(1962).jpg` |
+| all-entertainment-books.json | ”Räddaren i nöden” ges ut | 1951 | `The_Catcher_in_the_Rye_(1951,_first_edition_cover).jpg` |
+| all-entertainment-books.json | ”Krig och fred” ges ut | 1869 | `Tolstoy_-_War_and_Peace_-_first_edition,_1869.jpg` |
+| all-entertainment-books.json | ”De sju urens mysterium” ges ut | 1929 | `The_Seven_Dials_Mystery_First_Edition_Cover_1929.jpg` |
+| all-entertainment-books.json | ”Skattkammarön” ges ut | 1883 | `Treasure_Island_(title_page,_1883).webp` |
+| all-entertainment-books.json | ”Och världen skälvde” ges ut | 1957 | `Atlas_Shrugged_(1957_1st_ed)_-_Ayn_Rand.jpg` |
+| all-sport-sportogonblick.json | Bolt tar sitt sista OS-guld | 2016 | `Usain_Bolt_Rio_100m_final_2016k.jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Aten | 1896 | `Commemorative_album_of_1896_Olympic_Games_-_cover_by_E._Gilliéron.jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Paris | 1900 | `1900_Olympic_Games_Poster_Paris.jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Saint Louis | 1904 | `1904summerolympicsposter.jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i London | 1908 | `Olympic_games_1908_London.jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Stockholm | 1912 | `1912_Summer_Olympics_poster_(cropped).jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Antwerpen | 1920 | `1920_olympics_poster.jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Paris | 1924 | `1924_Summer_Olympics_logo.svg` |
+| all-sport-sportogonblick.json | Vinter-OS hålls i Chamonix | 1924 | `1924WOlympicPoster.jpg` |
+| all-sport-sportogonblick.json | Uruguay vinner fotbolls-VM | 1930 | `Uruguay goal v argentina 1930.jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Los Angeles | 1932 | `1932_Summer_Olympics_logo.svg` |
+| all-sport-sportogonblick.json | Italien vinner fotbolls-VM | 1934 | `1934_fifa_worldcup_poster.jpg` |
+| all-sport-sportogonblick.json | Italien vinner fotbolls-VM | 1938 | `1938_fifa_worldcup_poster.jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i London | 1948 | `100_metres_final,_London,_1948._(7649951752).jpg` |
+| all-sport-sportogonblick.json | Uruguay vinner fotbolls-VM | 1950 | `Uruguay gol schiaffino 1950.jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Helsingfors | 1952 | `Olympia-1952.jpg` |
+| all-sport-sportogonblick.json | Brasilien vinner fotbolls-VM | 1958 | `Winning brazilian National team 1958.jpg` |
+| all-sport-sportogonblick.json | Brasilien vinner fotbolls-VM | 1962 | `FIFA_World_Cup_1962_teams.jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Tokyo | 1964 | `Tokyo_1964_Summer_Olympics_logo.svg` |
+| all-sport-sportogonblick.json | Vinter-OS hålls i Innsbruck | 1964 | `1964_Winter_Olympics_logo.svg` |
+| all-sport-sportogonblick.json | Spanien vinner fotbolls-EM | 1964 | `Euro 1964.png` |
+| all-sport-sportogonblick.json | England vinner fotbolls-VM | 1966 | `World_Cup_Ball_1966.jpg` |
+| all-sport-sportogonblick.json | Vinter-OS hålls i Grenoble | 1968 | `Stade_olympique_-_Grenoble_1968.jpg` |
+| all-sport-sportogonblick.json | Italien vinner fotbolls-EM | 1968 | `UEFA Euro 1968 Final - Italian captain Giacinto Facchetti with the trophy.jpg` |
+| all-sport-sportogonblick.json | Brasilien vinner fotbolls-VM | 1970 | `Pele celebrating 1970.jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i München | 1972 | `1972_Summer_Olympics_logo.svg` |
+| all-sport-sportogonblick.json | Tyskland vinner fotbolls-EM | 1972 | `Euro 1972.png` |
+| all-sport-sportogonblick.json | Tyskland vinner fotbolls-VM | 1974 | `FIFA_World_Cup_1974_-_emblem.svg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Montréal | 1976 | `1976_Summer_Olympics_logo.svg` |
+| all-sport-sportogonblick.json | Argentina vinner fotbolls-VM | 1978 | `1978_world_cup.png` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Moskva | 1980 | `Emblem_of_the_1980_Summer_Olympics.svg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Los Angeles | 1984 | `Olympic_boycotts_1976_1980_1984.PNG` |
+| all-sport-sportogonblick.json | Vinter-OS hålls i Sarajevo | 1984 | `1984_Winter_Olympics_logo.svg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Seoul | 1988 | `1988年夏季オリンピックエンブレム.png` |
+| all-sport-sportogonblick.json | Brasilien vinner fotbolls-VM | 1994 | `1994_FIFA_World_Cup.svg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Sydney | 2000 | `2000_Summer_Olympics_textlogo.svg` |
+| all-sport-sportogonblick.json | Frankrike vinner fotbolls-EM | 2000 | `Italy_-_France,_2_July_2000.jpg` |
+| all-sport-sportogonblick.json | Vinter-OS hålls i Salt Lake City | 2002 | `2002_Winter_Olympics_logo.svg` |
+| all-sport-sportogonblick.json | Brasilien vinner fotbolls-VM | 2002 | `RR5216-0034R_Чемпионат_мира_по_футболу_2002_г.gif` |
+| all-sport-sportogonblick.json | AC Milan vinner Champions League | 2003 | `A.C._Milan_lifting_the_European_Cup_after_winning_the_2002–03_UEFA_Champions_League_-_20030528.jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Aten | 2004 | `2004_Summer_Olympics_logo.svg` |
+| all-sport-sportogonblick.json | Grekland vinner fotbolls-EM | 2004 | `Euro2004OpeningCeremony.jpg` |
+| all-sport-sportogonblick.json | Liverpool FC vinner Champions League | 2005 | `2005 European Champion Clubs' Cup (cropped).jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Peking | 2008 | `Olimpicos_Beijing_2008.jpg` |
+| all-sport-sportogonblick.json | Spanien vinner fotbolls-EM | 2008 | `UEFA_EURO_2008_logo.svg` |
+| all-sport-sportogonblick.json | FC Barcelona vinner Champions League | 2009 | `002_men_at_work_UEFA_2009,_Rome.jpg` |
+| all-sport-sportogonblick.json | Spanien vinner fotbolls-VM | 2010 | `FIFA_World_Cup_2010_Argentina_South_Korea.jpg` |
+| all-sport-sportogonblick.json | FC Barcelona vinner Champions League | 2011 | `FC_Barcelona_flag_UEFA_Champions_League_Final_2011.jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i London | 2012 | `2012_Summer_Olympics_text_logo.svg` |
+| all-sport-sportogonblick.json | Spanien vinner fotbolls-EM | 2012 | `UEFA_Euro_2012_logo.svg` |
+| all-sport-sportogonblick.json | Chelsea FC vinner Champions League | 2012 | `Chelsea_Champions_League_Winners_2012.jpg` |
+| all-sport-sportogonblick.json | Tyskland vinner fotbolls-VM | 2014 | `Alemanha-campea20140713 0007.jpg` |
+| all-sport-sportogonblick.json | Real Madrid vinner Champions League-finalen | 2014 | `Final Champions League 2014 Real Madrid - Atlético de Madrid (14081181609).jpg` |
+| all-sport-sportogonblick.json | FC Barcelona vinner Champions League-finalen | 2015 | `Moment of the Champions League final FC Barcelona - Juventus 2015.jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Rio de Janeiro | 2016 | `Rio_2016_logo.svg` |
+| all-sport-sportogonblick.json | Portugal vinner fotbolls-EM | 2016 | `UEFA_Euro_2016_logo.svg` |
+| all-sport-sportogonblick.json | Vinter-OS hålls i Pyeongchang | 2018 | `Pyeongchang_2018_Logo.svg` |
+| all-sport-sportogonblick.json | Liverpool FC vinner Champions League | 2019 | `LFC_Parade_2019_01.jpg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Tokyo | 2020 | `2020_Summer_Olympics_text_logo.svg` |
+| all-sport-sportogonblick.json | Italien vinner fotbolls-EM | 2020 | `UEFA_Euro_2020_logo.svg` |
+| all-sport-sportogonblick.json | Vinter-OS hålls i Peking | 2022 | `2022_Winter_Olympics_logo.svg` |
+| all-sport-sportogonblick.json | Sommar-OS hålls i Paris | 2024 | `2024_Summer_Olympics_text_logo.svg` |
+| all-sport-sportogonblick.json | Spanien vinner fotbolls-EM | 2024 | `UEFA_Euro_2024_logo.svg` |
+| all-sport-sportogonblick.json | Vinter-OS hålls i Milano-Cortina | 2026 | `2026_Winter_Olympics_logo.svg` |
+| all-sport-sportogonblick.json | Keke Rosberg vinner Formel 1-VM | 1982 | `1982WilliamsCosworthFW08.jpg` |
+| all-sport-sportogonblick.json | Nelson Piquet vinner Formel 1-VM | 1983 | `Tyrrell 011 1983.jpg` |
+| all-sport-sportogonblick.json | Sverige vinner damernas fotbolls-EM | 1984 | `European_Competition_for_Women's_Football_1984_map.svg` |
+| all-sport-sportogonblick.json | Bernard Hinault vinner Tour de France | 1985 | `Route_of_the_1985_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Greg LeMond vinner Tour de France | 1986 | `Route_of_the_1986_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Norge vinner damernas fotbolls-EM | 1987 | `European_Competition_for_Women's_Football_1987_map.svg` |
+| all-sport-sportogonblick.json | Stephen Roche vinner Tour de France | 1987 | `Route_of_the_1987_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Pedro Delgado vinner Tour de France | 1988 | `Route_of_the_1988_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Alain Prost vinner Formel 1-VM | 1989 | `Formula_1,_GP_San_Marino_1989,_Imola,_Prost_e_Senna.jpg` |
+| all-sport-sportogonblick.json | Greg LeMond vinner Tour de France | 1989 | `Route_of_the_1989_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Ayrton Senna vinner Formel 1-VM | 1990 | `Alain_Prost_1990_Canada.jpg` |
+| all-sport-sportogonblick.json | Greg LeMond vinner Tour de France | 1990 | `Route_of_the_1990_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Tyskland vinner damernas fotbolls-EM | 1991 | `UEFA_Women's_Euro_1991_map.svg` |
+| all-sport-sportogonblick.json | Ayrton Senna vinner Formel 1-VM | 1991 | `Start_1991_USA.jpg` |
+| all-sport-sportogonblick.json | Miguel Indurain vinner Tour de France | 1991 | `Route_of_the_1991_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Nigel Mansell vinner Formel 1-VM | 1992 | `Ayrton_Senna_1992_Monaco.jpg` |
+| all-sport-sportogonblick.json | Miguel Indurain vinner Tour de France | 1992 | `Route_of_the_1992_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Miguel Indurain vinner Tour de France | 1993 | `Route_of_the_1993_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Michael Schumacher vinner Formel 1-VM | 1994 | `Michael Schumacher Benetton 1994 (cropped).jpg` |
+| all-sport-sportogonblick.json | Miguel Indurain vinner Tour de France | 1994 | `Route_of_the_1994_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Michael Schumacher vinner Formel 1-VM | 1995 | `Michael_Schumacher_-_Benetton_B195_at_the_1995_British_Grand_Prix,_Silverstone_(49721140107).jpg` |
+| all-sport-sportogonblick.json | Miguel Indurain vinner Tour de France | 1995 | `Route_of_the_1995_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Bjarne Riis vinner Tour de France | 1996 | `Route_of_the_1996_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Jacques Villeneuve vinner Formel 1-VM | 1997 | `Williams_FW19_Great-Britain_1997.jpg` |
+| all-sport-sportogonblick.json | Jan Ullrich vinner Tour de France | 1997 | `Route_of_the_1997_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Mika Häkkinen vinner Formel 1-VM | 1998 | `DC&MSch_Britain_1998.jpg` |
+| all-sport-sportogonblick.json | Marco Pantani vinner Tour de France | 1998 | `Route_of_the_1998_Tour_de_France.png` |
+| all-sport-sportogonblick.json | USA vinner damernas fotbolls-VM | 1999 | `Logo_1999_FIFA_Women's_World_Cup.svg` |
+| all-sport-sportogonblick.json | Mika Häkkinen vinner Formel 1-VM | 1999 | `Mika_Hakkinen_1999_Canada.jpg` |
+| all-sport-sportogonblick.json | not attributed vinner Tour de France | 1999 | `Route_of_the_1999_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Michael Schumacher vinner Formel 1-VM | 2000 | `Start_of_2000_United_States_Grand_Prix_at_Indianapolis_from_Tower_Terrace_grandstand.jpg` |
+| all-sport-sportogonblick.json | not attributed vinner Tour de France | 2000 | `Route_of_the_2000_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Michael Schumacher vinner Formel 1-VM | 2001 | `First_lap_2001_Canada.jpg` |
+| all-sport-sportogonblick.json | not attributed vinner Tour de France | 2001 | `Route_of_the_2001_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Michael Schumacher vinner Formel 1-VM | 2002 | `2002_Austrian_GP.jpg` |
+| all-sport-sportogonblick.json | not attributed vinner Tour de France | 2002 | `Route_of_the_2002_Tour_de_France.png` |
+| all-sport-sportogonblick.json | not attributed vinner Tour de France | 2003 | `Route_of_the_2003_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Michael Schumacher vinner Formel 1-VM | 2004 | `Jarno_Trulli_-_Renault_R24_leads_David_Coulthard_-_Mclaren_MP4-19B,Takuma_Sato_-_BAR006_&_Montoya_at_Brooklands_at_the_2004_British_Grand_Prix_(50834708718).jpg` |
+| all-sport-sportogonblick.json | not attributed vinner Tour de France | 2004 | `Route_of_the_2004_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Fernando Alonso vinner Formel 1-VM | 2005 | `Lap4_Canada2005.jpg` |
+| all-sport-sportogonblick.json | not attributed vinner Tour de France | 2005 | `Route_of_the_2005_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Fernando Alonso vinner Formel 1-VM | 2006 | `Start_China_2006.jpg` |
+| all-sport-sportogonblick.json | Oscar Pereiro vinner Tour de France | 2006 | `Tour_de_France_2006-fr.png` |
+| all-sport-sportogonblick.json | Pittsburgh Steelers vinner Super Bowl | 2006 | `Ford-Field-September-10-2006.jpg` |
+| all-sport-sportogonblick.json | Tyskland vinner damernas fotbolls-VM | 2007 | `Roemerbalkon-weltmeisterinnen-empfang2007-001.jpg` |
+| all-sport-sportogonblick.json | Kimi Räikkönen vinner Formel 1-VM | 2007 | `PartenzaGPAustralia2007.jpg` |
+| all-sport-sportogonblick.json | Alberto Contador vinner Tour de France | 2007 | `Tour_de_France_2007.png` |
+| all-sport-sportogonblick.json | Lewis Hamilton vinner Formel 1-VM | 2008 | `Start_2008_Belgium.jpg` |
+| all-sport-sportogonblick.json | Carlos Sastre vinner Tour de France | 2008 | `Route_of_the_2008_Tour_de_France.png` |
+| all-sport-sportogonblick.json | New York Giants vinner Super Bowl | 2008 | `Super Bowl 2008 - XLII with Mike Vrabel.JPG` |
+| all-sport-sportogonblick.json | Franska öppna avgörs | 2008 | `Ana Ivanovic en quart de finale à Roland Garros 2008 (3).jpg` |
+| all-sport-sportogonblick.json | US Open avgörs | 2008 | `Roger Federer wins the US Open 2008 1.jpg` |
+| all-sport-sportogonblick.json | Tyskland vinner damernas fotbolls-EM | 2009 | `UEFA_Women's_Euro_2009_final_(ceremony_before_the_match).jpg` |
+| all-sport-sportogonblick.json | Jenson Button vinner Formel 1-VM | 2009 | `2009_Japanese_GP_opening_lap.jpg` |
+| all-sport-sportogonblick.json | Alberto Contador vinner Tour de France | 2009 | `Carte_Tour_de_France_2009.png` |
+| all-sport-sportogonblick.json | Australian Open avgörs | 2009 | `Nadal_Miami_2009_3.jpg` |
+| all-sport-sportogonblick.json | Franska öppna avgörs | 2009 | `Roger_Federer_at_the_2009_French_Open_10_cropped.jpg` |
+| all-sport-sportogonblick.json | US Open avgörs | 2009 | `Juan Martín del Potro at the 2009 US Open 03.jpg` |
+| all-sport-sportogonblick.json | Wimbledon avgörs | 2009 | `Centre Court Wimbledon 2009.JPG` |
+| all-sport-sportogonblick.json | Sebastian Vettel vinner Formel 1-VM | 2010 | `2010_Malaysian_GP_opening_lap.jpg` |
+| all-sport-sportogonblick.json | Andy Schleck vinner Tour de France | 2010 | `Route_of_the_2010_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Australian Open avgörs | 2010 | `Roger_Federer_at_the_2010_US_Open_06.jpg` |
+| all-sport-sportogonblick.json | US Open avgörs | 2010 | `US Open Tennis 2010 1st Round 192.jpg` |
+| all-sport-sportogonblick.json | Japan vinner damernas fotbolls-VM | 2011 | `Women's world cup 2011 North Korea - Colombia.jpg` |
+| all-sport-sportogonblick.json | Sebastian Vettel vinner Formel 1-VM | 2011 | `Sebastian_Vettel_2011_Malaysia_FP1_2.jpg` |
+| all-sport-sportogonblick.json | Cadel Evans vinner Tour de France | 2011 | `Route_of_the_2011_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Sebastian Vettel vinner Formel 1-VM | 2012 | `2012_Malaysian_GP_opening_lap.jpg` |
+| all-sport-sportogonblick.json | Bradley Wiggins vinner Tour de France | 2012 | `Route_of_the_2012_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Atlético Madrid vinner Europa League | 2012 | `2012 Europa League Final.jpg` |
+| all-sport-sportogonblick.json | Sebastian Vettel vinner Formel 1-VM | 2013 | `F1_2013_Belgian_Grand_Prix_-_Start.jpg` |
+| all-sport-sportogonblick.json | Chris Froome vinner Tour de France | 2013 | `Route_of_the_2013_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Lewis Hamilton vinner Formel 1-VM | 2014 | `First_lap_2014_Bahrain_Grand_Prix_(3).jpg` |
+| all-sport-sportogonblick.json | Vincenzo Nibali vinner Tour de France | 2014 | `Route_of_the_2014_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Lewis Hamilton vinner Formel 1-VM | 2015 | `2015_Malaysian_GP_opening_lap.jpg` |
+| all-sport-sportogonblick.json | Chris Froome vinner Tour de France | 2015 | `Tour_de_France_2015_map-fr.svg` |
+| all-sport-sportogonblick.json | Nico Rosberg vinner Formel 1-VM | 2016 | `Formula_1_2016_-i---i-_(30063705664).jpg` |
+| all-sport-sportogonblick.json | Chris Froome vinner Tour de France | 2016 | `Tour de France 2016, Stage 18, Chris Froome.jpg` |
+| all-sport-sportogonblick.json | Nederländerna vinner damernas fotbolls-EM | 2017 | `Textlogo_UEFA_Women’s_Euro_2017.svg` |
+| all-sport-sportogonblick.json | Chris Froome vinner Tour de France | 2017 | `2017_Tour_de_France_map.png` |
+| all-sport-sportogonblick.json | USA vinner damernas fotbolls-VM | 2019 | `Cérémonie_d'ouverture_Coupe_du_monde_de_football_2019_(01).jpg` |
+| all-sport-sportogonblick.json | Lewis Hamilton vinner Formel 1-VM | 2019 | `FIA F1 Austria 2019 Nr. 10 Gasly 2.jpg` |
+| all-sport-sportogonblick.json | Chelsea FC vinner Europa League | 2019 | `MFF-Sarpsborg_08_Europa_League_2018-2019.jpg` |
+| all-sport-sportogonblick.json | Franska öppna avgörs | 2019 | `Roland-Garros-2019 47.jpg` |
+| all-sport-sportogonblick.json | US Open avgörs | 2019 | `US OPEN 2019 (48667665777).jpg` |
+| all-sport-sportogonblick.json | Lewis Hamilton vinner Formel 1-VM | 2020 | `Valtteri_Bottas_2020_Tuscan_Grand_Prix_-_race_day.jpg` |
+| all-sport-sportogonblick.json | Marc Hirschi vinner Tour de France | 2020 | `Route_of_the_2020_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Australian Open avgörs | 2020 | `Australian Open 2020 (49836756523).jpg` |
+| all-sport-sportogonblick.json | Franska öppna avgörs | 2020 | `Carole Monnet RG2020.jpg` |
+| all-sport-sportogonblick.json | US Open avgörs | 2020 | `NaomiOsaka-smile-2020.png` |
+| all-sport-sportogonblick.json | Tadej Pogačar vinner Tour de France | 2021 | `2021_Tour_de_France_map.svg` |
+| all-sport-sportogonblick.json | Australian Open avgörs | 2021 | `NickAusOpen2021.jpg` |
+| all-sport-sportogonblick.json | England vinner damernas fotbolls-EM | 2022 | `UEFA_Women's_EURO_England_2022_logo_text.png` |
+| all-sport-sportogonblick.json | Jonas Vingegaard vinner Tour de France | 2022 | `Route_of_the_2022_Tour_de_France.png` |
+| all-sport-sportogonblick.json | Spanien vinner damernas fotbolls-VM | 2023 | `2023-07-07 Fussball, Frauen, Länderspiel, Deutschland - Sambia 1DX 6938 by Stepro.jpg` |
+| all-sport-sportogonblick.json | Australian Open avgörs | 2023 | `Bryan Brothers, Radek Štěpánek and Marcos Baghdatis in the Legends Mens Doubles Final at the 2023 Australian Open (52679822391).jpg` |
+| all-sport-sportogonblick.json | US Open avgörs | 2023 | `Albert Ramos Viñolas (2023 US Open) 04.jpg` |
+| all-sport-sportogonblick.json | Formel 1-VM avgörs | 2024 | `2024-08-25_Motorsport,_Formel_1,_Großer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_(medium_crop).jpg` |
+| all-sport-sportogonblick.json | England vinner damernas fotbolls-EM | 2025 | `Downing Street reception 28 July 2025 England women's football team 26.jpg` |
+| all-sport-sportogonblick.json | Ben Healy vinner Tour de France | 2025 | `Tour_de_France_2025_-_Étape_10_-_Départ_fictif_dans_une_seconde_2025-07-14_13-09-59_(raf_1).JPG` |
+| all-sport-sportogonblick.json | Alberto Ascari vinner Formel 1-VM | 1952 | `1952-09-07 GP Italia Monza Ferrari 500 F2 Villoresi Ascari.jpg` |
+| all-sport-sportogonblick.json | Jack Brabham vinner Formel 1-VM | 1966 | `BrabhamJack1966B.jpg` |
+| all-sport-sportogonblick.json | Niki Lauda vinner Formel 1-VM | 1975 | `1975 Italian GP - The new F1 Drivers' World Champion Niki Lauda on the podium.jpg` |
+| all-sport-sportogonblick.json | Q140393 vinner Formel 1-VM | 1976 | `James Hunt - Dutch GP 1976 crop mod.jpg` |
+| all-history-wars.json | kriget mellan Iran och Israel börjar | 2025 | `Israeli_Air_Force_fighter_jets_on_their_way_to_attack_Iran,_June_2025._II.jpg` |
+| all-history-wars.json | Irakkriget börjar | 2003 | `UStanks_baghdad_2003.JPEG` |
+| all-history-wars.json | Rysslands invasion av Ukraina 2022 börjar | 2022 | `2022_Russian_invasion_of_Ukraine.svg` |
+| all-history-wars.json | Kriget mellan Hamas och Israel börjar | 2023 | `October_2023_Gaza−Israel_conflict.svg` |
+| all-history-wars.json | Konflikten i Sudan 2023 börjar | 2023 | `War_in_Sudan_(2023).svg` |
+| all-people-famous-deaths-contemporary.json | Olof Palme mördas | 1986 | `Palme_Trauer_1986.jpg` |
+| all-people-famous-deaths-contemporary.json | Diogo Jota dör | 2025 | `Diogo_Jota_2025_Cropped.jpg` |
+| all-sweden.json | Olof Palme mördas | 1986 | `Palme_Trauer_1986.jpg` |
+| all-sweden.json | Sverige tar VM-brons i fotboll | 1994 | `1994_FIFA_World_Cup.svg` |
+| all-sweden.json | Högertrafiken införs | 1967 | `Kungsgatan_1967.jpg` |
+| all-sweden.json | ”Heroes” vinner Eurovision | 2015 | `20150516_ESC_2015_Måns_Zelmerlöw_9958.jpg` |
+| all-sweden.json | Gustav II Adolf | 1611 | `Attributed_to_Jacob_Hoefnagel_-_Gustavus_Adolphus,_King_of_Sweden_1611-1632_-_Google_Art_Project.jpg` |
+| all-swedish-classics-all.json | Olof Palme mördas | 1986 | `Palme_Trauer_1986.jpg` |
+| all-swedish-classics-all.json | Sverige tar VM-brons i fotboll | 1994 | `1994_FIFA_World_Cup.svg` |
+| all-swedish-classics-all.json | Högertrafiken införs | 1967 | `Kungsgatan_1967.jpg` |
+| all-swedish-classics-all.json | ”Heroes” vinner Eurovision | 2015 | `20150516_ESC_2015_Måns_Zelmerlöw_9958.jpg` |
+| all-leaders-politicians-americas-brazil.json | Jair Bolsonaro | 2019 | `Jair_Bolsonaro_2019_Portrait_(3x4_cropped).jpg` |
+| all-people-famous-deaths-early-modern.json | Ludvig XVI av Frankrike dör | 1793 | `Antoine-François_Callet_-_Louis_XVI,_roi_de_France_et_de_Navarre_(1754-1793),_revêtu_du_grand_costume_royal_en_1779_-_Google_Art_Project.jpg` |
+| all-people-famous-deaths-early-modern.json | Karl V dör | 1558 | `Portrait_of_Charles_V,_Holy_Roman_Emperor,_seated_(1500–1558),_formerly_attributed_to_Titian_(Alte_Pinakothek,_Munich).jpg` |
+| all-people-famous-deaths-early-modern.json | Ludvig XV av Frankrike dör | 1774 | `Louis_XV,_King_of_France_(1710-1774)_edited_2.jpg` |
+| all-people-famous-deaths-early-modern.json | Vilhelm III av England dör | 1702 | `King_William_III_of_England,_(1650-1702).jpg` |
+| all-people-famous-deaths-early-modern.json | Mary Wollstonecraft dör | 1797 | `Mary_Wollstonecraft_by_John_Opie_(c._1797).jpg` |
+| all-people-famous-deaths-early-modern.json | Vasco da Gama dör | 1525 | `Ignoto_portoghese,_ritratto_di_un_cavaliere_dell'ordine_di_cristo,_1525-50_ca._02.jpg` |
+| all-people-famous-deaths-early-modern.json | Henrik IV av Frankrike dör | 1610 | `Frans_Pourbus_the_Younger_(Antwerp_1569_-_Paris_1622)_-_Henri_IV,_King_of_France_(1553-1610)_-_RCIN_402972_-_Royal_Collection.jpg` |
+| all-entertainment-tv.json | ”True Detective” | 2014 | `True_Detective_2014_Intertitle.jpg` |
+| all-entertainment-tv.json | ”Shōgun” | 2024 | `Shōgun_(2024_miniseries)_poster.jpg` |
+| all-leaders-politicians-asia-israel.json | Ariel Sharon | 2001 | `Ariel_Sharon_official_portrait_2001.webp` |
+| all-leaders-politicians-asia-israel.json | Ehud Barak | 1999 | `Ehud_Barak_1999.jpg` |
+| all-entertainment-musicals.json | ”Cabaret” | 1966 | `Cabaret_1966_Musical_Poster.jpg` |
+| all-entertainment-musicals.json | ”The Phantom of the Opera” | 1986 | `The_Phantom_of_the_Opera_(1986_musical).jpg` |
+| all-history-revolts.json | Högertrafiken införs | 1967 | `Kungsgatan_1967.jpg` |
+| all-history-revolts.json | Nanjingmassakern äger rum | 1937 | `Nanking_bodies_1937.jpg` |
+| all-history-revolts.json | protesterna i Iran 2022 | 2022 | `Amir_Kabir_University_uprising_September_2022_(3).jpg` |
+| all-history-revolts.json | Ärorika revolutionen börjar | 1688 | `William_of_Orange_III_and_his_Dutch_army_land_in_Brixham,_1688.jpg` |
+| all-history-revolts.json | Oktoberrevolutionen börjar | 1917 | `After_the_capture_of_the_Winter_Palace_26_October_1917.jpg` |
+| all-leaders-politicians-americas-us.json | Ronald Reagan becomes president of the United States | 1981 | `Official_Portrait_of_President_Reagan_1981.jpg` |
+| all-sweden-allt.json | Olof Palme mördas | 1986 | `Palme_Trauer_1986.jpg` |
+| all-sweden-allt.json | Sverige tar VM-brons i fotboll | 1994 | `1994_FIFA_World_Cup.svg` |
+| all-sweden-allt.json | Högertrafiken införs | 1967 | `Kungsgatan_1967.jpg` |
+| all-sweden-allt.json | ”Heroes” vinner Eurovision | 2015 | `20150516_ESC_2015_Måns_Zelmerlöw_9958.jpg` |
+| all-sweden-allt.json | Gustav II Adolf | 1611 | `Attributed_to_Jacob_Hoefnagel_-_Gustavus_Adolphus,_King_of_Sweden_1611-1632_-_Google_Art_Project.jpg` |
+| all-entertainment-songs.json | ”Heroes” vinner Eurovision | 2015 | `20150516_ESC_2015_Måns_Zelmerlöw_9958.jpg` |
+| all-entertainment-songs.json | ”The Star-Spangled Banner” | 1814 | `Star_Spangled_Banner_(Carr)_(1814).png` |
+| all-technology-video-games.json | ”Resident Evil” släpps | 2002 | `Resident_Evil_2002_cover.jpg` |
+| all-technology-video-games.json | ”Resident Evil: Revelations” släpps | 2012 | `Resident_evil_rev._2012_Capcom.png` |
+| all-technology-video-games.json | ”Call of Duty: Modern Warfare” släpps | 2019 | `Call_of_Duty_Modern_Warfare_(2019)_cover.jpg` |
+| all-entertainment-music.json | ”Wish You Were Here” släpps | 1975 | `Pink_Floyd,_Wish_You_Were_Here_(1975).png` |
+| all-entertainment-music.json | ”Gorillaz” släpps | 2001 | `Gorillaz_2001_album.png` |
+| all-entertainment-plays.json | ”Mister Ernest” | 1895 | `Algy-and-Jack-1895.jpg` |
+| all-art-paintings.json | ”Flicka med pärlörhänge” | 1665 | `1665_Girl_with_a_Pearl_Earring.jpg` |
+| all-architecture-modern.json | Egyptiska museet öppnar | 1902 | `1897_bis_1902_wurde_das_Ägyptische_Museum_in_Kairo_gebaut._04.jpg` |
+| all-people-nobel-laureates-peace.json | Henry Kissinger får Nobels fredspris | 1973 | `Henry_A._Kissinger,_U.S._Secretary_of_State,_1973-1977.jpg` |
+| all-leaders-politicians-americas-canada.json | Mark Carney | 2025 | `2025-11-14_InaugurationREM_Deux-Montagnes_Mark_Carney.jpg` |
+| all-sport-svensk-sport.json | Sverige tar VM-brons i fotboll | 1994 | `1994_FIFA_World_Cup.svg` |
+| all-history-battles.json | Slaget vid Waterloo äger rum | 1815 | `Battle_of_Waterloo_1815.PNG` |
+| all-people-famous-deaths-modern.json | Edgar Allan Poe dör | 1849 | `Edgar_Allan_Poe,_circa_1849,_restored,_squared_off.jpg` |
+| all-people-famous-deaths-modern.json | Karl I av Österrike dör | 1922 | `Karl_I.,_Kaiser_von_Österreich_(1887-1922).jpg` |
+| all-people-famous-deaths-modern.json | Søren Kierkegaard dör | 1855 | `Søren_Kierkegaard_(1813-1855)_-_(cropped).jpg` |
+| all-people-famous-deaths-modern.json | Alexander I av Ryssland dör | 1825 | `Alexander_I_of_Russia_by_G.Dawe_(c._1818-1825,_Royal_coll._of_UK)_(cropped).jpg` |
+| all-people-famous-deaths-modern.json | Georg Wilhelm Friedrich Hegel dör | 1831 | `Jakob_Schlesinger_-_Hegel_1831.jpg` |
+| all-leaders-rulers-europe-scotland.json | Maria Stuart | 1542 | `François_Clouet_-_Mary,_Queen_of_Scots_(1542-87)_-_Google_Art_Project.jpg` |
+| all-entertainment-films.json | ”Dune” släpps | 2021 | `Dune_(2021_film).jpg` |
+| all-entertainment-films.json | ”Anora” släpps | 2024 | `Anora_(2024_film)_poster.jpg` |
+| all-entertainment-films.json | ”Scream” släpps | 1996 | `Scream_(1996_film)_poster.jpg` |
+| all-entertainment-films.json | ”Superman” släpps | 2025 | `Superman_(2025_film)_poster.jpg` |
+| all-entertainment-films.json | ”Titanic” släpps | 1997 | `Titanic_(1997_film)_poster.png` |
+| all-entertainment-films.json | ”Avatar” släpps | 2009 | `Avatar_(2009_film)_poster.jpg` |
+| all-entertainment-films.json | ”Pulp Fiction” släpps | 1994 | `Pulp_Fiction_(1994)_poster.jpg` |
+| all-entertainment-films.json | ”Argo” släpps | 2012 | `Argo2012Poster.jpg` |
+| all-entertainment-films.json | ”The Wolf of Wall Street” släpps | 2013 | `The_Wolf_of_Wall_Street_(2013).png` |
+| all-entertainment-films.json | ”Inception” släpps | 2010 | `Inception_(2010)_theatrical_poster.jpg` |
+| all-entertainment-films.json | ”Gladiator” släpps | 2000 | `Gladiator_(2000_film_poster).png` |
+| all-entertainment-films.json | ”Fargo” släpps | 1996 | `Fargo_(1996_movie_poster).jpg` |
+| all-entertainment-films.json | ”The Revenant” släpps | 2015 | `The_Revenant_2015_film_poster.jpg` |
+| all-entertainment-films.json | ”The Dark Knight” släpps | 2008 | `The_Dark_Knight_(2008_film).jpg` |
+| all-entertainment-films.json | ”Blade Runner” släpps | 1982 | `Blade_Runner_(1982_poster).png` |
+| all-entertainment-films.json | ”Barbie” släpps | 2023 | `Barbie_2023_poster.jpg` |
+| all-entertainment-films.json | ”Call Me by Your Name” släpps | 2017 | `CallMeByYourName2017.png` |
+| all-entertainment-films.json | ”Green Book” släpps | 2018 | `Green_Book_(2018_poster).png` |
+| all-entertainment-films.json | ”Parasit” släpps | 2019 | `Parasite_(2019_film).png` |
+| all-entertainment-films.json | ”Niceville” släpps | 2011 | `The_Help_(2011_film).jpg` |
+| all-entertainment-films.json | ”Stjärnornas krig” släpps | 1977 | `StarWarsMoviePoster1977.jpg` |
+| all-entertainment-films.json | ”The Shining” släpps | 1980 | `The_Shining_(1980)_U.K._release_poster_-_The_tide_of_terror_that_swept_America_IS_HERE.jpg` |
+| all-entertainment-films.json | ”Bilar” släpps | 2006 | `Cars_2006.jpg` |
+| all-entertainment-films.json | ”Gladiator 2” släpps | 2024 | `Gladiator_II_(2024)_poster.jpg` |
+| all-entertainment-films.json | ”A Clockwork Orange” släpps | 1971 | `A_Clockwork_Orange_(1971).png` |
+| all-entertainment-films.json | ”Dolda tillgångar” släpps | 2016 | `The_official_poster_for_the_film_Hidden_Figures,_2016.jpg` |
+| all-entertainment-films.json | ”The Big Short” släpps | 2015 | `The_Big_Short_(2015_film_poster).png` |
+| all-entertainment-films.json | ”Lida” släpps | 1990 | `Misery_(1990_film_poster).png` |
+| all-entertainment-films.json | ”Spider-Man” släpps | 2002 | `Spider-Man_(2002_film)_poster.jpg` |
+| all-entertainment-films.json | ”Don't Look Up” släpps | 2021 | `Don't_Look_Up_2021_film.jpg` |
+| all-entertainment-films.json | ”Mamma Mia!” släpps | 2008 | `Mamma_Mia_(2008)_US_poster.jpg` |
+| all-entertainment-films.json | ”Taxi Driver” släpps | 1976 | `Taxi_Driver_(1976_film_poster).jpg` |
+| all-entertainment-films.json | ”Det” släpps | 2017 | `It_(2017)_poster.jpg` |
+| all-entertainment-films.json | ”Catch Me If You Can” släpps | 2002 | `Catch_Me_If_You_Can_2002_movie.jpg` |
+| all-entertainment-films.json | ”The Thing” släpps | 1982 | `The_Thing_(1982_film).png` |
+| all-entertainment-films.json | ”Casino Royale” släpps | 2006 | `Casino_Royale_(2006_film_poster).jpg` |
+| all-entertainment-films.json | ”American Beauty” släpps | 1999 | `American_Beauty_1999_film_poster.jpg` |
+| all-entertainment-films.json | ”Highlander” släpps | 1986 | `Highlander_1986,poster.jpg` |
+| all-entertainment-films.json | ”Le Mans '66” släpps | 2019 | `Ford_v._Ferrari_(2019_film_poster).png` |
+| all-entertainment-films.json | ”Scarface” släpps | 1983 | `Scarface_-_1983_film.jpg` |
+| all-entertainment-films.json | ”Spectre” släpps | 2015 | `Spectre_2015_poster.jpg` |
+| all-entertainment-films.json | ”Moonlight” släpps | 2016 | `Moonlight_(2016_film).png` |
+| all-entertainment-films.json | ”Zero Dark Thirty” släpps | 2012 | `ZeroDarkThirty2012Poster.jpg` |
+| all-entertainment-films.json | ”Joker” släpps | 2019 | `Joker_(2019_film)_poster.jpg` |
+| all-entertainment-films.json | ”Ben-Hur” släpps | 1959 | `Ben_Hur_1959_film_Poster.jpg` |
+| all-entertainment-films.json | ”Dune” släpps | 1984 | `Dune_1984_Poster.jpg` |
+| all-entertainment-films.json | ”En sensation” släpps | 1941 | `Citizen_Kane_poster,_1941_(Style_B,_unrestored).jpg` |
+| all-entertainment-films.json | ”Ghostbusters – Spökligan” släpps | 1984 | `Ghostbusters_(1984)_theatrical_poster.png` |
+| all-entertainment-films.json | ”Iron Man” släpps | 2008 | `Iron_Man_(2008_film)_poster.jpg` |
+| all-entertainment-films.json | ”Blue Velvet” släpps | 1986 | `Blue_Velvet_(1986).png` |
+| all-entertainment-films.json | ”Jojo Rabbit” släpps | 2019 | `Jojo_Rabbit_(2019)_poster.jpg` |
+| all-entertainment-films.json | ”Psycho” släpps | 1960 | `Psycho_(1960)_theatrical_poster_(retouched).jpg` |
+| all-entertainment-films.json | ”Unga kvinnor” släpps | 2019 | `Little_Women_(2019_film).jpeg` |
+| all-entertainment-films.json | ”Möt Joe Black” släpps | 1998 | `Meet_Joe_Black-_1998.jpg` |
+| all-entertainment-films.json | ”The Avengers” släpps | 2012 | `The_Avengers_(2012_film)_poster.jpg` |
+| all-entertainment-films.json | ”Det femte elementet” släpps | 1997 | `Fifth_element_poster_(1997).jpg` |
+| all-entertainment-films.json | ”Drive” släpps | 2011 | `Drive2011Poster.jpg` |
+| all-entertainment-films.json | ”Fredagen den 13:e” släpps | 1980 | `Friday_the_13th_(1980)_theatrical_poster.jpg` |
+| all-entertainment-films.json | ”12 edsvurna män” släpps | 1957 | `12_Angry_Men_(1957_film_poster).jpg` |
+| all-entertainment-films.json | ”Berättelsen om Pi” släpps | 2012 | `Life_of_Pi_2012_Poster.jpg` |
+| all-entertainment-films.json | ”The Aviator” släpps | 2004 | `The_Aviator_(2004).png` |
+| all-entertainment-films.json | ”Godzilla” släpps | 2014 | `Godzilla_(2014)_poster.jpg` |
+| all-entertainment-films.json | ”The Imitation Game” släpps | 2014 | `The_Imitation_Game_(2014).png` |
+| all-entertainment-films.json | ”Zodiac” släpps | 2007 | `Zodiac2007Poster.jpg` |
+
+## Near Matches / Potentially Confusing (129)
+The image filename contains a year within +/- 5 years of the event.
+
+| Deck | Title | Year | Image Filename |
+| :--- | :--- | :--- | :--- |
+| all-entertainment-books.json | ”Och så var de bara en” ges ut | 1939 | `And_Then_There_Were_None_US_First_Edition_Cover_1940.jpg` |
+| all-entertainment-books.json | ”Förvandlingen” ges ut | 1915 | `Franz_Kafka_Die_Verwandlung_1916_Orig.-Pappband.jpg` |
+| all-sport-sportogonblick.json | Messi lämnar Barcelona | 2021 | `Lionel_Messi_White_House_2026_(3x4_cropped).jpg` |
+| all-sport-sportogonblick.json | Real Madrid vinner Champions League | 2002 | `Zinedine_zidane_2005_cropped.jpg` |
+| all-sport-sportogonblick.json | Real Madrid vinner Champions League | 2022 | `StadeFranceNationsLeague2018.jpg` |
+| all-sport-sportogonblick.json | Sarah Sjöström vinner OS-guld | 2016 | `Sarah_Sjöström_2013.jpg` |
+| all-sport-sportogonblick.json | Chicago Bears vinner Super Bowl | 1986 | `UCLA_Bruin_Marching_Band_in_Palo_Alto,_1981.jpg` |
+| all-sport-sportogonblick.json | Denver Broncos vinner Super Bowl | 1999 | `200127-H-PX819-0092.jpg` |
+| all-sport-sportogonblick.json | Australian Open avgörs | 2008 | `Novak_Đoković_at_the_2009_French_Open_5.jpg` |
+| all-sport-sportogonblick.json | Wimbledon avgörs | 2010 | `2009.05.30_Roland_Garros_Rafael_Nadal_06.JPG` |
+| all-sport-sportogonblick.json | Wimbledon avgörs | 2012 | `Centre Court Wimbledon 2009.JPG` |
+| all-sport-sportogonblick.json | Chelsea FC vinner Europa League | 2013 | `2012-13 Europa League final - Chelsea FC vs. SL Benfica, Amsterdam ArenA, kick-off.jpg` |
+| all-sport-sportogonblick.json | Wimbledon avgörs | 2013 | `Centre Court Wimbledon 2009.JPG` |
+| all-sport-sportogonblick.json | Wimbledon avgörs | 2014 | `Centre Court Wimbledon 2009.JPG` |
+| all-sport-sportogonblick.json | USA vinner damernas fotbolls-VM | 2015 | `BC_Place_Opening_Day_2011-09-30.jpg` |
+| all-sport-sportogonblick.json | Sevilla FC vinner Europa League | 2015 | `Stadion_Narodowy_w_Warszawie_20120422.jpg` |
+| all-sport-sportogonblick.json | Moreno vinner Formel 1-VM | 2018 | `Lewis_Hamilton_2016_Malaysia_2.jpg` |
+| all-sport-sportogonblick.json | New England Patriots vinner Super Bowl | 2019 | `Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg` |
+| all-sport-sportogonblick.json | Sevilla FC vinner Europa League | 2020 | `MFF-FCK_Uefa_Europa_League_2019-20.jpg` |
+| all-sport-sportogonblick.json | Lewis Hamilton vinner Formel 1-VM | 2021 | `Max_Verstappen_2017_Malaysia_1.jpg` |
+| all-sport-sportogonblick.json | Formel 1-VM avgörs | 2022 | `Max_Verstappen_2017_Malaysia_3.jpg` |
+| all-sport-sportogonblick.json | Los Angeles Rams vinner Super Bowl | 2022 | `SoFi_Stadium_2021.jpg` |
+| all-sport-sportogonblick.json | McLaren vinner Formel 1-VM | 2025 | `2024-08-25_Motorsport,_Formel_1,_Großer_Preis_der_Niederlande_2024_STP_4016_by_Stepro_(cropped).jpg` |
+| all-sport-sportogonblick.json | Philadelphia Eagles vinner Super Bowl | 2025 | `Louisiana_Superdome_-_Unbranded_-_26_July_2021.jpg` |
+| all-sport-sportogonblick.json | Maurice Garin vinner Tour de France | 1903 | `Tour_de_France_1904_map-fr.svg` |
+| all-sport-sportogonblick.json | Juan Manuel Fangio vinner Formel 1-VM | 1951 | `Juan Manuel Fangio (circa 1952).jpg` |
+| all-sport-sportogonblick.json | Juan Manuel Fangio vinner Formel 1-VM | 1954 | `Juan Manuel Fangio (circa 1952).jpg` |
+| all-sport-sportogonblick.json | Juan Manuel Fangio vinner Formel 1-VM | 1955 | `Juan Manuel Fangio (circa 1952).jpg` |
+| all-sport-sportogonblick.json | Juan Manuel Fangio vinner Formel 1-VM | 1956 | `Juan Manuel Fangio (circa 1952).jpg` |
+| all-sport-sportogonblick.json | Juan Manuel Fangio vinner Formel 1-VM | 1957 | `Juan Manuel Fangio (circa 1952).jpg` |
+| all-sport-sportogonblick.json | Phil Hill vinner Formel 1-VM | 1961 | `HillPhil1962.jpg` |
+| all-sport-sportogonblick.json | Jim Clark vinner Formel 1-VM | 1963 | `ClarkJim-Lotus19620805.jpg` |
+| all-sport-sportogonblick.json | Jim Clark vinner Formel 1-VM | 1965 | `ClarkJim-Lotus19620805.jpg` |
+| all-sport-sportogonblick.json | Denny Hulme vinner Formel 1-VM | 1967 | `HulmeDenis196508.jpg` |
+| all-sport-sportogonblick.json | Graham Hill vinner Formel 1-VM | 1968 | `HillGraham1969Aug.jpg` |
+| all-sport-sportogonblick.json | Jochen Rindt vinner Formel 1-VM | 1970 | `Rindt, Jochen 1968.jpg` |
+| all-sport-sportogonblick.json | Niki Lauda vinner Formel 1-VM | 1977 | `Lauda, Niki 1973-07-06.jpg` |
+| all-sport-sportogonblick.json | Jody Scheckter vinner Formel 1-VM | 1979 | `Scheckter, Jody 1976-07-10 (Ausschn).jpg` |
+| all-sport-sportogonblick.json | San Francisco 49ers vinner Super Bowl | 1982 | `1986_Jeno's_Pizza_-_27_-_Dan_Bunz_(cropped).jpg` |
+| all-sport-sportogonblick.json | San Francisco 49ers vinner Super Bowl | 1985 | `UCLA_Bruin_Marching_Band_in_Palo_Alto,_1981.jpg` |
+| all-history-wars.json | första världskriget börjar | 1914 | `Bataille_de_Verdun_1916.jpg` |
+| all-history-wars.json | kalla kriget börjar | 1945 | `NATO_vs._Warsaw_Pact_(1949-1990).svg` |
+| all-technology-mobile-apps.json | HBO Max lanseras | 2020 | `HBO_Max_(2025).svg` |
+| all-people-famous-deaths-contemporary.json | Steve Jobs dör | 2011 | `Steve_Jobs_Headshot_2010-CROP_(cropped_2).jpg` |
+| all-people-famous-deaths-contemporary.json | Robin Williams dör | 2014 | `Robin_Williams_2011a_(2).jpg` |
+| all-people-famous-deaths-contemporary.json | Chester Bennington dör | 2017 | `Linkin_Park-Rock_im_Park_2014-_by_2eight_3SC0327.jpg` |
+| all-people-famous-deaths-contemporary.json | River Phoenix dör | 1993 | `RIVERP1989.jpg` |
+| all-people-famous-deaths-contemporary.json | Malcolm X dör | 1965 | `Malcolm_X_1963_press_photo.jpg` |
+| all-people-famous-deaths-contemporary.json | Kurt Cobain dör | 1994 | `Nirvana_around_1992_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Avicii dör | 2018 | `Avicii_2014_003cr.jpg` |
+| all-people-famous-deaths-contemporary.json | Bob Marley dör | 1981 | `Bob_Marley_1976_press_photo.jpg` |
+| all-people-famous-deaths-contemporary.json | James Gandolfini dör | 2013 | `James_Gandolfini_@_Toronto_International_Film_Festival_2011.jpg` |
+| all-people-famous-deaths-contemporary.json | Philip Seymour Hoffman dör | 2014 | `Philip_Seymour_Hoffman_2011.jpg` |
+| all-people-famous-deaths-contemporary.json | Carrie Fisher dör | 2016 | `Carrie_Fisher_2013-a_straightened.jpg` |
+| all-people-famous-deaths-contemporary.json | Dennis Hopper dies dör | 2010 | `Dennis_Hopper_Cannes_2008_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Jimi Hendrix dör | 1970 | `Jimi_Hendrix_(1967)_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Yitzhak Rabin dör | 1995 | `Yitzhak_Rabin_1994_Portrait_(3x4_cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Anna Nicole Smith dör | 2007 | `Anna_Nicole_smith_2005.jpg` |
+| all-people-famous-deaths-contemporary.json | Patrice Lumumba dör | 1961 | `Patrice_Lumumba,_1960_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Jim Morrison dör | 1971 | `Jim_Morrison_-_Young_Lion_(1967)_(1).jpg` |
+| all-people-famous-deaths-contemporary.json | Janis Joplin dies dör | 1970 | `Janis_Joplin_1969.JPG` |
+| all-people-famous-deaths-contemporary.json | Karl Dönitz dör | 1980 | `Bundesarchiv_Bild_146-1976-127-06A,_Karl_Dönitz_(cropped)(3)_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Miles Davis dör | 1991 | `Miles_Davis_1987.png` |
+| all-people-famous-deaths-contemporary.json | Sid Vicious dör | 1979 | `Sid_Vicious_1978_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Thomas Sankara dör | 1987 | `Thomas_Sankara_in_Harlem_(1984).png` |
+| all-people-famous-deaths-contemporary.json | Roy Scheider dör | 2008 | `Roy_Scheider_2007.jpg` |
+| all-people-famous-deaths-contemporary.json | Vladimir Nabokov dör | 1977 | `Vladimir_Nabokov_1973.jpg` |
+| all-people-famous-deaths-contemporary.json | Zaha Hadid dör | 2016 | `Zaha_Hadid_in_Heydar_Aliyev_Cultural_center_in_Baku_nov_2013.jpg` |
+| all-sweden.json | ABBA bildas | 1972 | `ABBA_-_TopPop_1974_5.png` |
+| all-sweden.json | Sarah Sjöström vinner OS-guld | 2016 | `Sarah_Sjöström_2013.jpg` |
+| all-sweden.json | Avicii dör | 2018 | `Avicii_2014_003cr.jpg` |
+| all-sweden.json | Björn Borg vinner Wimbledon | 1976 | `Bjorn Borg 1979.jpg` |
+| all-sweden.json | Kalmarunionen bildas | 1397 | `Kalmar_Union_ca._1400.svg` |
+| all-sweden.json | Karl XIV Johan dör | 1844 | `Karl_XIV_Johan,_Sveriges_och_Norges_konung._Porträtt_av_Frederic_Westin,_cirka_1843._-_kopia.png` |
+| all-sweden.json | Friends Arena öppnar | 2012 | `Friends Arena 2013.jpg` |
+| all-swedish-classics-all.json | ABBA bildas | 1972 | `ABBA_-_TopPop_1974_5.png` |
+| all-engineering-weapons.json | Mark 48 tas i bruk | 1978 | `Mk_48_torpedo_maintenance_1982.JPEG` |
+| all-art-movements.json | futurism börjar | 1909 | `Gino_Severini,_1912,_Dynamic_Hieroglyphic_of_the_Bal_Tabarin,_oil_on_canvas_with_sequins,_161.6_x_156.2_cm_(63.6_x_61.5_in.),_Museum_of_Modern_Art,_New_York.jpg` |
+| all-people-famous-deaths-early-modern.json | Peter III av Ryssland dör | 1762 | `Coronation_portrait_of_Peter_III_of_Russia_-1761.JPG` |
+| all-people-famous-deaths-early-modern.json | Maria II av England dör | 1695 | `Mary_II_-_Kneller_1690.jpg` |
+| all-leaders-politicians-americas-mexico.json | Claudia Sheinbaum becomes president of Mexico | 2024 | `Claudia_Sheinbaum_in_2025_(3x4_cropped).jpg` |
+| all-leaders-politicians-asia-israel.json | Golda Meir | 1969 | `Golda_Meir_(1964)_cropped.jpg` |
+| all-leaders-politicians-oceania-new-zealand.json | Jacinda Ardern | 2017 | `New_Zealand_Prime_Minister_Jacinda_Ardern_in_2018.jpg` |
+| all-entertainment-musicals.json | ”Hamilton” | 2015 | `Lin-Manuel_Miranda,_Phillipa_Soo,_Leslie_Odom,_Jr.,_and_Christopher_Jackson,_White_House,_March_2016.jpg` |
+| all-leaders-rulers-europe-britain.json | Charles III | 2022 | `King_Charles_III_(July_2023).jpg` |
+| all-leaders-rulers-europe-britain.json | Vilhelm IV av Storbritannien | 1830 | `William_IV_in_1833_by_Shee_cropped.jpg` |
+| all-people-nobel-laureates-literature.json | Jean-Paul Sartre får Nobelpriset i litteratur | 1964 | `Jean_Paul_Sartre_1965.jpg` |
+| all-history-nations.json | Nazityskland bildas | 1933 | `Flag_of_Germany_(1935–1945).svg` |
+| all-leaders-politicians-americas-us.json | Abraham Lincoln | 1861 | `Abraham_Lincoln_1863_Portrait_(3x4_cropped).jpg` |
+| all-leaders-politicians-americas-us.json | Thomas Jefferson | 1801 | `Official_Presidential_portrait_of_Thomas_Jefferson_(by_Rembrandt_Peale,_1800).jpg` |
+| all-leaders-politicians-americas-us.json | Ulysses S. Grant | 1869 | `Ulysses_S._Grant_1870-1880_(cropped).jpg` |
+| all-leaders-politicians-americas-us.json | Warren G. Harding | 1921 | `Warren_G._Harding_1920s_portrait_(3x4_cropped).jpg` |
+| all-leaders-politicians-americas-us.json | Calvin Coolidge | 1923 | `President_Calvin_Coolidge,_1924_portrait_photograph_(3x4_cropped).jpeg` |
+| all-leaders-politicians-americas-us.json | Andrew Johnson | 1865 | `Andrew_Johnson_photo_portrait_head_and_shoulders,_c1870-1880-Edit1.jpg` |
+| all-sweden-allt.json | ABBA bildas | 1972 | `ABBA_-_TopPop_1974_5.png` |
+| all-sweden-allt.json | Sarah Sjöström vinner OS-guld | 2016 | `Sarah_Sjöström_2013.jpg` |
+| all-sweden-allt.json | Avicii dör | 2018 | `Avicii_2014_003cr.jpg` |
+| all-sweden-allt.json | Björn Borg vinner Wimbledon | 1976 | `Bjorn Borg 1979.jpg` |
+| all-sweden-allt.json | Kalmarunionen bildas | 1397 | `Kalmar_Union_ca._1400.svg` |
+| all-sweden-allt.json | Karl XIV Johan dör | 1844 | `Karl_XIV_Johan,_Sveriges_och_Norges_konung._Porträtt_av_Frederic_Westin,_cirka_1843._-_kopia.png` |
+| all-sweden-allt.json | Friends Arena öppnar | 2012 | `Friends Arena 2013.jpg` |
+| all-leaders-politicians-europe-italy.json | Giorgia Meloni | 2022 | `Giorgia_Meloni_Official_2024_(cropped).jpg` |
+| all-history-eras.json | kalla kriget börjar | 1945 | `NATO_vs._Warsaw_Pact_(1949-1990).svg` |
+| all-entertainment-music.json | ABBA bildas | 1972 | `ABBA_-_TopPop_1974_5.png` |
+| all-art-paintings.json | ”Saturnus slukar sin son” | 1820 | `Francisco_de_Goya,_Saturno_devorando_a_su_hijo_(1819-1823).jpg` |
+| all-people-nobel-laureates-peace.json | Nelson Mandela får Nobels fredspris | 1993 | `Nelson_Mandela_1994.jpg` |
+| all-people-nobel-laureates-peace.json | Yassir Arafat får Nobels fredspris | 1994 | `Leader_of_the_PLO,_Yasser_Arafat,_1996_Dan_Hadani_Archive.jpg` |
+| all-sport-svensk-sport.json | Sarah Sjöström vinner OS-guld | 2016 | `Sarah_Sjöström_2013.jpg` |
+| all-sport-svensk-sport.json | Björn Borg vinner Wimbledon | 1976 | `Bjorn Borg 1979.jpg` |
+| all-sport-svensk-sport.json | Friends Arena öppnar | 2012 | `Friends Arena 2013.jpg` |
+| all-people-famous-deaths-modern.json | Franklin D. Roosevelt dör | 1945 | `FDR-1944-Campaign-Portrait_(3x4_retouched,_cropped).jpg` |
+| all-people-famous-deaths-modern.json | Abraham Lincoln dör | 1865 | `Abraham_Lincoln_1863_Portrait_(3x4_cropped).jpg` |
+| all-people-famous-deaths-modern.json | Vladimir Lenin dör | 1924 | `Lenin_in_1920_(cropped).jpg` |
+| all-people-famous-deaths-modern.json | Vilhelm IV av Storbritannien dör | 1837 | `William_IV_in_1833_by_Shee_cropped.jpg` |
+| all-people-famous-deaths-modern.json | Ulysses S. Grant dör | 1885 | `Ulysses_S._Grant_1870-1880_(cropped).jpg` |
+| all-people-famous-deaths-modern.json | Franz Kafka dör | 1924 | `Franz_Kafka,_1923.jpg` |
+| all-people-famous-deaths-modern.json | Warren G. Harding dör | 1923 | `Warren_G._Harding_1920s_portrait_(3x4_cropped).jpg` |
+| all-people-famous-deaths-modern.json | Erwin Rommel dör | 1944 | `Erwin-Rommel-1941_(2).jpg` |
+| all-people-famous-deaths-modern.json | Lev Tolstoj dör | 1910 | `Leo_Tolstoy_1908_Portrait_(3x4_cropped).jpg` |
+| all-people-famous-deaths-modern.json | Andrew Johnson dör | 1875 | `Andrew_Johnson_photo_portrait_head_and_shoulders,_c1870-1880-Edit1.jpg` |
+| all-people-famous-deaths-modern.json | Arthur Schopenhauer dör | 1860 | `Arthur_Schopenhauer_by_J_Schäfer,_1859b.jpg` |
+| all-people-famous-deaths-modern.json | Johann Wolfgang von Goethe dies dör | 1832 | `Goethe_(Stieler_1828).jpg` |
+| all-technology-websites.json | ChatGPT lanseras | 2022 | `OpenAI_logo_2025_(symbol).svg` |
+| all-technology-websites.json | Gemini lanseras | 2023 | `Google_Gemini_Screenshot_(2026).png` |
+| all-leaders-rulers-europe-russia.json | Peter III av Ryssland | 1762 | `Coronation_portrait_of_Peter_III_of_Russia_-1761.JPG` |
+| all-leaders-politicians-europe-germany.json | Friedrich Merz | 2025 | `2024-08-21_Friedrich_Merz_in_Erfurt_2024_STP_3041_by_Stepro_(3x4_cropped).jpg` |
+| all-leaders-rulers-europe-france.json | Ludvig XVI av Frankrike | 1774 | `Antoine-François_Callet_-_Louis_XVI,_roi_de_France_et_de_Navarre_(1754-1793),_revêtu_du_grand_costume_royal_en_1779_-_Google_Art_Project.jpg` |
+| all-entertainment-films.json | ”Passengers” släpps | 2015 | `Passengers_2016_film_poster.jpg` |
+| all-entertainment-films.json | ”Split” släpps | 2016 | `Split_(2017_film).jpg` |
+
+## Metadata Years (501)
+The image filename contains a year, but it is not close to the event year (likely the year the photo was taken).
+
+| Deck | Title | Year | Image Filename |
+| :--- | :--- | :--- | :--- |
+| all-business-food-drink.json | Kentucky Fried Chicken grundas | 1930 | `KFC_Paraparaumu_154510.jpg` |
+| all-leaders-rulers-middle-east-persia.json | Mohammad Reza Pahlavi | 1941 | `Mohammad_Reza_Pahlavi_1973_portrait_(4x5_cropped).jpg` |
+| all-technology-computing-systems.json | ”IOS is released” släpps | 2007 | `IOS_wordmark_(2017).svg` |
+| all-entertainment-books.json | ”1984” ges ut | 1949 | `1984_first_edition_cover.jpg` |
+| all-entertainment-books.json | ”Emil i Lönneberga” ges ut | 1963 | `Emil_and_pig,_Astrid_Lindgrens_Värld_2014.jpg` |
+| all-entertainment-books.json | ”Ronja Rövardotter” ges ut | 1981 | `Ronja_och_Mattis,_Astrid_Lindgrens_Värld_2014.jpg` |
+| all-entertainment-books.json | ”Unga kvinnor” ges ut | 1861 | `Houghton_AC85.Aℓ194L.1869_pt.2aa_-_Little_Women,_title.jpg` |
+| all-entertainment-books.json | ”Färden till Västern” ges ut | 1592 | `Evl53201b_pic.jpg` |
+| all-entertainment-books.json | ”Varulvarnas natt” ges ut | 1954 | `IAmLegend25028.jpg` |
+| all-sport-sportogonblick.json | Cristiano Ronaldo går till Real Madrid | 2009 | `2025_Cristiano_Ronaldo_(cropped).jpg` |
+| all-sport-sportogonblick.json | Neymar blir dyraste fotbollsspelaren | 2017 | `Neymar_Jr._with_Al_Hilal,_3_October_2023_-_03_(cropped).jpg` |
+| all-sport-sportogonblick.json | Zlatan går till Barcelona | 2009 | `Zlatan_Ibrahimović_June_2018.jpg` |
+| all-sport-sportogonblick.json | Vinter-OS hålls i Sapporo | 1972 | `Olympics rings (1913-1986).svg` |
+| all-sport-sportogonblick.json | AC Milan vinner Champions League | 1994 | `Greece_v_Malta,_17_Nov_2007_(06).jpg` |
+| all-sport-sportogonblick.json | AFC Ajax vinner Champions League | 1995 | `Amsterdam ArenA 15-09-2012 02.jpg` |
+| all-sport-sportogonblick.json | Real Madrid vinner Champions League | 1998 | `Raul_Gonzalez_10mar2007.jpg` |
+| all-sport-sportogonblick.json | Italien vinner fotbolls-VM | 2006 | `Norway Italy - June 2025 A 50.jpg` |
+| all-sport-sportogonblick.json | Vinter-OS hålls i Sotji | 2014 | `Opening_of_XXII_Winter_Olympic_Games_(2338-13).jpg` |
+| all-sport-sportogonblick.json | Real Madrid vinner Champions League | 2016 | `Scudo2009.jpg` |
+| all-sport-sportogonblick.json | Real Madrid vinner Champions League | 2018 | `Фінал_Євро-2012._НСК_«Олімпійський»._3_хвилини_після_фінального_свистка.JPG` |
+| all-sport-sportogonblick.json | Tre Kronor tar OS-guld | 1994 | `Peter_Forsberg_2016-03-17_001_(cropped).jpg` |
+| all-sport-sportogonblick.json | Danmark vinner fotbolls-EM | 1992 | `Peter_Schmeichel-2011.jpeg` |
+| all-sport-sportogonblick.json | Figo går till Real Madrid | 2000 | `L._Figo_2017.jpg` |
+| all-sport-sportogonblick.json | Alan Jones vinner Formel 1-VM | 1980 | `Williams27800x532.jpg` |
+| all-sport-sportogonblick.json | Niki Lauda vinner Formel 1-VM | 1984 | `Lauda, Niki 1973-07-06.jpg` |
+| all-sport-sportogonblick.json | Alain Prost vinner Formel 1-VM | 1985 | `Alain Prost 2008.jpg` |
+| all-sport-sportogonblick.json | Alain Prost vinner Formel 1-VM | 1986 | `Alain Prost 2008.jpg` |
+| all-sport-sportogonblick.json | Ayrton Senna vinner Formel 1-VM | 1988 | `K02-M5-0003.tif` |
+| all-sport-sportogonblick.json | San Francisco 49ers vinner Super Bowl | 1989 | `200127-H-PX819-0092.jpg` |
+| all-sport-sportogonblick.json | Washington Commanders vinner Super Bowl | 1992 | `051207-MPLS-006Metrodome-crop.jpg` |
+| all-sport-sportogonblick.json | San Francisco 49ers vinner Super Bowl | 1995 | `200127-H-PX819-0092.jpg` |
+| all-sport-sportogonblick.json | Damon Hill vinner Formel 1-VM | 1996 | `Grand_Prix_Monaco96_131954710.jpg` |
+| all-sport-sportogonblick.json | Green Bay Packers vinner Super Bowl | 1997 | `Louisiana_Superdome_-_Unbranded_-_26_July_2021.jpg` |
+| all-sport-sportogonblick.json | Tyskland vinner damernas fotbolls-VM | 2003 | `2023-07-03 Fussball, Frauen, Deutsche Nationalmannschaft, Media Day 1DX 6519 by Stepro.jpg` |
+| all-sport-sportogonblick.json | Tyskland vinner damernas fotbolls-EM | 2005 | `Ewood Park 2011.jpg` |
+| all-sport-sportogonblick.json | New England Patriots vinner Super Bowl | 2005 | `EverBankField2014.jpg` |
+| all-sport-sportogonblick.json | Australian Open avgörs | 2014 | `IBI14_Na_Li_-_14266508636.jpg` |
+| all-sport-sportogonblick.json | New England Patriots vinner Super Bowl | 2015 | `USS Sterett (DDG 104) 150203-N-GW139-083 (16268082580).jpg` |
+| all-sport-sportogonblick.json | Wimbledon avgörs | 2015 | `Alexander Peya (26746554512).jpg` |
+| all-sport-sportogonblick.json | Australian Open avgörs | 2016 | `Djokovic_WM14_(25)_(14641439744).jpg` |
+| all-sport-sportogonblick.json | Wimbledon avgörs | 2016 | `Andreja Klepac (28101895926).jpg` |
+| all-sport-sportogonblick.json | Lewis Hamilton vinner Formel 1-VM | 2017 | `Restart_after_the_safety_car_(35193262750).jpg` |
+| all-sport-sportogonblick.json | New England Patriots vinner Super Bowl | 2017 | `NRG_stadium_prepared_for_Super_Bowl_Li_(32513086661).jpg` |
+| all-sport-sportogonblick.json | Australian Open avgörs | 2017 | `Roger_Federer_(18953614769).jpg` |
+| all-sport-sportogonblick.json | US Open avgörs | 2017 | `Julia Ostapenko (36840371096).jpg` |
+| all-sport-sportogonblick.json | Wimbledon avgörs | 2017 | `Athletic grace, Venus Williams (36093032825).jpg` |
+| all-sport-sportogonblick.json | Geraint Thomas vinner Tour de France | 2018 | `TDF34752_thomas_froome_(41961100070).jpg` |
+| all-sport-sportogonblick.json | Australian Open avgörs | 2018 | `Novak Djokovic (Ser) (39690813512) (cropped).jpg` |
+| all-sport-sportogonblick.json | Franska öppna avgörs | 2018 | `Anna Smith (46640809304).jpg` |
+| all-sport-sportogonblick.json | Wimbledon avgörs | 2018 | `Alexander Peya & Nicole Melichar (50497983243).jpg` |
+| all-sport-sportogonblick.json | Australian Open avgörs | 2019 | `Bryan Bros are back! (45875703545).jpg` |
+| all-sport-sportogonblick.json | Wimbledon avgörs | 2019 | `Anett Kontaveit (49745352222) (cropped)-2.jpg` |
+| all-sport-sportogonblick.json | Villarreal CF vinner Europa League | 2021 | `PGE_Arena_Gdańsk_(6018955265).jpg` |
+| all-sport-sportogonblick.json | Wimbledon avgörs | 2021 | `Linda Klimovičová (51314990677).jpg` |
+| all-sport-sportogonblick.json | Eintracht Frankfurt vinner Europa League | 2022 | `Estadio_Ramón_Sánchez_Pizjuán_Preferencia_and_Gol_Norte-2007-04-05.jpg` |
+| all-sport-sportogonblick.json | Australian Open avgörs | 2022 | `Rod Laver Arena Australian Open 2009 1.jpg` |
+| all-sport-sportogonblick.json | Franska öppna avgörs | 2022 | `Kecmanovic RG22 (16) (52144307779).jpg` |
+| all-sport-sportogonblick.json | Max Verstappen vinner Formel 1-VM | 2023 | `Max_Verstappen_2017_Malaysia_3.jpg` |
+| all-sport-sportogonblick.json | Jonas Vingegaard vinner Tour de France | 2023 | `TDF31466_vingegaard_(53062211779).jpg` |
+| all-sport-sportogonblick.json | Tadej Pogačar vinner Tour de France | 2024 | `TF241534_Almeida_Roglic_Pogacar_Yates_(53873615951).jpg` |
+| all-sport-sportogonblick.json | Carolina Klüft vinner OS-guld | 2004 | `Carolina_Klüft_in_2025-4-2.jpg` |
+| all-sport-sportogonblick.json | Alberto Ascari vinner Formel 1-VM | 1953 | `Ferrari 500 - de Cadenet 1975.jpg` |
+| all-sport-sportogonblick.json | Jack Brabham vinner Formel 1-VM | 1959 | `BrabhamJack1966B.jpg` |
+| all-sport-sportogonblick.json | Jack Brabham vinner Formel 1-VM | 1960 | `BrabhamJack1966B.jpg` |
+| all-sport-sportogonblick.json | Graham Hill vinner Formel 1-VM | 1962 | `HillGraham1969Aug.jpg` |
+| all-sport-sportogonblick.json | Baltimore Colts vinner Super Bowl | 1971 | `1986 Jeno's Pizza - 32 - Earl Morrall.jpg` |
+| all-sport-sportogonblick.json | Dallas Cowboys vinner Super Bowl | 1972 | `1986 Jeno's Pizza - 01 - Duane Thomas.jpg` |
+| all-sport-sportogonblick.json | Washington Commanders vinner Super Bowl | 1973 | `Washington Commanders Uniforms 2026.png` |
+| all-sport-sportogonblick.json | Emerson Fittipaldi vinner Formel 1-VM | 1974 | `Fittipaldi - El Gráfico 2834 2.jpg` |
+| all-sport-sportogonblick.json | Mario Andretti vinner Formel 1-VM | 1978 | `Mario Andretti 2009 Indy 500 Pole Day.JPG` |
+| all-sport-sportogonblick.json | Las Vegas Raiders vinner Super Bowl | 1981 | `Louisiana_Superdome_-_Unbranded_-_26_July_2021.jpg` |
+| all-history-wars.json | andra världskriget börjar | 1939 | `Bundesarchiv_Bild_101I-646-5188-17,_Flugzeuge_Junkers_Ju_87.jpg` |
+| all-history-wars.json | Vietnamkriget börjar | 1955 | `U.S._Army_UH-1H_Hueys_insert_ARVN_troops_at_Khâm_Đức,_Vietnam,_12_July_1970_(79431435).jpg` |
+| all-history-wars.json | Rysk-ukrainska kriget börjar | 2014 | `Anti-terrorist_operation_in_eastern_Ukraine_(War_Ukraine)_(27843153986).jpg` |
+| all-technology-mobile-apps.json | Facebook Messenger lanseras | 2011 | `Facebook_Messenger_logo_2025.svg` |
+| all-leaders-rulers-europe-spain.json | Felipe VI av Spanien | 2014 | `Daiga_Mieriņa_tiekas_ar_Spānijas_karali_-_53814974005_(cropped)-2.jpg` |
+| all-leaders-rulers-europe-spain.json | Karl V | 1516 | `Portrait_of_Charles_V,_Holy_Roman_Emperor,_seated_(1500–1558),_formerly_attributed_to_Titian_(Alte_Pinakothek,_Munich).jpg` |
+| all-leaders-rulers-europe-spain.json | Juan Carlos I av Spanien | 1975 | `Rey_Juan_Carlos_2013.jpg` |
+| all-people-famous-deaths-medieval.json | Umar ibn al-Khattab dör | 644 | `Hagia_Sopia_6163502494_(cropped).jpg` |
+| all-people-famous-deaths-medieval.json | Edvard II av England dör | 1327 | `Cathedral_Church_of_St_Peter_and_the_Holy_and_Indivisible_Trinity,_Monument_to_Edward_II_of_England_Gloucester_1245952_20230819_0030.jpg` |
+| all-people-famous-deaths-medieval.json | Leif Eriksson dör | 1020 | `Leif_Erikson_Statue,_Duluth_(15290644106).jpg` |
+| all-people-famous-deaths-contemporary.json | Chuck Norris dör | 2026 | `Chuck_Norris,_The_Delta_Force_1986_(slight_cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Mohammad Reza Pahlavi dör | 1980 | `Mohammad_Reza_Pahlavi_1973_portrait_(4x5_cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Elizabeth II dör | 2022 | `Queen_Elizabeth_II_official_portrait_for_1959_tour_(retouched)_(cropped)_(3-to-4_aspect_ratio).jpg` |
+| all-people-famous-deaths-contemporary.json | Michael Jackson dies dör | 2009 | `Michael_Jackson_1983_(3x4_cropped)_(contrast).jpg` |
+| all-people-famous-deaths-contemporary.json | Saddam Hussein dör | 2006 | `Saddam_Hussein_in_1998.png` |
+| all-people-famous-deaths-contemporary.json | Jesse Jackson dör | 2026 | `Jesse_Jackson,_half-length_portrait_of_Jackson_seated_at_a_table,_July_1,_1983_edit.jpg` |
+| all-people-famous-deaths-contemporary.json | Freddie Mercury dör | 1991 | `Freddie_Mercury_performing_in_New_Haven,_CT,_November_1977.jpg` |
+| all-people-famous-deaths-contemporary.json | Astrid Lindgren föds | 1907 | `Lindgren_1960.jpg` |
+| all-people-famous-deaths-contemporary.json | Ronald Reagan dies dör | 2004 | `Official_Portrait_of_President_Reagan_1981.jpg` |
+| all-people-famous-deaths-contemporary.json | Marilyn Monroe dör | 1962 | `Monroecirca1953.jpg` |
+| all-people-famous-deaths-contemporary.json | Josef Stalin dör | 1953 | `Joseph_Stalin_in_1932_(4)_(cropped)(2).jpg` |
+| all-people-famous-deaths-contemporary.json | Ozzy Osbourne dies dör | 2025 | `Ozzy_Osbourne_in_1970_(medium-sized_crop).jpg` |
+| all-people-famous-deaths-contemporary.json | Georg VI av Storbritannien dör | 1952 | `King_George_VI_LOC_matpc.14736_A_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Edvard VIII av Storbritannien dör | 1972 | `HRH_The_Prince_of_Wales_No_4_(HS85-10-36416).jpg` |
+| all-people-famous-deaths-contemporary.json | Robert Duvall dör | 2026 | `Robert_Duvall_(actor,_at_home,_New_York_City_apartment,_1984)_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Kobe Bryant dör | 2020 | `Kobe_Bryant_Dec_2014.jpg` |
+| all-people-famous-deaths-contemporary.json | Prince dör | 2016 | `Prince_promo_picture_(1988;_cropped_and_retouched).png` |
+| all-people-famous-deaths-contemporary.json | Dwight D. Eisenhower dör | 1969 | `Dwight_D._Eisenhower,_official_photo_portrait,_May_29,_1959_(cropped)(3).jpg` |
+| all-people-famous-deaths-contemporary.json | John Lennon dör | 1980 | `John_Lennon_"Walls_and_Bridges"_1974_press_photo_2_(color)_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | David Bowie dör | 2016 | `David-Bowie_Chicago_2002-08-08_photoby_Adam-Bielawski-cropped.jpg` |
+| all-people-famous-deaths-contemporary.json | Amy Winehouse dör | 2011 | `Amy_Winehouse_f4962007_crop.jpg` |
+| all-people-famous-deaths-contemporary.json | Fidel Castro dör | 2016 | `Fidel_Castro_1950s.jpg` |
+| all-people-famous-deaths-contemporary.json | Charlie Chaplin dör | 1977 | `Charlie_Chaplin_portrait_Getty_1739411952.jpg` |
+| all-people-famous-deaths-contemporary.json | Wilt Chamberlain dör | 1999 | `Wilt_Chamberlain_1960_(cropped)_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Frank Sinatra dör | 1998 | `Frank_Sinatra_1961.jpg` |
+| all-people-famous-deaths-contemporary.json | Charles Manson dör | 2017 | `Manson1968.jpg` |
+| all-people-famous-deaths-contemporary.json | Idi Amin dör | 2003 | `Idi_Amin_at_UN_(United_Nations,_New_York)_gtfy.00132_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Sean Connery dör | 2020 | `Sean_Connery_as_James_Bond_at_Switzerland_1964_(two_thirds_crop).jpg` |
+| all-people-famous-deaths-contemporary.json | Mao Zedong dör | 1976 | `Mao_Zedong_1950_Portrait_(3x4_cropped)(2).jpg` |
+| all-people-famous-deaths-contemporary.json | J.R.R. Tolkien dör | 1973 | `J._R._R._Tolkien,_ca._1925.jpg` |
+| all-people-famous-deaths-contemporary.json | O.J. Simpson dör | 2024 | `O.J._Simpson_1990_·_DN-ST-91-03444_crop.JPEG` |
+| all-people-famous-deaths-contemporary.json | David Lynch dör | 2025 | `David_Lynch_(1990).jpg` |
+| all-people-famous-deaths-contemporary.json | Chris Cornell dör | 2017 | `ChrisCornellTIFFSept2011.jpg` |
+| all-people-famous-deaths-contemporary.json | Paul Newman dör | 2008 | `Paul_Newman_-_1958.jpg` |
+| all-people-famous-deaths-contemporary.json | Johnny Cash dör | 2003 | `Johnny_Cash_"The_Johnny_Cash_Spring_Special"_(1979_CBS_press_photo).jpg` |
+| all-people-famous-deaths-contemporary.json | Walt Disney dör | 1966 | `Walt_Disney_1946_(cropped2).JPG` |
+| all-people-famous-deaths-contemporary.json | Gene Hackman dör | 2025 | `Gene_Hackman_in_the_White_House,_1987.jpg` |
+| all-people-famous-deaths-contemporary.json | George Michael dör | 2016 | `George_Michael_1988_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Agatha Christie dies dör | 1976 | `Agatha_Christie_in_Nederland_(detectiveschrijfster),_bij_aankomst_op_Schiphol_me,_Bestanddeelnr_916-8898_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Tina Turner dör | 2023 | `Tina_Turner_1985.jpg` |
+| all-people-famous-deaths-contemporary.json | Howard Hughes dör | 1976 | `Howard_Hughes_1938.jpg` |
+| all-people-famous-deaths-contemporary.json | Hedy Lamarr dör | 2000 | `Hedy_Lamarr_Publicity_Photo_for_The_Heavenly_Body_1944.jpg` |
+| all-people-famous-deaths-contemporary.json | Christopher Lee dör | 2015 | `Christopher_Lee_2009.jpg` |
+| all-people-famous-deaths-contemporary.json | Aretha Franklin dör | 2018 | `Aretha_Franklin_1968.jpg` |
+| all-people-famous-deaths-contemporary.json | Charles Bronson dör | 2003 | `Charles_Bronson_-_1966.JPG` |
+| all-people-famous-deaths-contemporary.json | Cary Grant dör | 1986 | `Cary_Grant_(1958).jpg` |
+| all-people-famous-deaths-contemporary.json | John Belushi dör | 1982 | `John_Belushi_at_the_32nd_Annual_Radio_and_Television_Correspondents_Association_Dinner_-_NARA_-_30805929.jpg` |
+| all-people-famous-deaths-contemporary.json | George Foreman dör | 2025 | `George_Foreman_(1973).jpg` |
+| all-people-famous-deaths-contemporary.json | Nikita Chrusjtjov dör | 1971 | `1956_Press_Photo_Communist_Party_Secretary_Nikita_S._Khrushchev_in_Moscow_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Dean Martin dör | 1995 | `Dean_Martin_1958.jpg` |
+| all-people-famous-deaths-contemporary.json | Orson Welles dör | 1985 | `Orson_Welles_1937_cr3-4.jpg` |
+| all-people-famous-deaths-contemporary.json | Frank Zappa dör | 1993 | `Zappa_16011977_01_300.jpg` |
+| all-people-famous-deaths-contemporary.json | Lee Kuan Yew dör | 2015 | `Prime_Minister_Lee_Kuan_Yew_of_Singapore_Making_a_Toast_at_a_State_Dinner_Held_in_His_Honor,_1975.jpg` |
+| all-people-famous-deaths-contemporary.json | Lauren Bacall dör | 2014 | `Lauren_Bacall_1945_press_photo.jpg` |
+| all-people-famous-deaths-contemporary.json | Ingrid Bergman dör | 1982 | `Ingrid_Bergman_by_Whitey_Schafer_1940.jpg` |
+| all-people-famous-deaths-contemporary.json | Humphrey Bogart dör | 1957 | `Humphrey_Bogart_1940.jpg` |
+| all-people-famous-deaths-contemporary.json | Michael Clarke Duncan dör | 2012 | `MClarkeDuncan021109-R106_(50094589037).jpg` |
+| all-people-famous-deaths-contemporary.json | Bette Davis dör | 1989 | `BetteDavis1935.jpg` |
+| all-people-famous-deaths-contemporary.json | Christopher Plummer dör | 2021 | `Christopher_Plummer_1964.jpg` |
+| all-people-famous-deaths-contemporary.json | Clark Gable dör | 1960 | `Clark_Gable_1937_crop.jpg` |
+| all-people-famous-deaths-contemporary.json | Gregory Peck dör | 2003 | `Gregory_Peck_1948.jpg` |
+| all-people-famous-deaths-contemporary.json | Brigitte Bardot dör | 2025 | `Reproduktion-_Filmschauspielerin_(Bardot)_-_LABW_-_Staatsarchiv_Freiburg_W_134_Nr._036134b.jpg` |
+| all-people-famous-deaths-contemporary.json | Johan Cruijff dör | 2016 | `Johan_Cruijff_(1974).jpg` |
+| all-people-famous-deaths-contemporary.json | Sidney Poitier dör | 2022 | `Sidney_Poitier_1968.jpg` |
+| all-people-famous-deaths-contemporary.json | Lou Reed dör | 2013 | `Lou_Reed_1966(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | George Carlin dör | 2008 | `George_Carlin_1975_(Little_David_Records)_Publicity.jpg` |
+| all-people-famous-deaths-contemporary.json | Salvador Dalí dör | 1989 | `Salvador_Dalí_1939.jpg` |
+| all-people-famous-deaths-contemporary.json | Tony Curtis dör | 2010 | `Tony_Curtis_1958.jpg` |
+| all-people-famous-deaths-contemporary.json | Rita Hayworth dör | 1987 | `Rita_Hayworth_1940s.jpg` |
+| all-people-famous-deaths-contemporary.json | Ayn Rand dör | 1982 | `Ayn_Rand_(1943_Talbot_portrait).jpg` |
+| all-people-famous-deaths-contemporary.json | Bobby Fischer dör | 2008 | `Bobby_Fischer_in_1962_portrait.jpg` |
+| all-people-famous-deaths-contemporary.json | James Brown dör | 2006 | `James_Brown_1996.jpg` |
+| all-people-famous-deaths-contemporary.json | Donna Summer dör | 2012 | `Donna_Summer_(1977_Casablanca_publicity_headshot).jpg` |
+| all-people-famous-deaths-contemporary.json | Peter O'Toole dör | 2013 | `David_di_Donatello_1970_Loren_O'Toole_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Gamal Abdel Nasser dör | 1970 | `Stevan_Kragujevic,_Gamal_Abdel_Naser_u_Beogradu,_1962.jpg` |
+| all-people-famous-deaths-contemporary.json | Akira Kurosawa dör | 1998 | `Akirakurosawa-onthesetof7samurai-1953-page88.jpg` |
+| all-people-famous-deaths-contemporary.json | Charlton Heston dör | 2008 | `Charlton_Heston_Civil_Rights_March_1963.jpg` |
+| all-people-famous-deaths-contemporary.json | Leonard Cohen dör | 2016 | `Leonard_Cohen,_1988_01.jpg` |
+| all-people-famous-deaths-contemporary.json | Peter Sellers dör | 1980 | `Peter_Sellers_at_home_in_Belgravia,_London,_1973.jpg` |
+| all-people-famous-deaths-contemporary.json | Brian Wilson dör | 2025 | `Brian_Wilson_of_the_Beach_Boys_in_West_Los_Angeles_1990_photographed_by_Ithaka_Darin_Pappas.jpg` |
+| all-people-famous-deaths-contemporary.json | Leslie Nielsen dies dör | 2010 | `Me_with_Leslie_Nielsen_(1116225817)_(cropped2).jpg` |
+| all-people-famous-deaths-contemporary.json | Gene Wilder dör | 2016 | `Gene_Wilder_1970.JPG` |
+| all-people-famous-deaths-contemporary.json | John Hurt dör | 2017 | `John_Hurt_at_the_2009_Tribeca_Film_Festival.jpg` |
+| all-people-famous-deaths-contemporary.json | Chuck Berry dör | 2017 | `Chuck_Berry_1957.jpg` |
+| all-people-famous-deaths-contemporary.json | Jack Lemmon dör | 2001 | `Jack_Lemmon_-_1968.jpg` |
+| all-people-famous-deaths-contemporary.json | Yul Brynner dör | 1985 | `Publicity_press_photo_of_Yul_Brynner_in_1960_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Claude Shannon dör | 2001 | `C.E._Shannon._Tekniska_museet_43069_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Maria Callas dör | 1977 | `Maria_Callas_1958.jpg` |
+| all-people-famous-deaths-contemporary.json | John Steinbeck dör | 1968 | `John_Steinbeck_1939_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Benedictus XVI dör | 2022 | `Benedykt_XVI_(2010-10-17)_2.jpg` |
+| all-people-famous-deaths-contemporary.json | Shelley Duvall dör | 2024 | `Shelley_Duvall_(December_1977)_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Alain Delon dör | 2024 | `Alain_Delon_1961.jpg` |
+| all-people-famous-deaths-contemporary.json | L. Ron Hubbard dör | 1986 | `L._Ron_Hubbard_in_1950_(cropped_3x4).jpg` |
+| all-people-famous-deaths-contemporary.json | Alan Arkin dör | 2023 | `Alan_Arkin_-_1975.jpg` |
+| all-people-famous-deaths-contemporary.json | Billie Holiday dör | 1959 | `Portrait_of_Billie_Holiday_and_Mister,_Downbeat,_New_York,_N.Y.,_ca._Feb._1947_(LOC,_5020400274,_cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Lee Marvin dör | 1987 | `Lee_marvin_1971.JPG` |
+| all-people-famous-deaths-contemporary.json | David Crosby dör | 2023 | `CrosbyDavid1983_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | George Best dör | 2005 | `George_best_1976.jpg` |
+| all-people-famous-deaths-contemporary.json | Bertrand Russell dör | 1970 | `Bertrand_Russell_smoking_in_1936.jpg` |
+| all-people-famous-deaths-contemporary.json | Robert Mitchum dör | 1997 | `Robert_Mitchum_1955.jpg` |
+| all-people-famous-deaths-contemporary.json | Arthur C. Clarke dör | 2008 | `Arthur_C._Clarke_1965_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Gary Cooper dör | 1961 | `Gary_Cooper_(1952).jpg` |
+| all-people-famous-deaths-contemporary.json | Little Richard dör | 2020 | `Little_Richard_1957_(crop).jpg` |
+| all-people-famous-deaths-contemporary.json | Bernard Montgomery dör | 1976 | `General_Sir_Bernard_Montgomery_in_England,_1943_TR1036_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Jean-Paul Sartre dör | 1980 | `Jean_Paul_Sartre_1965.jpg` |
+| all-people-famous-deaths-contemporary.json | Ernest Borgnine dör | 2012 | `Ernest_Borgnine_McHale_McHale's_Navy_1962.JPG` |
+| all-people-famous-deaths-contemporary.json | Georgij Zjukov dör | 1974 | `Zhukov-LIFE-1944-1945_cropped.jpg` |
+| all-people-famous-deaths-contemporary.json | Allen Ginsberg dör | 1997 | `Allen_Ginsberg_1979_-_cropped.jpg` |
+| all-people-famous-deaths-contemporary.json | Anthony Quinn dör | 2001 | `Anthony_Quinn_around_the_1960s.jpg` |
+| all-people-famous-deaths-contemporary.json | Felix Baumgartner dör | 2025 | `Felix_Baumgartner_Internationale_Sportnacht_Davos_2014_(3x4_cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Joséphine Baker dör | 1975 | `Baker_Harcourt_1940_2.jpg` |
+| all-people-famous-deaths-contemporary.json | Ludwig Wittgenstein dör | 1951 | `Ludwig_Wittgenstein_1929.jpg` |
+| all-people-famous-deaths-contemporary.json | Bob Hope dör | 2003 | `Bob_Hope_1969_Publicity_Photo.jpg` |
+| all-people-famous-deaths-contemporary.json | Édith Piaf dör | 1963 | `Piaf_Harcourt_1946_2.jpg` |
+| all-people-famous-deaths-contemporary.json | Ingmar Bergman dör | 2007 | `Ingmar_Bergman_(1966).jpg` |
+| all-people-famous-deaths-contemporary.json | Nat King Cole dör | 1965 | `Nat_King_Cole_1947.jpg` |
+| all-people-famous-deaths-contemporary.json | David Rockefeller dör | 2017 | `David_Rockefeller,_1984_(cropped).jpg` |
+| all-people-famous-deaths-contemporary.json | Georgia O'Keeffe dies dör | 1986 | `Georgia_O'Keeffe_MET_DP230868.jpg` |
+| all-people-famous-deaths-contemporary.json | Philippe Pétain dies dör | 1951 | `Philippe_Pétain_1941_Portrait_photograph.jpg` |
+| all-people-famous-deaths-contemporary.json | Martin Heidegger dör | 1976 | `Freiburg,_Zähringen-_Jahnhalle,_Prof._Martin_Heidegger_während_eines_Vortrags_-_LABW_-_Staatsarchiv_Freiburg_W_134_Nr._023740f_(cropped).jpeg` |
+| all-people-famous-deaths-contemporary.json | Jerry West dör | 2024 | `Jerry_West_1972.jpeg` |
+| all-people-famous-deaths-contemporary.json | Harper Lee dör | 2016 | `Photo_portrait_of_Harper_Lee_(To_Kill_a_Mockingbird_dust_jacket,_1960).jpg` |
+| all-people-famous-deaths-contemporary.json | Serge Gainsbourg dör | 1991 | `Serge_Gainsbourg_par_Claude_Truong-Ngoc_1981.jpg` |
+| all-people-famous-deaths-contemporary.json | Edward Teller dör | 2003 | `EdwardTeller1958_fewer_smudges.jpg` |
+| all-sweden.json | Astrid Lindgren föds | 1907 | `Lindgren_1960.jpg` |
+| all-sweden.json | Zlatan går till Barcelona | 2009 | `Zlatan_Ibrahimović_June_2018.jpg` |
+| all-sweden.json | Bob Dylan får Nobelpriset i litteratur | 2016 | `DylanYoungKilkenny140719v2_(50_of_52)_(52246124397)_(cropped).jpg` |
+| all-sweden.json | Tre Kronor tar OS-guld | 1994 | `Peter_Forsberg_2016-03-17_001_(cropped).jpg` |
+| all-sweden.json | Marie Curie får Nobelpriset i fysik | 1903 | `Marie_Curie_c._1920s.jpg` |
+| all-sweden.json | Carolina Klüft vinner OS-guld | 2004 | `Carolina_Klüft_in_2025-4-2.jpg` |
+| all-sweden.json | ”Emil i Lönneberga” ges ut | 1963 | `Emil_and_pig,_Astrid_Lindgrens_Värld_2014.jpg` |
+| all-sweden.json | ”Ronja Rövardotter” ges ut | 1981 | `Ronja_och_Mattis,_Astrid_Lindgrens_Värld_2014.jpg` |
+| all-sweden.json | Ingrid Bergman dör | 1982 | `Ingrid_Bergman_by_Whitey_Schafer_1940.jpg` |
+| all-sweden.json | Saab 39 Gripen flyger för första gången | 1988 | `Saab_JAS_39_Gripen_at_Kaivopuisto_Air_Show,_June_2017_(altered)_copy.jpg` |
+| all-sweden.json | Ingmar Bergman dör | 2007 | `Ingmar_Bergman_(1966).jpg` |
+| all-sweden.json | Carl XVI Gustaf | 1973 | `06.11.2025_–_Recepção_Oficial_dos_Chefes_de_Delegação_da_Cúpula_do_Clima_(54906269035)_(Carlos_XVI_Gustavo).jpg` |
+| all-sweden.json | Henrik Larsson föds | 1971 | `Henrik Larsson 2006.jpg` |
+| all-sweden.json | Peter Forsberg föds | 1973 | `Peter Forsberg 2012-12-29.JPG` |
+| all-sweden.json | Ingemar Stenmark vinner OS-guld | 1980 | `Ingemar Stenmark 2014.jpg` |
+| all-sweden.json | Karl XII dör | 1718 | `Copy_Charles_XII_-_Nationalmuseum_-_17886.png` |
+| all-sweden.json | Henrik Lundqvist föds | 1982 | `Henrik Lundqvist 2014-05-29.jpg` |
+| all-sweden.json | Sarah Sjöström föds | 1993 | `Sarah Sjöström 2015.jpg` |
+| all-sweden.json | Saab 37 Viggen flyger för första gången | 1967 | `Viggen_(52526298757).jpg` |
+| all-sweden.json | Sven-Göran Eriksson dör | 2024 | `Sven-Goran_Eriksson_2012.jpg` |
+| all-sweden.json | Gustaf VI Adolf | 1950 | `King_Gustaf_VI_Adolf_of_Sweden_FVMF.003289_(cropped_2).jpg` |
+| all-sweden.json | Saab 35 Draken flyger för första gången | 1955 | `J_35F_1972_(cropped,_removal_of_damage_and_dirt_using_clone_tool).jpg` |
+| all-sweden.json | Ullevi öppnar | 1958 | `Ullevi stadium 2006.jpg` |
+| all-swedish-classics-all.json | Astrid Lindgren föds | 1907 | `Lindgren_1960.jpg` |
+| all-swedish-classics-all.json | ”Emil i Lönneberga” ges ut | 1963 | `Emil_and_pig,_Astrid_Lindgrens_Värld_2014.jpg` |
+| all-swedish-classics-all.json | ”Ronja Rövardotter” ges ut | 1981 | `Ronja_och_Mattis,_Astrid_Lindgrens_Värld_2014.jpg` |
+| all-leaders-rulers-south-asia-mughals.json | Akbar den store | 1556 | `Govardhan._Akbar_With_Lion_and_Calf_ca._1630,_Metmuseum_(cropped).jpg` |
+| all-art-movements.json | art déco börjar | 1910 | `Chrysler_Building_1_(4684845155).jpg` |
+| all-engineering-aeroplanes.json | Northrop Grumman B-2 Spirit flyger för första gången | 1989 | `RAF_F-35B_integration_flying_training_with_USAF_B-2_30092019_-_4.jpg` |
+| all-engineering-aeroplanes.json | McDonnell Douglas F-15 Eagle flyger för första gången | 1972 | `F-15C_Eagle_from_the_44th_Fighter_Squadron_flies_during_a_routine_training_exercise_April_15,_2019.jpg` |
+| all-engineering-aeroplanes.json | Fairchild-Republic A-10 Thunderbolt II flyger för första gången | 1972 | `Fairchild_Republic_A-10_Thunderbolt_II_-_32156159151.jpg` |
+| all-engineering-aeroplanes.json | Grumman F-14 Tomcat flyger för första gången | 1970 | `US_Navy_051105-F-5480T-005_An_F-14D_Tomcat_conducts_a_mission_over_the_Persian_Gulf-region.jpg` |
+| all-engineering-aeroplanes.json | General Dynamics F-16 Fighting Falcon flyger för första gången | 1974 | `F-16_June_2008.jpg` |
+| all-engineering-aeroplanes.json | Eurofighter Typhoon flyger för första gången | 1994 | `RAF_Eurofighter_EF-2000_Typhoon_F2_Lofting-1.jpg` |
+| all-engineering-aeroplanes.json | Su-57 flyger för första gången | 2010 | `Sukhoi_Design_Bureau,_054,_Sukhoi_T-50_(Su-57_prototype)_(49581303977).jpg` |
+| all-engineering-aeroplanes.json | Northrop F-5 Freedom Fighter flyger för första gången | 1959 | `J-3005.jpg` |
+| all-engineering-aeroplanes.json | Dassault Rafale flyger för första gången | 1986 | `Rafale_-_RIAT_2009_(3751416421).jpg` |
+| all-engineering-aeroplanes.json | Mikojan-Gurevitj MiG-29 flyger för första gången | 1977 | `VVS_100th_IMG_0691_(7727464290)_(cropped).jpg` |
+| all-engineering-aeroplanes.json | Boeing F/A-18E/F Super Hornet flyger för första gången | 1995 | `US_Navy_071203-N-8923M-074_An_F-A-18F_Super_Hornet,_from_the_Red_Rippers_of_Strike_Fighter_Squadron_(VFA)_11,_makes_a_sharp_turn_above_the_flight_deck_aboard_the_Nimitz-class_nuclear-powered_aircraft_carrier_USS_Harry_S._Truman.jpg` |
+| all-engineering-aeroplanes.json | Airbus A380 flyger för första gången | 2005 | `A6-EDY_A380_Emirates_31_jan_2013_jfk_(8442269364)_(cropped).jpg` |
+| all-engineering-aeroplanes.json | United Airlines grundas | 1926 | `N2749U@PEK_(20211130144100).jpg` |
+| all-engineering-aeroplanes.json | Saab 39 Gripen flyger för första gången | 1988 | `Saab_JAS_39_Gripen_at_Kaivopuisto_Air_Show,_June_2017_(altered)_copy.jpg` |
+| all-engineering-aeroplanes.json | Delta Air Lines grundas | 1925 | `N510DN@PEK_(20190609140430).jpg` |
+| all-engineering-aeroplanes.json | Ryanair grundas | 1985 | `Ryanair_737_MAX_8200_Departing_MAN.jpg` |
+| all-engineering-aeroplanes.json | Suchoj Su-35 flyger för första gången | 2008 | `Russian_Air_Force,_RF-81719,_Sukhoi_Su-35S_(49581740157).jpg` |
+| all-engineering-aeroplanes.json | Panavia Tornado flyger för första gången | 1974 | `RAF_Tornado_GR4_MOD_45155233.jpg` |
+| all-engineering-aeroplanes.json | Bell/Boeing V-22 Osprey flyger för första gången | 1989 | `MV-22_mcas_Miramar_2014.JPG` |
+| all-engineering-aeroplanes.json | Suchoj Su-27 flyger för första gången | 1977 | `Sukhoi_Su-27SKM_at_MAKS-2005_airshow.jpg` |
+| all-engineering-aeroplanes.json | Boeing B-29 Superfortress flyger för första gången | 1942 | `Boeing_TB-29-70-BW_Superfortress_‘469972’_“Doc”_(N69972)_(50871638276).jpg` |
+| all-engineering-aeroplanes.json | Lufthansa grundas | 1926 | `D-AIXO_Lufthansa_A359_MUC_"Ulm"_(49033191421).jpg` |
+| all-engineering-aeroplanes.json | Supermarine Spitfire flyger för första gången | 1936 | `Spitfire_-_Season_Premiere_Airshow_2018_(cropped).jpg` |
+| all-engineering-aeroplanes.json | Cathay Pacific grundas | 1946 | `Cathay_Pacific_A350-1000XWB_B-LXA.jpg` |
+| all-engineering-aeroplanes.json | Iljusjin Il-76 flyger för första gången | 1971 | `Il-76MD-90A_RF-78653.jpg` |
+| all-engineering-aeroplanes.json | British Airways grundas | 1919 | `British_Airways_A350-1000_(G-XWBD)_@_LHR,_Jan_2020.jpg` |
+| all-engineering-aeroplanes.json | Airbus A330 flyger för första gången | 1992 | `Turkish_Airlines,_Airbus_A330-300_TC-JNL_NRT_(23708073592).jpg` |
+| all-engineering-aeroplanes.json | Qatar Airways grundas | 1993 | `Qatar_Airways_Airbus_A350-1000_(A7-ANA).jpg` |
+| all-engineering-aeroplanes.json | Boeing B-17 Flying Fortress flyger för första gången | 1935 | `B17_-_Chino_Airshow_2014_(framed).jpg` |
+| all-engineering-aeroplanes.json | Airbus A320-familjen flyger för första gången | 1987 | `Airbus_A320-214,_Airbus_Industrie_JP7617615.jpg` |
+| all-engineering-aeroplanes.json | Air India grundas | 1932 | `VT-JRF_@_JFK,_2024-11-04.png` |
+| all-engineering-aeroplanes.json | Embraer E-Jet flyger för första gången | 2002 | `KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg` |
+| all-engineering-aeroplanes.json | de Havilland Canada DHC-8 flyger för första gången | 1983 | `Hamburg_Airport_Widerøe_Bombardier_DHC-8-402Q_LN-WDR_(DSC08713).jpg` |
+| all-engineering-aeroplanes.json | Bell UH-1 Iroquois flyger för första gången | 1956 | `UH1_Huey_-_Fly_Navy_2017_(26938005897).jpg` |
+| all-engineering-aeroplanes.json | Southwest Airlines grundas | 1967 | `Southwest_Boeing_737-8_MAX_N8971L_BWI_MD1.jpg` |
+| all-people-nobel-laureates-physics.json | Marie Curie får Nobelpriset i fysik | 1903 | `Marie_Curie_c._1920s.jpg` |
+| all-leaders-rulers-europe-rome.json | Augustus | -26 | `Augustus_of_Prima_Porta_(inv._2290).jpg` |
+| all-people-famous-deaths-early-modern.json | Isaac Newton dör | 1727 | `Portrait_of_Sir_Isaac_Newton,_1689_(brightened).jpg` |
+| all-people-famous-deaths-early-modern.json | Katarina II av Ryssland dör | 1796 | `Catherine_II_after_Roslin,_Rokotov_(1780s,_Kunsthistorisches_Museum).jpg` |
+| all-people-famous-deaths-early-modern.json | Anna av Storbritannien dör | 1714 | `Dahl,_Michael_-_Queen_Anne_-_NPG_6187.jpg` |
+| all-people-famous-deaths-early-modern.json | Martin Luther dör | 1546 | `Lucas_Cranach_d.Ä._-_Martin_Luther,_1528_(Veste_Coburg).jpg` |
+| all-people-famous-deaths-early-modern.json | Akbar den store dör | 1605 | `Govardhan._Akbar_With_Lion_and_Calf_ca._1630,_Metmuseum_(cropped).jpg` |
+| all-people-famous-deaths-early-modern.json | Shah Jahan dör | 1666 | `'Jujhar_Singh_Bundela_Kneels_in_Submission_to_Shah_Jahan',_painted_by_Bichitr,_c._1630,_Chester_Beatty_Library_(cropped2).jpg` |
+| all-people-famous-deaths-early-modern.json | Nadir Shah dör | 1747 | `Contemporary_portrait_of_Nader_Shah._Artist_unknown,_created_in_ca._1740_in_Iran_(cropped).jpg` |
+| all-people-famous-deaths-early-modern.json | Robert Hooke dör | 1703 | `Portrait_of_a_Mathematician_1680c.jpg` |
+| all-leaders-politicians-asia-israel.json | Benjamin Netanyahu | 1996 | `Benjamin_Netanyahu,_February_2023.jpg` |
+| all-leaders-politicians-asia-israel.json | Yitzhak Rabin | 1974 | `Yitzhak_Rabin_1994_Portrait_(3x4_cropped).jpg` |
+| all-leaders-politicians-asia-israel.json | Yair Lapid | 2022 | `Yair_Lapid_(D1237-011).jpg` |
+| all-leaders-politicians-asia-israel.json | Shimon Peres | 1977 | `Shimon_Peres_2010_(cropped_2).jpg` |
+| all-leaders-rulers-europe-hungary.json | Frans Josef I av Österrike | 1848 | `Franz_Joseph_I_of_Austria.1910_(cropped).jpg` |
+| all-leaders-rulers-europe-britain.json | Elizabeth II | 1952 | `Queen_Elizabeth_II_official_portrait_for_1959_tour_(retouched)_(cropped)_(3-to-4_aspect_ratio).jpg` |
+| all-leaders-rulers-europe-britain.json | Georg VI av Storbritannien | 1936 | `King_George_VI_LOC_matpc.14736_A_(cropped).jpg` |
+| all-leaders-rulers-europe-britain.json | Georg V av Storbritannien | 1910 | `King_George_1923_LCCN2014715558_(cropped).jpg` |
+| all-leaders-rulers-europe-britain.json | Edvard VIII av Storbritannien | 1936 | `HRH_The_Prince_of_Wales_No_4_(HS85-10-36416).jpg` |
+| all-leaders-rulers-europe-britain.json | Anna av Storbritannien | 1707 | `Dahl,_Michael_-_Queen_Anne_-_NPG_6187.jpg` |
+| all-entertainment-characters.json | Hulken dyker upp första gången | 1962 | `Hulk_(circa_2019).png` |
+| all-entertainment-characters.json | Darth Vader dyker upp första gången | 1976 | `Darth_Vader_-_2007_Disney_Weekends.jpg` |
+| all-people-nobel-laureates-literature.json | Winston Churchill får Nobelpriset i litteratur | 1953 | `Sir_Winston_Churchill_-_19086236948_(restored).jpg` |
+| all-people-nobel-laureates-literature.json | Bob Dylan får Nobelpriset i litteratur | 2016 | `DylanYoungKilkenny140719v2_(50_of_52)_(52246124397)_(cropped).jpg` |
+| all-people-nobel-laureates-literature.json | John Steinbeck får Nobelpriset i litteratur | 1962 | `John_Steinbeck_1939_(cropped).jpg` |
+| all-people-nobel-laureates-literature.json | Rabindranath Tagore får Nobelpriset i litteratur | 1913 | `1926_Rabindrath_Tagore.jpg` |
+| all-people-nobel-laureates-literature.json | Bertrand Russell får Nobelpriset i litteratur | 1950 | `Bertrand_Russell_smoking_in_1936.jpg` |
+| all-people-nobel-laureates-literature.json | T.S. Eliot får Nobelpriset i litteratur | 1948 | `Thomas_Stearns_Eliot_by_Lady_Ottoline_Morrell_(1934).jpg` |
+| all-people-nobel-laureates-literature.json | George Bernard Shaw får Nobelpriset i litteratur | 1925 | `Bernard-Shaw-ILN-1911-original.jpg` |
+| all-history-revolts.json | Amerikanska revolutionen börjar | 1765 | `Declaration_of_Independence_(1819),_by_John_Trumbull.jpg` |
+| all-history-revolts.json | Ölkällarkuppen äger rum | 1923 | `Bundesarchiv_Bild_119-1486,_Hitler-Putsch,_München,_Marienplatz.jpg` |
+| all-history-revolts.json | Bostonmassakern äger rum | 1770 | `The_Boston_Massacre_MET_DT2086.jpg` |
+| all-history-nations.json | Osmanska riket bildas | 1299 | `Flag_of_the_Ottoman_Empire_(1844–1922).svg` |
+| all-history-nations.json | Tysk-romerska riket bildas | 962 | `Banner_of_the_Holy_Roman_Emperor_with_haloes_(1430-1806).svg` |
+| all-history-nations.json | Brittiska imperiet bildas | 1583 | `Flag_of_Great_Britain_(1707–1800).svg` |
+| all-leaders-politicians-europe-france.json | Emmanuel Macron | 2017 | `Emmanuel_Macron_2025_(cropped).jpg` |
+| all-business-media.json | CNN lanseras | 1980 | `CNN_Logo_(2014).svg` |
+| all-business-media.json | The Guardian lanseras | 1821 | `The_Guardian_2018.svg` |
+| all-business-media.json | Nickelodeon lanseras | 1979 | `Nickelodeon_2023_logo_(outline).svg` |
+| all-business-media.json | Cartoon Network lanseras | 1992 | `Cartoon_Network_2010_logo.svg` |
+| all-business-media.json | BBC News lanseras | 1922 | `BBC_News_2022_(Alt).svg` |
+| all-business-media.json | Daily Mail lanseras | 1896 | `Daily_Mail_10_July_2021.png` |
+| all-business-media.json | Channel 4 lanseras | 1982 | `Channel_4_(On_Demand)_2023.svg` |
+| all-business-media.json | France 24 lanseras | 2006 | `France_24_logo_(2013).svg` |
+| all-business-media.json | The Washington Post lanseras | 1877 | `The-Washington-Post-10-June-2020.jpg` |
+| all-business-media.json | The Boston Globe lanseras | 1872 | `The_Boston_Globe,_April_18,_2011.jpeg` |
+| all-people-famous-deaths-classical.json | Julius Caesar dies dör | -43 | `Retrato_de_Julio_César_(26724093101)_(cropped).jpg` |
+| all-people-famous-deaths-classical.json | Aristoteles dör | -321 | `Aristotle_Altemps_Inv8575.jpg` |
+| all-people-famous-deaths-classical.json | Platon dör | -348 | `Plato_Silanion_Musei_Capitolini_MC1377.png` |
+| all-people-famous-deaths-classical.json | Cicero dör | -42 | `Bust_of_Cicero_(1st-cent._BC)_-_Palazzo_Nuovo_-_Musei_Capitolini_-_Rome_2016.jpg` |
+| all-people-famous-deaths-classical.json | Arkimedes dör | -211 | `Domenico-Fetti_Archimedes_1620.jpg` |
+| all-people-famous-deaths-classical.json | Diocletianus dör | 316 | `Istanbul_-_Museo_archeol._-_Diocleziano_(284-305_d.C.)_-_Foto_G._Dall'Orto_28-5-2006_(cropped).jpg` |
+| all-leaders-rulers-europe-castile.json | Karl V | 1516 | `Portrait_of_Charles_V,_Holy_Roman_Emperor,_seated_(1500–1558),_formerly_attributed_to_Titian_(Alte_Pinakothek,_Munich).jpg` |
+| all-leaders-rulers-europe-england.json | Anna av Storbritannien | 1702 | `Dahl,_Michael_-_Queen_Anne_-_NPG_6187.jpg` |
+| all-leaders-rulers-europe-england.json | Edvard II av England | 1307 | `Cathedral_Church_of_St_Peter_and_the_Holy_and_Indivisible_Trinity,_Monument_to_Edward_II_of_England_Gloucester_1245952_20230819_0030.jpg` |
+| all-leaders-rulers-europe-england.json | Vilhelm III av England | 1694 | `King_William_III_of_England,_(1650-1702).jpg` |
+| all-leaders-politicians-americas-us.json | Donald Trump | 2017 | `Official_Presidential_Portrait_of_President_Donald_J._Trump_(2025).jpg` |
+| all-leaders-politicians-americas-us.json | Franklin D. Roosevelt | 1933 | `FDR-1944-Campaign-Portrait_(3x4_retouched,_cropped).jpg` |
+| all-leaders-politicians-americas-us.json | Dwight D. Eisenhower | 1953 | `Dwight_D._Eisenhower,_official_photo_portrait,_May_29,_1959_(cropped)(3).jpg` |
+| all-leaders-politicians-americas-us.json | Martin Van Buren | 1837 | `Martin_Van_Buren_by_Mathew_Brady_c1855-58-(4).jpg` |
+| all-sweden-allt.json | Astrid Lindgren föds | 1907 | `Lindgren_1960.jpg` |
+| all-sweden-allt.json | Zlatan går till Barcelona | 2009 | `Zlatan_Ibrahimović_June_2018.jpg` |
+| all-sweden-allt.json | Bob Dylan får Nobelpriset i litteratur | 2016 | `DylanYoungKilkenny140719v2_(50_of_52)_(52246124397)_(cropped).jpg` |
+| all-sweden-allt.json | Tre Kronor tar OS-guld | 1994 | `Peter_Forsberg_2016-03-17_001_(cropped).jpg` |
+| all-sweden-allt.json | Marie Curie får Nobelpriset i fysik | 1903 | `Marie_Curie_c._1920s.jpg` |
+| all-sweden-allt.json | Carolina Klüft vinner OS-guld | 2004 | `Carolina_Klüft_in_2025-4-2.jpg` |
+| all-sweden-allt.json | ”Emil i Lönneberga” ges ut | 1963 | `Emil_and_pig,_Astrid_Lindgrens_Värld_2014.jpg` |
+| all-sweden-allt.json | ”Ronja Rövardotter” ges ut | 1981 | `Ronja_och_Mattis,_Astrid_Lindgrens_Värld_2014.jpg` |
+| all-sweden-allt.json | Ingrid Bergman dör | 1982 | `Ingrid_Bergman_by_Whitey_Schafer_1940.jpg` |
+| all-sweden-allt.json | Saab 39 Gripen flyger för första gången | 1988 | `Saab_JAS_39_Gripen_at_Kaivopuisto_Air_Show,_June_2017_(altered)_copy.jpg` |
+| all-sweden-allt.json | Ingmar Bergman dör | 2007 | `Ingmar_Bergman_(1966).jpg` |
+| all-sweden-allt.json | Carl XVI Gustaf | 1973 | `06.11.2025_–_Recepção_Oficial_dos_Chefes_de_Delegação_da_Cúpula_do_Clima_(54906269035)_(Carlos_XVI_Gustavo).jpg` |
+| all-sweden-allt.json | Henrik Larsson föds | 1971 | `Henrik Larsson 2006.jpg` |
+| all-sweden-allt.json | Peter Forsberg föds | 1973 | `Peter Forsberg 2012-12-29.JPG` |
+| all-sweden-allt.json | Ingemar Stenmark vinner OS-guld | 1980 | `Ingemar Stenmark 2014.jpg` |
+| all-sweden-allt.json | Karl XII dör | 1718 | `Copy_Charles_XII_-_Nationalmuseum_-_17886.png` |
+| all-sweden-allt.json | Henrik Lundqvist föds | 1982 | `Henrik Lundqvist 2014-05-29.jpg` |
+| all-sweden-allt.json | Sarah Sjöström föds | 1993 | `Sarah Sjöström 2015.jpg` |
+| all-sweden-allt.json | Saab 37 Viggen flyger för första gången | 1967 | `Viggen_(52526298757).jpg` |
+| all-sweden-allt.json | Sven-Göran Eriksson dör | 2024 | `Sven-Goran_Eriksson_2012.jpg` |
+| all-sweden-allt.json | Gustaf VI Adolf | 1950 | `King_Gustaf_VI_Adolf_of_Sweden_FVMF.003289_(cropped_2).jpg` |
+| all-sweden-allt.json | Saab 35 Draken flyger för första gången | 1955 | `J_35F_1972_(cropped,_removal_of_damage_and_dirt_using_clone_tool).jpg` |
+| all-sweden-allt.json | Ullevi öppnar | 1958 | `Ullevi stadium 2006.jpg` |
+| all-history-eras.json | andra världskriget börjar | 1939 | `Bundesarchiv_Bild_101I-646-5188-17,_Flugzeuge_Junkers_Ju_87.jpg` |
+| all-architecture-medieval.json | Machu Picchu färdigställs | 1450 | `Machu_Picchu,_2023_(012).jpg` |
+| all-architecture-medieval.json | Al-Aqsamoskén färdigställs | 710 | `Jerusalem-2013-Temple_Mount-Al-Aqsa_Mosque_(NE_exposure).jpg` |
+| all-architecture-medieval.json | Klippdomen färdigställs | 691 | `Jerusalem-2013(2)-Temple_Mount-Dome_of_the_Rock_(SE_exposure).jpg` |
+| all-architecture-medieval.json | Hagia Sofia färdigställs | 1054 | `Hagia_Sophia_(228968325).jpeg` |
+| all-architecture-medieval.json | Windsor Castle färdigställs | 1070 | `Windsor_Castle_at_Sunset_-_Nov_2006.jpg` |
+| all-architecture-medieval.json | Towern färdigställs | 1066 | `Tower_of_London_from_the_Shard_(8515883950).jpg` |
+| all-engineering-space.json | Apollo 11 lanseras | 1969 | `A_Man_on_the_Moon,_AS11-40-5903_(cropped).jpg` |
+| all-technology-video-games.json | ”League of Legends” släpps | 2009 | `League_of_Legends_2019_vector.svg` |
+| all-technology-video-games.json | ”Tetris” släpps | 1984 | `Tetris_logo_2019.svg` |
+| all-technology-video-games.json | ”Hollow Knight” släpps | 2017 | `Hollow_Knight_2026_cover_art.jpg` |
+| all-entertainment-plays.json | ”Hamlet” | 1602 | `Edwin_Booth_Hamlet_1870.jpg` |
+| all-sport-stadiums.json | Aztekastadion öppnar | 1966 | `Mexico_city_Estadio_Azteca_estadio_banorte_fifa_world_cup_2026_4.JPG` |
+| all-leaders-rulers-europe-bohemia.json | Frans Josef I av Österrike | 1848 | `Franz_Joseph_I_of_Austria.1910_(cropped).jpg` |
+| all-architecture-modern.json | Burj Khalifa färdigställs | 2010 | `Burj_Khalifa_(worlds_tallest_building)_and_the_Dubai_skyline_(25781049892).jpg` |
+| all-architecture-modern.json | Paris katakomber öppnar | 1809 | `Catacumbas,_París,_Francia,_2022-11-01,_DD_105-107_HDR.jpg` |
+| all-architecture-modern.json | Kölnerdomen färdigställs | 1880 | `Kölner_Dom_-_Westfassade_2022_ohne_Gerüst-0968_b.jpg` |
+| all-architecture-modern.json | Neuschwanstein färdigställs | 1869 | `Schloss_Neuschwanstein_2013.jpg` |
+| all-architecture-modern.json | Buckingham Palace öppnar | 1849 | `Buckingham_Palace_London_Morning_2020_01_(cropped).jpg` |
+| all-architecture-modern.json | Abraj al-Bayt färdigställs | 2011 | `Abraj_Al_Bait_Tower_2017.jpg` |
+| all-architecture-modern.json | Willis Tower färdigställs | 1973 | `Sears_Tower,_Wacker_Drive_and_Jackson_Boulevard,_Chicago,_IL_-_54189600901.jpg` |
+| all-people-nobel-laureates-peace.json | Malala Yousafzai får Nobels fredspris | 2014 | `Malala_Yousafzai_2023_portrait_2x3.jpg` |
+| all-people-nobel-laureates-peace.json | Michail Gorbatjov får Nobels fredspris | 1990 | `RIAN_archive_850809_General_Secretary_of_the_CPSU_CC_M._Gorbachev_(crop).jpg` |
+| all-people-nobel-laureates-peace.json | Al Gore får Nobels fredspris | 2007 | `Al_Gore,_Vice_President_of_the_United_States,_official_portrait_1994.jpg` |
+| all-people-nobel-laureates-peace.json | Tenzin Gyatso får Nobels fredspris | 1989 | `The_Dalai_Lama_in_2012.jpg` |
+| all-people-nobel-laureates-peace.json | Shimon Peres får Nobels fredspris | 1994 | `Shimon_Peres_2010_(cropped_2).jpg` |
+| all-leaders-politicians-asia-japan.json | Shinzo Abe | 2006 | `Shinzō_Abe_20120501.jpg` |
+| all-leaders-politicians-americas-canada.json | Justin Trudeau | 2015 | `Prime_Minister_Trudeau's_message_on_Christmas_2023_(0m29s)_(cropped).jpg` |
+| all-sport-svensk-sport.json | Zlatan går till Barcelona | 2009 | `Zlatan_Ibrahimović_June_2018.jpg` |
+| all-sport-svensk-sport.json | Tre Kronor tar OS-guld | 1994 | `Peter_Forsberg_2016-03-17_001_(cropped).jpg` |
+| all-sport-svensk-sport.json | Carolina Klüft vinner OS-guld | 2004 | `Carolina_Klüft_in_2025-4-2.jpg` |
+| all-sport-svensk-sport.json | Henrik Larsson föds | 1971 | `Henrik Larsson 2006.jpg` |
+| all-sport-svensk-sport.json | Peter Forsberg föds | 1973 | `Peter Forsberg 2012-12-29.JPG` |
+| all-sport-svensk-sport.json | Ingemar Stenmark vinner OS-guld | 1980 | `Ingemar Stenmark 2014.jpg` |
+| all-sport-svensk-sport.json | Henrik Lundqvist föds | 1982 | `Henrik Lundqvist 2014-05-29.jpg` |
+| all-sport-svensk-sport.json | Sarah Sjöström föds | 1993 | `Sarah Sjöström 2015.jpg` |
+| all-sport-svensk-sport.json | Ullevi öppnar | 1958 | `Ullevi stadium 2006.jpg` |
+| all-engineering-cars.json | Chevrolet Impala debuterar | 1959 | `Chevrolet_Impala_(14373209694)_(cropped).jpg` |
+| all-leaders-rulers-europe-holy-roman-empire.json | Karl V | 1519 | `Portrait_of_Charles_V,_Holy_Roman_Emperor,_seated_(1500–1558),_formerly_attributed_to_Titian_(Alte_Pinakothek,_Munich).jpg` |
+| all-architecture-ancient.json | Colosseum färdigställs | 81 | `Colosseo_2020.jpg` |
+| all-architecture-ancient.json | Stonehenge färdigställs | -3000 | `Stonehenge2007_07_30.jpg` |
+| all-architecture-ancient.json | Terrakottaarmén färdigställs | -247 | `51714-Terracota-Army.jpg` |
+| all-business-companies.json | Mercedes-Benz grundas | 1926 | `Mercedes-Benz_Star_(1969-1986,_2025-).svg` |
+| all-business-companies.json | Ferrari grundas | 1947 | `フェラーリ本社前_(36309429124).jpg` |
+| all-business-companies.json | Shell grundas | 1890 | `The_Shell_Centre_(8709496019).jpg` |
+| all-business-companies.json | Volkswagen is founded grundas | 1937 | `Volkswagen_logo_2019.svg` |
+| all-business-companies.json | Kentucky Fried Chicken grundas | 1930 | `KFC_Paraparaumu_154510.jpg` |
+| all-business-companies.json | Jägermeister grundas | 1935 | `17-03-16-Jägermeister-Miniaturen-RR7_8310.jpg` |
+| all-business-companies.json | Dr Pepper grundas | 1885 | `Dr_Pepper_Dose_2024.jpg` |
+| all-business-companies.json | Target Corporation grundas | 1902 | `Target_(2018).svg` |
+| all-business-companies.json | Pepsi grundas | 1893 | `Pepsi_2023.svg` |
+| all-business-companies.json | Uniqlo grundas | 1949 | `Uniqlo_Ginza_2018.jpg` |
+| all-business-companies.json | ByteDance grundas | 2012 | `ByteDance_1733_Commercial_Space_(20240731145554).jpg` |
+| all-business-companies.json | Indian Institute of Technology grundas | 1956 | `IIT_Kharagpur_2016.jpg` |
+| all-business-companies.json | Chevrolet grundas | 1911 | `Chevy_(14467564735).jpg` |
+| all-business-companies.json | Mazda grundas | 1920 | `Mazda_logo_2024_(vertical).svg` |
+| all-leaders-rulers-europe-aragon.json | Karl V | 1516 | `Portrait_of_Charles_V,_Holy_Roman_Emperor,_seated_(1500–1558),_formerly_attributed_to_Titian_(Alte_Pinakothek,_Munich).jpg` |
+| all-people-famous-deaths-modern.json | Mahatma Gandhi dör | 1948 | `Mahatma-Gandhi,_studio,_1931.jpg` |
+| all-people-famous-deaths-modern.json | Georg V av Storbritannien dör | 1936 | `King_George_1923_LCCN2014715558_(cropped).jpg` |
+| all-people-famous-deaths-modern.json | Nikola Tesla dör | 1943 | `Tesla_circa_1890.jpeg` |
+| all-people-famous-deaths-modern.json | Karl Marx dör | 1883 | `Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored_&_Adjusted_(3x4_cropped_b).png` |
+| all-people-famous-deaths-modern.json | Vincent van Gogh dör | 1890 | `Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_(454045).jpg` |
+| all-people-famous-deaths-modern.json | Thomas Jefferson dör | 1826 | `Official_Presidential_portrait_of_Thomas_Jefferson_(by_Rembrandt_Peale,_1800).jpg` |
+| all-people-famous-deaths-modern.json | Jane Austen dör | 1817 | `CassandraAusten-JaneAusten(c.1810)_hires.jpg` |
+| all-people-famous-deaths-modern.json | Ada Lovelace dör | 1852 | `Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png` |
+| all-people-famous-deaths-modern.json | Elisabeth av Bayern dör | 1898 | `Isabel_da_Áustria_1867.jpg` |
+| all-people-famous-deaths-modern.json | Lev Trotskij dör | 1940 | `Leon_Trotsky_1918_(3x4_rotated_cropped_b).jpg` |
+| all-people-famous-deaths-modern.json | Virginia Woolf dör | 1941 | `George_Charles_Beresford_-_Virginia_Woolf_in_1902_-_Restoration.jpg` |
+| all-people-famous-deaths-modern.json | Vilhelm II av Tyskland dör | 1941 | `Kaiser_Wilhelm_II_of_Germany_-_1902_(3x4_cropped).jpg` |
+| all-people-famous-deaths-modern.json | Mustafa Kemal Atatürk dör | 1938 | `Portrait_photograph_of_Mustafa_Kemal_in_military_uniform_1930.jpg` |
+| all-people-famous-deaths-modern.json | Calvin Coolidge dör | 1933 | `President_Calvin_Coolidge,_1924_portrait_photograph_(3x4_cropped).jpeg` |
+| all-people-famous-deaths-modern.json | Alexander Graham Bell dör | 1922 | `Alexander_Graham_Bell_1895_NPG_77_363.jpg` |
+| all-people-famous-deaths-modern.json | George Gordon Byron dör | 1824 | `Byron_1813_by_Phillips.jpg` |
+| all-people-famous-deaths-modern.json | Otto von Bismarck dör | 1898 | `Otto_von_Bismarck_1885_(cropped).jpg` |
+| all-people-famous-deaths-modern.json | Henry Ford dör | 1947 | `Henry_Ford_portrait_1915_original_(3x4_cropped).png` |
+| all-people-famous-deaths-modern.json | Arthur Conan Doyle dör | 1930 | `Arthur_Conan_Doyle_by_Walter_Benington,_1914.png` |
+| all-people-famous-deaths-modern.json | F. Scott Fitzgerald dör | 1940 | `F._Scott_Fitzgerald_(1921_portrait_-_crop)_Retouched.jpg` |
+| all-people-famous-deaths-modern.json | Frans Josef I av Österrike dör | 1916 | `Franz_Joseph_I_of_Austria.1910_(cropped).jpg` |
+| all-people-famous-deaths-modern.json | Claude Monet dör | 1926 | `Claude_Monet_1899_Nadar_crop.jpg` |
+| all-people-famous-deaths-modern.json | Martin Van Buren dör | 1862 | `Martin_Van_Buren_by_Mathew_Brady_c1855-58-(4).jpg` |
+| all-people-famous-deaths-modern.json | Rabindranath Tagore dör | 1941 | `1926_Rabindrath_Tagore.jpg` |
+| all-people-famous-deaths-modern.json | Victor Hugo dies dör | 1885 | `Victor_Hugo_by_Étienne_Carjat_1876_-_full.jpg` |
+| all-people-famous-deaths-modern.json | John Tyler dör | 1862 | `Tyler,_John,_by_Healy_(1842,_NPG_2019_13).jpg` |
+| all-people-famous-deaths-modern.json | Simón Bolívar dör | 1830 | `Simón_Bolívar._Toro_Moreno,_Luis._1922,_Legislative_Palace,_La_Paz.png` |
+| all-people-famous-deaths-modern.json | Rutherford B. Hayes dör | 1893 | `President_Rutherford_Hayes_1870_-_1880_Restored.jpg` |
+| all-people-famous-deaths-modern.json | Alexander III av Ryssland dör | 1894 | `Tsar_Alexander_III_c._1885.jpg` |
+| all-people-famous-deaths-modern.json | Hideki Tojo dör | 1948 | `Hideki_Tojo_Portrait_1941_(3x4_cropped)(2).jpg` |
+| all-people-famous-deaths-modern.json | James Monroe dör | 1831 | `James_Monroe_White_House_portrait_1819_(cropped)(2).jpg` |
+| all-people-famous-deaths-modern.json | Swami Vivekananda dör | 1902 | `Swami_Vivekananda-1893-09-signed.jpg` |
+| all-people-famous-deaths-modern.json | Ernst Röhm dör | 1934 | `Bundesarchiv_Bild_102-15282A,_Ernst_Röhm_(cropped).jpg` |
+| all-people-famous-deaths-modern.json | H.C. Andersen dör | 1875 | `HCA_by_Thora_Hallager_1869_crop.jpg` |
+| all-people-famous-deaths-modern.json | John Maynard Keynes dör | 1946 | `John_Maynard_Keynes_(1929).jpg` |
+| all-people-famous-deaths-modern.json | Ernest Shackleton dör | 1922 | `Ernest_Shackleton_before_1909.jpg` |
+| all-people-famous-deaths-modern.json | Ralph Waldo Emerson dör | 1882 | `Ralph_Waldo_Emerson_by_Josiah_Johnson_Hawes_1857.jpg` |
+| all-people-famous-deaths-modern.json | William Sherman dör | 1891 | `General_William_T._Sherman_(4190887790)_(cropped).jpg` |
+| all-people-famous-deaths-modern.json | Anton Tjechov dör | 1904 | `Anton_Chekhov_1889.jpg` |
+| all-people-famous-deaths-modern.json | Franz Liszt dör | 1886 | `Franz_Liszt_by_Herman_Biow-_1843.png` |
+| all-people-famous-deaths-modern.json | Wilhelm Keitel dör | 1946 | `Bundesarchiv_Bild_183-H30220,_Wilhelm_Keitel_(cropped).jpg` |
+| all-sport-teams.json | FC Bayern München grundas | 1900 | `FC_Bayern_München_logo_(2024).svg` |
+| all-sport-teams.json | Atlético Madrid grundas | 1903 | `Atletico_Madrid_Logo_2024.svg` |
+| all-sport-teams.json | Galatasaray SK grundas | 1905 | `Galatasaray_S.K._Logo_2026_5-stars.svg` |
+| all-sport-teams.json | Red Bull Racing grundas | 2005 | `Red_Bull_Racing_Logo_2026.svg` |
+| all-sport-teams.json | Inter grundas | 1908 | `FC_Internazionale_Milano_2021.svg` |
+| all-sport-teams.json | Juventus FC grundas | 1897 | `Juventus_FC_-_logo_black_(Italy,_2020).svg` |
+| all-sport-teams.json | Crystal Palace FC grundas | 1905 | `Crystal_Palace_FC_logo_(2022).svg` |
+| all-sport-teams.json | AFC Bournemouth grundas | 1899 | `AFC_Bournemouth_(2013).svg` |
+| all-sport-teams.json | Charlotte Hornets grundas | 1988 | `Charlotte_Hornets_(2014).svg` |
+| all-sport-teams.json | AS Roma grundas | 1927 | `AS_Roma_logo_(2017).svg` |
+| all-sport-teams.json | SSC Napoli grundas | 1926 | `SSC_Napoli_2025_(white_and_azure).svg` |
+| all-sport-teams.json | Haas F1 Team grundas | 2014 | `TGR_Haas_F1_Team_Logo_(2026).svg` |
+| all-sport-teams.json | AFC Ajax grundas | 1900 | `Logo_AFC_Ajax_(1928-1991,_2025-).png` |
+| all-sport-teams.json | ACF Fiorentina grundas | 1926 | `ACF_Fiorentina_-_logo_(Italy,_2022).svg` |
+| all-sport-teams.json | Tennessee Titans grundas | 1960 | `Tennessee_Titans_Logo_2026.svg` |
+| all-sport-teams.json | AS Monaco FC grundas | 1924 | `LogoASMonacoFC2021.svg` |
+| all-sport-teams.json | Anaheim Ducks grundas | 1993 | `Anaheim_Ducks_logo_2024.svg` |
+| all-sport-teams.json | SS Lazio grundas | 1900 | `Lazio_through_the_ages_2025.jpg` |
+| all-sport-teams.json | Sauber grundas | 1970 | `Logo_sauber_2023.jpg` |
+| all-sport-teams.json | Feyenoord grundas | 1908 | `Feyenoord_logo_since_2024.svg` |
+| all-sport-teams.json | Los Angeles Clippers grundas | 1970 | `Los_Angeles_Clippers_(2024).svg` |
+| all-sport-teams.json | New York Jets grundas | 1960 | `New_York_Jets_2024.svg` |
+| all-sport-teams.json | Toronto Maple Leafs grundas | 1917 | `Toronto_Maple_Leafs_2016_logo.svg` |
+| all-leaders-rulers-europe-scotland.json | Anna av Storbritannien | 1702 | `Dahl,_Michael_-_Queen_Anne_-_NPG_6187.jpg` |
+| all-leaders-rulers-europe-scotland.json | Vilhelm III av England | 1694 | `King_William_III_of_England,_(1650-1702).jpg` |
+| all-technology-websites.json | Instagram lanseras | 2010 | `Instagram_logo_2022.svg` |
+| all-technology-websites.json | X lanseras | 2006 | `X_(formerly_Twitter)_logo_late_2025.svg` |
+| all-technology-websites.json | Amazon.com lanseras | 1994 | `Amazon_Tower_I_topped_out,_June_2015.jpg` |
+| all-technology-websites.json | Reddit lanseras | 2005 | `Old_reddit,_2025.png` |
+| all-technology-websites.json | Wayback Machine lanseras | 2001 | `Wayback_Machine_logo_2010.svg` |
+| all-technology-websites.json | VK lanseras | 2006 | `VK's_home_page_(February_2026).png` |
+| all-technology-websites.json | Outlook.com lanseras | 1996 | `Microsoft_Outlook_Icon_(2025–present).svg` |
+| all-technology-websites.json | CNN lanseras | 1980 | `CNN_Logo_(2014).svg` |
+| all-technology-websites.json | Facebook Messenger lanseras | 2011 | `Facebook_Messenger_logo_2025.svg` |
+| all-technology-websites.json | Twitch lanseras | 2011 | `Twitch_logo_2019.svg` |
+| all-technology-websites.json | MSN lanseras | 1995 | `2024_new_msn_logo.svg` |
+| all-technology-websites.json | Hulu lanseras | 2007 | `Hulu_logo_(2018).svg` |
+| all-technology-websites.json | Internet Movie Database lanseras | 1990 | `IMDB_Logo_2016.svg` |
+| all-technology-websites.json | America Online lanseras | 1983 | `AOL_logo_(2024).svg` |
+| all-technology-websites.json | Airbnb lanseras | 2007 | `888_Brannan,_San_Francisco,_2016.jpg` |
+| all-technology-websites.json | 8chan lanseras | 2013 | `8kun_logo_2021.png` |
+| all-leaders-rulers-east-asia-japan.json | Naruhito | 2019 | `Emperor_Naruhito_20250611_(54582524056,_cropped).jpg` |
+| all-leaders-rulers-east-asia-japan.json | Akihito | 1989 | `Emperor_Akihito_(2016).jpg` |
+| all-leaders-politicians-europe-uk.json | Winston Churchill | 1940 | `Sir_Winston_Churchill_-_19086236948_(restored).jpg` |
+| all-leaders-politicians-europe-uk.json | Tony Blair | 1997 | `Tony_Blair_(2010).jpg` |
+| all-leaders-politicians-europe-uk.json | David Cameron | 2010 | `David_Cameron_Official_Portrait_2023_(cropped).jpg` |
+| all-leaders-rulers-europe-russia.json | Katarina II av Ryssland | 1762 | `Catherine_II_after_Roslin,_Rokotov_(1780s,_Kunsthistorisches_Museum).jpg` |
+| all-leaders-politicians-europe-germany.json | Joseph Goebbels | 1945 | `Bundesarchiv_Bild_146-1968-101-20A,_Joseph_Goebbels_(cropped)(b).jpg` |
+| all-leaders-politicians-europe-germany.json | Angela Merkel becomes chancellor of Germany | 2005 | `Angela_Merkel_2019_cropped.jpg` |
+| all-technology-computing-browsers.json | ”Google Chrome” släpps | 2008 | `Google_Chrome_icon_(February_2022).svg` |
+| all-entertainment-films.json | ”Troja” släpps | 2004 | `Troy_03500296.png` |
+| all-entertainment-films.json | ”Pianisten” släpps | 2002 | `Adrien_Brody_2011_Shankbone_(2).jpg` |

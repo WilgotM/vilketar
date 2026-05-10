@@ -36,7 +36,7 @@
     "year": 1818,
     "fact": "Frankenstein är roman från 1818 av Mary Shelley.",
     "wikipediaSlug": "Frankenstein",
-    "image": "Christie's_auction_scan_of_Frankenstein_1818.jpg",
+    "image": "",
     "pageViews": 209085
   },
   {
@@ -86,7 +86,7 @@
     "year": 1925,
     "fact": "Den store Gatsby är roman av F. Scott Fitzgerald.",
     "wikipediaSlug": "Den_store_Gatsby",
-    "image": "The_Great_Gatsby_Cover_1925_Retouched.jpg",
+    "image": "",
     "pageViews": 138562
   },
   {
@@ -136,7 +136,7 @@
     "year": 1955,
     "fact": "Lolita är roman av Vladimir Nabokov.",
     "wikipediaSlug": "Lolita",
-    "image": "Lolita_1955.JPG",
+    "image": "",
     "pageViews": 117688
   },
   {
@@ -196,7 +196,7 @@
     "year": 1967,
     "fact": "Hundra år av ensamhet är roman av Gabriel García Márquez.",
     "wikipediaSlug": "Hundra_%C3%A5r_av_ensamhet",
-    "image": "Cien_años_de_soledad_(book_cover,_1967).jpg",
+    "image": "Cien años de soledad.png",
     "pageViews": 92150
   },
   {
@@ -216,7 +216,7 @@
     "year": 1962,
     "fact": "Mannen i det höga slottet är roman från år 1962 av Philip K. Dick.",
     "wikipediaSlug": "Mannen_i_det_h%C3%B6ga_slottet",
-    "image": "The_Man_in_the_High_Castle_(1962).jpg",
+    "image": "",
     "pageViews": 90427
   },
   {
@@ -306,7 +306,7 @@
     "year": 1951,
     "fact": "Räddaren i nöden är roman från 1951 av J.D. Salinger.",
     "wikipediaSlug": "R%C3%A4ddaren_i_n%C3%B6den",
-    "image": "The_Catcher_in_the_Rye_(1951,_first_edition_cover).jpg",
+    "image": "Catcher-in-the-rye-red-cover.jpg",
     "pageViews": 70033
   },
   {
@@ -336,7 +336,7 @@
     "year": 1869,
     "fact": "Krig och fred är roman från 1869 av Lev Tolstoj.",
     "wikipediaSlug": "Krig_och_fred",
-    "image": "Tolstoy_-_War_and_Peace_-_first_edition,_1869.jpg",
+    "image": "",
     "pageViews": 63749
   },
   {
@@ -356,7 +356,7 @@
     "year": 1929,
     "fact": "De sju urens mysterium är detektivroman av Agatha Christie.",
     "wikipediaSlug": "De_sju_urens_mysterium",
-    "image": "The_Seven_Dials_Mystery_First_Edition_Cover_1929.jpg",
+    "image": "",
     "pageViews": 62869
   },
   {
@@ -476,7 +476,7 @@
     "year": 1883,
     "fact": "Skattkammarön är roman från 1883 av Robert Louis Stevenson.",
     "wikipediaSlug": "Skattkammar%C3%B6n",
-    "image": "Treasure_Island_(title_page,_1883).webp",
+    "image": "Treasure Island-Scribner's-1911.jpg",
     "pageViews": 51748
   },
   {
@@ -506,7 +506,7 @@
     "year": 1957,
     "fact": "Och världen skälvde är roman från 1957 av Ayn Rand.",
     "wikipediaSlug": "Och_v%C3%A4rlden_sk%C3%A4lvde",
-    "image": "Atlas_Shrugged_(1957_1st_ed)_-_Ayn_Rand.jpg",
+    "image": "",
     "pageViews": 50509
   }
 ]

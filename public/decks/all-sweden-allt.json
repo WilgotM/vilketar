@@ -41,7 +41,7 @@
   },
   {
     "fact": "Olof Palme mördas i Stockholm.",
-    "image": "Palme_Trauer_1986.jpg",
+    "image": "",
     "pageViews": 500000,
     "qid": "Q3284177",
     "subtitle": "Svensk samtidshistoria",
@@ -78,6 +78,36 @@
     "title": "”Waterloo” vinner Eurovision",
     "wikipediaSlug": "Waterloo_(s%C3%A5ng)",
     "year": 1974
+  },
+  {
+    "fact": "Sverige tar VM-brons i fotboll i USA.",
+    "image": "",
+    "pageViews": 420000,
+    "qid": "Q101751",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Sverige tar VM-brons i fotboll",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1994",
+    "year": 1994
+  },
+  {
+    "fact": "Zlatan Ibrahimović lämnar Inter för Barcelona.",
+    "image": "Zlatan_Ibrahimović_June_2018.jpg",
+    "pageViews": 380000,
+    "qid": "Q46896",
+    "subtitle": "Svensk spelarövergång",
+    "title": "Zlatan går till Barcelona",
+    "wikipediaSlug": "Zlatan_Ibrahimovi%C4%87",
+    "year": 2009
+  },
+  {
+    "fact": "Sverige spelar VM-final i fotboll på Råsunda mot Brasilien.",
+    "image": "Pele_con_brasil_(cropped).jpg",
+    "pageViews": 360000,
+    "qid": "Q132533",
+    "subtitle": "Fotbolls-VM på hemmaplan",
+    "title": "Sverige spelar VM-final i fotboll",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1958",
+    "year": 1958
   },
   {
     "fact": "Dancing Queen släpps och blir en av ABBAs största låtar.",
@@ -120,6 +150,16 @@
     "year": 1945
   },
   {
+    "fact": "Tre Kronor tar OS-guld i ishockey efter Peter Forsbergs berömda straff.",
+    "image": "Peter_Forsberg_2016-03-17_001_(cropped).jpg",
+    "pageViews": 320000,
+    "qid": "Q653041",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Tre Kronor tar OS-guld",
+    "wikipediaSlug": "Ishockey_vid_olympiska_vinterspelen_1994",
+    "year": 1994
+  },
+  {
     "fact": "Estoniakatastrofen inträffar på Östersjön.",
     "image": "Estonia_ferry2.jpg",
     "pageViews": 300000,
@@ -127,16 +167,6 @@
     "subtitle": "Fartygskatastrof på Östersjön",
     "title": "Estoniakatastrofen inträffar",
     "wikipediaSlug": "Estoniakatastrofen",
-    "year": 1994
-  },
-  {
-    "fact": "Sverige tar VM-brons i fotboll i USA.",
-    "image": "1994_FIFA_World_Cup.svg",
-    "pageViews": 300000,
-    "qid": "Q101751",
-    "subtitle": "Svenskt fotbollsminne",
-    "title": "Sverige tar VM-brons i fotboll",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1994",
     "year": 1994
   },
   {
@@ -150,6 +180,16 @@
     "year": 2012
   },
   {
+    "fact": "Armand Duplantis sätter världsrekord i stavhopp.",
+    "image": "Armand_Duplantis_after_his_6.0_m_jump-1.jpg",
+    "pageViews": 300000,
+    "qid": "Q20740797",
+    "subtitle": "Svenskt friidrottsminne",
+    "title": "Duplantis sätter världsrekord",
+    "wikipediaSlug": "Armand_Duplantis",
+    "year": 2020
+  },
+  {
     "fact": "H&M grundas i Västerås.",
     "image": "H&M-Logo.svg",
     "pageViews": 280000,
@@ -161,7 +201,7 @@
   },
   {
     "fact": "Sverige går över till högertrafik.",
-    "image": "Kungsgatan_1967.jpg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q376921",
     "subtitle": "Svensk trafikomläggning",
@@ -180,6 +220,16 @@
     "year": 1987
   },
   {
+    "fact": "Sarah Sjöström vinner OS-guld på 100 meter fjärilsim.",
+    "image": "Sarah_Sjöström_2013.jpg",
+    "pageViews": 260000,
+    "qid": "Q235315",
+    "subtitle": "Svenskt simminne",
+    "title": "Sarah Sjöström vinner OS-guld",
+    "wikipediaSlug": "Sarah_Sj%C3%B6str%C3%B6m",
+    "year": 2016
+  },
+  {
     "qid": "Q7186",
     "title": "Marie Curie får Nobelpriset i fysik",
     "subtitle": "Fransk-polsk fysiker och kemist",
@@ -190,14 +240,24 @@
     "pageViews": 254345
   },
   {
-    "fact": "Tre Kronor tar OS-guld i ishockey i Lillehammer.",
-    "image": "",
-    "pageViews": 240000,
-    "qid": "Q653041",
+    "fact": "Sverige tar OS-guld i ishockey i Turin med flera NHL-stjärnor i laget.",
+    "image": "Henrik_Lundqvist_awarded_as_the_best_goalie_of_all_time_in_Swedish_hockey-2.jpg",
+    "pageViews": 250000,
+    "qid": "Q362157",
     "subtitle": "Svenskt ishockeyminne",
-    "title": "Tre Kronor tar OS-guld",
-    "wikipediaSlug": "Ishockey_vid_olympiska_vinterspelen_1994",
-    "year": 1994
+    "title": "Tre Kronor tar OS-guld igen",
+    "wikipediaSlug": "Henrik_Lundqvist",
+    "year": 2006
+  },
+  {
+    "fact": "Sverige tar silver i damernas fotbolls-VM efter final mot Tyskland.",
+    "image": "Victoria_Svensson.jpg",
+    "pageViews": 240000,
+    "qid": "Q500308",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Sverige spelar VM-final i damfotboll",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2003",
+    "year": 2003
   },
   {
     "fact": "Roxette bildas av Marie Fredriksson och Per Gessle.",
@@ -208,6 +268,16 @@
     "title": "Roxette bildas",
     "wikipediaSlug": "Roxette",
     "year": 1986
+  },
+  {
+    "fact": "Carolina Klüft vinner OS-guld i sjukamp i Aten.",
+    "image": "Carolina_Klüft_in_2025-4-2.jpg",
+    "pageViews": 220000,
+    "qid": "Q223672",
+    "subtitle": "Svensk friidrottsklassiker",
+    "title": "Carolina Klüft vinner OS-guld",
+    "wikipediaSlug": "Carolina_Kl%C3%BCft",
+    "year": 2004
   },
   {
     "fact": "Solsidan börjar sändas i TV4.",
@@ -221,7 +291,7 @@
   },
   {
     "fact": "Heroes vinner Eurovision Song Contest för Sverige.",
-    "image": "20150516_ESC_2015_Måns_Zelmerlöw_9958.jpg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q19507869",
     "subtitle": "Låt framförd av Måns Zelmerlöw",
@@ -338,16 +408,6 @@
     "wikipediaSlug": "The_Girl_with_the_Dragon_Tattoo",
     "image": "The_Girl_with_the_Dragon_Tattoo_Poster.jpg",
     "pageViews": 73442
-  },
-  {
-    "qid": "Q46896",
-    "title": "Zlatan Ibrahimović föds",
-    "subtitle": "Svensk fotbollsspelare",
-    "year": 1981,
-    "fact": "Zlatan Ibrahimović föds.",
-    "wikipediaSlug": "Zlatan_Ibrahimovi%C4%87",
-    "image": "Zlatan Ibrahimović June 2018.jpg",
-    "pageViews": 65000
   },
   {
     "qid": "Q7546",
@@ -491,16 +551,6 @@
   },
   {
     "qid": "Q52927",
-    "title": "Karl XIV Johan",
-    "subtitle": "Kung av Sverige och Norge 1818–1844",
-    "year": 1818,
-    "fact": "Karl XIV Johan är kung av Sverige och Norge 1818–1844.",
-    "wikipediaSlug": "Karl_XIV_Johan",
-    "image": "Karl_XIV_Johan,_Sveriges_och_Norges_konung._Porträtt_av_Frederic_Westin,_cirka_1843._-_kopia.png",
-    "pageViews": 25546
-  },
-  {
-    "qid": "Q52927",
     "title": "Karl XIV Johan dör",
     "subtitle": "Kung av Sverige och Norge 1818–1844",
     "year": 1844,
@@ -508,16 +558,6 @@
     "wikipediaSlug": "Karl_XIV_Johan",
     "image": "Karl_XIV_Johan,_Sveriges_och_Norges_konung._Porträtt_av_Frederic_Westin,_cirka_1843._-_kopia.png",
     "pageViews": 25546
-  },
-  {
-    "qid": "Q52934",
-    "title": "Karl XII",
-    "subtitle": "Kung av Sverige 1697–1718",
-    "year": 1697,
-    "fact": "Karl XII är kung av Sverige 1697–1718.",
-    "wikipediaSlug": "Karl_XII",
-    "image": "Copy_Charles_XII_-_Nationalmuseum_-_17886.png",
-    "pageViews": 25150
   },
   {
     "qid": "Q52934",
@@ -556,7 +596,7 @@
     "year": 1611,
     "fact": "Gustav II Adolf är kung av Sverige 1611–1632.",
     "wikipediaSlug": "Gustav_II_Adolf",
-    "image": "Attributed_to_Jacob_Hoefnagel_-_Gustavus_Adolphus,_King_of_Sweden_1611-1632_-_Google_Art_Project.jpg",
+    "image": "",
     "pageViews": 24108
   },
   {
@@ -578,26 +618,6 @@
     "wikipediaSlug": "Saab_37_Viggen",
     "image": "Viggen_(52526298757).jpg",
     "pageViews": 22541
-  },
-  {
-    "qid": "Q270414",
-    "title": "Carolina Klüft vinner OS-guld",
-    "subtitle": "Svensk friidrottare",
-    "year": 2004,
-    "fact": "Carolina Klüft vinner OS-guld.",
-    "wikipediaSlug": "Carolina_Kl%C3%BCft",
-    "image": "Carolina Kluft 2007 Osaka.jpg",
-    "pageViews": 22000
-  },
-  {
-    "qid": "Q52937",
-    "title": "Kristina av Sverige",
-    "subtitle": "Regerande drottning av Sverige 1632–1654",
-    "year": 1632,
-    "fact": "Kristina av Sverige är regerande drottning av Sverige 1632–1654.",
-    "wikipediaSlug": "Drottning_Kristina",
-    "image": "Swedish_queen_Drottning_Kristina_portrait_by_Sébastien_Bourdon_stor.jpg",
-    "pageViews": 21308
   },
   {
     "qid": "Q52937",

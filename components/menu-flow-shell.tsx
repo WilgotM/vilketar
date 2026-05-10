@@ -5,11 +5,13 @@ import {
   getAllSelectionRoute,
   getCategoryDefinitions,
   getDeckPath,
+  getDeckSlugPath,
   getFreePlayGroupDefinition,
   getGroupAllSelectionRouteForNode,
   getGroupAllSelectionRoute,
   getLeafSelectionRoute,
   getLeafSelectionRouteForNode,
+  getSelectionRouteParentPath,
   getSelectionRoutePath,
   getSelectionRouteShareLabel,
   getSelectionRouteTitle,
@@ -194,6 +196,32 @@ function DailyCardPlaceholder() {
   );
 }
 
+function getMenuBackHref(
+  playRoute: PlayRouteState | null,
+  currentPlayView: FreePlayRootView,
+): string | undefined {
+  if (!playRoute) {
+    return undefined;
+  }
+
+  if (playRoute.kind === "root-selector") {
+    return playRoute.view === "landing" ? "/" : "/play";
+  }
+
+  if (playRoute.kind === "game") {
+    return prefixPlayPath(
+      getSelectionRouteParentPath(playRoute.selectionRoute),
+      currentPlayView,
+    );
+  }
+
+  const parentSlugPath = getDeckSlugPath(playRoute.group.nodeId).slice(0, -1);
+  const parentPath =
+    parentSlugPath.length === 0 ? "/play" : `/play/${parentSlugPath.join("/")}`;
+
+  return prefixPlayPath(parentPath, currentPlayView);
+}
+
 export default function MenuFlowShell() {
   const router = useRouter();
   const path = getPath(router.asPath);
@@ -203,7 +231,6 @@ export default function MenuFlowShell() {
     React.useState(false);
   const [pendingSelectionRoute, setPendingSelectionRoute] =
     React.useState<SelectionRoute | null>(null);
-  const [dailyStarted, setDailyStarted] = React.useState(false);
   const previousPathRef = React.useRef("");
   const playRoute = React.useMemo(() => parsePlayRoute(path), [path]);
   const rootFreePlayView =
@@ -238,12 +265,6 @@ export default function MenuFlowShell() {
 
   React.useEffect(() => {
     if (path !== "/daily") {
-      setDailyStarted(false);
-    }
-  }, [path]);
-
-  React.useEffect(() => {
-    if (path !== "/daily") {
       return;
     }
 
@@ -264,6 +285,10 @@ export default function MenuFlowShell() {
   }, [path]);
 
   const currentPlayView = playRoute?.view ?? "landing";
+  const menuBackHref = React.useMemo(
+    () => getMenuBackHref(playRoute, currentPlayView),
+    [currentPlayView, playRoute],
+  );
 
   const selectorStateKey =
     playRoute?.kind === "group-selector"
@@ -450,13 +475,8 @@ export default function MenuFlowShell() {
     setHasStartedPendingRoute(false);
   }, []);
 
-  const returnToDailyEntry = React.useCallback(() => {
-    setDailyStarted(false);
-    syncDailyCompletionState();
-  }, [syncDailyCompletionState]);
-
   const showDailyGame =
-    path === "/daily" && dailyStarted && completedScore === null;
+    path === "/daily" && dailyCompletionReady && completedScore === null;
   const showFreePlayGame = hasStartedPendingRoute && !!activeSelectionRoute;
   const showGameScreen = showDailyGame || showFreePlayGame;
   const contextualAllHref = React.useMemo(() => {
@@ -516,13 +536,17 @@ export default function MenuFlowShell() {
             <GameRouteScreen
               hideHeader
               mode="daily"
-              onResetGame={returnToDailyEntry}
+              onQuitGame={() => {
+                void router.push("/");
+              }}
+              onResetGame={syncDailyCompletionState}
               skipRouteIntro
             />
           ) : showFreePlayGame && activeSelectionRoute ? (
             <GameRouteScreen
               hideHeader
               mode="free-play"
+              onQuitGame={returnToSelectionScreen}
               onResetGame={returnToSelectionScreen}
               selectionRoute={activeSelectionRoute}
               skipRouteIntro
@@ -535,7 +559,12 @@ export default function MenuFlowShell() {
             [styles.pageHome]: path === "/",
           })}
         >
-          {path !== "/" ? <SiteHeader /> : null}
+          {path !== "/" ? (
+            <SiteHeader
+              backHref={path === "/daily" ? "/" : menuBackHref}
+              backLabel="Tillbaka"
+            />
+          ) : null}
           <main className={styles.screen}>
             <div
               className={classNames(styles.wrapper, {
@@ -545,13 +574,15 @@ export default function MenuFlowShell() {
               {path === "/daily" ? (
                 <div className={classNames(styles.stage, styles.stageMenu)}>
                   {dailyCompletionReady ? (
-                    <DailyEntryScreen
-                      embedded
-                      completedResults={completedResults}
-                      completedScore={completedScore}
-                      dailyDateKey={dailyDateKey}
-                      onStart={() => setDailyStarted(true)}
-                    />
+                    completedScore === null ? null : (
+                      <DailyEntryScreen
+                        embedded
+                        completedResults={completedResults}
+                        completedScore={completedScore}
+                        dailyDateKey={dailyDateKey}
+                        onStart={syncDailyCompletionState}
+                      />
+                    )
                   ) : (
                     <DailyCardPlaceholder />
                   )}

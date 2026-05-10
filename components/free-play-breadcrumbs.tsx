@@ -28,12 +28,29 @@ function getBreadcrumbKey(label: string, index: number): string {
   return `breadcrumb-${index}-${label}`;
 }
 
+function prefixBrowseHref(href: string | undefined, useBrowsePrefix: boolean) {
+  if (!href || !useBrowsePrefix || !href.startsWith("/play")) {
+    return href;
+  }
+
+  if (href === "/play") {
+    return href;
+  }
+
+  return href.startsWith("/play/browse")
+    ? href
+    : `/play/browse${href.slice("/play".length)}`;
+}
+
 function getBreadcrumbItems(props: Props): BreadcrumbItem[] {
   const {
     leadingBreadcrumbs = [],
     selectorBreadcrumbs = [],
     selectionRoute,
   } = props;
+  const useBrowsePrefix = leadingBreadcrumbs.some(
+    (breadcrumb) => breadcrumb.href === "/play/browse",
+  );
   const rootItems: BreadcrumbItem[] = [
     { href: "/play", key: "free-play", label: "Fritt spel" },
     ...leadingBreadcrumbs.map((breadcrumb, index) => ({
@@ -48,7 +65,7 @@ function getBreadcrumbItems(props: Props): BreadcrumbItem[] {
       ...rootItems,
       ...getSelectionRouteBreadcrumbs(selectionRoute).map(
         (breadcrumb, index) => ({
-          href: breadcrumb.href,
+          href: prefixBrowseHref(breadcrumb.href, useBrowsePrefix),
           key: getBreadcrumbKey(breadcrumb.label, rootItems.length + index),
           label: breadcrumb.label,
         }),
