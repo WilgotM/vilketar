@@ -198,8 +198,6 @@ function md5(text: string): string {
     .join("");
 }
 
-type WikimediaRepo = "commons" | "enwiki";
-
 function createThumbnailName(encodedImage: string, width: number): string {
   if (/\.svg$/iu.test(encodedImage)) {
     return `${width}px-${encodedImage}.png`;
@@ -212,30 +210,22 @@ function createThumbnailName(encodedImage: string, width: number): string {
   return `${width}px-${encodedImage}`;
 }
 
-function createWikimediaThumbPath(
-  image: string,
-  width: number,
-  repo: WikimediaRepo,
-): string {
+function createCommonsThumbPath(image: string, width: number): string {
   const normalizedImage = image.replaceAll(" ", "_");
   const hash = md5(normalizedImage);
   const firstPath = hash[0] ?? "";
   const secondPath = hash.slice(0, 2);
   const encodedImage = encodeURIComponent(normalizedImage);
-  const repoPath = repo === "commons" ? "commons" : "en";
   const thumbnailName = createThumbnailName(encodedImage, width);
 
-  return `https://upload.wikimedia.org/wikipedia/${repoPath}/thumb/${firstPath}/${secondPath}/${encodedImage}/${thumbnailName}`;
+  return `https://upload.wikimedia.org/wikipedia/commons/thumb/${firstPath}/${secondPath}/${encodedImage}/${thumbnailName}`;
 }
 
 export function createWikimediaImageCandidates(
   image: string,
   width = 250,
 ): string[] {
-  return [
-    createWikimediaThumbPath(image, width, "commons"),
-    createWikimediaThumbPath(image, width, "enwiki"),
-  ];
+  return [createCommonsThumbPath(image, width)];
 }
 
 export function createWikimediaImage(image: string, width = 250): string {

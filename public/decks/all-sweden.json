@@ -1,0 +1,692 @@
+[
+  {
+    "fact": "Minecraft släpps.",
+    "image": "Minecraft_cube.svg",
+    "pageViews": 600000,
+    "qid": "Q49740",
+    "subtitle": "Svenskt datorspel",
+    "title": "”Minecraft” släpps",
+    "wikipediaSlug": "Minecraft",
+    "year": 2011
+  },
+  {
+    "fact": "Ikea grundas av Ingvar Kamprad.",
+    "image": "IKEA_Shopping_centre_Sweden.jpg",
+    "pageViews": 500000,
+    "qid": "Q54078",
+    "subtitle": "Svenskt möbelföretag",
+    "title": "Ikea grundas",
+    "wikipediaSlug": "Ikea",
+    "year": 1943
+  },
+  {
+    "fact": "Melodifestivalen arrangeras för första gången.",
+    "image": "Melodifestivalen_Logo.svg",
+    "pageViews": 500000,
+    "qid": "Q58884",
+    "subtitle": "Svensk musiktävling",
+    "title": "Melodifestivalen startar",
+    "wikipediaSlug": "Melodifestivalen",
+    "year": 1959
+  },
+  {
+    "fact": "ABBA bildas i Stockholm.",
+    "image": "ABBA_-_TopPop_1974_5.png",
+    "pageViews": 500000,
+    "qid": "Q18233",
+    "subtitle": "Svensk popgrupp",
+    "title": "ABBA bildas",
+    "wikipediaSlug": "Abba",
+    "year": 1972
+  },
+  {
+    "fact": "Olof Palme mördas i Stockholm.",
+    "image": "Palme_Trauer_1986.jpg",
+    "pageViews": 500000,
+    "qid": "Q3284177",
+    "subtitle": "Svensk samtidshistoria",
+    "title": "Olof Palme mördas",
+    "wikipediaSlug": "Mordet_p%C3%A5_Olof_Palme",
+    "year": 1986
+  },
+  {
+    "fact": "Spotify grundas i Stockholm.",
+    "image": "",
+    "pageViews": 450000,
+    "qid": "Q689141",
+    "subtitle": "Svensk musiktjänst",
+    "title": "Spotify grundas",
+    "wikipediaSlug": "Spotify",
+    "year": 2006
+  },
+  {
+    "fact": "Astrid Lindgren föds i Vimmerby.",
+    "image": "Lindgren_1960.jpg",
+    "pageViews": 420000,
+    "qid": "Q55767",
+    "subtitle": "Svensk barnboksförfattare",
+    "title": "Astrid Lindgren föds",
+    "wikipediaSlug": "Astrid_Lindgren",
+    "year": 1907
+  },
+  {
+    "fact": "ABBA vinner Eurovision Song Contest med Waterloo.",
+    "image": "",
+    "pageViews": 420000,
+    "qid": "Q32503",
+    "subtitle": "Svensk Eurovision-klassiker",
+    "title": "”Waterloo” vinner Eurovision",
+    "wikipediaSlug": "Waterloo_(s%C3%A5ng)",
+    "year": 1974
+  },
+  {
+    "fact": "Dancing Queen släpps och blir en av ABBAs största låtar.",
+    "image": "",
+    "pageViews": 360000,
+    "qid": "Q870786",
+    "subtitle": "Låt av ABBA",
+    "title": "”Dancing Queen” släpps",
+    "wikipediaSlug": "Dancing_Queen",
+    "year": 1976
+  },
+  {
+    "fact": "Volvo grundas i Göteborg.",
+    "image": "",
+    "pageViews": 350000,
+    "qid": "Q163810",
+    "subtitle": "Svenskt industriföretag",
+    "title": "Volvo grundas",
+    "wikipediaSlug": "Volvo",
+    "year": 1927
+  },
+  {
+    "qid": "Q392",
+    "title": "Bob Dylan får Nobelpriset i litteratur",
+    "subtitle": "Amerikansk singer-songwriter",
+    "year": 2016,
+    "fact": "Bob Dylan wins the Nobel Prize in Literature är amerikansk singer-songwriter.",
+    "wikipediaSlug": "Bob_Dylan",
+    "image": "DylanYoungKilkenny140719v2_(50_of_52)_(52246124397)_(cropped).jpg",
+    "pageViews": 340198
+  },
+  {
+    "fact": "Pippi Långstrump ges ut och blir en svensk barnboksklassiker.",
+    "image": "Pippi_Longstocking.jpg",
+    "pageViews": 320000,
+    "qid": "Q6668",
+    "subtitle": "Barnboksfigur av Astrid Lindgren",
+    "title": "Pippi Långstrump ges ut",
+    "wikipediaSlug": "Pippi_L%C3%A5ngstrump",
+    "year": 1945
+  },
+  {
+    "fact": "Estoniakatastrofen inträffar på Östersjön.",
+    "image": "Estonia_ferry2.jpg",
+    "pageViews": 300000,
+    "qid": "Q3360074",
+    "subtitle": "Fartygskatastrof på Östersjön",
+    "title": "Estoniakatastrofen inträffar",
+    "wikipediaSlug": "Estoniakatastrofen",
+    "year": 1994
+  },
+  {
+    "fact": "Sverige tar VM-brons i fotboll i USA.",
+    "image": "1994_FIFA_World_Cup.svg",
+    "pageViews": 300000,
+    "qid": "Q101751",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Sverige tar VM-brons i fotboll",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1994",
+    "year": 1994
+  },
+  {
+    "fact": "Euphoria vinner Eurovision Song Contest för Sverige.",
+    "image": "Pht-Vugar_Ibadov_eurovision_(18).jpg",
+    "pageViews": 300000,
+    "qid": "Q192174",
+    "subtitle": "Låt framförd av Loreen",
+    "title": "”Euphoria” vinner Eurovision",
+    "wikipediaSlug": "Euphoria_(s%C3%A5ng)",
+    "year": 2012
+  },
+  {
+    "fact": "H&M grundas i Västerås.",
+    "image": "H&M-Logo.svg",
+    "pageViews": 280000,
+    "qid": "Q188326",
+    "subtitle": "Svenskt klädföretag",
+    "title": "H&M grundas",
+    "wikipediaSlug": "Hennes_%26_Mauritz",
+    "year": 1947
+  },
+  {
+    "fact": "Sverige går över till högertrafik.",
+    "image": "Kungsgatan_1967.jpg",
+    "pageViews": 260000,
+    "qid": "Q376921",
+    "subtitle": "Svensk trafikomläggning",
+    "title": "Högertrafiken införs",
+    "wikipediaSlug": "H%C3%B6gertrafikoml%C3%A4ggningen",
+    "year": 1967
+  },
+  {
+    "fact": "På spåret börjar sändas i SVT.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q7264617",
+    "subtitle": "Svenskt tv-program",
+    "title": "”På spåret” börjar sändas",
+    "wikipediaSlug": "P%C3%A5_sp%C3%A5ret",
+    "year": 1987
+  },
+  {
+    "qid": "Q7186",
+    "title": "Marie Curie får Nobelpriset i fysik",
+    "subtitle": "Fransk-polsk fysiker och kemist",
+    "year": 1903,
+    "fact": "Marie Curie wins the Nobel Prize in Physics är fransk-polsk fysiker och kemist.",
+    "wikipediaSlug": "Marie_Curie",
+    "image": "Marie_Curie_c._1920s.jpg",
+    "pageViews": 254345
+  },
+  {
+    "fact": "Tre Kronor tar OS-guld i ishockey i Lillehammer.",
+    "image": "",
+    "pageViews": 240000,
+    "qid": "Q653041",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Tre Kronor tar OS-guld",
+    "wikipediaSlug": "Ishockey_vid_olympiska_vinterspelen_1994",
+    "year": 1994
+  },
+  {
+    "fact": "Roxette bildas av Marie Fredriksson och Per Gessle.",
+    "image": "Roxette2.jpg",
+    "pageViews": 220000,
+    "qid": "Q173790",
+    "subtitle": "Svensk popduo",
+    "title": "Roxette bildas",
+    "wikipediaSlug": "Roxette",
+    "year": 1986
+  },
+  {
+    "fact": "Solsidan börjar sändas i TV4.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q10673360",
+    "subtitle": "Svensk tv-serie",
+    "title": "”Solsidan” börjar sändas",
+    "wikipediaSlug": "Solsidan",
+    "year": 2010
+  },
+  {
+    "fact": "Heroes vinner Eurovision Song Contest för Sverige.",
+    "image": "20150516_ESC_2015_Måns_Zelmerlöw_9958.jpg",
+    "pageViews": 220000,
+    "qid": "Q19507869",
+    "subtitle": "Låt framförd av Måns Zelmerlöw",
+    "title": "”Heroes” vinner Eurovision",
+    "wikipediaSlug": "Heroes_(M%C3%A5ns_Zelmerl%C3%B6w)",
+    "year": 2015
+  },
+  {
+    "qid": "Q505476",
+    "title": "Avicii dör",
+    "subtitle": "Svensk musikproducent och DJ",
+    "year": 2018,
+    "fact": "Avicii är svensk musikproducent och DJ.",
+    "wikipediaSlug": "Avicii",
+    "image": "Avicii_2014_003cr.jpg",
+    "pageViews": 215264
+  },
+  {
+    "fact": "Sverige blir medlem i Europeiska unionen.",
+    "image": "",
+    "pageViews": 200000,
+    "qid": "manual-Sverige_och_Europeiska_unionen",
+    "subtitle": "Svensk samtidshistoria",
+    "title": "Sverige går med i EU",
+    "wikipediaSlug": "Sverige_och_Europeiska_unionen",
+    "year": 1995
+  },
+  {
+    "fact": "Emil i Lönneberga ges ut.",
+    "image": "Emil_and_pig,_Astrid_Lindgrens_Värld_2014.jpg",
+    "pageViews": 180000,
+    "qid": "Q783843",
+    "subtitle": "Barnbok av Astrid Lindgren",
+    "title": "”Emil i Lönneberga” ges ut",
+    "wikipediaSlug": "Emil_i_L%C3%B6nneberga",
+    "year": 1963
+  },
+  {
+    "fact": "Bamse dyker upp första gången.",
+    "image": "Bamse.jpg",
+    "pageViews": 180000,
+    "qid": "Q252480",
+    "subtitle": "Svensk seriefigur",
+    "title": "Bamse dyker upp första gången",
+    "wikipediaSlug": "Bamse",
+    "year": 1966
+  },
+  {
+    "fact": "Ronja Rövardotter ges ut.",
+    "image": "Ronja_och_Mattis,_Astrid_Lindgrens_Värld_2014.jpg",
+    "pageViews": 180000,
+    "qid": "Q1144655",
+    "subtitle": "Barnbok av Astrid Lindgren",
+    "title": "”Ronja Rövardotter” ges ut",
+    "wikipediaSlug": "Ronja_r%C3%B6vardotter",
+    "year": 1981
+  },
+  {
+    "fact": "Ace of Base bildas i Göteborg.",
+    "image": "Aob_tour.jpg",
+    "pageViews": 180000,
+    "qid": "Q151634",
+    "subtitle": "Svensk popgrupp",
+    "title": "Ace of Base bildas",
+    "wikipediaSlug": "Ace_of_Base",
+    "year": 1990
+  },
+  {
+    "fact": "Klarna grundas i Stockholm.",
+    "image": "Klarna_Wordmark_Transparent_And_Black_v2.svg",
+    "pageViews": 160000,
+    "qid": "Q1165072",
+    "subtitle": "Svenskt fintechbolag",
+    "title": "Klarna grundas",
+    "wikipediaSlug": "Klarna",
+    "year": 2005
+  },
+  {
+    "qid": "Q43247",
+    "title": "Ingrid Bergman dör",
+    "subtitle": "Svensk skådespelare (1915–1982)",
+    "year": 1982,
+    "fact": "Ingrid Bergman är svensk skådespelare (1915–1982).",
+    "wikipediaSlug": "Ingrid_Bergman",
+    "image": "Ingrid_Bergman_by_Whitey_Schafer_1940.jpg",
+    "pageViews": 121762
+  },
+  {
+    "qid": "Q40083273",
+    "title": "”A Minecraft Movie” släpps",
+    "subtitle": "Amerikansk äventyrsfilm från 2025",
+    "year": 2025,
+    "fact": "A Minecraft Movie är amerikansk äventyrsfilm från 2025.",
+    "wikipediaSlug": "A_Minecraft_Movie",
+    "image": "A_Minecraft_Movie_poster.jpg",
+    "pageViews": 107149
+  },
+  {
+    "qid": "Q150088",
+    "title": "Saab 39 Gripen flyger för första gången",
+    "subtitle": "Svenskt enhetsflygplan tillverkat av Saab AB",
+    "year": 1988,
+    "fact": "Saab 39 Gripen är svenskt enhetsflygplan tillverkat av Saab AB.",
+    "wikipediaSlug": "Saab_39_Gripen",
+    "image": "Saab_JAS_39_Gripen_at_Kaivopuisto_Air_Show,_June_2017_(altered)_copy.jpg",
+    "pageViews": 96076
+  },
+  {
+    "qid": "Q474093",
+    "title": "”The Girl with the Dragon Tattoo” släpps",
+    "subtitle": "Amerikansk-svensk film från 2011 regisserad av David Fincher",
+    "year": 2011,
+    "fact": "The Girl with the Dragon Tattoo är amerikansk-svensk film från 2011 regisserad av David Fincher.",
+    "wikipediaSlug": "The_Girl_with_the_Dragon_Tattoo",
+    "image": "The_Girl_with_the_Dragon_Tattoo_Poster.jpg",
+    "pageViews": 73442
+  },
+  {
+    "qid": "Q46896",
+    "title": "Zlatan Ibrahimović föds",
+    "subtitle": "Svensk fotbollsspelare",
+    "year": 1981,
+    "fact": "Zlatan Ibrahimović föds.",
+    "wikipediaSlug": "Zlatan_Ibrahimovi%C4%87",
+    "image": "Zlatan Ibrahimović June 2018.jpg",
+    "pageViews": 65000
+  },
+  {
+    "qid": "Q7546",
+    "title": "Ingmar Bergman dör",
+    "subtitle": "Svensk regissör, manusförfattare, teaterchef, dramatiker och författare (1918–2007)",
+    "year": 2007,
+    "fact": "Ingmar Bergman är svensk regissör, manusförfattare, teaterchef, dramatiker och författare (1918–2007).",
+    "wikipediaSlug": "Ingmar_Bergman",
+    "image": "Ingmar_Bergman_(1966).jpg",
+    "pageViews": 57787
+  },
+  {
+    "qid": "Q5878",
+    "title": "Gabriel García Márquez får Nobelpriset i litteratur",
+    "subtitle": "Colombiansk författare och journalist",
+    "year": 1982,
+    "fact": "Gabriel García Márquez wins the Nobel Prize in Literature är colombiansk författare och journalist.",
+    "wikipediaSlug": "Gabriel_Garc%C3%ADa_M%C3%A1rquez",
+    "image": "Gabriel_Garcia_Marquez.jpg",
+    "pageViews": 57267
+  },
+  {
+    "qid": "Q5443",
+    "title": "Greta Garbo dör",
+    "subtitle": "Svensk skådespelare",
+    "year": 1990,
+    "fact": "Greta Garbo är svensk skådespelare.",
+    "wikipediaSlug": "Greta_Garbo",
+    "image": "Garbo_in_Inspiration.jpg",
+    "pageViews": 57252
+  },
+  {
+    "qid": "Q45068",
+    "title": "Carl XVI Gustaf",
+    "subtitle": "Kung av Sverige 1973–",
+    "year": 1973,
+    "fact": "Carl XVI Gustaf är kung av Sverige 1973–.",
+    "wikipediaSlug": "Carl_XVI_Gustaf",
+    "image": "06.11.2025_–_Recepção_Oficial_dos_Chefes_de_Delegação_da_Cúpula_do_Clima_(54906269035)_(Carlos_XVI_Gustavo).jpg",
+    "pageViews": 53152
+  },
+  {
+    "qid": "Q215293",
+    "title": "Volvo Personvagnar grundas",
+    "subtitle": "Svensk biltillverkare",
+    "year": 1927,
+    "fact": "Volvo Personvagnar är svensk biltillverkare.",
+    "wikipediaSlug": "Volvo_Personvagnar",
+    "image": "Volvo-Iron-Mark-Black.svg",
+    "pageViews": 50032
+  },
+  {
+    "qid": "Q7085",
+    "title": "Niels Bohr får Nobelpriset i fysik",
+    "subtitle": "Dansk fysiker",
+    "year": 1922,
+    "fact": "Niels Bohr wins the Nobel Prize in Physics är dansk fysiker.",
+    "wikipediaSlug": "Niels_Bohr",
+    "image": "Niels_Bohr.jpg",
+    "pageViews": 48594
+  },
+  {
+    "qid": "Q23810",
+    "title": "Alfred Nobel dör",
+    "subtitle": "Svensk kemist, ingenjör, uppfinnare och industrialist",
+    "year": 1896,
+    "fact": "Alfred Nobel är svensk kemist, ingenjör, uppfinnare och industrialist.",
+    "wikipediaSlug": "Alfred_Nobel",
+    "image": "Alfred_Nobel3.jpg",
+    "pageViews": 44660
+  },
+  {
+    "qid": "Q217189",
+    "title": "”Det sjunde inseglet” släpps",
+    "subtitle": "Svensk film från 1957 regisserad av Ingmar Bergman",
+    "year": 1957,
+    "fact": "Det sjunde inseglet är svensk film från 1957 regisserad av Ingmar Bergman.",
+    "wikipediaSlug": "Det_sjunde_inseglet",
+    "image": "Seventhsealposter.jpg",
+    "pageViews": 39708
+  },
+  {
+    "qid": "Q686861",
+    "title": "”Mamma Mia!”",
+    "subtitle": "Brittisk musikal baserad på ABBA:s musik",
+    "year": 1999,
+    "fact": "Mamma Mia! är brittisk musikal baserad på ABBA:s musik.",
+    "wikipediaSlug": "Mamma_Mia!",
+    "image": "Mammamiaposter.jpg",
+    "pageViews": 34425
+  },
+  {
+    "qid": "Q272786",
+    "title": "Björn Borg vinner Wimbledon",
+    "subtitle": "Svensk tennisspelare",
+    "year": 1976,
+    "fact": "Björn Borg vinner Wimbledon.",
+    "wikipediaSlug": "Bj%C3%B6rn_Borg",
+    "image": "Bjorn Borg 1979.jpg",
+    "pageViews": 30000
+  },
+  {
+    "qid": "Q211903",
+    "title": "Henrik Larsson föds",
+    "subtitle": "Svensk fotbollsspelare",
+    "year": 1971,
+    "fact": "Henrik Larsson föds.",
+    "wikipediaSlug": "Henrik_Larsson",
+    "image": "Henrik Larsson 2006.jpg",
+    "pageViews": 26000
+  },
+  {
+    "qid": "Q312450",
+    "title": "Peter Forsberg föds",
+    "subtitle": "Svensk ishockeyspelare",
+    "year": 1973,
+    "fact": "Peter Forsberg föds.",
+    "wikipediaSlug": "Peter_Forsberg",
+    "image": "Peter Forsberg 2012-12-29.JPG",
+    "pageViews": 26000
+  },
+  {
+    "qid": "Q312545",
+    "title": "Ingemar Stenmark vinner OS-guld",
+    "subtitle": "Svensk alpin skidåkare",
+    "year": 1980,
+    "fact": "Ingemar Stenmark vinner OS-guld.",
+    "wikipediaSlug": "Ingemar_Stenmark",
+    "image": "Ingemar Stenmark 2014.jpg",
+    "pageViews": 26000
+  },
+  {
+    "qid": "Q62623",
+    "title": "Kalmarunionen bildas",
+    "subtitle": "Union mellan Danmark, Norge och Sverige 1397–1523",
+    "year": 1397,
+    "fact": "Kalmarunionen är union mellan Danmark, Norge och Sverige 1397–1523.",
+    "wikipediaSlug": "Kalmarunionen",
+    "image": "Kalmar_Union_ca._1400.svg",
+    "pageViews": 25665
+  },
+  {
+    "qid": "Q52927",
+    "title": "Karl XIV Johan",
+    "subtitle": "Kung av Sverige och Norge 1818–1844",
+    "year": 1818,
+    "fact": "Karl XIV Johan är kung av Sverige och Norge 1818–1844.",
+    "wikipediaSlug": "Karl_XIV_Johan",
+    "image": "Karl_XIV_Johan,_Sveriges_och_Norges_konung._Porträtt_av_Frederic_Westin,_cirka_1843._-_kopia.png",
+    "pageViews": 25546
+  },
+  {
+    "qid": "Q52927",
+    "title": "Karl XIV Johan dör",
+    "subtitle": "Kung av Sverige och Norge 1818–1844",
+    "year": 1844,
+    "fact": "Karl XIV Johan är kung av Sverige och Norge 1818–1844.",
+    "wikipediaSlug": "Karl_XIV_Johan",
+    "image": "Karl_XIV_Johan,_Sveriges_och_Norges_konung._Porträtt_av_Frederic_Westin,_cirka_1843._-_kopia.png",
+    "pageViews": 25546
+  },
+  {
+    "qid": "Q52934",
+    "title": "Karl XII",
+    "subtitle": "Kung av Sverige 1697–1718",
+    "year": 1697,
+    "fact": "Karl XII är kung av Sverige 1697–1718.",
+    "wikipediaSlug": "Karl_XII",
+    "image": "Copy_Charles_XII_-_Nationalmuseum_-_17886.png",
+    "pageViews": 25150
+  },
+  {
+    "qid": "Q52934",
+    "title": "Karl XII dör",
+    "subtitle": "Kung av Sverige 1697–1718",
+    "year": 1718,
+    "fact": "Karl XII är kung av Sverige 1697–1718.",
+    "wikipediaSlug": "Karl_XII",
+    "image": "Copy_Charles_XII_-_Nationalmuseum_-_17886.png",
+    "pageViews": 25150
+  },
+  {
+    "qid": "Q312640",
+    "title": "Henrik Lundqvist föds",
+    "subtitle": "Svensk ishockeymålvakt",
+    "year": 1982,
+    "fact": "Henrik Lundqvist föds.",
+    "wikipediaSlug": "Henrik_Lundqvist",
+    "image": "Henrik Lundqvist 2014-05-29.jpg",
+    "pageViews": 25000
+  },
+  {
+    "qid": "Q1138684",
+    "title": "Strawberry Arena öppnar",
+    "subtitle": "Multiarena i Solna, Sverige",
+    "year": 2012,
+    "fact": "Strawberry Arena är multiarena i Solna, Sverige.",
+    "wikipediaSlug": "Strawberry_Arena",
+    "image": "Strawberry_Arena.jpg",
+    "pageViews": 24274
+  },
+  {
+    "qid": "Q52938",
+    "title": "Gustav II Adolf",
+    "subtitle": "Kung av Sverige 1611–1632",
+    "year": 1611,
+    "fact": "Gustav II Adolf är kung av Sverige 1611–1632.",
+    "wikipediaSlug": "Gustav_II_Adolf",
+    "image": "Attributed_to_Jacob_Hoefnagel_-_Gustavus_Adolphus,_King_of_Sweden_1611-1632_-_Google_Art_Project.jpg",
+    "pageViews": 24108
+  },
+  {
+    "qid": "Q312643",
+    "title": "Sarah Sjöström föds",
+    "subtitle": "Svensk simmare",
+    "year": 1993,
+    "fact": "Sarah Sjöström föds.",
+    "wikipediaSlug": "Sarah_Sj%C3%B6str%C3%B6m",
+    "image": "Sarah Sjöström 2015.jpg",
+    "pageViews": 24000
+  },
+  {
+    "qid": "Q263786",
+    "title": "Saab 37 Viggen flyger för första gången",
+    "subtitle": "Svenskt stridsflygplan tillverkat av Saab AB",
+    "year": 1967,
+    "fact": "Saab 37 Viggen är svenskt stridsflygplan tillverkat av Saab AB.",
+    "wikipediaSlug": "Saab_37_Viggen",
+    "image": "Viggen_(52526298757).jpg",
+    "pageViews": 22541
+  },
+  {
+    "qid": "Q270414",
+    "title": "Carolina Klüft vinner OS-guld",
+    "subtitle": "Svensk friidrottare",
+    "year": 2004,
+    "fact": "Carolina Klüft vinner OS-guld.",
+    "wikipediaSlug": "Carolina_Kl%C3%BCft",
+    "image": "Carolina Kluft 2007 Osaka.jpg",
+    "pageViews": 22000
+  },
+  {
+    "qid": "Q52937",
+    "title": "Kristina av Sverige",
+    "subtitle": "Regerande drottning av Sverige 1632–1654",
+    "year": 1632,
+    "fact": "Kristina av Sverige är regerande drottning av Sverige 1632–1654.",
+    "wikipediaSlug": "Drottning_Kristina",
+    "image": "Swedish_queen_Drottning_Kristina_portrait_by_Sébastien_Bourdon_stor.jpg",
+    "pageViews": 21308
+  },
+  {
+    "qid": "Q52937",
+    "title": "Kristina av Sverige dör",
+    "subtitle": "Regerande drottning av Sverige 1632–1654",
+    "year": 1689,
+    "fact": "Kristina av Sverige är regerande drottning av Sverige 1632–1654.",
+    "wikipediaSlug": "Drottning_Kristina",
+    "image": "Swedish_queen_Drottning_Kristina_portrait_by_Sébastien_Bourdon_stor.jpg",
+    "pageViews": 21308
+  },
+  {
+    "qid": "Q218369",
+    "title": "Sven-Göran Eriksson dör",
+    "subtitle": "Svensk fotbollstränare",
+    "year": 2024,
+    "fact": "Sven-Göran Eriksson är svensk fotbollstränare.",
+    "wikipediaSlug": "Sven-G%C3%B6ran_Eriksson",
+    "image": "Sven-Goran_Eriksson_2012.jpg",
+    "pageViews": 21301
+  },
+  {
+    "qid": "Q52878",
+    "title": "Gustaf VI Adolf",
+    "subtitle": "Kung av Sverige 1950–1973",
+    "year": 1950,
+    "fact": "Gustaf VI Adolf är kung av Sverige 1950–1973.",
+    "wikipediaSlug": "Gustaf_VI_Adolf",
+    "image": "King_Gustaf_VI_Adolf_of_Sweden_FVMF.003289_(cropped_2).jpg",
+    "pageViews": 21084
+  },
+  {
+    "qid": "Q461475",
+    "title": "Saab 35 Draken flyger för första gången",
+    "subtitle": "Svenskt jaktflygplan tillverkat av Saab AB",
+    "year": 1955,
+    "fact": "Saab 35 Draken är svenskt jaktflygplan tillverkat av Saab AB.",
+    "wikipediaSlug": "Saab_35_Draken",
+    "image": "J_35F_1972_(cropped,_removal_of_damage_and_dirt_using_clone_tool).jpg",
+    "pageViews": 20039
+  },
+  {
+    "qid": "Q20888644",
+    "title": "”Minecraft: Story Mode” släpps",
+    "subtitle": "Datorspel från 2015",
+    "year": 2015,
+    "fact": "Minecraft: Story Mode är datorspel från 2015.",
+    "wikipediaSlug": "Minecraft%3A_Story_Mode",
+    "image": "Minecraft_Story_Mode_cover.jpeg",
+    "pageViews": 19880
+  },
+  {
+    "qid": "Q1211796",
+    "title": "”Bron”",
+    "subtitle": "Svensk-dansk TV-serie 2011–2018",
+    "year": 2011,
+    "fact": "Bron är svensk-dansk TV-serie 2011–2018.",
+    "wikipediaSlug": "Bron_(TV-serie)",
+    "image": "The_Bridge_season_one.png",
+    "pageViews": 19830
+  },
+  {
+    "qid": "Q185832",
+    "title": "Emanuel Swedenborg dör",
+    "subtitle": "Svensk vetenskapsman, filosof, bibeltolkare, kristen mystiker och teolog",
+    "year": 1772,
+    "fact": "Emanuel Swedenborg är svensk vetenskapsman, filosof, bibeltolkare, kristen mystiker och teolog.",
+    "wikipediaSlug": "Emanuel_Swedenborg",
+    "image": "Emanuel_Swedenborg.PNG",
+    "pageViews": 18279
+  },
+  {
+    "qid": "Q106581",
+    "title": "Friends Arena öppnar",
+    "subtitle": "Nationalarena i Solna",
+    "year": 2012,
+    "fact": "Friends Arena öppnar.",
+    "wikipediaSlug": "Friends_Arena",
+    "image": "Friends Arena 2013.jpg",
+    "pageViews": 16000
+  },
+  {
+    "qid": "Q220505",
+    "title": "Ullevi öppnar",
+    "subtitle": "Arena i Göteborg",
+    "year": 1958,
+    "fact": "Ullevi öppnar.",
+    "wikipediaSlug": "Ullevi",
+    "image": "Ullevi stadium 2006.jpg",
+    "pageViews": 15000
+  }
+]

@@ -1,0 +1,14 @@
+SELECT ?item ?itemLabel (MIN(?yearValue) AS ?year) ?sitelinks WHERE {
+  ?item
+    wdt:P31 wd:Q4830453;
+    wdt:P571 ?date;
+    wikibase:sitelinks ?sitelinks;
+    rdfs:label ?itemLabel.
+  ?item wdt:P17 wd:Q34.
+  FILTER(LANG(?itemLabel) = "sv")
+  FILTER(?sitelinks >= 5)
+  BIND(YEAR(?date) AS ?yearValue)
+}
+GROUP BY ?item ?itemLabel ?sitelinks
+ORDER BY DESC(?sitelinks)
+LIMIT 500

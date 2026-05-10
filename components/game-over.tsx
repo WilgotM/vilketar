@@ -1,6 +1,8 @@
 import { motion } from "motion/react";
 import React from "react";
+import { getSelectionRouteShareLabel } from "../lib/categories";
 import { formatTimeUntilNextDaily } from "../lib/daily";
+import { saveRemoteScore } from "../lib/remote-highscores";
 import { buildShareText, getShareResults } from "../lib/share";
 import { PlayedCard } from "../types/cards";
 import { GameDifficulty } from "../types/game";
@@ -24,7 +26,7 @@ interface Props {
   selectionRoute?: SelectionRoute;
 }
 
-const defaultShareText = "Share";
+const defaultShareText = "Dela";
 
 export default function GameOver(props: Props) {
   const {
@@ -40,8 +42,9 @@ export default function GameOver(props: Props) {
   } = props;
 
   const [shareText, setShareText] = React.useState(defaultShareText);
+  const savedRemoteScoreRef = React.useRef(false);
   const [nextDailyText, setNextDailyText] = React.useState(() =>
-    formatTimeUntilNextDaily(new Date(), "Next in"),
+    formatTimeUntilNextDaily(new Date(), "Nästa om"),
   );
   const formattedDailyDate = React.useMemo(() => {
     if (!dailyDateKey) {
@@ -57,7 +60,7 @@ export default function GameOver(props: Props) {
     }
 
     const updateNextDailyText = () => {
-      setNextDailyText(formatTimeUntilNextDaily(new Date(), "Next in"));
+      setNextDailyText(formatTimeUntilNextDaily(new Date(), "Nästa om"));
     };
 
     updateNextDailyText();
@@ -67,6 +70,28 @@ export default function GameOver(props: Props) {
       window.clearInterval(intervalId);
     };
   }, [gameMode]);
+
+  React.useEffect(() => {
+    if (savedRemoteScoreRef.current) {
+      return;
+    }
+
+    savedRemoteScoreRef.current = true;
+    const results = getShareResults(played)
+      .map((result) => (result ? "1" : "0"))
+      .join("");
+
+    void saveRemoteScore({
+      deckId: selectionRoute?.nodeId,
+      deckTitle: selectionRoute
+        ? getSelectionRouteShareLabel(selectionRoute)
+        : undefined,
+      difficulty,
+      mode: gameMode,
+      resultPattern: results,
+      score,
+    });
+  }, [difficulty, gameMode, played, score, selectionRoute]);
 
   const share = React.useCallback(async () => {
     await navigator?.clipboard?.writeText(
@@ -81,7 +106,7 @@ export default function GameOver(props: Props) {
         selectionRoute,
       }),
     );
-    setShareText("Copied");
+    setShareText("Kopierat");
     setTimeout(() => {
       setShareText(defaultShareText);
     }, 2000);
@@ -111,7 +136,7 @@ export default function GameOver(props: Props) {
           transition={{ delay: 0.14, duration: 0.28, ease: "easeOut" }}
         >
           <DailyCompletedSummary
-            dailyLabel={`Daily / ${formattedDailyDate}`}
+            dailyLabel={`Dagens spel / ${formattedDailyDate}`}
             nextDailyText={nextDailyText}
             onShare={share}
             score={score}
@@ -140,12 +165,12 @@ export default function GameOver(props: Props) {
             <FreePlayBreadcrumbs selectionRoute={selectionRoute} />
           ) : null}
           <div className={styles.scoresWrapper}>
-            <Score score={score} title="Score" />
-            <Score score={highscore} title="Best" />
+            <Score score={score} title="Poäng" />
+            <Score score={highscore} title="Bäst" />
           </div>
           <div className={styles.buttons}>
             {resetGame ? (
-              <Button fullWidth onClick={resetGame} text="Play again" />
+              <Button fullWidth onClick={resetGame} text="Spela igen" />
             ) : null}
             <Button
               fullWidth

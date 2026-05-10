@@ -16,9 +16,9 @@ export const FREE_PLAY_DIFFICULTY_ORDER: GameDifficulty[] = [
 ];
 
 export const DIFFICULTY_MIN_PAGE_VIEWS: Record<GameDifficulty, number> = {
-  easy: 25_000,
-  normal: 10_000,
-  hard: 1_000,
+  easy: 250_000,
+  normal: 100_000,
+  hard: 50_000,
 };
 
 export function countCardsForDifficulty(

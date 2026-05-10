@@ -35,7 +35,7 @@ function getBreadcrumbItems(props: Props): BreadcrumbItem[] {
     selectionRoute,
   } = props;
   const rootItems: BreadcrumbItem[] = [
-    { href: "/play", key: "free-play", label: "Free Play" },
+    { href: "/play", key: "free-play", label: "Fritt spel" },
     ...leadingBreadcrumbs.map((breadcrumb, index) => ({
       href: breadcrumb.href,
       key: getBreadcrumbKey(breadcrumb.label, index + 1),

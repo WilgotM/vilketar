@@ -5,8 +5,8 @@ export default function SiteHeader() {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <Link aria-label="Wikitrivia home" className={styles.wordmark} href="/">
-          Wikitrivia
+        <Link aria-label="VilketÅr hem" className={styles.wordmark} href="/">
+          VilketÅr
         </Link>
       </div>
     </header>

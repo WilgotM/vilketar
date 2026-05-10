@@ -7,7 +7,7 @@ import * as layoutStyles from "../styles/game-route-screen.css";
 export default function NotFoundPage() {
   return (
     <>
-      <AppHead title="Page Not Found | Wikitrivia" />
+      <AppHead title="Sidan hittades inte | VilketÅr" />
       <div className={layoutStyles.page}>
         <SiteHeader />
         <div className={layoutStyles.boardFrame}>
@@ -15,9 +15,9 @@ export default function NotFoundPage() {
             <div className={dailyStyles.stage}>
               <div className={dailyStyles.content}>
                 <div className={dailyStyles.dailyLabel}>
-                  404 / Page Not Found
+                  404 / Sidan hittades inte
                 </div>
-                <ButtonLink fullWidth href="/" text="Return Home" />
+                <ButtonLink fullWidth href="/" text="Till startsidan" />
               </div>
             </div>
           </main>

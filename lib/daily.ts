@@ -20,7 +20,7 @@ export function getNextUtcMidnight(now: Date = new Date()): Date {
 
 export function formatTimeUntilNextDaily(
   now: Date = new Date(),
-  prefix = "Next daily in",
+  prefix = "Nästa dagliga spel om",
 ): string {
   const remainingMs = Math.max(
     0,

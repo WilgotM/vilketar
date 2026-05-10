@@ -10,10 +10,10 @@ export default function HomeScreen() {
       <div className={styles.home}>
         <div className={styles.wrapper}>
           <div className={styles.stage}>
-            <SiteHero subtitle="Put the world's knowledge in chronological order." />
+            <SiteHero subtitle="Placera svenska och historiska händelser i rätt år." />
             <div className={styles.actions}>
-              <ButtonLink fullWidth href="/daily" text="Daily" />
-              <ButtonLink fullWidth href="/play" minimal text="Free play" />
+              <ButtonLink fullWidth href="/daily" text="Dagens spel" />
+              <ButtonLink fullWidth href="/play" minimal text="Fritt spel" />
             </div>
           </div>
           <SiteFooter className={styles.footer} />

@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { motion, Transition } from "motion/react";
 import React, { Fragment } from "react";
+import { hideYearsOnCardFront } from "../lib/card-front-text";
 import { createWikimediaImageCandidates } from "../lib/image";
 import { useCardImage } from "../lib/use-card-image";
 import { useCardTheme } from "../lib/use-card-theme";
@@ -64,7 +65,9 @@ export default function CardVisual(props: Props) {
   const { imageSrc } = useCardImage(imageCandidates);
   const cardThemeStyle = useCardTheme(item.deckThemeHue);
   const yearLabel =
-    item.year < 0 ? `${Math.abs(item.year)} BCE` : String(item.year);
+    item.year < 0 ? `${Math.abs(item.year)} f.Kr.` : String(item.year);
+  const frontTitle = hideYearsOnCardFront(item.title);
+  const frontSubtitle = hideYearsOnCardFront(item.subtitle);
   const effectiveAnimateTransform = animateTransform ?? {
     rotateY: flipped ? 180 : 0,
   };
@@ -97,8 +100,8 @@ export default function CardVisual(props: Props) {
           >
             <div className={styles.cardContent}>
               <div className={styles.top}>
-                <div className={styles.label}>{item.title}</div>
-                <div className={styles.description}>{item.subtitle ?? ""}</div>
+                <div className={styles.label}>{frontTitle}</div>
+                <div className={styles.description}>{frontSubtitle}</div>
               </div>
               <div className={styles.image}>
                 {imageSrc ? (
@@ -108,7 +111,6 @@ export default function CardVisual(props: Props) {
                       <img
                         alt=""
                         className={styles.imageForeground}
-                        crossOrigin="anonymous"
                         decoding="sync"
                         draggable={false}
                         loading="eager"
@@ -152,7 +154,7 @@ export default function CardVisual(props: Props) {
                     <Fragment>
                       <span className={styles.linkSeparator}>/</span>
                       <a
-                        href={`https://en.wikipedia.org/wiki/${item.wikipediaSlug}`}
+                        href={`https://sv.wikipedia.org/wiki/${item.wikipediaSlug}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(event) => {

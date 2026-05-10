@@ -1,28 +1,17 @@
-# Wikitrivia
+# VilketÅr
 
-Wikitrivia is a year-based timeline game backed by Wikimedia data.
+Svenskt tidslinjespel byggt med Next.js, Bun och Wikimedia-data.
 
-## Basics
+- Använd Bun. Kör inte npm eller yarn.
+- Viktiga kontroller: `bun test`, `bun run lint`, `bun run format:check`.
+- Bygg/deploy: `bun run build`, `bun run deploy`.
+- Kort och kategorier ska kännas svenska, igenkännbara och spelbara.
+- Korten ska länka till svenska Wikipedia när Wikipedia används.
+- Framsidan på kort får inte avslöja årtal.
+- Publicerade deck ligger i `public/decks/`.
+- Källqueries ligger i `content/queries/<query-id>/`.
+- Deck-struktur och kategoriidéer finns i `content/deck-tree.ts`.
+- Innehållsscript finns i `content/scripts/`.
 
-- Use Bun for package management and scripts.
-- Do not use npm or yarn.
-- App framework: Next.js.
-- Lint/typecheck: `bun run lint`.
-- Format: `bun run format`.
-
-## Content
-
-- Source queries live in `content/queries/<query-id>/`.
-- Each query folder has `query.ts`, `query.rq`, and `rows.json`.
-- Decks are composed in `content/deck-tree.ts`.
-- Content tooling notes live in `content/README.md`.
-
-When working on content, inspect saved `rows.json` before changing query logic. Be skeptical of technically valid categories that are not obviously playable.
-
-Bad card data should usually be fixed directly on Wikidata.
-
-## API Scripts
-
-Scripts that hit Wikimedia APIs require a local `.env` copied from `.env.example`.
-
-Never run build-card or SPARQL query scripts inside the sandbox. Request escalation first.
+Var skeptisk mot tekniskt korrekta men obskyra kort. Hellre färre roliga kort
+än många tråkiga.

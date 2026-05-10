@@ -1,67 +1,104 @@
-# Wikitrivia
+# VilketÅr
 
-Wikitrivia is a year-based timeline trivia game built from Wikimedia data.
+VilketÅr är ett svenskt tidslinjespel byggt som en egen version av
+Wikitrivia. Spelaren placerar kort i kronologisk ordning, med fakta, bilder och
+länkar från Wikidata och svenska Wikipedia.
 
-The live app is at [wikitrivia.tomjwatson.com](https://wikitrivia.tomjwatson.com).
+Biblioteket är ersatt med en svensk katalog: korten kräver svensk
+Wikipedia-artikel, använder svenska Wikidata-etiketter och visas i svenska
+kategorier. Det behåller bredden från originalets spelkänsla med både svenska
+och internationellt välkända händelser, personer, verk, platser, teknik, sport
+och företag. Appen är statiskt exporterad med Next.js och redo för Cloudflare
+Pages.
 
 ## Setup
 
-Install dependencies with Bun:
+Installera beroenden:
 
 ```bash
 bun install
 ```
 
-Create a local env file before running scripts that contact Wikimedia APIs:
+Skapa en lokal `.env` innan scripts som kontaktar Wikimedia körs:
 
 ```bash
 cp .env.example .env
 ```
 
-Then edit `.env` and set `WIKITRIVIA_CONTACT_EMAIL` to your email address. This will be used in API requests to identify yourself to Wikimedia.
+Fyll i `WIKITRIVIA_CONTACT_EMAIL` och `WIKITRIVIA_REPO_SLUG`. Kontaktadressen
+används i Wikimedia User-Agent.
 
-## Development
+## Utveckling
 
-Run the app locally:
+Kör lokalt:
 
 ```bash
 bun run dev
 ```
 
-Then visit [localhost:3000](http://localhost:3000).
-
-Build the static site:
+Bygg statiskt:
 
 ```bash
 bun run build
 ```
 
-Serve the built `out/` directory:
+Servera den byggda sidan:
 
 ```bash
 bun run start
 ```
 
-Useful checks:
+Kör kontroller:
 
 ```bash
 bun run typecheck
 bun run lint
-bun run format:check
+bun run test
 ```
 
-## Content
+## Innehåll
 
-Game content comes from Wikidata Query Service snapshots in `content/queries/` and is built into deck JSON under `public/decks/`.
+Källrader ligger i `content/queries/`. Deck-filer byggs till `public/decks/`:
 
-For the content tooling, see [content/README.md](content/README.md).
+```bash
+bun run decks:build
+```
 
-## FAQ
+Den publicerade spelkatalogen ligger i `public/decks/` och är filtrerad mot
+svenska Wikipedia. Metadata hämtas från Wikidata och svenska Wikipedia. Cacher
+ligger i `content/cache/`.
 
-### Where does the data come from?
+## Supabase
 
-The data is sourced from [Wikidata](https://www.wikidata.org) and [Wikipedia](https://wikipedia.org).
+Projektet är länkat mot Supabase-projektet `VilketÅr`.
 
-### I found a card with incorrect data. What should I do?
+Migrationer:
 
-If the underlying Wikidata item is wrong, fix it directly on Wikidata. It will then get synced back into the game the next time the decks are updated.
+```bash
+supabase db push
+```
+
+Appen använder publika env-vars vid deploy:
+
+```bash
+NEXT_PUBLIC_SUPABASE_URL
+NEXT_PUBLIC_SUPABASE_ANON_KEY
+```
+
+Om de saknas fungerar spelet ändå, men remote highscores sparas inte.
+
+## Cloudflare Pages
+
+Cloudflare Pages-projektet heter `vilketar`.
+
+Deploy:
+
+```bash
+bun run deploy
+```
+
+## Licenser
+
+Koden bygger på Wikitrivia och originalets MIT-licens finns kvar i
+`LICENSE.md`. Wikidata-data är CC0. Innehåll från svenska Wikipedia är normalt
+CC BY-SA och appen länkar tillbaka till artiklarna.

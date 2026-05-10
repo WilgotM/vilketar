@@ -15,16 +15,18 @@ test("top-level categories stay in the intended order", () => {
   assert.deepEqual(
     getCategoryDefinitions().map((category) => category.slug),
     [
+      "sverige",
+      "svenska-klassiker",
       "history",
-      "leaders",
       "entertainment",
+      "leaders",
       "people",
-      "technology",
       "art",
-      "engineering",
-      "sport",
       "architecture",
       "business",
+      "technology",
+      "engineering",
+      "sport",
     ],
   );
 });
@@ -35,7 +37,7 @@ test("history all route resolves to descendant free-play decks", () => {
   assert.ok(route);
   assert.equal(getSelectionRoutePath(route), "/play/history/all");
   assert.equal(route.nodeId, "all-history");
-  assert.equal(getSelectionRouteShareLabel(route), "History");
+  assert.equal(getSelectionRouteShareLabel(route), "Historia");
 });
 
 test("leaf routes keep clean share labels and parent paths", () => {
@@ -44,7 +46,7 @@ test("leaf routes keep clean share labels and parent paths", () => {
   assert.ok(route);
   assert.equal(getSelectionRoutePath(route), "/play/engineering/space");
   assert.equal(getSelectionRouteParentPath(route), "/play/engineering");
-  assert.equal(getSelectionRouteShareLabel(route), "Engineering / Space");
+  assert.equal(getSelectionRouteShareLabel(route), "Ingenjörskonst / Rymden");
   assert.equal(route.nodeId, "all-engineering-space");
 });
 
@@ -54,8 +56,16 @@ test("static paths include deep selectors and leaf routes", () => {
   assert.ok(paths.includes(""));
   assert.ok(paths.includes("all"));
   assert.ok(paths.includes("featured"));
-  assert.ok(paths.includes("featured/us-presidents"));
+  assert.ok(paths.includes("featured/svenska-klassiker"));
+  assert.ok(paths.includes("featured/sverige"));
+  assert.ok(paths.includes("featured/usas-presidenter"));
   assert.ok(paths.includes("browse"));
+  assert.ok(paths.includes("sverige"));
+  assert.ok(paths.includes("sverige/allt"));
+  assert.ok(paths.includes("svenska-klassiker"));
+  assert.ok(paths.includes("svenska-klassiker/allt"));
+  assert.ok(paths.includes("browse/sverige"));
+  assert.ok(paths.includes("browse/svenska-klassiker"));
   assert.ok(paths.includes("leaders"));
   assert.ok(paths.includes("browse/history"));
   assert.ok(paths.includes("leaders/rulers"));

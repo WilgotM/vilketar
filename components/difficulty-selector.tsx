@@ -14,7 +14,7 @@ const difficultyOptions: Array<{
   value: GameDifficulty;
 }> = [
   {
-    label: "Easy",
+    label: "Lätt",
     value: "easy",
   },
   {
@@ -22,7 +22,7 @@ const difficultyOptions: Array<{
     value: "normal",
   },
   {
-    label: "Hard",
+    label: "Svår",
     value: "hard",
   },
 ];

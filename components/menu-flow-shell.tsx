@@ -316,16 +316,16 @@ export default function MenuFlowShell() {
     path === "/"
       ? undefined
       : path === "/daily"
-        ? "Daily | Wikitrivia"
+        ? "Dagens spel | VilketÅr"
         : activeSelectionRoute
-          ? `${getSelectionRouteShareLabel(activeSelectionRoute)} | Wikitrivia`
+          ? `${getSelectionRouteShareLabel(activeSelectionRoute)} | VilketÅr`
           : group
-            ? `${group.title} | Wikitrivia`
+            ? `${group.title} | VilketÅr`
             : currentPlayView === "featured"
-              ? "Featured | Wikitrivia"
+              ? "Utvalt | VilketÅr"
               : currentPlayView === "browse"
-                ? "Browse | Wikitrivia"
-                : "Free Play | Wikitrivia";
+                ? "Bläddra | VilketÅr"
+                : "Fritt spel | VilketÅr";
   const freePlayItems = React.useMemo(() => {
     const visibleCategories = getCategoryDefinitions().filter((category) => {
       if (!deckNodes) {
@@ -471,19 +471,19 @@ export default function MenuFlowShell() {
   }, [allSelectionRoute, currentPlayView]);
   const leadingBreadcrumbs =
     currentPlayView === "browse"
-      ? [{ href: getRootFreePlayPath("browse"), label: "Browse" }]
+      ? [{ href: getRootFreePlayPath("browse"), label: "Bläddra" }]
       : [];
   const freePlayBreadcrumbs = path.startsWith("/play") ? (
     currentPlayView === "featured" ? (
       activeSelectionRoute ? (
         <FreePlayBreadcrumbs
           selectorBreadcrumbs={[
-            { href: getRootFreePlayPath("featured"), label: "Featured" },
-            { label: featuredBreadcrumbLabel ?? "Featured" },
+            { href: getRootFreePlayPath("featured"), label: "Utvalt" },
+            { label: featuredBreadcrumbLabel ?? "Utvalt" },
           ]}
         />
       ) : (
-        <FreePlayBreadcrumbs selectorBreadcrumbs={[{ label: "Featured" }]} />
+        <FreePlayBreadcrumbs selectorBreadcrumbs={[{ label: "Utvalt" }]} />
       )
     ) : selectorIntroRoute ? (
       <FreePlayBreadcrumbs

@@ -27,7 +27,6 @@ function ensureImage(src: string): ImageCacheEntry | null {
   }
 
   const image = new Image();
-  image.crossOrigin = "anonymous";
   image.decoding = "async";
 
   const entry: ImageCacheEntry = {

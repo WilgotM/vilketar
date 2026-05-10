@@ -34,7 +34,7 @@ export default function DailyPage() {
   if (!started || completedScore !== null) {
     return (
       <>
-        <AppHead title="Daily | Wikitrivia" />
+        <AppHead title="Dagens spel | VilketÅr" />
         <DailyEntryScreen
           completedResults={completedResults}
           completedScore={completedScore}
@@ -47,7 +47,7 @@ export default function DailyPage() {
 
   return (
     <>
-      <AppHead title="Daily | Wikitrivia" />
+      <AppHead title="Dagens spel | VilketÅr" />
       <GameRouteScreen mode="daily" skipRouteIntro />
     </>
   );

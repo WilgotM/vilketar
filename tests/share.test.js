@@ -15,13 +15,13 @@ test("daily share text matches the new compact format", () => {
   assert.equal(
     shareText,
     [
-      "#wikitrivia / Daily for Mar 23 2026",
+      "#VilketÅr / Dagens spel 23 mars 2026",
       "",
       "🟩🟥🟩🟩🟩🟥🟩🟩",
       "",
-      "Score / 6 / Bronze",
+      "Poäng / 6 / Brons",
       "",
-      "https://wikitrivia.tomjwatson.com/daily",
+      "https://vilketar.pages.dev/daily",
     ].join("\n"),
   );
 });
@@ -45,14 +45,14 @@ test("free play share text includes category, difficulty, score, and best", () =
   assert.equal(
     shareText,
     [
-      "#wikitrivia / History / Wars / Normal",
+      "#VilketÅr / Historia / Krig / Normal",
       "",
       "🟩🟥🟩🟩🟩🟥🟩🟩",
       "",
-      "Score / 6 / Bronze",
-      "Best / 25 / Gold",
+      "Poäng / 6 / Brons",
+      "Bäst / 25 / Guld",
       "",
-      "https://wikitrivia.tomjwatson.com/play/history/wars",
+      "https://vilketar.pages.dev/play/history/wars",
     ].join("\n"),
   );
 });

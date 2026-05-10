@@ -48,7 +48,7 @@ function AllCategoryLink(props: {
       }}
       prefetch
     >
-      All
+      Alla
     </Link>
   );
 }
@@ -79,7 +79,7 @@ function SelectorIntro(props: {
           onClick={onStartIntro}
           type="button"
         >
-          Start
+          Starta
         </button>
       </div>
     </div>
@@ -130,7 +130,7 @@ function SelectorList(props: {
             onClick={() => onSelectRootView?.("featured")}
             type="button"
           >
-            Featured
+            Utvalt
           </button>
           <button
             className={classNames(
@@ -141,7 +141,7 @@ function SelectorList(props: {
             onClick={() => onSelectRootView?.("browse")}
             type="button"
           >
-            Browse
+            Bläddra
           </button>
         </div>
       ) : null}

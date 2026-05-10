@@ -1,0 +1,272 @@
+[
+  {
+    "fact": "Minecraft släpps.",
+    "image": "Minecraft_cube.svg",
+    "pageViews": 600000,
+    "qid": "Q49740",
+    "subtitle": "Svenskt datorspel",
+    "title": "”Minecraft” släpps",
+    "wikipediaSlug": "Minecraft",
+    "year": 2011
+  },
+  {
+    "fact": "Ikea grundas av Ingvar Kamprad.",
+    "image": "IKEA_Shopping_centre_Sweden.jpg",
+    "pageViews": 500000,
+    "qid": "Q54078",
+    "subtitle": "Svenskt möbelföretag",
+    "title": "Ikea grundas",
+    "wikipediaSlug": "Ikea",
+    "year": 1943
+  },
+  {
+    "fact": "Melodifestivalen arrangeras för första gången.",
+    "image": "Melodifestivalen_Logo.svg",
+    "pageViews": 500000,
+    "qid": "Q58884",
+    "subtitle": "Svensk musiktävling",
+    "title": "Melodifestivalen startar",
+    "wikipediaSlug": "Melodifestivalen",
+    "year": 1959
+  },
+  {
+    "fact": "ABBA bildas i Stockholm.",
+    "image": "ABBA_-_TopPop_1974_5.png",
+    "pageViews": 500000,
+    "qid": "Q18233",
+    "subtitle": "Svensk popgrupp",
+    "title": "ABBA bildas",
+    "wikipediaSlug": "Abba",
+    "year": 1972
+  },
+  {
+    "fact": "Olof Palme mördas i Stockholm.",
+    "image": "Palme_Trauer_1986.jpg",
+    "pageViews": 500000,
+    "qid": "Q3284177",
+    "subtitle": "Svensk samtidshistoria",
+    "title": "Olof Palme mördas",
+    "wikipediaSlug": "Mordet_p%C3%A5_Olof_Palme",
+    "year": 1986
+  },
+  {
+    "fact": "Spotify grundas i Stockholm.",
+    "image": "",
+    "pageViews": 450000,
+    "qid": "Q689141",
+    "subtitle": "Svensk musiktjänst",
+    "title": "Spotify grundas",
+    "wikipediaSlug": "Spotify",
+    "year": 2006
+  },
+  {
+    "fact": "Astrid Lindgren föds i Vimmerby.",
+    "image": "Lindgren_1960.jpg",
+    "pageViews": 420000,
+    "qid": "Q55767",
+    "subtitle": "Svensk barnboksförfattare",
+    "title": "Astrid Lindgren föds",
+    "wikipediaSlug": "Astrid_Lindgren",
+    "year": 1907
+  },
+  {
+    "fact": "ABBA vinner Eurovision Song Contest med Waterloo.",
+    "image": "",
+    "pageViews": 420000,
+    "qid": "Q32503",
+    "subtitle": "Svensk Eurovision-klassiker",
+    "title": "”Waterloo” vinner Eurovision",
+    "wikipediaSlug": "Waterloo_(s%C3%A5ng)",
+    "year": 1974
+  },
+  {
+    "fact": "Dancing Queen släpps och blir en av ABBAs största låtar.",
+    "image": "",
+    "pageViews": 360000,
+    "qid": "Q870786",
+    "subtitle": "Låt av ABBA",
+    "title": "”Dancing Queen” släpps",
+    "wikipediaSlug": "Dancing_Queen",
+    "year": 1976
+  },
+  {
+    "fact": "Volvo grundas i Göteborg.",
+    "image": "",
+    "pageViews": 350000,
+    "qid": "Q163810",
+    "subtitle": "Svenskt industriföretag",
+    "title": "Volvo grundas",
+    "wikipediaSlug": "Volvo",
+    "year": 1927
+  },
+  {
+    "fact": "Pippi Långstrump ges ut och blir en svensk barnboksklassiker.",
+    "image": "Pippi_Longstocking.jpg",
+    "pageViews": 320000,
+    "qid": "Q6668",
+    "subtitle": "Barnboksfigur av Astrid Lindgren",
+    "title": "Pippi Långstrump ges ut",
+    "wikipediaSlug": "Pippi_L%C3%A5ngstrump",
+    "year": 1945
+  },
+  {
+    "fact": "Estoniakatastrofen inträffar på Östersjön.",
+    "image": "Estonia_ferry2.jpg",
+    "pageViews": 300000,
+    "qid": "Q3360074",
+    "subtitle": "Fartygskatastrof på Östersjön",
+    "title": "Estoniakatastrofen inträffar",
+    "wikipediaSlug": "Estoniakatastrofen",
+    "year": 1994
+  },
+  {
+    "fact": "Sverige tar VM-brons i fotboll i USA.",
+    "image": "1994_FIFA_World_Cup.svg",
+    "pageViews": 300000,
+    "qid": "Q101751",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Sverige tar VM-brons i fotboll",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1994",
+    "year": 1994
+  },
+  {
+    "fact": "Euphoria vinner Eurovision Song Contest för Sverige.",
+    "image": "Pht-Vugar_Ibadov_eurovision_(18).jpg",
+    "pageViews": 300000,
+    "qid": "Q192174",
+    "subtitle": "Låt framförd av Loreen",
+    "title": "”Euphoria” vinner Eurovision",
+    "wikipediaSlug": "Euphoria_(s%C3%A5ng)",
+    "year": 2012
+  },
+  {
+    "fact": "H&M grundas i Västerås.",
+    "image": "H&M-Logo.svg",
+    "pageViews": 280000,
+    "qid": "Q188326",
+    "subtitle": "Svenskt klädföretag",
+    "title": "H&M grundas",
+    "wikipediaSlug": "Hennes_%26_Mauritz",
+    "year": 1947
+  },
+  {
+    "fact": "Sverige går över till högertrafik.",
+    "image": "Kungsgatan_1967.jpg",
+    "pageViews": 260000,
+    "qid": "Q376921",
+    "subtitle": "Svensk trafikomläggning",
+    "title": "Högertrafiken införs",
+    "wikipediaSlug": "H%C3%B6gertrafikoml%C3%A4ggningen",
+    "year": 1967
+  },
+  {
+    "fact": "På spåret börjar sändas i SVT.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q7264617",
+    "subtitle": "Svenskt tv-program",
+    "title": "”På spåret” börjar sändas",
+    "wikipediaSlug": "P%C3%A5_sp%C3%A5ret",
+    "year": 1987
+  },
+  {
+    "fact": "Tre Kronor tar OS-guld i ishockey i Lillehammer.",
+    "image": "",
+    "pageViews": 240000,
+    "qid": "Q653041",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Tre Kronor tar OS-guld",
+    "wikipediaSlug": "Ishockey_vid_olympiska_vinterspelen_1994",
+    "year": 1994
+  },
+  {
+    "fact": "Roxette bildas av Marie Fredriksson och Per Gessle.",
+    "image": "Roxette2.jpg",
+    "pageViews": 220000,
+    "qid": "Q173790",
+    "subtitle": "Svensk popduo",
+    "title": "Roxette bildas",
+    "wikipediaSlug": "Roxette",
+    "year": 1986
+  },
+  {
+    "fact": "Solsidan börjar sändas i TV4.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q10673360",
+    "subtitle": "Svensk tv-serie",
+    "title": "”Solsidan” börjar sändas",
+    "wikipediaSlug": "Solsidan",
+    "year": 2010
+  },
+  {
+    "fact": "Heroes vinner Eurovision Song Contest för Sverige.",
+    "image": "20150516_ESC_2015_Måns_Zelmerlöw_9958.jpg",
+    "pageViews": 220000,
+    "qid": "Q19507869",
+    "subtitle": "Låt framförd av Måns Zelmerlöw",
+    "title": "”Heroes” vinner Eurovision",
+    "wikipediaSlug": "Heroes_(M%C3%A5ns_Zelmerl%C3%B6w)",
+    "year": 2015
+  },
+  {
+    "fact": "Sverige blir medlem i Europeiska unionen.",
+    "image": "",
+    "pageViews": 200000,
+    "qid": "manual-Sverige_och_Europeiska_unionen",
+    "subtitle": "Svensk samtidshistoria",
+    "title": "Sverige går med i EU",
+    "wikipediaSlug": "Sverige_och_Europeiska_unionen",
+    "year": 1995
+  },
+  {
+    "fact": "Emil i Lönneberga ges ut.",
+    "image": "Emil_and_pig,_Astrid_Lindgrens_Värld_2014.jpg",
+    "pageViews": 180000,
+    "qid": "Q783843",
+    "subtitle": "Barnbok av Astrid Lindgren",
+    "title": "”Emil i Lönneberga” ges ut",
+    "wikipediaSlug": "Emil_i_L%C3%B6nneberga",
+    "year": 1963
+  },
+  {
+    "fact": "Bamse dyker upp första gången.",
+    "image": "Bamse.jpg",
+    "pageViews": 180000,
+    "qid": "Q252480",
+    "subtitle": "Svensk seriefigur",
+    "title": "Bamse dyker upp första gången",
+    "wikipediaSlug": "Bamse",
+    "year": 1966
+  },
+  {
+    "fact": "Ronja Rövardotter ges ut.",
+    "image": "Ronja_och_Mattis,_Astrid_Lindgrens_Värld_2014.jpg",
+    "pageViews": 180000,
+    "qid": "Q1144655",
+    "subtitle": "Barnbok av Astrid Lindgren",
+    "title": "”Ronja Rövardotter” ges ut",
+    "wikipediaSlug": "Ronja_r%C3%B6vardotter",
+    "year": 1981
+  },
+  {
+    "fact": "Ace of Base bildas i Göteborg.",
+    "image": "Aob_tour.jpg",
+    "pageViews": 180000,
+    "qid": "Q151634",
+    "subtitle": "Svensk popgrupp",
+    "title": "Ace of Base bildas",
+    "wikipediaSlug": "Ace_of_Base",
+    "year": 1990
+  },
+  {
+    "fact": "Klarna grundas i Stockholm.",
+    "image": "Klarna_Wordmark_Transparent_And_Black_v2.svg",
+    "pageViews": 160000,
+    "qid": "Q1165072",
+    "subtitle": "Svenskt fintechbolag",
+    "title": "Klarna grundas",
+    "wikipediaSlug": "Klarna",
+    "year": 2005
+  }
+]

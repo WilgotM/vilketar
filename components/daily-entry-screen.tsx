@@ -16,7 +16,7 @@ interface Props {
   onStart: () => void;
 }
 
-const defaultShareText = "Share";
+const defaultShareText = "Dela";
 
 export default function DailyEntryScreen(props: Props) {
   const {
@@ -62,7 +62,7 @@ export default function DailyEntryScreen(props: Props) {
         score: completedScore,
       }),
     );
-    setShareText("Copied");
+    setShareText("Kopierat");
     window.setTimeout(() => {
       setShareText(defaultShareText);
     }, 2000);
@@ -75,7 +75,7 @@ export default function DailyEntryScreen(props: Props) {
           <div className={styles.content}>
             <div
               className={styles.dailyLabel}
-            >{`Daily / ${formattedDailyDate}`}</div>
+            >{`Dagens spel / ${formattedDailyDate}`}</div>
             <button
               className={classNames(
                 buttonStyles.button,
@@ -84,12 +84,12 @@ export default function DailyEntryScreen(props: Props) {
               onClick={onStart}
               type="button"
             >
-              Start
+              Starta
             </button>
           </div>
         ) : (
           <DailyCompletedSummary
-            dailyLabel={`Daily / ${formattedDailyDate}`}
+            dailyLabel={`Dagens spel / ${formattedDailyDate}`}
             nextDailyText={nextDailyText}
             onShare={share}
             score={completedScore}

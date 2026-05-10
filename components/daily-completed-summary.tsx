@@ -18,7 +18,7 @@ export default function DailyCompletedSummary(props: Props) {
     <div className={styles.summary}>
       <div className={styles.dailyLabel}>{dailyLabel}</div>
       <div className={styles.score}>
-        <Score score={score} title="Score" />
+        <Score score={score} title="Poäng" />
       </div>
       <button
         className={classNames(buttonStyles.button, styles.shareButton)}

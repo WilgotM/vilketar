@@ -1,2 +1,3 @@
 content/packs/**/cards.preview.md
 public/items.json
+.playwright-mcp/**

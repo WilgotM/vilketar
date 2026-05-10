@@ -2,21 +2,21 @@ import { PlayedCard } from "../types/cards";
 import { GameDifficulty } from "../types/game";
 import { GameMode, SelectionRoute } from "../types/routes";
 import { getSelectionRouteShareLabel } from "./categories";
-const PRODUCTION_ORIGIN = "https://wikitrivia.tomjwatson.com";
-const SHARE_BRAND_LABEL = "#wikitrivia";
+const PRODUCTION_ORIGIN = "https://vilketar.pages.dev";
+const SHARE_BRAND_LABEL = "#VilketÅr";
 const SHARE_RESULT_CORRECT = "🟩";
 const SHARE_RESULT_INCORRECT = "🟥";
 
 export function getDifficultyLabel(difficulty: GameDifficulty): string {
   if (difficulty === "easy") {
-    return "Easy";
+    return "Lätt";
   }
 
   if (difficulty === "normal") {
     return "Normal";
   }
 
-  return "Hard";
+  return "Svår";
 }
 
 function getShareOrigin(): string {
@@ -52,7 +52,7 @@ export function getShareResults(played: PlayedCard[]): boolean[] {
 
 export function getRankLabel(score: number): string {
   if (score >= 20) {
-    return "Gold";
+    return "Guld";
   }
 
   if (score >= 10) {
@@ -60,10 +60,10 @@ export function getRankLabel(score: number): string {
   }
 
   if (score >= 1) {
-    return "Bronze";
+    return "Brons";
   }
 
-  return "None";
+  return "Ingen";
 }
 
 function buildResultRow(results?: boolean[]): string | null {
@@ -82,7 +82,7 @@ function formatShareDate(dateKey?: string): string {
   }
 
   const date = new Date(`${dateKey}T00:00:00.000Z`);
-  const parts = new Intl.DateTimeFormat("en-US", {
+  const parts = new Intl.DateTimeFormat("sv-SE", {
     day: "numeric",
     month: "short",
     timeZone: "UTC",
@@ -92,7 +92,7 @@ function formatShareDate(dateKey?: string): string {
   const day = parts.find((part) => part.type === "day")?.value ?? "";
   const year = parts.find((part) => part.type === "year")?.value ?? "";
 
-  return `${month} ${day} ${year}`.trim();
+  return `${day} ${month} ${year}`.trim();
 }
 
 export function buildShareText(args: {
@@ -120,14 +120,14 @@ export function buildShareText(args: {
 
   if (mode === "daily") {
     const lines = [
-      `${SHARE_BRAND_LABEL} / Daily for ${formatShareDate(dateKey)}`,
+      `${SHARE_BRAND_LABEL} / Dagens spel ${formatShareDate(dateKey)}`,
     ];
 
     if (resultRow) {
       lines.push("", resultRow);
     }
 
-    lines.push("", `Score / ${score} / ${getRankLabel(score)}`, "", url);
+    lines.push("", `Poäng / ${score} / ${getRankLabel(score)}`, "", url);
     return lines.join("\n");
   }
 
@@ -145,10 +145,10 @@ export function buildShareText(args: {
     lines.push("", resultRow);
   }
 
-  lines.push("", `Score / ${score} / ${getRankLabel(score)}`);
+  lines.push("", `Poäng / ${score} / ${getRankLabel(score)}`);
 
   if (typeof highscore === "number") {
-    lines.push(`Best / ${highscore} / ${getRankLabel(highscore)}`);
+    lines.push(`Bäst / ${highscore} / ${getRankLabel(highscore)}`);
   }
 
   lines.push("", url);

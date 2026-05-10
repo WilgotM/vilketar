@@ -1,0 +1,21 @@
+SELECT ?item ?itemLabel (MIN(?yearValue) AS ?year) (SAMPLE(?artistName) AS ?artistLabel) ?sitelinks WHERE {
+  ?item
+    wdt:P31 wd:Q482994;
+    wdt:P577 ?date;
+    wikibase:sitelinks ?sitelinks;
+    rdfs:label ?itemLabel.
+  FILTER(LANG(?itemLabel) = "sv")
+  OPTIONAL {
+    ?item wdt:P175 ?artist.
+    ?artist rdfs:label ?artistName.
+    FILTER(LANG(?artistName) = "sv")
+  }
+  OPTIONAL { ?item wdt:P495 ?countryOfOrigin. }
+  OPTIONAL { ?artist wdt:P27 ?artistCountry. }
+  FILTER(?countryOfOrigin = wd:Q34 || ?artistCountry = wd:Q34)
+  FILTER(?sitelinks >= 5)
+  BIND(YEAR(?date) AS ?yearValue)
+}
+GROUP BY ?item ?itemLabel ?sitelinks
+ORDER BY DESC(?sitelinks)
+LIMIT 500

@@ -8,17 +8,17 @@ interface Props {
 export default function Score(props: Props) {
   const { score, title } = props;
   let tone = "none";
-  let rankLabel = "None";
+  let rankLabel = "Ingen";
 
   if (score >= 20) {
     tone = "gold";
-    rankLabel = "Gold";
+    rankLabel = "Guld";
   } else if (score >= 10) {
     tone = "silver";
     rankLabel = "Silver";
   } else if (score >= 1) {
     tone = "bronze";
-    rankLabel = "Bronze";
+    rankLabel = "Brons";
   }
 
   return (

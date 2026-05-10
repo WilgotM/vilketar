@@ -1,0 +1,122 @@
+[
+  {
+    "fact": "Sverige tar VM-brons i fotboll i USA.",
+    "image": "1994_FIFA_World_Cup.svg",
+    "pageViews": 300000,
+    "qid": "Q101751",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Sverige tar VM-brons i fotboll",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1994",
+    "year": 1994
+  },
+  {
+    "fact": "Tre Kronor tar OS-guld i ishockey i Lillehammer.",
+    "image": "",
+    "pageViews": 240000,
+    "qid": "Q653041",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Tre Kronor tar OS-guld",
+    "wikipediaSlug": "Ishockey_vid_olympiska_vinterspelen_1994",
+    "year": 1994
+  },
+  {
+    "qid": "Q46896",
+    "title": "Zlatan Ibrahimović föds",
+    "subtitle": "Svensk fotbollsspelare",
+    "year": 1981,
+    "fact": "Zlatan Ibrahimović föds.",
+    "wikipediaSlug": "Zlatan_Ibrahimovi%C4%87",
+    "image": "Zlatan Ibrahimović June 2018.jpg",
+    "pageViews": 65000
+  },
+  {
+    "qid": "Q272786",
+    "title": "Björn Borg vinner Wimbledon",
+    "subtitle": "Svensk tennisspelare",
+    "year": 1976,
+    "fact": "Björn Borg vinner Wimbledon.",
+    "wikipediaSlug": "Bj%C3%B6rn_Borg",
+    "image": "Bjorn Borg 1979.jpg",
+    "pageViews": 30000
+  },
+  {
+    "qid": "Q211903",
+    "title": "Henrik Larsson föds",
+    "subtitle": "Svensk fotbollsspelare",
+    "year": 1971,
+    "fact": "Henrik Larsson föds.",
+    "wikipediaSlug": "Henrik_Larsson",
+    "image": "Henrik Larsson 2006.jpg",
+    "pageViews": 26000
+  },
+  {
+    "qid": "Q312450",
+    "title": "Peter Forsberg föds",
+    "subtitle": "Svensk ishockeyspelare",
+    "year": 1973,
+    "fact": "Peter Forsberg föds.",
+    "wikipediaSlug": "Peter_Forsberg",
+    "image": "Peter Forsberg 2012-12-29.JPG",
+    "pageViews": 26000
+  },
+  {
+    "qid": "Q312545",
+    "title": "Ingemar Stenmark vinner OS-guld",
+    "subtitle": "Svensk alpin skidåkare",
+    "year": 1980,
+    "fact": "Ingemar Stenmark vinner OS-guld.",
+    "wikipediaSlug": "Ingemar_Stenmark",
+    "image": "Ingemar Stenmark 2014.jpg",
+    "pageViews": 26000
+  },
+  {
+    "qid": "Q312640",
+    "title": "Henrik Lundqvist föds",
+    "subtitle": "Svensk ishockeymålvakt",
+    "year": 1982,
+    "fact": "Henrik Lundqvist föds.",
+    "wikipediaSlug": "Henrik_Lundqvist",
+    "image": "Henrik Lundqvist 2014-05-29.jpg",
+    "pageViews": 25000
+  },
+  {
+    "qid": "Q312643",
+    "title": "Sarah Sjöström föds",
+    "subtitle": "Svensk simmare",
+    "year": 1993,
+    "fact": "Sarah Sjöström föds.",
+    "wikipediaSlug": "Sarah_Sj%C3%B6str%C3%B6m",
+    "image": "Sarah Sjöström 2015.jpg",
+    "pageViews": 24000
+  },
+  {
+    "qid": "Q270414",
+    "title": "Carolina Klüft vinner OS-guld",
+    "subtitle": "Svensk friidrottare",
+    "year": 2004,
+    "fact": "Carolina Klüft vinner OS-guld.",
+    "wikipediaSlug": "Carolina_Kl%C3%BCft",
+    "image": "Carolina Kluft 2007 Osaka.jpg",
+    "pageViews": 22000
+  },
+  {
+    "qid": "Q106581",
+    "title": "Friends Arena öppnar",
+    "subtitle": "Nationalarena i Solna",
+    "year": 2012,
+    "fact": "Friends Arena öppnar.",
+    "wikipediaSlug": "Friends_Arena",
+    "image": "Friends Arena 2013.jpg",
+    "pageViews": 16000
+  },
+  {
+    "qid": "Q220505",
+    "title": "Ullevi öppnar",
+    "subtitle": "Arena i Göteborg",
+    "year": 1958,
+    "fact": "Ullevi öppnar.",
+    "wikipediaSlug": "Ullevi",
+    "image": "Ullevi stadium 2006.jpg",
+    "pageViews": 15000
+  }
+]

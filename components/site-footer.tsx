@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import GitHubButton from "react-github-btn";
 import * as ui from "../styles/ui.css";
 
 interface Props {
@@ -12,7 +11,7 @@ export default function SiteFooter(props: Props) {
   return (
     <div className={classNames(ui.footerNotes, className)}>
       <div>
-        All data sourced from{" "}
+        Data hämtas från{" "}
         <a
           href="https://www.wikidata.org"
           target="_blank"
@@ -20,36 +19,27 @@ export default function SiteFooter(props: Props) {
         >
           Wikidata
         </a>{" "}
-        and{" "}
+        och{" "}
         <a
-          href="https://www.wikipedia.org"
+          href="https://sv.wikipedia.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Wikipedia
+          svenska Wikipedia
         </a>
         .
       </div>
       <div>
-        Have feedback? Please report it on{" "}
+        Kodbasen bygger på Wikitrivia och används enligt MIT-licensen. Fel i
+        fakta rättas bäst vid källan på{" "}
         <a
-          href="https://github.com/tom-james-watson/wikitrivia/issues/"
+          href="https://www.wikidata.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub
+          Wikidata
         </a>
         .
-      </div>
-      <div className={ui.githubButtonSlot}>
-        <GitHubButton
-          href="https://github.com/tom-james-watson/wikitrivia"
-          data-size="large"
-          data-show-count="true"
-          aria-label="Star tom-james-watson/wikitrivia on GitHub"
-        >
-          Star
-        </GitHubButton>
       </div>
     </div>
   );

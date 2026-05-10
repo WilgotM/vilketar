@@ -3,6 +3,7 @@ import { existsSync } from "fs";
 import path from "path";
 
 const CONTACT_EMAIL_ENV = "WIKITRIVIA_CONTACT_EMAIL";
+const REPO_SLUG_ENV = "WIKITRIVIA_REPO_SLUG";
 
 function requireEnvFile() {
   if (!existsSync(path.join(process.cwd(), ".env"))) {
@@ -42,6 +43,11 @@ function parseGitHubRepoSlug(remoteUrl: string): string | null {
 }
 
 function getGitHubRepoSlug(): string {
+  const envRepoSlug = process.env[REPO_SLUG_ENV]?.trim();
+  if (envRepoSlug) {
+    return envRepoSlug;
+  }
+
   const remoteUrl = execFileSync("git", ["remote", "get-url", "origin"], {
     cwd: process.cwd(),
     encoding: "utf8",

@@ -12,19 +12,19 @@ function getLabel(props: Props): string {
 
   if (selectionRoute) {
     if (selectionRoute.kind === "all") {
-      return "Free Play / All";
+      return "Fritt spel / Alla";
     }
 
-    return ["Free Play", getSelectionRouteShareLabel(selectionRoute)].join(
+    return ["Fritt spel", getSelectionRouteShareLabel(selectionRoute)].join(
       " / ",
     );
   }
 
   if (breadcrumbs.length > 0) {
-    return ["Free Play", ...breadcrumbs].join(" / ");
+    return ["Fritt spel", ...breadcrumbs].join(" / ");
   }
 
-  return "Free Play";
+  return "Fritt spel";
 }
 
 export default function FreePlayRouteTitle(props: Props) {

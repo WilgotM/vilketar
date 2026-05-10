@@ -38,9 +38,9 @@ export default function RouteIntroScreen(props: Props) {
   const showDifficulty =
     mode === "free-play" && typeof setDifficulty === "function";
   const resolvedDailyDateKey = dailyDateKey ?? getCurrentUtcDateKey();
-  const introCopy = "Place the cards on the timeline in the correct order.";
+  const introCopy = "Placera korten på tidslinjen i rätt ordning.";
   const [nextDailyText, setNextDailyText] = React.useState(() =>
-    formatTimeUntilNextDaily(new Date(), "Next in"),
+    formatTimeUntilNextDaily(new Date(), "Nästa om"),
   );
   const formattedDailyDate = React.useMemo(() => {
     return formatDailyDate(resolvedDailyDateKey, DAILY_DATE_LOCALE);
@@ -52,7 +52,7 @@ export default function RouteIntroScreen(props: Props) {
     }
 
     const updateNextDailyText = () => {
-      setNextDailyText(formatTimeUntilNextDaily(new Date(), "Next in"));
+      setNextDailyText(formatTimeUntilNextDaily(new Date(), "Nästa om"));
     };
 
     updateNextDailyText();
@@ -73,7 +73,7 @@ export default function RouteIntroScreen(props: Props) {
       >
         <div className={styles.stage}>
           {mode === "daily" && showHeader ? (
-            <div className={styles.sectionTitle}>Daily</div>
+            <div className={styles.sectionTitle}>Dagens spel</div>
           ) : null}
 
           <div className={styles.content}>
@@ -98,7 +98,7 @@ export default function RouteIntroScreen(props: Props) {
               onClick={onStart}
               type="button"
             >
-              Start
+              Starta
             </button>
           </div>
         </div>

@@ -1,0 +1,18 @@
+SELECT ?item ?itemLabel (SAMPLE(?descriptionText) AS ?description) (MIN(?yearValue) AS ?year) ?sitelinks WHERE {
+  ?item
+    wdt:P31 wd:Q1190554;
+    wikibase:sitelinks ?sitelinks;
+    rdfs:label ?itemLabel.
+  ?item wdt:P17 wd:Q34.
+  { ?item wdt:P585 ?date. } UNION { ?item wdt:P580 ?date. }
+  FILTER(LANG(?itemLabel) = "sv")
+  OPTIONAL {
+    ?item schema:description ?descriptionText.
+    FILTER(LANG(?descriptionText) = "sv")
+  }
+  FILTER(?sitelinks >= 5)
+  BIND(YEAR(?date) AS ?yearValue)
+}
+GROUP BY ?item ?itemLabel ?sitelinks
+ORDER BY DESC(?sitelinks)
+LIMIT 500

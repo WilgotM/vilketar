@@ -5,11 +5,21 @@ interface Props {
 }
 
 export default function AppHead(props: Props) {
-  const { title = "Wikitrivia" } = props;
+  const { title = "VilketÅr" } = props;
 
   return (
     <Head>
       <title>{title}</title>
+      <meta
+        name="description"
+        content="Ett svenskt tidslinjespel byggt på Wikimedia-data."
+      />
+      <meta property="og:title" content={title} />
+      <meta
+        property="og:description"
+        content="Placera svenska och historiska händelser i rätt år."
+      />
+      <meta name="theme-color" content="#f7efe3" />
       <link
         rel="preload"
         href="/fonts/inter-latin.woff2"
