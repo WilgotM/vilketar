@@ -9,15 +9,16 @@ export const fullWidth = style({
 });
 
 export const minimal = style({
-  background: "transparent",
-  borderColor: vars.color.border,
+  background: `linear-gradient(${vars.color.backdropStrong}, ${vars.color.backdropStrong}) padding-box, linear-gradient(90deg, rgba(140, 80, 180, 0.8) 0%, rgba(245, 183, 49, 0.8) 100%) border-box`,
+  borderColor: "transparent",
+  borderWidth: "1px",
   boxShadow: "none",
-  color: vars.color.text,
+  color: "#ffffff",
   selectors: {
     "&:hover": {
-      background: `color-mix(in srgb, ${vars.color.text} 3%, transparent)`,
-      borderColor: vars.color.border,
-      color: vars.color.text,
+      background: `linear-gradient(${vars.color.surfaceStrong}, ${vars.color.surfaceStrong}) padding-box, linear-gradient(90deg, rgba(140, 80, 180, 1) 0%, rgba(245, 183, 49, 1) 100%) border-box`,
+      borderColor: "transparent",
+      color: "#ffffff",
     },
   },
 });

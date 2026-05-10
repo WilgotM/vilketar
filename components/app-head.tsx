@@ -34,20 +34,8 @@ export default function AppHead(props: Props) {
         type="font/woff2"
         crossOrigin="anonymous"
       />
-      <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
-      <link
-        rel="icon"
-        href="/favicon-light.png"
-        media="(prefers-color-scheme: light)"
-        type="image/png"
-      />
-      <link
-        rel="icon"
-        href="/favicon-dark.png"
-        media="(prefers-color-scheme: dark)"
-        type="image/png"
-      />
-      <link rel="icon" href="/favicon-light.png" type="image/png" />
+      <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      <link rel="apple-touch-icon" href="/favicon.svg" />
     </Head>
   );
 }

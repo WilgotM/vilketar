@@ -157,7 +157,7 @@ export const contentStack = style([
 ]);
 
 export const sectionLabel = style({
-  color: vars.color.text,
+  color: vars.color.accent,
   fontFamily: vars.font.body,
   fontSize: vars.fontSize.control,
   fontWeight: vars.fontWeight.semibold,
@@ -201,6 +201,22 @@ export const heroWordmark = style({
   },
 });
 
+export const heroWordmarkAccent = style({
+  color: vars.color.accent,
+});
+
+export const heroWordmarkRays = style({
+  color: vars.color.accent,
+  display: "inline-block",
+  fontSize: "0.3em",
+  lineHeight: 1,
+  position: "relative",
+  textAlign: "center",
+  top: "-0.15em",
+  verticalAlign: "top",
+  width: "1.6em",
+});
+
 export const heroStack = style([
   stage,
   {
@@ -227,6 +243,11 @@ export const heroTagline = style([
     },
   },
 ]);
+
+export const heroTaglineBold = style({
+  color: vars.color.accent,
+  fontWeight: vars.fontWeight.bold,
+});
 
 export const chip = style([
   atoms({
@@ -284,13 +305,13 @@ export const action = recipe({
     {
       appearance: "none",
       background: vars.color.surfaceStrong,
-      border: `${vars.size.borderWidth} solid ${vars.color.border}`,
-      borderRadius: vars.radius.lg,
+      border: `0.125rem solid ${vars.color.border}`,
+      borderRadius: vars.radius.pill,
       color: vars.color.text,
       cursor: "pointer",
       fontFamily: vars.font.body,
       fontSize: vars.fontSize.control,
-      fontWeight: vars.fontWeight.semibold,
+      fontWeight: vars.fontWeight.bold,
       gap: vars.space.md,
       letterSpacing: "0.14em",
       lineHeight: vars.lineHeight.tight,
@@ -298,10 +319,11 @@ export const action = recipe({
       outline: "none",
       textDecoration: "none",
       textTransform: "uppercase",
-      transition: `border-color ${vars.duration.fast} ${vars.easing.standard}, background-color ${vars.duration.fast} ${vars.easing.standard}, color ${vars.duration.fast} ${vars.easing.standard}, box-shadow ${vars.duration.fast} ${vars.easing.standard}`,
+      transition: `border-color ${vars.duration.fast} ${vars.easing.standard}, background-color ${vars.duration.fast} ${vars.easing.standard}, color ${vars.duration.fast} ${vars.easing.standard}, box-shadow ${vars.duration.fast} ${vars.easing.standard}, transform ${vars.duration.fast} ${vars.easing.standard}`,
       selectors: {
         "&:hover": {
           borderColor: vars.color.borderStrong,
+          transform: "translateY(-1px)",
         },
         "&:focus-visible": {
           boxShadow: vars.shadow.focus,
@@ -327,14 +349,16 @@ export const action = recipe({
     },
     tone: {
       primary: {
-        background: vars.color.text,
-        borderColor: vars.color.text,
-        color: vars.color.backdropStrong,
+        background: `linear-gradient(180deg, #FAD961 0%, ${vars.color.accent} 100%)`,
+        borderColor: "transparent",
+        color: vars.color.accentText,
+        boxShadow: "0 4px 16px rgba(245, 183, 49, 0.3)",
         selectors: {
           "&:hover": {
-            background: vars.color.text,
-            borderColor: vars.color.text,
-            color: vars.color.backdropStrong,
+            background: `linear-gradient(180deg, #FCE38A 0%, ${vars.color.accentActive} 100%)`,
+            borderColor: "transparent",
+            color: vars.color.accentText,
+            boxShadow: "0 6px 20px rgba(245, 183, 49, 0.4)",
           },
         },
       },
@@ -352,12 +376,12 @@ export const action = recipe({
       },
       quiet: {
         background: "transparent",
-        borderColor: vars.color.border,
-        color: vars.color.textMuted,
+        borderColor: vars.color.accent,
+        color: vars.color.text,
         selectors: {
           "&:hover": {
-            background: `color-mix(in srgb, ${vars.color.text} 3%, transparent)`,
-            borderColor: vars.color.border,
+            background: "rgba(245, 183, 49, 0.08)",
+            borderColor: vars.color.accent,
             color: vars.color.text,
           },
         },

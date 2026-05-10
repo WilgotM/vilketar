@@ -25,7 +25,7 @@ export const difficultyOptions = style({
 });
 
 export const difficultySlider = style({
-  background: vars.color.text,
+  background: vars.color.accent,
   borderRadius: `calc(${vars.radius.lg} - ${vars.size.controlInset})`,
   bottom: vars.size.controlInset,
   left: vars.size.controlInset,
