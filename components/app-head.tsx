@@ -34,8 +34,9 @@ export default function AppHead(props: Props) {
         type="font/woff2"
         crossOrigin="anonymous"
       />
-      <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-      <link rel="apple-touch-icon" href="/favicon.svg" />
+      <link rel="icon" href="/favicon-32.png?v=20260510" sizes="32x32" />
+      <link rel="icon" href="/favicon.svg?v=20260510" type="image/svg+xml" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260510" />
     </Head>
   );
 }
