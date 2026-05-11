@@ -144,9 +144,9 @@ export default function HomeScreen() {
               <ButtonLink
                 className={buttonStyles.swedishClassics}
                 fullWidth
-                href="/play/featured/svenska-klassiker"
-                leadingIcon="play"
-                text="Svenska klassiker"
+                href="/party"
+                leadingIcon="group"
+                text="Sällskapsspel"
               />
               <ButtonLink
                 fullWidth
