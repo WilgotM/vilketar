@@ -111,7 +111,7 @@
   },
   {
     "fact": "Olof Palme mördas i Stockholm.",
-    "image": "",
+    "image": "Palme_Trauer_1986.jpg",
     "pageViews": 500000,
     "qid": "Q3284177",
     "subtitle": "Svensk samtidshistoria",
@@ -658,16 +658,6 @@
     "wikipediaSlug": "O.J._Simpson",
     "image": "O.J._Simpson_1990_·_DN-ST-91-03444_crop.JPEG",
     "pageViews": 217065
-  },
-  {
-    "qid": "Q505476",
-    "title": "Avicii dör",
-    "subtitle": "Svensk musikproducent och DJ",
-    "year": 2018,
-    "fact": "Avicii är svensk musikproducent och DJ.",
-    "wikipediaSlug": "Avicii",
-    "image": "Avicii_2014_003cr.jpg",
-    "pageViews": 215264
   },
   {
     "qid": "Q2071",

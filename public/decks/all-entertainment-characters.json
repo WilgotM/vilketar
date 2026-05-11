@@ -10,6 +10,16 @@
     "year": 1945
   },
   {
+    "fact": "Den första boken om Alfons Åberg ges ut.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q1316142",
+    "subtitle": "Svensk barnboksfigur",
+    "title": "Alfons Åberg ges ut",
+    "wikipediaSlug": "Alfons_%C3%85berg",
+    "year": 1972
+  },
+  {
     "qid": "Q283111",
     "title": "Professor Moriarty dyker upp första gången",
     "subtitle": "Fiktiv rollfigur ur Sherlock Holmes",
@@ -18,6 +28,16 @@
     "wikipediaSlug": "Professor_Moriarty",
     "image": "The_Adventure_of_the_Final_Problem_03.jpg",
     "pageViews": 247521
+  },
+  {
+    "fact": "Pettson och Findus debuterar i bokform.",
+    "image": "Pettson_och_Findus.JPG",
+    "pageViews": 220000,
+    "qid": "Q164639",
+    "subtitle": "Svensk barnboksserie",
+    "title": "Pettson och Findus debuterar",
+    "wikipediaSlug": "Pettson_och_Findus",
+    "year": 1984
   },
   {
     "qid": "Q79037",
@@ -30,6 +50,16 @@
     "pageViews": 206730
   },
   {
+    "fact": "Lilla spöket Laban ges ut.",
+    "image": "Lilla_spöket_Laban,_konst_i_Karlstad.jpg",
+    "pageViews": 180000,
+    "qid": "Q7747599",
+    "subtitle": "Svensk barnboksfigur",
+    "title": "Lilla spöket Laban ges ut",
+    "wikipediaSlug": "Lilla_sp%C3%B6ket_Laban",
+    "year": 1965
+  },
+  {
     "fact": "Bamse dyker upp första gången.",
     "image": "Bamse.jpg",
     "pageViews": 180000,
@@ -38,6 +68,36 @@
     "title": "Bamse dyker upp första gången",
     "wikipediaSlug": "Bamse",
     "year": 1966
+  },
+  {
+    "fact": "Sune debuterar som svensk barn- och ungdomsfigur.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "manual-Sune_(bokserie)",
+    "subtitle": "Svensk bokserie",
+    "title": "Sune debuterar",
+    "wikipediaSlug": "Sune_(bokserie)",
+    "year": 1984
+  },
+  {
+    "fact": "Mamma Mu dyker upp i radio.",
+    "image": "Mamma-mu-och-krakan.jpg",
+    "pageViews": 180000,
+    "qid": "Q6745311",
+    "subtitle": "Svensk barnboksfigur",
+    "title": "Mamma Mu dyker upp",
+    "wikipediaSlug": "Mamma_Mu",
+    "year": 1985
+  },
+  {
+    "fact": "Bert debuterar i bokform.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "manual-Bert_(bokserie)",
+    "subtitle": "Svensk bokserie",
+    "title": "Bert debuterar",
+    "wikipediaSlug": "Bert_(bokserie)",
+    "year": 1987
   },
   {
     "qid": "Q51730",

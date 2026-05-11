@@ -1,5 +1,125 @@
 [
   {
+    "fact": "Sveriges Radio startar som Radiotjänst.",
+    "image": "Radiohuset,_Stockholm,_juni_2022.jpg",
+    "pageViews": 260000,
+    "qid": "Q1543058",
+    "subtitle": "Svenskt public service-bolag",
+    "title": "Sveriges Radio startar",
+    "wikipediaSlug": "Sveriges_Radio",
+    "year": 1925
+  },
+  {
+    "fact": "Sveriges Television bildas.",
+    "image": "Kontorshuset_(Sveriges_Television),_juni_2022a.jpg",
+    "pageViews": 260000,
+    "qid": "Q215363",
+    "subtitle": "Svenskt tv-bolag",
+    "title": "Sveriges Television bildas",
+    "wikipediaSlug": "Sveriges_Television",
+    "year": 1979
+  },
+  {
+    "fact": "TV4 börjar sända.",
+    "image": "TV4sweden_logo.svg",
+    "pageViews": 260000,
+    "qid": "Q1466723",
+    "subtitle": "Svensk tv-kanal",
+    "title": "TV4 börjar sända",
+    "wikipediaSlug": "TV4",
+    "year": 1990
+  },
+  {
+    "fact": "Aftonbladet grundas.",
+    "image": "Kungsbrohuset1.JPG",
+    "pageViews": 220000,
+    "qid": "Q389458",
+    "subtitle": "Svensk kvällstidning",
+    "title": "Aftonbladet grundas",
+    "wikipediaSlug": "Aftonbladet",
+    "year": 1830
+  },
+  {
+    "fact": "Dagens Nyheter grundas.",
+    "image": "DN_tryckeri_1914.jpg",
+    "pageViews": 220000,
+    "qid": "Q1126918",
+    "subtitle": "Svensk dagstidning",
+    "title": "Dagens Nyheter grundas",
+    "wikipediaSlug": "Dagens_Nyheter",
+    "year": 1864
+  },
+  {
+    "fact": "Så mycket bättre börjar sändas i TV4.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q2757779",
+    "subtitle": "Svenskt musikprogram",
+    "title": "”Så mycket bättre” börjar sändas",
+    "wikipediaSlug": "S%C3%A5_mycket_b%C3%A4ttre",
+    "year": 2010
+  },
+  {
+    "fact": "Rapport börjar sändas i Sveriges Television.",
+    "image": "",
+    "pageViews": 200000,
+    "qid": "manual-Rapport_(TV-program)",
+    "subtitle": "Svenskt nyhetsprogram",
+    "title": "”Rapport” börjar sändas",
+    "wikipediaSlug": "Rapport_(TV-program)",
+    "year": 1969
+  },
+  {
+    "fact": "Svenska Dagbladet grundas.",
+    "image": "Svenska_Dagbladet_wordmark.svg",
+    "pageViews": 180000,
+    "qid": "Q1504847",
+    "subtitle": "Svensk dagstidning",
+    "title": "Svenska Dagbladet grundas",
+    "wikipediaSlug": "Svenska_Dagbladet",
+    "year": 1884
+  },
+  {
+    "fact": "Kamratposten börjar ges ut.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q3377873",
+    "subtitle": "Svensk barntidning",
+    "title": "Kamratposten börjar ges ut",
+    "wikipediaSlug": "Kamratposten",
+    "year": 1892
+  },
+  {
+    "fact": "Mamma Mu dyker upp i radio.",
+    "image": "Mamma-mu-och-krakan.jpg",
+    "pageViews": 180000,
+    "qid": "Q6745311",
+    "subtitle": "Svensk barnboksfigur",
+    "title": "Mamma Mu dyker upp",
+    "wikipediaSlug": "Mamma_Mu",
+    "year": 1985
+  },
+  {
+    "fact": "Tre kronor börjar sändas i TV4.",
+    "image": "Farstahallen.jpg",
+    "pageViews": 180000,
+    "qid": "Q4579718",
+    "subtitle": "Svensk tv-serie",
+    "title": "”Tre kronor” börjar sändas",
+    "wikipediaSlug": "Tre_Kronor_(TV-serie)",
+    "year": 1994
+  },
+  {
+    "fact": "Parlamentet börjar sändas i TV4.",
+    "image": "Parlamentet_bild_1.jpg",
+    "pageViews": 180000,
+    "qid": "Q3369191",
+    "subtitle": "Svenskt humorprogram",
+    "title": "”Parlamentet” börjar sändas",
+    "wikipediaSlug": "Parlamentet",
+    "year": 1999
+  },
+  {
     "qid": "Q186068",
     "title": "Fox News Channel lanseras",
     "subtitle": "Amerikansk kabel-TV-kanal",

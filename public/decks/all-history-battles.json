@@ -10,6 +10,36 @@
     "pageViews": 505595
   },
   {
+    "fact": "Nobelpriset delas ut första gången.",
+    "image": "NobelP2.png",
+    "pageViews": 500000,
+    "qid": "Q7191",
+    "subtitle": "Internationellt pris från Sverige",
+    "title": "Nobelpriset delas ut första gången",
+    "wikipediaSlug": "Nobelpriset",
+    "year": 1901
+  },
+  {
+    "fact": "Greta Thunberg inleder sin skolstrejk för klimatet.",
+    "image": "Greta_Thunberg_in_November_in_Stockholm_(cropped)(2).jpg",
+    "pageViews": 420000,
+    "qid": "Q56434717",
+    "subtitle": "Svensk klimataktivist",
+    "title": "Greta Thunberg skolstrejkar",
+    "wikipediaSlug": "Greta_Thunberg",
+    "year": 2018
+  },
+  {
+    "fact": "Stockholms blodbad äger rum.",
+    "image": "Stockholm_Bloodbath.jpg",
+    "pageViews": 300000,
+    "qid": "Q846876",
+    "subtitle": "Svensk historisk händelse",
+    "title": "Stockholms blodbad äger rum",
+    "wikipediaSlug": "Stockholms_blodbad",
+    "year": 1520
+  },
+  {
     "fact": "Estoniakatastrofen inträffar på Östersjön.",
     "image": "Estonia_ferry2.jpg",
     "pageViews": 300000,
@@ -18,6 +48,146 @@
     "title": "Estoniakatastrofen inträffar",
     "wikipediaSlug": "Estoniakatastrofen",
     "year": 1994
+  },
+  {
+    "fact": "Metoo får stort genomslag även i Sverige.",
+    "image": "Metoo-manifestation_2017_Stockholm.jpg",
+    "pageViews": 300000,
+    "qid": "Q42133786",
+    "subtitle": "Social rörelse",
+    "title": "Metoo får globalt genomslag",
+    "wikipediaSlug": "Metoo",
+    "year": 2017
+  },
+  {
+    "fact": "Sveriges stormaktstid tar sin början.",
+    "image": "Svenska_Stormaktsväldet_(1560_-_1815).svg",
+    "pageViews": 260000,
+    "qid": "Q215443",
+    "subtitle": "Svensk historisk epok",
+    "title": "Stormaktstiden börjar",
+    "wikipediaSlug": "Stormaktstiden",
+    "year": 1611
+  },
+  {
+    "fact": "Slaget vid Poltava äger rum.",
+    "image": "Marten's_Poltava.jpg",
+    "pageViews": 260000,
+    "qid": "Q152486",
+    "subtitle": "Svensk historisk händelse",
+    "title": "Slaget vid Poltava äger rum",
+    "wikipediaSlug": "Slaget_vid_Poltava",
+    "year": 1709
+  },
+  {
+    "fact": "Midsommarfirandet får modern placering i kalendern.",
+    "image": "NZ7_8755_(52170703205).jpg",
+    "pageViews": 260000,
+    "qid": "Q154502",
+    "subtitle": "Svensk högtid",
+    "title": "Midsommarafton blir officiell helgdag",
+    "wikipediaSlug": "Midsommar",
+    "year": 1953
+  },
+  {
+    "fact": "Lasermannen grips av polis.",
+    "image": "John_Ausonius.jpg",
+    "pageViews": 260000,
+    "qid": "Q1428088",
+    "subtitle": "Svenskt kriminalfall",
+    "title": "Lasermannen grips",
+    "wikipediaSlug": "John_Ausonius",
+    "year": 1992
+  },
+  {
+    "fact": "Diskoteksbranden i Göteborg inträffar.",
+    "image": "Minnesmarke_diskobranden_Gbg.JPG",
+    "pageViews": 260000,
+    "qid": "Q5587844",
+    "subtitle": "Svensk tragedi",
+    "title": "Diskoteksbranden i Göteborg inträffar",
+    "wikipediaSlug": "Diskoteksbranden_i_G%C3%B6teborg",
+    "year": 1998
+  },
+  {
+    "fact": "Anna Lindh mördas i Stockholm.",
+    "image": "Anna_Lindh_2002.jpg",
+    "pageViews": 260000,
+    "qid": "Q2866968",
+    "subtitle": "Svensk samtidshistoria",
+    "title": "Anna Lindh mördas",
+    "wikipediaSlug": "Mordet_p%C3%A5_Anna_Lindh",
+    "year": 2003
+  },
+  {
+    "fact": "Svenska Akademien grundas av Gustav III.",
+    "image": "Swedish_Academy_logo.svg",
+    "pageViews": 220000,
+    "qid": "Q207360",
+    "subtitle": "Svensk kulturinstitution",
+    "title": "Svenska Akademien grundas",
+    "wikipediaSlug": "Svenska_Akademien",
+    "year": 1786
+  },
+  {
+    "fact": "Det moderna offentliga luciafirandet etableras.",
+    "image": "Lucia_2017_D81_4616_(39002373982).jpg",
+    "pageViews": 220000,
+    "qid": "Q883628",
+    "subtitle": "Svensk tradition",
+    "title": "Luciafirande får modern form",
+    "wikipediaSlug": "Lucia",
+    "year": 1927
+  },
+  {
+    "fact": "Miljonprogrammet startar.",
+    "image": "Tensta_2009d.jpg",
+    "pageViews": 220000,
+    "qid": "Q1935602",
+    "subtitle": "Svenskt bostadsprogram",
+    "title": "Miljonprogrammet startar",
+    "wikipediaSlug": "Miljonprogrammet",
+    "year": 1965
+  },
+  {
+    "fact": "Sverige folkomröstar om kärnkraften.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q6980136",
+    "subtitle": "Svensk folkomröstning",
+    "title": "Sverige röstar om kärnkraft",
+    "wikipediaSlug": "Folkomr%C3%B6stningen_om_k%C3%A4rnkraften_i_Sverige_1980",
+    "year": 1980
+  },
+  {
+    "fact": "Allemansrätten skrivs in i regeringsformen.",
+    "image": "Lingonuppköpare.jpg",
+    "pageViews": 220000,
+    "qid": "Q688646",
+    "subtitle": "Svensk rättighet",
+    "title": "Allemansrätten skrivs in i grundlagen",
+    "wikipediaSlug": "Allemansr%C3%A4tten",
+    "year": 1994
+  },
+  {
+    "fact": "Sverige folkomröstar om att införa euron.",
+    "image": "EMU-omröstningen_2003_kommunvis.png",
+    "pageViews": 220000,
+    "qid": "Q4352712",
+    "subtitle": "Svensk folkomröstning",
+    "title": "Sverige röstar om euron",
+    "wikipediaSlug": "Folkomr%C3%B6stningen_om_inf%C3%B6rande_av_euron_i_Sverige_2003",
+    "year": 2003
+  },
+  {
+    "fact": "Sveriges nationaldag blir allmän helgdag.",
+    "image": "National_Day_of_Sweden_2016_12.jpg",
+    "pageViews": 220000,
+    "qid": "Q1348730",
+    "subtitle": "Svensk högtid",
+    "title": "Sveriges nationaldag blir helgdag",
+    "wikipediaSlug": "Sveriges_nationaldag",
+    "year": 2005
   },
   {
     "qid": "Q48314",

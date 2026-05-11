@@ -10,6 +10,16 @@
     "year": 1974
   },
   {
+    "fact": "Avicii slår igenom internationellt med Levels.",
+    "image": "Avicii_2014_003.jpg",
+    "pageViews": 420000,
+    "qid": "Q505476",
+    "subtitle": "Svensk DJ och musikproducent",
+    "title": "Avicii slår igenom",
+    "wikipediaSlug": "Avicii",
+    "year": 2011
+  },
+  {
     "fact": "Dancing Queen släpps och blir en av ABBAs största låtar.",
     "image": "",
     "pageViews": 360000,
@@ -18,6 +28,26 @@
     "title": "”Dancing Queen” släpps",
     "wikipediaSlug": "Dancing_Queen",
     "year": 1976
+  },
+  {
+    "fact": "Max Martin får ett internationellt genombrott som låtskrivare.",
+    "image": "MaxMartin.jpg",
+    "pageViews": 300000,
+    "qid": "Q318223",
+    "subtitle": "Svensk låtskrivare och producent",
+    "title": "Max Martin får sitt stora genombrott",
+    "wikipediaSlug": "Max_Martin",
+    "year": 1998
+  },
+  {
+    "fact": "Levels blir Aviciis internationella genombrott.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q2315784",
+    "subtitle": "Låt av Avicii",
+    "title": "”Levels” släpps",
+    "wikipediaSlug": "Levels",
+    "year": 2011
   },
   {
     "fact": "Euphoria vinner Eurovision Song Contest för Sverige.",
@@ -30,14 +60,174 @@
     "year": 2012
   },
   {
-    "fact": "Heroes vinner Eurovision Song Contest för Sverige.",
+    "fact": "Wake Me Up blir en av Aviciis största låtar.",
     "image": "",
+    "pageViews": 300000,
+    "qid": "manual-Wake_Me_Up_(Avicii-l%C3%A5t)",
+    "subtitle": "Låt av Avicii",
+    "title": "”Wake Me Up” släpps",
+    "wikipediaSlug": "Wake_Me_Up_(Avicii-l%C3%A5t)",
+    "year": 2013
+  },
+  {
+    "fact": "Loreen blir första kvinna att vinna Eurovision två gånger.",
+    "image": "Loreen_-_Melodifestivalen_2023,_Malmö_118_(cropped).jpg",
+    "pageViews": 300000,
+    "qid": "Q483376",
+    "subtitle": "Svensk artist",
+    "title": "Loreen vinner Eurovision igen",
+    "wikipediaSlug": "Loreen",
+    "year": 2023
+  },
+  {
+    "fact": "Carola slår igenom i Melodifestivalen med Främling.",
+    "image": "Carola_Häggkvist_in_June_2015-3.jpg",
+    "pageViews": 260000,
+    "qid": "Q212524",
+    "subtitle": "Svensk artist",
+    "title": "Carola slår igenom",
+    "wikipediaSlug": "Carola_H%C3%A4ggkvist",
+    "year": 1983
+  },
+  {
+    "fact": "Dancing On My Own blir en modern svensk popklassiker.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q3488185",
+    "subtitle": "Låt av Robyn",
+    "title": "”Dancing On My Own” släpps",
+    "wikipediaSlug": "Dancing_on_My_Own",
+    "year": 2010
+  },
+  {
+    "fact": "Tattoo vinner Eurovision Song Contest för Sverige.",
+    "image": "Loreen_-_Melodifestivalen_2023,_Malmö_563.jpg",
+    "pageViews": 260000,
+    "qid": "Q116908303",
+    "subtitle": "Låt framförd av Loreen",
+    "title": "”Tattoo” vinner Eurovision",
+    "wikipediaSlug": "Tattoo_(l%C3%A5t)",
+    "year": 2023
+  },
+  {
+    "fact": "The Final Countdown blir en av Sveriges mest kända rocklåtar.",
+    "image": "",
+    "pageViews": 240000,
+    "qid": "Q1165771",
+    "subtitle": "Låt av Europe",
+    "title": "”The Final Countdown” släpps",
+    "wikipediaSlug": "The_Final_Countdown_(s%C3%A5ng)",
+    "year": 1986
+  },
+  {
+    "fact": "Evert Taube debuterar som författare och visdiktare.",
+    "image": "Evert_Taube_1961.JPG",
+    "pageViews": 220000,
+    "qid": "Q455625",
+    "subtitle": "Svensk vissångare",
+    "title": "Evert Taube debuterar",
+    "wikipediaSlug": "Evert_Taube",
+    "year": 1920
+  },
+  {
+    "fact": "Cornelis Vreeswijk släpper sitt första album.",
+    "image": "Cornelis_Vreeswijk_(1973).jpg",
+    "pageViews": 220000,
+    "qid": "Q982319",
+    "subtitle": "Svensk-nederländsk vissångare",
+    "title": "Cornelis Vreeswijk albumdebuterar",
+    "wikipediaSlug": "Cornelis_Vreeswijk",
+    "year": 1964
+  },
+  {
+    "fact": "Allsång på Skansen börjar sändas i tv.",
+    "image": "Artisterna_i_Allsång_på_Skansen_2013.jpg",
+    "pageViews": 220000,
+    "qid": "Q1757014",
+    "subtitle": "Svenskt musikprogram",
+    "title": "Allsång på Skansen börjar sändas",
+    "wikipediaSlug": "Alls%C3%A5ng_p%C3%A5_Skansen",
+    "year": 1979
+  },
+  {
+    "fact": "Sommartider blir en svensk sommarklassiker.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q7560439",
+    "subtitle": "Låt av Gyllene Tider",
+    "title": "”Sommartider” släpps",
+    "wikipediaSlug": "Sommartider",
+    "year": 1982
+  },
+  {
+    "fact": "Främling blir ett av Melodifestivalens största genombrott.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q373108",
+    "subtitle": "Låt framförd av Carola",
+    "title": "”Främling” slår igenom",
+    "wikipediaSlug": "Fr%C3%A4mling_(s%C3%A5ng)",
+    "year": 1983
+  },
+  {
+    "fact": "Fångad av en stormvind vinner Eurovision Song Contest.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q1004668",
+    "subtitle": "Låt framförd av Carola",
+    "title": "”Fångad av en stormvind” vinner Eurovision",
+    "wikipediaSlug": "F%C3%A5ngad_av_en_stormvind",
+    "year": 1991
+  },
+  {
+    "fact": "Lovefool blir The Cardigans stora internationella hit.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q2547704",
+    "subtitle": "Låt av The Cardigans",
+    "title": "”Lovefool” släpps",
+    "wikipediaSlug": "Lovefool",
+    "year": 1996
+  },
+  {
+    "fact": "Låt den rätte komma in har premiär.",
+    "image": "Låt-den-rätte-komma-in-logotyp.png",
+    "pageViews": 220000,
+    "qid": "Q144756",
+    "subtitle": "Svensk film",
+    "title": "”Låt den rätte komma in” har premiär",
+    "wikipediaSlug": "L%C3%A5t_den_r%C3%A4tte_komma_in_(film)",
+    "year": 2008
+  },
+  {
+    "fact": "Heroes vinner Eurovision Song Contest för Sverige.",
+    "image": "20150516_ESC_2015_Måns_Zelmerlöw_9958.jpg",
     "pageViews": 220000,
     "qid": "Q19507869",
     "subtitle": "Låt framförd av Måns Zelmerlöw",
     "title": "”Heroes” vinner Eurovision",
     "wikipediaSlug": "Heroes_(M%C3%A5ns_Zelmerl%C3%B6w)",
     "year": 2015
+  },
+  {
+    "fact": "Diggi-loo diggi-ley vinner Eurovision Song Contest.",
+    "image": "",
+    "pageViews": 200000,
+    "qid": "Q718759",
+    "subtitle": "Låt av Herreys",
+    "title": "”Diggi-loo diggi-ley” vinner Eurovision",
+    "wikipediaSlug": "Diggi_loo_diggi_ley",
+    "year": 1984
+  },
+  {
+    "fact": "Stad i ljus vinner Melodifestivalen.",
+    "image": "Disambig_grey.svg",
+    "pageViews": 180000,
+    "qid": "Q10677107",
+    "subtitle": "Låt framförd av Tommy Körberg",
+    "title": "”Stad i ljus” vinner Melodifestivalen",
+    "wikipediaSlug": "Stad_i_ljus",
+    "year": 1988
   },
   {
     "qid": "Q44696",
