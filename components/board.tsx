@@ -644,7 +644,10 @@ export default function Board(props: Props) {
   }, [deckState]);
 
   const score = React.useMemo(() => {
-    return state.played.filter((item) => item.played.correct).length - 1;
+    return Math.max(
+      0,
+      state.played.filter((item) => item.played.correct).length - 1,
+    );
   }, [state.played]);
 
   React.useLayoutEffect(() => {
@@ -655,6 +658,19 @@ export default function Board(props: Props) {
 
   return (
     <div ref={boardRef} className={styles.wrapper}>
+      <motion.div
+        animate={{
+          opacity: gameOverPhase === "hud-exit" || showGameOverSummary ? 0 : 1,
+        }}
+        aria-label={`${score} poäng`}
+        aria-live="polite"
+        className={styles.scoreBadge}
+        initial={false}
+        transition={{ duration: 0.28, ease: "easeOut" }}
+      >
+        <span className={styles.scoreValue}>{score}</span>
+        <span className={styles.scoreLabel}>poäng</span>
+      </motion.div>
       <div
         className={classNames(styles.top, {
           [styles.topGameOver]: showGameOverSummary,
