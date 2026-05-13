@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import React from "react";
 import { getSelectionRouteShareLabel } from "../lib/categories";
 import { formatTimeUntilNextDaily } from "../lib/daily";
+import { submitDailyLeagueResult } from "../lib/leagues";
 import { saveRemoteScore } from "../lib/remote-highscores";
 import { buildShareText, getShareResults } from "../lib/share";
 import { PlayedCard } from "../types/cards";
@@ -91,7 +92,15 @@ export default function GameOver(props: Props) {
       resultPattern: results,
       score,
     });
-  }, [difficulty, gameMode, played, score, selectionRoute]);
+
+    if (gameMode === "daily" && dailyDateKey) {
+      void submitDailyLeagueResult({
+        dateKey: dailyDateKey,
+        resultPattern: results,
+        score,
+      }).catch(() => undefined);
+    }
+  }, [dailyDateKey, difficulty, gameMode, played, score, selectionRoute]);
 
   const share = React.useCallback(async () => {
     await navigator?.clipboard?.writeText(

@@ -22,6 +22,7 @@
     "start": "serve out"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.105.4",
     "classnames": "^2.5.1",
     "motion": "^12.38.0",
     "next": "^16.2.1",

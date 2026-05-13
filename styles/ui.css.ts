@@ -202,11 +202,11 @@ export const heroWordmark = style({
 });
 
 export const heroWordmarkAccent = style({
-  color: vars.color.accent,
+  color: vars.color.accentLogo,
 });
 
 export const heroWordmarkRays = style({
-  color: vars.color.accent,
+  color: vars.color.accentLogo,
   display: "inline-block",
   fontSize: "0.3em",
   lineHeight: 1,
@@ -305,28 +305,27 @@ export const action = recipe({
     {
       appearance: "none",
       background: vars.color.surfaceStrong,
-      border: `0.125rem solid ${vars.color.border}`,
-      borderRadius: vars.radius.pill,
+      border: `1px solid ${vars.color.border}`,
+      borderRadius: vars.radius.md,
       color: vars.color.text,
       cursor: "pointer",
       fontFamily: vars.font.body,
-      fontSize: vars.fontSize.control,
-      fontWeight: vars.fontWeight.bold,
+      fontSize: vars.fontSize.base,
+      fontWeight: vars.fontWeight.semibold,
       gap: vars.space.md,
-      letterSpacing: "0.14em",
       lineHeight: vars.lineHeight.tight,
       minHeight: vars.size.controlHeight,
       outline: "none",
       textDecoration: "none",
-      textTransform: "uppercase",
-      transition: `border-color ${vars.duration.fast} ${vars.easing.standard}, background-color ${vars.duration.fast} ${vars.easing.standard}, color ${vars.duration.fast} ${vars.easing.standard}, box-shadow ${vars.duration.fast} ${vars.easing.standard}, transform ${vars.duration.fast} ${vars.easing.standard}`,
+      transition: `opacity ${vars.duration.fast} ${vars.easing.standard}, transform ${vars.duration.fast} ${vars.easing.standard}, border-color ${vars.duration.fast} ${vars.easing.standard}`,
       selectors: {
-        "&:hover": {
-          borderColor: vars.color.borderStrong,
-          transform: "translateY(-1px)",
+        "&:active": {
+          opacity: 0.7,
+          transform: "scale(0.98)",
         },
         "&:focus-visible": {
           boxShadow: vars.shadow.focus,
+          borderColor: vars.color.borderStrong,
         },
         "&:disabled": {
           cursor: "not-allowed",
@@ -349,42 +348,17 @@ export const action = recipe({
     },
     tone: {
       primary: {
-        background: `linear-gradient(180deg, #FAD961 0%, ${vars.color.accent} 100%)`,
-        borderColor: "transparent",
-        color: vars.color.accentText,
-        boxShadow: "0 4px 16px rgba(245, 183, 49, 0.3)",
-        selectors: {
-          "&:hover": {
-            background: `linear-gradient(180deg, #FCE38A 0%, ${vars.color.accentActive} 100%)`,
-            borderColor: "transparent",
-            color: vars.color.accentText,
-            boxShadow: "0 6px 20px rgba(245, 183, 49, 0.4)",
-          },
-        },
+        background: vars.color.text,
+        border: "none",
+        color: vars.color.backdropStrong,
       },
       secondary: {
-        background: vars.color.surfaceStrong,
-        borderColor: vars.color.border,
+        background: vars.color.surfaceChrome,
         color: vars.color.text,
-        selectors: {
-          "&:hover": {
-            background: vars.color.chipStrong,
-            borderColor: vars.color.borderStrong,
-            color: vars.color.text,
-          },
-        },
       },
       quiet: {
         background: "transparent",
-        borderColor: vars.color.accent,
         color: vars.color.text,
-        selectors: {
-          "&:hover": {
-            background: "rgba(245, 183, 49, 0.08)",
-            borderColor: vars.color.accent,
-            color: vars.color.text,
-          },
-        },
       },
     },
     withIcon: {

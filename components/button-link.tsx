@@ -17,13 +17,12 @@ function PlayIcon() {
   return (
     <svg
       aria-hidden="true"
-      fill="none"
+      fill="currentColor"
       height="18"
       viewBox="0 0 24 24"
       width="18"
     >
-      <circle cx="12" cy="12" fill="white" r="12" />
-      <path d="M10 8.5L15.5 12L10 15.5V8.5Z" fill="#0f1b36" />
+      <path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11-6.86a1 1 0 0 0 0-1.72l-11-6.86A1 1 0 0 0 8 5.14Z" />
     </svg>
   );
 }
@@ -34,7 +33,7 @@ function GroupIcon() {
       aria-hidden="true"
       fill="none"
       height="18"
-      stroke="white"
+      stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth="2"

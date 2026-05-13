@@ -22,16 +22,14 @@ export const fullWidth = style({
 });
 
 export const minimal = style({
-  background: `linear-gradient(${vars.color.backdropStrong}, ${vars.color.backdropStrong}) padding-box, linear-gradient(90deg, rgba(140, 80, 180, 0.8) 0%, rgba(245, 183, 49, 0.8) 100%) border-box`,
-  borderColor: "transparent",
-  borderWidth: "1px",
+  background: vars.color.surfaceChrome,
+  border: `1px solid ${vars.color.border}`,
   boxShadow: "none",
-  color: "#ffffff",
+  color: vars.color.text,
   selectors: {
-    "&:hover": {
-      background: `linear-gradient(${vars.color.surfaceStrong}, ${vars.color.surfaceStrong}) padding-box, linear-gradient(90deg, rgba(140, 80, 180, 1) 0%, rgba(245, 183, 49, 1) 100%) border-box`,
-      borderColor: "transparent",
-      color: "#ffffff",
+    "&:active": {
+      opacity: 0.7,
+      transform: "scale(0.98)",
     },
   },
 });

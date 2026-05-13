@@ -87,6 +87,17 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY
 
 Om de saknas fungerar spelet ändå, men remote highscores sparas inte.
 
+Vänligor använder Supabase Auth utan synlig inloggning. Slå på anonymous
+sign-ins i Supabase Dashboard under Auth innan ligorna används:
+
+```text
+Authentication -> Sign In / Providers -> Anonymous sign-ins
+```
+
+Spelaren får bara välja ett namn i appen. Bakom kulisserna skapas en anonym
+Supabase-användare så ligor, veckopoäng och dagens resultat kan kopplas till
+samma webbläsare.
+
 ## Cloudflare Pages
 
 Cloudflare Pages-projektet heter `vilketar`.

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import * as styles from "../styles/site-header.css";
 
 interface Props {
@@ -28,15 +29,18 @@ function BackIcon() {
 
 export default function SiteHeader(props: Props) {
   const { backHref, backLabel = "Tillbaka" } = props;
+  const router = useRouter();
+
+  const href = backHref ?? (router.pathname !== "/" ? "/" : undefined);
 
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        {backHref ? (
+        {href ? (
           <Link
             aria-label={backLabel}
             className={styles.backLink}
-            href={backHref}
+            href={href}
           >
             <BackIcon />
             <span className={styles.backText}>{backLabel}</span>

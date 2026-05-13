@@ -1,3 +1,5 @@
+import { createClient } from "@supabase/supabase-js";
+
 type SupabaseRequestOptions = {
   body?: unknown;
   method?: "GET" | "POST";
@@ -6,6 +8,17 @@ type SupabaseRequestOptions = {
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+export const supabase =
+  SUPABASE_URL && SUPABASE_ANON_KEY
+    ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+        auth: {
+          autoRefreshToken: true,
+          detectSessionInUrl: false,
+          persistSession: true,
+        },
+      })
+    : null;
 
 function getRestUrl(
   path: string,
