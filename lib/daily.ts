@@ -1,4 +1,4 @@
-export const DAILY_DIFFICULTY = "easy";
+export const DAILY_DIFFICULTY = "normal";
 
 export function getCurrentUtcDateKey(now: Date = new Date()): string {
   return now.toISOString().slice(0, 10);
