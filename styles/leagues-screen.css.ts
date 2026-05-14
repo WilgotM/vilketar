@@ -30,7 +30,7 @@ export const eyebrow = style([
 
 export const title = style({
   fontFamily: vars.font.body,
-  fontSize: vars.fontSize["3xl"],
+  fontSize: vars.fontSize["2xl"],
   fontWeight: vars.fontWeight.bold,
   letterSpacing: "-0.02em",
   lineHeight: vars.lineHeight.tight,
@@ -188,7 +188,7 @@ export const winner = style({
 
 export const winnerLabel = style({
   color: vars.color.accentLogo,
-  fontSize: vars.fontSize.xxs,
+  fontSize: vars.fontSize.xs,
   fontWeight: vars.fontWeight.bold,
   textTransform: "uppercase",
   letterSpacing: "0.05em",
@@ -211,7 +211,7 @@ export const memberListHeader = style({
   gridTemplateColumns: "2rem 1fr 3.5rem",
   gap: vars.space.sm,
   padding: `${vars.space.xs} ${vars.space.xl}`,
-  fontSize: vars.fontSize.xxs,
+  fontSize: vars.fontSize.xs,
   color: vars.color.textSubtle,
   fontWeight: vars.fontWeight.bold,
   textTransform: "uppercase",
