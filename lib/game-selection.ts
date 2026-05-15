@@ -191,6 +191,8 @@ function chooseCardFromDeck(
   }
 
   const topPoolConfig = DIFFICULTY_TOP_POOL[state.difficulty];
+  let allowedCardIds: Set<string> | null = null;
+
   if (topPoolConfig) {
     const topPoolSize = Math.max(
       1,
@@ -199,46 +201,12 @@ function chooseCardFromDeck(
         Math.ceil(deck.cards.length * topPoolConfig.share),
       ),
     );
-    const topRankedCandidates = [...deck.cards]
-      .sort((left, right) => left.rank - right.rank)
-      .slice(0, topPoolSize)
-      .filter((candidate) => {
-        if (bucketFilter && !bucketFilter.has(candidate.yearBucket)) {
-          return false;
-        }
-        if (!meetsDifficultyPageViews(candidate, state.difficulty)) {
-          return false;
-        }
-        if (isCardUsed(candidate, state)) {
-          return false;
-        }
-        if (!respectsSpacing(candidate, state.played, strictness)) {
-          return false;
-        }
-
-        return true;
-      });
-
-    const topRankedCard = weightedPick(
-      topRankedCandidates,
-      () => 1,
-      state.random,
+    const sortedByRank = [...deck.cards].sort(
+      (left, right) => left.rank - right.rank,
     );
-
-    if (topRankedCard) {
-      const index = deck.cards.findIndex(
-        (candidate) => candidate.id === topRankedCard.id,
-      );
-      if (index === -1) {
-        return topRankedCard;
-      }
-
-      deck.drawCursor = getWrappedIndex(
-        deck.cards.length,
-        index + 1 + Math.floor(state.random() * 7),
-      );
-      return topRankedCard;
-    }
+    allowedCardIds = new Set(
+      sortedByRank.slice(0, topPoolSize).map((c) => c.id),
+    );
   }
 
   const searchRadii = [...DECK_SEARCH_RADII, Math.max(200, deck.cards.length)];
@@ -248,6 +216,7 @@ function chooseCardFromDeck(
       Math.min(radius, deck.cards.length - 1),
     );
     const candidates: PreparedCard[] = [];
+    const fallbackCandidates: PreparedCard[] = [];
 
     for (const offset of offsets) {
       const index = getWrappedIndex(
@@ -272,10 +241,17 @@ function chooseCardFromDeck(
         continue;
       }
 
+      fallbackCandidates.push(candidate);
+
+      if (allowedCardIds && !allowedCardIds.has(candidate.id)) {
+        continue;
+      }
+
       candidates.push(candidate);
     }
 
-    const card = weightedPick(candidates, (_candidate) => 1, state.random);
+    const finalCandidates = candidates.length > 0 ? candidates : fallbackCandidates;
+    const card = weightedPick(finalCandidates, (_candidate) => 1, state.random);
 
     if (card) {
       const index = deck.cards.findIndex(
