@@ -253,7 +253,7 @@ export default function LeaguesScreen() {
 
                   {leagues.map((league) => {
                     const sortedMembers = [...league.members].sort(
-                      (a, b) => b.weekScore - a.weekScore
+                      (a, b) => b.weekScore - a.weekScore,
                     );
 
                     return (
@@ -266,15 +266,27 @@ export default function LeaguesScreen() {
                       >
                         <div className={styles.leagueHeader}>
                           <h2 className={styles.leagueTitle}>{league.name}</h2>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                            <div className={styles.codeBox}>{league.joinCode}</div>
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "8px",
+                            }}
+                          >
+                            <div className={styles.codeBox}>
+                              {league.joinCode}
+                            </div>
                             <button
                               className={classNames(
                                 buttonStyles.button,
                                 buttonStyles.minimal,
                               )}
                               onClick={() => void copyCode(league.joinCode)}
-                              style={{ padding: '4px 12px', minHeight: 'auto', fontSize: '12px' }}
+                              style={{
+                                padding: "4px 12px",
+                                minHeight: "auto",
+                                fontSize: "12px",
+                              }}
                               type="button"
                             >
                               <span className={buttonStyles.content}>
@@ -288,8 +300,9 @@ export default function LeaguesScreen() {
 
                         {league.firstWeekIsShort ? (
                           <div className={styles.notice}>
-                            Den här ligan skapades mitt i veckan. Första omgången
-                            räknas därför från skapelsedagen till söndag.
+                            Den här ligan skapades mitt i veckan. Första
+                            omgången räknas därför från skapelsedagen till
+                            söndag.
                           </div>
                         ) : null}
 
@@ -318,7 +331,9 @@ export default function LeaguesScreen() {
                               className={styles.memberRow}
                               key={member.memberId}
                             >
-                              <div className={styles.memberRank}>{index + 1}</div>
+                              <div className={styles.memberRank}>
+                                {index + 1}
+                              </div>
                               <div className={styles.memberInfo}>
                                 <div className={styles.memberName}>
                                   {member.displayName}

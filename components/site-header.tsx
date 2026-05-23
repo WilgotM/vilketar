@@ -37,11 +37,7 @@ export default function SiteHeader(props: Props) {
     <header className={styles.header}>
       <div className={styles.inner}>
         {href ? (
-          <Link
-            aria-label={backLabel}
-            className={styles.backLink}
-            href={href}
-          >
+          <Link aria-label={backLabel} className={styles.backLink} href={href}>
             <BackIcon />
             <span className={styles.backText}>{backLabel}</span>
           </Link>

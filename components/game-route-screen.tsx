@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import React from "react";
 import { getSelectionRoutePath } from "../lib/categories";
 import { DAILY_DIFFICULTY, getCurrentUtcDateKey } from "../lib/daily";
+import { createDailyGameState } from "../lib/daily-game";
+import { loadDailyOverride } from "../lib/daily-overrides";
 import {
   clearDailyGameSnapshot,
   loadDailyGameSnapshot,
@@ -19,7 +21,6 @@ import {
   resolveSelectionDeck,
 } from "../lib/game-state";
 import { loadHighscore, saveHighscore } from "../lib/highscore-storage";
-import { createSeededRandom } from "../lib/seeded-random";
 import { useBackConfirmation } from "../lib/use-back-confirmation";
 import { useFreePlayDifficulty } from "../lib/use-free-play-difficulty";
 import { GameState } from "../types/game";
@@ -308,13 +309,13 @@ export default function GameRouteScreen(props: Props) {
           return;
         }
 
-        const nextState = await createStateWithRetry(
+        const dailyOverride = await loadDailyOverride(dateKey);
+        const nextState = await createDailyGameState(
           selectedRootDeck,
           filteredCards,
           DAILY_DIFFICULTY,
-          {
-            random: createSeededRandom(dateKey),
-          },
+          dateKey,
+          dailyOverride,
         );
 
         if (!cancelled) {

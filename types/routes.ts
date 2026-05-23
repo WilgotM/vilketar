@@ -52,6 +52,7 @@ export interface DailyGameSnapshot {
   next: PreparedCard | null;
   nextButOne: PreparedCard | null;
   played: PlayedCard[];
+  dailyQueue?: PreparedCard[];
   randomState: number | null;
   recentDeckIds: string[];
 }

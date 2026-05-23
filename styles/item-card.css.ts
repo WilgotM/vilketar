@@ -10,6 +10,7 @@ export const cardImageShadowVar = createVar();
 export const cardMutedVar = createVar();
 export const datePillTintVar = createVar();
 export const datePillBorderVar = createVar();
+export const datePillTextVar = createVar();
 
 const faceBase = style({
   backfaceVisibility: "hidden",
@@ -39,6 +40,7 @@ export const itemCard = style({
     [cardMutedVar]: vars.color.textMuted,
     [datePillBorderVar]: `color-mix(in srgb, ${vars.color.danger} 36%, ${vars.color.border})`,
     [datePillTintVar]: `color-mix(in srgb, ${vars.color.dangerSoft} 60%, ${vars.color.surfaceChrome})`,
+    [datePillTextVar]: vars.color.pillText,
   },
   display: "block",
   height: vars.size.cardHeight,
@@ -183,7 +185,7 @@ export const datePill = style({
   background: datePillTintVar,
   border: `${vars.size.borderWidth} solid ${datePillBorderVar}`,
   borderRadius: vars.radius.sm,
-  color: vars.color.pillText,
+  color: datePillTextVar,
   display: "flex",
   fontFamily: vars.font.body,
   fontSize: vars.fontSize.xs,
@@ -202,6 +204,7 @@ export const correct = style({
   vars: {
     [datePillBorderVar]: vars.color.statusCorrectBorder,
     [datePillTintVar]: vars.color.statusCorrectFill,
+    [datePillTextVar]: vars.color.statusCorrectText,
   },
 });
 
@@ -209,6 +212,7 @@ export const incorrect = style({
   vars: {
     [datePillBorderVar]: vars.color.statusIncorrectBorder,
     [datePillTintVar]: vars.color.statusIncorrectFill,
+    [datePillTextVar]: vars.color.statusIncorrectText,
   },
 });
 

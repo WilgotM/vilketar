@@ -162,6 +162,7 @@ export function createDailyGameSnapshot(
       drawCursor: deck.drawCursor,
       id: deck.id,
     })),
+    dailyQueue: state.dailyQueue ? [...state.dailyQueue] : undefined,
     dateKey,
     lives: state.lives,
     next: state.next,
@@ -177,7 +178,7 @@ export function createDailyGameStateFromSnapshot(
   selectedRootDeck: DeckNode,
   cardsByDeckId: ReadonlyMap<string, Card[]>,
 ): GameState {
-  const difficulty: GameDifficulty = "easy";
+  const difficulty: GameDifficulty = "hard";
   const random = createSeededRandom(
     snapshot.dateKey,
     snapshot.randomState ?? undefined,
@@ -215,6 +216,7 @@ export function createDailyGameStateFromSnapshot(
       cards: [...deck.cards],
       drawCursor: deckCursorMap.get(deck.id) ?? deck.drawCursor,
     })),
+    dailyQueue: snapshot.dailyQueue ? [...snapshot.dailyQueue] : undefined,
     played: normalizePlayedCardsForSnapshot(snapshot.played),
     random,
     recentDeckIds: [...snapshot.recentDeckIds],

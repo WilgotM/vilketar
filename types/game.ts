@@ -32,6 +32,7 @@ export interface GameState {
   } | null;
   difficulty: GameDifficulty;
   imageCache: Array<HTMLImageElement | null>;
+  dailyQueue?: PreparedCard[];
   lives: number;
   next: PreparedCard | null;
   nextButOne: PreparedCard | null;
