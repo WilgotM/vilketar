@@ -719,3 +719,91 @@ export const status = style([
     color: vars.color.text,
   },
 ]);
+
+export const quickActions = style({
+  display: "grid",
+  gridTemplateColumns: "repeat(4, 1fr)",
+  gap: vars.space.md,
+  padding: `0 ${vars.space.xl} ${vars.space.xl}`,
+  alignSelf: "center",
+  width: `calc(100% - (${vars.space.xl} * 2))`,
+  "@media": {
+    [media.narrow]: {
+      gridTemplateColumns: "repeat(4, 1fr)",
+      gap: vars.space.sm,
+      padding: `0 ${vars.space.md} ${vars.space.lg}`,
+      width: `calc(100% - (${vars.space.md} * 2))`,
+    },
+  },
+});
+
+export const actionCard = style({
+  appearance: "none",
+  background: vars.color.surfaceStrong,
+  border: `1px solid ${vars.color.border}`,
+  borderRadius: vars.radius.md,
+  cursor: "pointer",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: vars.space.sm,
+  padding: vars.space.md,
+  color: vars.color.text,
+  fontFamily: vars.font.body,
+  fontSize: vars.fontSize.xs,
+  fontWeight: vars.fontWeight.semibold,
+  transition: "all 0.15s ease",
+  selectors: {
+    "&:hover": {
+      background: vars.color.backdropStrong,
+      borderColor: vars.color.borderStrong,
+    },
+  },
+});
+
+export const actionIcon = style({
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  color: vars.color.text,
+  width: "2.5rem",
+  height: "2.5rem",
+  borderRadius: "50%",
+  background: vars.color.backdrop,
+  overflow: "hidden",
+});
+
+export const actionAvatar = style({
+  display: "block",
+  height: "100%",
+  objectFit: "cover",
+  width: "100%",
+});
+
+export const topNav = style({
+  display: "flex",
+  alignItems: "center",
+  marginBottom: vars.space.lg,
+});
+
+export const backButton = style({
+  appearance: "none",
+  background: "transparent",
+  border: 0,
+  color: vars.color.textMuted,
+  cursor: "pointer",
+  display: "flex",
+  alignItems: "center",
+  gap: vars.space.xs,
+  fontFamily: vars.font.body,
+  fontSize: vars.fontSize.sm,
+  fontWeight: vars.fontWeight.bold,
+  padding: `${vars.space.xs} 0`,
+  transition: "color 0.15s ease",
+  selectors: {
+    "&:hover": {
+      color: vars.color.text,
+    },
+  },
+});

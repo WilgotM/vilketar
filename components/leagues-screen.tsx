@@ -1,7 +1,6 @@
 import classNames from "classnames";
 import { motion } from "motion/react";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { getCurrentUtcDateKey } from "../lib/daily";
 import { loadDailyGameSnapshot } from "../lib/daily-storage";
@@ -74,7 +73,14 @@ function todayLabel(score: number | null): string {
   return `${score} p idag`;
 }
 
-type Tab = "list" | "create" | "join" | "account" | "login" | "forgot";
+type Tab =
+  | "list"
+  | "create"
+  | "join"
+  | "account"
+  | "login"
+  | "forgot"
+  | "profile";
 
 const emptyAuthState: LeagueAuthState = {
   email: "",
@@ -566,9 +572,6 @@ export default function LeaguesScreen() {
         <section className={styles.hero}>
           <div className={styles.eyebrow}>Vänligor</div>
           <h1 className={styles.title}>Spela veckan tillsammans</h1>
-          <p className={styles.intro}>
-            Spela dagens spel och jämför dina poäng med vänner och familj.
-          </p>
         </section>
 
         {!configured ? (
@@ -584,6 +587,27 @@ export default function LeaguesScreen() {
 
         {activeTab === "login" ? (
           <section className={styles.panel}>
+            <nav className={styles.topNav}>
+              <button
+                className={styles.backButton}
+                onClick={returnToList}
+                type="button"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
+                Tillbaka
+              </button>
+            </nav>
             <div>
               <h2 className={styles.formTitle}>Logga in</h2>
               <p className={styles.helperText}>
@@ -622,6 +646,27 @@ export default function LeaguesScreen() {
           </section>
         ) : activeTab === "forgot" ? (
           <section className={styles.panel}>
+            <nav className={styles.topNav}>
+              <button
+                className={styles.backButton}
+                onClick={() => openTab("login")}
+                type="button"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
+                Tillbaka till inloggning
+              </button>
+            </nav>
             <div>
               <h2 className={styles.formTitle}>Glömt lösenord?</h2>
               <p className={styles.helperText}>
@@ -723,17 +768,20 @@ export default function LeaguesScreen() {
           <>
             {activeTab === "list" && (
               <>
-                <section className={styles.profileCard}>
-                  <div className={styles.profileSummary}>
-                    <div className={styles.avatarPreviewSmall}>
+                <section className={styles.quickActions}>
+                  <button
+                    className={styles.actionCard}
+                    onClick={() => openTab("profile")}
+                  >
+                    <div className={styles.actionIcon}>
                       {avatarDataUrl ? (
                         <Image
                           alt=""
-                          className={styles.avatarImage}
-                          height={160}
+                          className={styles.actionAvatar}
+                          height={40}
                           src={avatarDataUrl}
                           unoptimized
-                          width={160}
+                          width={40}
                         />
                       ) : (
                         <span>
@@ -741,115 +789,75 @@ export default function LeaguesScreen() {
                         </span>
                       )}
                     </div>
-                    <div className={styles.profileText}>
-                      <div className={styles.accountNudgeLabel}>Din profil</div>
-                      <h2 className={styles.profileName}>
-                        {displayName || "Namnlös spelare"}
-                      </h2>
-                      <p className={styles.helperText}>
-                        Det här namnet och bilden syns för alla i dina ligor.
-                      </p>
-                    </div>
-                  </div>
-                  <div className={styles.profileActions}>
-                    <input
-                      className={styles.input}
-                      maxLength={40}
-                      onChange={(event) => setDisplayName(event.target.value)}
-                      placeholder="Ditt namn"
-                      value={displayName}
-                    />
-                    <label className={styles.avatarPicker}>
-                      <input
-                        accept="image/*"
-                        className={styles.hiddenFileInput}
-                        disabled={busy}
-                        onChange={onAvatarChange}
-                        type="file"
-                      />
-                      Byt bild
-                    </label>
-                    {avatarDataUrl ? (
-                      <button
-                        className={styles.smallAction}
-                        disabled={busy}
-                        onClick={() => {
-                          setAvatarDataUrl(null);
-                          setProfileStatusText(
-                            "Bilden tas bort när du sparar.",
-                          );
-                        }}
-                        type="button"
-                      >
-                        Ta bort bild
-                      </button>
-                    ) : null}
-                    <button
-                      className={styles.accountNudgeButton}
-                      disabled={busy}
-                      onClick={saveName}
-                      type="button"
-                    >
-                      {busy ? "Sparar..." : "Spara profil"}
-                    </button>
-                  </div>
-                  {profileStatusText ? (
-                    <div className={styles.inlineStatus}>
-                      {profileStatusText}
-                    </div>
-                  ) : null}
-                </section>
-
-                <section className={styles.tabMenu}>
-                  <Button
-                    fullWidth
-                    onClick={() => {
-                      openTab("create");
-                    }}
-                    text="Skapa ny liga"
-                  />
-                  <Button
-                    fullWidth
-                    minimal
-                    onClick={() => {
-                      openTab("join");
-                    }}
-                    text="Gå med i liga"
-                  />
-                </section>
-
-                <section className={styles.accountNudge}>
-                  <div>
-                    <div className={styles.accountNudgeLabel}>
-                      Rekommenderas
-                    </div>
-                    <h2 className={styles.accountNudgeTitle}>
-                      {authState.isAnonymous
-                        ? "Spara ditt konto"
-                        : "Ditt konto är sparat"}
-                    </h2>
-                    <p className={styles.helperText}>
-                      {authState.isAnonymous
-                        ? "Med e-post och lösenord kan du hitta dina ligor igen på en annan mobil eller surfplatta."
-                        : authState.email
-                          ? `Inloggad som ${authState.email}. Dina ligor följer med.`
-                          : "Dina ligor följer med när du är inloggad."}
-                    </p>
-                  </div>
-                  <button
-                    className={styles.accountNudgeButton}
-                    onClick={() => {
-                      openTab("account");
-                    }}
-                    type="button"
-                  >
-                    {authState.isAnonymous ? "Spara konto" : "Hantera konto"}
+                    <span>Profil</span>
                   </button>
-                  {!authState.isAnonymous ? (
-                    <Link className={styles.deviceLink} href="/devices">
-                      Mina enheter
-                    </Link>
-                  ) : null}
+
+                  <button
+                    className={styles.actionCard}
+                    onClick={() => openTab("create")}
+                  >
+                    <div className={styles.actionIcon}>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M5 12h14" />
+                        <path d="M12 5v14" />
+                      </svg>
+                    </div>
+                    <span>Skapa</span>
+                  </button>
+
+                  <button
+                    className={styles.actionCard}
+                    onClick={() => openTab("join")}
+                  >
+                    <div className={styles.actionIcon}>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+                        <polyline points="10 17 15 12 10 7" />
+                        <line x1="15" y1="12" x2="3" y2="12" />
+                      </svg>
+                    </div>
+                    <span>Gå med</span>
+                  </button>
+
+                  <button
+                    className={styles.actionCard}
+                    onClick={() => openTab("account")}
+                  >
+                    <div className={styles.actionIcon}>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="3" />
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                      </svg>
+                    </div>
+                    <span>Konto</span>
+                  </button>
                 </section>
 
                 <section className={styles.leagueList}>
@@ -1060,9 +1068,133 @@ export default function LeaguesScreen() {
               </>
             )}
 
+            {activeTab === "profile" && (
+              <>
+                <section className={styles.panel}>
+                  <nav className={styles.topNav}>
+                    <button
+                      className={styles.backButton}
+                      onClick={returnToList}
+                      type="button"
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="m15 18-6-6 6-6" />
+                      </svg>
+                      Tillbaka
+                    </button>
+                  </nav>
+                  <div>
+                    <h2 className={styles.formTitle}>Din profil</h2>
+                    <p className={styles.helperText}>
+                      Det här namnet och bilden syns för alla i dina ligor.
+                    </p>
+                  </div>
+                  <div className={styles.profileEditor}>
+                    <div className={styles.avatarPreview}>
+                      {avatarDataUrl ? (
+                        <Image
+                          alt=""
+                          className={styles.avatarImage}
+                          height={160}
+                          src={avatarDataUrl}
+                          unoptimized
+                          width={160}
+                        />
+                      ) : (
+                        <span>
+                          {displayName.trim().charAt(0).toUpperCase() || "?"}
+                        </span>
+                      )}
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "0.5rem",
+                        alignItems: "flex-start",
+                      }}
+                    >
+                      <label className={styles.avatarPicker}>
+                        <input
+                          accept="image/*"
+                          className={styles.hiddenFileInput}
+                          disabled={busy}
+                          onChange={onAvatarChange}
+                          type="file"
+                        />
+                        Byt bild
+                      </label>
+                      {avatarDataUrl ? (
+                        <button
+                          className={styles.smallAction}
+                          disabled={busy}
+                          onClick={() => {
+                            setAvatarDataUrl(null);
+                            setProfileStatusText(
+                              "Bilden tas bort när du sparar.",
+                            );
+                          }}
+                          type="button"
+                        >
+                          Ta bort bild
+                        </button>
+                      ) : null}
+                    </div>
+                  </div>
+                  <input
+                    className={styles.input}
+                    maxLength={40}
+                    onChange={(event) => setDisplayName(event.target.value)}
+                    placeholder="Ditt namn"
+                    value={displayName}
+                  />
+                  <Button
+                    fullWidth
+                    onClick={saveName}
+                    text={busy ? "Sparar..." : "Spara profil"}
+                  />
+                  {profileStatusText ? (
+                    <div className={styles.inlineStatus}>
+                      {profileStatusText}
+                    </div>
+                  ) : null}
+                </section>
+              </>
+            )}
+
             {activeTab === "create" && (
               <>
                 <section className={styles.panel}>
+                  <nav className={styles.topNav}>
+                    <button
+                      className={styles.backButton}
+                      onClick={returnToList}
+                      type="button"
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="m15 18-6-6 6-6" />
+                      </svg>
+                      Tillbaka
+                    </button>
+                  </nav>
                   <div>
                     <h2 className={styles.formTitle}>Skapa ny liga</h2>
                     <p className={styles.helperText}>
@@ -1088,6 +1220,27 @@ export default function LeaguesScreen() {
             {activeTab === "account" && (
               <>
                 <section className={styles.panel}>
+                  <nav className={styles.topNav}>
+                    <button
+                      className={styles.backButton}
+                      onClick={returnToList}
+                      type="button"
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="m15 18-6-6 6-6" />
+                      </svg>
+                      Tillbaka
+                    </button>
+                  </nav>
                   <div>
                     <h2 className={styles.formTitle}>
                       {authState.isAnonymous ? "Spara kontot" : "Ditt konto"}
@@ -1145,6 +1298,27 @@ export default function LeaguesScreen() {
             {activeTab === "join" && (
               <>
                 <section className={styles.panel}>
+                  <nav className={styles.topNav}>
+                    <button
+                      className={styles.backButton}
+                      onClick={returnToList}
+                      type="button"
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="m15 18-6-6 6-6" />
+                      </svg>
+                      Tillbaka
+                    </button>
+                  </nav>
                   <div>
                     <h2 className={styles.formTitle}>Gå med i liga</h2>
                     <p className={styles.helperText}>
