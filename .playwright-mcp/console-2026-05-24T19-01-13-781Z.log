@@ -1,0 +1,4 @@
+[   83510ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0khy5ar._.js:2342
+[   88512ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0khy5ar._.js:2342
+[   88573ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ http://localhost:3000/play/svenska-klassiker/allt:0
+[   88620ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://localhost:3000/favicon.ico:0

@@ -817,30 +817,3 @@ export const actionAvatar = style({
   objectFit: "cover",
   width: "100%",
 });
-
-export const topNav = style({
-  display: "flex",
-  alignItems: "center",
-  marginBottom: vars.space.lg,
-});
-
-export const backButton = style({
-  appearance: "none",
-  background: "transparent",
-  border: 0,
-  color: vars.color.textMuted,
-  cursor: "pointer",
-  display: "flex",
-  alignItems: "center",
-  gap: vars.space.xs,
-  fontFamily: vars.font.body,
-  fontSize: vars.fontSize.sm,
-  fontWeight: vars.fontWeight.bold,
-  padding: `${vars.space.xs} 0`,
-  transition: "color 0.15s ease",
-  selectors: {
-    "&:hover": {
-      color: vars.color.text,
-    },
-  },
-});

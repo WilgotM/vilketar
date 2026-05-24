@@ -60,13 +60,12 @@ function getPartyDifficulty(
 }
 
 function PartyCategorySelector(props: {
+  group: FreePlayGroupDefinition | null;
   onSelectRoute: (selectionRoute: SelectionRoute) => void;
+  setGroup: (group: FreePlayGroupDefinition | null) => void;
 }) {
-  const { onSelectRoute } = props;
+  const { group, onSelectRoute, setGroup } = props;
   const { deckNodes } = useDecks();
-  const [group, setGroup] = React.useState<FreePlayGroupDefinition | null>(
-    null,
-  );
   const parentItems:
     | readonly FreePlayDefinition[]
     | readonly CategoryDefinition[] = group
@@ -107,7 +106,7 @@ function PartyCategorySelector(props: {
         text: item.title,
       };
     });
-  }, [deckNodes, parentItems]);
+  }, [deckNodes, parentItems, setGroup]);
   const allSelectionRoute = group
     ? getGroupAllSelectionRouteForNode(group.nodeId)
     : getAllSelectionRoute();
@@ -135,21 +134,6 @@ function PartyCategorySelector(props: {
             onSelectRoute(selectionRoute);
           }}
         />
-        {group ? (
-          <button
-            className={classNames(
-              buttonStyles.button,
-              buttonStyles.fullWidth,
-              buttonStyles.minimal,
-            )}
-            onClick={() => {
-              setGroup(null);
-            }}
-            type="button"
-          >
-            Tillbaka till kategorier
-          </button>
-        ) : null}
       </div>
     </div>
   );
@@ -467,15 +451,6 @@ function PartyBoard(props: {
               {isFullscreen ? "Avsluta helskärm" : "Helskärm"}
             </button>
           ) : null}
-          {onBack ? (
-            <button
-              className={classNames(buttonStyles.button, buttonStyles.minimal)}
-              onClick={onBack}
-              type="button"
-            >
-              Lämna
-            </button>
-          ) : null}
         </div>
       </div>
       <div
@@ -680,15 +655,6 @@ export function PartyGameLoader(props: {
       <div className={styles.winnerPanel}>
         <div className={styles.sectionTitle}>Något gick fel</div>
         <p className={styles.setupText}>{error}</p>
-        {onBack ? (
-          <button
-            className={classNames(buttonStyles.button, buttonStyles.fullWidth)}
-            onClick={onBack}
-            type="button"
-          >
-            Tillbaka
-          </button>
-        ) : null}
       </div>
     );
   }
@@ -716,16 +682,25 @@ export function PartyGameLoader(props: {
 
 export default function PartyScreen() {
   const [step, setStep] = React.useState<PartyFlowStep>("category");
+  const [categoryGroup, setCategoryGroup] =
+    React.useState<FreePlayGroupDefinition | null>(null);
   const [selectionRoute, setSelectionRoute] =
     React.useState<SelectionRoute | null>(null);
   const [setup, setSetup] = React.useState<PartySetup | null>(null);
   const handleHeaderBack = React.useMemo(() => {
+    if (categoryGroup) {
+      return () => {
+        setCategoryGroup(null);
+      };
+    }
+
     if (step === "category") {
       return undefined;
     }
 
     if (step === "setup") {
       return () => {
+        setSelectionRoute(null);
         setStep("category");
       };
     }
@@ -734,7 +709,7 @@ export default function PartyScreen() {
       setSetup(null);
       setStep("setup");
     };
-  }, [step]);
+  }, [categoryGroup, step]);
 
   return (
     <PageShell showHeader={false}>
@@ -746,10 +721,13 @@ export default function PartyScreen() {
         <main className={styles.screen}>
           {step === "category" ? (
             <PartyCategorySelector
+              group={categoryGroup}
               onSelectRoute={(nextSelectionRoute) => {
                 setSelectionRoute(nextSelectionRoute);
+                setCategoryGroup(null);
                 setStep("setup");
               }}
+              setGroup={setCategoryGroup}
             />
           ) : null}
           {step === "setup" && selectionRoute ? (

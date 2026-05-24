@@ -617,27 +617,6 @@ export default function LeaguesScreen() {
 
         {activeTab === "login" ? (
           <section className={styles.panel}>
-            <nav className={styles.topNav}>
-              <button
-                className={styles.backButton}
-                onClick={returnToList}
-                type="button"
-              >
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="m15 18-6-6 6-6" />
-                </svg>
-                Tillbaka
-              </button>
-            </nav>
             <div>
               <h2 className={styles.formTitle}>Logga in</h2>
               <p className={styles.helperText}>
@@ -676,27 +655,6 @@ export default function LeaguesScreen() {
           </section>
         ) : activeTab === "forgot" ? (
           <section className={styles.panel}>
-            <nav className={styles.topNav}>
-              <button
-                className={styles.backButton}
-                onClick={() => openTab("login")}
-                type="button"
-              >
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="m15 18-6-6 6-6" />
-                </svg>
-                Tillbaka till inloggning
-              </button>
-            </nav>
             <div>
               <h2 className={styles.formTitle}>Glömt lösenord?</h2>
               <p className={styles.helperText}>
@@ -1101,27 +1059,6 @@ export default function LeaguesScreen() {
             {activeTab === "profile" && (
               <>
                 <section className={styles.panel}>
-                  <nav className={styles.topNav}>
-                    <button
-                      className={styles.backButton}
-                      onClick={returnToList}
-                      type="button"
-                    >
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="m15 18-6-6 6-6" />
-                      </svg>
-                      Tillbaka
-                    </button>
-                  </nav>
                   <div>
                     <h2 className={styles.formTitle}>Din profil</h2>
                     <p className={styles.helperText}>
@@ -1204,27 +1141,6 @@ export default function LeaguesScreen() {
             {activeTab === "create" && (
               <>
                 <section className={styles.panel}>
-                  <nav className={styles.topNav}>
-                    <button
-                      className={styles.backButton}
-                      onClick={returnToList}
-                      type="button"
-                    >
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="m15 18-6-6 6-6" />
-                      </svg>
-                      Tillbaka
-                    </button>
-                  </nav>
                   <div>
                     <h2 className={styles.formTitle}>Skapa ny liga</h2>
                     <p className={styles.helperText}>
@@ -1250,27 +1166,6 @@ export default function LeaguesScreen() {
             {activeTab === "account" && (
               <>
                 <section className={styles.panel}>
-                  <nav className={styles.topNav}>
-                    <button
-                      className={styles.backButton}
-                      onClick={returnToList}
-                      type="button"
-                    >
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="m15 18-6-6 6-6" />
-                      </svg>
-                      Tillbaka
-                    </button>
-                  </nav>
                   <div>
                     <h2 className={styles.formTitle}>
                       {authState.isAnonymous ? "Spara kontot" : "Ditt konto"}
@@ -1353,27 +1248,6 @@ export default function LeaguesScreen() {
             {activeTab === "join" && (
               <>
                 <section className={styles.panel}>
-                  <nav className={styles.topNav}>
-                    <button
-                      className={styles.backButton}
-                      onClick={returnToList}
-                      type="button"
-                    >
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="m15 18-6-6 6-6" />
-                      </svg>
-                      Tillbaka
-                    </button>
-                  </nav>
                   <div>
                     <h2 className={styles.formTitle}>Gå med i liga</h2>
                     <p className={styles.helperText}>

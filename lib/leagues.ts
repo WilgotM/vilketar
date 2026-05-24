@@ -2,6 +2,7 @@ import { supabase } from "./supabase";
 
 const DISPLAY_NAME_STORAGE_KEY = "leagues:display-name";
 const DEVICE_ID_STORAGE_KEY = "leagues:device-id";
+const AUTH_REQUEST_TIMEOUT_MS = 15000;
 
 export type LeagueMember = {
   avatarDataUrl: string | null;
@@ -72,6 +73,28 @@ export function loadStoredDisplayName(): string {
 
 export function saveStoredDisplayName(displayName: string) {
   localStorage.setItem(DISPLAY_NAME_STORAGE_KEY, displayName);
+}
+
+async function withAuthTimeout<T>(request: Promise<T>): Promise<T> {
+  let timeoutId: ReturnType<typeof setTimeout> | undefined;
+  try {
+    return await Promise.race([
+      request,
+      new Promise<never>((_, reject) => {
+        timeoutId = setTimeout(() => {
+          reject(
+            new Error(
+              "Det tog för lång tid att nå inloggningen. Kontrollera uppkopplingen och försök igen.",
+            ),
+          );
+        }, AUTH_REQUEST_TIMEOUT_MS);
+      }),
+    ]);
+  } finally {
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
+  }
 }
 
 export async function hasLeagueSession(): Promise<boolean> {
@@ -192,16 +215,28 @@ export async function saveLeagueAccount(input: {
   const session = await supabase.auth.getSession();
   const email = input.email.trim();
   const password = input.password.trim();
+  const emailRedirectTo =
+    typeof window === "undefined"
+      ? undefined
+      : `${window.location.origin}/leagues`;
 
   if (session.data.session) {
-    const response = await supabase.auth.updateUser({ email, password });
+    const response = await withAuthTimeout(
+      supabase.auth.updateUser({ email, password }, { emailRedirectTo }),
+    );
     if (response.error) {
       throw response.error;
     }
     return getLeagueAuthState();
   }
 
-  const response = await supabase.auth.signUp({ email, password });
+  const response = await withAuthTimeout(
+    supabase.auth.signUp({
+      email,
+      password,
+      options: { emailRedirectTo },
+    }),
+  );
   if (response.error) {
     throw response.error;
   }

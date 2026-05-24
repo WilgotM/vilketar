@@ -15,6 +15,7 @@ export const supabase =
         auth: {
           autoRefreshToken: true,
           detectSessionInUrl: true,
+          lockAcquireTimeout: 5000,
           persistSession: true,
         },
       })

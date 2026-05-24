@@ -17,6 +17,8 @@ Svenskt tidslinjespel byggt med Next.js, Bun och Wikimedia-data.
 - Källqueries ligger i `content/queries/<query-id>/`.
 - Deck-struktur och kategoriidéer finns i `content/deck-tree.ts`.
 - Innehållsscript finns i `content/scripts/`.
+- Appen har en universell tillbaka-knapp längst upp till vänster. Lägg inte
+  till egna tillbaka-knappar i vyer, paneler eller formulär.
 
 ## Svenska klassiker
 
