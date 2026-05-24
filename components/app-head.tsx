@@ -11,6 +11,10 @@ export default function AppHead(props: Props) {
     <Head>
       <title>{title}</title>
       <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover"
+      />
+      <meta
         name="description"
         content="Ett svenskt tidslinjespel byggt på Wikimedia-data."
       />

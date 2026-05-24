@@ -87,7 +87,7 @@ export const footer = style({
   zIndex: 2,
   "@media": {
     [media.compact]: {
-      paddingBottom: `calc(${vars.space.md} + env(safe-area-inset-bottom, 0px))`,
+      paddingBottom: `calc(${vars.space["2xl"]} + env(safe-area-inset-bottom, 0px))`,
       paddingLeft: vars.space.lg,
       paddingRight: vars.space.lg,
       width: "100%",

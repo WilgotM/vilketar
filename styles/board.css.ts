@@ -11,18 +11,35 @@ export const wrapper = style({
   overflow: "hidden",
   position: "relative",
   width: "100%",
+  "@media": {
+    [media.wide]: {
+      vars: {
+        [vars.size.boardStatusWidth]: "31rem",
+        [vars.size.cardHeight]: "14rem",
+        [vars.size.cardWidth]: "10.5rem",
+        [vars.size.deckStackWidth]: "11.75rem",
+        [vars.size.deckWidth]: "14.25rem",
+      },
+    },
+  },
 });
 
 export const top = style({
   alignItems: "center",
   display: "flex",
-  flex: "0 0 50%",
+  flex: "0 0 52%",
   flexDirection: "column",
   gap: vars.space.xl,
   justifyContent: "flex-end",
   minHeight: 0,
   paddingTop: vars.space.xl,
   position: "relative",
+  "@media": {
+    [media.compact]: {
+      flexBasis: "50%",
+      gap: vars.space.lg,
+    },
+  },
 });
 
 export const topGameOver = style({
@@ -97,11 +114,16 @@ export const scoreLabel = style({
 export const bottom = style({
   alignItems: "flex-start",
   display: "flex",
-  flex: "0 0 50%",
+  flex: "0 0 48%",
   minHeight: 0,
   overflowX: "auto",
   overflowY: "hidden",
   paddingTop: vars.space.lg,
   position: "relative",
   width: "100%",
+  "@media": {
+    [media.compact]: {
+      flexBasis: "50%",
+    },
+  },
 });

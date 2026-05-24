@@ -86,8 +86,14 @@ export const pageWrapCentered = style([
 export const pageWrapTight = style([
   pageWrap,
   {
+    gap: vars.space.xl,
     paddingBottom: vars.space["3xl"],
     paddingTop: vars.space.lg,
+    "@media": {
+      [media.compact]: {
+        paddingTop: vars.space.sm,
+      },
+    },
   },
 ]);
 
