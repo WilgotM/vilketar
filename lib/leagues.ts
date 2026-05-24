@@ -263,6 +263,22 @@ export async function signOutLeagueAccount(): Promise<void> {
     return;
   }
 
+  const response = await supabase.auth.signOut();
+  if (response.error) {
+    throw response.error;
+  }
+}
+
+export async function deleteLeagueAccount(): Promise<void> {
+  if (!supabase) {
+    throw new Error("Supabase är inte konfigurerat.");
+  }
+
+  const response = await supabase.rpc("app_delete_account");
+  if (response.error) {
+    throw response.error;
+  }
+
   await supabase.auth.signOut();
 }
 

@@ -502,6 +502,43 @@ export const savedAccountBox = style({
   overflowWrap: "anywhere",
 });
 
+export const dangerZone = style({
+  borderTop: `1px solid ${vars.color.border}`,
+  display: "grid",
+  gap: vars.space.md,
+  marginTop: vars.space.sm,
+  paddingTop: vars.space.lg,
+});
+
+export const dangerTitle = style({
+  color: vars.color.text,
+  fontSize: vars.fontSize.base,
+  fontWeight: vars.fontWeight.bold,
+  lineHeight: vars.lineHeight.snug,
+  margin: 0,
+});
+
+export const dangerButton = style({
+  appearance: "none",
+  background: vars.color.dangerSoft,
+  border: `1px solid ${vars.color.danger}`,
+  borderRadius: vars.radius.sm,
+  color: vars.color.danger,
+  cursor: "pointer",
+  fontFamily: vars.font.body,
+  fontSize: vars.fontSize.base,
+  fontWeight: vars.fontWeight.bold,
+  minHeight: vars.size.controlHeight,
+  padding: `${vars.space.md} ${vars.space.lg}`,
+  width: "100%",
+  selectors: {
+    "&:disabled": {
+      cursor: "wait",
+      opacity: 0.62,
+    },
+  },
+});
+
 export const deviceList = style({
   display: "grid",
   gap: vars.space.sm,

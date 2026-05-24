@@ -6,6 +6,7 @@ import { getCurrentUtcDateKey } from "../lib/daily";
 import { loadDailyGameSnapshot } from "../lib/daily-storage";
 import {
   createLeague,
+  deleteLeagueAccount,
   deleteLeague,
   ensureLeagueProfile,
   getLeagueAuthState,
@@ -446,6 +447,35 @@ export default function LeaguesScreen() {
       setAuthState(emptyAuthState);
       returnToList();
       setStatusText("Du är utloggad.");
+    } catch (caughtError) {
+      setError(getFriendlyError(caughtError));
+    } finally {
+      setBusy(false);
+    }
+  }, [returnToList]);
+
+  const onDeleteAccount = React.useCallback(async () => {
+    const confirmed = window.confirm(
+      "Ta bort ditt konto? Dina ligor, resultat, profil och enheter tas bort permanent.",
+    );
+    if (!confirmed) {
+      return;
+    }
+
+    setBusy(true);
+    setError(null);
+    setStatusText(null);
+    try {
+      await deleteLeagueAccount();
+      setAccountEmail("");
+      setAccountPassword("");
+      setAvatarDataUrl(null);
+      setDisplayName("");
+      setProfileReady(false);
+      setLeagues([]);
+      setAuthState(emptyAuthState);
+      returnToList();
+      setStatusText("Kontot är borttaget.");
     } catch (caughtError) {
       setError(getFriendlyError(caughtError));
     } finally {
@@ -1277,6 +1307,14 @@ export default function LeaguesScreen() {
                         onClick={onSaveAccount}
                         text={busy ? "Sparar..." : "Spara konto"}
                       />
+                      <button
+                        className={styles.textAction}
+                        disabled={busy}
+                        onClick={onSignOut}
+                        type="button"
+                      >
+                        Logga ut från anonymt konto
+                      </button>
                     </>
                   ) : (
                     <>
@@ -1291,6 +1329,23 @@ export default function LeaguesScreen() {
                       />
                     </>
                   )}
+                  <div className={styles.dangerZone}>
+                    <div>
+                      <h3 className={styles.dangerTitle}>Ta bort konto</h3>
+                      <p className={styles.helperText}>
+                        Tar permanent bort din profil, dina ligor, medlemskap,
+                        sparade enheter och dagliga resultat.
+                      </p>
+                    </div>
+                    <button
+                      className={styles.dangerButton}
+                      disabled={busy}
+                      onClick={onDeleteAccount}
+                      type="button"
+                    >
+                      {busy ? "Tar bort..." : "Ta bort konto"}
+                    </button>
+                  </div>
                 </section>
               </>
             )}
