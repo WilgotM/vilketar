@@ -215,14 +215,19 @@ export async function saveLeagueAccount(input: {
   const session = await supabase.auth.getSession();
   const email = input.email.trim();
   const password = input.password.trim();
+  const currentUser = session.data.session?.user;
   const emailRedirectTo =
     typeof window === "undefined"
       ? undefined
       : `${window.location.origin}/leagues`;
 
   if (session.data.session) {
+    const userAttributes =
+      currentUser?.is_anonymous || !currentUser?.email
+        ? { email }
+        : { email, password };
     const response = await withAuthTimeout(
-      supabase.auth.updateUser({ email, password }, { emailRedirectTo }),
+      supabase.auth.updateUser(userAttributes, { emailRedirectTo }),
     );
     if (response.error) {
       throw response.error;

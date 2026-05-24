@@ -2,6 +2,7 @@ import classNames from "classnames";
 import * as styles from "../styles/button.css";
 
 interface Props {
+  disabled?: boolean;
   fullWidth?: boolean;
   minimal?: boolean;
   onClick: () => void;
@@ -9,10 +10,17 @@ interface Props {
 }
 
 export default function Button(props: Props) {
-  const { fullWidth = false, minimal = false, onClick, text } = props;
+  const {
+    disabled = false,
+    fullWidth = false,
+    minimal = false,
+    onClick,
+    text,
+  } = props;
 
   return (
     <button
+      disabled={disabled}
       onClick={onClick}
       className={classNames(styles.button, {
         [styles.fullWidth]: fullWidth,

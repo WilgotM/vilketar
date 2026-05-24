@@ -60,6 +60,17 @@ function getFriendlyError(error: unknown): string {
       return "Kontrollera att e-postadressen är rätt skriven.";
     }
 
+    if (
+      error.message.includes("Manual linking is disabled") ||
+      error.message.includes("Identity is already linked")
+    ) {
+      return "Supabase tillåter inte att anonyma konton kopplas till e-post ännu. Slå på manuell länkning i Auth-inställningarna.";
+    }
+
+    if (error.message.includes("User already registered")) {
+      return "Det finns redan ett konto med den e-postadressen. Logga in med det kontot istället.";
+    }
+
     return error.message;
   }
 
@@ -82,6 +93,22 @@ type Tab =
   | "login"
   | "forgot"
   | "profile";
+
+type BusyAction =
+  | "account-delete"
+  | "account-save"
+  | "avatar"
+  | "create"
+  | "join"
+  | "login"
+  | "password-reset"
+  | "password-update"
+  | "profile"
+  | "profile-bootstrap"
+  | "remove-league"
+  | "remove-member"
+  | "rename"
+  | "sign-out";
 
 const emptyAuthState: LeagueAuthState = {
   email: "",
@@ -169,11 +196,12 @@ export default function LeaguesScreen() {
     null,
   );
   const [editingLeagueName, setEditingLeagueName] = React.useState("");
-  const [busy, setBusy] = React.useState(false);
+  const [busyAction, setBusyAction] = React.useState<BusyAction | null>(null);
   const [copyText, setCopyText] = React.useState("Kopiera kod");
   const [error, setError] = React.useState<string | null>(null);
   const configured = isLeaguesConfigured();
   const savedNameHandledRef = React.useRef(false);
+  const busy = busyAction !== null;
 
   const [activeTab, setActiveTab] = React.useState<Tab>("list");
 
@@ -228,7 +256,7 @@ export default function LeaguesScreen() {
     }
 
     savedNameHandledRef.current = true;
-    setBusy(true);
+    setBusyAction("profile-bootstrap");
     setError(null);
     void ensureLeagueProfile({ avatarDataUrl: null, displayName: storedName })
       .then(() => {
@@ -240,7 +268,7 @@ export default function LeaguesScreen() {
         setError(getFriendlyError(caughtError));
       })
       .finally(() => {
-        setBusy(false);
+        setBusyAction(null);
       });
   }, [configured, profileReady, refreshAuthState]);
 
@@ -320,7 +348,7 @@ export default function LeaguesScreen() {
   }, []);
 
   const saveName = React.useCallback(async () => {
-    setBusy(true);
+    setBusyAction("profile");
     setError(null);
     setProfileStatusText(null);
     try {
@@ -332,7 +360,7 @@ export default function LeaguesScreen() {
     } catch (caughtError) {
       setError(getFriendlyError(caughtError));
     } finally {
-      setBusy(false);
+      setBusyAction(null);
     }
   }, [avatarDataUrl, displayName, refreshAuthState, refreshLeagues]);
 
@@ -344,7 +372,7 @@ export default function LeaguesScreen() {
         return;
       }
 
-      setBusy(true);
+      setBusyAction("avatar");
       setError(null);
       setProfileStatusText("Komprimerar bilden...");
       try {
@@ -355,14 +383,14 @@ export default function LeaguesScreen() {
         setProfileStatusText(null);
         setError(getFriendlyError(caughtError));
       } finally {
-        setBusy(false);
+        setBusyAction(null);
       }
     },
     [],
   );
 
   const onSaveAccount = React.useCallback(async () => {
-    setBusy(true);
+    setBusyAction("account-save");
     setError(null);
     setStatusText(null);
     try {
@@ -373,18 +401,20 @@ export default function LeaguesScreen() {
       setAuthState(nextAuthState);
       setAccountPassword("");
       setStatusText(
-        "Klart. Om Supabase kräver bekräftelse får du ett mejl med en länk.",
+        authState.isAnonymous
+          ? "Vi har skickat ett bekräftelsemejl. Öppna länken för att koppla kontot till e-postadressen."
+          : "Kontot är sparat.",
       );
       returnToList();
     } catch (caughtError) {
       setError(getFriendlyError(caughtError));
     } finally {
-      setBusy(false);
+      setBusyAction(null);
     }
-  }, [accountEmail, accountPassword, returnToList]);
+  }, [accountEmail, accountPassword, authState.isAnonymous, returnToList]);
 
   const onSignIn = React.useCallback(async () => {
-    setBusy(true);
+    setBusyAction("login");
     setError(null);
     setStatusText(null);
     try {
@@ -400,12 +430,12 @@ export default function LeaguesScreen() {
     } catch (caughtError) {
       setError(getFriendlyError(caughtError));
     } finally {
-      setBusy(false);
+      setBusyAction(null);
     }
   }, [accountEmail, accountPassword, refreshLeagues, returnToList]);
 
   const onSendPasswordReset = React.useCallback(async () => {
-    setBusy(true);
+    setBusyAction("password-reset");
     setError(null);
     setStatusText(null);
     try {
@@ -414,12 +444,12 @@ export default function LeaguesScreen() {
     } catch (caughtError) {
       setError(getFriendlyError(caughtError));
     } finally {
-      setBusy(false);
+      setBusyAction(null);
     }
   }, [accountEmail]);
 
   const onUpdatePassword = React.useCallback(async () => {
-    setBusy(true);
+    setBusyAction("password-update");
     setError(null);
     setStatusText(null);
     try {
@@ -432,12 +462,12 @@ export default function LeaguesScreen() {
     } catch (caughtError) {
       setError(getFriendlyError(caughtError));
     } finally {
-      setBusy(false);
+      setBusyAction(null);
     }
   }, [accountPassword, refreshAuthState, returnToList]);
 
   const onSignOut = React.useCallback(async () => {
-    setBusy(true);
+    setBusyAction("sign-out");
     setError(null);
     setStatusText(null);
     try {
@@ -450,7 +480,7 @@ export default function LeaguesScreen() {
     } catch (caughtError) {
       setError(getFriendlyError(caughtError));
     } finally {
-      setBusy(false);
+      setBusyAction(null);
     }
   }, [returnToList]);
 
@@ -462,7 +492,7 @@ export default function LeaguesScreen() {
       return;
     }
 
-    setBusy(true);
+    setBusyAction("account-delete");
     setError(null);
     setStatusText(null);
     try {
@@ -479,12 +509,12 @@ export default function LeaguesScreen() {
     } catch (caughtError) {
       setError(getFriendlyError(caughtError));
     } finally {
-      setBusy(false);
+      setBusyAction(null);
     }
   }, [returnToList]);
 
   const onCreateLeague = React.useCallback(async () => {
-    setBusy(true);
+    setBusyAction("create");
     setError(null);
     try {
       await createLeague(leagueName);
@@ -494,12 +524,12 @@ export default function LeaguesScreen() {
     } catch (caughtError) {
       setError(getFriendlyError(caughtError));
     } finally {
-      setBusy(false);
+      setBusyAction(null);
     }
   }, [leagueName, refreshLeagues, returnToList]);
 
   const onJoinLeague = React.useCallback(async () => {
-    setBusy(true);
+    setBusyAction("join");
     setError(null);
     try {
       await joinLeague(joinCode);
@@ -509,7 +539,7 @@ export default function LeaguesScreen() {
     } catch (caughtError) {
       setError(getFriendlyError(caughtError));
     } finally {
-      setBusy(false);
+      setBusyAction(null);
     }
   }, [joinCode, refreshLeagues, returnToList]);
 
@@ -523,7 +553,7 @@ export default function LeaguesScreen() {
 
   const onRenameLeague = React.useCallback(
     async (league: League) => {
-      setBusy(true);
+      setBusyAction("rename");
       setError(null);
       try {
         const nextLeague = await updateLeagueName({
@@ -535,7 +565,7 @@ export default function LeaguesScreen() {
       } catch (caughtError) {
         setError(getFriendlyError(caughtError));
       } finally {
-        setBusy(false);
+        setBusyAction(null);
       }
     },
     [editingLeagueName, replaceLeague],
@@ -543,7 +573,7 @@ export default function LeaguesScreen() {
 
   const onRemoveMember = React.useCallback(
     async (league: League, memberId: string) => {
-      setBusy(true);
+      setBusyAction("remove-member");
       setError(null);
       try {
         const nextLeague = await removeLeagueMember({
@@ -560,7 +590,7 @@ export default function LeaguesScreen() {
       } catch (caughtError) {
         setError(getFriendlyError(caughtError));
       } finally {
-        setBusy(false);
+        setBusyAction(null);
       }
     },
     [replaceLeague],
@@ -574,7 +604,7 @@ export default function LeaguesScreen() {
       return;
     }
 
-    setBusy(true);
+    setBusyAction("remove-league");
     setError(null);
     try {
       await deleteLeague(league.id);
@@ -584,7 +614,7 @@ export default function LeaguesScreen() {
     } catch (caughtError) {
       setError(getFriendlyError(caughtError));
     } finally {
-      setBusy(false);
+      setBusyAction(null);
     }
   }, []);
 
@@ -641,7 +671,7 @@ export default function LeaguesScreen() {
             <Button
               fullWidth
               onClick={onSignIn}
-              text={busy ? "Loggar in..." : "Logga in"}
+              text={busyAction === "login" ? "Loggar in..." : "Logga in"}
             />
             <button
               className={styles.textAction}
@@ -674,7 +704,11 @@ export default function LeaguesScreen() {
               fullWidth
               minimal
               onClick={onSendPasswordReset}
-              text={busy ? "Skickar..." : "Skicka återställningsmejl"}
+              text={
+                busyAction === "password-reset"
+                  ? "Skickar..."
+                  : "Skicka återställningsmejl"
+              }
             />
             <input
               className={styles.input}
@@ -686,7 +720,11 @@ export default function LeaguesScreen() {
             <Button
               fullWidth
               onClick={onUpdatePassword}
-              text={busy ? "Sparar..." : "Spara nytt lösenord"}
+              text={
+                busyAction === "password-update"
+                  ? "Sparar..."
+                  : "Spara nytt lösenord"
+              }
             />
           </section>
         ) : !profileReady ? (
@@ -739,7 +777,11 @@ export default function LeaguesScreen() {
               />
               <Button
                 onClick={saveName}
-                text={busy ? "Sparar..." : "Fortsätt"}
+                text={
+                  busyAction === "profile" || busyAction === "profile-bootstrap"
+                    ? "Sparar..."
+                    : "Fortsätt"
+                }
               />
             </div>
             <button
@@ -1127,7 +1169,9 @@ export default function LeaguesScreen() {
                   <Button
                     fullWidth
                     onClick={saveName}
-                    text={busy ? "Sparar..." : "Spara profil"}
+                    text={
+                      busyAction === "profile" ? "Sparar..." : "Spara profil"
+                    }
                   />
                   {profileStatusText ? (
                     <div className={styles.inlineStatus}>
@@ -1157,7 +1201,7 @@ export default function LeaguesScreen() {
                   <Button
                     fullWidth
                     onClick={onCreateLeague}
-                    text={busy ? "Skapar..." : "Skapa liga"}
+                    text={busyAction === "create" ? "Skapar..." : "Skapa liga"}
                   />
                 </section>
               </>
@@ -1188,19 +1232,15 @@ export default function LeaguesScreen() {
                         type="email"
                         value={accountEmail}
                       />
-                      <input
-                        className={styles.input}
-                        onChange={(event) =>
-                          setAccountPassword(event.target.value)
-                        }
-                        placeholder="Välj lösenord"
-                        type="password"
-                        value={accountPassword}
-                      />
                       <Button
+                        disabled={busy}
                         fullWidth
                         onClick={onSaveAccount}
-                        text={busy ? "Sparar..." : "Spara konto"}
+                        text={
+                          busyAction === "account-save"
+                            ? "Sparar..."
+                            : "Spara konto"
+                        }
                       />
                       <button
                         className={styles.textAction}
@@ -1216,11 +1256,35 @@ export default function LeaguesScreen() {
                       <div className={styles.savedAccountBox}>
                         {authState.email || "Inloggat konto"}
                       </div>
+                      <input
+                        className={styles.input}
+                        onChange={(event) =>
+                          setAccountPassword(event.target.value)
+                        }
+                        placeholder="Nytt lösenord"
+                        type="password"
+                        value={accountPassword}
+                      />
                       <Button
+                        disabled={busy}
+                        fullWidth
+                        onClick={onSaveAccount}
+                        text={
+                          busyAction === "account-save"
+                            ? "Sparar..."
+                            : "Spara lösenord"
+                        }
+                      />
+                      <Button
+                        disabled={busy}
                         fullWidth
                         minimal
                         onClick={onSignOut}
-                        text={busy ? "Loggar ut..." : "Logga ut"}
+                        text={
+                          busyAction === "sign-out"
+                            ? "Loggar ut..."
+                            : "Logga ut"
+                        }
                       />
                     </>
                   )}
@@ -1238,7 +1302,9 @@ export default function LeaguesScreen() {
                       onClick={onDeleteAccount}
                       type="button"
                     >
-                      {busy ? "Tar bort..." : "Ta bort konto"}
+                      {busyAction === "account-delete"
+                        ? "Tar bort..."
+                        : "Ta bort konto"}
                     </button>
                   </div>
                 </section>
@@ -1267,7 +1333,9 @@ export default function LeaguesScreen() {
                   <Button
                     fullWidth
                     onClick={onJoinLeague}
-                    text={busy ? "Går med..." : "Gå med i liga"}
+                    text={
+                      busyAction === "join" ? "Går med..." : "Gå med i liga"
+                    }
                   />
                 </section>
               </>
