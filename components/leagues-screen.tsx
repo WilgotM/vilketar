@@ -37,6 +37,28 @@ function getFriendlyError(error: unknown): string {
   if (
     error &&
     typeof error === "object" &&
+    "code" in error &&
+    typeof error.code === "string"
+  ) {
+    if (error.code === "email_exists" || error.code === "user_already_exists") {
+      return "Det finns redan ett konto med den e-postadressen. Logga in med det kontot istället.";
+    }
+
+    if (error.code === "invalid_credentials") {
+      return "E-post eller lösenord stämmer inte.";
+    }
+
+    if (
+      error.code === "manual_linking_disabled" ||
+      error.code === "identity_already_exists"
+    ) {
+      return "Supabase tillåter inte att anonyma konton kopplas till e-post ännu. Slå på manuell länkning i Auth-inställningarna.";
+    }
+  }
+
+  if (
+    error &&
+    typeof error === "object" &&
     "message" in error &&
     typeof error.message === "string"
   ) {
@@ -669,6 +691,7 @@ export default function LeaguesScreen() {
               value={accountPassword}
             />
             <Button
+              disabled={busy}
               fullWidth
               onClick={onSignIn}
               text={busyAction === "login" ? "Loggar in..." : "Logga in"}
@@ -701,6 +724,7 @@ export default function LeaguesScreen() {
               value={accountEmail}
             />
             <Button
+              disabled={busy}
               fullWidth
               minimal
               onClick={onSendPasswordReset}
@@ -718,6 +742,7 @@ export default function LeaguesScreen() {
               value={accountPassword}
             />
             <Button
+              disabled={busy}
               fullWidth
               onClick={onUpdatePassword}
               text={
@@ -776,6 +801,7 @@ export default function LeaguesScreen() {
                 value={displayName}
               />
               <Button
+                disabled={busy}
                 onClick={saveName}
                 text={
                   busyAction === "profile" || busyAction === "profile-bootstrap"
@@ -1167,6 +1193,7 @@ export default function LeaguesScreen() {
                     value={displayName}
                   />
                   <Button
+                    disabled={busy}
                     fullWidth
                     onClick={saveName}
                     text={
@@ -1199,6 +1226,7 @@ export default function LeaguesScreen() {
                     value={leagueName}
                   />
                   <Button
+                    disabled={busy}
                     fullWidth
                     onClick={onCreateLeague}
                     text={busyAction === "create" ? "Skapar..." : "Skapa liga"}
@@ -1340,6 +1368,7 @@ export default function LeaguesScreen() {
                     value={joinCode}
                   />
                   <Button
+                    disabled={busy}
                     fullWidth
                     onClick={onJoinLeague}
                     text={

@@ -1,4 +1,5 @@
-import { getSupabasePublicConfig, supabase } from "./supabase";
+import type { User } from "@supabase/supabase-js";
+import { supabase } from "./supabase";
 
 const DISPLAY_NAME_STORAGE_KEY = "leagues:display-name";
 const DEVICE_ID_STORAGE_KEY = "leagues:device-id";
@@ -97,72 +98,19 @@ async function withAuthTimeout<T>(request: Promise<T>): Promise<T> {
   }
 }
 
-function readAuthApiError(body: unknown): string {
-  if (body && typeof body === "object") {
-    for (const key of ["msg", "message", "error_description", "error"]) {
-      if (
-        key in body &&
-        typeof (body as Record<string, unknown>)[key] === "string"
-      ) {
-        return (body as Record<string, string>)[key];
-      }
-    }
+function getLeagueAuthStateFromUser(
+  user: User | null,
+  isSignedIn = true,
+): LeagueAuthState {
+  if (!user || !isSignedIn) {
+    return { email: "", isAnonymous: false, isSignedIn: false };
   }
 
-  return "Kunde inte skapa kontot.";
-}
-
-async function updateLeagueAccountWithPassword(input: {
-  accessToken: string;
-  email: string;
-  emailRedirectTo?: string;
-  password: string;
-}): Promise<void> {
-  const config = getSupabasePublicConfig();
-  if (!config) {
-    throw new Error("Supabase är inte konfigurerat.");
-  }
-
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => {
-    controller.abort();
-  }, AUTH_REQUEST_TIMEOUT_MS);
-
-  try {
-    const url = new URL("/auth/v1/user", config.url);
-    if (input.emailRedirectTo) {
-      url.searchParams.set("redirect_to", input.emailRedirectTo);
-    }
-
-    const response = await fetch(url, {
-      body: JSON.stringify({
-        email: input.email,
-        password: input.password,
-      }),
-      headers: {
-        apikey: config.anonKey,
-        authorization: `Bearer ${input.accessToken}`,
-        "content-type": "application/json;charset=UTF-8",
-      },
-      method: "PUT",
-      signal: controller.signal,
-    });
-    const body = (await response.json().catch(() => null)) as unknown;
-
-    if (!response.ok) {
-      throw new Error(readAuthApiError(body));
-    }
-  } catch (error) {
-    if (error instanceof DOMException && error.name === "AbortError") {
-      throw new Error(
-        "Det tog för lång tid att nå inloggningen. Kontrollera uppkopplingen och försök igen.",
-        { cause: error },
-      );
-    }
-    throw error;
-  } finally {
-    clearTimeout(timeoutId);
-  }
+  return {
+    email: user.email ?? "",
+    isAnonymous: user.is_anonymous ?? false,
+    isSignedIn: true,
+  };
 }
 
 export async function hasLeagueSession(): Promise<boolean> {
@@ -170,7 +118,7 @@ export async function hasLeagueSession(): Promise<boolean> {
     return false;
   }
 
-  const session = await supabase.auth.getSession();
+  const session = await withAuthTimeout(supabase.auth.getSession());
   return Boolean(session.data.session);
 }
 
@@ -179,16 +127,12 @@ export async function getLeagueAuthState(): Promise<LeagueAuthState> {
     return { email: "", isAnonymous: false, isSignedIn: false };
   }
 
-  const user = await supabase.auth.getUser();
+  const user = await withAuthTimeout(supabase.auth.getUser());
   if (user.error || !user.data.user) {
     return { email: "", isAnonymous: false, isSignedIn: false };
   }
 
-  return {
-    email: user.data.user.email ?? "",
-    isAnonymous: user.data.user.is_anonymous ?? false,
-    isSignedIn: true,
-  };
+  return getLeagueAuthStateFromUser(user.data.user);
 }
 
 function getStoredDeviceId(): string {
@@ -229,7 +173,7 @@ export async function registerLeagueDevice(): Promise<void> {
     return;
   }
 
-  const session = await supabase.auth.getSession();
+  const session = await withAuthTimeout(supabase.auth.getSession());
   if (!session.data.session) {
     return;
   }
@@ -280,7 +224,7 @@ export async function saveLeagueAccount(input: {
     throw new Error("Supabase är inte konfigurerat.");
   }
 
-  const session = await supabase.auth.getSession();
+  const session = await withAuthTimeout(supabase.auth.getSession());
   const email = input.email.trim();
   const password = input.password.trim();
   const emailRedirectTo =
@@ -293,13 +237,33 @@ export async function saveLeagueAccount(input: {
       throw new Error("Välj ett lösenord.");
     }
 
-    await updateLeagueAccountWithPassword({
-      accessToken: session.data.session.access_token,
-      email,
-      emailRedirectTo,
-      password,
-    });
-    return getLeagueAuthState();
+    const currentEmail = session.data.session.user.email ?? "";
+    const isAnonymous = session.data.session.user.is_anonymous ?? false;
+    if (isAnonymous && !email) {
+      throw new Error("Skriv din e-postadress.");
+    }
+
+    const response = await withAuthTimeout(
+      supabase.auth.updateUser(
+        {
+          email: email && email !== currentEmail ? email : undefined,
+          password,
+        },
+        { emailRedirectTo },
+      ),
+    );
+    if (response.error) {
+      throw response.error;
+    }
+
+    return getLeagueAuthStateFromUser(response.data.user);
+  }
+
+  if (!email) {
+    throw new Error("Skriv din e-postadress.");
+  }
+  if (!password) {
+    throw new Error("Välj ett lösenord.");
   }
 
   const response = await withAuthTimeout(
@@ -312,7 +276,13 @@ export async function saveLeagueAccount(input: {
   if (response.error) {
     throw response.error;
   }
-  return getLeagueAuthState();
+  if (response.data.session) {
+    await registerLeagueDevice();
+  }
+  return getLeagueAuthStateFromUser(
+    response.data.user,
+    Boolean(response.data.session),
+  );
 }
 
 export async function signInToLeagueAccount(input: {
@@ -323,16 +293,18 @@ export async function signInToLeagueAccount(input: {
     throw new Error("Supabase är inte konfigurerat.");
   }
 
-  const response = await supabase.auth.signInWithPassword({
-    email: input.email.trim(),
-    password: input.password.trim(),
-  });
+  const response = await withAuthTimeout(
+    supabase.auth.signInWithPassword({
+      email: input.email.trim(),
+      password: input.password.trim(),
+    }),
+  );
   if (response.error) {
     throw response.error;
   }
 
   await registerLeagueDevice();
-  return getLeagueAuthState();
+  return getLeagueAuthStateFromUser(response.data.user);
 }
 
 export async function sendLeaguePasswordReset(email: string): Promise<void> {
@@ -344,9 +316,11 @@ export async function sendLeaguePasswordReset(email: string): Promise<void> {
     typeof window === "undefined"
       ? undefined
       : `${window.location.origin}/leagues`;
-  const response = await supabase.auth.resetPasswordForEmail(email.trim(), {
-    redirectTo,
-  });
+  const response = await withAuthTimeout(
+    supabase.auth.resetPasswordForEmail(email.trim(), {
+      redirectTo,
+    }),
+  );
   if (response.error) {
     throw response.error;
   }
@@ -357,9 +331,11 @@ export async function updateLeaguePassword(password: string): Promise<void> {
     throw new Error("Supabase är inte konfigurerat.");
   }
 
-  const response = await supabase.auth.updateUser({
-    password: password.trim(),
-  });
+  const response = await withAuthTimeout(
+    supabase.auth.updateUser({
+      password: password.trim(),
+    }),
+  );
   if (response.error) {
     throw response.error;
   }
@@ -370,7 +346,7 @@ export async function signOutLeagueAccount(): Promise<void> {
     return;
   }
 
-  const response = await supabase.auth.signOut();
+  const response = await withAuthTimeout(supabase.auth.signOut());
   if (response.error) {
     throw response.error;
   }
@@ -386,7 +362,7 @@ export async function deleteLeagueAccount(): Promise<void> {
     throw response.error;
   }
 
-  await supabase.auth.signOut();
+  await withAuthTimeout(supabase.auth.signOut());
 }
 
 export async function getLeagueProfile(): Promise<LeagueProfile | null> {
@@ -394,7 +370,7 @@ export async function getLeagueProfile(): Promise<LeagueProfile | null> {
     return null;
   }
 
-  const session = await supabase.auth.getSession();
+  const session = await withAuthTimeout(supabase.auth.getSession());
   if (!session.data.session) {
     return null;
   }
@@ -415,9 +391,9 @@ export async function ensureLeagueProfile(input: {
     throw new Error("Supabase är inte konfigurerat.");
   }
 
-  const session = await supabase.auth.getSession();
+  const session = await withAuthTimeout(supabase.auth.getSession());
   if (!session.data.session) {
-    const anonymous = await supabase.auth.signInAnonymously();
+    const anonymous = await withAuthTimeout(supabase.auth.signInAnonymously());
     if (anonymous.error) {
       throw anonymous.error;
     }
@@ -541,7 +517,7 @@ export async function submitDailyLeagueResult(input: {
     return null;
   }
 
-  const session = await supabase.auth.getSession();
+  const session = await withAuthTimeout(supabase.auth.getSession());
   if (!session.data.session) {
     return null;
   }
@@ -565,7 +541,7 @@ export async function getStoredDailyResult(
     return null;
   }
 
-  const session = await supabase.auth.getSession();
+  const session = await withAuthTimeout(supabase.auth.getSession());
   if (!session.data.session) {
     return null;
   }
