@@ -156,11 +156,10 @@ function PartyCategorySelector(props: {
 }
 
 function PartySetupForm(props: {
-  onBack: () => void;
   onStart: (setup: PartySetup) => void;
   selectionRoute: SelectionRoute;
 }) {
-  const { onBack, onStart, selectionRoute } = props;
+  const { onStart, selectionRoute } = props;
   const [mode, setMode] = React.useState<PartySetup["mode"]>("device");
   const [teamCount, setTeamCount] = React.useState(2);
   const [teamNames, setTeamNames] = React.useState(() => ["Lag 1", "Lag 2"]);
@@ -245,17 +244,6 @@ function PartySetupForm(props: {
           ))}
         </div>
         <div className={styles.setupActions}>
-          <button
-            className={classNames(
-              buttonStyles.button,
-              buttonStyles.fullWidth,
-              buttonStyles.minimal,
-            )}
-            onClick={onBack}
-            type="button"
-          >
-            Tillbaka
-          </button>
           <button
             className={classNames(buttonStyles.button, buttonStyles.fullWidth)}
             disabled={!canStart}
@@ -731,11 +719,30 @@ export default function PartyScreen() {
   const [selectionRoute, setSelectionRoute] =
     React.useState<SelectionRoute | null>(null);
   const [setup, setSetup] = React.useState<PartySetup | null>(null);
+  const handleHeaderBack = React.useMemo(() => {
+    if (step === "category") {
+      return undefined;
+    }
+
+    if (step === "setup") {
+      return () => {
+        setStep("category");
+      };
+    }
+
+    return () => {
+      setSetup(null);
+      setStep("setup");
+    };
+  }, [step]);
 
   return (
     <PageShell showHeader={false}>
       <div className={styles.page}>
-        <SiteHeader backHref={step === "category" ? "/" : undefined} />
+        <SiteHeader
+          backHref={step === "category" ? "/" : undefined}
+          onBack={handleHeaderBack}
+        />
         <main className={styles.screen}>
           {step === "category" ? (
             <PartyCategorySelector
@@ -747,9 +754,6 @@ export default function PartyScreen() {
           ) : null}
           {step === "setup" && selectionRoute ? (
             <PartySetupForm
-              onBack={() => {
-                setStep("category");
-              }}
               onStart={(nextSetup) => {
                 setSetup(nextSetup);
                 setStep("game");

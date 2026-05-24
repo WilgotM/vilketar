@@ -4,6 +4,7 @@ const DISPLAY_NAME_STORAGE_KEY = "leagues:display-name";
 const DEVICE_ID_STORAGE_KEY = "leagues:device-id";
 
 export type LeagueMember = {
+  avatarDataUrl: string | null;
   daysPlayed: number;
   displayName: string;
   isCurrentUser: boolean;
@@ -32,6 +33,7 @@ export type League = {
 };
 
 export type LeagueProfile = {
+  avatarDataUrl: string | null;
   displayName: string;
   id: string;
 };
@@ -264,9 +266,28 @@ export async function signOutLeagueAccount(): Promise<void> {
   await supabase.auth.signOut();
 }
 
-export async function ensureLeagueProfile(
-  displayName: string,
-): Promise<LeagueProfile> {
+export async function getLeagueProfile(): Promise<LeagueProfile | null> {
+  if (!supabase) {
+    return null;
+  }
+
+  const session = await supabase.auth.getSession();
+  if (!session.data.session) {
+    return null;
+  }
+
+  const response = await supabase.rpc("app_get_profile");
+  if (response.error) {
+    throw response.error;
+  }
+
+  return response.data as LeagueProfile | null;
+}
+
+export async function ensureLeagueProfile(input: {
+  avatarDataUrl?: string | null;
+  displayName: string;
+}): Promise<LeagueProfile> {
   if (!supabase) {
     throw new Error("Supabase är inte konfigurerat.");
   }
@@ -281,13 +302,14 @@ export async function ensureLeagueProfile(
   await registerLeagueDevice();
 
   const profile = await supabase.rpc("app_set_profile", {
-    p_display_name: displayName.trim(),
+    p_avatar_data_url: input.avatarDataUrl ?? null,
+    p_display_name: input.displayName.trim(),
   });
   if (profile.error) {
     throw profile.error;
   }
 
-  saveStoredDisplayName(displayName.trim());
+  saveStoredDisplayName(input.displayName.trim());
   return profile.data as LeagueProfile;
 }
 

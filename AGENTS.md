@@ -5,6 +5,11 @@ Svenskt tidslinjespel byggt med Next.js, Bun och Wikimedia-data.
 - Använd Bun. Kör inte npm eller yarn.
 - Viktiga kontroller: `bun test`, `bun run lint`, `bun run format:check`.
 - Bygg/deploy: `bun run build`, `bun run deploy`.
+- Supabase CLI finns lokalt på `/opt/homebrew/bin/supabase` och kan användas
+  direkt för t.ex. `supabase link` och `supabase db push`.
+- Codex får själv köra `/opt/homebrew/bin/supabase db push` när en migration
+  behöver appliceras. Fråga inte om extra tillstånd för detta i den här
+  arbetsytan.
 - Kort och kategorier ska kännas svenska, igenkännbara och spelbara.
 - Korten ska länka till svenska Wikipedia när Wikipedia används.
 - Framsidan på kort får inte avslöja årtal.

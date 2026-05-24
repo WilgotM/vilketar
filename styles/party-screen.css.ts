@@ -174,12 +174,7 @@ export const teamInput = style({
 export const setupActions = style({
   display: "grid",
   gap: vars.space.md,
-  gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
-  "@media": {
-    [media.narrow]: {
-      gridTemplateColumns: "minmax(0, 1fr)",
-    },
-  },
+  gridTemplateColumns: "minmax(0, 1fr)",
 });
 
 export const gameShell = style({

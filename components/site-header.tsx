@@ -5,6 +5,7 @@ import * as styles from "../styles/site-header.css";
 interface Props {
   backHref?: string;
   backLabel?: string;
+  onBack?: () => void;
 }
 
 function BackIcon() {
@@ -28,18 +29,28 @@ function BackIcon() {
 }
 
 export default function SiteHeader(props: Props) {
-  const { backHref, backLabel = "Tillbaka" } = props;
+  const { backHref, backLabel = "Tillbaka", onBack } = props;
   const router = useRouter();
 
   const showBack = router.pathname !== "/";
 
   function goBack() {
+    if (onBack) {
+      onBack();
+      return;
+    }
+
+    if (backHref) {
+      void router.push(backHref);
+      return;
+    }
+
     if (typeof window !== "undefined" && window.history.length > 1) {
       router.back();
       return;
     }
 
-    void router.push(backHref ?? "/");
+    void router.push("/");
   }
 
   return (

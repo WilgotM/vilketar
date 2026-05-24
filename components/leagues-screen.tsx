@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import { motion } from "motion/react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { getCurrentUtcDateKey } from "../lib/daily";
@@ -9,6 +10,7 @@ import {
   deleteLeague,
   ensureLeagueProfile,
   getLeagueAuthState,
+  getLeagueProfile,
   getMyLeagues,
   isLeaguesConfigured,
   joinLeague,
@@ -32,6 +34,15 @@ import * as styles from "../styles/leagues-screen.css";
 const defaultLeagueName = "Min liga";
 
 function getFriendlyError(error: unknown): string {
+  if (
+    error &&
+    typeof error === "object" &&
+    "message" in error &&
+    typeof error.message === "string"
+  ) {
+    return getFriendlyError(new Error(error.message));
+  }
+
   if (error instanceof Error && error.message) {
     if (error.message.includes("Anonymous sign-ins are disabled")) {
       return "Anonym inloggning är inte påslagen i Supabase ännu.";
@@ -71,9 +82,73 @@ const emptyAuthState: LeagueAuthState = {
   isSignedIn: false,
 };
 
+const avatarSize = 160;
+const maxAvatarBytes = 48 * 1024;
+
+function byteLength(value: string): number {
+  return Math.ceil((value.length * 3) / 4);
+}
+
+async function compressAvatar(file: File): Promise<string> {
+  if (!file.type.startsWith("image/")) {
+    throw new Error("Välj en bildfil.");
+  }
+
+  const imageUrl = URL.createObjectURL(file);
+  try {
+    const image = new window.Image();
+    image.src = imageUrl;
+    await image.decode();
+
+    const canvas = document.createElement("canvas");
+    canvas.width = avatarSize;
+    canvas.height = avatarSize;
+    const context = canvas.getContext("2d");
+    if (!context) {
+      throw new Error("Kunde inte läsa bilden.");
+    }
+
+    const sourceSize = Math.min(image.naturalWidth, image.naturalHeight);
+    const sourceX = (image.naturalWidth - sourceSize) / 2;
+    const sourceY = (image.naturalHeight - sourceSize) / 2;
+    context.drawImage(
+      image,
+      sourceX,
+      sourceY,
+      sourceSize,
+      sourceSize,
+      0,
+      0,
+      avatarSize,
+      avatarSize,
+    );
+
+    const mimeType = canvas
+      .toDataURL("image/webp")
+      .startsWith("data:image/webp")
+      ? "image/webp"
+      : "image/jpeg";
+    const qualities = [0.78, 0.66, 0.54, 0.42];
+    for (const quality of qualities) {
+      const dataUrl = canvas.toDataURL(mimeType, quality);
+      if (byteLength(dataUrl) <= maxAvatarBytes) {
+        return dataUrl;
+      }
+    }
+
+    throw new Error("Bilden blev för stor. Testa en enklare bild.");
+  } finally {
+    URL.revokeObjectURL(imageUrl);
+  }
+}
+
 export default function LeaguesScreen() {
   const todayDateKey = React.useMemo(() => getCurrentUtcDateKey(), []);
   const [displayName, setDisplayName] = React.useState("");
+  const [avatarDataUrl, setAvatarDataUrl] = React.useState<string | null>(null);
+  const [profileStatusText, setProfileStatusText] = React.useState<
+    string | null
+  >(null);
   const [profileReady, setProfileReady] = React.useState(false);
   const [leagues, setLeagues] = React.useState<League[]>([]);
   const [leagueName, setLeagueName] = React.useState(defaultLeagueName);
@@ -148,7 +223,7 @@ export default function LeaguesScreen() {
     savedNameHandledRef.current = true;
     setBusy(true);
     setError(null);
-    void ensureLeagueProfile(storedName)
+    void ensureLeagueProfile({ avatarDataUrl: null, displayName: storedName })
       .then(() => {
         setDisplayName(storedName);
         setProfileReady(true);
@@ -161,6 +236,23 @@ export default function LeaguesScreen() {
         setBusy(false);
       });
   }, [configured, profileReady, refreshAuthState]);
+
+  React.useEffect(() => {
+    if (!configured || !authState.isSignedIn) {
+      return;
+    }
+
+    void getLeagueProfile()
+      .then((profile) => {
+        if (!profile) {
+          return;
+        }
+        setDisplayName(profile.displayName);
+        setAvatarDataUrl(profile.avatarDataUrl);
+        setProfileReady(true);
+      })
+      .catch(() => undefined);
+  }, [authState.isSignedIn, configured]);
 
   React.useEffect(() => {
     if (!profileReady) {
@@ -223,16 +315,44 @@ export default function LeaguesScreen() {
   const saveName = React.useCallback(async () => {
     setBusy(true);
     setError(null);
+    setProfileStatusText(null);
     try {
-      await ensureLeagueProfile(displayName);
+      await ensureLeagueProfile({ avatarDataUrl, displayName });
       setProfileReady(true);
       await refreshAuthState();
+      await refreshLeagues();
+      setProfileStatusText("Profilen är sparad.");
     } catch (caughtError) {
       setError(getFriendlyError(caughtError));
     } finally {
       setBusy(false);
     }
-  }, [displayName, refreshAuthState]);
+  }, [avatarDataUrl, displayName, refreshAuthState, refreshLeagues]);
+
+  const onAvatarChange = React.useCallback(
+    async (event: React.ChangeEvent<HTMLInputElement>) => {
+      const file = event.target.files?.[0];
+      event.target.value = "";
+      if (!file) {
+        return;
+      }
+
+      setBusy(true);
+      setError(null);
+      setProfileStatusText("Komprimerar bilden...");
+      try {
+        const nextAvatarDataUrl = await compressAvatar(file);
+        setAvatarDataUrl(nextAvatarDataUrl);
+        setProfileStatusText("Bilden är redo. Tryck Spara profil.");
+      } catch (caughtError) {
+        setProfileStatusText(null);
+        setError(getFriendlyError(caughtError));
+      } finally {
+        setBusy(false);
+      }
+    },
+    [],
+  );
 
   const onSaveAccount = React.useCallback(async () => {
     setBusy(true);
@@ -545,6 +665,37 @@ export default function LeaguesScreen() {
                 inget lösenord behövs.
               </p>
             </div>
+            <div className={styles.profileEditor}>
+              <div className={styles.avatarPreview}>
+                {avatarDataUrl ? (
+                  <Image
+                    alt=""
+                    className={styles.avatarImage}
+                    height={160}
+                    src={avatarDataUrl}
+                    unoptimized
+                    width={160}
+                  />
+                ) : (
+                  <span>
+                    {displayName.trim().charAt(0).toUpperCase() || "?"}
+                  </span>
+                )}
+              </div>
+              <label className={styles.avatarPicker}>
+                <input
+                  accept="image/*"
+                  className={styles.hiddenFileInput}
+                  disabled={busy}
+                  onChange={onAvatarChange}
+                  type="file"
+                />
+                Lägg till bild
+              </label>
+            </div>
+            {profileStatusText ? (
+              <div className={styles.inlineStatus}>{profileStatusText}</div>
+            ) : null}
             <div className={styles.formGrid}>
               <input
                 className={styles.input}
@@ -572,6 +723,83 @@ export default function LeaguesScreen() {
           <>
             {activeTab === "list" && (
               <>
+                <section className={styles.profileCard}>
+                  <div className={styles.profileSummary}>
+                    <div className={styles.avatarPreviewSmall}>
+                      {avatarDataUrl ? (
+                        <Image
+                          alt=""
+                          className={styles.avatarImage}
+                          height={160}
+                          src={avatarDataUrl}
+                          unoptimized
+                          width={160}
+                        />
+                      ) : (
+                        <span>
+                          {displayName.trim().charAt(0).toUpperCase() || "?"}
+                        </span>
+                      )}
+                    </div>
+                    <div className={styles.profileText}>
+                      <div className={styles.accountNudgeLabel}>Din profil</div>
+                      <h2 className={styles.profileName}>
+                        {displayName || "Namnlös spelare"}
+                      </h2>
+                      <p className={styles.helperText}>
+                        Det här namnet och bilden syns för alla i dina ligor.
+                      </p>
+                    </div>
+                  </div>
+                  <div className={styles.profileActions}>
+                    <input
+                      className={styles.input}
+                      maxLength={40}
+                      onChange={(event) => setDisplayName(event.target.value)}
+                      placeholder="Ditt namn"
+                      value={displayName}
+                    />
+                    <label className={styles.avatarPicker}>
+                      <input
+                        accept="image/*"
+                        className={styles.hiddenFileInput}
+                        disabled={busy}
+                        onChange={onAvatarChange}
+                        type="file"
+                      />
+                      Byt bild
+                    </label>
+                    {avatarDataUrl ? (
+                      <button
+                        className={styles.smallAction}
+                        disabled={busy}
+                        onClick={() => {
+                          setAvatarDataUrl(null);
+                          setProfileStatusText(
+                            "Bilden tas bort när du sparar.",
+                          );
+                        }}
+                        type="button"
+                      >
+                        Ta bort bild
+                      </button>
+                    ) : null}
+                    <button
+                      className={styles.accountNudgeButton}
+                      disabled={busy}
+                      onClick={saveName}
+                      type="button"
+                    >
+                      {busy ? "Sparar..." : "Spara profil"}
+                    </button>
+                  </div>
+                  {profileStatusText ? (
+                    <div className={styles.inlineStatus}>
+                      {profileStatusText}
+                    </div>
+                  ) : null}
+                </section>
+
                 <section className={styles.tabMenu}>
                   <Button
                     fullWidth
@@ -776,6 +1004,23 @@ export default function LeaguesScreen() {
                               </div>
                               <div className={styles.memberInfo}>
                                 <div className={styles.memberName}>
+                                  <span className={styles.memberAvatar}>
+                                    {member.avatarDataUrl ? (
+                                      <Image
+                                        alt=""
+                                        className={styles.avatarImage}
+                                        height={32}
+                                        src={member.avatarDataUrl}
+                                        unoptimized
+                                        width={32}
+                                      />
+                                    ) : (
+                                      member.displayName
+                                        .trim()
+                                        .charAt(0)
+                                        .toUpperCase() || "?"
+                                    )}
+                                  </span>
                                   {member.displayName}
                                   {member.isCurrentUser ? (
                                     <span className={styles.youBadge}>du</span>

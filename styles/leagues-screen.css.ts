@@ -131,6 +131,127 @@ export const helperText = style([
   },
 ]);
 
+export const profileCard = style({
+  alignSelf: "center",
+  background: `linear-gradient(135deg, color-mix(in srgb, ${vars.color.text} 8%, transparent), color-mix(in srgb, ${vars.color.accentLogo} 12%, transparent)), ${vars.color.surfaceStrong}`,
+  border: `1px solid ${vars.color.border}`,
+  borderRadius: vars.radius.md,
+  display: "grid",
+  gap: vars.space.lg,
+  margin: `0 0 ${vars.space.lg}`,
+  padding: vars.space.xl,
+  width: `calc(100% - (${vars.space.xl} * 2))`,
+  "@media": {
+    [media.narrow]: {
+      padding: vars.space.lg,
+      width: `calc(100% - (${vars.space.md} * 2))`,
+    },
+  },
+});
+
+export const profileSummary = style({
+  alignItems: "center",
+  display: "grid",
+  gap: vars.space.md,
+  gridTemplateColumns: "4.25rem minmax(0, 1fr)",
+});
+
+export const profileText = style({
+  minWidth: 0,
+});
+
+export const profileName = style({
+  color: vars.color.text,
+  fontSize: vars.fontSize.xl,
+  fontWeight: vars.fontWeight.bold,
+  lineHeight: vars.lineHeight.tight,
+  margin: 0,
+  overflowWrap: "anywhere",
+});
+
+export const profileActions = style({
+  alignItems: "center",
+  display: "grid",
+  gap: vars.space.sm,
+  gridTemplateColumns: "minmax(0, 1fr) auto auto auto",
+  "@media": {
+    [media.narrow]: {
+      alignItems: "stretch",
+      gridTemplateColumns: "1fr",
+    },
+  },
+});
+
+export const profileEditor = style({
+  alignItems: "center",
+  display: "flex",
+  gap: vars.space.md,
+});
+
+export const avatarPreview = style({
+  alignItems: "center",
+  aspectRatio: "1",
+  background: vars.color.backdrop,
+  border: `1px solid ${vars.color.borderStrong}`,
+  borderRadius: "50%",
+  color: vars.color.textMuted,
+  display: "flex",
+  flex: "0 0 4.5rem",
+  fontSize: vars.fontSize.xl,
+  fontWeight: vars.fontWeight.bold,
+  justifyContent: "center",
+  overflow: "hidden",
+  width: "4.5rem",
+});
+
+export const avatarPreviewSmall = style([
+  avatarPreview,
+  {
+    flexBasis: "4.25rem",
+    width: "4.25rem",
+  },
+]);
+
+export const avatarImage = style({
+  display: "block",
+  height: "100%",
+  objectFit: "cover",
+  width: "100%",
+});
+
+export const avatarPicker = style({
+  alignItems: "center",
+  appearance: "none",
+  background: vars.color.backdrop,
+  border: `1px solid ${vars.color.border}`,
+  borderRadius: vars.radius.sm,
+  color: vars.color.text,
+  cursor: "pointer",
+  display: "inline-flex",
+  fontFamily: vars.font.body,
+  fontSize: vars.fontSize.sm,
+  fontWeight: vars.fontWeight.semibold,
+  justifyContent: "center",
+  minHeight: "2.5rem",
+  padding: `${vars.space.xs} ${vars.space.md}`,
+});
+
+export const hiddenFileInput = style({
+  clip: "rect(0 0 0 0)",
+  clipPath: "inset(50%)",
+  height: "1px",
+  overflow: "hidden",
+  position: "absolute",
+  whiteSpace: "nowrap",
+  width: "1px",
+});
+
+export const inlineStatus = style({
+  color: vars.color.textMuted,
+  fontSize: vars.fontSize.xs,
+  fontWeight: vars.fontWeight.semibold,
+});
+
 export const tabMenu = style({
   display: "flex",
   gap: vars.space.md,
@@ -499,6 +620,22 @@ export const memberName = style({
   gap: vars.space.sm,
   minWidth: 0,
   overflowWrap: "anywhere",
+});
+
+export const memberAvatar = style({
+  alignItems: "center",
+  aspectRatio: "1",
+  background: vars.color.backdrop,
+  border: `1px solid ${vars.color.border}`,
+  borderRadius: "50%",
+  color: vars.color.textMuted,
+  display: "inline-flex",
+  flex: "0 0 2rem",
+  fontSize: vars.fontSize.xs,
+  fontWeight: vars.fontWeight.bold,
+  justifyContent: "center",
+  overflow: "hidden",
+  width: "2rem",
 });
 
 export const youBadge = style({
