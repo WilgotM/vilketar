@@ -402,7 +402,7 @@ export default function LeaguesScreen() {
       setAccountPassword("");
       setStatusText(
         authState.isAnonymous
-          ? "Vi har skickat ett bekräftelsemejl. Öppna länken för att koppla kontot till e-postadressen."
+          ? "Kontot är skapat. Om Supabase kräver bekräftelse får du ett mejl med en länk."
           : "Kontot är sparat.",
       );
       returnToList();
@@ -1231,6 +1231,15 @@ export default function LeaguesScreen() {
                         placeholder="E-postadress"
                         type="email"
                         value={accountEmail}
+                      />
+                      <input
+                        className={styles.input}
+                        onChange={(event) =>
+                          setAccountPassword(event.target.value)
+                        }
+                        placeholder="Välj lösenord"
+                        type="password"
+                        value={accountPassword}
                       />
                       <Button
                         disabled={busy}
