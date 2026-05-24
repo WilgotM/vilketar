@@ -18,12 +18,30 @@ export default function AppHead(props: Props) {
         name="description"
         content="Ett svenskt tidslinjespel byggt på Wikimedia-data."
       />
+      <meta name="application-name" content="VilketÅr" />
+      <meta name="apple-mobile-web-app-title" content="VilketÅr" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="format-detection" content="telephone=no" />
       <meta property="og:title" content={title} />
       <meta
         property="og:description"
         content="Placera svenska och historiska händelser i rätt år."
       />
-      <meta name="theme-color" content="#f7efe3" />
+      <meta
+        name="theme-color"
+        content="#f7efe3"
+        media="(prefers-color-scheme: light)"
+      />
+      <meta
+        name="theme-color"
+        content="#0c0a09"
+        media="(prefers-color-scheme: dark)"
+      />
+      <meta name="msapplication-TileColor" content="#fffdfa" />
+      <meta name="msapplication-config" content="/browserconfig.xml" />
+      <link rel="manifest" href="/manifest.webmanifest?v=20260524" />
       <link
         rel="preload"
         href="/fonts/inter-latin.woff2"
@@ -38,9 +56,21 @@ export default function AppHead(props: Props) {
         type="font/woff2"
         crossOrigin="anonymous"
       />
-      <link rel="icon" href="/favicon-32.png?v=20260510" sizes="32x32" />
-      <link rel="icon" href="/favicon.svg?v=20260510" type="image/svg+xml" />
-      <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260510" />
+      <link rel="icon" href="/favicon-32.png?v=20260524" sizes="32x32" />
+      <link rel="icon" href="/favicon.svg?v=20260524" type="image/svg+xml" />
+      <link
+        rel="icon"
+        href="/favicon-light.png?v=20260524"
+        media="(prefers-color-scheme: dark)"
+        type="image/png"
+      />
+      <link
+        rel="icon"
+        href="/favicon-dark.png?v=20260524"
+        media="(prefers-color-scheme: light)"
+        type="image/png"
+      />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260524" />
     </Head>
   );
 }

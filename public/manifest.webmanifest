@@ -1,0 +1,58 @@
+{
+  "id": "/",
+  "name": "VilketÅr",
+  "short_name": "VilketÅr",
+  "description": "Ett svenskt tidslinjespel byggt på Wikimedia-data.",
+  "lang": "sv-SE",
+  "dir": "ltr",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#fffdfa",
+  "theme_color": "#f7efe3",
+  "categories": ["games", "education", "entertainment"],
+  "icons": [
+    {
+      "src": "/favicon.svg?v=20260524",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png?v=20260524",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dagens spel",
+      "short_name": "Dagens spel",
+      "description": "Spela dagens VilketÅr.",
+      "url": "/daily?source=pwa-shortcut",
+      "icons": [
+        {
+          "src": "/apple-touch-icon.png?v=20260524",
+          "sizes": "180x180",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Sällskapsspel",
+      "short_name": "Sällskap",
+      "description": "Starta VilketÅr för flera spelare.",
+      "url": "/party?source=pwa-shortcut",
+      "icons": [
+        {
+          "src": "/apple-touch-icon.png?v=20260524",
+          "sizes": "180x180",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
