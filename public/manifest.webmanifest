@@ -24,7 +24,31 @@
       "src": "/apple-touch-icon.png?v=20260524",
       "sizes": "180x180",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-icon-192.png?v=20260524",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-icon-512.png?v=20260524",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-icon-192.png?v=20260524",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/pwa-maskable-icon-512.png?v=20260524",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "shortcuts": [
@@ -35,8 +59,21 @@
       "url": "/daily?source=pwa-shortcut",
       "icons": [
         {
-          "src": "/apple-touch-icon.png?v=20260524",
-          "sizes": "180x180",
+          "src": "/pwa-shortcut-daily-192.png?v=20260524",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Vänligor",
+      "short_name": "Vänligor",
+      "description": "Öppna dina VilketÅr-ligor.",
+      "url": "/leagues?source=pwa-shortcut",
+      "icons": [
+        {
+          "src": "/pwa-shortcut-leagues-192.png?v=20260524",
+          "sizes": "192x192",
           "type": "image/png"
         }
       ]
@@ -48,8 +85,8 @@
       "url": "/party?source=pwa-shortcut",
       "icons": [
         {
-          "src": "/apple-touch-icon.png?v=20260524",
-          "sizes": "180x180",
+          "src": "/pwa-shortcut-party-192.png?v=20260524",
+          "sizes": "192x192",
           "type": "image/png"
         }
       ]

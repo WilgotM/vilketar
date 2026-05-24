@@ -9,7 +9,7 @@ const rise = keyframes({
 
 export const prompt = style({
   animation: `${rise} ${vars.duration.slow} ${vars.easing.emphasized}`,
-  background: vars.color.surfaceChrome,
+  background: "rgba(255, 253, 250, 0.98)",
   backdropFilter: "blur(1.5rem)",
   border: `1px solid ${vars.color.border}`,
   borderRadius: vars.radius.lg,
@@ -26,6 +26,9 @@ export const prompt = style({
   width: `calc(100% - ${vars.space.xl} * 2)`,
   zIndex: zIndex.floating,
   "@media": {
+    [media.dark]: {
+      background: "rgba(35, 31, 28, 0.98)",
+    },
     [media.reduceMotion]: {
       animation: "none",
     },
@@ -124,6 +127,44 @@ export const installButton = style({
 export const steps = style({
   display: "grid",
   gap: vars.space.sm,
+});
+
+export const safariBar = style({
+  alignItems: "center",
+  background: vars.color.surfaceStrong,
+  border: `1px solid ${vars.color.border}`,
+  borderRadius: vars.radius.md,
+  display: "grid",
+  gap: vars.space.sm,
+  gridTemplateColumns: "minmax(0, 1fr) auto",
+  minHeight: "2.75rem",
+  padding: vars.space.sm,
+});
+
+export const safariUrl = style({
+  background: vars.color.accentTint,
+  border: `1px solid ${vars.color.border}`,
+  borderRadius: vars.radius.pill,
+  color: vars.color.textMuted,
+  fontSize: vars.fontSize.control,
+  fontWeight: vars.fontWeight.semibold,
+  lineHeight: vars.lineHeight.tight,
+  overflow: "hidden",
+  padding: `${vars.space.sm} ${vars.space.md}`,
+  textOverflow: "ellipsis",
+  whiteSpace: "nowrap",
+});
+
+export const safariShare = style({
+  alignItems: "center",
+  background: vars.color.surface,
+  border: `1px solid ${vars.color.border}`,
+  borderRadius: vars.radius.sm,
+  color: vars.color.accentLogo,
+  display: "flex",
+  height: "2rem",
+  justifyContent: "center",
+  width: "2rem",
 });
 
 export const step = style({

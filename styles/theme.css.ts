@@ -176,13 +176,13 @@ export const vars = createGlobalThemeContract(
 );
 
 export const appThemeClass = style({
-  vars: assignVars(vars, lightTheme),
-  colorScheme: "light",
+  vars: assignVars(vars, darkTheme),
+  colorScheme: "dark",
   minHeight: "100%",
-  "@media": {
-    "(prefers-color-scheme: dark)": {
-      vars: assignVars(vars, darkTheme),
-      colorScheme: "dark",
+  selectors: {
+    '&[data-theme="light"]': {
+      vars: assignVars(vars, lightTheme),
+      colorScheme: "light",
     },
   },
 });
@@ -210,6 +210,22 @@ globalStyle("body", {
   WebkitFontSmoothing: "antialiased",
   MozOsxFontSmoothing: "grayscale",
   overscrollBehaviorY: "contain",
+});
+
+globalStyle("html[data-pwa-standalone] body", {
+  overscrollBehavior: "none",
+});
+
+globalStyle("html[data-pwa-standalone] body::before", {
+  background: vars.color.backdropStrong,
+  content: '""',
+  height: "env(safe-area-inset-top, 0px)",
+  left: 0,
+  pointerEvents: "none",
+  position: "fixed",
+  right: 0,
+  top: 0,
+  zIndex: 100,
 });
 
 globalStyle("html, body, #__next", {

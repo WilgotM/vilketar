@@ -3,6 +3,7 @@ import ButtonLink from "./button-link";
 import PageShell from "./page-shell";
 import SiteFooter from "./site-footer";
 import SiteHero from "./site-hero";
+import { ThemeToggle } from "./theme-toggle";
 import * as styles from "../styles/home-screen.css";
 
 function ScatterDots() {
@@ -128,6 +129,7 @@ export default function HomeScreen() {
   return (
     <PageShell showHeader={false}>
       <div className={styles.home}>
+        <ThemeToggle />
         <ScatterDots />
         <div className={styles.wrapper}>
           <HeroDecorations />

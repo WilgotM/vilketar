@@ -2,6 +2,7 @@ import React from "react";
 import * as styles from "../styles/pwa-install-prompt.css";
 
 const DISMISSED_KEY = "vilketar-pwa-install-dismissed-at";
+const INSTALLED_KEY = "vilketar-pwa-installed-at";
 const DISMISS_DAYS = 21;
 
 function isDismissedRecently() {
@@ -20,6 +21,14 @@ function isDismissedRecently() {
   }
 
   return Date.now() - dismissedAt < DISMISS_DAYS * 24 * 60 * 60 * 1000;
+}
+
+function isKnownInstalled() {
+  if (typeof window === "undefined") {
+    return true;
+  }
+
+  return safeGetItem(INSTALLED_KEY) !== null;
 }
 
 function isStandalone() {
@@ -57,16 +66,28 @@ function isLikelyAndroid() {
 }
 
 function dismiss() {
+  safeSetItem(DISMISSED_KEY, String(Date.now()));
+}
+
+function rememberInstalled() {
+  safeSetItem(INSTALLED_KEY, String(Date.now()));
+}
+
+function safeSetItem(key: string, value: string) {
   try {
-    window.localStorage.setItem(DISMISSED_KEY, String(Date.now()));
+    window.localStorage.setItem(key, value);
   } catch {
     // Safari private browsing can reject storage; closing should still work.
   }
 }
 
 function safeGetDismissedAt() {
+  return safeGetItem(DISMISSED_KEY);
+}
+
+function safeGetItem(key: string) {
   try {
-    return window.localStorage.getItem(DISMISSED_KEY);
+    return window.localStorage.getItem(key);
   } catch {
     return null;
   }
@@ -155,19 +176,54 @@ export default function PwaInstallPrompt() {
   const [installEvent, setInstallEvent] =
     React.useState<BeforeInstallPromptEvent | null>(null);
   const [showIosPrompt, setShowIosPrompt] = React.useState(false);
+  const [hasUserIntent, setHasUserIntent] = React.useState(false);
 
   React.useEffect(() => {
     if (!("serviceWorker" in navigator)) {
       return;
     }
 
-    navigator.serviceWorker.register("/service-worker.js").catch(() => {
-      // Installation still works as a normal website if registration fails.
-    });
+    navigator.serviceWorker
+      .register("/service-worker.js", { updateViaCache: "none" })
+      .then((registration) => {
+        registration.update().catch(() => null);
+
+        if (registration.waiting) {
+          registration.waiting.postMessage({ type: "SKIP_WAITING" });
+        }
+      })
+      .catch(() => {
+        // Installation still works as a normal website if registration fails.
+      });
   }, []);
 
   React.useEffect(() => {
-    if (isStandalone() || isDismissedRecently()) {
+    const standalone = isStandalone();
+    document.documentElement.toggleAttribute("data-pwa-standalone", standalone);
+
+    if (standalone) {
+      rememberInstalled();
+    }
+  }, []);
+
+  React.useEffect(() => {
+    const markIntent = () => {
+      setHasUserIntent(true);
+    };
+    const intentTimer = window.setTimeout(markIntent, 6500);
+
+    window.addEventListener("pointerdown", markIntent, { once: true });
+    window.addEventListener("keydown", markIntent, { once: true });
+
+    return () => {
+      window.clearTimeout(intentTimer);
+      window.removeEventListener("pointerdown", markIntent);
+      window.removeEventListener("keydown", markIntent);
+    };
+  }, []);
+
+  React.useEffect(() => {
+    if (isStandalone() || isKnownInstalled() || isDismissedRecently()) {
       return;
     }
 
@@ -177,22 +233,42 @@ export default function PwaInstallPrompt() {
       }
 
       event.preventDefault();
-      setInstallEvent(event);
+      if (hasUserIntent) {
+        setInstallEvent(event);
+      } else {
+        const showWhenReady = () => {
+          setInstallEvent(event);
+        };
+        window.addEventListener("pointerdown", showWhenReady, { once: true });
+        window.setTimeout(showWhenReady, 6500);
+      }
+    };
+
+    const onAppInstalled = () => {
+      rememberInstalled();
+      setInstallEvent(null);
+      setShowIosPrompt(false);
     };
 
     window.addEventListener("beforeinstallprompt", onBeforeInstallPrompt);
+    window.addEventListener("appinstalled", onAppInstalled);
 
     const iosTimer = window.setTimeout(() => {
       setShowIosPrompt(
-        isIosSafari() && !isStandalone() && !isDismissedRecently(),
+        hasUserIntent &&
+          isIosSafari() &&
+          !isStandalone() &&
+          !isKnownInstalled() &&
+          !isDismissedRecently(),
       );
-    }, 2800);
+    }, 1200);
 
     return () => {
       window.removeEventListener("beforeinstallprompt", onBeforeInstallPrompt);
+      window.removeEventListener("appinstalled", onAppInstalled);
       window.clearTimeout(iosTimer);
     };
-  }, []);
+  }, [hasUserIntent]);
 
   const close = React.useCallback(() => {
     dismiss();
@@ -206,7 +282,10 @@ export default function PwaInstallPrompt() {
     }
 
     await installEvent.prompt();
-    await installEvent.userChoice.catch(() => null);
+    const choice = await installEvent.userChoice.catch(() => null);
+    if (choice?.outcome === "accepted") {
+      rememberInstalled();
+    }
     setInstallEvent(null);
   }, [installEvent]);
 
@@ -220,8 +299,8 @@ export default function PwaInstallPrompt() {
           <div className={styles.copy}>
             <p className={styles.title}>Lägg VilketÅr på hemskärmen</p>
             <p className={styles.text}>
-              Starta snabbare, spela mer helskärm och få en appkänsla på
-              Android.
+              Starta snabbare, spela helskärm och öppna direkt från din
+              hemskärm.
             </p>
           </div>
           <button
@@ -267,6 +346,12 @@ export default function PwaInstallPrompt() {
           </button>
         </div>
         <div className={styles.steps} aria-label="Lägg till på hemskärmen">
+          <div className={styles.safariBar} aria-hidden="true">
+            <span className={styles.safariUrl}>vilketar.se</span>
+            <span className={styles.safariShare}>
+              <ShareIcon />
+            </span>
+          </div>
           <div className={styles.step}>
             <span className={styles.stepIcon}>
               <ShareIcon />

@@ -10,6 +10,7 @@ declare global {
   }
 
   interface WindowEventMap {
+    appinstalled: Event;
     beforeinstallprompt: BeforeInstallPromptEvent;
   }
 
