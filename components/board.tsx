@@ -6,6 +6,7 @@ import {
   drawNextCard,
   preloadImage,
 } from "../lib/game-selection";
+import { StoredDailyResult } from "../lib/leagues";
 import {
   createPlacementAnimationState,
   PlacementAnimationState,
@@ -40,6 +41,7 @@ interface Props {
   difficulty: GameDifficulty;
   gameMode: GameMode;
   highscore: number;
+  onDailyRemoteCompleted?: (result: StoredDailyResult) => void;
   resetGame?: () => void;
   restoredFromSnapshot?: boolean;
   routePath: string;
@@ -61,6 +63,7 @@ export default function Board(props: Props) {
     difficulty,
     gameMode,
     highscore,
+    onDailyRemoteCompleted,
     resetGame,
     restoredFromSnapshot = false,
     routePath,
@@ -703,6 +706,7 @@ export default function Board(props: Props) {
                   difficulty={difficulty}
                   gameMode={gameMode}
                   highscore={highscore}
+                  onDailyRemoteCompleted={onDailyRemoteCompleted}
                   played={state.played}
                   resetGame={resetGame}
                   routePath={routePath}

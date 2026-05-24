@@ -31,16 +31,30 @@ export default function SiteHeader(props: Props) {
   const { backHref, backLabel = "Tillbaka" } = props;
   const router = useRouter();
 
-  const href = backHref ?? (router.pathname !== "/" ? "/" : undefined);
+  const showBack = router.pathname !== "/";
+
+  function goBack() {
+    if (typeof window !== "undefined" && window.history.length > 1) {
+      router.back();
+      return;
+    }
+
+    void router.push(backHref ?? "/");
+  }
 
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        {href ? (
-          <Link aria-label={backLabel} className={styles.backLink} href={href}>
+        {showBack ? (
+          <button
+            aria-label={backLabel}
+            className={styles.backLink}
+            onClick={goBack}
+            type="button"
+          >
             <BackIcon />
             <span className={styles.backText}>{backLabel}</span>
-          </Link>
+          </button>
         ) : null}
         <Link aria-label="VilketÅr hem" className={styles.wordmark} href="/">
           VilketÅr

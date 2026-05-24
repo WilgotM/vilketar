@@ -1,6 +1,7 @@
 import { supabase } from "./supabase";
 
 const DISPLAY_NAME_STORAGE_KEY = "leagues:display-name";
+const DEVICE_ID_STORAGE_KEY = "leagues:device-id";
 
 export type LeagueMember = {
   daysPlayed: number;
@@ -18,6 +19,7 @@ export type LeagueWinner = {
 };
 
 export type League = {
+  canManage: boolean;
   createdAt: string;
   currentWeekEndsAt: string;
   currentWeekStartsAt: string;
@@ -32,6 +34,26 @@ export type League = {
 export type LeagueProfile = {
   displayName: string;
   id: string;
+};
+
+export type LeagueAuthState = {
+  email: string;
+  isAnonymous: boolean;
+  isSignedIn: boolean;
+};
+
+export type StoredDailyResult = {
+  dateKey: string;
+  resultPattern: string;
+  score: number;
+};
+
+export type LeagueDevice = {
+  createdAt: string;
+  deviceId: string;
+  deviceName: string;
+  isCurrentDevice: boolean;
+  lastSeenAt: string;
 };
 
 export function isLeaguesConfigured(): boolean {
@@ -50,6 +72,198 @@ export function saveStoredDisplayName(displayName: string) {
   localStorage.setItem(DISPLAY_NAME_STORAGE_KEY, displayName);
 }
 
+export async function hasLeagueSession(): Promise<boolean> {
+  if (!supabase) {
+    return false;
+  }
+
+  const session = await supabase.auth.getSession();
+  return Boolean(session.data.session);
+}
+
+export async function getLeagueAuthState(): Promise<LeagueAuthState> {
+  if (!supabase) {
+    return { email: "", isAnonymous: false, isSignedIn: false };
+  }
+
+  const user = await supabase.auth.getUser();
+  if (user.error || !user.data.user) {
+    return { email: "", isAnonymous: false, isSignedIn: false };
+  }
+
+  return {
+    email: user.data.user.email ?? "",
+    isAnonymous: user.data.user.is_anonymous ?? false,
+    isSignedIn: true,
+  };
+}
+
+function getStoredDeviceId(): string {
+  if (typeof window === "undefined") {
+    return "";
+  }
+
+  const existingDeviceId = localStorage.getItem(DEVICE_ID_STORAGE_KEY);
+  if (existingDeviceId) {
+    return existingDeviceId;
+  }
+
+  const nextDeviceId = crypto.randomUUID();
+  localStorage.setItem(DEVICE_ID_STORAGE_KEY, nextDeviceId);
+  return nextDeviceId;
+}
+
+function getDeviceName(): string {
+  if (typeof navigator === "undefined") {
+    return "Okänd enhet";
+  }
+
+  if (/iphone/i.test(navigator.userAgent)) {
+    return "iPhone";
+  }
+  if (/ipad/i.test(navigator.userAgent)) {
+    return "iPad";
+  }
+  if (/android/i.test(navigator.userAgent)) {
+    return "Android";
+  }
+
+  return navigator.platform || "Den här enheten";
+}
+
+export async function registerLeagueDevice(): Promise<void> {
+  if (!supabase) {
+    return;
+  }
+
+  const session = await supabase.auth.getSession();
+  if (!session.data.session) {
+    return;
+  }
+
+  const response = await supabase.rpc("app_register_device", {
+    p_device_id: getStoredDeviceId(),
+    p_device_name: getDeviceName(),
+  });
+  if (response.error) {
+    throw response.error;
+  }
+}
+
+export async function getLeagueDevices(): Promise<LeagueDevice[]> {
+  if (!supabase) {
+    return [];
+  }
+
+  await registerLeagueDevice();
+  const response = await supabase.rpc("app_get_devices", {
+    p_current_device_id: getStoredDeviceId(),
+  });
+  if (response.error) {
+    throw response.error;
+  }
+
+  return (response.data ?? []) as LeagueDevice[];
+}
+
+export async function forgetLeagueDevice(deviceId: string): Promise<void> {
+  if (!supabase) {
+    return;
+  }
+
+  const response = await supabase.rpc("app_forget_device", {
+    p_device_id: deviceId,
+  });
+  if (response.error) {
+    throw response.error;
+  }
+}
+
+export async function saveLeagueAccount(input: {
+  email: string;
+  password: string;
+}): Promise<LeagueAuthState> {
+  if (!supabase) {
+    throw new Error("Supabase är inte konfigurerat.");
+  }
+
+  const session = await supabase.auth.getSession();
+  const email = input.email.trim();
+  const password = input.password.trim();
+
+  if (session.data.session) {
+    const response = await supabase.auth.updateUser({ email, password });
+    if (response.error) {
+      throw response.error;
+    }
+    return getLeagueAuthState();
+  }
+
+  const response = await supabase.auth.signUp({ email, password });
+  if (response.error) {
+    throw response.error;
+  }
+  return getLeagueAuthState();
+}
+
+export async function signInToLeagueAccount(input: {
+  email: string;
+  password: string;
+}): Promise<LeagueAuthState> {
+  if (!supabase) {
+    throw new Error("Supabase är inte konfigurerat.");
+  }
+
+  const response = await supabase.auth.signInWithPassword({
+    email: input.email.trim(),
+    password: input.password.trim(),
+  });
+  if (response.error) {
+    throw response.error;
+  }
+
+  await registerLeagueDevice();
+  return getLeagueAuthState();
+}
+
+export async function sendLeaguePasswordReset(email: string): Promise<void> {
+  if (!supabase) {
+    throw new Error("Supabase är inte konfigurerat.");
+  }
+
+  const redirectTo =
+    typeof window === "undefined"
+      ? undefined
+      : `${window.location.origin}/leagues`;
+  const response = await supabase.auth.resetPasswordForEmail(email.trim(), {
+    redirectTo,
+  });
+  if (response.error) {
+    throw response.error;
+  }
+}
+
+export async function updateLeaguePassword(password: string): Promise<void> {
+  if (!supabase) {
+    throw new Error("Supabase är inte konfigurerat.");
+  }
+
+  const response = await supabase.auth.updateUser({
+    password: password.trim(),
+  });
+  if (response.error) {
+    throw response.error;
+  }
+}
+
+export async function signOutLeagueAccount(): Promise<void> {
+  if (!supabase) {
+    return;
+  }
+
+  await supabase.auth.signOut();
+}
+
 export async function ensureLeagueProfile(
   displayName: string,
 ): Promise<LeagueProfile> {
@@ -64,6 +278,7 @@ export async function ensureLeagueProfile(
       throw anonymous.error;
     }
   }
+  await registerLeagueDevice();
 
   const profile = await supabase.rpc("app_set_profile", {
     p_display_name: displayName.trim(),
@@ -106,6 +321,57 @@ export async function createLeague(name: string): Promise<League> {
   return response.data as League;
 }
 
+export async function updateLeagueName(input: {
+  leagueId: string;
+  name: string;
+}): Promise<League> {
+  if (!supabase) {
+    throw new Error("Supabase är inte konfigurerat.");
+  }
+
+  const response = await supabase.rpc("app_update_league_name", {
+    p_league_id: input.leagueId,
+    p_name: input.name.trim(),
+  });
+  if (response.error) {
+    throw response.error;
+  }
+
+  return response.data as League;
+}
+
+export async function removeLeagueMember(input: {
+  leagueId: string;
+  memberId: string;
+}): Promise<League | null> {
+  if (!supabase) {
+    throw new Error("Supabase är inte konfigurerat.");
+  }
+
+  const response = await supabase.rpc("app_remove_league_member", {
+    p_league_id: input.leagueId,
+    p_member_id: input.memberId,
+  });
+  if (response.error) {
+    throw response.error;
+  }
+
+  return response.data as League | null;
+}
+
+export async function deleteLeague(leagueId: string): Promise<void> {
+  if (!supabase) {
+    throw new Error("Supabase är inte konfigurerat.");
+  }
+
+  const response = await supabase.rpc("app_delete_league", {
+    p_league_id: leagueId,
+  });
+  if (response.error) {
+    throw response.error;
+  }
+}
+
 export async function joinLeague(joinCode: string): Promise<League> {
   if (!supabase) {
     throw new Error("Supabase är inte konfigurerat.");
@@ -125,14 +391,14 @@ export async function submitDailyLeagueResult(input: {
   dateKey: string;
   resultPattern: string;
   score: number;
-}): Promise<void> {
+}): Promise<StoredDailyResult | null> {
   if (!supabase) {
-    return;
+    return null;
   }
 
   const session = await supabase.auth.getSession();
   if (!session.data.session) {
-    return;
+    return null;
   }
 
   const response = await supabase.rpc("app_submit_daily_result", {
@@ -143,4 +409,39 @@ export async function submitDailyLeagueResult(input: {
   if (response.error) {
     throw response.error;
   }
+
+  return response.data as StoredDailyResult | null;
+}
+
+export async function getStoredDailyResult(
+  dateKey: string,
+): Promise<StoredDailyResult | null> {
+  if (!supabase) {
+    return null;
+  }
+
+  const session = await supabase.auth.getSession();
+  if (!session.data.session) {
+    return null;
+  }
+
+  const response = await supabase
+    .from("daily_results")
+    .select("date_key, result_pattern, score")
+    .eq("user_id", session.data.session.user.id)
+    .eq("date_key", dateKey)
+    .maybeSingle();
+  if (response.error) {
+    throw response.error;
+  }
+
+  if (!response.data) {
+    return null;
+  }
+
+  return {
+    dateKey: response.data.date_key,
+    resultPattern: response.data.result_pattern,
+    score: response.data.score,
+  };
 }

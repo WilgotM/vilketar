@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import React from "react";
 import { getSelectionRouteShareLabel } from "../lib/categories";
 import { formatTimeUntilNextDaily } from "../lib/daily";
-import { submitDailyLeagueResult } from "../lib/leagues";
+import { StoredDailyResult, submitDailyLeagueResult } from "../lib/leagues";
 import { saveRemoteScore } from "../lib/remote-highscores";
 import { buildShareText, getShareResults } from "../lib/share";
 import { PlayedCard } from "../types/cards";
@@ -20,6 +20,7 @@ interface Props {
   difficulty: GameDifficulty;
   gameMode: GameMode;
   highscore: number;
+  onDailyRemoteCompleted?: (result: StoredDailyResult) => void;
   played: PlayedCard[];
   resetGame?: () => void;
   routePath: string;
@@ -35,6 +36,7 @@ export default function GameOver(props: Props) {
     difficulty,
     gameMode,
     highscore,
+    onDailyRemoteCompleted,
     played,
     resetGame,
     routePath,
@@ -98,9 +100,27 @@ export default function GameOver(props: Props) {
         dateKey: dailyDateKey,
         resultPattern: results,
         score,
-      }).catch(() => undefined);
+      })
+        .then((storedResult) => {
+          if (
+            storedResult &&
+            (storedResult.score !== score ||
+              storedResult.resultPattern !== results)
+          ) {
+            onDailyRemoteCompleted?.(storedResult);
+          }
+        })
+        .catch(() => undefined);
     }
-  }, [dailyDateKey, difficulty, gameMode, played, score, selectionRoute]);
+  }, [
+    dailyDateKey,
+    difficulty,
+    gameMode,
+    onDailyRemoteCompleted,
+    played,
+    score,
+    selectionRoute,
+  ]);
 
   const share = React.useCallback(async () => {
     await navigator?.clipboard?.writeText(
@@ -146,6 +166,7 @@ export default function GameOver(props: Props) {
         >
           <DailyCompletedSummary
             dailyLabel={`Dagens spel / ${formattedDailyDate}`}
+            dateKey={dailyDateKey}
             nextDailyText={nextDailyText}
             onShare={share}
             score={score}

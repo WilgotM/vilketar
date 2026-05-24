@@ -33,6 +33,7 @@ export const wordmark = style({
 
 export const backLink = style({
   alignItems: "center",
+  appearance: "none",
   background: vars.color.surfaceChrome,
   border: `1px solid ${vars.color.border}`,
   borderRadius: vars.radius.pill,

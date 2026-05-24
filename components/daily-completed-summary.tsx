@@ -1,10 +1,12 @@
 import classNames from "classnames";
+import DailyLeaguesSummary from "./daily-leagues-summary";
 import Score from "./score";
 import * as buttonStyles from "../styles/button.css";
 import * as styles from "../styles/daily-completed-summary.css";
 
 interface Props {
   dailyLabel: string;
+  dateKey: string;
   nextDailyText: string;
   onShare: () => void;
   score: number;
@@ -12,7 +14,8 @@ interface Props {
 }
 
 export default function DailyCompletedSummary(props: Props) {
-  const { dailyLabel, nextDailyText, onShare, score, shareText } = props;
+  const { dailyLabel, dateKey, nextDailyText, onShare, score, shareText } =
+    props;
 
   return (
     <div className={styles.summary}>
@@ -27,6 +30,7 @@ export default function DailyCompletedSummary(props: Props) {
       >
         {shareText}
       </button>
+      <DailyLeaguesSummary dateKey={dateKey} />
       <div className={styles.metaText}>{nextDailyText}</div>
     </div>
   );

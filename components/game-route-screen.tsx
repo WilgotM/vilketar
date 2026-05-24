@@ -21,6 +21,7 @@ import {
   resolveSelectionDeck,
 } from "../lib/game-state";
 import { loadHighscore, saveHighscore } from "../lib/highscore-storage";
+import { getStoredDailyResult, StoredDailyResult } from "../lib/leagues";
 import { useBackConfirmation } from "../lib/use-back-confirmation";
 import { useFreePlayDifficulty } from "../lib/use-free-play-difficulty";
 import { GameState } from "../types/game";
@@ -39,6 +40,7 @@ interface Props {
   hideHeader?: boolean;
   mode: GameMode;
   onQuitGame?: () => void;
+  onDailyRemoteCompleted?: (result: StoredDailyResult) => void;
   onResetGame?: () => void;
   selectionRoute?: SelectionRoute;
   skipRouteIntro?: boolean;
@@ -93,6 +95,7 @@ export default function GameRouteScreen(props: Props) {
   const {
     hideHeader = false,
     mode,
+    onDailyRemoteCompleted,
     onQuitGame,
     onResetGame,
     selectionRoute,
@@ -290,6 +293,14 @@ export default function GameRouteScreen(props: Props) {
       );
 
       if (mode === "daily") {
+        const serverResult = await getStoredDailyResult(dateKey);
+        if (serverResult) {
+          if (!cancelled) {
+            onDailyRemoteCompleted?.(serverResult);
+          }
+          return;
+        }
+
         const existingSnapshot = loadDailyGameSnapshot();
         if (
           existingSnapshot &&
@@ -353,6 +364,7 @@ export default function GameRouteScreen(props: Props) {
     fontsReady,
     loadDecks,
     mode,
+    onDailyRemoteCompleted,
     rootDeckId,
     runNonce,
     selectedLeafDeckIds,
@@ -502,6 +514,7 @@ export default function GameRouteScreen(props: Props) {
             difficulty={difficulty}
             gameMode={mode}
             highscore={highscore}
+            onDailyRemoteCompleted={onDailyRemoteCompleted}
             resetGame={mode === "free-play" ? resetGame : undefined}
             restoredFromSnapshot={restoredFromSnapshot}
             routePath={routePath}
@@ -550,6 +563,7 @@ export default function GameRouteScreen(props: Props) {
           difficulty={difficulty}
           gameMode={mode}
           highscore={highscore}
+          onDailyRemoteCompleted={onDailyRemoteCompleted}
           resetGame={mode === "free-play" ? resetGame : undefined}
           restoredFromSnapshot={restoredFromSnapshot}
           routePath={routePath}

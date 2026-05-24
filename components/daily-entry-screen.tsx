@@ -13,6 +13,7 @@ interface Props {
   completedScore?: number | null;
   dailyDateKey: string;
   embedded?: boolean;
+  isChecking?: boolean;
   onStart: () => void;
 }
 
@@ -24,6 +25,7 @@ export default function DailyEntryScreen(props: Props) {
     completedScore = null,
     dailyDateKey,
     embedded = false,
+    isChecking = false,
     onStart,
   } = props;
   const [nextDailyText, setNextDailyText] = React.useState(() =>
@@ -84,12 +86,13 @@ export default function DailyEntryScreen(props: Props) {
               onClick={onStart}
               type="button"
             >
-              Starta
+              {isChecking ? "Kontrollerar..." : "Starta"}
             </button>
           </div>
         ) : (
           <DailyCompletedSummary
             dailyLabel={`Dagens spel / ${formattedDailyDate}`}
+            dateKey={dailyDateKey}
             nextDailyText={nextDailyText}
             onShare={share}
             score={completedScore}

@@ -1,22 +1,32 @@
 import classNames from "classnames";
 import { motion } from "motion/react";
+import Link from "next/link";
 import React from "react";
 import { getCurrentUtcDateKey } from "../lib/daily";
 import { loadDailyGameSnapshot } from "../lib/daily-storage";
 import {
   createLeague,
+  deleteLeague,
   ensureLeagueProfile,
+  getLeagueAuthState,
   getMyLeagues,
   isLeaguesConfigured,
   joinLeague,
   League,
+  LeagueAuthState,
   loadStoredDisplayName,
+  removeLeagueMember,
+  saveLeagueAccount,
+  sendLeaguePasswordReset,
+  signInToLeagueAccount,
+  signOutLeagueAccount,
   submitDailyLeagueResult,
+  updateLeaguePassword,
+  updateLeagueName,
 } from "../lib/leagues";
 import { getShareResults } from "../lib/share";
 import Button from "./button";
 import PageShell from "./page-shell";
-import * as buttonStyles from "../styles/button.css";
 import * as styles from "../styles/leagues-screen.css";
 
 const defaultLeagueName = "Min liga";
@@ -25,6 +35,18 @@ function getFriendlyError(error: unknown): string {
   if (error instanceof Error && error.message) {
     if (error.message.includes("Anonymous sign-ins are disabled")) {
       return "Anonym inloggning är inte påslagen i Supabase ännu.";
+    }
+
+    if (error.message.includes("Invalid login credentials")) {
+      return "E-post eller lösenord stämmer inte.";
+    }
+
+    if (error.message.includes("Password should be")) {
+      return "Välj ett lite längre lösenord.";
+    }
+
+    if (error.message.includes("Unable to validate email address")) {
+      return "Kontrollera att e-postadressen är rätt skriven.";
     }
 
     return error.message;
@@ -41,7 +63,13 @@ function todayLabel(score: number | null): string {
   return `${score} p idag`;
 }
 
-type Tab = "list" | "create" | "join";
+type Tab = "list" | "create" | "join" | "account" | "login" | "forgot";
+
+const emptyAuthState: LeagueAuthState = {
+  email: "",
+  isAnonymous: false,
+  isSignedIn: false,
+};
 
 export default function LeaguesScreen() {
   const todayDateKey = React.useMemo(() => getCurrentUtcDateKey(), []);
@@ -50,6 +78,15 @@ export default function LeaguesScreen() {
   const [leagues, setLeagues] = React.useState<League[]>([]);
   const [leagueName, setLeagueName] = React.useState(defaultLeagueName);
   const [joinCode, setJoinCode] = React.useState("");
+  const [accountEmail, setAccountEmail] = React.useState("");
+  const [accountPassword, setAccountPassword] = React.useState("");
+  const [authState, setAuthState] =
+    React.useState<LeagueAuthState>(emptyAuthState);
+  const [statusText, setStatusText] = React.useState<string | null>(null);
+  const [editingLeagueId, setEditingLeagueId] = React.useState<string | null>(
+    null,
+  );
+  const [editingLeagueName, setEditingLeagueName] = React.useState("");
   const [busy, setBusy] = React.useState(false);
   const [copyText, setCopyText] = React.useState("Kopiera kod");
   const [error, setError] = React.useState<string | null>(null);
@@ -57,6 +94,37 @@ export default function LeaguesScreen() {
   const savedNameHandledRef = React.useRef(false);
 
   const [activeTab, setActiveTab] = React.useState<Tab>("list");
+
+  const openTab = React.useCallback((nextTab: Tab) => {
+    setError(null);
+    setActiveTab(nextTab);
+    if (typeof window !== "undefined" && nextTab !== "list") {
+      window.history.pushState(
+        { leaguesTab: nextTab },
+        "",
+        window.location.href,
+      );
+    }
+  }, []);
+
+  const returnToList = React.useCallback(() => {
+    setActiveTab("list");
+    if (typeof window !== "undefined") {
+      window.history.replaceState(
+        { ...(window.history.state ?? {}), leaguesTab: "list" },
+        "",
+        window.location.href,
+      );
+    }
+  }, []);
+
+  const refreshAuthState = React.useCallback(async () => {
+    const nextAuthState = await getLeagueAuthState();
+    setAuthState(nextAuthState);
+    if (nextAuthState.email) {
+      setAccountEmail(nextAuthState.email);
+    }
+  }, []);
 
   const refreshLeagues = React.useCallback(async () => {
     const nextLeagues = await getMyLeagues(todayDateKey);
@@ -84,6 +152,7 @@ export default function LeaguesScreen() {
       .then(() => {
         setDisplayName(storedName);
         setProfileReady(true);
+        void refreshAuthState();
       })
       .catch((caughtError: unknown) => {
         setError(getFriendlyError(caughtError));
@@ -91,7 +160,7 @@ export default function LeaguesScreen() {
       .finally(() => {
         setBusy(false);
       });
-  }, [configured, profileReady]);
+  }, [configured, profileReady, refreshAuthState]);
 
   React.useEffect(() => {
     if (!profileReady) {
@@ -124,18 +193,139 @@ export default function LeaguesScreen() {
       });
   }, [profileReady, refreshLeagues, todayDateKey]);
 
+  React.useEffect(() => {
+    if (!configured) {
+      return;
+    }
+
+    void refreshAuthState();
+  }, [configured, refreshAuthState]);
+
+  React.useEffect(() => {
+    const onPopState = (event: PopStateEvent) => {
+      const tab = (event.state as { leaguesTab?: Tab } | null)?.leaguesTab;
+      setError(null);
+      setActiveTab(tab ?? "list");
+    };
+
+    window.history.replaceState(
+      { ...(window.history.state ?? {}), leaguesTab: "list" },
+      "",
+      window.location.href,
+    );
+    window.addEventListener("popstate", onPopState);
+
+    return () => {
+      window.removeEventListener("popstate", onPopState);
+    };
+  }, []);
+
   const saveName = React.useCallback(async () => {
     setBusy(true);
     setError(null);
     try {
       await ensureLeagueProfile(displayName);
       setProfileReady(true);
+      await refreshAuthState();
     } catch (caughtError) {
       setError(getFriendlyError(caughtError));
     } finally {
       setBusy(false);
     }
-  }, [displayName]);
+  }, [displayName, refreshAuthState]);
+
+  const onSaveAccount = React.useCallback(async () => {
+    setBusy(true);
+    setError(null);
+    setStatusText(null);
+    try {
+      const nextAuthState = await saveLeagueAccount({
+        email: accountEmail,
+        password: accountPassword,
+      });
+      setAuthState(nextAuthState);
+      setAccountPassword("");
+      setStatusText(
+        "Klart. Om Supabase kräver bekräftelse får du ett mejl med en länk.",
+      );
+      returnToList();
+    } catch (caughtError) {
+      setError(getFriendlyError(caughtError));
+    } finally {
+      setBusy(false);
+    }
+  }, [accountEmail, accountPassword, returnToList]);
+
+  const onSignIn = React.useCallback(async () => {
+    setBusy(true);
+    setError(null);
+    setStatusText(null);
+    try {
+      const nextAuthState = await signInToLeagueAccount({
+        email: accountEmail,
+        password: accountPassword,
+      });
+      setAuthState(nextAuthState);
+      setAccountPassword("");
+      setProfileReady(true);
+      await refreshLeagues();
+      returnToList();
+    } catch (caughtError) {
+      setError(getFriendlyError(caughtError));
+    } finally {
+      setBusy(false);
+    }
+  }, [accountEmail, accountPassword, refreshLeagues, returnToList]);
+
+  const onSendPasswordReset = React.useCallback(async () => {
+    setBusy(true);
+    setError(null);
+    setStatusText(null);
+    try {
+      await sendLeaguePasswordReset(accountEmail);
+      setStatusText("Mejlet är skickat. Öppna länken och välj nytt lösenord.");
+    } catch (caughtError) {
+      setError(getFriendlyError(caughtError));
+    } finally {
+      setBusy(false);
+    }
+  }, [accountEmail]);
+
+  const onUpdatePassword = React.useCallback(async () => {
+    setBusy(true);
+    setError(null);
+    setStatusText(null);
+    try {
+      await updateLeaguePassword(accountPassword);
+      setAccountPassword("");
+      setStatusText("Lösenordet är ändrat.");
+      await refreshAuthState();
+      setProfileReady(true);
+      returnToList();
+    } catch (caughtError) {
+      setError(getFriendlyError(caughtError));
+    } finally {
+      setBusy(false);
+    }
+  }, [accountPassword, refreshAuthState, returnToList]);
+
+  const onSignOut = React.useCallback(async () => {
+    setBusy(true);
+    setError(null);
+    setStatusText(null);
+    try {
+      await signOutLeagueAccount();
+      setProfileReady(false);
+      setLeagues([]);
+      setAuthState(emptyAuthState);
+      returnToList();
+      setStatusText("Du är utloggad.");
+    } catch (caughtError) {
+      setError(getFriendlyError(caughtError));
+    } finally {
+      setBusy(false);
+    }
+  }, [returnToList]);
 
   const onCreateLeague = React.useCallback(async () => {
     setBusy(true);
@@ -144,13 +334,13 @@ export default function LeaguesScreen() {
       await createLeague(leagueName);
       setLeagueName(defaultLeagueName);
       await refreshLeagues();
-      setActiveTab("list");
+      returnToList();
     } catch (caughtError) {
       setError(getFriendlyError(caughtError));
     } finally {
       setBusy(false);
     }
-  }, [leagueName, refreshLeagues]);
+  }, [leagueName, refreshLeagues, returnToList]);
 
   const onJoinLeague = React.useCallback(async () => {
     setBusy(true);
@@ -159,13 +349,88 @@ export default function LeaguesScreen() {
       await joinLeague(joinCode);
       setJoinCode("");
       await refreshLeagues();
-      setActiveTab("list");
+      returnToList();
     } catch (caughtError) {
       setError(getFriendlyError(caughtError));
     } finally {
       setBusy(false);
     }
-  }, [joinCode, refreshLeagues]);
+  }, [joinCode, refreshLeagues, returnToList]);
+
+  const replaceLeague = React.useCallback((nextLeague: League) => {
+    setLeagues((currentLeagues) =>
+      currentLeagues.map((league) =>
+        league.id === nextLeague.id ? nextLeague : league,
+      ),
+    );
+  }, []);
+
+  const onRenameLeague = React.useCallback(
+    async (league: League) => {
+      setBusy(true);
+      setError(null);
+      try {
+        const nextLeague = await updateLeagueName({
+          leagueId: league.id,
+          name: editingLeagueName,
+        });
+        replaceLeague(nextLeague);
+        setEditingLeagueId(null);
+      } catch (caughtError) {
+        setError(getFriendlyError(caughtError));
+      } finally {
+        setBusy(false);
+      }
+    },
+    [editingLeagueName, replaceLeague],
+  );
+
+  const onRemoveMember = React.useCallback(
+    async (league: League, memberId: string) => {
+      setBusy(true);
+      setError(null);
+      try {
+        const nextLeague = await removeLeagueMember({
+          leagueId: league.id,
+          memberId,
+        });
+        if (nextLeague) {
+          replaceLeague(nextLeague);
+        } else {
+          setLeagues((currentLeagues) =>
+            currentLeagues.filter((item) => item.id !== league.id),
+          );
+        }
+      } catch (caughtError) {
+        setError(getFriendlyError(caughtError));
+      } finally {
+        setBusy(false);
+      }
+    },
+    [replaceLeague],
+  );
+
+  const onDeleteLeague = React.useCallback(async (league: League) => {
+    const confirmed = window.confirm(
+      `Ta bort ${league.name}? Alla i ligan förlorar ligan.`,
+    );
+    if (!confirmed) {
+      return;
+    }
+
+    setBusy(true);
+    setError(null);
+    try {
+      await deleteLeague(league.id);
+      setLeagues((currentLeagues) =>
+        currentLeagues.filter((item) => item.id !== league.id),
+      );
+    } catch (caughtError) {
+      setError(getFriendlyError(caughtError));
+    } finally {
+      setBusy(false);
+    }
+  }, []);
 
   const copyCode = React.useCallback(async (code: string) => {
     await navigator?.clipboard?.writeText(code);
@@ -195,8 +460,83 @@ export default function LeaguesScreen() {
         ) : null}
 
         {error ? <div className={styles.error}>{error}</div> : null}
+        {statusText ? <div className={styles.status}>{statusText}</div> : null}
 
-        {!profileReady ? (
+        {activeTab === "login" ? (
+          <section className={styles.panel}>
+            <div>
+              <h2 className={styles.formTitle}>Logga in</h2>
+              <p className={styles.helperText}>
+                Har du sparat ditt konto kan du hämta dina ligor här.
+              </p>
+            </div>
+            <input
+              className={styles.input}
+              inputMode="email"
+              onChange={(event) => setAccountEmail(event.target.value)}
+              placeholder="E-postadress"
+              type="email"
+              value={accountEmail}
+            />
+            <input
+              className={styles.input}
+              onChange={(event) => setAccountPassword(event.target.value)}
+              placeholder="Lösenord"
+              type="password"
+              value={accountPassword}
+            />
+            <Button
+              fullWidth
+              onClick={onSignIn}
+              text={busy ? "Loggar in..." : "Logga in"}
+            />
+            <button
+              className={styles.textAction}
+              onClick={() => {
+                openTab("forgot");
+              }}
+              type="button"
+            >
+              Jag har glömt lösenordet
+            </button>
+          </section>
+        ) : activeTab === "forgot" ? (
+          <section className={styles.panel}>
+            <div>
+              <h2 className={styles.formTitle}>Glömt lösenord?</h2>
+              <p className={styles.helperText}>
+                Skriv din e-post så skickar vi en länk. Om du redan öppnat
+                länken kan du välja ett nytt lösenord här.
+              </p>
+            </div>
+            <input
+              className={styles.input}
+              inputMode="email"
+              onChange={(event) => setAccountEmail(event.target.value)}
+              placeholder="E-postadress"
+              type="email"
+              value={accountEmail}
+            />
+            <Button
+              fullWidth
+              minimal
+              onClick={onSendPasswordReset}
+              text={busy ? "Skickar..." : "Skicka återställningsmejl"}
+            />
+            <input
+              className={styles.input}
+              onChange={(event) => setAccountPassword(event.target.value)}
+              placeholder="Nytt lösenord"
+              type="password"
+              value={accountPassword}
+            />
+            <Button
+              fullWidth
+              onClick={onUpdatePassword}
+              text={busy ? "Sparar..." : "Spara nytt lösenord"}
+            />
+          </section>
+        ) : !profileReady ? (
           <section className={styles.panel}>
             <div>
               <h2 className={styles.formTitle}>Vad ska du heta?</h2>
@@ -218,6 +558,15 @@ export default function LeaguesScreen() {
                 text={busy ? "Sparar..." : "Fortsätt"}
               />
             </div>
+            <button
+              className={styles.textAction}
+              onClick={() => {
+                openTab("login");
+              }}
+              type="button"
+            >
+              Jag har redan konto
+            </button>
           </section>
         ) : (
           <>
@@ -227,8 +576,7 @@ export default function LeaguesScreen() {
                   <Button
                     fullWidth
                     onClick={() => {
-                      setError(null);
-                      setActiveTab("create");
+                      openTab("create");
                     }}
                     text="Skapa ny liga"
                   />
@@ -236,11 +584,44 @@ export default function LeaguesScreen() {
                     fullWidth
                     minimal
                     onClick={() => {
-                      setError(null);
-                      setActiveTab("join");
+                      openTab("join");
                     }}
                     text="Gå med i liga"
                   />
+                </section>
+
+                <section className={styles.accountNudge}>
+                  <div>
+                    <div className={styles.accountNudgeLabel}>
+                      Rekommenderas
+                    </div>
+                    <h2 className={styles.accountNudgeTitle}>
+                      {authState.isAnonymous
+                        ? "Spara ditt konto"
+                        : "Ditt konto är sparat"}
+                    </h2>
+                    <p className={styles.helperText}>
+                      {authState.isAnonymous
+                        ? "Med e-post och lösenord kan du hitta dina ligor igen på en annan mobil eller surfplatta."
+                        : authState.email
+                          ? `Inloggad som ${authState.email}. Dina ligor följer med.`
+                          : "Dina ligor följer med när du är inloggad."}
+                    </p>
+                  </div>
+                  <button
+                    className={styles.accountNudgeButton}
+                    onClick={() => {
+                      openTab("account");
+                    }}
+                    type="button"
+                  >
+                    {authState.isAnonymous ? "Spara konto" : "Hantera konto"}
+                  </button>
+                  {!authState.isAnonymous ? (
+                    <Link className={styles.deviceLink} href="/devices">
+                      Mina enheter
+                    </Link>
+                  ) : null}
                 </section>
 
                 <section className={styles.leagueList}>
@@ -265,37 +646,96 @@ export default function LeaguesScreen() {
                         transition={{ duration: 0.22 }}
                       >
                         <div className={styles.leagueHeader}>
-                          <h2 className={styles.leagueTitle}>{league.name}</h2>
-                          <div
-                            style={{
-                              display: "flex",
-                              alignItems: "center",
-                              gap: "8px",
-                            }}
-                          >
+                          <div className={styles.leagueTitleStack}>
+                            {editingLeagueId === league.id ? (
+                              <div className={styles.renameRow}>
+                                <input
+                                  aria-label="Nytt liganamn"
+                                  className={styles.compactInput}
+                                  maxLength={48}
+                                  onChange={(event) =>
+                                    setEditingLeagueName(event.target.value)
+                                  }
+                                  value={editingLeagueName}
+                                />
+                                <button
+                                  className={styles.smallAction}
+                                  disabled={busy}
+                                  onClick={() => void onRenameLeague(league)}
+                                  type="button"
+                                >
+                                  Spara
+                                </button>
+                              </div>
+                            ) : (
+                              <h2 className={styles.leagueTitle}>
+                                {league.name}
+                              </h2>
+                            )}
+                            <div className={styles.memberCount}>
+                              {league.members.length} spelare
+                            </div>
+                          </div>
+                          <div className={styles.codeActions}>
                             <div className={styles.codeBox}>
                               {league.joinCode}
                             </div>
                             <button
                               className={classNames(
-                                buttonStyles.button,
-                                buttonStyles.minimal,
+                                styles.smallAction,
+                                styles.copyAction,
                               )}
                               onClick={() => void copyCode(league.joinCode)}
-                              style={{
-                                padding: "4px 12px",
-                                minHeight: "auto",
-                                fontSize: "12px",
+                              type="button"
+                            >
+                              {copyText}
+                            </button>
+                          </div>
+                        </div>
+
+                        <div className={styles.manageBar}>
+                          {league.canManage ? (
+                            <>
+                              <button
+                                className={styles.textAction}
+                                disabled={busy}
+                                onClick={() => {
+                                  setEditingLeagueId(league.id);
+                                  setEditingLeagueName(league.name);
+                                }}
+                                type="button"
+                              >
+                                Byt namn
+                              </button>
+                              <button
+                                className={styles.textActionDanger}
+                                disabled={busy}
+                                onClick={() => void onDeleteLeague(league)}
+                                type="button"
+                              >
+                                Ta bort liga
+                              </button>
+                            </>
+                          ) : (
+                            <button
+                              className={styles.textActionDanger}
+                              disabled={busy}
+                              onClick={() => {
+                                const currentMember = league.members.find(
+                                  (member) => member.isCurrentUser,
+                                );
+                                if (currentMember) {
+                                  void onRemoveMember(
+                                    league,
+                                    currentMember.memberId,
+                                  );
+                                }
                               }}
                               type="button"
                             >
-                              <span className={buttonStyles.content}>
-                                <span className={buttonStyles.label}>
-                                  {copyText}
-                                </span>
-                              </span>
+                              Lämna liga
                             </button>
-                          </div>
+                          )}
                         </div>
 
                         {league.firstWeekIsShort ? (
@@ -345,8 +785,25 @@ export default function LeaguesScreen() {
                                   {todayLabel(member.todayScore)}
                                 </div>
                               </div>
-                              <div className={styles.score}>
-                                {member.weekScore}
+                              <div className={styles.scoreCell}>
+                                <div className={styles.score}>
+                                  {member.weekScore}
+                                </div>
+                                {league.canManage && !member.isCurrentUser ? (
+                                  <button
+                                    className={styles.kickButton}
+                                    disabled={busy}
+                                    onClick={() =>
+                                      void onRemoveMember(
+                                        league,
+                                        member.memberId,
+                                      )
+                                    }
+                                    type="button"
+                                  >
+                                    Ta bort
+                                  </button>
+                                ) : null}
                               </div>
                             </div>
                           ))}
@@ -360,17 +817,6 @@ export default function LeaguesScreen() {
 
             {activeTab === "create" && (
               <>
-                <section className={styles.tabMenuSingle}>
-                  <Button
-                    fullWidth
-                    minimal
-                    onClick={() => {
-                      setError(null);
-                      setActiveTab("list");
-                    }}
-                    text="Tillbaka till mina ligor"
-                  />
-                </section>
                 <section className={styles.panel}>
                   <div>
                     <h2 className={styles.formTitle}>Skapa ny liga</h2>
@@ -394,19 +840,65 @@ export default function LeaguesScreen() {
               </>
             )}
 
+            {activeTab === "account" && (
+              <>
+                <section className={styles.panel}>
+                  <div>
+                    <h2 className={styles.formTitle}>
+                      {authState.isAnonymous ? "Spara kontot" : "Ditt konto"}
+                    </h2>
+                    <p className={styles.helperText}>
+                      {authState.isAnonymous
+                        ? "Det här är frivilligt. Det gör bara att ligorna inte försvinner om du byter telefon eller rensar webbläsaren."
+                        : "Du kan logga in med samma e-post på en annan enhet."}
+                    </p>
+                  </div>
+                  {authState.isAnonymous ? (
+                    <>
+                      <input
+                        className={styles.input}
+                        inputMode="email"
+                        onChange={(event) =>
+                          setAccountEmail(event.target.value)
+                        }
+                        placeholder="E-postadress"
+                        type="email"
+                        value={accountEmail}
+                      />
+                      <input
+                        className={styles.input}
+                        onChange={(event) =>
+                          setAccountPassword(event.target.value)
+                        }
+                        placeholder="Välj lösenord"
+                        type="password"
+                        value={accountPassword}
+                      />
+                      <Button
+                        fullWidth
+                        onClick={onSaveAccount}
+                        text={busy ? "Sparar..." : "Spara konto"}
+                      />
+                    </>
+                  ) : (
+                    <>
+                      <div className={styles.savedAccountBox}>
+                        {authState.email || "Inloggat konto"}
+                      </div>
+                      <Button
+                        fullWidth
+                        minimal
+                        onClick={onSignOut}
+                        text={busy ? "Loggar ut..." : "Logga ut"}
+                      />
+                    </>
+                  )}
+                </section>
+              </>
+            )}
+
             {activeTab === "join" && (
               <>
-                <section className={styles.tabMenuSingle}>
-                  <Button
-                    fullWidth
-                    minimal
-                    onClick={() => {
-                      setError(null);
-                      setActiveTab("list");
-                    }}
-                    text="Tillbaka till mina ligor"
-                  />
-                </section>
                 <section className={styles.panel}>
                   <div>
                     <h2 className={styles.formTitle}>Gå med i liga</h2>

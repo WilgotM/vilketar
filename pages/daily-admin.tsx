@@ -59,6 +59,8 @@ export default function DailyAdminPage() {
   const { deckNodes, loadDecks, rootDeckId } = useDecks();
   const todayKey = React.useMemo(() => getCurrentUtcDateKey(), []);
   const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
+  const [usePassword, setUsePassword] = React.useState(true);
   const [status, setStatus] = React.useState("");
   const [isAdmin, setIsAdmin] = React.useState(false);
   const [loading, setLoading] = React.useState(true);
@@ -243,18 +245,34 @@ export default function DailyAdminPage() {
       return;
     }
 
-    const response = await supabase.auth.signInWithOtp({
-      email: email.trim(),
-      options: {
-        emailRedirectTo:
-          typeof window === "undefined" ? undefined : window.location.href,
-      },
-    });
-    setStatus(
-      response.error
-        ? response.error.message
-        : "Kolla mailen och öppna inloggningslänken.",
-    );
+    if (usePassword) {
+      if (!password.trim()) {
+        setStatus("Ange lösenord.");
+        return;
+      }
+      const response = await supabase.auth.signInWithPassword({
+        email: email.trim(),
+        password: password.trim(),
+      });
+      if (response.error) {
+        setStatus(response.error.message);
+      } else {
+        setStatus("Inloggad!");
+      }
+    } else {
+      const response = await supabase.auth.signInWithOtp({
+        email: email.trim(),
+        options: {
+          emailRedirectTo:
+            typeof window === "undefined" ? undefined : window.location.href,
+        },
+      });
+      setStatus(
+        response.error
+          ? response.error.message
+          : "Kolla mailen och öppna inloggningslänken.",
+      );
+    }
   }
 
   async function saveOverride(dateKey: string, qids: string[]) {
@@ -358,8 +376,7 @@ export default function DailyAdminPage() {
           <p className={styles.eyebrow}>VilketÅr</p>
           <h1 className={styles.title}>Daily admin</h1>
           <p className={styles.subtitle}>
-            Logga in med en mailadress som finns i Supabase-tabellen
-            daily_admins.
+            Logga in med din e-post och lösenord för att hantera dagliga deck.
           </p>
           <input
             className={styles.input}
@@ -368,8 +385,28 @@ export default function DailyAdminPage() {
             type="email"
             value={email}
           />
+          {usePassword ? (
+            <input
+              className={styles.input}
+              onChange={(event) => setPassword(event.target.value)}
+              placeholder="Lösenord"
+              type="password"
+              value={password}
+            />
+          ) : null}
           <button className={styles.button} type="submit">
-            Skicka magisk länk
+            {usePassword ? "Logga in" : "Skicka magisk länk"}
+          </button>
+          <button
+            className={styles.secondaryButton}
+            onClick={() => {
+              setUsePassword(!usePassword);
+              setStatus("");
+            }}
+            type="button"
+            style={{ marginTop: "4px" }}
+          >
+            {usePassword ? "Använd magisk länk" : "Använd lösenord"}
           </button>
           {status ? <p className={styles.status}>{status}</p> : null}
         </form>

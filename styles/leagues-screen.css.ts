@@ -7,7 +7,8 @@ export const screen = style({
   display: "flex",
   flexDirection: "column",
   margin: "0 auto",
-  maxWidth: vars.size.pageWidth,
+  maxWidth: "46rem",
+  overflowX: "hidden",
   width: "100%",
   paddingBottom: vars.space["4xl"],
 });
@@ -17,6 +18,11 @@ export const hero = style({
   gap: vars.space.xs,
   padding: `${vars.space.xl} ${vars.space.xl} ${vars.space.md}`,
   textAlign: "center",
+  "@media": {
+    [media.narrow]: {
+      padding: `${vars.space.lg} ${vars.space.md} ${vars.space.md}`,
+    },
+  },
 });
 
 export const eyebrow = style([
@@ -32,9 +38,15 @@ export const title = style({
   fontFamily: vars.font.body,
   fontSize: vars.fontSize["2xl"],
   fontWeight: vars.fontWeight.bold,
-  letterSpacing: "-0.02em",
+  letterSpacing: 0,
   lineHeight: vars.lineHeight.tight,
   margin: 0,
+  overflowWrap: "anywhere",
+  "@media": {
+    [media.narrow]: {
+      fontSize: vars.fontSize.xl,
+    },
+  },
 });
 
 export const intro = style([
@@ -43,19 +55,30 @@ export const intro = style([
     fontSize: vars.fontSize.md,
     lineHeight: vars.lineHeight.snug,
     margin: "0 auto",
-    maxWidth: "28rem",
+    maxWidth: "16rem",
+    overflowWrap: "anywhere",
     textAlign: "center",
+    textWrap: "wrap",
   },
 ]);
 
 export const panel = style({
   background: vars.color.surfaceStrong,
   border: `1px solid ${vars.color.border}`,
-  borderRadius: vars.radius.xl,
+  borderRadius: vars.radius.md,
+  alignSelf: "center",
   display: "grid",
   gap: vars.space.lg,
-  margin: `0 ${vars.space.xl} ${vars.space.xl}`,
+  margin: `0 0 ${vars.space.xl}`,
   padding: vars.space.xl,
+  width: `calc(100% - (${vars.space.xl} * 2))`,
+  "@media": {
+    [media.narrow]: {
+      margin: `0 0 ${vars.space.lg}`,
+      padding: vars.space.lg,
+      width: `calc(100% - (${vars.space.md} * 2))`,
+    },
+  },
 });
 
 export const nameForm = style({
@@ -77,7 +100,7 @@ export const formGrid = style({
 export const input = style({
   background: vars.color.backdrop,
   border: `1px solid ${vars.color.border}`,
-  borderRadius: vars.radius.md,
+  borderRadius: vars.radius.sm,
   color: vars.color.text,
   fontSize: vars.fontSize.base,
   minHeight: vars.size.controlHeight,
@@ -112,38 +135,132 @@ export const tabMenu = style({
   display: "flex",
   gap: vars.space.md,
   padding: `${vars.space.md} ${vars.space.xl} ${vars.space.xl}`,
+  "@media": {
+    [media.narrow]: {
+      display: "grid",
+      gridTemplateColumns: "1fr",
+      paddingTop: vars.space.sm,
+    },
+  },
 });
 
 export const tabMenuSingle = style({
+  alignSelf: "center",
   display: "grid",
   gap: vars.space.md,
   gridTemplateColumns: "1fr",
-  margin: `0 ${vars.space.xl} ${vars.space.lg}`,
+  margin: `0 0 ${vars.space.lg}`,
+  width: `calc(100% - (${vars.space.xl} * 2))`,
+  "@media": {
+    [media.narrow]: {
+      margin: `0 0 ${vars.space.lg}`,
+      width: `calc(100% - (${vars.space.md} * 2))`,
+    },
+  },
+});
+
+export const accountNudge = style({
+  alignItems: "center",
+  alignSelf: "center",
+  background: `linear-gradient(135deg, color-mix(in srgb, ${vars.color.text} 12%, transparent), color-mix(in srgb, ${vars.color.accentLogo} 16%, transparent)), ${vars.color.surfaceStrong}`,
+  border: `1px solid ${vars.color.borderStrong}`,
+  borderRadius: vars.radius.md,
+  display: "grid",
+  gap: vars.space.md,
+  gridTemplateColumns: "minmax(0, 1fr) auto auto",
+  margin: `0 0 ${vars.space.xl}`,
+  padding: vars.space.lg,
+  width: `calc(100% - (${vars.space.xl} * 2))`,
+  "@media": {
+    [media.narrow]: {
+      alignItems: "stretch",
+      gridTemplateColumns: "1fr",
+      margin: `0 0 ${vars.space.lg}`,
+      width: `calc(100% - (${vars.space.md} * 2))`,
+    },
+  },
+});
+
+export const accountNudgeLabel = style({
+  color: vars.color.accentLogo,
+  fontSize: vars.fontSize.xs,
+  fontWeight: vars.fontWeight.bold,
+  letterSpacing: "0.08em",
+  lineHeight: vars.lineHeight.tight,
+  marginBottom: vars.space.xxs,
+  textTransform: "uppercase",
+});
+
+export const accountNudgeTitle = style({
+  color: vars.color.text,
+  fontSize: vars.fontSize.xl,
+  fontWeight: vars.fontWeight.bold,
+  lineHeight: vars.lineHeight.tight,
+  margin: 0,
+});
+
+export const accountNudgeButton = style({
+  appearance: "none",
+  background: vars.color.text,
+  border: 0,
+  borderRadius: vars.radius.sm,
+  color: vars.color.backdropStrong,
+  cursor: "pointer",
+  fontFamily: vars.font.body,
+  fontSize: vars.fontSize.base,
+  fontWeight: vars.fontWeight.bold,
+  minHeight: vars.size.controlHeight,
+  padding: `${vars.space.md} ${vars.space.lg}`,
+});
+
+export const deviceLink = style({
+  color: vars.color.text,
+  fontSize: vars.fontSize.sm,
+  fontWeight: vars.fontWeight.semibold,
+  textDecoration: "none",
+  whiteSpace: "nowrap",
 });
 
 export const leagueList = style({
   display: "grid",
-  gap: vars.space["2xl"],
+  gap: vars.space.xl,
   padding: `0 ${vars.space.xl}`,
+  "@media": {
+    [media.narrow]: {
+      padding: `0 ${vars.space.md}`,
+    },
+  },
 });
 
 export const leagueCard = style({
   background: vars.color.surfaceStrong,
   border: `1px solid ${vars.color.border}`,
-  borderRadius: vars.radius.xl,
+  borderRadius: vars.radius.md,
   display: "flex",
   flexDirection: "column",
   overflow: "hidden",
+  boxShadow: "0 18px 48px rgb(15 23 42 / 0.08)",
 });
 
 export const leagueHeader = style({
-  alignItems: "center",
+  alignItems: "flex-start",
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",
   gap: vars.space.md,
   padding: `${vars.space.lg} ${vars.space.xl}`,
-  borderBottom: `1px solid ${vars.color.border}`,
+  "@media": {
+    [media.narrow]: {
+      flexDirection: "column",
+      padding: `${vars.space.lg} ${vars.space.lg} ${vars.space.md}`,
+    },
+  },
+});
+
+export const leagueTitleStack = style({
+  display: "grid",
+  gap: vars.space.xxs,
+  minWidth: 0,
 });
 
 export const leagueTitle = style({
@@ -152,6 +269,19 @@ export const leagueTitle = style({
   lineHeight: vars.lineHeight.tight,
   margin: 0,
   color: vars.color.text,
+  overflowWrap: "anywhere",
+});
+
+export const memberCount = style({
+  color: vars.color.textMuted,
+  fontSize: vars.fontSize.sm,
+});
+
+export const codeActions = style({
+  alignItems: "center",
+  display: "flex",
+  gap: vars.space.sm,
+  flexWrap: "wrap",
 });
 
 export const codeBox = style({
@@ -168,6 +298,115 @@ export const codeBox = style({
   border: `1px solid ${vars.color.border}`,
 });
 
+export const smallAction = style({
+  appearance: "none",
+  background: vars.color.backdrop,
+  border: `1px solid ${vars.color.border}`,
+  borderRadius: vars.radius.sm,
+  color: vars.color.text,
+  cursor: "pointer",
+  fontFamily: vars.font.body,
+  fontSize: vars.fontSize.sm,
+  fontWeight: vars.fontWeight.semibold,
+  minHeight: "2rem",
+  padding: `${vars.space.xxs} ${vars.space.sm}`,
+  selectors: {
+    "&:disabled": {
+      cursor: "wait",
+      opacity: 0.62,
+    },
+  },
+});
+
+export const copyAction = style({
+  color: vars.color.textMuted,
+});
+
+export const manageBar = style({
+  alignItems: "center",
+  borderTop: `1px solid ${vars.color.border}`,
+  display: "flex",
+  gap: vars.space.sm,
+  padding: `${vars.space.sm} ${vars.space.xl}`,
+  "@media": {
+    [media.narrow]: {
+      padding: `${vars.space.sm} ${vars.space.lg}`,
+    },
+  },
+});
+
+export const textAction = style({
+  appearance: "none",
+  background: "transparent",
+  border: 0,
+  color: vars.color.textMuted,
+  cursor: "pointer",
+  fontFamily: vars.font.body,
+  fontSize: vars.fontSize.sm,
+  fontWeight: vars.fontWeight.semibold,
+  padding: `${vars.space.xs} ${vars.space.xs}`,
+});
+
+export const textActionDanger = style([
+  textAction,
+  {
+    color: vars.color.danger,
+  },
+]);
+
+export const renameRow = style({
+  alignItems: "center",
+  display: "grid",
+  gap: vars.space.sm,
+  gridTemplateColumns: "minmax(0, 1fr) auto",
+});
+
+export const compactInput = style([
+  input,
+  {
+    fontSize: vars.fontSize.md,
+    minHeight: "2.25rem",
+    padding: `${vars.space.xs} ${vars.space.sm}`,
+  },
+]);
+
+export const savedAccountBox = style({
+  background: vars.color.backdrop,
+  border: `1px solid ${vars.color.border}`,
+  borderRadius: vars.radius.sm,
+  color: vars.color.text,
+  fontSize: vars.fontSize.base,
+  fontWeight: vars.fontWeight.semibold,
+  padding: `${vars.space.md} ${vars.space.lg}`,
+  overflowWrap: "anywhere",
+});
+
+export const deviceList = style({
+  display: "grid",
+  gap: vars.space.sm,
+});
+
+export const deviceRow = style({
+  alignItems: "center",
+  background: vars.color.backdrop,
+  border: `1px solid ${vars.color.border}`,
+  borderRadius: vars.radius.sm,
+  display: "grid",
+  gap: vars.space.md,
+  gridTemplateColumns: "minmax(0, 1fr) auto",
+  padding: vars.space.md,
+});
+
+export const deviceName = style({
+  alignItems: "center",
+  color: vars.color.text,
+  display: "flex",
+  flexWrap: "wrap",
+  fontSize: vars.fontSize.base,
+  fontWeight: vars.fontWeight.bold,
+  gap: vars.space.sm,
+});
+
 export const notice = style({
   background: vars.color.accentSoft,
   color: vars.color.textMuted,
@@ -175,7 +414,7 @@ export const notice = style({
   lineHeight: vars.lineHeight.body,
   padding: vars.space.md,
   margin: `${vars.space.md} ${vars.space.xl} 0`,
-  borderRadius: vars.radius.md,
+  borderRadius: vars.radius.sm,
   border: `1px solid ${vars.color.accentTint}`,
 });
 
@@ -208,7 +447,7 @@ export const memberList = style({
 
 export const memberListHeader = style({
   display: "grid",
-  gridTemplateColumns: "2rem 1fr 3.5rem",
+  gridTemplateColumns: "2rem minmax(0, 1fr) minmax(4.5rem, auto)",
   gap: vars.space.sm,
   padding: `${vars.space.xs} ${vars.space.xl}`,
   fontSize: vars.fontSize.xs,
@@ -222,13 +461,18 @@ export const memberListHeader = style({
 export const memberRow = style({
   alignItems: "center",
   display: "grid",
-  gridTemplateColumns: "2rem 1fr 3.5rem",
+  gridTemplateColumns: "2rem minmax(0, 1fr) minmax(4.5rem, auto)",
   gap: vars.space.sm,
   padding: `${vars.space.md} ${vars.space.xl}`,
   borderBottom: `1px solid ${vars.color.border}`,
   minHeight: "4rem",
   color: vars.color.text,
   fontSize: vars.fontSize.base,
+  "@media": {
+    [media.narrow]: {
+      padding: `${vars.space.md} ${vars.space.lg}`,
+    },
+  },
   selectors: {
     "&:last-child": {
       borderBottom: "none",
@@ -253,6 +497,8 @@ export const memberName = style({
   display: "flex",
   alignItems: "center",
   gap: vars.space.sm,
+  minWidth: 0,
+  overflowWrap: "anywhere",
 });
 
 export const youBadge = style({
@@ -276,6 +522,31 @@ export const score = style({
   fontSize: vars.fontSize.lg,
 });
 
+export const scoreCell = style({
+  alignItems: "flex-end",
+  display: "flex",
+  flexDirection: "column",
+  gap: vars.space.xxs,
+});
+
+export const kickButton = style({
+  appearance: "none",
+  background: "transparent",
+  border: 0,
+  color: vars.color.danger,
+  cursor: "pointer",
+  fontFamily: vars.font.body,
+  fontSize: vars.fontSize.xs,
+  fontWeight: vars.fontWeight.semibold,
+  padding: 0,
+  selectors: {
+    "&:disabled": {
+      cursor: "wait",
+      opacity: 0.62,
+    },
+  },
+});
+
 export const empty = style([
   bodyTextMuted,
   {
@@ -286,11 +557,28 @@ export const empty = style([
 ]);
 
 export const error = style({
+  alignSelf: "center",
   background: vars.color.dangerSoft,
   border: `1px solid ${vars.color.danger}`,
   borderRadius: vars.radius.md,
   color: vars.color.text,
   fontSize: vars.fontSize.sm,
   padding: vars.space.md,
-  margin: `0 ${vars.space.xl} ${vars.space.xl}`,
+  margin: `0 0 ${vars.space.xl}`,
+  width: `calc(100% - (${vars.space.xl} * 2))`,
+  "@media": {
+    [media.narrow]: {
+      margin: `0 0 ${vars.space.lg}`,
+      width: `calc(100% - (${vars.space.md} * 2))`,
+    },
+  },
 });
+
+export const status = style([
+  error,
+  {
+    background: vars.color.accentSoft,
+    borderColor: vars.color.accentTint,
+    color: vars.color.text,
+  },
+]);
