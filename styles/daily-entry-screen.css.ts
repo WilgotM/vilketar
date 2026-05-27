@@ -26,6 +26,14 @@ export const dailyLabel = style([
   },
 ]);
 
+export const statusText = style({
+  color: vars.color.textMuted,
+  fontSize: vars.fontSize.sm,
+  lineHeight: 1.45,
+  margin: 0,
+  textAlign: "center",
+});
+
 export const score = style({
   display: "flex",
   justifyContent: "center",

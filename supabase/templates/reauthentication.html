@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Din VilketÅr-kod</title>
+  </head>
+  <body
+    style="
+      margin: 0;
+      background: #f6f3ec;
+      color: #1f211c;
+      font-family:
+        -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Arial,
+        sans-serif;
+    "
+  >
+    <table
+      role="presentation"
+      width="100%"
+      cellspacing="0"
+      cellpadding="0"
+      style="background: #f6f3ec; padding: 28px 12px"
+    >
+      <tr>
+        <td align="center">
+          <table
+            role="presentation"
+            width="100%"
+            cellspacing="0"
+            cellpadding="0"
+            style="
+              max-width: 560px;
+              background: #fffdf7;
+              border: 1px solid #e2d8c5;
+              border-radius: 18px;
+              overflow: hidden;
+            "
+          >
+            <tr>
+              <td
+                style="background: #22312b; color: #fffdf7; padding: 24px 28px"
+              >
+                <div
+                  style="
+                    font-size: 14px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    letter-spacing: 0.08em;
+                  "
+                >
+                  VilketÅr
+                </div>
+                <div
+                  style="
+                    font-size: 28px;
+                    font-weight: 800;
+                    line-height: 1.12;
+                    margin-top: 18px;
+                  "
+                >
+                  Din bekräftelsekod
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 28px">
+                <p
+                  style="
+                    font-size: 16px;
+                    line-height: 1.55;
+                    margin: 0 0 18px;
+                    color: #55584f;
+                  "
+                >
+                  Använd koden nedan för att bekräfta åtgärden.
+                </p>
+                <p
+                  style="
+                    font-size: 34px;
+                    letter-spacing: 0.12em;
+                    font-weight: 800;
+                    margin: 0 0 24px;
+                    color: #22312b;
+                  "
+                >
+                  {{ .Token }}
+                </p>
+                <p
+                  style="
+                    font-size: 14px;
+                    line-height: 1.55;
+                    margin: 0;
+                    color: #777a70;
+                  "
+                >
+                  Om du inte bad om detta kan du ignorera mejlet.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

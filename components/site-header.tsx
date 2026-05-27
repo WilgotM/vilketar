@@ -41,7 +41,7 @@ export default function SiteHeader(props: Props) {
     }
 
     if (backHref) {
-      void router.push(backHref);
+      void router.replace(backHref);
       return;
     }
 

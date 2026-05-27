@@ -98,6 +98,15 @@ Spelaren får bara välja ett namn i appen. Bakom kulisserna skapas en anonym
 Supabase-användare så ligor, veckopoäng och dagens resultat kan kopplas till
 samma webbläsare.
 
+Auth-mejlmallar ligger i `supabase/templates/` och kopplas i
+`supabase/config.toml`. När en anonym användare sparar sitt första konto med
+e-post använder Supabase internt mallen `email_change`, så den mallen är skriven
+för både första kontobekräftelse och riktiga e-postbyten.
+
+För publik drift ska Supabase Auth använda egen SMTP med en avsändare som
+`VilketÅr <no-reply@...>`. Supabases inbyggda SMTP är bara för test och kan visa
+`Supabase Auth` som avsändare.
+
 ## Cloudflare Pages
 
 Cloudflare Pages-projektet heter `vilketar`.

@@ -19,6 +19,9 @@ export default function DailyPage() {
     null,
   );
   const [checkingServerResult, setCheckingServerResult] = React.useState(true);
+  const [serverStatusText, setServerStatusText] = React.useState<string | null>(
+    null,
+  );
   const dateKey = React.useMemo(() => getCurrentUtcDateKey(), []);
 
   const loadCompletionState = React.useCallback(async () => {
@@ -34,6 +37,7 @@ export default function DailyPage() {
     }
 
     try {
+      setServerStatusText(null);
       const serverResult = await getStoredDailyResult(dateKey);
       if (serverResult) {
         setCompletedResults(
@@ -42,6 +46,10 @@ export default function DailyPage() {
         setCompletedScore(serverResult.score);
         return true;
       }
+    } catch {
+      setServerStatusText(
+        "Kunde inte kontrollera sparat resultat just nu. Du kan spela på den här enheten ändå.",
+      );
     } finally {
       setCheckingServerResult(false);
     }
@@ -73,6 +81,7 @@ export default function DailyPage() {
           dailyDateKey={dateKey}
           isChecking={checkingServerResult}
           onStart={startDaily}
+          statusText={serverStatusText}
         />
       </>
     );

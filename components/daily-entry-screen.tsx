@@ -15,6 +15,7 @@ interface Props {
   embedded?: boolean;
   isChecking?: boolean;
   onStart: () => void;
+  statusText?: string | null;
 }
 
 const defaultShareText = "Dela";
@@ -27,6 +28,7 @@ export default function DailyEntryScreen(props: Props) {
     embedded = false,
     isChecking = false,
     onStart,
+    statusText = null,
   } = props;
   const [nextDailyText, setNextDailyText] = React.useState(() =>
     formatTimeUntilNextDaily(new Date()),
@@ -78,11 +80,15 @@ export default function DailyEntryScreen(props: Props) {
             <div
               className={styles.dailyLabel}
             >{`Dagens spel / ${formattedDailyDate}`}</div>
+            {statusText ? (
+              <p className={styles.statusText}>{statusText}</p>
+            ) : null}
             <button
               className={classNames(
                 buttonStyles.button,
                 buttonStyles.fullWidth,
               )}
+              disabled={isChecking}
               onClick={onStart}
               type="button"
             >

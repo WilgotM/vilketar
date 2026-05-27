@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Du är inbjuden till VilketÅr</title>
+  </head>
+  <body
+    style="
+      margin: 0;
+      background: #f6f3ec;
+      color: #1f211c;
+      font-family:
+        -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Arial,
+        sans-serif;
+    "
+  >
+    <table
+      role="presentation"
+      width="100%"
+      cellspacing="0"
+      cellpadding="0"
+      style="background: #f6f3ec; padding: 28px 12px"
+    >
+      <tr>
+        <td align="center">
+          <table
+            role="presentation"
+            width="100%"
+            cellspacing="0"
+            cellpadding="0"
+            style="
+              max-width: 560px;
+              background: #fffdf7;
+              border: 1px solid #e2d8c5;
+              border-radius: 18px;
+              overflow: hidden;
+            "
+          >
+            <tr>
+              <td
+                style="background: #22312b; color: #fffdf7; padding: 24px 28px"
+              >
+                <div
+                  style="
+                    font-size: 14px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    letter-spacing: 0.08em;
+                  "
+                >
+                  VilketÅr
+                </div>
+                <div
+                  style="
+                    font-size: 28px;
+                    font-weight: 800;
+                    line-height: 1.12;
+                    margin-top: 18px;
+                  "
+                >
+                  Du är inbjuden
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 28px">
+                <p
+                  style="
+                    font-size: 16px;
+                    line-height: 1.55;
+                    margin: 0 0 24px;
+                    color: #55584f;
+                  "
+                >
+                  Tryck på knappen nedan för att skapa ditt konto.
+                </p>
+                <p style="margin: 0 0 24px">
+                  <a
+                    href="{{ .ConfirmationURL }}"
+                    style="
+                      display: inline-block;
+                      background: #f0b429;
+                      color: #1f211c;
+                      text-decoration: none;
+                      font-size: 16px;
+                      font-weight: 800;
+                      border-radius: 999px;
+                      padding: 14px 22px;
+                    "
+                    >Acceptera inbjudan</a
+                  >
+                </p>
+                <p
+                  style="
+                    font-size: 14px;
+                    line-height: 1.55;
+                    margin: 0 0 16px;
+                    color: #777a70;
+                  "
+                >
+                  Om knappen inte fungerar kan du öppna länken här:
+                </p>
+                <p
+                  style="
+                    font-size: 14px;
+                    line-height: 1.55;
+                    margin: 0 0 24px;
+                    word-break: break-all;
+                  "
+                >
+                  <a href="{{ .ConfirmationURL }}" style="color: #266f65"
+                    >{{ .ConfirmationURL }}</a
+                  >
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
