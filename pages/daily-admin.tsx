@@ -3,6 +3,7 @@ import React from "react";
 import { useDecks } from "../components/deck-provider";
 import { DAILY_DIFFICULTY, getCurrentUtcDateKey } from "../lib/daily";
 import {
+  DAILY_CARD_COUNT,
   createDailyCardQueue,
   createDailySearchCards,
 } from "../lib/daily-game";
@@ -17,7 +18,8 @@ import { PreparedCard } from "../types/game";
 import * as styles from "../styles/daily-admin.css";
 
 const DAY_COUNT = 10;
-const VISIBLE_CARD_COUNT = 12;
+const ADMIN_CARD_COUNT = DAILY_CARD_COUNT;
+const ADMIN_USERNAME_EMAIL_DOMAIN = "admin.vilketar.local";
 
 interface DailyGameRow {
   card_qids: string[];
@@ -44,6 +46,15 @@ function formatDate(dateKey: string): string {
     month: "long",
     weekday: "long",
   }).format(new Date(`${dateKey}T00:00:00.000Z`));
+}
+
+function normalizeAdminLogin(login: string): string {
+  const trimmedLogin = login.trim();
+  if (trimmedLogin.includes("@")) {
+    return trimmedLogin;
+  }
+
+  return `${trimmedLogin.toLowerCase()}@${ADMIN_USERNAME_EMAIL_DOMAIN}`;
 }
 
 function DailyAdminHead() {
@@ -251,7 +262,7 @@ export default function DailyAdminPage() {
         return;
       }
       const response = await supabase.auth.signInWithPassword({
-        email: email.trim(),
+        email: normalizeAdminLogin(email),
         password: password.trim(),
       });
       if (response.error) {
@@ -331,6 +342,18 @@ export default function DailyAdminPage() {
     setStatus("Återställt till algoritmen.");
   }
 
+  function savePlan(dateKey: string) {
+    const plan = plans.find((entry) => entry.dateKey === dateKey);
+    if (!plan || plan.isToday) {
+      return;
+    }
+
+    void saveOverride(
+      plan.dateKey,
+      plan.cards.slice(0, ADMIN_CARD_COUNT).map((entry) => entry.qid),
+    );
+  }
+
   function replaceSelectedSlot(card: PreparedCard) {
     if (!selectedSlot) {
       return;
@@ -341,7 +364,7 @@ export default function DailyAdminPage() {
     }
 
     const nextQids = plan.cards
-      .slice(0, VISIBLE_CARD_COUNT)
+      .slice(0, ADMIN_CARD_COUNT)
       .map((entry) => entry.qid);
     nextQids[selectedSlot.index] = card.qid;
     void saveOverride(plan.dateKey, nextQids);
@@ -381,8 +404,8 @@ export default function DailyAdminPage() {
           <input
             className={styles.input}
             onChange={(event) => setEmail(event.target.value)}
-            placeholder="namn@example.com"
-            type="email"
+            placeholder="Användarnamn eller e-post"
+            type="text"
             value={email}
           />
           {usePassword ? (
@@ -447,7 +470,10 @@ export default function DailyAdminPage() {
                     <h2 className={styles.dayTitle}>
                       {formatDate(plan.dateKey)}
                     </h2>
-                    <p className={styles.status}>{plan.dateKey}</p>
+                    <p className={styles.status}>
+                      {plan.dateKey} ·{" "}
+                      {Math.min(plan.cards.length, ADMIN_CARD_COUNT)} kort
+                    </p>
                   </div>
                   <span
                     className={
@@ -462,34 +488,40 @@ export default function DailyAdminPage() {
                   </span>
                 </div>
                 <div className={styles.cardList}>
-                  {plan.cards
-                    .slice(0, VISIBLE_CARD_COUNT)
-                    .map((card, index) => (
-                      <div
-                        className={styles.dailyCardRow}
-                        key={`${plan.dateKey}:${index}:${card.qid}`}
-                      >
-                        <div className={styles.cardIndex}>{index + 1}</div>
-                        <div>
-                          <div className={styles.cardTitle}>{card.title}</div>
-                          <div className={styles.cardMeta}>
-                            {card.year} · {card.subtitle ?? card.deckId}
-                          </div>
+                  {plan.cards.slice(0, ADMIN_CARD_COUNT).map((card, index) => (
+                    <div
+                      className={styles.dailyCardRow}
+                      key={`${plan.dateKey}:${index}:${card.qid}`}
+                    >
+                      <div className={styles.cardIndex}>{index + 1}</div>
+                      <div>
+                        <div className={styles.cardTitle}>{card.title}</div>
+                        <div className={styles.cardMeta}>
+                          {card.year} · {card.subtitle ?? card.deckId}
                         </div>
-                        <button
-                          className={styles.secondaryButton}
-                          disabled={plan.isToday}
-                          onClick={() =>
-                            setSelectedSlot({ dateKey: plan.dateKey, index })
-                          }
-                          type="button"
-                        >
-                          Byt
-                        </button>
                       </div>
-                    ))}
+                      <button
+                        className={styles.secondaryButton}
+                        disabled={plan.isToday}
+                        onClick={() =>
+                          setSelectedSlot({ dateKey: plan.dateKey, index })
+                        }
+                        type="button"
+                      >
+                        Byt
+                      </button>
+                    </div>
+                  ))}
                 </div>
                 <div className={styles.toolbar}>
+                  <button
+                    className={styles.secondaryButton}
+                    disabled={plan.isToday}
+                    onClick={() => savePlan(plan.dateKey)}
+                    type="button"
+                  >
+                    {plan.override ? "Spara om 100 kort" : "Spara 100 kort"}
+                  </button>
                   <button
                     className={styles.dangerButton}
                     disabled={plan.isToday || !plan.override}

@@ -201,12 +201,15 @@ async function compressAvatar(file: File): Promise<string> {
 
 export default function LeaguesScreen() {
   const todayDateKey = React.useMemo(() => getCurrentUtcDateKey(), []);
+  const configured = isLeaguesConfigured();
   const [displayName, setDisplayName] = React.useState("");
   const [avatarDataUrl, setAvatarDataUrl] = React.useState<string | null>(null);
   const [profileStatusText, setProfileStatusText] = React.useState<
     string | null
   >(null);
   const [profileReady, setProfileReady] = React.useState(false);
+  const [authReady, setAuthReady] = React.useState(!configured);
+  const [profileLoaded, setProfileLoaded] = React.useState(!configured);
   const [leagues, setLeagues] = React.useState<League[]>([]);
   const [leagueName, setLeagueName] = React.useState(defaultLeagueName);
   const [joinCode, setJoinCode] = React.useState("");
@@ -222,7 +225,6 @@ export default function LeaguesScreen() {
   const [busyAction, setBusyAction] = React.useState<BusyAction | null>(null);
   const [copyText, setCopyText] = React.useState("Kopiera kod");
   const [error, setError] = React.useState<string | null>(null);
-  const configured = isLeaguesConfigured();
   const savedNameHandledRef = React.useRef(false);
   const busy = busyAction !== null;
 
@@ -252,10 +254,14 @@ export default function LeaguesScreen() {
   }, []);
 
   const refreshAuthState = React.useCallback(async () => {
-    const nextAuthState = await getLeagueAuthState();
-    setAuthState(nextAuthState);
-    if (nextAuthState.email) {
-      setAccountEmail(nextAuthState.email);
+    try {
+      const nextAuthState = await getLeagueAuthState();
+      setAuthState(nextAuthState);
+      if (nextAuthState.email) {
+        setAccountEmail(nextAuthState.email);
+      }
+    } finally {
+      setAuthReady(true);
     }
   }, []);
 
@@ -296,10 +302,16 @@ export default function LeaguesScreen() {
   }, [configured, profileReady, refreshAuthState]);
 
   React.useEffect(() => {
-    if (!configured || !authState.isSignedIn) {
+    if (!configured || !authReady) {
       return;
     }
 
+    if (!authState.isSignedIn) {
+      setProfileLoaded(true);
+      return;
+    }
+
+    setProfileLoaded(false);
     void getLeagueProfile()
       .then((profile) => {
         if (!profile) {
@@ -309,8 +321,11 @@ export default function LeaguesScreen() {
         setAvatarDataUrl(profile.avatarDataUrl);
         setProfileReady(true);
       })
-      .catch(() => undefined);
-  }, [authState.isSignedIn, configured]);
+      .catch(() => undefined)
+      .finally(() => {
+        setProfileLoaded(true);
+      });
+  }, [authReady, authState.isSignedIn, configured]);
 
   React.useEffect(() => {
     if (!profileReady) {
@@ -656,6 +671,10 @@ export default function LeaguesScreen() {
     }, 1800);
   }, []);
 
+  const isBootstrapping =
+    configured &&
+    (!authReady || (authState.isSignedIn && !profileReady && !profileLoaded));
+
   return (
     <PageShell>
       <div className={styles.screen}>
@@ -759,6 +778,15 @@ export default function LeaguesScreen() {
                   : "Spara nytt lösenord"
               }
             />
+          </section>
+        ) : isBootstrapping ? (
+          <section className={styles.panel} aria-busy="true">
+            <div>
+              <h2 className={styles.formTitle}>Laddar vänligor...</h2>
+              <p className={styles.helperText}>
+                Hämtar din inloggning och profil.
+              </p>
+            </div>
           </section>
         ) : !profileReady ? (
           <section className={styles.panel}>

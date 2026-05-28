@@ -189,6 +189,8 @@ export const overrideBadge = style([
 export const cardList = style({
   display: "grid",
   gap: "0.45rem",
+  maxHeight: "46rem",
+  overflow: "auto",
 });
 
 export const dailyCardRow = style({
