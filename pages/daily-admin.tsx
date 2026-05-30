@@ -19,7 +19,10 @@ import * as styles from "../styles/daily-admin.css";
 
 const DAY_COUNT = 10;
 const ADMIN_CARD_COUNT = DAILY_CARD_COUNT;
-const ADMIN_USERNAME_EMAIL_DOMAIN = "admin.vilketar.local";
+const ADMIN_USERNAME = "Wilgot10";
+const ADMIN_PASSWORD = "Elfsborg10";
+const ADMIN_RPC_KEY = `${ADMIN_USERNAME}:${ADMIN_PASSWORD}`;
+const ADMIN_SESSION_KEY = "daily-admin:unlocked";
 
 interface DailyGameRow {
   card_qids: string[];
@@ -48,15 +51,6 @@ function formatDate(dateKey: string): string {
   }).format(new Date(`${dateKey}T00:00:00.000Z`));
 }
 
-function normalizeAdminLogin(login: string): string {
-  const trimmedLogin = login.trim();
-  if (trimmedLogin.includes("@")) {
-    return trimmedLogin;
-  }
-
-  return `${trimmedLogin.toLowerCase()}@${ADMIN_USERNAME_EMAIL_DOMAIN}`;
-}
-
 function DailyAdminHead() {
   return (
     <Head>
@@ -69,9 +63,8 @@ function DailyAdminHead() {
 export default function DailyAdminPage() {
   const { deckNodes, loadDecks, rootDeckId } = useDecks();
   const todayKey = React.useMemo(() => getCurrentUtcDateKey(), []);
-  const [email, setEmail] = React.useState("");
+  const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
-  const [usePassword, setUsePassword] = React.useState(true);
   const [status, setStatus] = React.useState("");
   const [isAdmin, setIsAdmin] = React.useState(false);
   const [loading, setLoading] = React.useState(true);
@@ -102,41 +95,9 @@ export default function DailyAdminPage() {
       setLoading(false);
       return;
     }
-    const client = supabase;
 
-    let cancelled = false;
-    async function loadSession() {
-      const session = await client.auth.getSession();
-      if (cancelled) {
-        return;
-      }
-
-      const userId = session.data.session?.user.id;
-      if (!userId) {
-        setIsAdmin(false);
-        setLoading(false);
-        return;
-      }
-
-      const admin = await client
-        .from("daily_admins")
-        .select("user_id")
-        .eq("user_id", userId)
-        .maybeSingle();
-      setIsAdmin(!admin.error && Boolean(admin.data));
-      setLoading(false);
-    }
-
-    void loadSession();
-    const subscription = client.auth.onAuthStateChange(() => {
-      setLoading(true);
-      void loadSession();
-    });
-
-    return () => {
-      cancelled = true;
-      subscription.data.subscription.unsubscribe();
-    };
+    setIsAdmin(localStorage.getItem(ADMIN_SESSION_KEY) === "true");
+    setLoading(false);
   }, []);
 
   React.useEffect(() => {
@@ -252,38 +213,18 @@ export default function DailyAdminPage() {
 
   async function signIn(event: React.FormEvent) {
     event.preventDefault();
-    if (!supabase || !email.trim()) {
+    if (!supabase) {
       return;
     }
 
-    if (usePassword) {
-      if (!password.trim()) {
-        setStatus("Ange lösenord.");
-        return;
-      }
-      const response = await supabase.auth.signInWithPassword({
-        email: normalizeAdminLogin(email),
-        password: password.trim(),
-      });
-      if (response.error) {
-        setStatus(response.error.message);
-      } else {
-        setStatus("Inloggad!");
-      }
-    } else {
-      const response = await supabase.auth.signInWithOtp({
-        email: email.trim(),
-        options: {
-          emailRedirectTo:
-            typeof window === "undefined" ? undefined : window.location.href,
-        },
-      });
-      setStatus(
-        response.error
-          ? response.error.message
-          : "Kolla mailen och öppna inloggningslänken.",
-      );
+    if (username.trim() !== ADMIN_USERNAME || password !== ADMIN_PASSWORD) {
+      setStatus("Fel användarnamn eller lösenord.");
+      return;
     }
+
+    localStorage.setItem(ADMIN_SESSION_KEY, "true");
+    setIsAdmin(true);
+    setStatus("Inloggad.");
   }
 
   async function saveOverride(dateKey: string, qids: string[]) {
@@ -291,16 +232,10 @@ export default function DailyAdminPage() {
       return;
     }
 
-    const user = await supabase.auth.getUser();
-    const userId = user.data.user?.id;
-    if (!userId) {
-      return;
-    }
-
-    const response = await supabase.from("daily_games").upsert({
-      card_qids: qids,
-      date_key: dateKey,
-      updated_by: userId,
+    const response = await supabase.rpc("app_admin_upsert_daily_game", {
+      p_admin_key: ADMIN_RPC_KEY,
+      p_card_qids: qids,
+      p_date_key: dateKey,
     });
 
     if (response.error) {
@@ -325,10 +260,10 @@ export default function DailyAdminPage() {
       return;
     }
 
-    const response = await supabase
-      .from("daily_games")
-      .delete()
-      .eq("date_key", dateKey);
+    const response = await supabase.rpc("app_admin_delete_daily_game", {
+      p_admin_key: ADMIN_RPC_KEY,
+      p_date_key: dateKey,
+    });
     if (response.error) {
       setStatus(response.error.message);
       return;
@@ -399,37 +334,25 @@ export default function DailyAdminPage() {
           <p className={styles.eyebrow}>VilketÅr</p>
           <h1 className={styles.title}>Daily admin</h1>
           <p className={styles.subtitle}>
-            Logga in med din e-post och lösenord för att hantera dagliga deck.
+            Logga in med ditt användarnamn och lösenord för att hantera dagliga
+            deck.
           </p>
           <input
             className={styles.input}
-            onChange={(event) => setEmail(event.target.value)}
-            placeholder="Användarnamn eller e-post"
+            onChange={(event) => setUsername(event.target.value)}
+            placeholder="Användarnamn"
             type="text"
-            value={email}
+            value={username}
           />
-          {usePassword ? (
-            <input
-              className={styles.input}
-              onChange={(event) => setPassword(event.target.value)}
-              placeholder="Lösenord"
-              type="password"
-              value={password}
-            />
-          ) : null}
+          <input
+            className={styles.input}
+            onChange={(event) => setPassword(event.target.value)}
+            placeholder="Lösenord"
+            type="password"
+            value={password}
+          />
           <button className={styles.button} type="submit">
-            {usePassword ? "Logga in" : "Skicka magisk länk"}
-          </button>
-          <button
-            className={styles.secondaryButton}
-            onClick={() => {
-              setUsePassword(!usePassword);
-              setStatus("");
-            }}
-            type="button"
-            style={{ marginTop: "4px" }}
-          >
-            {usePassword ? "Använd magisk länk" : "Använd lösenord"}
+            Logga in
           </button>
           {status ? <p className={styles.status}>{status}</p> : null}
         </form>
@@ -453,7 +376,12 @@ export default function DailyAdminPage() {
           <div className={styles.toolbar}>
             <button
               className={styles.secondaryButton}
-              onClick={() => supabase?.auth.signOut()}
+              onClick={() => {
+                localStorage.removeItem(ADMIN_SESSION_KEY);
+                setIsAdmin(false);
+                setPassword("");
+                setStatus("");
+              }}
               type="button"
             >
               Logga ut
