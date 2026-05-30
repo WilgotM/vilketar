@@ -564,7 +564,7 @@ export default function MenuFlowShell() {
                   hideHeader
                   mode="daily"
                   onQuitGame={() => {
-                    void router.push("/");
+                    setDailyStarted(false);
                   }}
                   onResetGame={syncDailyCompletionState}
                   skipRouteIntro

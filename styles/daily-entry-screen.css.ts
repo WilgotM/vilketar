@@ -9,7 +9,7 @@ export const screen = style({
   justifyContent: "center",
   minHeight: 0,
   width: "100%",
-  overflow: "hidden", // Completely lock scrolling
+  overflow: "visible",
 });
 
 export const stage = style([
@@ -92,7 +92,7 @@ export const iconWrapper = style({
   background: `linear-gradient(135deg, ${vars.color.accentLogo} 0%, #f59e0b 100%)`,
   color: "#ffffff",
   boxShadow:
-    "0 12px 28px rgba(217, 119, 6, 0.22), inset 0 2px 4px rgba(255, 255, 255, 0.35)",
+    "0 0 52px 20px rgba(217, 119, 6, 0.22), 0 12px 28px rgba(217, 119, 6, 0.22), inset 0 2px 4px rgba(255, 255, 255, 0.35)",
   marginBottom: vars.space.xs,
   "@media": {
     [media.compact]: {
@@ -105,16 +105,7 @@ export const iconWrapper = style({
 });
 
 export const iconGlow = style({
-  position: "absolute",
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
-  borderRadius: "1.25rem",
-  background: vars.color.accentLogo,
-  filter: "blur(14px)",
-  opacity: 0.3,
-  zIndex: -1,
+  display: "none",
 });
 
 export const dateBadge = style({

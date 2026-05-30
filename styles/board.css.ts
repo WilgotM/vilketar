@@ -60,50 +60,56 @@ export const statusLayer = style({
 });
 
 export const scoreBadge = style({
-  alignItems: "baseline",
-  background: `color-mix(in srgb, ${vars.color.surfaceStrong} 86%, transparent)`,
-  border: `${vars.size.borderWidth} solid ${vars.color.borderStrong}`,
+  alignItems: "center",
+  background: `color-mix(in srgb, ${vars.color.text} 8%, transparent)`,
+  backdropFilter: "blur(20px)",
+  WebkitBackdropFilter: "blur(20px)",
+  border: `1px solid color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
   borderRadius: vars.radius.pill,
-  boxShadow: vars.shadow.panel,
+  boxShadow: "0 4px 16px rgba(0, 0, 0, 0.15)",
   display: "inline-flex",
-  gap: vars.space.xs,
+  gap: "0.25rem",
   justifyContent: "center",
-  minWidth: "6.75rem",
-  padding: `${vars.space.sm} ${vars.space.lg}`,
+  padding: "0.375rem 0.875rem",
   pointerEvents: "none",
   position: "absolute",
   right: vars.space["2xl"],
   top: vars.space.xl,
   zIndex: 3,
+  height: "2.125rem",
   "@media": {
     [media.compact]: {
-      minWidth: "5.75rem",
-      padding: `${vars.space.xs} ${vars.space.md}`,
+      padding: "0.25rem 0.6875rem",
       right: vars.space.lg,
       top: vars.space.lg,
+      height: "1.875rem",
     },
   },
 });
 
 export const scoreValue = style({
   color: vars.color.accent,
-  fontSize: vars.fontSize.xl,
-  fontWeight: vars.fontWeight.black,
-  lineHeight: vars.lineHeight.tight,
-  minWidth: "1.4ch",
-  textAlign: "right",
+  fontSize: vars.fontSize.md,
+  fontWeight: vars.fontWeight.bold,
+  lineHeight: "1",
+  textAlign: "center",
+  fontVariantNumeric: "tabular-nums",
+  display: "inline-flex",
+  alignItems: "center",
   "@media": {
     [media.compact]: {
-      fontSize: vars.fontSize.lg,
+      fontSize: vars.fontSize.base,
     },
   },
 });
 
 export const scoreLabel = style({
-  color: vars.color.textMuted,
+  color: `color-mix(in srgb, ${vars.color.text} 60%, transparent)`,
   fontSize: vars.fontSize.control,
-  fontWeight: vars.fontWeight.semibold,
-  lineHeight: vars.lineHeight.tight,
+  fontWeight: vars.fontWeight.medium,
+  lineHeight: "1",
+  display: "inline-flex",
+  alignItems: "center",
   "@media": {
     [media.compact]: {
       fontSize: vars.fontSize.sm,
