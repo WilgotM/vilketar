@@ -11,21 +11,21 @@
   },
   {
     "qid": "Q12263",
-    "title": "”mahjong” släpps",
-    "subtitle": "Kinesiskt sällskapsspel",
+    "title": "‘Mahjong’ is released",
+    "subtitle": "Board game by",
     "year": 1900,
-    "fact": "mahjong är kinesiskt sällskapsspel.",
+    "fact": "Mahjong is a tile-based game that was developed in the 19th century in China and has spread throughout the world since the early 20th century.",
     "wikipediaSlug": "Mahjong",
     "image": "Mahjong_game.jpg",
     "pageViews": 91402
   },
   {
     "qid": "Q17243",
-    "title": "”Monopol” släpps",
-    "subtitle": "Brädspel",
+    "title": "‘Monopoly’ is released",
+    "subtitle": "Board game by Hasbro",
     "year": 1937,
-    "fact": "Monopol är brädspel.",
-    "wikipediaSlug": "Monopol_(spel)",
+    "fact": "Monopoly is a multiplayer economics-themed board game.",
+    "wikipediaSlug": "Monopoly_(game)",
     "image": "Monopoly_board_on_white_bg.jpg",
     "pageViews": 65651
   }

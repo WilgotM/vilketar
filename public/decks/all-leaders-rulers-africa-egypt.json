@@ -1,41 +1,41 @@
 [
   {
     "qid": "Q635",
-    "title": "Kleopatra VII av Egypten",
-    "subtitle": "Drottning av det ptolemeiska Egyptiska riket 51–30 f.Kr",
+    "title": "Cleopatra becomes pharaoh",
+    "subtitle": null,
     "year": -50,
-    "fact": "Kleopatra VII av Egypten är drottning av det ptolemeiska Egyptiska riket 51–30 f.Kr.",
-    "wikipediaSlug": "Kleopatra",
+    "fact": "Cleopatra VII Thea Philopator was Queen of the Ptolemaic Kingdom of Egypt from 51 to 30 BC, and the last active Hellenistic pharaoh.",
+    "wikipediaSlug": "Cleopatra",
     "image": "Kleopatra-VII.-Altes-Museum-Berlin1.jpg",
     "pageViews": 1073875
   },
   {
     "qid": "Q8409",
-    "title": "Alexander den store",
-    "subtitle": "Kung av Makedonien 336 f.Kr.–323 f.Kr.",
+    "title": "Alexander the Great becomes pharaoh",
+    "subtitle": null,
     "year": -329,
-    "fact": "Alexander den store är kung av Makedonien 336 f.Kr.–323 f.Kr..",
-    "wikipediaSlug": "Alexander_den_store",
+    "fact": "Alexander III of Macedon, most commonly known as Alexander the Great, was king of the ancient Greek kingdom of Macedon.",
+    "wikipediaSlug": "Alexander_the_Great",
     "image": "Alexander_Mosaic_detail_of_Alexander_the_Great_(3x4_cropped).jpg",
     "pageViews": 372082
   },
   {
     "qid": "Q12154",
-    "title": "Tutankhamon",
-    "subtitle": "Egyptisk farao i artonde dynastin",
+    "title": "TutanKhamun becomes pharaoh",
+    "subtitle": null,
     "year": -1332,
-    "fact": "Tutankhamon är egyptisk farao i artonde dynastin.",
-    "wikipediaSlug": "Tutankhamon",
+    "fact": "Tutankhamun or Tutankhamen, was the antepenultimate pharaoh of the Eighteenth Dynasty of ancient Egypt, who ruled c.",
+    "wikipediaSlug": "Tutankhamun",
     "image": "CairoEgMuseumTaaMaskMostlyPhotographed.jpg",
     "pageViews": 126232
   },
   {
     "qid": "Q1523",
-    "title": "Ramses II",
-    "subtitle": "Egyptisk farao i nittonde dynastin",
+    "title": "Ramesses II becomes pharaoh",
+    "subtitle": null,
     "year": -1278,
-    "fact": "Ramses II är egyptisk farao i nittonde dynastin.",
-    "wikipediaSlug": "Ramses_II",
+    "fact": "Ramesses II, commonly known as Ramesses the Great, was the third pharaoh of the Nineteenth Dynasty of Egypt.",
+    "wikipediaSlug": "Ramesses_II",
     "image": "Ramses_II_British_Museum.jpg",
     "pageViews": 110364
   }

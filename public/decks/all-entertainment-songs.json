@@ -1,7 +1,7 @@
 [
   {
     "fact": "ABBA vinner Eurovision Song Contest med Waterloo.",
-    "image": "Avicii_2014_003.jpg",
+    "image": "",
     "pageViews": 420000,
     "qid": "Q32503",
     "subtitle": "Svensk Eurovision-klassiker",
@@ -21,7 +21,7 @@
   },
   {
     "fact": "Dancing Queen släpps och blir en av ABBAs största låtar.",
-    "image": "Avicii_2014_003.jpg",
+    "image": "",
     "pageViews": 360000,
     "qid": "Q870786",
     "subtitle": "Låt av ABBA",
@@ -41,7 +41,7 @@
   },
   {
     "fact": "Levels blir Aviciis internationella genombrott.",
-    "image": "Avicii_2014_003.jpg",
+    "image": "",
     "pageViews": 300000,
     "qid": "Q2315784",
     "subtitle": "Låt av Avicii",
@@ -61,7 +61,7 @@
   },
   {
     "fact": "Wake Me Up blir en av Aviciis största låtar.",
-    "image": "Avicii_2014_003.jpg",
+    "image": "",
     "pageViews": 300000,
     "qid": "manual-Wake_Me_Up_(Avicii-l%C3%A5t)",
     "subtitle": "Låt av Avicii",
@@ -91,7 +91,7 @@
   },
   {
     "fact": "Dancing On My Own blir en modern svensk popklassiker.",
-    "image": "Avicii_2014_003.jpg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q3488185",
     "subtitle": "Låt av Robyn",
@@ -111,7 +111,7 @@
   },
   {
     "fact": "The Final Countdown blir en av Sveriges mest kända rocklåtar.",
-    "image": "Avicii_2014_003.jpg",
+    "image": "",
     "pageViews": 240000,
     "qid": "Q1165771",
     "subtitle": "Låt av Europe",
@@ -151,7 +151,7 @@
   },
   {
     "fact": "Sommartider blir en svensk sommarklassiker.",
-    "image": "Avicii_2014_003.jpg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q7560439",
     "subtitle": "Låt av Gyllene Tider",
@@ -161,7 +161,7 @@
   },
   {
     "fact": "Främling blir ett av Melodifestivalens största genombrott.",
-    "image": "Avicii_2014_003.jpg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q373108",
     "subtitle": "Låt framförd av Carola",
@@ -171,7 +171,7 @@
   },
   {
     "fact": "Fångad av en stormvind vinner Eurovision Song Contest.",
-    "image": "Avicii_2014_003.jpg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q1004668",
     "subtitle": "Låt framförd av Carola",
@@ -181,7 +181,7 @@
   },
   {
     "fact": "Lovefool blir The Cardigans stora internationella hit.",
-    "image": "Avicii_2014_003.jpg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q2547704",
     "subtitle": "Låt av The Cardigans",
@@ -211,7 +211,7 @@
   },
   {
     "fact": "Diggi-loo diggi-ley vinner Eurovision Song Contest.",
-    "image": "Avicii_2014_003.jpg",
+    "image": "",
     "pageViews": 200000,
     "qid": "Q718759",
     "subtitle": "Låt av Herreys",
@@ -231,20 +231,20 @@
   },
   {
     "qid": "Q44696",
-    "title": "”The Star-Spangled Banner”",
-    "subtitle": "USA:s nationalsång",
+    "title": "‘The Star-Spangled Banner’ dates to",
+    "subtitle": "National anthem",
     "year": 1814,
-    "fact": "The Star-Spangled Banner är USA:s nationalsång.",
+    "fact": "\"The Star-Spangled Banner\" is the national anthem of the United States.",
     "wikipediaSlug": "The_Star-Spangled_Banner",
-    "image": "The Star-Spangled Banner.JPG",
+    "image": "Star_Spangled_Banner_(Carr)_(1814).png",
     "pageViews": 98402
   },
   {
     "qid": "Q167545",
-    "title": "”Happy Birthday to You”",
-    "subtitle": "Födelsedagssång",
+    "title": "‘Happy Birthday to You’ dates to",
+    "subtitle": "Children's song or nursery rhyme",
     "year": 1911,
-    "fact": "Happy Birthday to You är födelsedagssång.",
+    "fact": "\"Happy Birthday to You\", or simply \"Happy Birthday\", is an American song traditionally sung to celebrate a person's birthday.",
     "wikipediaSlug": "Happy_Birthday_to_You",
     "image": "Birthday_candles.jpg",
     "pageViews": 64342

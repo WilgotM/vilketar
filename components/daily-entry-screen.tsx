@@ -248,9 +248,7 @@ export default function DailyEntryScreen(props: Props) {
                   </span>
                   {!isChecking && <span className={styles.buttonArrow}>→</span>}
                 </motion.button>
-                <p className={styles.iosFooterText}>
-                  Du har 3 liv • Svårighetsgrad: Svår
-                </p>
+                <p className={styles.iosFooterText}>Du har 3 liv</p>
               </div>
             </>
           ) : (

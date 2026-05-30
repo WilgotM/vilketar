@@ -1,41 +1,101 @@
 [
   {
+    "qid": "Q16695097",
+    "title": "Barak 8 enters service",
+    "subtitle": "Indian-Israeli surface-to-air missile",
+    "year": 2015,
+    "fact": "Barak 8, also known as LR-SAM or MR-SAM, is an Indian-Israeli jointly developed surface-to-air missile (SAM) system, designed to defend against any type of airborne threat including aircraft, helicopters, anti-ship missiles, and UAVs as well as ballistic missiles, cruise missiles and combat jets.",
+    "wikipediaSlug": "Barak_8",
+    "image": "Salon_du_Bourget_20090619_077.jpg",
+    "pageViews": 382227
+  },
+  {
     "qid": "Q1194008",
-    "title": "Mark 48 tas i bruk",
-    "subtitle": "En amerikansk torped",
+    "title": "Mark 48 torpedo enters service",
+    "subtitle": "American heavyweight submarine-launched torpedoes",
     "year": 1978,
-    "fact": "Mark 48 är en amerikansk torped.",
-    "wikipediaSlug": "Mark_48_(torped)",
+    "fact": "The Mark 48 and its improved Advanced Capability (ADCAP) variant are American heavyweight submarine-launched torpedoes.",
+    "wikipediaSlug": "Mark_48_torpedo",
     "image": "Mk_48_torpedo_maintenance_1982.JPEG",
     "pageViews": 239701
   },
   {
-    "qid": "Q173684",
-    "title": "M1 Abrams tas i bruk",
-    "subtitle": "Huvudstridsvagnen för USA:s väpnade styrkor",
+    "qid": "Q852083",
+    "title": "Phalanx CIWS Km1992//0.33149874000/0482492-2 enters service",
+    "subtitle": "Close-in weapon system for defense against anti-ship missiles",
     "year": 1980,
-    "fact": "M1 Abrams är huvudstridsvagnen för USA:s väpnade styrkor.",
+    "fact": "The Phalanx CIWS is an automated gun-based close-in weapon system to defend military watercraft automatically against incoming threats such as aircraft, missiles, and small boats.",
+    "wikipediaSlug": "Phalanx_CIWS",
+    "image": "Phalanx_CIWS_Block_1B_Full_Sized_USS_Elrod_FFG-55.jpg",
+    "pageViews": 114475
+  },
+  {
+    "qid": "Q119132754",
+    "title": "Fattah-1 enters service",
+    "subtitle": "Iranian hypersonic ballistic missile",
+    "year": 2023,
+    "fact": "Fattah-1 is an Iranian medium-range ballistic missile developed by the Islamic Revolutionary Guard Corps and unveiled in June 2023.",
+    "wikipediaSlug": "Fattah-1",
+    "image": "Unveiling_ceremony_of_Fattah_hypersonic_missile_(64).jpg",
+    "pageViews": 109665
+  },
+  {
+    "qid": "Q1813267",
+    "title": "GBU-57A/B MOP enters service",
+    "subtitle": "United States Air Force bunker buster bomb of GBU-57 family",
+    "year": 2011,
+    "fact": "The GBU-57 series MOP—the initials stand for Guided Bomb Unit and Massive Ordnance Penetrator—is a 30,000-pound (14,000 kg) class, 20.5-foot-long (6.2 m) precision-guided munition \"bunker buster\" bomb developed by Boeing for the United States Air Force (USAF).",
+    "wikipediaSlug": "GBU-57A/B_MOP",
+    "image": "USAF_MOP_test_release_crop.jpg",
+    "pageViews": 108732
+  },
+  {
+    "qid": "Q173684",
+    "title": "M1 Abrams enters service",
+    "subtitle": "Main battle tank family",
+    "year": 1980,
+    "fact": "The M1 Abrams is a third-generation American main battle tank designed by Chrysler Defense and named for General Creighton Abrams.",
     "wikipediaSlug": "M1_Abrams",
     "image": "M1A2_SEP_v3.jpg",
     "pageViews": 106114
   },
   {
+    "qid": "Q214688",
+    "title": "M4 enters service",
+    "subtitle": "Carbine",
+    "year": 1994,
+    "fact": "The M4 carbine is an assault rifle developed in the United States during the 1980s.",
+    "wikipediaSlug": "M4_carbine",
+    "image": "PEO_M4_Carbine_RAS_M68_CCO.png",
+    "pageViews": 95761
+  },
+  {
+    "qid": "Q739882",
+    "title": "Glock enters service",
+    "subtitle": "Brand of polymer-framed semi-automatic pistols",
+    "year": 1982,
+    "fact": "Glock is a brand of polymer-framed, short-recoil-operated, locked-breech semi-automatic pistols designed and produced by Austrian manufacturer Glock GmbH.",
+    "wikipediaSlug": "Glock",
+    "image": "Glock_17_(6825676904)_без_фона.jpg",
+    "pageViews": 94869
+  },
+  {
     "qid": "Q170318",
-    "title": "M16 tas i bruk",
-    "subtitle": "Automatkarbin",
+    "title": "M16 enters service",
+    "subtitle": "Assault rifle",
     "year": 1962,
-    "fact": "M16 är automatkarbin.",
-    "wikipediaSlug": "M16_(automatkarbin)",
+    "fact": "The M16 rifle is a family of assault rifles adapted from the ArmaLite AR-15 rifle for the United States military.",
+    "wikipediaSlug": "M16_rifle",
     "image": "M16A2_noBG.jpg",
     "pageViews": 88841
   },
   {
     "qid": "Q863952",
-    "title": "GBU-43/B MOAB tas i bruk",
-    "subtitle": "En amerikansk flygbomb",
+    "title": "GBU-43/B Massive Ordnance Air Blast bomb enters service",
+    "subtitle": "United States large-yield bomb",
     "year": 2003,
-    "fact": "GBU-43/B MOAB är en amerikansk flygbomb.",
-    "wikipediaSlug": "GBU-43%2FB_MOAB",
+    "fact": "The GBU-43/B Massive Ordnance Air Blast is a large-yield bomb, developed for the United States military by Albert L.",
+    "wikipediaSlug": "GBU-43/B_MOAB",
     "image": "MOABAFAM.JPG",
     "pageViews": 82009
   }

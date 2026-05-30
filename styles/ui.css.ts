@@ -9,6 +9,11 @@ const shimmer = keyframes({
   "100%": { transform: "translateX(365%)" },
 });
 
+const pageWake = keyframes({
+  from: { opacity: 0, transform: "translateY(1rem) scale(0.985)" },
+  to: { opacity: 1, transform: "translateY(0) scale(1)" },
+});
+
 const appChromeBackground = `radial-gradient(circle at 12% 14%, ${vars.color.heroGlowA} 0%, transparent 28%), radial-gradient(circle at 84% 12%, ${vars.color.heroGlowB} 0%, transparent 24%), radial-gradient(circle at 50% 100%, ${vars.color.heroGlowC} 0%, transparent 30%), linear-gradient(180deg, ${vars.color.backdropStrong} 0%, ${vars.color.backdrop} 48%, ${vars.color.backdropStrong} 100%)`;
 
 export const pageTransitionRoot = style({
@@ -32,7 +37,14 @@ export const pageTransitionRoot = style({
 });
 
 export const pageTransitionPane = style({
+  animation: `${pageWake} ${vars.duration.cinematic} ${vars.easing.ios} both`,
   minHeight: "100%",
+  transformOrigin: "50% 2rem",
+  "@media": {
+    [media.reduceMotion]: {
+      animation: "none",
+    },
+  },
 });
 
 export const appPage = style([
@@ -346,10 +358,14 @@ export const action = recipe({
       outline: "none",
       textDecoration: "none",
       transition: `opacity ${vars.duration.fast} ${vars.easing.standard}, transform ${vars.duration.fast} ${vars.easing.standard}, border-color ${vars.duration.fast} ${vars.easing.standard}`,
+      willChange: "transform",
       selectors: {
+        "&:hover": {
+          transform: "translateY(-0.0625rem) scale(1.01)",
+        },
         "&:active": {
           opacity: 0.7,
-          transform: "scale(0.98)",
+          transform: "translateY(0.0625rem) scale(0.975)",
         },
         "&:focus-visible": {
           boxShadow: vars.shadow.focus,
@@ -358,6 +374,20 @@ export const action = recipe({
         "&:disabled": {
           cursor: "not-allowed",
           opacity: 0.38,
+        },
+      },
+      "@media": {
+        [media.reduceMotion]: {
+          transitionDuration: vars.duration.instant,
+          willChange: "auto",
+          selectors: {
+            "&:hover": {
+              transform: "none",
+            },
+            "&:active": {
+              transform: "none",
+            },
+          },
         },
       },
     },

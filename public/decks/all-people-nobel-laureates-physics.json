@@ -1,40 +1,40 @@
 [
   {
     "qid": "Q937",
-    "title": "Albert Einstein får Nobelpriset i fysik",
-    "subtitle": "Tysk fysiker",
+    "title": "Albert Einstein wins the Nobel Prize in Physics",
+    "subtitle": null,
     "year": 1921,
-    "fact": "Albert Einstein är tysk fysiker.",
+    "fact": "Albert Einstein was a German-born theoretical physicist best known for developing the theory of relativity.",
     "wikipediaSlug": "Albert_Einstein",
     "image": "Albert_Einstein_Head_cleaned.jpg",
     "pageViews": 536822
   },
   {
     "qid": "Q7186",
-    "title": "Marie Curie får Nobelpriset i fysik",
-    "subtitle": "Fransk-polsk fysiker och kemist",
+    "title": "Marie Curie wins the Nobel Prize in Physics",
+    "subtitle": null,
     "year": 1903,
-    "fact": "Marie Curie wins the Nobel Prize in Physics är fransk-polsk fysiker och kemist.",
+    "fact": "Maria Salomea Skłodowska Curie, better known as Marie Curie, was a Polish and naturalised-French physicist and chemist.",
     "wikipediaSlug": "Marie_Curie",
     "image": "Marie_Curie_c._1920s.jpg",
     "pageViews": 254345
   },
   {
     "qid": "Q39246",
-    "title": "Richard Feynman får Nobelpriset i fysik",
-    "subtitle": "Amerikansk teoretisk fysiker",
+    "title": "Richard Feynman wins the Nobel Prize in Physics",
+    "subtitle": null,
     "year": 1965,
-    "fact": "Richard Feynman är amerikansk teoretisk fysiker.",
+    "fact": "Richard Phillips Feynman was an American theoretical physicist.",
     "wikipediaSlug": "Richard_Feynman",
     "image": "Richard_Feynman_Nobel.jpg",
     "pageViews": 144292
   },
   {
     "qid": "Q40904",
-    "title": "Werner Heisenberg får Nobelpriset i fysik",
-    "subtitle": "Tysk teoretisk fysiker",
+    "title": "Werner Heisenberg wins the Nobel Prize in Physics",
+    "subtitle": null,
     "year": 1932,
-    "fact": "Werner Heisenberg är tysk teoretisk fysiker.",
+    "fact": "Werner Karl Heisenberg was a German theoretical physicist, one of the main pioneers of the theory of quantum mechanics and a principal scientist in the German nuclear program during World War II.",
     "wikipediaSlug": "Werner_Heisenberg",
     "image": "Werner_Heisenberg_Portrait_(3x4_cropped).jpg",
     "pageViews": 62283

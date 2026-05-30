@@ -1,0 +1,22 @@
+[
+  {
+    "qid": "Q68",
+    "title": "Computer dates to",
+    "subtitle": "Invention or discovery",
+    "year": 1945,
+    "fact": "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation).",
+    "wikipediaSlug": "Computer",
+    "image": "ENIAC-changing_a_tube_(cropped).jpg",
+    "pageViews": 141874
+  },
+  {
+    "qid": "Q309372",
+    "title": "Mercator projection dates to",
+    "subtitle": "Invention or discovery",
+    "year": 1569,
+    "fact": "The Mercator projection is a conformal cylindrical map projection first presented by Flemish geographer and mapmaker Gerardus Mercator in 1569.",
+    "wikipediaSlug": "Mercator_projection",
+    "image": "Mercator_projection_Square.JPG",
+    "pageViews": 57818
+  }
+]

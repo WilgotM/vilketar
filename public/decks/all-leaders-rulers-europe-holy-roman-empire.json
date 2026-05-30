@@ -1,21 +1,21 @@
 [
   {
     "qid": "Q3044",
-    "title": "Karl den store",
-    "subtitle": "Frankiska rikets regent 768–814",
+    "title": "Charlemagne becomes Holy Roman Emperor",
+    "subtitle": null,
     "year": 800,
-    "fact": "Karl den store är frankiska rikets regent 768–814.",
-    "wikipediaSlug": "Karl_den_store",
+    "fact": "Charlemagne was King of the Franks from 768, King of the Lombards from 774, and Emperor of what is now known as the Carolingian Empire from 800.",
+    "wikipediaSlug": "Charlemagne",
     "image": "Charlemagne_denier_Mayence_812_814.jpg",
     "pageViews": 166140
   },
   {
     "qid": "Q32500",
-    "title": "Karl V",
-    "subtitle": "Tysk-romersk kejsare och kung av Spanien",
+    "title": "Charles V becomes Holy Roman Emperor",
+    "subtitle": null,
     "year": 1519,
-    "fact": "Karl V är tysk-romersk kejsare och kung av Spanien.",
-    "wikipediaSlug": "Karl_V_(tysk-romersk_kejsare)",
+    "fact": "Charles V was Holy Roman Emperor and Archduke of Austria from 1519 to 1556, King of Spain from 1516 to 1556, King of Sicily and Naples from 1516 to 1554, and also Lord of the Netherlands and titular Duke of Burgundy from 1506 to 1555.",
+    "wikipediaSlug": "Charles_V,_Holy_Roman_Emperor",
     "image": "Portrait_of_Charles_V,_Holy_Roman_Emperor,_seated_(1500–1558),_formerly_attributed_to_Titian_(Alte_Pinakothek,_Munich).jpg",
     "pageViews": 99032
   }

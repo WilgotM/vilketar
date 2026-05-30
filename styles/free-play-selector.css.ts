@@ -1,7 +1,29 @@
-import { style } from "@vanilla-extract/css";
+import { keyframes, style } from "@vanilla-extract/css";
 import { media } from "./foundation";
 import { vars } from "./theme.css";
 import { sectionLabel } from "./ui.css";
+
+const selectorItemIn = keyframes({
+  from: {
+    opacity: 0,
+    transform: "translateY(0.9rem) scale(0.97)",
+  },
+  to: {
+    opacity: 1,
+    transform: "translateY(0) scale(1)",
+  },
+});
+
+const selectorPanelIn = keyframes({
+  from: {
+    opacity: 0,
+    transform: "translateY(0.75rem) scale(0.985)",
+  },
+  to: {
+    opacity: 1,
+    transform: "translateY(0) scale(1)",
+  },
+});
 
 export const content = style({
   alignItems: "flex-start",
@@ -41,10 +63,17 @@ export const insideCardPanel = style({
 });
 
 export const transitionSection = style({
+  animation: `${selectorPanelIn} ${vars.duration.slower} ${vars.easing.ios} both`,
   display: "flex",
   flexDirection: "column",
   gap: vars.space.lg,
+  transformOrigin: "50% 0",
   width: "100%",
+  "@media": {
+    [media.reduceMotion]: {
+      animation: "none",
+    },
+  },
 });
 
 export const selectorSection = transitionSection;
@@ -127,6 +156,39 @@ export const grid = style({
   "@media": {
     [media.compact]: {
       gridTemplateColumns: "minmax(0, 1fr)",
+    },
+  },
+});
+
+export const gridItem = style({
+  animation: `${selectorItemIn} ${vars.duration.slower} ${vars.easing.ios} both`,
+  minWidth: 0,
+  selectors: {
+    "&:nth-child(1)": {
+      animationDelay: "30ms",
+    },
+    "&:nth-child(2)": {
+      animationDelay: "65ms",
+    },
+    "&:nth-child(3)": {
+      animationDelay: "100ms",
+    },
+    "&:nth-child(4)": {
+      animationDelay: "135ms",
+    },
+    "&:nth-child(5)": {
+      animationDelay: "170ms",
+    },
+    "&:nth-child(6)": {
+      animationDelay: "205ms",
+    },
+    "&:nth-child(n + 7)": {
+      animationDelay: "240ms",
+    },
+  },
+  "@media": {
+    [media.reduceMotion]: {
+      animation: "none",
     },
   },
 });

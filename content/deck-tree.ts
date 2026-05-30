@@ -50,7 +50,6 @@ import dutchMonarchsTakingOffice from "./queries/dutch-monarchs-taking-office/qu
 import dynastiesCreationYear from "./queries/dynasties-creation-year/query";
 import englishMonarchsTakingOffice from "./queries/english-monarchs-taking-office/query";
 import ethiopianEmperorsTakingOffice from "./queries/ethiopian-emperors-taking-office/query";
-import f1TeamsFoundingYear from "./queries/f1-teams-founding-year/query";
 import famousActorsDeathYear from "./queries/famous-actors-death-year/query";
 import famousBasketballPlayersDeathYear from "./queries/famous-basketball-players-death-year/query";
 import famousBoxersDeathYear from "./queries/famous-boxers-death-year/query";
@@ -1377,7 +1376,6 @@ const rootDeckDefinition: DeckDefinition = {
           sources: [
             footballClubsFoundingYear,
             rugbyClubsFoundingYear,
-            f1TeamsFoundingYear,
             mlbFranchisesFoundingYear,
             nbaFranchisesFoundingYear,
             nflFranchisesFoundingYear,

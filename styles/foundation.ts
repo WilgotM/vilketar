@@ -107,12 +107,14 @@ export const durationScale = {
   normal: "220ms",
   slow: "320ms",
   slower: "480ms",
+  cinematic: "640ms",
 } as const;
 
 export const easingScale = {
   standard: "cubic-bezier(0.2, 0, 0, 1)",
   emphasized: "cubic-bezier(0.22, 1, 0.36, 1)",
   decisive: "cubic-bezier(0.33, 1, 0.68, 1)",
+  ios: "cubic-bezier(0.16, 1, 0.3, 1)",
 } as const;
 
 export const zIndex = {

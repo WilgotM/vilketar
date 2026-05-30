@@ -1,41 +1,41 @@
 [
   {
     "qid": "Q36450",
-    "title": "Katarina II av Ryssland",
-    "subtitle": "Regerande kejsarinna av Ryssland 1762–1796",
+    "title": "Catherine II of Russia becomes Empress of all the Russias",
+    "subtitle": null,
     "year": 1762,
-    "fact": "Katarina II av Ryssland är regerande kejsarinna av Ryssland 1762–1796.",
-    "wikipediaSlug": "Katarina_II_av_Ryssland",
+    "fact": "Catherine II, commonly known as Catherine the Great, was the Empress of Russia from 1762 to 1796.",
+    "wikipediaSlug": "Catherine_the_Great",
     "image": "Catherine_II_after_Roslin,_Rokotov_(1780s,_Kunsthistorisches_Museum).jpg",
     "pageViews": 214573
   },
   {
     "qid": "Q40787",
-    "title": "Nikolaj II av Ryssland",
-    "subtitle": "Rysslands tsar mellan 1894-1917",
+    "title": "Nicholas II of Russia becomes Emperor of all the Russias",
+    "subtitle": null,
     "year": 1894,
-    "fact": "Nikolaj II av Ryssland är Rysslands tsar mellan 1894-1917.",
-    "wikipediaSlug": "Nikolaj_II_av_Ryssland",
+    "fact": "Nicholas II was Emperor of Russia, King of Poland and Grand Duke of Finland from 1 November 1894 until his abdication in 1917.",
+    "wikipediaSlug": "Nicholas_II",
     "image": "Mikola_II_(cropped)-2.jpg",
     "pageViews": 136397
   },
   {
     "qid": "Q8479",
-    "title": "Peter den store",
-    "subtitle": "Tsar av Ryssland 1682–1725",
+    "title": "Peter the Great becomes Emperor of all the Russias",
+    "subtitle": null,
     "year": 1721,
-    "fact": "Peter den store är tsar av Ryssland 1682–1725.",
-    "wikipediaSlug": "Peter_den_store",
+    "fact": "Peter I was the Tsar of all Russia from 1682 and the first Emperor of Russia from 1721 until his death in 1725.",
+    "wikipediaSlug": "Peter_the_Great",
     "image": "Inconnu_d'après_J.-M._Nattier,_Portrait_de_Pierre_Ier_(musée_de_l’Ermitage).jpg",
     "pageViews": 89263
   },
   {
     "qid": "Q151789",
-    "title": "Peter III av Ryssland",
-    "subtitle": "Kejsare av Ryssland",
+    "title": "Peter III of Russia becomes Emperor of all the Russias",
+    "subtitle": null,
     "year": 1762,
-    "fact": "Peter III av Ryssland är kejsare av Ryssland.",
-    "wikipediaSlug": "Peter_III_av_Ryssland",
+    "fact": "Peter III Fyodorovich was Emperor of Russia from 5 January 1762 until 9 July of the same year, when he was overthrown by his wife, Catherine II.",
+    "wikipediaSlug": "Peter_III_of_Russia",
     "image": "Coronation_portrait_of_Peter_III_of_Russia_-1761.JPG",
     "pageViews": 75492
   }

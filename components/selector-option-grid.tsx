@@ -26,26 +26,27 @@ export default function SelectorOptionGrid(props: Props) {
   return (
     <div className={styles.grid}>
       {validItems.map((item) => (
-        <ButtonLink
-          key={item.key}
-          href={item.href}
-          minimal
-          onClick={
-            item.kind === "play" && item.selectionRoute && onSelectPlayRoute
-              ? (event) => {
-                  event.preventDefault();
-                  onSelectPlayRoute(item.selectionRoute!, item.href);
-                }
-              : item.kind === "drilldown" && item.onClick
+        <div className={styles.gridItem} key={item.key}>
+          <ButtonLink
+            href={item.href}
+            minimal
+            onClick={
+              item.kind === "play" && item.selectionRoute && onSelectPlayRoute
                 ? (event) => {
                     event.preventDefault();
-                    item.onClick?.();
+                    onSelectPlayRoute(item.selectionRoute!, item.href);
                   }
-                : undefined
-          }
-          text={item.text}
-          trailingIcon={item.kind === "drilldown" ? "chevron" : undefined}
-        />
+                : item.kind === "drilldown" && item.onClick
+                  ? (event) => {
+                      event.preventDefault();
+                      item.onClick?.();
+                    }
+                  : undefined
+            }
+            text={item.text}
+            trailingIcon={item.kind === "drilldown" ? "chevron" : undefined}
+          />
+        </div>
       ))}
       {hasOddItemCount ? (
         <div aria-hidden className={styles.gridFiller} />

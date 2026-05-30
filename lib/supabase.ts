@@ -6,8 +6,14 @@ type SupabaseRequestOptions = {
   searchParams?: Record<string, string | number | null | undefined>;
 };
 
-const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+const FALLBACK_SUPABASE_URL = "https://rivzcvgbauthpoutiiog.supabase.co";
+const FALLBACK_SUPABASE_ANON_KEY =
+  "sb_publishable_NC1ouO1HHWd9tEvg2El2aQ_QKcVhJbI";
+
+const SUPABASE_URL =
+  process.env.NEXT_PUBLIC_SUPABASE_URL || FALLBACK_SUPABASE_URL;
+const SUPABASE_ANON_KEY =
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || FALLBACK_SUPABASE_ANON_KEY;
 
 export function getSupabasePublicConfig() {
   if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {

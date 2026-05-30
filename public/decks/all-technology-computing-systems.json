@@ -1,32 +1,42 @@
 [
   {
     "qid": "Q14116",
-    "title": "”Mac OS” släpps",
-    "subtitle": "Operativsystem av Apple, lanserat 2011 som Mac OS X",
+    "title": "MacOS is released",
+    "subtitle": "Operating System",
     "year": 2001,
-    "fact": "Mac OS är operativsystem av Apple, lanserat 2011 som Mac OS X.",
-    "wikipediaSlug": "Mac_OS",
+    "fact": "macOS is a proprietary Unix operating system, derived from OPENSTEP for Mach and FreeBSD, which has been marketed and developed by Apple since 2001.",
+    "wikipediaSlug": "MacOS",
     "image": "MacOS_Tahoe_screenshot.png",
     "pageViews": 144010
   },
   {
     "qid": "Q48493",
-    "title": "”IOS is released” släpps",
-    "subtitle": "Operativsystem av Apple",
+    "title": "IOS is released",
+    "subtitle": "Operating System",
     "year": 2007,
-    "fact": "IOS is released är operativsystem av Apple.",
+    "fact": "iOS is a mobile operating system created and developed by Apple for its iPhone line of smartphones.",
     "wikipediaSlug": "IOS",
     "image": "IOS_wordmark_(2017).svg",
     "pageViews": 89124
   },
   {
     "qid": "Q11215",
-    "title": "”Windows 7” släpps",
-    "subtitle": "Operativsystem",
+    "title": "Windows 7 is released",
+    "subtitle": "Operating System",
     "year": 2009,
-    "fact": "Windows 7 är operativsystem.",
+    "fact": "Windows 7 is a major release of the Windows NT operating system developed by Microsoft.",
     "wikipediaSlug": "Windows_7",
     "image": "Windows_7_SP1_screenshot.png",
     "pageViews": 56856
+  },
+  {
+    "qid": "Q19961543",
+    "title": "TempleOS is released",
+    "subtitle": "Operating System",
+    "year": 2013,
+    "fact": "TempleOS is a biblical-themed lightweight operating system (OS) designed to be the Third Temple from the Hebrew Bible.",
+    "wikipediaSlug": "TempleOS",
+    "image": "TempleOS.jpg",
+    "pageViews": 52006
   }
 ]

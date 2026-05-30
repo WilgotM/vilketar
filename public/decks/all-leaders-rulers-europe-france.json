@@ -1,21 +1,21 @@
 [
   {
     "qid": "Q7742",
-    "title": "Ludvig XIV av Frankrike",
-    "subtitle": "Kung av Frankrike 1643–1715",
+    "title": "Louis XIV of France becomes King of France and Navarre",
+    "subtitle": null,
     "year": 1643,
-    "fact": "Ludvig XIV av Frankrike är kung av Frankrike 1643–1715.",
-    "wikipediaSlug": "Ludvig_XIV_av_Frankrike",
+    "fact": "Louis XIV was King of France from 14 May 1643 until his death in 1715.",
+    "wikipediaSlug": "Louis_XIV",
     "image": "Portrait_of_Louis_XIV_of_France_in_Coronation_Robes_(by_Hyacinthe_Rigaud)_-_Louvre_Museum.jpg",
     "pageViews": 199226
   },
   {
     "qid": "Q7732",
-    "title": "Ludvig XVI av Frankrike",
-    "subtitle": "Kung av Frankrike 1774–1792",
+    "title": "Louis XVI of France becomes King of France and Navarre",
+    "subtitle": null,
     "year": 1774,
-    "fact": "Ludvig XVI av Frankrike är kung av Frankrike 1774–1792.",
-    "wikipediaSlug": "Ludvig_XVI_av_Frankrike",
+    "fact": "Louis XVI was the last king of France before the fall of the monarchy during the French Revolution.",
+    "wikipediaSlug": "Louis_XVI",
     "image": "Antoine-François_Callet_-_Louis_XVI,_roi_de_France_et_de_Navarre_(1754-1793),_revêtu_du_grand_costume_royal_en_1779_-_Google_Art_Project.jpg",
     "pageViews": 149414
   }

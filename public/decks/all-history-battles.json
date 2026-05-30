@@ -1,11 +1,11 @@
 [
   {
     "qid": "Q52418",
-    "title": "Attacken mot Pearl Harbor äger rum",
-    "subtitle": "Överraskningsanfall av japanska flottan mot den amerikanska marinbasen i Hawaii",
+    "title": "Attack on Pearl Harbor takes place",
+    "subtitle": "Battle in South-East Asian theater of World War II",
     "year": 1941,
-    "fact": "Attacken mot Pearl Harbor är överraskningsanfall av japanska flottan mot den amerikanska marinbasen i Hawaii.",
-    "wikipediaSlug": "Attacken_mot_Pearl_Harbor",
+    "fact": "On December 7, 1941, the Empire of Japan launched a surprise military strike on the United States Pacific Fleet at its naval base at Pearl Harbor on Oahu, Hawaii.",
+    "wikipediaSlug": "Attack_on_Pearl_Harbor",
     "image": "Attack_on_Pearl_Harbor_Japanese_planes_view.jpg",
     "pageViews": 505595
   },
@@ -151,7 +151,7 @@
   },
   {
     "fact": "Sverige folkomröstar om kärnkraften.",
-    "image": "Attack_on_Pearl_Harbor_Japanese_planes_view.jpg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q6980136",
     "subtitle": "Svensk folkomröstning",
@@ -191,21 +191,21 @@
   },
   {
     "qid": "Q48314",
-    "title": "Slaget vid Waterloo äger rum",
-    "subtitle": "Fältslag vid Waterloo Belgien, 18 juni 1815",
+    "title": "Battle of Waterloo takes place",
+    "subtitle": "Battle in Waterloo Campaign",
     "year": 1815,
-    "fact": "Slaget vid Waterloo är fältslag vid Waterloo Belgien, 18 juni 1815.",
-    "wikipediaSlug": "Slaget_vid_Waterloo",
-    "image": "Battle of Waterloo 1815.PNG",
+    "fact": "The Battle of Waterloo was fought on Sunday 18 June 1815, near Waterloo, marking the end of the Napoleonic Wars.",
+    "wikipediaSlug": "Battle_of_Waterloo",
+    "image": "Battle_of_Waterloo_1815.PNG",
     "pageViews": 134319
   },
   {
     "qid": "Q180182",
-    "title": "Slaget om Iwo Jima äger rum",
-    "subtitle": "Slag under andra världskriget",
+    "title": "Battle of Iwo Jima takes place",
+    "subtitle": "Battle in Volcano and Ryukyu Islands campaign",
     "year": 1945,
-    "fact": "Slaget om Iwo Jima är slag under andra världskriget.",
-    "wikipediaSlug": "Slaget_om_Iwo_Jima",
+    "fact": "The Battle of Iwo Jima was a major battle in which the United States Marine Corps (USMC) and United States Navy (USN) landed on and eventually captured the island of Iwo Jima from the Imperial Japanese Army (IJA) during World War II.",
+    "wikipediaSlug": "Battle_of_Iwo_Jima",
     "image": "Raising_the_Flag_on_Iwo_Jima,_larger_-_edit1.jpg",
     "pageViews": 123272
   }

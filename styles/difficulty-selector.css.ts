@@ -1,6 +1,5 @@
 import { style } from "@vanilla-extract/css";
 import { vars } from "./theme.css";
-import { sectionLabel } from "./ui.css";
 
 export const difficultyIndexVarName = "--difficulty-index";
 
@@ -72,9 +71,13 @@ export const disabled = style({
   color: vars.color.textSubtle,
 });
 
-export const optionTitle = style([
-  sectionLabel,
-  {
-    color: "inherit",
-  },
-]);
+export const optionTitle = style({
+  color: "inherit",
+  fontFamily: vars.font.body,
+  fontSize: vars.fontSize.control,
+  fontWeight: vars.fontWeight.semibold,
+  letterSpacing: "0.16em",
+  lineHeight: vars.lineHeight.tight,
+  textAlign: "center",
+  textTransform: "uppercase",
+});

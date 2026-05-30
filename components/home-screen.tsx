@@ -366,12 +366,14 @@ export default function HomeScreen() {
                 </button>
               </div>
               <ButtonLink
+                className={styles.actionItem}
                 fullWidth
                 href="/leagues"
                 leadingIcon="group"
                 text="Vänligor"
               />
               <ButtonLink
+                className={styles.actionItem}
                 fullWidth
                 href="/party"
                 leadingIcon="group"
@@ -379,6 +381,7 @@ export default function HomeScreen() {
                 text="Sällskapsspel"
               />
               <ButtonLink
+                className={styles.actionItem}
                 fullWidth
                 href="/play"
                 leadingIcon="group"

@@ -1,21 +1,21 @@
 [
   {
     "qid": "Q2946",
-    "title": "Slottet i Versailles färdigställs",
-    "subtitle": "Kungligt slott i Versailles, Frankrike",
+    "title": "Palace of Versailles is completed",
+    "subtitle": "Palace in Versailles, France and location of the Museum of the History of France",
     "year": 1661,
-    "fact": "Slottet i Versailles är kungligt slott i Versailles, Frankrike.",
-    "wikipediaSlug": "Slottet_i_Versailles",
+    "fact": "The Palace of Versailles is a former royal residence commissioned by King Louis XIV located in Versailles, about 18 kilometres (11 mi) west of the city centre of Paris, in the Yvelines department of Île-de-France region in France.",
+    "wikipediaSlug": "Palace_of_Versailles",
     "image": "Versailles-Chateau-Jardins02.jpg",
     "pageViews": 65767
   },
   {
     "qid": "Q19675",
-    "title": "Louvren öppnar",
-    "subtitle": "Konstmuseum i Paris, Frankrike",
+    "title": "Louvre Museum opens",
+    "subtitle": "Art and archeology museum in Paris, France",
     "year": 1793,
-    "fact": "Louvren är konstmuseum i Paris, Frankrike.",
-    "wikipediaSlug": "Louvren",
+    "fact": "The Louvre, or the Louvre Museum, is a national art museum in Paris, France.",
+    "wikipediaSlug": "Louvre",
     "image": "Louvre_Museum_Wikimedia_Commons.jpg",
     "pageViews": 59843
   }

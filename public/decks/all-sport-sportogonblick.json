@@ -1540,46 +1540,6 @@
     "year": 2006
   },
   {
-    "fact": "Alan Jones vinner Formel 1-VM.",
-    "image": "Williams27800x532.jpg",
-    "pageViews": 240000,
-    "qid": "Q69423",
-    "subtitle": "Formel 1-säsong",
-    "title": "Alan Jones vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1980",
-    "year": 1980
-  },
-  {
-    "fact": "Nelson Piquet vinner Formel 1-VM.",
-    "image": "Piquetmonaco.jpg",
-    "pageViews": 240000,
-    "qid": "Q69431",
-    "subtitle": "Formel 1-säsong",
-    "title": "Nelson Piquet vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1981",
-    "year": 1981
-  },
-  {
-    "fact": "Keke Rosberg vinner Formel 1-VM.",
-    "image": "1982WilliamsCosworthFW08.jpg",
-    "pageViews": 240000,
-    "qid": "Q69548",
-    "subtitle": "Formel 1-säsong",
-    "title": "Keke Rosberg vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1982",
-    "year": 1982
-  },
-  {
-    "fact": "Nelson Piquet vinner Formel 1-VM.",
-    "image": "Tyrrell 011 1983.jpg",
-    "pageViews": 240000,
-    "qid": "Q69561",
-    "subtitle": "Formel 1-säsong",
-    "title": "Nelson Piquet vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1983",
-    "year": 1983
-  },
-  {
     "fact": "Sverige vinner damernas fotbolls-EM.",
     "image": "European_Competition_for_Women's_Football_1984_map.svg",
     "pageViews": 240000,
@@ -1590,26 +1550,6 @@
     "year": 1984
   },
   {
-    "fact": "Niki Lauda vinner Formel 1-VM.",
-    "image": "Lauda, Niki 1973-07-06.jpg",
-    "pageViews": 240000,
-    "qid": "Q69576",
-    "subtitle": "Formel 1-säsong",
-    "title": "Niki Lauda vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1984",
-    "year": 1984
-  },
-  {
-    "fact": "Alain Prost vinner Formel 1-VM.",
-    "image": "Alain Prost 2008.jpg",
-    "pageViews": 240000,
-    "qid": "Q69603",
-    "subtitle": "Formel 1-säsong",
-    "title": "Alain Prost vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1985",
-    "year": 1985
-  },
-  {
     "fact": "Bernard Hinault vinner Tour de France.",
     "image": "Route_of_the_1985_Tour_de_France.png",
     "pageViews": 240000,
@@ -1618,16 +1558,6 @@
     "title": "Bernard Hinault vinner Tour de France",
     "wikipediaSlug": "Tour_de_France_1985",
     "year": 1985
-  },
-  {
-    "fact": "Alain Prost vinner Formel 1-VM.",
-    "image": "Alain Prost 2008.jpg",
-    "pageViews": 240000,
-    "qid": "Q69614",
-    "subtitle": "Formel 1-säsong",
-    "title": "Alain Prost vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1986",
-    "year": 1986
   },
   {
     "fact": "Greg LeMond vinner Tour de France.",
@@ -1660,16 +1590,6 @@
     "year": 1987
   },
   {
-    "fact": "Nelson Piquet vinner Formel 1-VM.",
-    "image": "Williams FW11B Honda.jpg",
-    "pageViews": 240000,
-    "qid": "Q69623",
-    "subtitle": "Formel 1-säsong",
-    "title": "Nelson Piquet vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1987",
-    "year": 1987
-  },
-  {
     "fact": "Stephen Roche vinner Tour de France.",
     "image": "Route_of_the_1987_Tour_de_France.png",
     "pageViews": 240000,
@@ -1688,16 +1608,6 @@
     "title": "New York Giants vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_XXI",
     "year": 1987
-  },
-  {
-    "fact": "Ayrton Senna vinner Formel 1-VM.",
-    "image": "Ayrton Senna Imola 1989 Cropped.jpg",
-    "pageViews": 240000,
-    "qid": "Q69633",
-    "subtitle": "Formel 1-säsong",
-    "title": "Ayrton Senna vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1988",
-    "year": 1988
   },
   {
     "fact": "Pedro Delgado vinner Tour de France.",
@@ -1730,16 +1640,6 @@
     "year": 1989
   },
   {
-    "fact": "Alain Prost vinner Formel 1-VM.",
-    "image": "Formula_1,_GP_San_Marino_1989,_Imola,_Prost_e_Senna.jpg",
-    "pageViews": 240000,
-    "qid": "Q69641",
-    "subtitle": "Formel 1-säsong",
-    "title": "Alain Prost vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1989",
-    "year": 1989
-  },
-  {
     "fact": "Greg LeMond vinner Tour de France.",
     "image": "Route_of_the_1989_Tour_de_France.png",
     "pageViews": 240000,
@@ -1758,16 +1658,6 @@
     "title": "San Francisco 49ers vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_XXIII",
     "year": 1989
-  },
-  {
-    "fact": "Ayrton Senna vinner Formel 1-VM.",
-    "image": "Alain_Prost_1990_Canada.jpg",
-    "pageViews": 240000,
-    "qid": "Q69657",
-    "subtitle": "Formel 1-säsong",
-    "title": "Ayrton Senna vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1990",
-    "year": 1990
   },
   {
     "fact": "Greg LeMond vinner Tour de France.",
@@ -1810,16 +1700,6 @@
     "year": 1991
   },
   {
-    "fact": "Ayrton Senna vinner Formel 1-VM.",
-    "image": "Start_1991_USA.jpg",
-    "pageViews": 240000,
-    "qid": "Q69670",
-    "subtitle": "Formel 1-säsong",
-    "title": "Ayrton Senna vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1991",
-    "year": 1991
-  },
-  {
     "fact": "Miguel Indurain vinner Tour de France.",
     "image": "Route_of_the_1991_Tour_de_France.png",
     "pageViews": 240000,
@@ -1838,16 +1718,6 @@
     "title": "New York Giants vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_XXV",
     "year": 1991
-  },
-  {
-    "fact": "Nigel Mansell vinner Formel 1-VM.",
-    "image": "Ayrton_Senna_1992_Monaco.jpg",
-    "pageViews": 240000,
-    "qid": "Q69686",
-    "subtitle": "Formel 1-säsong",
-    "title": "Nigel Mansell vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1992",
-    "year": 1992
   },
   {
     "fact": "Miguel Indurain vinner Tour de France.",
@@ -1880,16 +1750,6 @@
     "year": 1993
   },
   {
-    "fact": "Alain Prost vinner Formel 1-VM.",
-    "image": "Hockenheim93-start-3.png",
-    "pageViews": 240000,
-    "qid": "Q69696",
-    "subtitle": "Formel 1-säsong",
-    "title": "Alain Prost vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1993",
-    "year": 1993
-  },
-  {
     "fact": "Miguel Indurain vinner Tour de France.",
     "image": "Route_of_the_1993_Tour_de_France.png",
     "pageViews": 240000,
@@ -1908,16 +1768,6 @@
     "title": "Dallas Cowboys vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_XXVII",
     "year": 1993
-  },
-  {
-    "fact": "Michael Schumacher vinner Formel 1-VM.",
-    "image": "Michael Schumacher Benetton 1994 (cropped).jpg",
-    "pageViews": 240000,
-    "qid": "Q69713",
-    "subtitle": "Formel 1-säsong",
-    "title": "Michael Schumacher vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1994",
-    "year": 1994
   },
   {
     "fact": "Miguel Indurain vinner Tour de France.",
@@ -1960,16 +1810,6 @@
     "year": 1995
   },
   {
-    "fact": "Michael Schumacher vinner Formel 1-VM.",
-    "image": "Michael_Schumacher_-_Benetton_B195_at_the_1995_British_Grand_Prix,_Silverstone_(49721140107).jpg",
-    "pageViews": 240000,
-    "qid": "Q69722",
-    "subtitle": "Formel 1-säsong",
-    "title": "Michael Schumacher vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1995",
-    "year": 1995
-  },
-  {
     "fact": "Miguel Indurain vinner Tour de France.",
     "image": "Route_of_the_1995_Tour_de_France.png",
     "pageViews": 240000,
@@ -1988,16 +1828,6 @@
     "title": "San Francisco 49ers vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_XXIX",
     "year": 1995
-  },
-  {
-    "fact": "Damon Hill vinner Formel 1-VM.",
-    "image": "Grand_Prix_Monaco96_131954710.jpg",
-    "pageViews": 240000,
-    "qid": "Q69735",
-    "subtitle": "Formel 1-säsong",
-    "title": "Damon Hill vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1996",
-    "year": 1996
   },
   {
     "fact": "Bjarne Riis vinner Tour de France.",
@@ -2030,16 +1860,6 @@
     "year": 1997
   },
   {
-    "fact": "Jacques Villeneuve vinner Formel 1-VM.",
-    "image": "Williams_FW19_Great-Britain_1997.jpg",
-    "pageViews": 240000,
-    "qid": "Q69750",
-    "subtitle": "Formel 1-säsong",
-    "title": "Jacques Villeneuve vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1997",
-    "year": 1997
-  },
-  {
     "fact": "Jan Ullrich vinner Tour de France.",
     "image": "Route_of_the_1997_Tour_de_France.png",
     "pageViews": 240000,
@@ -2058,16 +1878,6 @@
     "title": "Green Bay Packers vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_XXXI",
     "year": 1997
-  },
-  {
-    "fact": "Mika Häkkinen vinner Formel 1-VM.",
-    "image": "DC&MSch_Britain_1998.jpg",
-    "pageViews": 240000,
-    "qid": "Q69763",
-    "subtitle": "Formel 1-säsong",
-    "title": "Mika Häkkinen vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1998",
-    "year": 1998
   },
   {
     "fact": "Marco Pantani vinner Tour de France.",
@@ -2100,16 +1910,6 @@
     "year": 1999
   },
   {
-    "fact": "Mika Häkkinen vinner Formel 1-VM.",
-    "image": "Mika_Hakkinen_1999_Canada.jpg",
-    "pageViews": 240000,
-    "qid": "Q69791",
-    "subtitle": "Formel 1-säsong",
-    "title": "Mika Häkkinen vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1999",
-    "year": 1999
-  },
-  {
     "fact": "not attributed vinner Tour de France.",
     "image": "Route_of_the_1999_Tour_de_France.png",
     "pageViews": 240000,
@@ -2128,16 +1928,6 @@
     "title": "Denver Broncos vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_XXXIII",
     "year": 1999
-  },
-  {
-    "fact": "Michael Schumacher vinner Formel 1-VM.",
-    "image": "Start_of_2000_United_States_Grand_Prix_at_Indianapolis_from_Tower_Terrace_grandstand.jpg",
-    "pageViews": 240000,
-    "qid": "Q69805",
-    "subtitle": "Formel 1-säsong",
-    "title": "Michael Schumacher vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2000",
-    "year": 2000
   },
   {
     "fact": "not attributed vinner Tour de France.",
@@ -2170,16 +1960,6 @@
     "year": 2001
   },
   {
-    "fact": "Michael Schumacher vinner Formel 1-VM.",
-    "image": "First_lap_2001_Canada.jpg",
-    "pageViews": 240000,
-    "qid": "Q69835",
-    "subtitle": "Formel 1-säsong",
-    "title": "Michael Schumacher vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2001",
-    "year": 2001
-  },
-  {
     "fact": "not attributed vinner Tour de France.",
     "image": "Route_of_the_2001_Tour_de_France.png",
     "pageViews": 240000,
@@ -2198,16 +1978,6 @@
     "title": "Baltimore Ravens vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_XXXV",
     "year": 2001
-  },
-  {
-    "fact": "Michael Schumacher vinner Formel 1-VM.",
-    "image": "2002_Austrian_GP.jpg",
-    "pageViews": 240000,
-    "qid": "Q69844",
-    "subtitle": "Formel 1-säsong",
-    "title": "Michael Schumacher vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2002",
-    "year": 2002
   },
   {
     "fact": "not attributed vinner Tour de France.",
@@ -2240,16 +2010,6 @@
     "year": 2003
   },
   {
-    "fact": "Michael Schumacher vinner Formel 1-VM.",
-    "image": "Formula_one.jpg",
-    "pageViews": 240000,
-    "qid": "Q69859",
-    "subtitle": "Formel 1-säsong",
-    "title": "Michael Schumacher vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2003",
-    "year": 2003
-  },
-  {
     "fact": "not attributed vinner Tour de France.",
     "image": "Route_of_the_2003_Tour_de_France.png",
     "pageViews": 240000,
@@ -2268,16 +2028,6 @@
     "title": "Tampa Bay Buccaneers vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_XXXVII",
     "year": 2003
-  },
-  {
-    "fact": "Michael Schumacher vinner Formel 1-VM.",
-    "image": "Jarno_Trulli_-_Renault_R24_leads_David_Coulthard_-_Mclaren_MP4-19B,Takuma_Sato_-_BAR006_&_Montoya_at_Brooklands_at_the_2004_British_Grand_Prix_(50834708718).jpg",
-    "pageViews": 240000,
-    "qid": "Q69869",
-    "subtitle": "Formel 1-säsong",
-    "title": "Michael Schumacher vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2004",
-    "year": 2004
   },
   {
     "fact": "not attributed vinner Tour de France.",
@@ -2310,16 +2060,6 @@
     "year": 2005
   },
   {
-    "fact": "Fernando Alonso vinner Formel 1-VM.",
-    "image": "Lap4_Canada2005.jpg",
-    "pageViews": 240000,
-    "qid": "Q69880",
-    "subtitle": "Formel 1-säsong",
-    "title": "Fernando Alonso vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2005",
-    "year": 2005
-  },
-  {
     "fact": "not attributed vinner Tour de France.",
     "image": "Route_of_the_2005_Tour_de_France.png",
     "pageViews": 240000,
@@ -2338,16 +2078,6 @@
     "title": "New England Patriots vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_XXXIX",
     "year": 2005
-  },
-  {
-    "fact": "Fernando Alonso vinner Formel 1-VM.",
-    "image": "Start_China_2006.jpg",
-    "pageViews": 240000,
-    "qid": "Q69893",
-    "subtitle": "Formel 1-säsong",
-    "title": "Fernando Alonso vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2006",
-    "year": 2006
   },
   {
     "fact": "Oscar Pereiro vinner Tour de France.",
@@ -2380,16 +2110,6 @@
     "year": 2007
   },
   {
-    "fact": "Kimi Räikkönen vinner Formel 1-VM.",
-    "image": "PartenzaGPAustralia2007.jpg",
-    "pageViews": 240000,
-    "qid": "Q69901",
-    "subtitle": "Formel 1-säsong",
-    "title": "Kimi Räikkönen vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2007",
-    "year": 2007
-  },
-  {
     "fact": "Alberto Contador vinner Tour de France.",
     "image": "Tour_de_France_2007.png",
     "pageViews": 240000,
@@ -2408,16 +2128,6 @@
     "title": "Indianapolis Colts vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_XLI",
     "year": 2007
-  },
-  {
-    "fact": "Lewis Hamilton vinner Formel 1-VM.",
-    "image": "Start_2008_Belgium.jpg",
-    "pageViews": 240000,
-    "qid": "Q69913",
-    "subtitle": "Formel 1-säsong",
-    "title": "Lewis Hamilton vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2008",
-    "year": 2008
   },
   {
     "fact": "Carlos Sastre vinner Tour de France.",
@@ -2490,16 +2200,6 @@
     "year": 2009
   },
   {
-    "fact": "Jenson Button vinner Formel 1-VM.",
-    "image": "2009_Japanese_GP_opening_lap.jpg",
-    "pageViews": 240000,
-    "qid": "Q69923",
-    "subtitle": "Formel 1-säsong",
-    "title": "Jenson Button vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2009",
-    "year": 2009
-  },
-  {
     "fact": "Alberto Contador vinner Tour de France.",
     "image": "Carte_Tour_de_France_2009.png",
     "pageViews": 240000,
@@ -2558,16 +2258,6 @@
     "title": "Wimbledon avgörs",
     "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2009",
     "year": 2009
-  },
-  {
-    "fact": "Sebastian Vettel vinner Formel 1-VM.",
-    "image": "2010_Malaysian_GP_opening_lap.jpg",
-    "pageViews": 240000,
-    "qid": "Q69934",
-    "subtitle": "Formel 1-säsong",
-    "title": "Sebastian Vettel vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2010",
-    "year": 2010
   },
   {
     "fact": "Andy Schleck vinner Tour de France.",
@@ -2650,16 +2340,6 @@
     "year": 2011
   },
   {
-    "fact": "Sebastian Vettel vinner Formel 1-VM.",
-    "image": "Sebastian_Vettel_2011_Malaysia_FP1_2.jpg",
-    "pageViews": 240000,
-    "qid": "Q69943",
-    "subtitle": "Formel 1-säsong",
-    "title": "Sebastian Vettel vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2011",
-    "year": 2011
-  },
-  {
     "fact": "Cadel Evans vinner Tour de France.",
     "image": "Route_of_the_2011_Tour_de_France.png",
     "pageViews": 240000,
@@ -2708,16 +2388,6 @@
     "title": "Wimbledon avgörs",
     "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2011",
     "year": 2011
-  },
-  {
-    "fact": "Sebastian Vettel vinner Formel 1-VM.",
-    "image": "2012_Malaysian_GP_opening_lap.jpg",
-    "pageViews": 240000,
-    "qid": "Q69959",
-    "subtitle": "Formel 1-säsong",
-    "title": "Sebastian Vettel vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2012",
-    "year": 2012
   },
   {
     "fact": "Bradley Wiggins vinner Tour de France.",
@@ -2780,16 +2450,6 @@
     "year": 2013
   },
   {
-    "fact": "Sebastian Vettel vinner Formel 1-VM.",
-    "image": "F1_2013_Belgian_Grand_Prix_-_Start.jpg",
-    "pageViews": 240000,
-    "qid": "Q69356",
-    "subtitle": "Formel 1-säsong",
-    "title": "Sebastian Vettel vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2013",
-    "year": 2013
-  },
-  {
     "fact": "Chris Froome vinner Tour de France.",
     "image": "Route_of_the_2013_Tour_de_France.png",
     "pageViews": 240000,
@@ -2838,16 +2498,6 @@
     "title": "Wimbledon avgörs",
     "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2013",
     "year": 2013
-  },
-  {
-    "fact": "Lewis Hamilton vinner Formel 1-VM.",
-    "image": "First_lap_2014_Bahrain_Grand_Prix_(3).jpg",
-    "pageViews": 240000,
-    "qid": "Q69969",
-    "subtitle": "Formel 1-säsong",
-    "title": "Lewis Hamilton vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2014",
-    "year": 2014
   },
   {
     "fact": "Vincenzo Nibali vinner Tour de France.",
@@ -2920,16 +2570,6 @@
     "year": 2015
   },
   {
-    "fact": "Lewis Hamilton vinner Formel 1-VM.",
-    "image": "2015_Malaysian_GP_opening_lap.jpg",
-    "pageViews": 240000,
-    "qid": "Q14293115",
-    "subtitle": "Formel 1-säsong",
-    "title": "Lewis Hamilton vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2015",
-    "year": 2015
-  },
-  {
     "fact": "Chris Froome vinner Tour de France.",
     "image": "Tour_de_France_2015_map-fr.svg",
     "pageViews": 240000,
@@ -2968,16 +2608,6 @@
     "title": "Wimbledon avgörs",
     "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2015",
     "year": 2015
-  },
-  {
-    "fact": "Nico Rosberg vinner Formel 1-VM.",
-    "image": "Formula_1_2016_-i---i-_(30063705664).jpg",
-    "pageViews": 240000,
-    "qid": "Q17455748",
-    "subtitle": "Formel 1-säsong",
-    "title": "Nico Rosberg vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2016",
-    "year": 2016
   },
   {
     "fact": "Chris Froome vinner Tour de France.",
@@ -3040,16 +2670,6 @@
     "year": 2017
   },
   {
-    "fact": "Lewis Hamilton vinner Formel 1-VM.",
-    "image": "Restart_after_the_safety_car_(35193262750).jpg",
-    "pageViews": 240000,
-    "qid": "Q20755615",
-    "subtitle": "Formel 1-säsong",
-    "title": "Lewis Hamilton vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2017",
-    "year": 2017
-  },
-  {
     "fact": "Chris Froome vinner Tour de France.",
     "image": "2017_Tour_de_France_map.png",
     "pageViews": 240000,
@@ -3108,16 +2728,6 @@
     "title": "Wimbledon avgörs",
     "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2017",
     "year": 2017
-  },
-  {
-    "fact": "Moreno vinner Formel 1-VM.",
-    "image": "Lewis_Hamilton_2016_Malaysia_2.jpg",
-    "pageViews": 240000,
-    "qid": "Q23051084",
-    "subtitle": "Formel 1-säsong",
-    "title": "Moreno vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2018",
-    "year": 2018
   },
   {
     "fact": "Geraint Thomas vinner Tour de France.",
@@ -3200,16 +2810,6 @@
     "year": 2019
   },
   {
-    "fact": "Lewis Hamilton vinner Formel 1-VM.",
-    "image": "FIA F1 Austria 2019 Nr. 10 Gasly 2.jpg",
-    "pageViews": 240000,
-    "qid": "Q41173535",
-    "subtitle": "Formel 1-säsong",
-    "title": "Lewis Hamilton vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2019",
-    "year": 2019
-  },
-  {
     "fact": "Julian Alaphilippe vinner Tour de France.",
     "image": "TDF19.png",
     "pageViews": 240000,
@@ -3280,16 +2880,6 @@
     "year": 2019
   },
   {
-    "fact": "Lewis Hamilton vinner Formel 1-VM.",
-    "image": "Valtteri_Bottas_2020_Tuscan_Grand_Prix_-_race_day.jpg",
-    "pageViews": 240000,
-    "qid": "Q41174436",
-    "subtitle": "Formel 1-säsong",
-    "title": "Lewis Hamilton vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2020",
-    "year": 2020
-  },
-  {
     "fact": "Marc Hirschi vinner Tour de France.",
     "image": "Route_of_the_2020_Tour_de_France.png",
     "pageViews": 240000,
@@ -3358,16 +2948,6 @@
     "title": "Wimbledon avgörs",
     "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2020",
     "year": 2020
-  },
-  {
-    "fact": "Lewis Hamilton vinner Formel 1-VM.",
-    "image": "Max_Verstappen_2017_Malaysia_1.jpg",
-    "pageViews": 240000,
-    "qid": "Q72635834",
-    "subtitle": "Formel 1-säsong",
-    "title": "Lewis Hamilton vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2021",
-    "year": 2021
   },
   {
     "fact": "Tadej Pogačar vinner Tour de France.",
@@ -3450,16 +3030,6 @@
     "year": 2022
   },
   {
-    "fact": "Formel 1-VM avgörs.",
-    "image": "Max_Verstappen_2017_Malaysia_3.jpg",
-    "pageViews": 240000,
-    "qid": "Q92821370",
-    "subtitle": "Formel 1-säsong",
-    "title": "Formel 1-VM avgörs",
-    "wikipediaSlug": "Formel_1-VM_2022",
-    "year": 2022
-  },
-  {
     "fact": "Jonas Vingegaard vinner Tour de France.",
     "image": "Route_of_the_2022_Tour_de_France.png",
     "pageViews": 240000,
@@ -3530,16 +3100,6 @@
     "year": 2023
   },
   {
-    "fact": "Max Verstappen vinner Formel 1-VM.",
-    "image": "Max_Verstappen_2017_Malaysia_3.jpg",
-    "pageViews": 240000,
-    "qid": "Q109323149",
-    "subtitle": "Formel 1-säsong",
-    "title": "Max Verstappen vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2023",
-    "year": 2023
-  },
-  {
     "fact": "Jonas Vingegaard vinner Tour de France.",
     "image": "TDF31466_vingegaard_(53062211779).jpg",
     "pageViews": 240000,
@@ -3590,16 +3150,6 @@
     "year": 2023
   },
   {
-    "fact": "Formel 1-VM avgörs.",
-    "image": "2024-08-25_Motorsport,_Formel_1,_Großer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_(medium_crop).jpg",
-    "pageViews": 240000,
-    "qid": "Q113628886",
-    "subtitle": "Formel 1-säsong",
-    "title": "Formel 1-VM avgörs",
-    "wikipediaSlug": "Formel_1-VM_2024",
-    "year": 2024
-  },
-  {
     "fact": "Tadej Pogačar vinner Tour de France.",
     "image": "TF241534_Almeida_Roglic_Pogacar_Yates_(53873615951).jpg",
     "pageViews": 240000,
@@ -3637,16 +3187,6 @@
     "subtitle": "Damernas fotbolls-EM",
     "title": "England vinner damernas fotbolls-EM",
     "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2025",
-    "year": 2025
-  },
-  {
-    "fact": "McLaren vinner Formel 1-VM.",
-    "image": "2024-08-25_Motorsport,_Formel_1,_Großer_Preis_der_Niederlande_2024_STP_4016_by_Stepro_(cropped).jpg",
-    "pageViews": 240000,
-    "qid": "Q115942630",
-    "subtitle": "Formel 1-säsong",
-    "title": "McLaren vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_2025",
     "year": 2025
   },
   {
@@ -3860,186 +3400,6 @@
     "year": 1903
   },
   {
-    "fact": "Nino Farina vinner Formel 1-VM.",
-    "image": "NinoFarina.jpg",
-    "pageViews": 140000,
-    "qid": "Q68926",
-    "subtitle": "Formel 1-säsong",
-    "title": "Nino Farina vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1950",
-    "year": 1950
-  },
-  {
-    "fact": "Juan Manuel Fangio vinner Formel 1-VM.",
-    "image": "Juan Manuel Fangio (circa 1952).jpg",
-    "pageViews": 140000,
-    "qid": "Q68955",
-    "subtitle": "Formel 1-säsong",
-    "title": "Juan Manuel Fangio vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1951",
-    "year": 1951
-  },
-  {
-    "fact": "Alberto Ascari vinner Formel 1-VM.",
-    "image": "1952-09-07 GP Italia Monza Ferrari 500 F2 Villoresi Ascari.jpg",
-    "pageViews": 140000,
-    "qid": "Q68967",
-    "subtitle": "Formel 1-säsong",
-    "title": "Alberto Ascari vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1952",
-    "year": 1952
-  },
-  {
-    "fact": "Alberto Ascari vinner Formel 1-VM.",
-    "image": "Ferrari 500 - de Cadenet 1975.jpg",
-    "pageViews": 140000,
-    "qid": "Q68980",
-    "subtitle": "Formel 1-säsong",
-    "title": "Alberto Ascari vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1953",
-    "year": 1953
-  },
-  {
-    "fact": "Juan Manuel Fangio vinner Formel 1-VM.",
-    "image": "Juan Manuel Fangio (circa 1952).jpg",
-    "pageViews": 140000,
-    "qid": "Q69001",
-    "subtitle": "Formel 1-säsong",
-    "title": "Juan Manuel Fangio vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1954",
-    "year": 1954
-  },
-  {
-    "fact": "Juan Manuel Fangio vinner Formel 1-VM.",
-    "image": "Juan Manuel Fangio (circa 1952).jpg",
-    "pageViews": 140000,
-    "qid": "Q69015",
-    "subtitle": "Formel 1-säsong",
-    "title": "Juan Manuel Fangio vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1955",
-    "year": 1955
-  },
-  {
-    "fact": "Juan Manuel Fangio vinner Formel 1-VM.",
-    "image": "Juan Manuel Fangio (circa 1952).jpg",
-    "pageViews": 140000,
-    "qid": "Q69032",
-    "subtitle": "Formel 1-säsong",
-    "title": "Juan Manuel Fangio vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1956",
-    "year": 1956
-  },
-  {
-    "fact": "Juan Manuel Fangio vinner Formel 1-VM.",
-    "image": "Juan Manuel Fangio (circa 1952).jpg",
-    "pageViews": 140000,
-    "qid": "Q69047",
-    "subtitle": "Formel 1-säsong",
-    "title": "Juan Manuel Fangio vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1957",
-    "year": 1957
-  },
-  {
-    "fact": "Mike Hawthorn vinner Formel 1-VM.",
-    "image": "Vanwall VW7 Monaco.jpg",
-    "pageViews": 140000,
-    "qid": "Q69106",
-    "subtitle": "Formel 1-säsong",
-    "title": "Mike Hawthorn vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1958",
-    "year": 1958
-  },
-  {
-    "fact": "Jack Brabham vinner Formel 1-VM.",
-    "image": "BrabhamJack1966B.jpg",
-    "pageViews": 140000,
-    "qid": "Q69118",
-    "subtitle": "Formel 1-säsong",
-    "title": "Jack Brabham vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1959",
-    "year": 1959
-  },
-  {
-    "fact": "Jack Brabham vinner Formel 1-VM.",
-    "image": "BrabhamJack1966B.jpg",
-    "pageViews": 140000,
-    "qid": "Q69146",
-    "subtitle": "Formel 1-säsong",
-    "title": "Jack Brabham vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1960",
-    "year": 1960
-  },
-  {
-    "fact": "Phil Hill vinner Formel 1-VM.",
-    "image": "HillPhil1962.jpg",
-    "pageViews": 140000,
-    "qid": "Q69161",
-    "subtitle": "Formel 1-säsong",
-    "title": "Phil Hill vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1961",
-    "year": 1961
-  },
-  {
-    "fact": "Graham Hill vinner Formel 1-VM.",
-    "image": "HillGraham1969Aug.jpg",
-    "pageViews": 140000,
-    "qid": "Q69174",
-    "subtitle": "Formel 1-säsong",
-    "title": "Graham Hill vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1962",
-    "year": 1962
-  },
-  {
-    "fact": "Jim Clark vinner Formel 1-VM.",
-    "image": "ClarkJim-Lotus19620805.jpg",
-    "pageViews": 140000,
-    "qid": "Q69184",
-    "subtitle": "Formel 1-säsong",
-    "title": "Jim Clark vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1963",
-    "year": 1963
-  },
-  {
-    "fact": "John Surtees vinner Formel 1-VM.",
-    "image": "John Surtees.JPG",
-    "pageViews": 140000,
-    "qid": "Q69193",
-    "subtitle": "Formel 1-säsong",
-    "title": "John Surtees vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1964",
-    "year": 1964
-  },
-  {
-    "fact": "Jim Clark vinner Formel 1-VM.",
-    "image": "ClarkJim-Lotus19620805.jpg",
-    "pageViews": 140000,
-    "qid": "Q69204",
-    "subtitle": "Formel 1-säsong",
-    "title": "Jim Clark vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1965",
-    "year": 1965
-  },
-  {
-    "fact": "Jack Brabham vinner Formel 1-VM.",
-    "image": "BrabhamJack1966B.jpg",
-    "pageViews": 140000,
-    "qid": "Q69220",
-    "subtitle": "Formel 1-säsong",
-    "title": "Jack Brabham vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1966",
-    "year": 1966
-  },
-  {
-    "fact": "Denny Hulme vinner Formel 1-VM.",
-    "image": "HulmeDenis196508.jpg",
-    "pageViews": 140000,
-    "qid": "Q69229",
-    "subtitle": "Formel 1-säsong",
-    "title": "Denny Hulme vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1967",
-    "year": 1967
-  },
-  {
     "fact": "Green Bay Packers vinner Super Bowl.",
     "image": "Super_Bowl_I_Logo.svg",
     "pageViews": 140000,
@@ -4048,16 +3408,6 @@
     "title": "Green Bay Packers vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_I",
     "year": 1967
-  },
-  {
-    "fact": "Graham Hill vinner Formel 1-VM.",
-    "image": "HillGraham1969Aug.jpg",
-    "pageViews": 140000,
-    "qid": "Q69243",
-    "subtitle": "Formel 1-säsong",
-    "title": "Graham Hill vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1968",
-    "year": 1968
   },
   {
     "fact": "Green Bay Packers vinner Super Bowl.",
@@ -4070,16 +3420,6 @@
     "year": 1968
   },
   {
-    "fact": "Jackie Stewart vinner Formel 1-VM.",
-    "image": "Jackie Stewart speaking.jpg",
-    "pageViews": 140000,
-    "qid": "Q69254",
-    "subtitle": "Formel 1-säsong",
-    "title": "Jackie Stewart vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1969",
-    "year": 1969
-  },
-  {
     "fact": "New York Jets vinner Super Bowl.",
     "image": "Super_Bowl_III_logo.svg",
     "pageViews": 140000,
@@ -4088,16 +3428,6 @@
     "title": "New York Jets vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_III",
     "year": 1969
-  },
-  {
-    "fact": "Jochen Rindt vinner Formel 1-VM.",
-    "image": "Rindt, Jochen 1968.jpg",
-    "pageViews": 140000,
-    "qid": "Q47225",
-    "subtitle": "Formel 1-säsong",
-    "title": "Jochen Rindt vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1970",
-    "year": 1970
   },
   {
     "fact": "Kansas City Chiefs vinner Super Bowl.",
@@ -4110,16 +3440,6 @@
     "year": 1970
   },
   {
-    "fact": "Jackie Stewart vinner Formel 1-VM.",
-    "image": "Jackie Stewart speaking.jpg",
-    "pageViews": 140000,
-    "qid": "Q42176",
-    "subtitle": "Formel 1-säsong",
-    "title": "Jackie Stewart vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1971",
-    "year": 1971
-  },
-  {
     "fact": "Baltimore Colts vinner Super Bowl.",
     "image": "1986 Jeno's Pizza - 32 - Earl Morrall.jpg",
     "pageViews": 140000,
@@ -4128,16 +3448,6 @@
     "title": "Baltimore Colts vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_V",
     "year": 1971
-  },
-  {
-    "fact": "Emerson Fittipaldi vinner Formel 1-VM.",
-    "image": "Emerson Fittipaldi.jpg",
-    "pageViews": 140000,
-    "qid": "Q69267",
-    "subtitle": "Formel 1-säsong",
-    "title": "Emerson Fittipaldi vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1972",
-    "year": 1972
   },
   {
     "fact": "Dallas Cowboys vinner Super Bowl.",
@@ -4150,34 +3460,14 @@
     "year": 1972
   },
   {
-    "fact": "Jackie Stewart vinner Formel 1-VM.",
-    "image": "Jackie Stewart speaking.jpg",
-    "pageViews": 140000,
-    "qid": "Q62608",
-    "subtitle": "Formel 1-säsong",
-    "title": "Jackie Stewart vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1973",
-    "year": 1973
-  },
-  {
     "fact": "Washington Commanders vinner Super Bowl.",
-    "image": "Washington Commanders Uniforms 2026.png",
+    "image": "Washington Commanders Uniforms (2026).png",
     "pageViews": 140000,
     "qid": "Q378744",
     "subtitle": "NFL-final",
     "title": "Washington Commanders vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_VII",
     "year": 1973
-  },
-  {
-    "fact": "Emerson Fittipaldi vinner Formel 1-VM.",
-    "image": "Fittipaldi - El Gráfico 2834 2.jpg",
-    "pageViews": 140000,
-    "qid": "Q69343",
-    "subtitle": "Formel 1-säsong",
-    "title": "Emerson Fittipaldi vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1974",
-    "year": 1974
   },
   {
     "fact": "Miami Dolphins vinner Super Bowl.",
@@ -4190,16 +3480,6 @@
     "year": 1974
   },
   {
-    "fact": "Niki Lauda vinner Formel 1-VM.",
-    "image": "1975 Italian GP - The new F1 Drivers' World Champion Niki Lauda on the podium.jpg",
-    "pageViews": 140000,
-    "qid": "Q69375",
-    "subtitle": "Formel 1-säsong",
-    "title": "Niki Lauda vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1975",
-    "year": 1975
-  },
-  {
     "fact": "Pittsburgh Steelers vinner Super Bowl.",
     "image": "Super_Bowl_IX_Logo.svg",
     "pageViews": 140000,
@@ -4208,16 +3488,6 @@
     "title": "Pittsburgh Steelers vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_IX",
     "year": 1975
-  },
-  {
-    "fact": "Q140393 vinner Formel 1-VM.",
-    "image": "James Hunt - Dutch GP 1976 crop mod.jpg",
-    "pageViews": 140000,
-    "qid": "Q69387",
-    "subtitle": "Formel 1-säsong",
-    "title": "Q140393 vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1976",
-    "year": 1976
   },
   {
     "fact": "Pittsburgh Steelers vinner Super Bowl.",
@@ -4240,16 +3510,6 @@
     "year": 1976
   },
   {
-    "fact": "Niki Lauda vinner Formel 1-VM.",
-    "image": "Lauda, Niki 1973-07-06.jpg",
-    "pageViews": 140000,
-    "qid": "Q69396",
-    "subtitle": "Formel 1-säsong",
-    "title": "Niki Lauda vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1977",
-    "year": 1977
-  },
-  {
     "fact": "Las Vegas Raiders vinner Super Bowl.",
     "image": "Football_(soccer_ball).svg",
     "pageViews": 140000,
@@ -4260,16 +3520,6 @@
     "year": 1977
   },
   {
-    "fact": "Mario Andretti vinner Formel 1-VM.",
-    "image": "Mario Andretti 2009 Indy 500 Pole Day.JPG",
-    "pageViews": 140000,
-    "qid": "Q69405",
-    "subtitle": "Formel 1-säsong",
-    "title": "Mario Andretti vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1978",
-    "year": 1978
-  },
-  {
     "fact": "Dallas Cowboys vinner Super Bowl.",
     "image": "Superdome_from_Garage.jpg",
     "pageViews": 140000,
@@ -4278,16 +3528,6 @@
     "title": "Dallas Cowboys vinner Super Bowl",
     "wikipediaSlug": "Super_Bowl_XII",
     "year": 1978
-  },
-  {
-    "fact": "Jody Scheckter vinner Formel 1-VM.",
-    "image": "Scheckter, Jody 1976-07-10 (Ausschn).jpg",
-    "pageViews": 140000,
-    "qid": "Q69415",
-    "subtitle": "Formel 1-säsong",
-    "title": "Jody Scheckter vinner Formel 1-VM",
-    "wikipediaSlug": "Formel_1-VM_1979",
-    "year": 1979
   },
   {
     "fact": "Pittsburgh Steelers vinner Super Bowl.",

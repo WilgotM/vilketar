@@ -1,5 +1,15 @@
 [
   {
+    "qid": "Q924355",
+    "title": "XXXX launches",
+    "subtitle": "XxxAustralian beer brand",
+    "year": 1924,
+    "fact": "XXXX is a brand of Australian beer brewed in Milton, Brisbane, by Queensland brewers Castlemaine Perkins, now a division of the Japanese company Kirin.",
+    "wikipediaSlug": "XXXX_(beer)",
+    "image": "XXXX_Brewery_Milton.jpg",
+    "pageViews": 1392468
+  },
+  {
     "fact": "Absolut Vodka lanseras internationellt.",
     "image": "Absolut_Vodka_logo.svg",
     "pageViews": 260000,
@@ -91,11 +101,11 @@
   },
   {
     "qid": "Q38076",
-    "title": "McDonald’s grundas",
-    "subtitle": "Amerikansk snabbmatskedja",
+    "title": "McDonald's is founded",
+    "subtitle": "American fast food restaurant chain",
     "year": 1940,
-    "fact": "McDonald’s är amerikansk snabbmatskedja.",
-    "wikipediaSlug": "McDonald%E2%80%99s",
+    "fact": "McDonald's Corporation, doing business as McDonald's, is an American multinational fast food restaurant chain.",
+    "wikipediaSlug": "McDonald%27s",
     "image": "McDonald's_Golden_Arches.svg",
     "pageViews": 195236
   },
@@ -171,61 +181,61 @@
   },
   {
     "qid": "Q2813",
-    "title": "Coca-Cola launches lanseras",
-    "subtitle": "Kolsyrad läskedryck",
+    "title": "Coca-Cola launches",
+    "subtitle": "Carbonated brown-colored soft drink",
     "year": 1886,
-    "fact": "Coca-Cola launches är kolsyrad läskedryck.",
+    "fact": "Coca-Cola, or Coke, is a cola soft drink manufactured by the Coca-Cola Company.",
     "wikipediaSlug": "Coca-Cola",
     "image": "Coca_Cola_Flasche_-_Original_Taste.jpg",
     "pageViews": 147415
   },
   {
     "qid": "Q51482",
-    "title": "Red Bull lanseras",
-    "subtitle": "Österrikisk energidryck",
+    "title": "Red Bull launches",
+    "subtitle": "Brand of energy drinks sold by Red Bull GmbH",
     "year": 1987,
-    "fact": "Red Bull är österrikisk energidryck.",
+    "fact": "Red Bull is a brand of energy drinks created and owned by the Austrian company Red Bull GmbH.",
     "wikipediaSlug": "Red_Bull",
     "image": "RedBullEnergyDrink.svg",
     "pageViews": 109230
   },
   {
     "qid": "Q194297",
-    "title": "Guinness lanseras",
-    "subtitle": "Irländskt öl",
+    "title": "Guinness launches",
+    "subtitle": "Irish brand of beer",
     "year": 1759,
-    "fact": "Guinness är irländskt öl.",
+    "fact": "Guinness is a stout that originated in the brewery of Arthur Guinness at St.",
     "wikipediaSlug": "Guinness",
     "image": "Guinness_logo_dark_text.svg",
     "pageViews": 89063
   },
   {
     "qid": "Q524757",
-    "title": "Kentucky Fried Chicken grundas",
-    "subtitle": "Amerikansk snabbmatskedja",
+    "title": "KFC is founded",
+    "subtitle": "American fast food restaurant chain specializing in fried chicken",
     "year": 1930,
-    "fact": "Kentucky Fried Chicken är amerikansk snabbmatskedja.",
-    "wikipediaSlug": "Kentucky_Fried_Chicken",
+    "fact": "KFC Corporation, doing business as KFC, is an American multinational fast food restaurant chain specializing in Southern fried chicken and chicken sandwiches.",
+    "wikipediaSlug": "KFC",
     "image": "KFC_Paraparaumu_154510.jpg",
     "pageViews": 77021
   },
   {
     "qid": "Q544293",
-    "title": "Monster Energy lanseras",
-    "subtitle": "Amerikansk energidryck",
+    "title": "Monster Energy launches",
+    "subtitle": "American energy drink",
     "year": 2002,
-    "fact": "Monster Energy är amerikansk energidryck.",
+    "fact": "Monster Energy is a brand of energy drinks that was created by Hansen Natural Company in April 2002 and released to the public with its original flavor on April 18, 2002.",
     "wikipediaSlug": "Monster_Energy",
     "image": "Monster_Energy_drink_(cropped).jpg",
     "pageViews": 65725
   },
   {
     "qid": "Q277641",
-    "title": "A&W grundas",
-    "subtitle": "Kedja av snabbmatsrestauranger",
+    "title": "A&W Restaurants is founded",
+    "subtitle": "American fast food chain",
     "year": 1919,
-    "fact": "A&W är kedja av snabbmatsrestauranger.",
-    "wikipediaSlug": "A%26W",
+    "fact": "A&W Concentrate Company, doing business as A&W Restaurants, or simply A&W, is an American fast food restaurant chain distinguished by its \"Burger Family\" combos, draft root beer and root beer floats.",
+    "wikipediaSlug": "A%26W_Restaurants",
     "image": "All_American_Food_Logo.svg",
     "pageViews": 50261
   }

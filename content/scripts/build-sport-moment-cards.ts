@@ -36,7 +36,6 @@ const WIKIDATA_API_ENDPOINT = "https://www.wikidata.org/w/api.php";
 const SPORT_MOMENT_FALLBACK_IMAGES = {
   basketball: "Basketball.png",
   cycling: "Tour_de_France_2022_-_Stage_13_-_finish_line.jpg",
-  f1: "F1.svg",
   football: "Football_(soccer_ball).svg",
   iceHockey: "Ice_hockey_pictogram.svg",
   olympics: "Olympic_flag.svg",
@@ -252,15 +251,6 @@ function createCandidates(): SportCandidate[] {
       subtitle: "Damernas fotbolls-EM",
       type: "winner" as const,
       weight: "standard" as const,
-      year,
-    })),
-    ...range(1950, 2025).map((year) => ({
-      competition: "Formel 1-VM",
-      fallbackImage: SPORT_MOMENT_FALLBACK_IMAGES.f1,
-      pageTitle: `Formel 1-VM ${year}`,
-      subtitle: "Formel 1-säsong",
-      type: "winner" as const,
-      weight: year >= 1980 ? ("standard" as const) : ("niche" as const),
       year,
     })),
     ...range(1903, 2025).map((year) => ({

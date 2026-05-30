@@ -1,30 +1,30 @@
 [
   {
     "qid": "Q352",
-    "title": "Adolf Hitler",
-    "subtitle": "Tysklands ledare 1933–1945",
+    "title": "Adolf Hitler becomes chancellor of Germany",
+    "subtitle": null,
     "year": 1933,
-    "fact": "Adolf Hitler är Tysklands ledare 1933–1945.",
+    "fact": "Adolf Hitler was an Austrian-born German politician who was the dictator of Germany during the Nazi era from 1933 until his suicide in 1945.",
     "wikipediaSlug": "Adolf_Hitler",
     "image": "Hitler_portrait_crop_(cropped)(2).jpg",
     "pageViews": 776974
   },
   {
     "qid": "Q41749",
-    "title": "Joseph Goebbels",
-    "subtitle": "Nazitysk politiker",
+    "title": "Joseph Goebbels becomes chancellor of Germany",
+    "subtitle": null,
     "year": 1945,
-    "fact": "Joseph Goebbels är nazitysk politiker.",
+    "fact": "Paul Joseph Goebbels was a German politician and philologist who was the Gauleiter of Berlin, chief propagandist for the Nazi Party, and then Reich Minister of Propaganda from 1933 until his suicide in 1945.",
     "wikipediaSlug": "Joseph_Goebbels",
     "image": "Bundesarchiv_Bild_146-1968-101-20A,_Joseph_Goebbels_(cropped)(b).jpg",
     "pageViews": 182567
   },
   {
     "qid": "Q566257",
-    "title": "Friedrich Merz",
-    "subtitle": "Tysklands förbundskansler 2025–",
+    "title": "Friedrich Merz becomes chancellor of Germany",
+    "subtitle": null,
     "year": 2025,
-    "fact": "Friedrich Merz är Tysklands förbundskansler 2025–.",
+    "fact": "Joachim-Friedrich Martin Josef Merz is a German politician who has served as Chancellor of Germany since 6 May 2025.",
     "wikipediaSlug": "Friedrich_Merz",
     "image": "2024-08-21_Friedrich_Merz_in_Erfurt_2024_STP_3041_by_Stepro_(3x4_cropped).jpg",
     "pageViews": 128092
@@ -32,9 +32,9 @@
   {
     "qid": "Q567",
     "title": "Angela Merkel becomes chancellor of Germany",
-    "subtitle": "Tysklands förbundskansler 2005–2021",
+    "subtitle": null,
     "year": 2005,
-    "fact": "Angela Merkel becomes chancellor of Germany är Tysklands förbundskansler 2005–2021.",
+    "fact": "Angela Dorothea Merkel is a German stateswoman and retired politician who served as Chancellor of Germany from 2005 to 2021.",
     "wikipediaSlug": "Angela_Merkel",
     "image": "Angela_Merkel_2019_cropped.jpg",
     "pageViews": 89900

@@ -610,6 +610,36 @@ export function drawNextCard(state: GameState): PreparedCard | null {
   return card;
 }
 
+function shuffle<T>(entries: T[], random: () => number): T[] {
+  const shuffled = [...entries];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [
+      shuffled[swapIndex],
+      shuffled[index],
+    ];
+  }
+  return shuffled;
+}
+
+function normalizeVisibleTitle(title: string): string {
+  return title.trim().replace(/\s+/g, " ").toLocaleLowerCase("sv-SE");
+}
+
+function uniqueCandidates(cards: PreparedCard[]): PreparedCard[] {
+  const usedQids = new Set<string>();
+  const usedTitles = new Set<string>();
+  return cards.filter((card) => {
+    const titleKey = normalizeVisibleTitle(card.title);
+    if (usedQids.has(card.qid) || usedTitles.has(titleKey)) {
+      return false;
+    }
+    usedQids.add(card.qid);
+    usedTitles.add(titleKey);
+    return true;
+  });
+}
+
 export function createGameState(
   selectedRootDeck: DeckNode,
   cardsByDeckId: ReadonlyMap<string, Card[]>,
@@ -617,6 +647,12 @@ export function createGameState(
   initialUsedQids: Iterable<string> = [],
   random: () => number = Math.random,
 ): GameState {
+  const preparedDecks = prepareDecks(
+    selectedRootDeck,
+    cardsByDeckId,
+    random,
+  ).map(cloneDeck);
+
   const state: GameState = {
     badlyPlaced: null,
     difficulty,
@@ -624,7 +660,7 @@ export function createGameState(
     lives: 3,
     next: null,
     nextButOne: null,
-    decks: prepareDecks(selectedRootDeck, cardsByDeckId, random).map(cloneDeck),
+    decks: preparedDecks,
     played: [],
     random,
     recentDeckIds: [],
@@ -632,6 +668,68 @@ export function createGameState(
     usedQids: new Set<string>(initialUsedQids),
     usedYears: new Set<number>(),
   };
+
+  // Om vi spelar "Alla frågor" (selectedRootDeck.id === "all"),
+  // så skapar vi en platt slumpmässig kö av alla berättigade kort för att matcha Dagens spels uniforma slumpfördelning!
+  if (selectedRootDeck.id === "all") {
+    const allCards = preparedDecks
+      .flatMap((deck) => deck.cards)
+      .filter((card) => {
+        return (
+          card.pageViews !== null &&
+          card.pageViews >= DIFFICULTY_MIN_PAGE_VIEWS[difficulty]
+        );
+      });
+
+    const uniqueCards = uniqueCandidates(allCards);
+    const shuffledCards = shuffle(uniqueCards, random);
+
+    const queue: PreparedCard[] = [];
+    const queueQids = new Set<string>(initialUsedQids);
+    const queueYears = new Set<number>();
+
+    // Pass 1: Unika år för att få en bra spridning
+    for (const card of shuffledCards) {
+      if (queueQids.has(card.qid) || queueYears.has(card.year)) {
+        continue;
+      }
+      queue.push(card);
+      queueQids.add(card.qid);
+      queueYears.add(card.year);
+    }
+
+    // Pass 2: Fyll på med resterande kort (tillåt samma år om vi har slut på unika år)
+    for (const card of shuffledCards) {
+      if (queueQids.has(card.qid)) {
+        continue;
+      }
+      queue.push(card);
+      queueQids.add(card.qid);
+    }
+
+    const [firstCard, secondCard, ...remainingQueue] = queue;
+    if (!firstCard || !secondCard) {
+      throw new Error("Not enough valid cards to start a game");
+    }
+
+    state.next = firstCard;
+    state.nextButOne = secondCard;
+    state.dailyQueue = remainingQueue;
+    state.usedQids = new Set([
+      firstCard.qid,
+      secondCard.qid,
+      ...initialUsedQids,
+    ]);
+    state.usedYears = new Set([firstCard.year, secondCard.year]);
+    state.imageCache = [
+      preloadImage(firstCard.image),
+      preloadImage(secondCard.image),
+    ];
+
+    return state;
+  }
+
+  // Annars kör vi den vanliga kategoribalanserade dragningen
   const openingCards = pickOpeningCards(state, 2);
   const [firstCard, secondCard] = openingCards;
 

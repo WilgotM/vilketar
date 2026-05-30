@@ -42,6 +42,39 @@ const sheetOut = keyframes({
   to: { transform: "translateY(110%)" },
 });
 
+const homeStageIn = keyframes({
+  from: {
+    opacity: 0,
+    transform: "translateY(1.35rem) scale(0.97)",
+  },
+  to: {
+    opacity: 1,
+    transform: "translateY(0) scale(1)",
+  },
+});
+
+const homeStageInCompact = keyframes({
+  from: {
+    opacity: 0,
+    transform: "translateY(-2.15rem) scale(0.97)",
+  },
+  to: {
+    opacity: 1,
+    transform: "translateY(-3.5rem) scale(1)",
+  },
+});
+
+const actionRise = keyframes({
+  from: {
+    opacity: 0,
+    transform: "translateY(0.85rem) scale(0.98)",
+  },
+  to: {
+    opacity: 1,
+    transform: "translateY(0) scale(1)",
+  },
+});
+
 export const home = style({
   alignItems: "center",
   display: "flex",
@@ -74,6 +107,7 @@ export const wrapper = style({
 
 export const stage = style({
   alignItems: "center",
+  animation: `${homeStageIn} ${vars.duration.cinematic} ${vars.easing.ios} both`,
   display: "flex",
   flexDirection: "column",
   gap: vars.space["3xl"],
@@ -82,7 +116,11 @@ export const stage = style({
   zIndex: 2,
   "@media": {
     [media.compact]: {
+      animation: `${homeStageInCompact} ${vars.duration.cinematic} ${vars.easing.ios} both`,
       transform: "translateY(-3.5rem)",
+    },
+    [media.reduceMotion]: {
+      animation: "none",
     },
   },
 });
@@ -95,9 +133,35 @@ export const actions = style({
 });
 
 export const dailyActionRow = style({
+  animation: `${actionRise} ${vars.duration.slower} ${vars.easing.ios} 100ms both`,
   display: "flex",
   gap: vars.space.sm,
   width: "100%",
+  "@media": {
+    [media.reduceMotion]: {
+      animation: "none",
+    },
+  },
+});
+
+export const actionItem = style({
+  animation: `${actionRise} ${vars.duration.slower} ${vars.easing.ios} both`,
+  selectors: {
+    "&:nth-child(2)": {
+      animationDelay: "160ms",
+    },
+    "&:nth-child(3)": {
+      animationDelay: "220ms",
+    },
+    "&:nth-child(4)": {
+      animationDelay: "280ms",
+    },
+  },
+  "@media": {
+    [media.reduceMotion]: {
+      animation: "none",
+    },
+  },
 });
 
 export const dailyActionSlot = style({

@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useRouter } from "next/router";
 import React from "react";
 import {
@@ -225,6 +225,7 @@ function getMenuBackHref(
 
 export default function MenuFlowShell() {
   const router = useRouter();
+  const reduceMotion = useReducedMotion();
   const path = getPath(router.asPath);
   const freePlayDifficulty = useFreePlayDifficulty();
   const { deckNodes } = useDecks();
@@ -554,9 +555,16 @@ export default function MenuFlowShell() {
         {path === "/" ? (
           <motion.div
             key="home"
-            initial={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.15 }}
+            initial={{ opacity: 1, scale: 1 }}
+            exit={{
+              opacity: 0,
+              scale: reduceMotion ? 1 : 0.985,
+              y: reduceMotion ? 0 : -12,
+            }}
+            transition={{
+              duration: reduceMotion ? 0.12 : 0.28,
+              ease: [0.22, 1, 0.36, 1],
+            }}
           >
             <HomeScreen />
           </motion.div>
@@ -600,10 +608,21 @@ export default function MenuFlowShell() {
         ) : (
           <motion.div
             key="menu-screen"
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -24 }}
-            transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+            initial={{
+              opacity: 0,
+              scale: reduceMotion ? 1 : 0.985,
+              y: reduceMotion ? 0 : 22,
+            }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{
+              opacity: 0,
+              scale: reduceMotion ? 1 : 0.99,
+              y: reduceMotion ? 0 : -18,
+            }}
+            transition={{
+              duration: reduceMotion ? 0.12 : 0.4,
+              ease: [0.22, 1, 0.36, 1],
+            }}
             style={{ width: "100%", height: "100%" }}
           >
             <div

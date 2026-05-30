@@ -1,31 +1,31 @@
 [
   {
     "qid": "Q32500",
-    "title": "Karl V",
-    "subtitle": "Tysk-romersk kejsare och kung av Spanien",
+    "title": "Charles V becomes king of the Crown of Aragon",
+    "subtitle": null,
     "year": 1516,
-    "fact": "Karl V är tysk-romersk kejsare och kung av Spanien.",
-    "wikipediaSlug": "Karl_V_(tysk-romersk_kejsare)",
+    "fact": "Charles V was Holy Roman Emperor and Archduke of Austria from 1519 to 1556, King of Spain from 1516 to 1556, King of Sicily and Naples from 1516 to 1554, and also Lord of the Netherlands and titular Duke of Burgundy from 1506 to 1555.",
+    "wikipediaSlug": "Charles_V,_Holy_Roman_Emperor",
     "image": "Portrait_of_Charles_V,_Holy_Roman_Emperor,_seated_(1500–1558),_formerly_attributed_to_Titian_(Alte_Pinakothek,_Munich).jpg",
     "pageViews": 99032
   },
   {
     "qid": "Q36174",
-    "title": "Karl II av Spanien",
-    "subtitle": "Kung av Spanien, Neapel och Sicilien 1665–1700",
+    "title": "Charles II of Spain becomes king of the Crown of Aragon",
+    "subtitle": null,
     "year": 1665,
-    "fact": "Karl II av Spanien är kung av Spanien, Neapel och Sicilien 1665–1700.",
-    "wikipediaSlug": "Karl_II_av_Spanien",
+    "fact": "Charles II was the king of Spain from 1665 to 1700.",
+    "wikipediaSlug": "Charles_II_of_Spain",
     "image": "Juan_de_Miranda_Carreno_002.jpg",
     "pageViews": 97899
   },
   {
     "qid": "Q34417",
-    "title": "Filip II av Spanien",
-    "subtitle": "Kung av Spanien 1556-1598 och kung av Portugal 1580-1598",
+    "title": "Philip II of Spain becomes king of the Crown of Aragon",
+    "subtitle": null,
     "year": 1556,
-    "fact": "Filip II av Spanien är kung av Spanien 1556-1598 och kung av Portugal 1580-1598.",
-    "wikipediaSlug": "Filip_II_av_Spanien",
+    "fact": "Philip II, sometimes known in Spain as Philip the Prudent, was King of Spain from 1556, King of Portugal from 1580, and King of Naples and Sicily from 1554 until his death in 1598.",
+    "wikipediaSlug": "Philip_II_of_Spain",
     "image": "Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg",
     "pageViews": 84821
   }
