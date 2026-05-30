@@ -134,7 +134,13 @@ export default function CardVisual(props: Props) {
           >
             {backVariant === "deck" ? (
               <div className={styles.deckBackContent}>
-                <div className={styles.deckBackMark}>W</div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/logo-with-bg.svg"
+                  className={styles.deckBackLogo}
+                  alt=""
+                  draggable={false}
+                />
               </div>
             ) : (
               <div className={styles.cardContent}>

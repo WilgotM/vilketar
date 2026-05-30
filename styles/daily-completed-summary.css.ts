@@ -73,12 +73,13 @@ export const leagueLink = style({
 });
 
 export const leagueResults = style({
-  background: vars.color.surfaceStrong,
-  border: `1px solid ${vars.color.border}`,
-  borderRadius: vars.radius.md,
+  background: `linear-gradient(145deg, ${vars.color.surfaceChrome}, ${vars.color.surfaceStrong})`,
+  border: `1px solid rgba(255, 255, 255, 0.08)`,
+  borderRadius: vars.radius.xl,
+  boxShadow: "0 8px 32px rgba(0, 0, 0, 0.12)",
   display: "grid",
   gap: vars.space.md,
-  padding: vars.space.lg,
+  padding: vars.space.xl,
   width: "100%",
 });
 
@@ -95,9 +96,9 @@ export const leagueStack = style({
 });
 
 export const dailyLeagueCard = style({
-  background: vars.color.backdrop,
-  border: `1px solid ${vars.color.border}`,
-  borderRadius: vars.radius.sm,
+  background: vars.color.backdropStrong,
+  border: `1px solid rgba(255, 255, 255, 0.06)`,
+  borderRadius: vars.radius.lg,
   overflow: "hidden",
 });
 
@@ -114,12 +115,18 @@ export const dailyLeagueMembers = style({
 
 export const dailyLeagueRow = style({
   alignItems: "center",
-  borderTop: `1px solid ${vars.color.border}`,
+  borderTop: `1px solid rgba(255, 255, 255, 0.04)`,
   display: "grid",
   gap: vars.space.sm,
   gridTemplateColumns: "1.5rem minmax(0, 1fr) auto",
-  minHeight: "2.6rem",
-  padding: `${vars.space.xs} ${vars.space.md}`,
+  minHeight: "3rem",
+  padding: `${vars.space.sm} ${vars.space.md}`,
+  transition: "background 0.2s ease",
+  selectors: {
+    "&:hover": {
+      background: "rgba(255, 255, 255, 0.02)",
+    },
+  },
 });
 
 export const dailyLeagueRank = style({

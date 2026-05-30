@@ -7,6 +7,11 @@ import {
   createDailyCardQueue,
   createDailySearchCards,
 } from "../lib/daily-game";
+import {
+  getDailyScheduleTheme,
+  getDailyScheduleWeek,
+} from "../lib/daily-schedule";
+import type { DailyScheduleTheme } from "../lib/daily-schedule";
 import { collectLeafDeckIds, createDeckNodeListMap } from "../lib/deck-tree";
 import {
   filterCardsBySelectionRoute,
@@ -35,6 +40,7 @@ interface DayPlan {
   dateKey: string;
   isToday: boolean;
   override: DailyGameRow | null;
+  theme: DailyScheduleTheme;
 }
 
 function addUtcDays(dateKey: string, days: number): string {
@@ -151,16 +157,44 @@ export default function DailyAdminPage() {
     return resolveSelectionDeck(deckNodes, "daily", null, rootDeckId);
   }, [deckNodes, rootDeckId]);
 
+  const deckNodeMap = React.useMemo(() => {
+    return deckNodes ? createDeckNodeListMap(deckNodes) : null;
+  }, [deckNodes]);
+
+  const getScheduledRootDeck = React.useCallback(
+    (dateKey: string) => {
+      if (!deckNodeMap || !selectedRootDeck) {
+        return null;
+      }
+
+      const theme = getDailyScheduleTheme(dateKey);
+      return theme.deckId
+        ? (deckNodeMap.get(theme.deckId) ?? selectedRootDeck)
+        : selectedRootDeck;
+    },
+    [deckNodeMap, selectedRootDeck],
+  );
+
+  const selectedSearchRootDeck = React.useMemo(() => {
+    if (!selectedRootDeck) {
+      return null;
+    }
+
+    return selectedSlot
+      ? getScheduledRootDeck(selectedSlot.dateKey)
+      : selectedRootDeck;
+  }, [getScheduledRootDeck, selectedRootDeck, selectedSlot]);
+
   const allCards = React.useMemo(() => {
-    if (!selectedRootDeck || !cardsByDeckId) {
+    if (!selectedSearchRootDeck || !cardsByDeckId) {
       return [];
     }
     return createDailySearchCards(
-      selectedRootDeck,
+      selectedSearchRootDeck,
       filterCardsBySelectionRoute(cardsByDeckId, null),
       DAILY_DIFFICULTY,
     );
-  }, [cardsByDeckId, selectedRootDeck]);
+  }, [cardsByDeckId, selectedSearchRootDeck]);
 
   const plans = React.useMemo<DayPlan[]>(() => {
     if (!selectedRootDeck || !cardsByDeckId) {
@@ -169,9 +203,20 @@ export default function DailyAdminPage() {
 
     return dateKeys.map((dateKey) => {
       const override = overrides.get(dateKey) ?? null;
+      const theme = getDailyScheduleTheme(dateKey);
+      const scheduledRootDeck = getScheduledRootDeck(dateKey);
+      if (!scheduledRootDeck) {
+        return {
+          cards: [],
+          dateKey,
+          isToday: dateKey === todayKey,
+          override,
+          theme,
+        };
+      }
       return {
         cards: createDailyCardQueue(
-          selectedRootDeck,
+          scheduledRootDeck,
           filterCardsBySelectionRoute(cardsByDeckId, null),
           DAILY_DIFFICULTY,
           dateKey,
@@ -185,9 +230,27 @@ export default function DailyAdminPage() {
         dateKey,
         isToday: dateKey === todayKey,
         override,
+        theme,
       };
     });
-  }, [cardsByDeckId, dateKeys, overrides, selectedRootDeck, todayKey]);
+  }, [
+    cardsByDeckId,
+    dateKeys,
+    getScheduledRootDeck,
+    overrides,
+    selectedRootDeck,
+    todayKey,
+  ]);
+
+  const weekSchedule = React.useMemo(() => getDailyScheduleWeek(), []);
+  const selectedSlotPlan = React.useMemo(() => {
+    if (!selectedSlot) {
+      return null;
+    }
+    return (
+      plans.find((entry) => entry.dateKey === selectedSlot.dateKey) ?? null
+    );
+  }, [plans, selectedSlot]);
 
   const searchResults = React.useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -389,31 +452,58 @@ export default function DailyAdminPage() {
           </div>
         </header>
         {status ? <p className={styles.status}>{status}</p> : null}
+        <section className={styles.schedulePanel}>
+          <div>
+            <p className={styles.eyebrow}>Veckoschema</p>
+            <h2 className={styles.sectionTitle}>Återkommande teman</h2>
+          </div>
+          <div className={styles.scheduleGrid}>
+            {weekSchedule.map((day) => (
+              <div
+                className={
+                  day.deckId ? styles.scheduleThemeDay : styles.scheduleDay
+                }
+                key={day.weekday}
+              >
+                <span className={styles.scheduleDayName}>{day.dayLabel}</span>
+                <span className={styles.scheduleTheme}>{day.shortLabel}</span>
+              </div>
+            ))}
+          </div>
+        </section>
         <section className={styles.layout}>
           <div className={styles.dayGrid}>
             {plans.map((plan) => (
-              <article className={styles.dayCard} key={plan.dateKey}>
+              <article
+                className={plan.isToday ? styles.todayCard : styles.dayCard}
+                key={plan.dateKey}
+              >
                 <div className={styles.dayHeader}>
                   <div>
                     <h2 className={styles.dayTitle}>
                       {formatDate(plan.dateKey)}
                     </h2>
                     <p className={styles.status}>
-                      {plan.dateKey} ·{" "}
+                      {plan.dateKey} · {plan.theme.label} ·{" "}
                       {Math.min(plan.cards.length, ADMIN_CARD_COUNT)} kort
                     </p>
                   </div>
-                  <span
-                    className={
-                      plan.override ? styles.overrideBadge : styles.badge
-                    }
-                  >
-                    {plan.isToday
-                      ? "Låst idag"
-                      : plan.override
-                        ? "Ändrad"
-                        : "Algoritm"}
-                  </span>
+                  <div className={styles.badgeStack}>
+                    <span className={styles.themeBadge}>
+                      {plan.theme.shortLabel}
+                    </span>
+                    <span
+                      className={
+                        plan.override ? styles.overrideBadge : styles.badge
+                      }
+                    >
+                      {plan.isToday
+                        ? "Låst idag"
+                        : plan.override
+                          ? "Ändrad"
+                          : "Algoritm"}
+                    </span>
+                  </div>
                 </div>
                 <div className={styles.cardList}>
                   {plan.cards.slice(0, ADMIN_CARD_COUNT).map((card, index) => (
@@ -467,7 +557,7 @@ export default function DailyAdminPage() {
               <h2 className={styles.dayTitle}>Sök kort</h2>
               <p className={styles.status}>
                 {selectedSlot
-                  ? `Vald plats: ${selectedSlot.dateKey}, kort ${selectedSlot.index + 1}`
+                  ? `Vald plats: ${selectedSlot.dateKey}, kort ${selectedSlot.index + 1} · ${selectedSlotPlan?.theme.label ?? "Vanligt"}`
                   : "Välj en plats i listan först."}
               </p>
             </div>

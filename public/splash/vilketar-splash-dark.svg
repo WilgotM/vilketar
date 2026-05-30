@@ -1,6 +1,104 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1290 2796">
+  <defs>
+    <!-- Import Outfit font from Google Fonts for premium typography -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&amp;display=swap');
+      
+      .text-vilket {
+        font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-weight: 800;
+        fill: #ffffff;
+        font-size: 116px;
+        letter-spacing: -2px;
+        dominant-baseline: alphabetic;
+      }
+      
+      .text-ar {
+        font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-weight: 800;
+        fill: url(#goldGradient);
+        font-size: 148px;
+        letter-spacing: -1px;
+        dominant-baseline: alphabetic;
+      }
+
+      .orbit-line {
+        fill: none;
+        stroke: url(#orbitGradient);
+        stroke-width: 3.5px;
+      }
+
+      .star-sparkle {
+        fill: url(#goldGradient);
+      }
+
+      .planet-solid {
+        fill: url(#goldGradient);
+      }
+
+      .planet-ring-outer {
+        fill: none;
+        stroke: url(#goldGradient);
+        stroke-width: 3px;
+      }
+
+      .planet-ring-inner {
+        fill: url(#goldGradient);
+      }
+
+      .custom-a-ring {
+        fill: none;
+        stroke: url(#goldGradient);
+        stroke-width: 5px;
+      }
+    </style>
+
+    <!-- Metallic Gold Linear Gradient for letters, star, and planets -->
+    <linearGradient id="goldGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#df9a16" />
+      <stop offset="35%" stop-color="#f8c63b" />
+      <stop offset="70%" stop-color="#fdf098" />
+      <stop offset="100%" stop-color="#f4bd32" />
+    </linearGradient>
+
+    <!-- Fading Gold Gradient for the Orbit Ring (strong on left, fades out on right) -->
+    <linearGradient id="orbitGradient" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#f7c43a" stop-opacity="1" />
+      <stop offset="40%" stop-color="#df9a16" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#9e6907" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#5a3b00" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Solid background matching dark theme -->
   <rect width="1290" height="2796" fill="#0c0a09" />
-  <circle cx="645" cy="1196" r="172" fill="#fbbf24" />
-  <text x="655" y="1232" dominant-baseline="middle" text-anchor="middle" font-family="Georgia, serif" font-size="230" font-weight="900" fill="#0c0a09">?</text>
-  <text x="645" y="1496" dominant-baseline="middle" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="108" font-weight="800" fill="#fffdfa">VilketÅr</text>
+
+  <!-- Center the 512x512 logo elements:
+       Width: 1290 / 2 = 645. Half logo: 256. X = 645 - 256 = 389.
+       Height: 2796 / 2 = 1398. Half logo: 256. Y = 1398 - 256 = 1142.
+  -->
+  <g transform="translate(389, 1142)">
+    <!-- Orbit Ring System -->
+    <g id="orbit-system">
+      <circle id="orbit-ring" class="orbit-line" cx="240" cy="260" r="172" />
+      <circle id="planet-top" class="planet-solid" cx="78.4" cy="201.2" r="7.5" />
+      <g id="planet-middle">
+        <circle class="planet-ring-outer" cx="68" cy="260" r="17.5" />
+        <circle class="planet-ring-inner" cx="68" cy="260" r="7.5" />
+      </g>
+      <circle id="planet-bottom" class="planet-solid" cx="78.4" cy="318.8" r="7.5" />
+    </g>
+
+    <!-- Sparkle Star -->
+    <g id="star-sparkle-group">
+      <path id="star" class="star-sparkle" d="M 395,112 Q 395,135 418,135 Q 395,135 395,158 Q 395,135 372,135 Q 395,135 395,112 Z" />
+    </g>
+
+    <!-- Text elements -->
+    <g id="text-group">
+      <text id="text-vilket" class="text-vilket" x="128" y="264">Vilket</text>
+      <text id="text-ar" class="text-ar" x="228" y="398">Ar</text>
+      <circle id="custom-a-ring" class="custom-a-ring" cx="277" cy="278" r="12" />
+    </g>
+  </g>
 </svg>

@@ -6,6 +6,8 @@
       
       .bg-rect {
         fill: url(#bgGradient);
+        rx: 110px;
+        ry: 110px;
       }
       
       .text-vilket {
@@ -80,7 +82,7 @@
     </linearGradient>
   </defs>
 
-  <!-- Background App-Icon (Full-bleed square) -->
+  <!-- Background App-Icon squircle -->
   <rect id="background" class="bg-rect" width="512" height="512" x="0" y="0" />
 
   <!-- Orbit Ring System -->

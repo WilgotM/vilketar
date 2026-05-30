@@ -14,6 +14,7 @@
     "typecheck": "tsc",
     "decks:tree": "bun run content/scripts/print-deck-tree.ts",
     "decks:build": "bun run content/scripts/build-cards.ts",
+    "decks:fill-missing-images": "bun run content/scripts/fill-missing-deck-images.ts",
     "decks:add-swedish-cards": "bun run content/scripts/add-handpicked-swedish-cards.ts",
     "decks:curate": "bun run content/scripts/curate-public-decks.ts",
     "deploy": "bun run build && wrangler pages deploy out --project-name vilketar",

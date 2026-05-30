@@ -43,3 +43,4 @@ tsconfig.tsbuildinfo
 
 # Supabase local project metadata
 /supabase/.temp/
+.playwright-mcp/

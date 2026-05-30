@@ -259,15 +259,17 @@ export const deckBackContent = style({
   width: "100%",
 });
 
-export const deckBackMark = style({
-  color: cardMutedVar,
-  fontFamily: vars.font.display,
-  fontSize: vars.size.deckMarkSize,
-  fontWeight: vars.fontWeight.black,
-  lineHeight: "1",
-  position: "relative",
-  transform: "translateY(-0.125rem)",
-  zIndex: 1,
+export const deckBackLogo = style({
+  width: "56%",
+  height: "56%",
+  maxWidth: "140px",
+  maxHeight: "140px",
+  transition: `transform ${vars.duration.slow} ${vars.easing.standard}`,
+  selectors: {
+    [`${deckBackContent}:hover &`]: {
+      transform: "scale(1.06) rotate(4deg)",
+    },
+  },
 });
 
 export const label = style({

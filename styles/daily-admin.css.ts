@@ -9,9 +9,9 @@ export const page = style({
 
 export const shell = style({
   display: "grid",
-  gap: "1rem",
+  gap: vars.space.lg,
   margin: "0 auto",
-  maxWidth: "78rem",
+  maxWidth: "82rem",
 });
 
 export const header = style({
@@ -38,6 +38,12 @@ export const eyebrow = style({
 
 export const title = style({
   fontSize: "2rem",
+  lineHeight: vars.lineHeight.tight,
+  margin: "0.25rem 0 0",
+});
+
+export const sectionTitle = style({
+  fontSize: vars.fontSize.xl,
   lineHeight: vars.lineHeight.tight,
   margin: "0.25rem 0 0",
 });
@@ -98,7 +104,7 @@ export const dangerButton = style([
 export const panel = style({
   background: vars.color.surfaceChrome,
   border: `1px solid ${vars.color.border}`,
-  borderRadius: vars.radius.md,
+  borderRadius: vars.radius.sm,
   boxShadow: vars.shadow.card,
   padding: "1rem",
 });
@@ -132,12 +138,69 @@ export const status = style({
 export const layout = style({
   display: "grid",
   gap: "1rem",
-  gridTemplateColumns: "minmax(0, 1fr) minmax(18rem, 24rem)",
+  gridTemplateColumns: "minmax(0, 1fr) minmax(20rem, 26rem)",
   "@media": {
     [media.compact]: {
       gridTemplateColumns: "1fr",
     },
   },
+});
+
+export const schedulePanel = style([
+  panel,
+  {
+    alignItems: "center",
+    display: "grid",
+    gap: vars.space.lg,
+    gridTemplateColumns: "auto minmax(0, 1fr)",
+    "@media": {
+      [media.compact]: {
+        alignItems: "stretch",
+        gridTemplateColumns: "1fr",
+      },
+    },
+  },
+]);
+
+export const scheduleGrid = style({
+  display: "grid",
+  gap: vars.space.sm,
+  gridTemplateColumns: "repeat(7, minmax(0, 1fr))",
+  "@media": {
+    [media.compact]: {
+      gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+    },
+  },
+});
+
+export const scheduleDay = style({
+  background: vars.color.surface,
+  border: `1px solid ${vars.color.border}`,
+  borderRadius: vars.radius.sm,
+  display: "grid",
+  gap: vars.space.xxs,
+  minHeight: "3.75rem",
+  padding: vars.space.sm,
+});
+
+export const scheduleThemeDay = style([
+  scheduleDay,
+  {
+    background: vars.color.accentTint,
+    borderColor: vars.color.borderStrong,
+  },
+]);
+
+export const scheduleDayName = style({
+  color: vars.color.textMuted,
+  fontSize: vars.fontSize.xs,
+  fontWeight: vars.fontWeight.bold,
+});
+
+export const scheduleTheme = style({
+  color: vars.color.text,
+  fontSize: vars.fontSize.control,
+  fontWeight: vars.fontWeight.bold,
 });
 
 export const dayGrid = style({
@@ -148,11 +211,19 @@ export const dayGrid = style({
 export const dayCard = style({
   background: vars.color.surface,
   border: `1px solid ${vars.color.border}`,
-  borderRadius: vars.radius.md,
+  borderRadius: vars.radius.sm,
   display: "grid",
   gap: "0.75rem",
   padding: "0.9rem",
 });
+
+export const todayCard = style([
+  dayCard,
+  {
+    borderColor: vars.color.accentLogo,
+    boxShadow: `0 0 0 ${vars.size.borderWidth} ${vars.color.accentLogo}, ${vars.shadow.card}`,
+  },
+]);
 
 export const dayHeader = style({
   alignItems: "center",
@@ -176,6 +247,22 @@ export const badge = style({
   fontWeight: vars.fontWeight.bold,
   padding: "0.2rem 0.55rem",
 });
+
+export const badgeStack = style({
+  alignItems: "flex-end",
+  display: "flex",
+  flexDirection: "column",
+  gap: vars.space.xs,
+});
+
+export const themeBadge = style([
+  badge,
+  {
+    background: vars.color.accentTint,
+    borderColor: vars.color.borderStrong,
+    color: vars.color.text,
+  },
+]);
 
 export const overrideBadge = style([
   badge,

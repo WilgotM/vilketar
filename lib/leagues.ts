@@ -1,4 +1,5 @@
 import type { User } from "@supabase/supabase-js";
+import { DailyGameSnapshot } from "../types/routes";
 import { supabase } from "./supabase";
 
 const DISPLAY_NAME_STORAGE_KEY = "leagues:display-name";
@@ -565,4 +566,59 @@ export async function getStoredDailyResult(
     resultPattern: response.data.result_pattern,
     score: response.data.score,
   };
+}
+
+export async function getActiveDailySession(
+  dateKey: string,
+): Promise<DailyGameSnapshot | null> {
+  if (!supabase) {
+    return null;
+  }
+
+  const session = await withAuthTimeout(supabase.auth.getSession());
+  if (!session.data.session) {
+    return null;
+  }
+
+  const response = await supabase
+    .from("daily_active_sessions")
+    .select("snapshot")
+    .eq("user_id", session.data.session.user.id)
+    .eq("date_key", dateKey)
+    .maybeSingle();
+
+  if (response.error) {
+    throw response.error;
+  }
+
+  if (!response.data) {
+    return null;
+  }
+
+  return response.data.snapshot as DailyGameSnapshot | null;
+}
+
+export async function saveActiveDailySession(
+  dateKey: string,
+  snapshot: DailyGameSnapshot,
+): Promise<void> {
+  if (!supabase) {
+    return;
+  }
+
+  const session = await withAuthTimeout(supabase.auth.getSession());
+  if (!session.data.session) {
+    return;
+  }
+
+  const response = await supabase.from("daily_active_sessions").upsert({
+    user_id: session.data.session.user.id,
+    date_key: dateKey,
+    snapshot,
+    updated_at: new Date().toISOString(),
+  });
+
+  if (response.error) {
+    throw response.error;
+  }
 }

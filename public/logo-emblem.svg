@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Metallic Gold Linear Gradient for letters, star, and planets -->
+    <linearGradient id="goldGradientEmblem" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#df9a16" />
+      <stop offset="35%" stop-color="#f8c63b" />
+      <stop offset="70%" stop-color="#fdf098" />
+      <stop offset="100%" stop-color="#f4bd32" />
+    </linearGradient>
+
+    <!-- Fading Gold Gradient for the Orbit Ring (strong on left, fades out on right) -->
+    <linearGradient id="orbitGradientEmblem" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#f7c43a" stop-opacity="1" />
+      <stop offset="40%" stop-color="#df9a16" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#9e6907" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#5a3b00" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Orbit Ring System -->
+  <g id="orbit-system">
+    <!-- Main Orbit Circle (centered slightly to the left to wrap the text) -->
+    <circle id="orbit-ring" fill="none" stroke="url(#orbitGradientEmblem)" stroke-width="3.5" cx="240" cy="260" r="172" />
+
+    <!-- Planet 1: Top-Left (Solid Small) -->
+    <circle id="planet-top" fill="url(#goldGradientEmblem)" cx="78.4" cy="201.2" r="7.5" />
+
+    <!-- Planet 2: Center-Left (Double Ringed Planet) -->
+    <g id="planet-middle">
+      <circle fill="none" stroke="url(#goldGradientEmblem)" stroke-width="3" cx="68" cy="260" r="17.5" />
+      <circle fill="url(#goldGradientEmblem)" cx="68" cy="260" r="7.5" />
+    </g>
+
+    <!-- Planet 3: Bottom-Left (Solid Small) -->
+    <circle id="planet-bottom" fill="url(#goldGradientEmblem)" cx="78.4" cy="318.8" r="7.5" />
+  </g>
+
+  <!-- Sparkle Star (Four-Pointed) in the Upper Right -->
+  <g id="star-sparkle-group">
+    <path id="star" fill="url(#goldGradientEmblem)" d="M 395,112 Q 395,135 418,135 Q 395,135 395,158 Q 395,135 372,135 Q 395,135 395,112 Z" />
+  </g>
+</svg>

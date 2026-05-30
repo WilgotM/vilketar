@@ -41,7 +41,7 @@ export default function AppHead(props: Props) {
       />
       <meta name="msapplication-TileColor" content="#fffdfa" />
       <meta name="msapplication-config" content="/browserconfig.xml" />
-      <link rel="manifest" href="/manifest.webmanifest?v=20260524" />
+      <link rel="manifest" href="/manifest.webmanifest?v=20260530" />
       <link
         rel="preload"
         href="/fonts/inter-latin.woff2"
@@ -56,45 +56,45 @@ export default function AppHead(props: Props) {
         type="font/woff2"
         crossOrigin="anonymous"
       />
-      <link rel="icon" href="/favicon-32.png?v=20260524" sizes="32x32" />
-      <link rel="icon" href="/favicon.svg?v=20260524" type="image/svg+xml" />
+      <link rel="icon" href="/favicon-32.png?v=20260530" sizes="32x32" />
+      <link rel="icon" href="/favicon.svg?v=20260530" type="image/svg+xml" />
       <link
         rel="icon"
-        href="/pwa-icon-192.png?v=20260524"
+        href="/pwa-icon-192.png?v=20260530"
         sizes="192x192"
         type="image/png"
       />
       <link
         rel="icon"
-        href="/favicon-light.png?v=20260524"
+        href="/favicon-light.png?v=20260530"
         media="(prefers-color-scheme: dark)"
         type="image/png"
       />
       <link
         rel="icon"
-        href="/favicon-dark.png?v=20260524"
+        href="/favicon-dark.png?v=20260530"
         media="(prefers-color-scheme: light)"
         type="image/png"
       />
-      <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260524" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260530" />
       <link
         rel="apple-touch-startup-image"
-        href="/splash/vilketar-splash-light.png?v=20260524"
+        href="/splash/vilketar-splash-light.png?v=20260530"
         media="(prefers-color-scheme: light) and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3)"
       />
       <link
         rel="apple-touch-startup-image"
-        href="/splash/vilketar-splash-dark.png?v=20260524"
+        href="/splash/vilketar-splash-dark.png?v=20260530"
         media="(prefers-color-scheme: dark) and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3)"
       />
       <link
         rel="apple-touch-startup-image"
-        href="/splash/vilketar-splash-light.png?v=20260524"
+        href="/splash/vilketar-splash-light.png?v=20260530"
         media="(prefers-color-scheme: light)"
       />
       <link
         rel="apple-touch-startup-image"
-        href="/splash/vilketar-splash-dark.png?v=20260524"
+        href="/splash/vilketar-splash-dark.png?v=20260530"
         media="(prefers-color-scheme: dark)"
       />
     </Head>

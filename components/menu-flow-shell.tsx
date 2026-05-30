@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { AnimatePresence, motion } from "motion/react";
 import { useRouter } from "next/router";
 import React from "react";
 import {
@@ -236,6 +237,7 @@ export default function MenuFlowShell() {
   const rootFreePlayView =
     playRoute?.kind === "root-selector" ? playRoute.view : "landing";
   const dailyDateKey = React.useMemo(() => getCurrentUtcDateKey(), []);
+  const [dailyStarted, setDailyStarted] = React.useState(false);
   const [dailyCompletionReady, setDailyCompletionReady] = React.useState(
     path !== "/daily",
   );
@@ -260,6 +262,7 @@ export default function MenuFlowShell() {
       return;
     }
 
+    setDailyStarted(false);
     syncDailyCompletionState();
   }, [path, syncDailyCompletionState]);
 
@@ -476,7 +479,10 @@ export default function MenuFlowShell() {
   }, []);
 
   const showDailyGame =
-    path === "/daily" && dailyCompletionReady && completedScore === null;
+    path === "/daily" &&
+    dailyCompletionReady &&
+    completedScore === null &&
+    dailyStarted;
   const showFreePlayGame = hasStartedPendingRoute && !!activeSelectionRoute;
   const showGameScreen = showDailyGame || showFreePlayGame;
   const contextualAllHref = React.useMemo(() => {
@@ -528,92 +534,132 @@ export default function MenuFlowShell() {
   return (
     <>
       <AppHead title={pageTitle} />
-      {path === "/" ? (
-        <HomeScreen />
-      ) : showGameScreen ? (
-        <PageShell>
-          {showDailyGame ? (
-            <GameRouteScreen
-              hideHeader
-              mode="daily"
-              onQuitGame={() => {
-                void router.push("/");
-              }}
-              onResetGame={syncDailyCompletionState}
-              skipRouteIntro
-            />
-          ) : showFreePlayGame && activeSelectionRoute ? (
-            <GameRouteScreen
-              hideHeader
-              mode="free-play"
-              onQuitGame={returnToSelectionScreen}
-              onResetGame={returnToSelectionScreen}
-              selectionRoute={activeSelectionRoute}
-              skipRouteIntro
-            />
-          ) : null}
-        </PageShell>
-      ) : (
-        <div
-          className={classNames(styles.page, {
-            [styles.pageHome]: path === "/",
-          })}
-        >
-          {path !== "/" ? (
-            <SiteHeader
-              backHref={path === "/daily" ? "/" : menuBackHref}
-              backLabel="Tillbaka"
-            />
-          ) : null}
-          <main className={styles.screen}>
-            <div
-              className={classNames(styles.wrapper, {
-                [styles.wrapperMenu]: !!playRoute,
-              })}
-            >
-              {path === "/daily" ? (
-                <div className={classNames(styles.stage, styles.stageMenu)}>
-                  {dailyCompletionReady ? (
-                    completedScore === null ? null : (
-                      <DailyEntryScreen
-                        embedded
-                        completedResults={completedResults}
-                        completedScore={completedScore}
-                        dailyDateKey={dailyDateKey}
-                        onStart={syncDailyCompletionState}
-                      />
-                    )
-                  ) : (
-                    <DailyCardPlaceholder />
-                  )}
-                </div>
-              ) : playRoute ? (
-                <FreePlaySelectorScreen
-                  allHref={contextualAllHref}
-                  allSelectionRoute={allSelectionRoute!}
-                  breadcrumbs={freePlayBreadcrumbs}
-                  difficulty={freePlayDifficulty.difficulty}
-                  featuredItems={featuredFreePlayItems}
-                  introRoute={selectorIntroRoute}
-                  items={freePlayItems}
-                  onSelectPlayRoute={openSelectionRoute}
-                  onSelectRootView={openRootFreePlayView}
-                  onStartIntro={startPendingRoute}
-                  availableDifficulties={introAvailableDifficulties}
-                  rootView={rootFreePlayView}
-                  showAllButton={
-                    !(
-                      playRoute?.kind === "root-selector" &&
-                      currentPlayView === "browse"
-                    )
-                  }
-                  setDifficulty={freePlayDifficulty.setDifficulty}
+      <AnimatePresence mode="wait">
+        {path === "/" ? (
+          <motion.div
+            key="home"
+            initial={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.15 }}
+          >
+            <HomeScreen />
+          </motion.div>
+        ) : showGameScreen ? (
+          <motion.div
+            key="game-screen"
+            initial={{ opacity: 0, y: 40, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 40, scale: 0.98 }}
+            transition={{
+              type: "spring",
+              stiffness: 380,
+              damping: 32,
+              mass: 0.85,
+            }}
+            style={{ width: "100%", height: "100%" }}
+          >
+            <PageShell>
+              {showDailyGame ? (
+                <GameRouteScreen
+                  hideHeader
+                  mode="daily"
+                  onQuitGame={() => {
+                    void router.push("/");
+                  }}
+                  onResetGame={syncDailyCompletionState}
+                  skipRouteIntro
+                />
+              ) : showFreePlayGame && activeSelectionRoute ? (
+                <GameRouteScreen
+                  hideHeader
+                  mode="free-play"
+                  onQuitGame={returnToSelectionScreen}
+                  onResetGame={returnToSelectionScreen}
+                  selectionRoute={activeSelectionRoute}
+                  skipRouteIntro
                 />
               ) : null}
+            </PageShell>
+          </motion.div>
+        ) : (
+          <motion.div
+            key="menu-screen"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -24 }}
+            transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+            style={{ width: "100%", height: "100%" }}
+          >
+            <div
+              className={classNames(styles.page, {
+                [styles.pageHome]: path === "/",
+              })}
+            >
+              {path !== "/" ? (
+                <SiteHeader
+                  backHref={path === "/daily" ? "/" : menuBackHref}
+                  backLabel="Tillbaka"
+                />
+              ) : null}
+              <main className={styles.screen}>
+                <div
+                  className={classNames(styles.wrapper, {
+                    [styles.wrapperMenu]: !!playRoute,
+                  })}
+                >
+                  {path === "/daily" ? (
+                    <div className={classNames(styles.stage, styles.stageMenu)}>
+                      {dailyCompletionReady ? (
+                        completedScore === null ? (
+                          <DailyEntryScreen
+                            embedded
+                            completedResults={completedResults}
+                            completedScore={completedScore}
+                            dailyDateKey={dailyDateKey}
+                            onStart={() => setDailyStarted(true)}
+                          />
+                        ) : (
+                          <DailyEntryScreen
+                            embedded
+                            completedResults={completedResults}
+                            completedScore={completedScore}
+                            dailyDateKey={dailyDateKey}
+                            onStart={syncDailyCompletionState}
+                          />
+                        )
+                      ) : (
+                        <DailyCardPlaceholder />
+                      )}
+                    </div>
+                  ) : playRoute ? (
+                    <FreePlaySelectorScreen
+                      allHref={contextualAllHref}
+                      allSelectionRoute={allSelectionRoute!}
+                      breadcrumbs={freePlayBreadcrumbs}
+                      difficulty={freePlayDifficulty.difficulty}
+                      featuredItems={featuredFreePlayItems}
+                      introRoute={selectorIntroRoute}
+                      items={freePlayItems}
+                      onSelectPlayRoute={openSelectionRoute}
+                      onSelectRootView={openRootFreePlayView}
+                      onStartIntro={startPendingRoute}
+                      availableDifficulties={introAvailableDifficulties}
+                      rootView={rootFreePlayView}
+                      showAllButton={
+                        !(
+                          playRoute?.kind === "root-selector" &&
+                          currentPlayView === "browse"
+                        )
+                      }
+                      setDifficulty={freePlayDifficulty.setDifficulty}
+                    />
+                  ) : null}
+                </div>
+              </main>
             </div>
-          </main>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }

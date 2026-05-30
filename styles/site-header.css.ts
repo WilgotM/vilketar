@@ -5,6 +5,11 @@ import { vars } from "./theme.css";
 export const header = style({
   padding: vars.space["3xl"],
   width: "100%",
+  "@media": {
+    [media.compact]: {
+      padding: `${vars.space.md} ${vars.space.xl}`,
+    },
+  },
 });
 
 export const inner = style({

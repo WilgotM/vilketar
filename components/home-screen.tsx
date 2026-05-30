@@ -1,5 +1,7 @@
 import Image from "next/image";
+import React from "react";
 import ButtonLink from "./button-link";
+import DailyWeekSchedule from "./daily-week-schedule";
 import PageShell from "./page-shell";
 import SiteFooter from "./site-footer";
 import SiteHero from "./site-hero";
@@ -125,7 +127,140 @@ function HeroDecorations() {
   );
 }
 
+function CalendarIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      fill="none"
+      height="22"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      width="22"
+    >
+      <path d="M8 2v4" />
+      <path d="M16 2v4" />
+      <rect height="18" rx="2" width="18" x="3" y="4" />
+      <path d="M3 10h18" />
+      <path d="M8 14h.01" />
+      <path d="M12 14h.01" />
+      <path d="M16 14h.01" />
+      <path d="M8 18h.01" />
+      <path d="M12 18h.01" />
+    </svg>
+  );
+}
+
 export default function HomeScreen() {
+  const [calendarOpen, setCalendarOpen] = React.useState(false);
+  const [calendarDragY, setCalendarDragY] = React.useState(0);
+  const [calendarDragging, setCalendarDragging] = React.useState(false);
+  const [calendarClosing, setCalendarClosing] = React.useState(false);
+  const calendarDragStartY = React.useRef<number | null>(null);
+  const calendarDragYRef = React.useRef(0);
+  const closeTimerRef = React.useRef<number | null>(null);
+
+  const closeCalendar = React.useCallback(() => {
+    if (closeTimerRef.current !== null) {
+      window.clearTimeout(closeTimerRef.current);
+    }
+
+    setCalendarClosing(true);
+    setCalendarDragY(0);
+    calendarDragYRef.current = 0;
+    setCalendarDragging(false);
+    calendarDragStartY.current = null;
+    closeTimerRef.current = window.setTimeout(() => {
+      setCalendarOpen(false);
+      setCalendarClosing(false);
+      closeTimerRef.current = null;
+    }, 220);
+  }, []);
+
+  const showCalendar = React.useCallback(() => {
+    if (closeTimerRef.current !== null) {
+      window.clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+
+    setCalendarClosing(false);
+    setCalendarDragY(0);
+    calendarDragYRef.current = 0;
+    setCalendarDragging(false);
+    calendarDragStartY.current = null;
+    setCalendarOpen(true);
+  }, []);
+
+  React.useEffect(() => {
+    return () => {
+      if (closeTimerRef.current !== null) {
+        window.clearTimeout(closeTimerRef.current);
+      }
+    };
+  }, []);
+
+  React.useEffect(() => {
+    if (!calendarOpen) {
+      return;
+    }
+
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        closeCalendar();
+      }
+    };
+
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
+  }, [calendarOpen, closeCalendar]);
+
+  const startCalendarDrag = React.useCallback(
+    (event: React.PointerEvent<HTMLButtonElement>) => {
+      calendarDragStartY.current = event.clientY;
+      setCalendarDragging(true);
+      event.currentTarget.setPointerCapture(event.pointerId);
+    },
+    [],
+  );
+
+  const moveCalendarDrag = React.useCallback(
+    (event: React.PointerEvent<HTMLButtonElement>) => {
+      if (calendarDragStartY.current === null) {
+        return;
+      }
+
+      const nextDragY = Math.max(0, event.clientY - calendarDragStartY.current);
+      calendarDragYRef.current = nextDragY;
+      setCalendarDragY(nextDragY);
+    },
+    [],
+  );
+
+  const finishCalendarDrag = React.useCallback(
+    (event: React.PointerEvent<HTMLButtonElement>) => {
+      if (calendarDragStartY.current === null) {
+        return;
+      }
+
+      if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+        event.currentTarget.releasePointerCapture(event.pointerId);
+      }
+      calendarDragStartY.current = null;
+      setCalendarDragging(false);
+
+      if (calendarDragYRef.current > 88) {
+        closeCalendar();
+        return;
+      }
+
+      calendarDragYRef.current = 0;
+      setCalendarDragY(0);
+    },
+    [closeCalendar],
+  );
+
   return (
     <PageShell showHeader={false}>
       <div className={styles.home}>
@@ -136,12 +271,23 @@ export default function HomeScreen() {
           <div className={styles.stage}>
             <SiteHero subtitle="Placera svenska och historiska händelser i rätt år." />
             <div className={styles.actions}>
-              <ButtonLink
-                fullWidth
-                href="/daily"
-                leadingIcon="play"
-                text="Dagens spel"
-              />
+              <div className={styles.dailyActionRow}>
+                <ButtonLink
+                  className={styles.dailyAction}
+                  href="/daily?intro=1"
+                  leadingIcon="play"
+                  text="Dagens spel"
+                />
+                <button
+                  aria-label="Visa veckans schema för dagens spel"
+                  aria-expanded={calendarOpen}
+                  className={styles.calendarButton}
+                  onClick={showCalendar}
+                  type="button"
+                >
+                  <CalendarIcon />
+                </button>
+              </div>
               <ButtonLink
                 fullWidth
                 href="/leagues"
@@ -166,6 +312,54 @@ export default function HomeScreen() {
           </div>
           <SiteFooter className={styles.footer} />
         </div>
+        {calendarOpen ? (
+          <div
+            className={
+              calendarClosing
+                ? styles.calendarOverlayClosing
+                : styles.calendarOverlay
+            }
+            onClick={closeCalendar}
+          >
+            <div
+              aria-modal="true"
+              className={
+                calendarClosing
+                  ? styles.calendarDialogClosing
+                  : styles.calendarDialog
+              }
+              onClick={(event) => event.stopPropagation()}
+              role="dialog"
+              style={{
+                transform: `translateY(${calendarDragY}px)`,
+                transition: calendarDragging ? "none" : undefined,
+              }}
+            >
+              <button
+                aria-label="Stäng kalender"
+                className={styles.calendarHandle}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    closeCalendar();
+                  }
+                }}
+                onPointerCancel={finishCalendarDrag}
+                onPointerDown={startCalendarDrag}
+                onPointerMove={moveCalendarDrag}
+                onPointerUp={finishCalendarDrag}
+                type="button"
+              />
+              <DailyWeekSchedule compact />
+              <ButtonLink
+                fullWidth
+                href="/daily?intro=1"
+                leadingIcon="play"
+                onClick={closeCalendar}
+                text="Gå till dagens spel"
+              />
+            </div>
+          </div>
+        ) : null}
       </div>
     </PageShell>
   );

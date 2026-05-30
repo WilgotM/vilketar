@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1290 2796">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%" id="vilket-ar-svg">
   <defs>
     <!-- Import Outfit font from Google Fonts for premium typography -->
     <style>
@@ -7,7 +7,7 @@
       .text-vilket {
         font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         font-weight: 800;
-        fill: #1c1917;
+        fill: #ffffff;
         font-size: 116px;
         letter-spacing: -2px;
         dominant-baseline: alphabetic;
@@ -70,35 +70,54 @@
     </linearGradient>
   </defs>
 
-  <!-- Solid background matching light theme -->
-  <rect width="1290" height="2796" fill="#fffdfa" />
+  <!-- Orbit Ring System -->
+  <g id="orbit-system">
+    <!-- Main Orbit Circle (centered slightly to the left to wrap the text) -->
+    <circle id="orbit-ring" class="orbit-line" cx="240" cy="260" r="172" />
 
-  <!-- Center the 512x512 logo elements:
-       Width: 1290 / 2 = 645. Half logo: 256. X = 645 - 256 = 389.
-       Height: 2796 / 2 = 1398. Half logo: 256. Y = 1398 - 256 = 1142.
-  -->
-  <g transform="translate(389, 1142)">
-    <!-- Orbit Ring System -->
-    <g id="orbit-system">
-      <circle id="orbit-ring" class="orbit-line" cx="240" cy="260" r="172" />
-      <circle id="planet-top" class="planet-solid" cx="78.4" cy="201.2" r="7.5" />
-      <g id="planet-middle">
-        <circle class="planet-ring-outer" cx="68" cy="260" r="17.5" />
-        <circle class="planet-ring-inner" cx="68" cy="260" r="7.5" />
-      </g>
-      <circle id="planet-bottom" class="planet-solid" cx="78.4" cy="318.8" r="7.5" />
+    <!-- Planet 1: Top-Left (Solid Small)
+         Angle: ~200 degrees on the circle.
+         cx = 240 + 172 * cos(200°) = 240 - 161.6 = 78.4
+         cy = 260 + 172 * sin(200°) = 260 - 58.8 = 201.2
+    -->
+    <circle id="planet-top" class="planet-solid" cx="78.4" cy="201.2" r="7.5" />
+
+    <!-- Planet 2: Center-Left (Double Ringed Planet)
+         Angle: 180 degrees (direct left)
+         cx = 240 - 172 = 68
+         cy = 260
+    -->
+    <g id="planet-middle">
+      <circle class="planet-ring-outer" cx="68" cy="260" r="17.5" />
+      <circle class="planet-ring-inner" cx="68" cy="260" r="7.5" />
     </g>
 
-    <!-- Sparkle Star -->
-    <g id="star-sparkle-group">
-      <path id="star" class="star-sparkle" d="M 395,112 Q 395,135 418,135 Q 395,135 395,158 Q 395,135 372,135 Q 395,135 395,112 Z" />
-    </g>
+    <!-- Planet 3: Bottom-Left (Solid Small)
+         Angle: ~160 degrees on the circle.
+         cx = 240 + 172 * cos(160°) = 240 - 161.6 = 78.4
+         cy = 260 + 172 * sin(160°) = 260 + 58.8 = 318.8
+    -->
+    <circle id="planet-bottom" class="planet-solid" cx="78.4" cy="318.8" r="7.5" />
+  </g>
 
-    <!-- Text elements -->
-    <g id="text-group">
-      <text id="text-vilket" class="text-vilket" x="128" y="264">Vilket</text>
-      <text id="text-ar" class="text-ar" x="228" y="398">Ar</text>
-      <circle id="custom-a-ring" class="custom-a-ring" cx="277" cy="278" r="12" />
-    </g>
+  <!-- Sparkle Star (Four-Pointed) in the Upper Right -->
+  <g id="star-sparkle-group">
+    <!-- Center of star: cx=395, cy=135. Half-width = 23px -->
+    <path id="star" class="star-sparkle" d="M 395,112 Q 395,135 418,135 Q 395,135 395,158 Q 395,135 372,135 Q 395,135 395,112 Z" />
+  </g>
+
+  <!-- Text elements -->
+  <g id="text-group">
+    <!-- Line 1: "Vilket" (Pure White) -->
+    <text id="text-vilket" class="text-vilket" x="128" y="264">Vilket</text>
+
+    <!-- Line 2: "År" (Without the diacritic ring, written as 'Ar') -->
+    <text id="text-ar" class="text-ar" x="228" y="398">Ar</text>
+
+    <!-- Custom Stylized Ring for the "Å"
+         Perfect hollow golden ring centered exactly above the 'A'
+         Apex of 'A' is at x ~ 276. We place the ring right above it at y = 280.
+    -->
+    <circle id="custom-a-ring" class="custom-a-ring" cx="277" cy="278" r="12" />
   </g>
 </svg>

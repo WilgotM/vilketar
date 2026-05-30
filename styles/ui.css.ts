@@ -55,6 +55,10 @@ export const appPageContent = style([
   }),
   {
     minHeight: 0,
+    display: "flex",
+    flexDirection: "column",
+    flex: 1,
+    height: "100%",
   },
 ]);
 
@@ -229,6 +233,24 @@ export const heroStack = style([
     gap: vars.space.md,
   },
 ]);
+
+export const heroLogoWrapper = style({
+  display: "flex",
+  justifyContent: "center",
+  marginBottom: vars.space.xs,
+});
+
+export const heroLogo = style({
+  height: "120px",
+  width: "120px",
+  filter: "drop-shadow(0 6px 16px rgba(0, 0, 0, 0.15))",
+  transition: `transform ${vars.duration.slow} ${vars.easing.standard}`,
+  selectors: {
+    "&:hover": {
+      transform: "scale(1.06) rotate(5deg)",
+    },
+  },
+});
 
 export const heroTagline = style([
   {

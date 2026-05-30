@@ -11,7 +11,7 @@
   },
   {
     "fact": "Den första boken om Alfons Åberg ges ut.",
-    "image": "",
+    "image": "Alfons Åberg, Arlanda 2010 1.JPG",
     "pageViews": 260000,
     "qid": "Q1316142",
     "subtitle": "Svensk barnboksfigur",
@@ -111,7 +111,7 @@
   },
   {
     "fact": "En man som heter Ove ges ut.",
-    "image": "",
+    "image": "Louis_Français-Dantès_sur_son_rocher.jpg",
     "pageViews": 220000,
     "qid": "Q22815069",
     "subtitle": "Roman av Fredrik Backman",
@@ -126,7 +126,7 @@
     "year": 1818,
     "fact": "Frankenstein är roman från 1818 av Mary Shelley.",
     "wikipediaSlug": "Frankenstein",
-    "image": "",
+    "image": "Christie's auction scan of Frankenstein 1818.jpg",
     "pageViews": 209085
   },
   {
@@ -211,7 +211,7 @@
   },
   {
     "fact": "Sune debuterar som svensk barn- och ungdomsfigur.",
-    "image": "",
+    "image": "Louis_Français-Dantès_sur_son_rocher.jpg",
     "pageViews": 180000,
     "qid": "manual-Sune_(bokserie)",
     "subtitle": "Svensk bokserie",
@@ -231,7 +231,7 @@
   },
   {
     "fact": "Bert debuterar i bokform.",
-    "image": "",
+    "image": "Louis_Français-Dantès_sur_son_rocher.jpg",
     "pageViews": 180000,
     "qid": "manual-Bert_(bokserie)",
     "subtitle": "Svensk bokserie",
@@ -256,7 +256,7 @@
     "year": 1925,
     "fact": "Den store Gatsby är roman av F. Scott Fitzgerald.",
     "wikipediaSlug": "Den_store_Gatsby",
-    "image": "",
+    "image": "The Great Gatsby Cover 1925 Retouched.jpg",
     "pageViews": 138562
   },
   {
@@ -306,7 +306,7 @@
     "year": 1955,
     "fact": "Lolita är roman av Vladimir Nabokov.",
     "wikipediaSlug": "Lolita",
-    "image": "",
+    "image": "Lolita 1955.JPG",
     "pageViews": 117688
   },
   {
@@ -386,7 +386,7 @@
     "year": 1962,
     "fact": "Mannen i det höga slottet är roman från år 1962 av Philip K. Dick.",
     "wikipediaSlug": "Mannen_i_det_h%C3%B6ga_slottet",
-    "image": "",
+    "image": "The Man in the High Castle (1962).jpg",
     "pageViews": 90427
   },
   {
@@ -506,7 +506,7 @@
     "year": 1869,
     "fact": "Krig och fred är roman från 1869 av Lev Tolstoj.",
     "wikipediaSlug": "Krig_och_fred",
-    "image": "",
+    "image": "Tolstoy - War and Peace - first edition, 1869.jpg",
     "pageViews": 63749
   },
   {
@@ -526,7 +526,7 @@
     "year": 1929,
     "fact": "De sju urens mysterium är detektivroman av Agatha Christie.",
     "wikipediaSlug": "De_sju_urens_mysterium",
-    "image": "",
+    "image": "Louis_Français-Dantès_sur_son_rocher.jpg",
     "pageViews": 62869
   },
   {
@@ -676,7 +676,7 @@
     "year": 1957,
     "fact": "Och världen skälvde är roman från 1957 av Ayn Rand.",
     "wikipediaSlug": "Och_v%C3%A4rlden_sk%C3%A4lvde",
-    "image": "",
+    "image": "Atlas Shrugged (1957 1st ed) - Ayn Rand.jpg",
     "pageViews": 50509
   }
 ]

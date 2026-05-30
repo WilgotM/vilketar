@@ -22,6 +22,26 @@ const float4 = keyframes({
   "50%": { transform: "rotate(4deg) translateY(-9px)" },
 });
 
+const overlayIn = keyframes({
+  from: { opacity: 0 },
+  to: { opacity: 1 },
+});
+
+const overlayOut = keyframes({
+  from: { opacity: 1 },
+  to: { opacity: 0 },
+});
+
+const sheetIn = keyframes({
+  from: { transform: "translateY(110%)" },
+  to: { transform: "translateY(0)" },
+});
+
+const sheetOut = keyframes({
+  from: { transform: "translateY(0)" },
+  to: { transform: "translateY(110%)" },
+});
+
 export const home = style({
   alignItems: "center",
   display: "flex",
@@ -72,6 +92,124 @@ export const actions = style({
   flexDirection: "column",
   gap: vars.space.lg,
   width: "100%",
+});
+
+export const dailyActionRow = style({
+  display: "flex",
+  gap: vars.space.sm,
+  width: "100%",
+});
+
+export const dailyAction = style({
+  flex: "1 1 auto",
+  minWidth: 0,
+});
+
+export const calendarButton = style({
+  alignItems: "center",
+  background: vars.color.surface,
+  border: `1px solid ${vars.color.borderStrong}`,
+  borderRadius: vars.radius.sm,
+  boxShadow: vars.shadow.card,
+  color: vars.color.text,
+  display: "inline-flex",
+  flex: "0 0 auto",
+  height: vars.size.controlHeight,
+  justifyContent: "center",
+  textDecoration: "none",
+  transition: `transform ${vars.duration.fast} ${vars.easing.standard}, opacity ${vars.duration.fast} ${vars.easing.standard}`,
+  width: vars.size.controlHeight,
+  selectors: {
+    "&:active": {
+      opacity: 0.76,
+      transform: "scale(0.96)",
+    },
+  },
+});
+
+export const calendarOverlay = style({
+  alignItems: "flex-end",
+  animation: `${overlayIn} ${vars.duration.normal} ${vars.easing.standard}`,
+  background: vars.color.overlay,
+  display: "flex",
+  inset: 0,
+  justifyContent: "center",
+  padding: vars.space.lg,
+  paddingBottom: 0,
+  position: "fixed",
+  zIndex: 30,
+  "@media": {
+    [media.wide]: {
+      alignItems: "center",
+      paddingBottom: vars.space.lg,
+    },
+  },
+});
+
+export const calendarOverlayClosing = style([
+  calendarOverlay,
+  {
+    animation: `${overlayOut} ${vars.duration.normal} ${vars.easing.standard} forwards`,
+  },
+]);
+
+export const calendarDialog = style({
+  animation: `${sheetIn} ${vars.duration.slow} ${vars.easing.emphasized}`,
+  background: vars.color.surfaceStrong,
+  border: `1px solid ${vars.color.borderStrong}`,
+  borderBottomLeftRadius: 0,
+  borderBottomRightRadius: 0,
+  borderTopLeftRadius: vars.radius.lg,
+  borderTopRightRadius: vars.radius.lg,
+  boxShadow: vars.shadow.panel,
+  display: "flex",
+  flexDirection: "column",
+  gap: vars.space.lg,
+  maxHeight: "calc(100dvh - 1rem)",
+  overflow: "auto",
+  padding: `${vars.space["2xl"]} ${vars.space.lg} ${vars.space.lg}`,
+  position: "relative",
+  transition: `transform ${vars.duration.normal} ${vars.easing.emphasized}`,
+  width: "min(100%, 32rem)",
+  "@media": {
+    [media.wide]: {
+      borderRadius: vars.radius.lg,
+      maxHeight: "calc(100dvh - 3rem)",
+      width: "min(100%, 34rem)",
+    },
+    [media.compact]: {
+      paddingBottom: `calc(${vars.space.lg} + env(safe-area-inset-bottom, 0px))`,
+    },
+  },
+});
+
+export const calendarDialogClosing = style([
+  calendarDialog,
+  {
+    animation: `${sheetOut} ${vars.duration.normal} ${vars.easing.emphasized} forwards`,
+  },
+]);
+
+export const calendarHandle = style({
+  background: vars.color.textSubtle,
+  border: 0,
+  borderRadius: vars.radius.pill,
+  cursor: "grab",
+  height: "0.3125rem",
+  left: "50%",
+  padding: 0,
+  position: "absolute",
+  top: vars.space.sm,
+  transform: "translateX(-50%)",
+  touchAction: "none",
+  WebkitTapHighlightColor: "transparent",
+  width: "3rem",
+  zIndex: 1,
+  selectors: {
+    "&:active": {
+      cursor: "grabbing",
+    },
+  },
 });
 
 export const footer = style({

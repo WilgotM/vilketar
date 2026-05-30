@@ -3,6 +3,7 @@ import { getSelectionRoutePath } from "../lib/categories";
 import { DAILY_DIFFICULTY, getCurrentUtcDateKey } from "../lib/daily";
 import { createDailyGameState } from "../lib/daily-game";
 import { loadDailyOverride } from "../lib/daily-overrides";
+import { getDailyScheduleTheme } from "../lib/daily-schedule";
 import {
   clearDailyGameSnapshot,
   loadDailyGameSnapshot,
@@ -19,11 +20,16 @@ import {
   resolveSelectionDeck,
 } from "../lib/game-state";
 import { loadHighscore, saveHighscore } from "../lib/highscore-storage";
-import { getStoredDailyResult, StoredDailyResult } from "../lib/leagues";
+import {
+  getStoredDailyResult,
+  StoredDailyResult,
+  getActiveDailySession,
+  saveActiveDailySession,
+} from "../lib/leagues";
 import { useBackConfirmation } from "../lib/use-back-confirmation";
 import { useFreePlayDifficulty } from "../lib/use-free-play-difficulty";
 import { GameState } from "../types/game";
-import { GameMode, SelectionRoute } from "../types/routes";
+import { GameMode, SelectionRoute, DailyGameSnapshot } from "../types/routes";
 import Board from "./board";
 import { useDecks } from "./deck-provider";
 import Loading from "./loading";
@@ -52,6 +58,34 @@ function shouldRestoreDailySnapshot(
   }
 
   return snapshot.played.length > 1 || snapshot.lives < 3;
+}
+
+function getMoreAdvancedSnapshot(
+  local: DailyGameSnapshot | null,
+  cloud: DailyGameSnapshot | null,
+): DailyGameSnapshot | null {
+  if (!local) {
+    return cloud;
+  }
+  if (!cloud) {
+    return local;
+  }
+
+  const localPlayedCount = local.played.length;
+  const cloudPlayedCount = cloud.played.length;
+
+  if (cloudPlayedCount > localPlayedCount) {
+    return cloud;
+  }
+  if (localPlayedCount > cloudPlayedCount) {
+    return local;
+  }
+
+  if (cloud.lives < local.lives) {
+    return cloud;
+  }
+
+  return local;
 }
 
 function buildGameStatePath(
@@ -94,6 +128,7 @@ export default function GameRouteScreen(props: Props) {
     mode,
     onDailyRemoteCompleted,
     onResetGame,
+    onQuitGame,
     selectionRoute,
     skipRouteIntro = false,
   } = props;
@@ -114,6 +149,10 @@ export default function GameRouteScreen(props: Props) {
     [mode, selectionRoute],
   );
   const dateKey = React.useMemo(() => getCurrentUtcDateKey(), []);
+  const dailyScheduleTheme = React.useMemo(
+    () => getDailyScheduleTheme(dateKey),
+    [dateKey],
+  );
   const difficulty =
     mode === "daily" ? DAILY_DIFFICULTY : freePlayDifficulty.difficulty;
   const difficultyReady = mode === "daily" ? true : freePlayDifficulty.ready;
@@ -215,11 +254,13 @@ export default function GameRouteScreen(props: Props) {
 
     const deckNodeMap = createDeckNodeListMap(deckNodes);
     const selectionDeckId =
-      mode === "daily" ? rootDeckId : (selectionRoute?.nodeId ?? rootDeckId);
+      mode === "daily"
+        ? (dailyScheduleTheme.deckId ?? rootDeckId)
+        : (selectionRoute?.nodeId ?? rootDeckId);
     const rootDeck = deckNodeMap.get(selectionDeckId);
 
     return rootDeck ? collectLeafDeckIds(rootDeck) : [];
-  }, [deckNodes, mode, rootDeckId, selectionRoute]);
+  }, [dailyScheduleTheme.deckId, deckNodes, mode, rootDeckId, selectionRoute]);
 
   React.useEffect(() => {
     if (
@@ -272,12 +313,16 @@ export default function GameRouteScreen(props: Props) {
       setStateReady(false);
       setRestoredFromSnapshot(false);
       const loadedDeckCards = await loadDecks(selectedLeafDeckIds);
-      const selectedRootDeck = resolveSelectionDeck(
-        deckNodes,
-        mode,
-        mode === "daily" ? null : (selectionRoute ?? null),
-        rootDeckId,
-      );
+      const deckNodeMap = createDeckNodeListMap(deckNodes);
+      const selectedRootDeck =
+        mode === "daily"
+          ? (deckNodeMap.get(dailyScheduleTheme.deckId ?? rootDeckId) ?? null)
+          : resolveSelectionDeck(
+              deckNodes,
+              mode,
+              selectionRoute ?? null,
+              rootDeckId,
+            );
       if (!selectedRootDeck) {
         return;
       }
@@ -295,7 +340,19 @@ export default function GameRouteScreen(props: Props) {
           return;
         }
 
-        const existingSnapshot = loadDailyGameSnapshot();
+        let cloudSnapshot: DailyGameSnapshot | null = null;
+        try {
+          cloudSnapshot = await getActiveDailySession(dateKey);
+        } catch (e) {
+          console.error("Failed to load active session from cloud", e);
+        }
+
+        const localSnapshot = loadDailyGameSnapshot();
+        const existingSnapshot = getMoreAdvancedSnapshot(
+          localSnapshot,
+          cloudSnapshot,
+        );
+
         if (
           existingSnapshot &&
           shouldRestoreDailySnapshot(dateKey, existingSnapshot)
@@ -351,6 +408,7 @@ export default function GameRouteScreen(props: Props) {
     };
   }, [
     dateKey,
+    dailyScheduleTheme.deckId,
     difficulty,
     difficultyReady,
     deckNodes,
@@ -370,7 +428,11 @@ export default function GameRouteScreen(props: Props) {
       return;
     }
 
-    saveDailyGameSnapshot(createDailyGameSnapshot(dateKey, state));
+    const snapshot = createDailyGameSnapshot(dateKey, state);
+    saveDailyGameSnapshot(snapshot);
+    void saveActiveDailySession(dateKey, snapshot).catch((e) => {
+      console.error("Failed to save active session to cloud", e);
+    });
   }, [dateKey, mode, showRouteIntro, state]);
 
   const resetGame = React.useCallback(() => {
@@ -410,7 +472,7 @@ export default function GameRouteScreen(props: Props) {
 
   const backConfirmation = useBackConfirmation({
     enabled: shouldConfirmBeforeQuit,
-    onConfirmExit: mode === "daily" ? () => undefined : resetGame,
+    onConfirmExit: onQuitGame ?? resetGame,
   });
 
   const updateHighscore = React.useCallback(
