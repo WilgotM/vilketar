@@ -24,6 +24,8 @@ import * as styles from "../styles/daily-admin.css";
 
 const DAY_COUNT = 10;
 const ADMIN_CARD_COUNT = DAILY_CARD_COUNT;
+const LEGACY_ADMIN_USERNAME = "Wilgot10";
+const LEGACY_ADMIN_EMAIL = "wilgot10@admin.vilketar.local";
 
 interface DailyGameRow {
   card_qids: string[];
@@ -51,6 +53,13 @@ function formatDate(dateKey: string): string {
     month: "long",
     weekday: "long",
   }).format(new Date(`${dateKey}T00:00:00.000Z`));
+}
+
+function normalizeAdminLogin(login: string): string {
+  const normalizedLogin = login.trim();
+  return normalizedLogin.toLowerCase() === LEGACY_ADMIN_USERNAME.toLowerCase()
+    ? LEGACY_ADMIN_EMAIL
+    : normalizedLogin;
 }
 
 function DailyAdminHead() {
@@ -302,7 +311,7 @@ export default function DailyAdminPage() {
     }
 
     const auth = await supabase.auth.signInWithPassword({
-      email: email.trim(),
+      email: normalizeAdminLogin(email),
       password,
     });
     if (auth.error || !auth.data.user) {
