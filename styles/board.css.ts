@@ -61,36 +61,18 @@ export const statusLayer = style({
 
 export const scoreBadge = style({
   alignItems: "center",
-  background: `color-mix(in srgb, ${vars.color.text} 8%, transparent)`,
-  backdropFilter: "blur(20px)",
-  WebkitBackdropFilter: "blur(20px)",
-  border: `1px solid color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
-  borderRadius: vars.radius.pill,
-  boxShadow: "0 4px 16px rgba(0, 0, 0, 0.15)",
-  display: "inline-flex",
-  gap: "0.25rem",
+  display: "flex",
+  flexDirection: "column",
+  gap: vars.space.xs,
   justifyContent: "center",
-  padding: "0.375rem 0.875rem",
   pointerEvents: "none",
-  position: "absolute",
-  right: vars.space["2xl"],
-  top: vars.space.xl,
   zIndex: 3,
-  height: "2.125rem",
-  "@media": {
-    [media.compact]: {
-      padding: "0.25rem 0.6875rem",
-      right: vars.space.lg,
-      top: vars.space.lg,
-      height: "1.875rem",
-    },
-  },
 });
 
 export const scoreValue = style({
-  color: vars.color.accent,
-  fontSize: vars.fontSize.md,
-  fontWeight: vars.fontWeight.bold,
+  color: vars.color.text,
+  fontSize: "3.5rem",
+  fontWeight: vars.fontWeight.black,
   lineHeight: "1",
   textAlign: "center",
   fontVariantNumeric: "tabular-nums",
@@ -98,21 +80,23 @@ export const scoreValue = style({
   alignItems: "center",
   "@media": {
     [media.compact]: {
-      fontSize: vars.fontSize.base,
+      fontSize: "3rem",
     },
   },
 });
 
 export const scoreLabel = style({
   color: `color-mix(in srgb, ${vars.color.text} 60%, transparent)`,
-  fontSize: vars.fontSize.control,
-  fontWeight: vars.fontWeight.medium,
+  fontSize: vars.fontSize.sm,
+  fontWeight: vars.fontWeight.semibold,
+  textTransform: "uppercase",
+  letterSpacing: "0.1em",
   lineHeight: "1",
   display: "inline-flex",
   alignItems: "center",
   "@media": {
     [media.compact]: {
-      fontSize: vars.fontSize.sm,
+      fontSize: vars.fontSize.xs,
     },
   },
 });

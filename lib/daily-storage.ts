@@ -1,6 +1,7 @@
 import { DailyGameSnapshot } from "../types/routes";
 
 const DAILY_SNAPSHOT_STORAGE_KEY = "daily:snapshot";
+const DAILY_PROGRESS_STORAGE_PREFIX = "daily:progress-started:";
 
 export function loadDailyGameSnapshot(): DailyGameSnapshot | null {
   try {
@@ -54,4 +55,19 @@ export function saveDailyGameSnapshot(snapshot: DailyGameSnapshot) {
 
 export function clearDailyGameSnapshot() {
   localStorage.removeItem(DAILY_SNAPSHOT_STORAGE_KEY);
+}
+
+export function hasStartedDailyGameProgress(dateKey: string): boolean {
+  try {
+    return (
+      localStorage.getItem(`${DAILY_PROGRESS_STORAGE_PREFIX}${dateKey}`) ===
+      "true"
+    );
+  } catch {
+    return false;
+  }
+}
+
+export function markStartedDailyGameProgress(dateKey: string) {
+  localStorage.setItem(`${DAILY_PROGRESS_STORAGE_PREFIX}${dateKey}`, "true");
 }

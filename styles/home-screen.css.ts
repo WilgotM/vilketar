@@ -100,28 +100,111 @@ export const dailyActionRow = style({
   width: "100%",
 });
 
-export const dailyAction = style({
+export const dailyActionSlot = style({
   flex: "1 1 auto",
+  isolation: "isolate",
   minWidth: 0,
+  overflow: "visible",
+  position: "relative",
 });
+
+export const dailyAction = style({
+  position: "relative",
+  width: "100%",
+  zIndex: 1,
+});
+
+const dailyStatusBadge = style({
+  alignItems: "center",
+  backdropFilter: "blur(20px) saturate(1.45)",
+  WebkitBackdropFilter: "blur(20px) saturate(1.45)",
+  borderRadius: vars.radius.pill,
+  boxShadow:
+    "0 0.55rem 1.35rem rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.42)",
+  display: "inline-flex",
+  fontSize: vars.fontSize.xs,
+  fontWeight: vars.fontWeight.bold,
+  justifyContent: "center",
+  letterSpacing: 0,
+  lineHeight: vars.lineHeight.snug,
+  minHeight: "1.65rem",
+  padding: `0 ${vars.space.md}`,
+  position: "absolute",
+  right: vars.space.lg,
+  textDecoration: "none",
+  top: "-1.05rem",
+  transition: `background ${vars.duration.fast} ${vars.easing.standard}, border-color ${vars.duration.fast} ${vars.easing.standard}, transform ${vars.duration.fast} ${vars.easing.standard}`,
+  zIndex: 20,
+  selectors: {
+    "&:hover": {
+      transform: "translateY(-0.0625rem)",
+    },
+    "&:active": {
+      transform: "translateY(0)",
+    },
+  },
+});
+
+export const dailyStatusBadgeNew = style([
+  dailyStatusBadge,
+  {
+    background:
+      "linear-gradient(180deg, rgba(34, 197, 94, 0.7), rgba(21, 128, 61, 0.48))",
+    border: "1px solid rgba(187, 247, 208, 0.72)",
+    color: "#ecfdf5",
+    textShadow: "0 1px 0 rgba(0, 0, 0, 0.28)",
+    selectors: {
+      "&:hover": {
+        background:
+          "linear-gradient(180deg, rgba(34, 197, 94, 0.82), rgba(21, 128, 61, 0.58))",
+        borderColor: "rgba(220, 252, 231, 0.86)",
+      },
+    },
+  },
+]);
+
+export const dailyStatusBadgeUnfinished = style([
+  dailyStatusBadge,
+  {
+    background:
+      "linear-gradient(180deg, rgba(59, 130, 246, 0.72), rgba(29, 78, 216, 0.5))",
+    border: "1px solid rgba(191, 219, 254, 0.76)",
+    color: "#eff6ff",
+    textShadow: "0 1px 0 rgba(0, 0, 0, 0.3)",
+    selectors: {
+      "&:hover": {
+        background:
+          "linear-gradient(180deg, rgba(59, 130, 246, 0.84), rgba(29, 78, 216, 0.6))",
+        borderColor: "rgba(219, 234, 254, 0.9)",
+      },
+    },
+  },
+]);
 
 export const calendarButton = style({
   alignItems: "center",
-  background: vars.color.surface,
-  border: `1px solid ${vars.color.borderStrong}`,
+  background: `color-mix(in srgb, ${vars.color.text} 8%, transparent)`,
+  backdropFilter: "blur(20px)",
+  WebkitBackdropFilter: "blur(20px)",
+  border: `1px solid color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
   borderRadius: vars.radius.sm,
-  boxShadow: vars.shadow.card,
+  boxShadow: "0 4px 16px rgba(0, 0, 0, 0.15)",
   color: vars.color.text,
   display: "inline-flex",
   flex: "0 0 auto",
   height: vars.size.controlHeight,
   justifyContent: "center",
   textDecoration: "none",
-  transition: `transform ${vars.duration.fast} ${vars.easing.standard}, opacity ${vars.duration.fast} ${vars.easing.standard}`,
+  transition: `all ${vars.duration.fast} ${vars.easing.standard}`,
   width: vars.size.controlHeight,
   selectors: {
+    "&:hover": {
+      background: `color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
+      borderColor: `color-mix(in srgb, ${vars.color.text} 20%, transparent)`,
+      boxShadow: "0 6px 20px rgba(0, 0, 0, 0.2)",
+    },
     "&:active": {
-      opacity: 0.76,
+      opacity: 0.8,
       transform: "scale(0.96)",
     },
   },

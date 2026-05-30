@@ -2,7 +2,7 @@
   "id": "/",
   "name": "VilketÅr",
   "short_name": "VilketÅr",
-  "description": "Ett svenskt tidslinjespel byggt på Wikimedia-data.",
+  "description": "Ett svenskt tidslinjespel där du placerar välkända händelser, personer, musik, sport och klassiker i rätt år.",
   "lang": "sv-SE",
   "dir": "ltr",
   "start_url": "/?source=pwa",

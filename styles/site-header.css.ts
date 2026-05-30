@@ -39,10 +39,12 @@ export const wordmark = style({
 export const backLink = style({
   alignItems: "center",
   appearance: "none",
-  background: vars.color.surfaceChrome,
-  border: `1px solid ${vars.color.border}`,
+  background: `color-mix(in srgb, ${vars.color.text} 8%, transparent)`,
+  backdropFilter: "blur(20px)",
+  WebkitBackdropFilter: "blur(20px)",
+  border: `1px solid color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
   borderRadius: vars.radius.pill,
-  boxShadow: "0 0.25rem 0.5rem rgba(0, 0, 0, 0.15)",
+  boxShadow: "0 4px 16px rgba(0, 0, 0, 0.15)",
   color: vars.color.text,
   display: "inline-flex",
   fontFamily: vars.font.body,
@@ -51,7 +53,7 @@ export const backLink = style({
   gap: vars.space.sm,
   left: 0,
   lineHeight: 1,
-  minHeight: "2.5rem",
+  height: "2.5rem",
   paddingLeft: vars.space.md,
   paddingRight: vars.space.lg,
   position: "absolute",
@@ -61,14 +63,21 @@ export const backLink = style({
   transition: `all ${vars.duration.fast} ${vars.easing.standard}`,
   selectors: {
     "&:hover": {
-      background: vars.color.surfaceStrong,
-      borderColor: vars.color.accent,
-      boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.25)",
-      color: vars.color.accent,
+      background: `color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
+      borderColor: `color-mix(in srgb, ${vars.color.text} 20%, transparent)`,
+      boxShadow: "0 6px 20px rgba(0, 0, 0, 0.2)",
       transform: "translateY(-50%) scale(1.03)",
     },
     "&:active": {
       transform: "translateY(-50%) scale(0.97)",
+    },
+  },
+  "@media": {
+    [media.narrow]: {
+      paddingLeft: 0,
+      paddingRight: 0,
+      justifyContent: "center",
+      width: "2.5rem",
     },
   },
 });

@@ -354,6 +354,18 @@ export default function MenuFlowShell() {
               : currentPlayView === "browse"
                 ? "Bläddra | VilketÅr"
                 : "Fritt spel | VilketÅr";
+  const pageDescription =
+    path === "/daily"
+      ? "Spela dagens VilketÅr: fem nya tidslinjekort varje dag med svenska klassiker, sport, musik och historiska händelser."
+      : activeSelectionRoute
+        ? `Spela ${getSelectionRouteShareLabel(activeSelectionRoute).toLowerCase()} i VilketÅr och placera korten i rätt år på tidslinjen.`
+        : group
+          ? `Bläddra bland ${group.title.toLowerCase()} i VilketÅr och välj ett svenskt tidslinjespel att starta.`
+          : currentPlayView === "featured"
+            ? "Spela utvalda VilketÅr-kategorier med igenkännbara tidslinjekort från Sverige och världen."
+            : currentPlayView === "browse"
+              ? "Bläddra bland VilketÅrs kategorier och välj ett tidslinjespel om historia, sport, musik, kultur eller Sverige."
+              : undefined;
   const freePlayItems = React.useMemo(() => {
     const visibleCategories = getCategoryDefinitions().filter((category) => {
       if (!deckNodes) {
@@ -533,7 +545,11 @@ export default function MenuFlowShell() {
 
   return (
     <>
-      <AppHead title={pageTitle} />
+      <AppHead
+        canonicalPath={path.split(/[?#]/)[0] || "/"}
+        description={pageDescription}
+        title={pageTitle}
+      />
       <AnimatePresence mode="wait">
         {path === "/" ? (
           <motion.div

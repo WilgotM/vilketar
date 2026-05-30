@@ -22,13 +22,21 @@ export const fullWidth = style({
 });
 
 export const minimal = style({
-  background: vars.color.surfaceChrome,
-  border: `1px solid ${vars.color.border}`,
-  boxShadow: "none",
+  background: `color-mix(in srgb, ${vars.color.text} 8%, transparent)`,
+  backdropFilter: "blur(20px)",
+  WebkitBackdropFilter: "blur(20px)",
+  border: `1px solid color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
+  boxShadow: "0 4px 16px rgba(0, 0, 0, 0.15)",
   color: vars.color.text,
+  transition: `all ${vars.duration.fast} ${vars.easing.standard}`,
   selectors: {
+    "&:hover": {
+      background: `color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
+      borderColor: `color-mix(in srgb, ${vars.color.text} 20%, transparent)`,
+      boxShadow: "0 6px 20px rgba(0, 0, 0, 0.2)",
+    },
     "&:active": {
-      opacity: 0.7,
+      opacity: 0.8,
       transform: "scale(0.98)",
     },
   },

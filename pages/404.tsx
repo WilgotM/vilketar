@@ -7,7 +7,11 @@ import * as layoutStyles from "../styles/game-route-screen.css";
 export default function NotFoundPage() {
   return (
     <>
-      <AppHead title="Sidan hittades inte | VilketÅr" />
+      <AppHead
+        canonicalPath="/404"
+        noindex
+        title="Sidan hittades inte | VilketÅr"
+      />
       <div className={layoutStyles.page}>
         <SiteHeader />
         <div className={layoutStyles.boardFrame}>

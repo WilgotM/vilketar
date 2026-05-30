@@ -4,7 +4,7 @@ import HomeScreen from "../components/home-screen";
 export default function Index() {
   return (
     <>
-      <AppHead />
+      <AppHead canonicalPath="/" />
       <HomeScreen />
     </>
   );

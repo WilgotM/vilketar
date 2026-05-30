@@ -14,7 +14,7 @@ const themeInitScript = `
 
 export default function Document() {
   return (
-    <Html className={appThemeClass}>
+    <Html className={appThemeClass} lang="sv-SE">
       <Head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </Head>

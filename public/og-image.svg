@@ -1,0 +1,13 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#fff7ea"/>
+  <rect x="64" y="64" width="1072" height="502" rx="36" fill="#1b1714"/>
+  <circle cx="930" cy="180" r="118" fill="#d84a2b"/>
+  <circle cx="255" cy="462" r="82" fill="#f1be49"/>
+  <path d="M166 403H1034" stroke="#fff7ea" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="304" cy="403" r="24" fill="#fff7ea"/>
+  <circle cx="548" cy="403" r="24" fill="#fff7ea"/>
+  <circle cx="804" cy="403" r="24" fill="#fff7ea"/>
+  <text x="132" y="228" fill="#fff7ea" font-family="Georgia, serif" font-size="112" font-weight="700">VilketÅr</text>
+  <text x="136" y="313" fill="#f1be49" font-family="Arial, sans-serif" font-size="42" font-weight="700">Svenskt tidslinjespel</text>
+  <text x="136" y="494" fill="#fff7ea" font-family="Arial, sans-serif" font-size="34">Placera händelser, musik, sport och klassiker i rätt år.</text>
+</svg>

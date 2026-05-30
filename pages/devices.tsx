@@ -76,7 +76,12 @@ export default function DevicesPage() {
 
   return (
     <>
-      <AppHead title="Mina enheter | VilketÅr" />
+      <AppHead
+        canonicalPath="/devices"
+        description="Hantera enheter som är kopplade till ditt VilketÅr-konto."
+        noindex
+        title="Mina enheter | VilketÅr"
+      />
       <PageShell>
         <div className={styles.screen}>
           <section className={styles.hero}>

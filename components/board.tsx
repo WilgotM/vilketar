@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { AnimatePresence, motion } from "motion/react";
 import React from "react";
+import { markStartedDailyGameProgress } from "../lib/daily-storage";
 import {
   checkCorrect,
   drawNextCard,
@@ -346,6 +347,10 @@ export default function Board(props: Props) {
     droppedIndex: number,
     rect: DOMRect,
   ) {
+    if (gameMode === "daily" && dailyDateKey) {
+      markStartedDailyGameProgress(dailyDateKey);
+    }
+
     const newPlayed = [...state.played];
     const { correct, delta } = checkCorrect(newPlayed, card, droppedIndex);
     const finalIndex = correct ? droppedIndex : droppedIndex + delta;
@@ -661,36 +666,38 @@ export default function Board(props: Props) {
 
   return (
     <div ref={boardRef} className={styles.wrapper}>
-      <motion.div
-        animate={{
-          opacity: gameOverPhase === "hud-exit" || showGameOverSummary ? 0 : 1,
-        }}
-        aria-label={`${score} poäng`}
-        aria-live="polite"
-        className={styles.scoreBadge}
-        initial={false}
-        transition={{ duration: 0.28, ease: "easeOut" }}
-      >
-        <motion.span
-          key={score}
-          initial={{ scale: 0.8, opacity: 0.5 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{
-            type: "spring",
-            stiffness: 400,
-            damping: 15,
-          }}
-          className={styles.scoreValue}
-        >
-          {score}
-        </motion.span>
-        <span className={styles.scoreLabel}>poäng</span>
-      </motion.div>
       <div
         className={classNames(styles.top, {
           [styles.topGameOver]: showGameOverSummary,
         })}
       >
+        <motion.div
+          animate={{
+            opacity:
+              gameOverPhase === "hud-exit" || showGameOverSummary ? 0 : 1,
+            y: gameOverPhase === "hud-exit" || showGameOverSummary ? -10 : 0,
+          }}
+          aria-label={`${score} poäng`}
+          aria-live="polite"
+          className={styles.scoreBadge}
+          initial={false}
+          transition={{ duration: 0.28, ease: "easeOut" }}
+        >
+          <motion.span
+            key={score}
+            initial={{ scale: 0.8, opacity: 0.5 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 15,
+            }}
+            className={styles.scoreValue}
+          >
+            {score}
+          </motion.span>
+          <span className={styles.scoreLabel}>poäng</span>
+        </motion.div>
         <div className={styles.statusArea}>
           <AnimatePresence mode="wait">
             {statusScene === "lives" ? (

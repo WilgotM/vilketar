@@ -99,7 +99,11 @@ export default function DailyPage() {
 
   return (
     <>
-      <AppHead title="Dagens spel | VilketÅr" />
+      <AppHead
+        canonicalPath="/daily"
+        description="Spela dagens VilketÅr: fem nya tidslinjekort varje dag med svenska klassiker, sport, musik och historiska händelser."
+        title="Dagens spel | VilketÅr"
+      />
       <AnimatePresence mode="wait">
         {!started || completedScore !== null || forceIntro ? (
           <motion.div

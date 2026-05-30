@@ -1,5 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { getCurrentUtcDateKey } from "../lib/daily";
+import {
+  hasStartedDailyGameProgress,
+  loadDailyGameSnapshot,
+} from "../lib/daily-storage";
 import ButtonLink from "./button-link";
 import DailyWeekSchedule from "./daily-week-schedule";
 import PageShell from "./page-shell";
@@ -153,11 +159,35 @@ function CalendarIcon() {
   );
 }
 
+type DailyHomeStatus = "not-started" | "unfinished" | "completed";
+
+function readDailyHomeStatus(): DailyHomeStatus {
+  if (typeof window === "undefined") {
+    return "completed";
+  }
+
+  const snapshot = loadDailyGameSnapshot();
+
+  if (snapshot === null || snapshot.dateKey !== getCurrentUtcDateKey()) {
+    return "not-started";
+  }
+
+  if (snapshot.lives <= 0) {
+    return "completed";
+  }
+
+  return hasStartedDailyGameProgress(snapshot.dateKey)
+    ? "unfinished"
+    : "not-started";
+}
+
 export default function HomeScreen() {
   const [calendarOpen, setCalendarOpen] = React.useState(false);
   const [calendarDragY, setCalendarDragY] = React.useState(0);
   const [calendarDragging, setCalendarDragging] = React.useState(false);
   const [calendarClosing, setCalendarClosing] = React.useState(false);
+  const [dailyHomeStatus, setDailyHomeStatus] =
+    React.useState<DailyHomeStatus>("completed");
   const calendarDragStartY = React.useRef<number | null>(null);
   const calendarDragYRef = React.useRef(0);
   const closeTimerRef = React.useRef<number | null>(null);
@@ -198,6 +228,26 @@ export default function HomeScreen() {
       if (closeTimerRef.current !== null) {
         window.clearTimeout(closeTimerRef.current);
       }
+    };
+  }, []);
+
+  React.useEffect(() => {
+    const updateUnfinishedDailyGame = () => {
+      setDailyHomeStatus(readDailyHomeStatus());
+    };
+
+    updateUnfinishedDailyGame();
+    window.addEventListener("focus", updateUnfinishedDailyGame);
+    window.addEventListener("storage", updateUnfinishedDailyGame);
+    document.addEventListener("visibilitychange", updateUnfinishedDailyGame);
+
+    return () => {
+      window.removeEventListener("focus", updateUnfinishedDailyGame);
+      window.removeEventListener("storage", updateUnfinishedDailyGame);
+      document.removeEventListener(
+        "visibilitychange",
+        updateUnfinishedDailyGame,
+      );
     };
   }, []);
 
@@ -261,6 +311,19 @@ export default function HomeScreen() {
     [closeCalendar],
   );
 
+  const dailyStatusBadge =
+    dailyHomeStatus === "not-started"
+      ? {
+          className: styles.dailyStatusBadgeNew,
+          text: "Ospelad",
+        }
+      : dailyHomeStatus === "unfinished"
+        ? {
+            className: styles.dailyStatusBadgeUnfinished,
+            text: "Fortsätt",
+          }
+        : null;
+
   return (
     <PageShell showHeader={false}>
       <div className={styles.home}>
@@ -272,12 +335,26 @@ export default function HomeScreen() {
             <SiteHero subtitle="Placera svenska och historiska händelser i rätt år." />
             <div className={styles.actions}>
               <div className={styles.dailyActionRow}>
-                <ButtonLink
-                  className={styles.dailyAction}
-                  href="/daily?intro=1"
-                  leadingIcon="play"
-                  text="Dagens spel"
-                />
+                <div className={styles.dailyActionSlot}>
+                  <ButtonLink
+                    className={styles.dailyAction}
+                    href="/daily?intro=1"
+                    leadingIcon="play"
+                    text="Dagens spel"
+                  />
+                  {dailyStatusBadge ? (
+                    <Link
+                      className={dailyStatusBadge.className}
+                      href={
+                        dailyHomeStatus === "unfinished"
+                          ? "/daily"
+                          : "/daily?intro=1"
+                      }
+                    >
+                      {dailyStatusBadge.text}
+                    </Link>
+                  ) : null}
+                </div>
                 <button
                   aria-label="Visa veckans schema för dagens spel"
                   aria-expanded={calendarOpen}

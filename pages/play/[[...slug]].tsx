@@ -105,6 +105,11 @@ export default function FreePlayPage(props: Props) {
     : group
       ? `${group.title} | VilketÅr`
       : "Fritt spel | VilketÅr";
+  const pageDescription = activeSelectionRoute
+    ? `Spela ${getSelectionRouteShareLabel(activeSelectionRoute).toLowerCase()} i VilketÅr och placera korten i rätt år på tidslinjen.`
+    : group
+      ? `Bläddra bland ${group.title.toLowerCase()} i VilketÅr och välj ett svenskt tidslinjespel att starta.`
+      : "Välj kategori och spela VilketÅr fritt med svenska klassiker, historiska händelser, sport, musik och kultur.";
   const items = React.useMemo(() => {
     const visibleCategories = getCategoryDefinitions().filter((category) => {
       if (!deckNodes) {
@@ -183,7 +188,11 @@ export default function FreePlayPage(props: Props) {
 
   return (
     <>
-      <AppHead title={pageTitle} />
+      <AppHead
+        canonicalPath={router.asPath.split(/[?#]/)[0] ?? "/play"}
+        description={pageDescription}
+        title={pageTitle}
+      />
       <div className={layoutStyles.page}>
         <SiteHeader />
         <div className={layoutStyles.boardFrame}>
