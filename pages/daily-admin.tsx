@@ -24,10 +24,6 @@ import * as styles from "../styles/daily-admin.css";
 
 const DAY_COUNT = 10;
 const ADMIN_CARD_COUNT = DAILY_CARD_COUNT;
-const ADMIN_USERNAME = "Wilgot10";
-const ADMIN_PASSWORD = "Elfsborg10";
-const ADMIN_RPC_KEY = `${ADMIN_USERNAME}:${ADMIN_PASSWORD}`;
-const ADMIN_SESSION_KEY = "daily-admin:unlocked";
 
 interface DailyGameRow {
   card_qids: string[];
@@ -69,7 +65,7 @@ function DailyAdminHead() {
 export default function DailyAdminPage() {
   const { deckNodes, loadDecks, rootDeckId } = useDecks();
   const todayKey = React.useMemo(() => getCurrentUtcDateKey(), []);
-  const [username, setUsername] = React.useState("");
+  const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [status, setStatus] = React.useState("");
   const [isAdmin, setIsAdmin] = React.useState(false);
@@ -102,8 +98,33 @@ export default function DailyAdminPage() {
       return;
     }
 
-    setIsAdmin(localStorage.getItem(ADMIN_SESSION_KEY) === "true");
-    setLoading(false);
+    const supabaseClient = supabase;
+    async function loadAdminSession() {
+      const user = await supabaseClient.auth.getUser();
+      if (user.error || !user.data.user) {
+        setLoading(false);
+        return;
+      }
+
+      const admin = await supabaseClient
+        .from("daily_admins")
+        .select("user_id")
+        .eq("user_id", user.data.user.id)
+        .maybeSingle();
+
+      if (admin.error || !admin.data) {
+        await supabaseClient.auth.signOut();
+        setStatus("Du är inloggad, men saknar adminbehörighet.");
+        setLoading(false);
+        return;
+      }
+
+      setEmail(user.data.user.email ?? "");
+      setIsAdmin(true);
+      setLoading(false);
+    }
+
+    void loadAdminSession();
   }, []);
 
   React.useEffect(() => {
@@ -280,12 +301,26 @@ export default function DailyAdminPage() {
       return;
     }
 
-    if (username.trim() !== ADMIN_USERNAME || password !== ADMIN_PASSWORD) {
-      setStatus("Fel användarnamn eller lösenord.");
+    const auth = await supabase.auth.signInWithPassword({
+      email: email.trim(),
+      password,
+    });
+    if (auth.error || !auth.data.user) {
+      setStatus("Fel e-postadress eller lösenord.");
       return;
     }
 
-    localStorage.setItem(ADMIN_SESSION_KEY, "true");
+    const admin = await supabase
+      .from("daily_admins")
+      .select("user_id")
+      .eq("user_id", auth.data.user.id)
+      .maybeSingle();
+    if (admin.error || !admin.data) {
+      await supabase.auth.signOut();
+      setStatus("Kontot saknar adminbehörighet.");
+      return;
+    }
+
     setIsAdmin(true);
     setStatus("Inloggad.");
   }
@@ -296,7 +331,6 @@ export default function DailyAdminPage() {
     }
 
     const response = await supabase.rpc("app_admin_upsert_daily_game", {
-      p_admin_key: ADMIN_RPC_KEY,
       p_card_qids: qids,
       p_date_key: dateKey,
     });
@@ -324,7 +358,6 @@ export default function DailyAdminPage() {
     }
 
     const response = await supabase.rpc("app_admin_delete_daily_game", {
-      p_admin_key: ADMIN_RPC_KEY,
       p_date_key: dateKey,
     });
     if (response.error) {
@@ -402,13 +435,15 @@ export default function DailyAdminPage() {
           </p>
           <input
             className={styles.input}
-            onChange={(event) => setUsername(event.target.value)}
-            placeholder="Användarnamn"
-            type="text"
-            value={username}
+            autoComplete="email"
+            onChange={(event) => setEmail(event.target.value)}
+            placeholder="E-postadress"
+            type="email"
+            value={email}
           />
           <input
             className={styles.input}
+            autoComplete="current-password"
             onChange={(event) => setPassword(event.target.value)}
             placeholder="Lösenord"
             type="password"
@@ -440,7 +475,9 @@ export default function DailyAdminPage() {
             <button
               className={styles.secondaryButton}
               onClick={() => {
-                localStorage.removeItem(ADMIN_SESSION_KEY);
+                if (supabase) {
+                  void supabase.auth.signOut();
+                }
                 setIsAdmin(false);
                 setPassword("");
                 setStatus("");

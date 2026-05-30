@@ -1,3 +1,6 @@
+drop function if exists public.app_admin_upsert_daily_game(text, date, text[]);
+drop function if exists public.app_admin_delete_daily_game(text, date);
+
 create or replace function public.app_admin_upsert_daily_game(
   p_date_key date,
   p_card_qids text[]
