@@ -111,6 +111,16 @@ För publik drift ska Supabase Auth använda egen SMTP med en avsändare som
 
 Cloudflare Pages-projektet heter `vilketar`.
 
+Primär publik domän är `https://vilketår.se`
+(`https://xn--vilketr-jxa.se` i DNS, canonical URL:er och teknisk config).
+Koppla domänen i Cloudflare Pages under projektets **Custom domains**. Om
+domänen ligger hos Strato behöver nameservers först peka mot Cloudflare, eller
+så behöver Strato-DNS sättas enligt Cloudflares anvisningar för Pages-domänen.
+
+I Cloudflare Pages ska `NEXT_PUBLIC_SITE_URL` vara
+`https://xn--vilketr-jxa.se` om den sätts som environment variable. Appen har
+samma värde som default för statisk build.
+
 Deploy:
 
 ```bash

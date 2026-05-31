@@ -10,14 +10,44 @@
     "year": 1945
   },
   {
-    "fact": "Den första boken om Alfons Åberg ges ut.",
+    "fact": "Tove Jansson ger ut den första boken om Mumintrollen.",
+    "image": "Disambig_grey.svg",
+    "pageViews": 260000,
+    "qid": "Q10590157",
+    "subtitle": "Nordisk barnboksfigur",
+    "title": "Mumin ges ut",
+    "wikipediaSlug": "Mumin",
+    "year": 1945
+  },
+  {
+    "fact": "Gunilla Bergström ger ut den första boken om Alfons Åberg.",
     "image": "",
     "pageViews": 260000,
     "qid": "Q1316142",
     "subtitle": "Svensk barnboksfigur",
-    "title": "Alfons Åberg ges ut",
+    "title": "Alfons Åberg debuterar",
     "wikipediaSlug": "Alfons_%C3%85berg",
     "year": 1972
+  },
+  {
+    "fact": "Bamse får en egen serietidning.",
+    "image": "Bamse.jpg",
+    "pageViews": 260000,
+    "qid": "Q252480",
+    "subtitle": "Svensk seriefigur",
+    "title": "”Bamse” får egen serietidning",
+    "wikipediaSlug": "Bamse",
+    "year": 1973
+  },
+  {
+    "fact": "Sagan om Karl-Bertil Jonssons julafton börjar visas i svensk tv.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q1758868",
+    "subtitle": "Svensk julklassiker",
+    "title": "Karl-Bertil Jonssons julafton sänds",
+    "wikipediaSlug": "Sagan_om_Karl-Bertil_Jonssons_julafton",
+    "year": 1975
   },
   {
     "qid": "Q283111",
@@ -30,14 +60,154 @@
     "pageViews": 247521
   },
   {
-    "fact": "Pettson och Findus debuterar i bokform.",
+    "fact": "Sven Nordqvist ger ut den första boken om Pettson och Findus.",
     "image": "Pettson_och_Findus.JPG",
-    "pageViews": 220000,
+    "pageViews": 240000,
     "qid": "Q164639",
-    "subtitle": "Svensk barnboksserie",
+    "subtitle": "Svenska barnboksfigurer",
     "title": "Pettson och Findus debuterar",
     "wikipediaSlug": "Pettson_och_Findus",
     "year": 1984
+  },
+  {
+    "fact": "Robert Gustafsson blir ett återkommande ansikte i svensk humor-tv.",
+    "image": "Robert_Gustafsson,_2015.jpg",
+    "pageViews": 240000,
+    "qid": "Q712370",
+    "subtitle": "Svensk komiker",
+    "title": "Robert Gustafsson slår igenom",
+    "wikipediaSlug": "Robert_Gustafsson",
+    "year": 1990
+  },
+  {
+    "fact": "Sunes jul sänds som SVT:s julkalender.",
+    "image": "",
+    "pageViews": 240000,
+    "qid": "Q4993680",
+    "subtitle": "Svensk julkalender",
+    "title": "”Sunes jul” sänds",
+    "wikipediaSlug": "Sunes_jul",
+    "year": 1991
+  },
+  {
+    "fact": "91:an Karlsson debuterar som svensk seriefigur.",
+    "image": "91-an_Karlssonstatyn_i_Halmstad.jpg",
+    "pageViews": 220000,
+    "qid": "Q4568978",
+    "subtitle": "Svensk seriefigur",
+    "title": "91:an Karlsson debuterar",
+    "wikipediaSlug": "91%3Aan_Karlsson",
+    "year": 1932
+  },
+  {
+    "fact": "Den första boken om Pelle Svanslös ges ut.",
+    "image": "Pelle_Svanslös-statyn,_Uppsala.jpg",
+    "pageViews": 220000,
+    "qid": "Q3491791",
+    "subtitle": "Svensk barnboksfigur",
+    "title": "Pelle Svanslös ges ut",
+    "wikipediaSlug": "Pelle_Svansl%C3%B6s",
+    "year": 1939
+  },
+  {
+    "fact": "Snusmumriken introduceras i berättelserna om Mumintrollen.",
+    "image": "Nuuskamuikkunen.jpg",
+    "pageViews": 220000,
+    "qid": "Q1289624",
+    "subtitle": "Nordisk barnboksfigur",
+    "title": "Snusmumriken introduceras",
+    "wikipediaSlug": "Snusmumriken",
+    "year": 1946
+  },
+  {
+    "fact": "Lilla My introduceras i Mumindalens värld.",
+    "image": "Pikku_Myy.jpg",
+    "pageViews": 220000,
+    "qid": "Q2503697",
+    "subtitle": "Nordisk barnboksfigur",
+    "title": "Lilla My introduceras",
+    "wikipediaSlug": "Lilla_My",
+    "year": 1950
+  },
+  {
+    "fact": "Sven-Bertil Taube debuterar som vissångare.",
+    "image": "Sven-Bertil_Taube_(14878817541).jpg",
+    "pageViews": 220000,
+    "qid": "Q1360483",
+    "subtitle": "Svensk artist och skådespelare",
+    "title": "Sven-Bertil Taube albumdebuterar",
+    "wikipediaSlug": "Sven-Bertil_Taube",
+    "year": 1954
+  },
+  {
+    "fact": "Astrid Lindgren ger ut den första boken om Karlsson på taket.",
+    "image": "Karlsson-on-the-Roof_1992_stamp_of_Russia.jpg",
+    "pageViews": 220000,
+    "qid": "Q1500349",
+    "subtitle": "Barnboksfigur av Astrid Lindgren",
+    "title": "Karlsson på taket ges ut",
+    "wikipediaSlug": "Karlsson_p%C3%A5_taket",
+    "year": 1955
+  },
+  {
+    "fact": "Astrid Lindgren ger ut den första boken om Madicken.",
+    "image": "Astrid_Lindgrens_Värld_-_Madicken.jpg",
+    "pageViews": 220000,
+    "qid": "Q1803190",
+    "subtitle": "Barnboksfigur av Astrid Lindgren",
+    "title": "Madicken ges ut",
+    "wikipediaSlug": "Madicken",
+    "year": 1960
+  },
+  {
+    "fact": "Tage Danielsson skriver Sagan om Karl-Bertil Jonssons julafton.",
+    "image": "Tage_Danielsson_radio.jpg",
+    "pageViews": 220000,
+    "qid": "Q1384021",
+    "subtitle": "Svensk författare och komiker",
+    "title": "Tage Danielsson gör Sagan om Karl-Bertil",
+    "wikipediaSlug": "Tage_Danielsson",
+    "year": 1975
+  },
+  {
+    "fact": "Trazan och Banarne blir folkkära figurer i svensk barn-tv.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q1764283",
+    "subtitle": "Svenskt barnprogram",
+    "title": "Trazan och Banarne slår igenom",
+    "wikipediaSlug": "Trazan_%26_Banarne",
+    "year": 1976
+  },
+  {
+    "fact": "Den första boken om Sune ges ut.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "manual-Sune_(bokserie)",
+    "subtitle": "Svensk bokserie",
+    "title": "Sune debuterar",
+    "wikipediaSlug": "Sune_(bokserie)",
+    "year": 1984
+  },
+  {
+    "fact": "Den första boken om Bert ges ut.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "manual-Bert_(bokserie)",
+    "subtitle": "Svensk bokserie",
+    "title": "Bert debuterar",
+    "wikipediaSlug": "Bert_(bokserie)",
+    "year": 1987
+  },
+  {
+    "fact": "Bert Karlsson är med och startar Ny demokrati.",
+    "image": "BertKarlsson2007.jpg",
+    "pageViews": 220000,
+    "qid": "Q352831",
+    "subtitle": "Svensk entreprenör och politiker",
+    "title": "Bert Karlsson startar Ny demokrati",
+    "wikipediaSlug": "Bert_Karlsson",
+    "year": 1991
   },
   {
     "qid": "Q79037",
@@ -50,6 +220,86 @@
     "pageViews": 206730
   },
   {
+    "fact": "Findus etableras som svenskt livsmedelsföretag.",
+    "image": "Findus_pea_harvest_Mariebergs_gard_Svedala_20130713_009_(9274449287).jpg",
+    "pageViews": 200000,
+    "qid": "Q869728",
+    "subtitle": "Svenskt livsmedelsvarumärke",
+    "title": "Findus grundas",
+    "wikipediaSlug": "Findus",
+    "year": 1941
+  },
+  {
+    "fact": "Åsa-Nisse introduceras och blir en svensk buskisfigur.",
+    "image": "John_Elfstrom-Asa-Nisse.jpg",
+    "pageViews": 200000,
+    "qid": "Q8077214",
+    "subtitle": "Svensk film- och seriefigur",
+    "title": "Åsa-Nisse debuterar",
+    "wikipediaSlug": "%C3%85sa-Nisse",
+    "year": 1944
+  },
+  {
+    "fact": "Åke Holmberg ger ut den första boken om Ture Sventon.",
+    "image": "",
+    "pageViews": 200000,
+    "qid": "Q4354348",
+    "subtitle": "Svensk barnboksfigur",
+    "title": "Ture Sventon debuterar",
+    "wikipediaSlug": "Ture_Sventon",
+    "year": 1948
+  },
+  {
+    "fact": "Kronblom debuterar i svensk press.",
+    "image": "Kronblomstatyn_i_Örebro.jpg",
+    "pageViews": 180000,
+    "qid": "Q3363728",
+    "subtitle": "Svensk seriefigur",
+    "title": "Kronblom debuterar",
+    "wikipediaSlug": "Kronblom",
+    "year": 1927
+  },
+  {
+    "fact": "Martha Sandwall-Bergström ger ut första boken om Kulla-Gulla.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q10549872",
+    "subtitle": "Svensk bokfigur",
+    "title": "Kulla-Gulla debuterar",
+    "wikipediaSlug": "Kulla-Gulla",
+    "year": 1945
+  },
+  {
+    "fact": "Hattifnattarna blir en del av Mumindalens värld.",
+    "image": "Hatifnat.svg",
+    "pageViews": 180000,
+    "qid": "Q2608368",
+    "subtitle": "Nordisk barnboksfigur",
+    "title": "Hattifnattarna blir Muminfigurer",
+    "wikipediaSlug": "Hattifnattar",
+    "year": 1946
+  },
+  {
+    "fact": "Lotta på Bråkmakargatan introduceras i Astrid Lindgrens böcker.",
+    "image": "Astrid_Lindgrens_Värld_-_House_of_Lotta_on_Troublemaker_Street.jpg",
+    "pageViews": 180000,
+    "qid": "Q3199262",
+    "subtitle": "Barnboksfigur av Astrid Lindgren",
+    "title": "Lotta på Bråkmakargatan ges ut",
+    "wikipediaSlug": "Lotta_p%C3%A5_Br%C3%A5kmakargatan",
+    "year": 1958
+  },
+  {
+    "fact": "Anita och Televinken blir folkkära i svensk barnradio och tv.",
+    "image": "Anita_&_Televinken_1966.jpg",
+    "pageViews": 180000,
+    "qid": "Q10412213",
+    "subtitle": "Svensk barnradio",
+    "title": "Televinken blir barnradiofigur",
+    "wikipediaSlug": "Anita_och_Televinken",
+    "year": 1964
+  },
+  {
     "fact": "Lilla spöket Laban ges ut.",
     "image": "Lilla_spöket_Laban,_konst_i_Karlstad.jpg",
     "pageViews": 180000,
@@ -60,44 +310,94 @@
     "year": 1965
   },
   {
-    "fact": "Bamse dyker upp första gången.",
-    "image": "Bamse.jpg",
+    "fact": "Per Åhlin animerar Sagan om Karl-Bertil Jonssons julafton.",
+    "image": "Per_Åhlin_2015.JPG",
     "pageViews": 180000,
-    "qid": "Q252480",
-    "subtitle": "Svensk seriefigur",
-    "title": "Bamse dyker upp första gången",
-    "wikipediaSlug": "Bamse",
-    "year": 1966
+    "qid": "Q369512",
+    "subtitle": "Svensk animatör",
+    "title": "Per Åhlin animerar Karl-Bertil",
+    "wikipediaSlug": "Per_%C3%85hlin",
+    "year": 1975
   },
   {
-    "fact": "Sune debuterar som svensk barn- och ungdomsfigur.",
-    "image": "",
+    "fact": "Stig Grybe berättar Sagan om Karl-Bertil Jonssons julafton.",
+    "image": "Stig_Grybe_in_2015.jpg",
     "pageViews": 180000,
-    "qid": "manual-Sune_(bokserie)",
-    "subtitle": "Svensk bokserie",
-    "title": "Sune debuterar",
-    "wikipediaSlug": "Sune_(bokserie)",
-    "year": 1984
+    "qid": "Q5867942",
+    "subtitle": "Svensk skådespelare",
+    "title": "Stig Grybe blir folkkär röst",
+    "wikipediaSlug": "Stig_Grybe",
+    "year": 1975
   },
   {
-    "fact": "Mamma Mu dyker upp i radio.",
+    "fact": "Mamma Mu introduceras i svensk barnkultur.",
     "image": "Mamma-mu-och-krakan.jpg",
     "pageViews": 180000,
     "qid": "Q6745311",
     "subtitle": "Svensk barnboksfigur",
-    "title": "Mamma Mu dyker upp",
+    "title": "Mamma Mu debuterar",
     "wikipediaSlug": "Mamma_Mu",
     "year": 1985
   },
   {
-    "fact": "Bert debuterar i bokform.",
+    "fact": "Hälge blir en populär svensk älgserie.",
     "image": "",
     "pageViews": 180000,
-    "qid": "manual-Bert_(bokserie)",
-    "subtitle": "Svensk bokserie",
-    "title": "Bert debuterar",
-    "wikipediaSlug": "Bert_(bokserie)",
-    "year": 1987
+    "qid": "Q1285754",
+    "subtitle": "Svensk seriefigur",
+    "title": "Hälge debuterar",
+    "wikipediaSlug": "H%C3%A4lge",
+    "year": 1991
+  },
+  {
+    "fact": "Moni Nilsson ger ut den första boken om Tsatsiki.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q454008",
+    "subtitle": "Svensk barnboksfigur",
+    "title": "Tsatsiki debuterar",
+    "wikipediaSlug": "Tsatsiki",
+    "year": 1995
+  },
+  {
+    "fact": "Muminpappan introduceras i Tove Janssons böcker.",
+    "image": "Muumipappa.jpg",
+    "pageViews": 160000,
+    "qid": "Q393843",
+    "subtitle": "Nordisk barnboksfigur",
+    "title": "Muminpappan introduceras",
+    "wikipediaSlug": "Muminpappan",
+    "year": 1945
+  },
+  {
+    "fact": "Muminmamman introduceras i Tove Janssons böcker.",
+    "image": "Muumimamma.jpg",
+    "pageViews": 160000,
+    "qid": "Q2569920",
+    "subtitle": "Nordisk barnboksfigur",
+    "title": "Muminmamman introduceras",
+    "wikipediaSlug": "Muminmamman",
+    "year": 1945
+  },
+  {
+    "fact": "Agaton Sax blir känd genom böcker och tv.",
+    "image": "",
+    "pageViews": 160000,
+    "qid": "Q391557",
+    "subtitle": "Svensk barnboksfigur",
+    "title": "Agaton Sax blir tv-figur",
+    "wikipediaSlug": "Agaton_Sax",
+    "year": 1976
+  },
+  {
+    "fact": "Kapten Stofil debuterar som svensk seriefigur.",
+    "image": "Joakim_Lindengren.JPG",
+    "pageViews": 160000,
+    "qid": "Q10543522",
+    "subtitle": "Svensk seriefigur",
+    "title": "Kapten Stofil debuterar",
+    "wikipediaSlug": "Kapten_Stofil",
+    "year": 1999
   },
   {
     "qid": "Q51730",

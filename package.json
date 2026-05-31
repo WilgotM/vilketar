@@ -17,6 +17,7 @@
     "decks:fill-missing-images": "bun run content/scripts/fill-missing-deck-images.ts",
     "decks:add-swedish-cards": "bun run content/scripts/add-handpicked-swedish-cards.ts",
     "decks:curate": "bun run content/scripts/curate-public-decks.ts",
+    "daily:lock": "bun run content/scripts/lock-daily-game.ts",
     "deploy": "bun run build && wrangler pages deploy out --project-name vilketar",
     "sparql:list": "bun run content/scripts/run-sparql.ts --list",
     "sparql:run": "bun run content/scripts/run-sparql.ts",

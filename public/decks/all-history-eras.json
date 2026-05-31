@@ -40,24 +40,104 @@
     "year": 1611
   },
   {
-    "fact": "Midsommarfirandet får modern placering i kalendern.",
+    "fact": "Det moderna luciafirandet sprids i Sverige.",
+    "image": "Lucia_2017_D81_4616_(39002373982).jpg",
+    "pageViews": 260000,
+    "qid": "Q883628",
+    "subtitle": "Svensk högtid",
+    "title": "Luciafirande blir svensk tradition",
+    "wikipediaSlug": "Lucia",
+    "year": 1927
+  },
+  {
+    "fact": "Midsommardagen flyttas till lördag och midsommarhelgen får sin moderna form.",
     "image": "NZ7_8755_(52170703205).jpg",
     "pageViews": 260000,
     "qid": "Q154502",
     "subtitle": "Svensk högtid",
-    "title": "Midsommarafton blir officiell helgdag",
+    "title": "Midsommar blir svensk storhelg",
     "wikipediaSlug": "Midsommar",
     "year": 1953
   },
   {
-    "fact": "Det moderna offentliga luciafirandet etableras.",
-    "image": "Lucia_2017_D81_4616_(39002373982).jpg",
+    "fact": "Allemansrätten får grundlagsskydd.",
+    "image": "Lingonuppköpare.jpg",
+    "pageViews": 260000,
+    "qid": "Q688646",
+    "subtitle": "Svensk naturtradition",
+    "title": "Allemansrätten skrivs in i grundlagen",
+    "wikipediaSlug": "Allemansr%C3%A4tten",
+    "year": 1994
+  },
+  {
+    "fact": "Julbordet etableras som svensk högtidstradition.",
+    "image": "Carl_Larsson_julbord_1904.jpg",
+    "pageViews": 240000,
+    "qid": "Q468731",
+    "subtitle": "Svensk mattradition",
+    "title": "Julbordet blir svensk tradition",
+    "wikipediaSlug": "Julbord",
+    "year": 1900
+  },
+  {
+    "fact": "Falu rödfärg börjar tillverkas industriellt.",
+    "image": "Falu_koppargruva_fabriken_2010.jpg",
     "pageViews": 220000,
-    "qid": "Q883628",
-    "subtitle": "Svensk tradition",
-    "title": "Luciafirande får modern form",
-    "wikipediaSlug": "Lucia",
-    "year": 1927
+    "qid": "Q498423",
+    "subtitle": "Svensk färgtradition",
+    "title": "Falu rödfärg börjar tillverkas",
+    "wikipediaSlug": "Falu_r%C3%B6df%C3%A4rg",
+    "year": 1764
+  },
+  {
+    "fact": "Knäckebröd blir en självklar del av svensk matkultur.",
+    "image": "Knaeckebroed.jpg",
+    "pageViews": 220000,
+    "qid": "Q251981",
+    "subtitle": "Svensk mattradition",
+    "title": "Knäckebröd blir svensk stapelvara",
+    "wikipediaSlug": "Kn%C3%A4ckebr%C3%B6d",
+    "year": 1800
+  },
+  {
+    "fact": "Valborgsfirande blir starkt förknippat med svenska studentstäder.",
+    "image": "Valborg_2182_(6989903410).jpg",
+    "pageViews": 220000,
+    "qid": "Q200982",
+    "subtitle": "Svensk högtid",
+    "title": "Valborg blir studenttradition",
+    "wikipediaSlug": "Valborgsm%C3%A4ssoafton",
+    "year": 1800
+  },
+  {
+    "fact": "Kräftskivan blir en svensk sensommartradition.",
+    "image": "Kräftskiva,_Häringe_slott,_1991.jpg",
+    "pageViews": 220000,
+    "qid": "Q255208",
+    "subtitle": "Svensk mattradition",
+    "title": "Kräftskivan blir sensommarklassiker",
+    "wikipediaSlug": "Kr%C3%A4ftskiva",
+    "year": 1900
+  },
+  {
+    "fact": "Janssons frestelse blir en svensk högtidsrätt.",
+    "image": "Janssons_frestelse.jpg",
+    "pageViews": 220000,
+    "qid": "Q1197873",
+    "subtitle": "Svensk maträtt",
+    "title": "Janssons frestelse blir julbordsklassiker",
+    "wikipediaSlug": "Janssons_frestelse",
+    "year": 1940
+  },
+  {
+    "fact": "Kan du vissla Johanna? börjar visas som återkommande svensk tv-tradition.",
+    "image": "Disambig_grey.svg",
+    "pageViews": 220000,
+    "qid": "Q18670584",
+    "subtitle": "Svensk tv-film",
+    "title": "”Kan du vissla Johanna?” visas på tv",
+    "wikipediaSlug": "Kan_du_vissla_Johanna%3F",
+    "year": 1994
   },
   {
     "fact": "Sveriges nationaldag blir allmän helgdag.",
@@ -70,13 +150,23 @@
     "year": 2005
   },
   {
-    "fact": "Kräftskivan etableras som svensk sensommartradition.",
-    "image": "Kräftskiva,_Häringe_slott,_1991.jpg",
+    "fact": "Luciatåget sprids som svensk skol- och föreningstradition.",
+    "image": "SanktaLuciaProcession.jpg",
     "pageViews": 180000,
-    "qid": "Q255208",
+    "qid": "Q10570370",
+    "subtitle": "Svensk högtidstradition",
+    "title": "Luciatåget blir skoltradition",
+    "wikipediaSlug": "Luciat%C3%A5g",
+    "year": 1927
+  },
+  {
+    "fact": "Surströmmingspremiären blir en återkommande svensk tradition.",
+    "image": "Surströmming.jpg",
+    "pageViews": 180000,
+    "qid": "Q778396",
     "subtitle": "Svensk mattradition",
-    "title": "Kräftskivan blir svensk tradition",
-    "wikipediaSlug": "Kr%C3%A4ftskiva",
-    "year": 1900
+    "title": "Surströmmingspremiären blir tradition",
+    "wikipediaSlug": "Surstr%C3%B6mming",
+    "year": 1940
   }
 ]

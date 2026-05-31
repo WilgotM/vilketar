@@ -77,6 +77,7 @@ export default function CardVisual(props: Props) {
       className={classNames(styles.itemCard, className, {
         [styles.deckCard]: surface === "deck",
         [styles.played]: "played" in item,
+        [styles.incorrectCard]: "played" in item && !item.played.correct,
         [styles.flipped]: flipped,
       })}
       onClick={onClick}

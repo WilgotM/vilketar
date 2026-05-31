@@ -347,7 +347,7 @@ export default function PwaInstallPrompt() {
         </div>
         <div className={styles.steps} aria-label="Lägg till på hemskärmen">
           <div className={styles.safariBar} aria-hidden="true">
-            <span className={styles.safariUrl}>vilketar.se</span>
+            <span className={styles.safariUrl}>vilketår.se</span>
             <span className={styles.safariShare}>
               <ShareIcon />
             </span>

@@ -11,6 +11,8 @@ interface DraggableDeckCardProps {
   onDragMove: (point: { x: number; y: number }, rect: DOMRect | null) => void;
   onDragStart: (point: { x: number; y: number }, rect: DOMRect | null) => void;
   onDrop: (point: { x: number; y: number }, rect: DOMRect | null) => boolean;
+  width?: string | number;
+  height?: string | number;
 }
 
 export default function DraggableDeckCard(props: DraggableDeckCardProps) {
@@ -22,6 +24,8 @@ export default function DraggableDeckCard(props: DraggableDeckCardProps) {
     onDragMove,
     onDragStart,
     onDrop,
+    width = 150,
+    height = 200,
   } = props;
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -94,19 +98,23 @@ export default function DraggableDeckCard(props: DraggableDeckCardProps) {
       }}
       style={{
         cursor: "grab",
-        height: 200,
+        height,
         opacity: dropAccepted ? 0 : 1,
         pointerEvents: dropAccepted ? "none" : "auto",
         position: "relative",
         touchAction: "none",
         visibility: dropAccepted ? "hidden" : "visible",
-        width: 150,
+        width,
         x,
         y,
         zIndex: dragging || dropAccepted ? 40 : 2,
       }}
     >
-      <CardVisual item={item} style={cardStyle} surface="deck" />
+      <CardVisual
+        item={item}
+        style={{ width: "100%", height: "100%", ...cardStyle }}
+        surface="deck"
+      />
     </motion.div>
   );
 }

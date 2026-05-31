@@ -49,7 +49,7 @@ openai_api_key = "env(OPENAI_API_KEY)"
 [inbucket]
 enabled = true
 port = 54324
-admin_email = "no-reply@vilketar.pages.dev"
+admin_email = "no-reply@xn--vilketr-jxa.se"
 sender_name = "VilketÅr"
 
 [storage]
@@ -72,11 +72,14 @@ max_indexes = 5
 
 [auth]
 enabled = true
-site_url = "https://vilketar.pages.dev"
+site_url = "https://xn--vilketr-jxa.se"
 additional_redirect_urls = [
+  "https://xn--vilketr-jxa.se",
+  "https://xn--vilketr-jxa.se/leagues",
+  "https://www.xn--vilketr-jxa.se",
+  "https://www.xn--vilketr-jxa.se/leagues",
+  "https://vilketar.pages.dev",
   "https://vilketar.pages.dev/leagues",
-  "https://vilketar.se",
-  "https://vilketar.se/leagues",
   "http://localhost:3000",
   "http://localhost:3000/leagues",
   "http://127.0.0.1:3000",

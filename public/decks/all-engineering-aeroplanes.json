@@ -100,6 +100,16 @@
     "pageViews": 261601
   },
   {
+    "fact": "Jas 39 Gripen gör sin första flygning.",
+    "image": "Saab_JAS_39_Gripen_at_Kaivopuisto_Air_Show,_June_2017_(altered)_copy.jpg",
+    "pageViews": 260000,
+    "qid": "Q150088",
+    "subtitle": "Svenskt stridsflygplan",
+    "title": "Jas Gripen premiärflyger",
+    "wikipediaSlug": "Saab_39_Gripen",
+    "year": 1988
+  },
+  {
     "qid": "Q34945",
     "title": "Grumman F-14 Tomcat first flies",
     "subtitle": "Aircraft by Grumman",
@@ -118,6 +128,26 @@
     "wikipediaSlug": "General_Dynamics_F-16_Fighting_Falcon",
     "image": "F-16_June_2008.jpg",
     "pageViews": 227405
+  },
+  {
+    "fact": "Saab 35 Draken gör sin första flygning.",
+    "image": "J_35F_1972_(cropped,_removal_of_damage_and_dirt_using_clone_tool).jpg",
+    "pageViews": 220000,
+    "qid": "Q461475",
+    "subtitle": "Svenskt stridsflygplan",
+    "title": "Saab Draken premiärflyger",
+    "wikipediaSlug": "Saab_35_Draken",
+    "year": 1955
+  },
+  {
+    "fact": "Saab 37 Viggen gör sin första flygning.",
+    "image": "Saab_JA37_37447_Swedish_Air_Force_Marcel_van_Leeuwen.jpg",
+    "pageViews": 220000,
+    "qid": "Q263786",
+    "subtitle": "Svenskt stridsflygplan",
+    "title": "Saab Viggen premiärflyger",
+    "wikipediaSlug": "Saab_37_Viggen",
+    "year": 1967
   },
   {
     "qid": "Q210413",
@@ -328,16 +358,6 @@
     "wikipediaSlug": "United_Airlines",
     "image": "N2749U@PEK_(20211130144100).jpg",
     "pageViews": 99021
-  },
-  {
-    "qid": "Q150088",
-    "title": "Saab JAS 39 Gripen first flies",
-    "subtitle": "Aircraft by Saab Group",
-    "year": 1988,
-    "fact": "The Saab JAS 39 Gripen is a light single-engine supersonic multirole fighter aircraft manufactured by the Swedish aerospace and defence company Saab AB.",
-    "wikipediaSlug": "Saab_JAS_39_Gripen",
-    "image": "Saab_JAS_39_Gripen_at_Kaivopuisto_Air_Show,_June_2017_(altered)_copy.jpg",
-    "pageViews": 96076
   },
   {
     "qid": "Q209613",

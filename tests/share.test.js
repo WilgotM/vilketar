@@ -21,7 +21,7 @@ test("daily share text matches the new compact format", () => {
       "",
       "Poäng / 6 / Brons",
       "",
-      "https://vilketar.pages.dev/daily",
+      "https://xn--vilketr-jxa.se/daily",
     ].join("\n"),
   );
 });
@@ -52,7 +52,7 @@ test("free play share text includes category, difficulty, score, and best", () =
       "Poäng / 6 / Brons",
       "Bäst / 25 / Guld",
       "",
-      "https://vilketar.pages.dev/play/history/wars",
+      "https://xn--vilketr-jxa.se/play/history/wars",
     ].join("\n"),
   );
 });

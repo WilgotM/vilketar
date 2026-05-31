@@ -216,6 +216,13 @@ export const incorrect = style({
   },
 });
 
+export const incorrectCard = style({
+  vars: {
+    [cardBorderVar]: vars.color.statusIncorrectBorder,
+    [cardFillVar]: `color-mix(in srgb, ${vars.color.statusIncorrectFill} 12%, ${vars.color.surfaceStrong})`,
+  },
+});
+
 export const fact = style({
   color: cardForegroundVar,
   flexGrow: 1,

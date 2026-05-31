@@ -1,10 +1,10 @@
 import classNames from "classnames";
+import { AnimatePresence, LayoutGroup, motion } from "motion/react";
 import React from "react";
 import {
   getAllSelectionRoute,
-  getCategoryDefinitions,
-  getDeckPath,
   getGroupAllSelectionRouteForNode,
+  getLeafSelectionRoute,
   getLeafSelectionRouteForNode,
   getSelectionRouteShareLabel,
 } from "../lib/categories";
@@ -14,6 +14,7 @@ import {
   hasVisibleGroupChildren,
   isSelectionRouteVisible,
 } from "../lib/free-play-difficulty-rules";
+import { FEATURED_FREE_PLAY_DECKS } from "../lib/free-play-navigation";
 import {
   createStateWithRetry,
   filterCardsBySelectionRoute,
@@ -28,12 +29,7 @@ import {
 import { createSeededRandom } from "../lib/seeded-random";
 import { GameDifficulty } from "../types/game";
 import { PartyGameState, PartySetup } from "../types/party";
-import {
-  CategoryDefinition,
-  FreePlayDefinition,
-  FreePlayGroupDefinition,
-  SelectionRoute,
-} from "../types/routes";
+import { FreePlayGroupDefinition, SelectionRoute } from "../types/routes";
 import ButtonLink from "./button-link";
 import CardVisual from "./card-visual";
 import { useDecks } from "./deck-provider";
@@ -47,6 +43,15 @@ import * as styles from "../styles/party-screen.css";
 
 type PartyFlowStep = "category" | "game" | "setup";
 
+const PARTY_CORRECT_FLASH_MS = 1000;
+const PARTY_ERROR_FLASH_MS = 1500;
+
+type PartyFeedbackFlash = {
+  correct: boolean;
+  expiresAt: number;
+  teamName: string;
+};
+
 function createPartySeed(): string {
   return `party:${Date.now()}:${Math.random().toString(36).slice(2)}`;
 }
@@ -59,6 +64,18 @@ function getPartyDifficulty(
     : (availableDifficulties[0] ?? "easy");
 }
 
+function requestPartyFullscreen() {
+  if (document.fullscreenElement) {
+    return;
+  }
+
+  const fullscreenRoot =
+    document.querySelector<HTMLElement>("[data-party-fullscreen-root]") ??
+    document.documentElement;
+  const fullscreenRequest = fullscreenRoot.requestFullscreen?.();
+  void fullscreenRequest?.catch(() => undefined);
+}
+
 function PartyCategorySelector(props: {
   group: FreePlayGroupDefinition | null;
   onSelectRoute: (selectionRoute: SelectionRoute) => void;
@@ -66,20 +83,36 @@ function PartyCategorySelector(props: {
 }) {
   const { group, onSelectRoute, setGroup } = props;
   const { deckNodes } = useDecks();
-  const parentItems:
-    | readonly FreePlayDefinition[]
-    | readonly CategoryDefinition[] = group
-    ? group.children
-    : getCategoryDefinitions();
   const items = React.useMemo<SelectorOption[]>(() => {
-    return parentItems.flatMap((item) => {
+    if (!group) {
+      return FEATURED_FREE_PLAY_DECKS.flatMap((deck) => {
+        const selectionRoute = getLeafSelectionRoute(deck.slugPath);
+        if (!selectionRoute) {
+          return [];
+        }
+
+        if (deckNodes && !isSelectionRouteVisible(deckNodes, selectionRoute)) {
+          return [];
+        }
+
+        return {
+          href: "/party",
+          key: deck.key,
+          kind: "play" as const,
+          selectionRoute,
+          text: deck.text,
+        };
+      });
+    }
+
+    return group.children.flatMap((item) => {
       if (item.kind === "group") {
         if (deckNodes && !hasVisibleGroupChildren(deckNodes, item)) {
           return [];
         }
 
         return {
-          href: getDeckPath(item.nodeId),
+          href: "/party",
           key: item.slug,
           kind: "drilldown" as const,
           onClick: () => {
@@ -106,7 +139,7 @@ function PartyCategorySelector(props: {
         text: item.title,
       };
     });
-  }, [deckNodes, parentItems, setGroup]);
+  }, [deckNodes, group, setGroup]);
   const allSelectionRoute = group
     ? getGroupAllSelectionRouteForNode(group.nodeId)
     : getAllSelectionRoute();
@@ -144,7 +177,6 @@ function PartySetupForm(props: {
   selectionRoute: SelectionRoute;
 }) {
   const { onStart, selectionRoute } = props;
-  const [mode, setMode] = React.useState<PartySetup["mode"]>("device");
   const [teamCount, setTeamCount] = React.useState(2);
   const [teamNames, setTeamNames] = React.useState(() => ["Lag 1", "Lag 2"]);
   const validTeamNames = normalizePartyTeamNames(teamNames);
@@ -166,33 +198,32 @@ function PartySetupForm(props: {
       </div>
       <div className={styles.setupPanel}>
         <p className={styles.setupText}>
-          Välj var spelet visas och vilka lag som är med.
+          Välj vilka lag som ska vara med och spela.
         </p>
-        <div className={styles.segmented} role="group">
-          <button
-            className={classNames(styles.segmentButton, {
-              [styles.segmentButtonActive]: mode === "device",
-            })}
-            onClick={() => {
-              setMode("device");
-            }}
-            type="button"
-          >
-            Den här enheten
-          </button>
-          <button
-            className={classNames(styles.segmentButton, {
-              [styles.segmentButtonActive]: mode === "tv",
-            })}
-            onClick={() => {
-              setMode("tv");
-            }}
-            type="button"
-          >
-            TV-läge
-          </button>
-        </div>
-        {mode === "tv" ? <PartyDeviceGuide /> : null}
+
+        <details className={styles.guideDetails}>
+          <summary className={styles.guideSummary}>
+            <span>Spela på TV? Visa instruktioner</span>
+            <svg
+              className={styles.guideSummaryIcon}
+              aria-hidden="true"
+              fill="none"
+              height="14"
+              viewBox="0 0 14 14"
+              width="14"
+            >
+              <path
+                d="M3 5.5L7 9.5L11 5.5"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+              />
+            </svg>
+          </summary>
+          <PartyDeviceGuide />
+        </details>
+
         <div className={styles.teamCountGrid}>
           {Array.from({ length: 7 }, (_, index) => index + 2).map((count) => (
             <button
@@ -232,8 +263,8 @@ function PartySetupForm(props: {
             className={classNames(buttonStyles.button, buttonStyles.fullWidth)}
             disabled={!canStart}
             onClick={() => {
+              requestPartyFullscreen();
               onStart({
-                mode,
                 seed: createPartySeed(),
                 selectionRoute,
                 teamNames: validTeamNames,
@@ -325,6 +356,49 @@ function PartyBoard(props: {
   const timelineRef = React.useRef<HTMLDivElement | null>(null);
   const tvFrameRef = React.useRef<HTMLDivElement | null>(null);
   const [isFullscreen, setIsFullscreen] = React.useState(false);
+  const [feedbackFlash, setFeedbackFlash] =
+    React.useState<PartyFeedbackFlash | null>(null);
+
+  React.useEffect(() => {
+    if (!state.lastResult) {
+      setFeedbackFlash(null);
+      return;
+    }
+
+    const duration = state.lastResult.correct
+      ? PARTY_CORRECT_FLASH_MS
+      : PARTY_ERROR_FLASH_MS;
+    const expiresAt = Date.now() + duration;
+
+    setFeedbackFlash({
+      correct: state.lastResult.correct,
+      expiresAt,
+      teamName: state.lastResult.teamName,
+    });
+
+    const clearExpiredFlash = () => {
+      if (Date.now() < expiresAt) {
+        return;
+      }
+
+      setFeedbackFlash((currentFlash) =>
+        currentFlash?.expiresAt === expiresAt ? null : currentFlash,
+      );
+    };
+
+    const timer = window.setTimeout(clearExpiredFlash, duration);
+    window.addEventListener("focus", clearExpiredFlash);
+    window.addEventListener("pageshow", clearExpiredFlash);
+    document.addEventListener("visibilitychange", clearExpiredFlash);
+
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("focus", clearExpiredFlash);
+      window.removeEventListener("pageshow", clearExpiredFlash);
+      document.removeEventListener("visibilitychange", clearExpiredFlash);
+    };
+  }, [state.lastResult]);
+
   const activeTeam = getActivePartyTeam(state);
   const winner = state.teams.find((team) => team.id === state.winnerTeamId);
   const dense = state.game.played.length > 7;
@@ -402,11 +476,13 @@ function PartyBoard(props: {
     }
 
     if (document.fullscreenElement) {
-      void document.exitFullscreen();
+      const fullscreenExit = document.exitFullscreen();
+      void fullscreenExit.catch(() => undefined);
       return;
     }
 
-    void frameEl.requestFullscreen?.();
+    const fullscreenRequest = frameEl.requestFullscreen?.();
+    void fullscreenRequest?.catch(() => undefined);
   }, []);
 
   if (winner) {
@@ -465,46 +541,65 @@ function PartyBoard(props: {
             [styles.timelinePanelDense]: dense,
           })}
         >
-          <div
-            ref={timelineRef}
-            className={classNames(styles.timeline, {
-              [styles.timelineDense]: dense,
-            })}
-          >
-            {Array.from({ length: state.game.played.length + 1 }).map(
-              (_, index) => (
-                <React.Fragment key={`slot-${index}`}>
-                  <button
-                    aria-label={`Placera på plats ${index + 1}`}
-                    className={classNames(
-                      styles.placement,
-                      styles.placementButton,
-                    )}
-                    data-party-placement-index={index}
-                    disabled={!canPlace}
-                    onClick={() => {
-                      onPlace(index);
-                    }}
-                    type="button"
-                  >
-                    <span className={styles.placementLine}>{index + 1}</span>
-                  </button>
-                  {state.game.played[index] ? (
-                    <div
-                      className={styles.cardSlot}
-                      data-card-id={state.game.played[index].id}
+          <LayoutGroup id="party-timeline-layout">
+            <motion.div
+              layout="position"
+              ref={timelineRef}
+              className={classNames(styles.timeline, {
+                [styles.timelineDense]: dense,
+              })}
+            >
+              {Array.from({ length: state.game.played.length + 1 }).map(
+                (_, index) => (
+                  <React.Fragment key={`slot-${index}`}>
+                    <motion.button
+                      layout
+                      key={`slot-btn-${index}`}
+                      aria-label={`Placera på plats ${index + 1}`}
+                      className={classNames(
+                        styles.placement,
+                        styles.placementButton,
+                      )}
+                      data-party-placement-index={index}
+                      disabled={!canPlace}
+                      onClick={() => {
+                        onPlace(index);
+                      }}
+                      type="button"
+                      transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 30,
+                      }}
                     >
-                      <CardVisual
-                        className={styles.compactCard}
-                        item={state.game.played[index]}
-                        revealDatePill
-                      />
-                    </div>
-                  ) : null}
-                </React.Fragment>
-              ),
-            )}
-          </div>
+                      <span className={styles.placementLine}>{index + 1}</span>
+                    </motion.button>
+                    {state.game.played[index] ? (
+                      <motion.div
+                        layout
+                        key={`card-slot-${state.game.played[index].id}`}
+                        initial={{ scale: 0.3, opacity: 0, y: 50 }}
+                        animate={{ scale: 1, opacity: 1, y: 0 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 260,
+                          damping: 20,
+                        }}
+                        className={styles.cardSlot}
+                        data-card-id={state.game.played[index].id}
+                      >
+                        <CardVisual
+                          className={styles.compactCard}
+                          item={state.game.played[index]}
+                          revealDatePill
+                        />
+                      </motion.div>
+                    ) : null}
+                  </React.Fragment>
+                ),
+              )}
+            </motion.div>
+          </LayoutGroup>
         </div>
         <aside className={styles.sidePanel}>
           <div className={styles.currentMeta}>
@@ -513,29 +608,59 @@ function PartyBoard(props: {
             <p className={styles.result}>{resultText}</p>
           </div>
           <div className={styles.currentCardWrap}>
-            {state.game.next ? (
-              canPlace && !receiver ? (
-                <DraggableDeckCard
-                  item={state.game.next}
+            <AnimatePresence mode="popLayout">
+              {state.game.next ? (
+                <motion.div
                   key={state.game.next.id}
-                  onDragMove={() => undefined}
-                  onDragStart={() => undefined}
-                  onDrop={(point, rect) => {
-                    const dropIndex = getDropIndex(point, rect);
-                    if (dropIndex === null) {
-                      return false;
-                    }
-
-                    onPlace(dropIndex);
-                    return true;
+                  initial={{ scale: 0.8, opacity: 0, y: 30 }}
+                  animate={{ scale: 1, opacity: 1, y: 0 }}
+                  exit={{ scale: 0.8, opacity: 0, y: -30 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 25 }}
+                  style={{
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
                   }}
-                />
+                >
+                  {canPlace && !receiver ? (
+                    <DraggableDeckCard
+                      item={state.game.next}
+                      width="var(--sidebar-card-width, 13.5rem)"
+                      height="var(--sidebar-card-height, 18rem)"
+                      onDragMove={() => undefined}
+                      onDragStart={() => undefined}
+                      onDrop={(point, rect) => {
+                        const dropIndex = getDropIndex(point, rect);
+                        if (dropIndex === null) {
+                          return false;
+                        }
+
+                        onPlace(dropIndex);
+                        return true;
+                      }}
+                    />
+                  ) : (
+                    <CardVisual
+                      item={state.game.next}
+                      style={{
+                        width: "var(--sidebar-card-width, 13.5rem)",
+                        height: "var(--sidebar-card-height, 18rem)",
+                      }}
+                      surface="deck"
+                    />
+                  )}
+                </motion.div>
               ) : (
-                <CardVisual item={state.game.next} surface="deck" />
-              )
-            ) : (
-              <p className={styles.muted}>Inga fler kort i kategorin.</p>
-            )}
+                <motion.p
+                  key="empty"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className={styles.muted}
+                >
+                  Inga fler kort i kategorin.
+                </motion.p>
+              )}
+            </AnimatePresence>
           </div>
           <div className={styles.teams}>
             {state.teams.map((team, index) => (
@@ -552,6 +677,40 @@ function PartyBoard(props: {
             ))}
           </div>
         </aside>
+        <AnimatePresence>
+          {feedbackFlash && !feedbackFlash.correct ? (
+            <motion.div
+              key={feedbackFlash.expiresAt}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className={styles.errorOverlay}
+            >
+              <div className={styles.errorBadge}>
+                <span className={styles.errorIcon}>✕</span>
+                <h3 className={styles.errorText}>FEL ÅR!</h3>
+                <p className={styles.errorTeam}>{feedbackFlash.teamName}</p>
+              </div>
+            </motion.div>
+          ) : null}
+        </AnimatePresence>
+        <AnimatePresence>
+          {feedbackFlash?.correct ? (
+            <motion.div
+              key={feedbackFlash.expiresAt}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className={styles.correctOverlay}
+            >
+              <div className={styles.correctBadge}>
+                <span className={styles.correctIcon}>✓</span>
+                <h3 className={styles.correctText}>RÄTT!</h3>
+                <p className={styles.correctTeam}>{feedbackFlash.teamName}</p>
+              </div>
+            </motion.div>
+          ) : null}
+        </AnimatePresence>
       </div>
     </div>
   );
@@ -675,7 +834,7 @@ export function PartyGameLoader(props: {
       receiver={receiver}
       state={state}
       title={getSelectionRouteShareLabel(setup.selectionRoute)}
-      tvMode={setup.mode === "tv"}
+      tvMode={true}
     />
   );
 }
@@ -713,12 +872,21 @@ export default function PartyScreen() {
 
   return (
     <PageShell showHeader={false}>
-      <div className={styles.page}>
+      <div
+        className={classNames(styles.page, {
+          [styles.pageGame]: step === "game",
+        })}
+        data-party-fullscreen-root
+      >
         <SiteHeader
           backHref={step === "category" ? "/" : undefined}
           onBack={handleHeaderBack}
         />
-        <main className={styles.screen}>
+        <main
+          className={classNames(styles.screen, {
+            [styles.gameScreen]: step === "game",
+          })}
+        >
           {step === "category" ? (
             <PartyCategorySelector
               group={categoryGroup}

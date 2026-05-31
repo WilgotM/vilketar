@@ -40,9 +40,9 @@
     "year": 1967
   },
   {
-    "fact": "Sverige folkomröstar om kärnkraften.",
+    "fact": "Sverige håller folkomröstning om kärnkraften.",
     "image": "",
-    "pageViews": 220000,
+    "pageViews": 260000,
     "qid": "Q6980136",
     "subtitle": "Svensk folkomröstning",
     "title": "Sverige röstar om kärnkraft",
@@ -50,14 +50,24 @@
     "year": 1980
   },
   {
-    "fact": "Sverige folkomröstar om att införa euron.",
+    "fact": "Sverige röstar nej till att införa euron.",
     "image": "EMU-omröstningen_2003_kommunvis.png",
-    "pageViews": 220000,
+    "pageViews": 260000,
     "qid": "Q4352712",
     "subtitle": "Svensk folkomröstning",
-    "title": "Sverige röstar om euron",
+    "title": "Sverige röstar nej till euron",
     "wikipediaSlug": "Folkomr%C3%B6stningen_om_inf%C3%B6rande_av_euron_i_Sverige_2003",
     "year": 2003
+  },
+  {
+    "fact": "ATP-systemet införs efter folkomröstningen om pensionerna.",
+    "image": "Swedish_öre_coin_1629,_anonymous_engraving.png",
+    "pageViews": 220000,
+    "qid": "Q3509358",
+    "subtitle": "Svensk välfärdsreform",
+    "title": "ATP-systemet införs",
+    "wikipediaSlug": "%C3%85lderspension_i_Sverige",
+    "year": 1960
   },
   {
     "qid": "Q6534",

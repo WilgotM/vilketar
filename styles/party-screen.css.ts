@@ -1,11 +1,21 @@
-import { style } from "@vanilla-extract/css";
+import { globalStyle, keyframes, style } from "@vanilla-extract/css";
 import { media } from "./foundation";
 import { vars } from "./theme.css";
 import { bodyTextMuted, sectionLabel, surface } from "./ui.css";
 
+const shake = keyframes({
+  "0%, 100%": { transform: "translate(-50%, 0) rotate(0deg)" },
+  "10%, 30%, 50%, 70%, 90%": {
+    transform: "translate(-52%, -2px) rotate(-1.5deg)",
+  },
+  "20%, 40%, 60%, 80%": { transform: "translate(-48%, 2px) rotate(1.5deg)" },
+});
+
 export const page = style({
   minHeight: "100dvh",
 });
+
+export const pageGame = style({});
 
 export const screen = style({
   display: "flex",
@@ -17,6 +27,12 @@ export const screen = style({
       padding: `${vars.space.lg} ${vars.space.lg} ${vars.space["3xl"]}`,
     },
   },
+});
+
+export const gameScreen = style({
+  display: "block",
+  height: "100dvh",
+  padding: 0,
 });
 
 export const setupStage = style({
@@ -197,10 +213,13 @@ export const gameShell = style({
 export const gameShellTv = style({
   alignItems: "center",
   justifyContent: "center",
-  padding: vars.space.lg,
+  gap: 0,
+  height: "100dvh",
+  minHeight: "100dvh",
+  padding: 0,
   "@media": {
     [media.compact]: {
-      minHeight: "calc(100dvh - 4.5rem)",
+      minHeight: "100dvh",
     },
   },
 });
@@ -230,13 +249,22 @@ export const gameTitle = style({
 });
 
 export const board = style({
+  vars: {
+    "--sidebar-card-width": "13.5rem",
+    "--sidebar-card-height": "18rem",
+  },
   display: "grid",
   flex: 1,
   gap: vars.space.xl,
   gridTemplateColumns: "minmax(0, 1fr) minmax(18rem, 24rem)",
   minHeight: 0,
+  position: "relative",
   "@media": {
     [media.compact]: {
+      vars: {
+        "--sidebar-card-width": "9.375rem",
+        "--sidebar-card-height": "12.5rem",
+      },
       display: "flex",
       flexDirection: "column-reverse",
       minHeight: 0,
@@ -245,17 +273,17 @@ export const board = style({
 });
 
 export const tvBoard = style({
-  aspectRatio: "16 / 9",
-  background: `linear-gradient(180deg, ${vars.color.backdrop} 0%, ${vars.color.backdropStrong} 100%)`,
-  border: `${vars.size.borderWidth} solid ${vars.color.borderStrong}`,
-  borderRadius: vars.radius.lg,
-  boxShadow: vars.shadow.panel,
-  flex: "0 1 auto",
-  height: "auto",
-  maxHeight: "calc(100dvh - 7.5rem)",
-  maxWidth: "min(100%, calc((100dvh - 7.5rem) * 16 / 9))",
+  aspectRatio: "auto",
+  background: `radial-gradient(circle at center, color-mix(in srgb, ${vars.color.text} 4%, ${vars.color.backdropStrong}) 0%, ${vars.color.backdrop} 100%)`,
+  border: 0,
+  borderRadius: 0,
+  boxShadow: "none",
+  flex: "1 1 auto",
+  height: "100dvh",
+  maxHeight: "100dvh",
+  maxWidth: "100vw",
   padding: vars.space.lg,
-  width: "100%",
+  width: "100vw",
   selectors: {
     "&:fullscreen": {
       borderRadius: 0,
@@ -266,13 +294,83 @@ export const tvBoard = style({
   },
   "@media": {
     [media.compact]: {
-      aspectRatio: "16 / 9",
-      display: "grid",
-      gridTemplateColumns: "minmax(0, 1fr) minmax(15rem, 20rem)",
-      maxHeight: "calc(100dvh - 8rem)",
+      aspectRatio: "auto",
+      display: "flex",
+      flexDirection: "column-reverse",
+      maxHeight: "100dvh",
       minHeight: 0,
+      overflow: "auto",
     },
   },
+});
+
+globalStyle(`${pageGame} header`, {
+  left: 0,
+  padding: vars.space.lg,
+  position: "fixed",
+  top: 0,
+  width: "auto",
+  zIndex: 10,
+});
+
+globalStyle(`${pageGame} header > div`, {
+  margin: 0,
+  maxWidth: "none",
+  minHeight: vars.size.controlHeight,
+  width: "auto",
+});
+
+globalStyle(`${pageGame} header a[href="/"]`, {
+  display: "none",
+});
+
+globalStyle(`${pageGame} header button`, {
+  position: "static",
+  transform: "none",
+});
+
+globalStyle(`${pageGame} header button:hover`, {
+  transform: "scale(1.03)",
+});
+
+globalStyle(`${pageGame} ${gameTopBar}`, {
+  display: "none",
+});
+
+globalStyle(`${page}:fullscreen`, {
+  background: vars.color.backdrop,
+  overflow: "hidden",
+});
+
+globalStyle(`${page}:fullscreen header`, {
+  display: "none",
+});
+
+globalStyle(`${page}:fullscreen ${screen}`, {
+  display: "block",
+  height: "100dvh",
+  padding: 0,
+});
+
+globalStyle(`${page}:fullscreen ${gameShellTv}`, {
+  gap: 0,
+  height: "100dvh",
+  minHeight: "100dvh",
+  padding: 0,
+});
+
+globalStyle(`${page}:fullscreen ${gameTopBar}`, {
+  display: "none",
+});
+
+globalStyle(`${page}:fullscreen ${tvBoard}`, {
+  aspectRatio: "auto",
+  borderRadius: 0,
+  height: "100dvh",
+  maxHeight: "100dvh",
+  maxWidth: "100vw",
+  padding: vars.space.xl,
+  width: "100vw",
 });
 
 export const receiverBoard = style({
@@ -298,11 +396,13 @@ export const timeline = style({
   alignItems: "center",
   display: "flex",
   flexWrap: "wrap",
-  gap: `${vars.space["2xl"]} ${vars.space.lg}`,
+  gap: `${vars.space.xl} ${vars.space.lg}`,
   justifyContent: "center",
   margin: "auto",
   padding: vars.space.lg,
   width: "100%",
+  position: "relative",
+  isolation: "isolate",
 });
 
 export const timelineDense = style({
@@ -314,13 +414,14 @@ export const timelineDense = style({
 export const placement = style({
   alignItems: "center",
   alignSelf: "stretch",
-  background: "transparent",
-  border: 0,
+  background: `color-mix(in srgb, ${vars.color.text} 2%, transparent)`,
+  border: `2px dashed color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
+  borderRadius: vars.radius.md,
   color: vars.color.accent,
   display: "flex",
   justifyContent: "center",
   minHeight: vars.size.cardHeight,
-  minWidth: "3.5rem",
+  minWidth: "4.5rem",
   padding: 0,
 });
 
@@ -357,6 +458,7 @@ export const placementLine = style({
 
 export const cardSlot = style({
   flex: "0 0 auto",
+  paddingBottom: "3rem",
   position: "relative",
 });
 
@@ -380,7 +482,7 @@ export const sidePanel = style([
 export const currentCardWrap = style({
   display: "flex",
   justifyContent: "center",
-  minHeight: vars.size.cardHeight,
+  minHeight: "var(--sidebar-card-height)",
   width: "100%",
 });
 
@@ -423,7 +525,10 @@ export const teamRow = style({
 });
 
 export const teamRowActive = style({
+  background: vars.color.accentSoft,
   borderColor: vars.color.accent,
+  borderWidth: "2px",
+  boxShadow: vars.shadow.focus,
 });
 
 export const teamRowEliminated = style({
@@ -468,3 +573,154 @@ export const winnerPanel = style([
     textAlign: "center",
   },
 ]);
+
+export const guideDetails = style({
+  width: "100%",
+  marginTop: vars.space.sm,
+  marginBottom: vars.space.sm,
+});
+
+export const guideSummary = style({
+  cursor: "pointer",
+  color: vars.color.accent,
+  fontWeight: vars.fontWeight.bold,
+  fontSize: vars.fontSize.control,
+  textAlign: "center",
+  listStyle: "none",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: vars.space.sm,
+  padding: `${vars.space.md} ${vars.space.lg}`,
+  background: `color-mix(in srgb, ${vars.color.text} 4%, transparent)`,
+  border: `${vars.size.borderWidth} solid ${vars.color.border}`,
+  borderRadius: vars.radius.pill,
+  transition: `all ${vars.duration.fast} ${vars.easing.standard}`,
+  userSelect: "none",
+  selectors: {
+    "&:hover": {
+      background: `color-mix(in srgb, ${vars.color.text} 8%, transparent)`,
+      borderColor: vars.color.accent,
+      transform: "translateY(-1px)",
+    },
+    "&:active": {
+      transform: "translateY(0)",
+    },
+    "&::-webkit-details-marker": {
+      display: "none",
+    },
+  },
+});
+
+export const guideSummaryIcon = style({
+  transition: `transform ${vars.duration.fast} ${vars.easing.standard}`,
+  selectors: {
+    [`${guideDetails}[open] &`]: {
+      transform: "rotate(180deg)",
+    },
+  },
+});
+
+export const errorOverlay = style({
+  position: "absolute",
+  inset: 0,
+  background: "rgba(180, 0, 0, 0.44)",
+  backdropFilter: "blur(12px)",
+  WebkitBackdropFilter: "blur(12px)",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  zIndex: 9999,
+});
+
+export const correctOverlay = style({
+  position: "absolute",
+  inset: 0,
+  background: "rgba(0, 140, 40, 0.44)",
+  backdropFilter: "blur(12px)",
+  WebkitBackdropFilter: "blur(12px)",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  zIndex: 9999,
+});
+
+export const errorBadge = style({
+  background: "rgba(30, 0, 0, 0.94)",
+  border: `4px solid ${vars.color.statusIncorrectBorder}`,
+  borderRadius: vars.radius.lg,
+  boxShadow: "0 2rem 4rem rgba(0, 0, 0, 0.8), 0 0 40px rgba(255, 0, 0, 0.38)",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  padding: `${vars.space["2xl"]} ${vars.space["4xl"]}`,
+  textAlign: "center",
+  gap: vars.space.sm,
+  position: "absolute",
+  left: "50%",
+  top: "30%",
+  width: "min(90vw, 420px)",
+  animation: `${shake} 0.5s ease-in-out`,
+});
+
+export const correctBadge = style({
+  background: "rgba(0, 20, 0, 0.94)",
+  border: `4px solid ${vars.color.statusCorrectBorder}`,
+  borderRadius: vars.radius.lg,
+  boxShadow: "0 2rem 4rem rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 255, 0, 0.38)",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  padding: `${vars.space["2xl"]} ${vars.space["4xl"]}`,
+  textAlign: "center",
+  gap: vars.space.sm,
+  position: "absolute",
+  left: "50%",
+  top: "30%",
+  width: "min(90vw, 420px)",
+  transform: "translateX(-50%)",
+});
+
+export const errorIcon = style({
+  fontSize: "4.5rem",
+  color: vars.color.statusIncorrectBorder,
+  lineHeight: 1,
+});
+
+export const correctIcon = style({
+  fontSize: "4.5rem",
+  color: vars.color.statusCorrectBorder,
+  lineHeight: 1,
+});
+
+export const errorText = style({
+  fontSize: vars.fontSize.display,
+  fontWeight: vars.fontWeight.black,
+  color: "#fff",
+  textTransform: "uppercase",
+  letterSpacing: "0.1em",
+  margin: 0,
+});
+
+export const correctText = style({
+  fontSize: vars.fontSize.display,
+  fontWeight: vars.fontWeight.black,
+  color: "#fff",
+  textTransform: "uppercase",
+  letterSpacing: "0.1em",
+  margin: 0,
+});
+
+export const errorTeam = style({
+  fontSize: vars.fontSize.control,
+  color: vars.color.statusIncorrectBorder,
+  fontWeight: vars.fontWeight.bold,
+  margin: 0,
+});
+
+export const correctTeam = style({
+  fontSize: vars.fontSize.control,
+  color: vars.color.statusCorrectBorder,
+  fontWeight: vars.fontWeight.bold,
+  margin: 0,
+});

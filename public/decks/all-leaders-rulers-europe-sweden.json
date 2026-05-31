@@ -10,6 +10,16 @@
     "year": 1523
   },
   {
+    "fact": "Carl XVI Gustaf blir Sveriges kung.",
+    "image": "Carl_XVI_Gustaf_of_Sweden_2018_(42282165922)_(cropped).jpg",
+    "pageViews": 300000,
+    "qid": "Q45068",
+    "subtitle": "Svensk kung",
+    "title": "Carl XVI Gustaf blir kung",
+    "wikipediaSlug": "Carl_XVI_Gustaf",
+    "year": 1973
+  },
+  {
     "fact": "Drottning Kristina blir Sveriges regent.",
     "image": "Swedish_queen_Drottning_Kristina_portrait_by_Sébastien_Bourdon_stor.jpg",
     "pageViews": 260000,
@@ -30,6 +40,16 @@
     "year": 1697
   },
   {
+    "fact": "Kungafamiljen flyttar in i det nya Stockholms slott.",
+    "image": "Stockholms_slott_kollage_2011.jpg",
+    "pageViews": 260000,
+    "qid": "Q750444",
+    "subtitle": "Kungligt slott",
+    "title": "Stockholms slott invigs",
+    "wikipediaSlug": "Stockholms_slott",
+    "year": 1754
+  },
+  {
     "fact": "Karl XIV Johan blir kung av Sverige och Norge.",
     "image": "Karl_XIV_Johan,_Sveriges_och_Norges_konung._Porträtt_av_Frederic_Westin,_cirka_1843._-_kopia.png",
     "pageViews": 260000,
@@ -38,5 +58,135 @@
     "title": "Karl XIV Johan blir kung",
     "wikipediaSlug": "Karl_XIV_Johan",
     "year": 1818
+  },
+  {
+    "fact": "Kungliga Tekniska högskolan grundas.",
+    "image": "KTH_logotype.jpg",
+    "pageViews": 260000,
+    "qid": "Q854280",
+    "subtitle": "Svenskt universitet",
+    "title": "KTH grundas",
+    "wikipediaSlug": "Kungliga_Tekniska_h%C3%B6gskolan",
+    "year": 1827
+  },
+  {
+    "fact": "Jussi Björling debuterar på Kungliga Operan.",
+    "image": "Jussi_Björling_1953.jpg",
+    "pageViews": 260000,
+    "qid": "Q56157",
+    "subtitle": "Svensk operasångare",
+    "title": "Jussi Björling debuterar på Operan",
+    "wikipediaSlug": "Jussi_Bj%C3%B6rling",
+    "year": 1930
+  },
+  {
+    "fact": "Birgit Nilsson debuterar på Kungliga Operan.",
+    "image": "Birgit-Nilsson-standing-and-singing-on-the-stage-391837722733.jpg",
+    "pageViews": 260000,
+    "qid": "Q233951",
+    "subtitle": "Svensk operasångare",
+    "title": "Birgit Nilsson debuterar på Operan",
+    "wikipediaSlug": "Birgit_Nilsson",
+    "year": 1946
+  },
+  {
+    "fact": "Silvia Sommerlath gifter sig med kung Carl XVI Gustaf.",
+    "image": "Queen_Silvia_of_Sweden_in_June_2023-2_(cropped).jpg",
+    "pageViews": 260000,
+    "qid": "Q152308",
+    "subtitle": "Svensk drottning",
+    "title": "Silvia blir drottning",
+    "wikipediaSlug": "Drottning_Silvia",
+    "year": 1976
+  },
+  {
+    "fact": "Kronprinsessan Victoria och Daniel Westling gifter sig.",
+    "image": "Royal_Wedding_Stockholm_2010-Slottsbacken-05_edit.jpg",
+    "pageViews": 260000,
+    "qid": "Q2368479",
+    "subtitle": "Svenskt kungligt bröllop",
+    "title": "Kronprinsessbröllopet äger rum",
+    "wikipediaSlug": "Br%C3%B6llopet_mellan_kronprinsessan_Victoria_och_Daniel_Westling",
+    "year": 2010
+  },
+  {
+    "fact": "Gustav Vasa låter börja bygga Gripsholms slott.",
+    "image": "Gripsholm_May_2016_10.jpg",
+    "pageViews": 220000,
+    "qid": "Q714783",
+    "subtitle": "Svenskt slott",
+    "title": "Gripsholms slott börjar byggas",
+    "wikipediaSlug": "Gripsholms_slott",
+    "year": 1537
+  },
+  {
+    "fact": "Drottningholms slott börjar byggas i sin nuvarande form.",
+    "image": "Drottningholm_kollage_2011abc.jpg",
+    "pageViews": 220000,
+    "qid": "Q208559",
+    "subtitle": "Svenskt slott",
+    "title": "Drottningholm blir kungligt slott",
+    "wikipediaSlug": "Drottningholms_slott",
+    "year": 1662
+  },
+  {
+    "fact": "Kungliga Operan invigs i Stockholm.",
+    "image": "Kungliga_Operan,_building_in_2021_(1_of_2).jpg",
+    "pageViews": 220000,
+    "qid": "Q254283",
+    "subtitle": "Svensk nationalscen",
+    "title": "Kungliga Operan invigs",
+    "wikipediaSlug": "Kungliga_Operan",
+    "year": 1782
+  },
+  {
+    "fact": "Kristina från Duvemåla har premiär i Malmö.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q142885",
+    "subtitle": "Svensk musikal",
+    "title": "”Kristina från Duvemåla” har premiär",
+    "wikipediaSlug": "Kristina_fr%C3%A5n_Duvem%C3%A5la",
+    "year": 1995
+  },
+  {
+    "fact": "Kungsträdgården blir en central mötesplats i Stockholm.",
+    "image": "Kungstradgarden_2008.jpg",
+    "pageViews": 200000,
+    "qid": "Q926316",
+    "subtitle": "Park i Stockholm",
+    "title": "Kungsträdgården blir folkpark",
+    "wikipediaSlug": "Kungstr%C3%A4dg%C3%A5rden",
+    "year": 1800
+  },
+  {
+    "fact": "Helen Sjöholm får sitt genombrott i Kristina från Duvemåla.",
+    "image": "Helen_Sjöholm_2012-09-24_001.jpg",
+    "pageViews": 200000,
+    "qid": "Q468134",
+    "subtitle": "Svensk artist",
+    "title": "Helen Sjöholm slår igenom",
+    "wikipediaSlug": "Helen_Sj%C3%B6holm",
+    "year": 1995
+  },
+  {
+    "fact": "Drottningholms slottsteater invigs.",
+    "image": "Drottningholms_slottsteater_2011b.jpg",
+    "pageViews": 180000,
+    "qid": "Q3058143",
+    "subtitle": "Svensk teater",
+    "title": "Drottningholms slottsteater invigs",
+    "wikipediaSlug": "Drottningholms_slottsteater",
+    "year": 1766
+  },
+  {
+    "fact": "Peter Jöback får sitt genombrott i Kristina från Duvemåla.",
+    "image": "Peter_Jöback_på_Grammisgalan_2013.jpg",
+    "pageViews": 180000,
+    "qid": "Q767041",
+    "subtitle": "Svensk artist",
+    "title": "Peter Jöback slår igenom",
+    "wikipediaSlug": "Peter_J%C3%B6back",
+    "year": 1995
   }
 ]

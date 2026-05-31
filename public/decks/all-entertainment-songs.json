@@ -80,6 +80,36 @@
     "year": 2023
   },
   {
+    "fact": "Jenny Lind blir känd som den svenska näktergalen.",
+    "image": "Jenny_Lind_retouched.jpg",
+    "pageViews": 260000,
+    "qid": "Q231345",
+    "subtitle": "Svensk operasångare",
+    "title": "Jenny Lind blir näktergalen",
+    "wikipediaSlug": "Jenny_Lind",
+    "year": 1840
+  },
+  {
+    "fact": "Jussi Björling debuterar på Kungliga Operan.",
+    "image": "Jussi_Björling_1953.jpg",
+    "pageViews": 260000,
+    "qid": "Q56157",
+    "subtitle": "Svensk operasångare",
+    "title": "Jussi Björling debuterar på Operan",
+    "wikipediaSlug": "Jussi_Bj%C3%B6rling",
+    "year": 1930
+  },
+  {
+    "fact": "Birgit Nilsson debuterar på Kungliga Operan.",
+    "image": "Birgit-Nilsson-standing-and-singing-on-the-stage-391837722733.jpg",
+    "pageViews": 260000,
+    "qid": "Q233951",
+    "subtitle": "Svensk operasångare",
+    "title": "Birgit Nilsson debuterar på Operan",
+    "wikipediaSlug": "Birgit_Nilsson",
+    "year": 1946
+  },
+  {
     "fact": "Carola slår igenom i Melodifestivalen med Främling.",
     "image": "Carola_Häggkvist_in_June_2015-3.jpg",
     "pageViews": 260000,
@@ -98,6 +128,16 @@
     "title": "”Dancing On My Own” släpps",
     "wikipediaSlug": "Dancing_on_My_Own",
     "year": 2010
+  },
+  {
+    "fact": "Måns Zelmerlöw vinner Eurovision Song Contest med Heroes.",
+    "image": "Melodifestivalen_2025_deltävling_4_Malmö_Måns_Zelmerlöw_presentation_03.jpg",
+    "pageViews": 260000,
+    "qid": "Q372460",
+    "subtitle": "Svensk artist",
+    "title": "Måns Zelmerlöw vinner Eurovision",
+    "wikipediaSlug": "M%C3%A5ns_Zelmerl%C3%B6w",
+    "year": 2015
   },
   {
     "fact": "Tattoo vinner Eurovision Song Contest för Sverige.",
@@ -120,6 +160,16 @@
     "year": 1986
   },
   {
+    "fact": "Gustav Vasa låter börja bygga Gripsholms slott.",
+    "image": "Gripsholm_May_2016_10.jpg",
+    "pageViews": 220000,
+    "qid": "Q714783",
+    "subtitle": "Svenskt slott",
+    "title": "Gripsholms slott börjar byggas",
+    "wikipediaSlug": "Gripsholms_slott",
+    "year": 1537
+  },
+  {
     "fact": "Evert Taube debuterar som författare och visdiktare.",
     "image": "Evert_Taube_1961.JPG",
     "pageViews": 220000,
@@ -128,6 +178,26 @@
     "title": "Evert Taube debuterar",
     "wikipediaSlug": "Evert_Taube",
     "year": 1920
+  },
+  {
+    "fact": "Sven-Bertil Taube debuterar som vissångare.",
+    "image": "Sven-Bertil_Taube_(14878817541).jpg",
+    "pageViews": 220000,
+    "qid": "Q1360483",
+    "subtitle": "Svensk artist och skådespelare",
+    "title": "Sven-Bertil Taube albumdebuterar",
+    "wikipediaSlug": "Sven-Bertil_Taube",
+    "year": 1954
+  },
+  {
+    "fact": "Monica Zetterlund får sitt breda genombrott som sångerska.",
+    "image": "Monica_Zetterlund_1960's.jpg",
+    "pageViews": 220000,
+    "qid": "Q254527",
+    "subtitle": "Svensk jazzsångerska",
+    "title": "Monica Zetterlund slår igenom",
+    "wikipediaSlug": "Monica_Zetterlund",
+    "year": 1958
   },
   {
     "fact": "Cornelis Vreeswijk släpper sitt första album.",
@@ -160,6 +230,16 @@
     "year": 1982
   },
   {
+    "fact": "Öppna landskap blir en av Ulf Lundells mest kända låtar.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q297660",
+    "subtitle": "Låt av Ulf Lundell",
+    "title": "”Öppna landskap” släpps",
+    "wikipediaSlug": "%C3%96ppna_landskap",
+    "year": 1982
+  },
+  {
     "fact": "Främling blir ett av Melodifestivalens största genombrott.",
     "image": "",
     "pageViews": 220000,
@@ -168,6 +248,16 @@
     "title": "”Främling” slår igenom",
     "wikipediaSlug": "Fr%C3%A4mling_(s%C3%A5ng)",
     "year": 1983
+  },
+  {
+    "fact": "Chess har premiär i London med musik av Benny Andersson och Björn Ulvaeus.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "manual-Chess_(musikal)",
+    "subtitle": "Musikal av svenska låtskrivare",
+    "title": "”Chess” har premiär",
+    "wikipediaSlug": "Chess_(musikal)",
+    "year": 1986
   },
   {
     "fact": "Fångad av en stormvind vinner Eurovision Song Contest.",
@@ -180,6 +270,16 @@
     "year": 1991
   },
   {
+    "fact": "Lasse Berghagen blir folkkär som programledare för Allsång på Skansen.",
+    "image": "Lasse_Berghagen_in_2014_(1_av_2).jpg",
+    "pageViews": 220000,
+    "qid": "Q493733",
+    "subtitle": "Svensk artist och programledare",
+    "title": "Lasse Berghagen leder Allsång",
+    "wikipediaSlug": "Lasse_Berghagen",
+    "year": 1994
+  },
+  {
     "fact": "Lovefool blir The Cardigans stora internationella hit.",
     "image": "",
     "pageViews": 220000,
@@ -188,6 +288,26 @@
     "title": "”Lovefool” släpps",
     "wikipediaSlug": "Lovefool",
     "year": 1996
+  },
+  {
+    "fact": "Charlotte Perrelli vinner Eurovision Song Contest med Take Me to Your Heaven.",
+    "image": "Charlotte_Perrelli_Sommarkrysset_2016.jpg",
+    "pageViews": 220000,
+    "qid": "Q180836",
+    "subtitle": "Svensk artist",
+    "title": "Charlotte Perrelli vinner Eurovision",
+    "wikipediaSlug": "Charlotte_Perrelli",
+    "year": 1999
+  },
+  {
+    "fact": "Boten Anna blir en svensk internet- och pophit.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q61044229",
+    "subtitle": "Låt av Basshunter",
+    "title": "”Boten Anna” släpps",
+    "wikipediaSlug": "Boten_Anna",
+    "year": 2006
   },
   {
     "fact": "Låt den rätte komma in har premiär.",
@@ -200,6 +320,16 @@
     "year": 2008
   },
   {
+    "fact": "Jag kommer blir en av Veronica Maggios mest kända låtar.",
+    "image": "Veronica_Maggio_-_Homecoming_Festival-4_(cropped).jpg",
+    "pageViews": 220000,
+    "qid": "Q260597",
+    "subtitle": "Låt av Veronica Maggio",
+    "title": "”Jag kommer” släpps",
+    "wikipediaSlug": "Veronica_Maggio",
+    "year": 2011
+  },
+  {
     "fact": "Heroes vinner Eurovision Song Contest för Sverige.",
     "image": "20150516_ESC_2015_Måns_Zelmerlöw_9958.jpg",
     "pageViews": 220000,
@@ -208,6 +338,26 @@
     "title": "”Heroes” vinner Eurovision",
     "wikipediaSlug": "Heroes_(M%C3%A5ns_Zelmerl%C3%B6w)",
     "year": 2015
+  },
+  {
+    "fact": "Olle Adolphson debuterar som vissångare.",
+    "image": "Singer_and_songwriter_Olle_Adolphson_at_Bastugatan_32,_Stockholm,_1963.jpg",
+    "pageViews": 200000,
+    "qid": "Q4580910",
+    "subtitle": "Svensk visdiktare",
+    "title": "Olle Adolphson debuterar",
+    "wikipediaSlug": "Olle_Adolphson",
+    "year": 1956
+  },
+  {
+    "fact": "Ebba Grön gör Staten och kapitalet till en svensk punkklassiker.",
+    "image": "",
+    "pageViews": 200000,
+    "qid": "Q10468601",
+    "subtitle": "Låt av Ebba Grön",
+    "title": "”Staten och kapitalet” släpps",
+    "wikipediaSlug": "Den_ena_handen_vet_vad_den_andra_g%C3%B6r",
+    "year": 1980
   },
   {
     "fact": "Diggi-loo diggi-ley vinner Eurovision Song Contest.",
@@ -220,6 +370,96 @@
     "year": 1984
   },
   {
+    "fact": "Loa Falkman blir ett välkänt ansikte i svensk underhållning.",
+    "image": "Loa_Falkman_July_20,_2014.jpg",
+    "pageViews": 200000,
+    "qid": "Q5724629",
+    "subtitle": "Svensk operasångare och skådespelare",
+    "title": "Loa Falkman slår igenom",
+    "wikipediaSlug": "Loa_Falkman",
+    "year": 1990
+  },
+  {
+    "fact": "Take Me to Your Heaven vinner Eurovision Song Contest.",
+    "image": "",
+    "pageViews": 200000,
+    "qid": "Q62974722",
+    "subtitle": "Låt framförd av Charlotte Perrelli",
+    "title": "”Take Me to Your Heaven” vinner Eurovision",
+    "wikipediaSlug": "Tusen_och_en_natt_(s%C3%A5ng)",
+    "year": 1999
+  },
+  {
+    "fact": "Dom andra blir en av Kents stora 2000-talshits.",
+    "image": "Kent_live_in_May_2005.jpg",
+    "pageViews": 200000,
+    "qid": "Q648786",
+    "subtitle": "Låt av Kent",
+    "title": "”Dom andra” släpps",
+    "wikipediaSlug": "Kent_(musikgrupp)",
+    "year": 2002
+  },
+  {
+    "fact": "Owe Thörnqvist får sitt genombrott som sångare och låtskrivare.",
+    "image": "Owe_Thörnqvist_05_(cropped)_@_Melodifestivalen_2017_-_Jonatan_Svensson_Glad.jpg",
+    "pageViews": 180000,
+    "qid": "Q6210414",
+    "subtitle": "Svensk artist",
+    "title": "Owe Thörnqvist slår igenom",
+    "wikipediaSlug": "Owe_Th%C3%B6rnqvist",
+    "year": 1950
+  },
+  {
+    "fact": "Sakta vi gå genom stan blir en svensk jazzklassiker.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q4563559",
+    "subtitle": "Låt med Monica Zetterlund",
+    "title": "”Sakta vi gå genom stan” släpps",
+    "wikipediaSlug": "Walkin'_My_Baby_Back_Home",
+    "year": 1961
+  },
+  {
+    "fact": "Anita Lindblom slår igenom med Sånt är livet.",
+    "image": "Thore_Skogman_and_Anita_Lindblom_1963.jpg",
+    "pageViews": 180000,
+    "qid": "Q431341",
+    "subtitle": "Svensk sångerska",
+    "title": "Anita Lindblom slår igenom",
+    "wikipediaSlug": "Anita_Lindblom",
+    "year": 1961
+  },
+  {
+    "fact": "Sånt är livet blir en svensk schlagerklassiker.",
+    "image": "Disambig_grey.svg",
+    "pageViews": 180000,
+    "qid": "Q10688442",
+    "subtitle": "Låt med Anita Lindblom",
+    "title": "”Sånt är livet” släpps",
+    "wikipediaSlug": "S%C3%A5nt_%C3%A4r_livet",
+    "year": 1961
+  },
+  {
+    "fact": "Fred Åkerström släpper sitt första album.",
+    "image": "Fred_Åkerström_11_mars_1968_(cropped).jpg",
+    "pageViews": 180000,
+    "qid": "Q1398777",
+    "subtitle": "Svensk vissångare",
+    "title": "Fred Åkerström albumdebuterar",
+    "wikipediaSlug": "Fred_%C3%85kerstr%C3%B6m",
+    "year": 1963
+  },
+  {
+    "fact": "Barbro Hörberg får sitt genombrott med Med ögon känsliga för grönt.",
+    "image": "Barbro-Horberg-plays-the-guitar-352263774740.jpg",
+    "pageViews": 180000,
+    "qid": "Q4955491",
+    "subtitle": "Svensk vissångare",
+    "title": "Barbro Hörberg slår igenom",
+    "wikipediaSlug": "Barbro_H%C3%B6rberg",
+    "year": 1973
+  },
+  {
     "fact": "Stad i ljus vinner Melodifestivalen.",
     "image": "Disambig_grey.svg",
     "pageViews": 180000,
@@ -228,6 +468,46 @@
     "title": "”Stad i ljus” vinner Melodifestivalen",
     "wikipediaSlug": "Stad_i_ljus",
     "year": 1988
+  },
+  {
+    "fact": "Himlen runt hörnet blir en svensk popklassiker.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q10524153",
+    "subtitle": "Låt av Lisa Nilsson",
+    "title": "”Himlen runt hörnet” släpps",
+    "wikipediaSlug": "Himlen_runt_h%C3%B6rnet",
+    "year": 1992
+  },
+  {
+    "fact": "Molly Sandén slår igenom i Junior Eurovision.",
+    "image": "Molly_Sandén_På_Sommarkrysset_2016.jpg",
+    "pageViews": 180000,
+    "qid": "Q54836",
+    "subtitle": "Svensk artist",
+    "title": "Molly Sandén slår igenom",
+    "wikipediaSlug": "Molly_Sand%C3%A9n",
+    "year": 2006
+  },
+  {
+    "fact": "Den vilda vinner Melodifestivalen.",
+    "image": "",
+    "pageViews": 160000,
+    "qid": "Q3295887",
+    "subtitle": "Låt av One More Time",
+    "title": "”Den vilda” vinner Melodifestivalen",
+    "wikipediaSlug": "Den_vilda",
+    "year": 1996
+  },
+  {
+    "fact": "Bolaget får ett brett genombrott med svenska poplåtar.",
+    "image": "",
+    "pageViews": 160000,
+    "qid": "Q114561023",
+    "subtitle": "Svensk musikgrupp",
+    "title": "Bolaget slår igenom",
+    "wikipediaSlug": "Bolaget_(musikgrupp)",
+    "year": 2022
   },
   {
     "qid": "Q44696",

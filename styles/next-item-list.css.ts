@@ -1,4 +1,5 @@
 import { style } from "@vanilla-extract/css";
+import { media } from "./foundation";
 import { vars } from "./theme.css";
 
 export const container = style({
@@ -18,6 +19,11 @@ export const list = style({
   display: "flex",
   justifyContent: "center",
   padding: `${vars.space.xl} ${vars.space.md} ${vars.space["3xl"]}`,
+  "@media": {
+    [media.shortWide]: {
+      padding: `${vars.space.sm} ${vars.space.md} ${vars.space.md}`,
+    },
+  },
 });
 
 export const stack = style({

@@ -1,13 +1,43 @@
 [
   {
-    "fact": "Systembolaget bildas i sin moderna form.",
+    "fact": "Systembolaget bildas som rikstäckande alkoholmonopol.",
     "image": "Systembolaget_logo_(new).svg",
-    "pageViews": 260000,
+    "pageViews": 300000,
     "qid": "Q1476113",
-    "subtitle": "Svenskt detaljhandelsmonopol",
+    "subtitle": "Svenskt statligt bolag",
     "title": "Systembolaget bildas",
     "wikipediaSlug": "Systembolaget",
     "year": 1955
+  },
+  {
+    "fact": "Monopol ges ut i svensk version.",
+    "image": "Monopoly_game_tokens_01.JPG",
+    "pageViews": 220000,
+    "qid": "Q17243",
+    "subtitle": "Brädspel",
+    "title": "Monopol blir svenskt brädspelsminne",
+    "wikipediaSlug": "Monopol_(spel)",
+    "year": 1937
+  },
+  {
+    "fact": "Kubb sprids som ett vanligt svenskt sommarspel.",
+    "image": "Disambig_grey.svg",
+    "pageViews": 220000,
+    "qid": "Q10549763",
+    "subtitle": "Svenskt utomhusspel",
+    "title": "Kubb blir sommarklassiker",
+    "wikipediaSlug": "Kubb",
+    "year": 1990
+  },
+  {
+    "fact": "Mölkky sprids från Finland och blir välkänt i Sverige.",
+    "image": "Molkky.jpg",
+    "pageViews": 160000,
+    "qid": "Q938986",
+    "subtitle": "Nordiskt utomhusspel",
+    "title": "Mölkky blir sommarspel",
+    "wikipediaSlug": "M%C3%B6lkky",
+    "year": 1996
   },
   {
     "qid": "Q12263",
@@ -18,15 +48,5 @@
     "wikipediaSlug": "Mahjong",
     "image": "Mahjong_game.jpg",
     "pageViews": 91402
-  },
-  {
-    "qid": "Q17243",
-    "title": "‘Monopoly’ is released",
-    "subtitle": "Board game by Hasbro",
-    "year": 1937,
-    "fact": "Monopoly is a multiplayer economics-themed board game.",
-    "wikipediaSlug": "Monopoly_(game)",
-    "image": "Monopoly_board_on_white_bg.jpg",
-    "pageViews": 65651
   }
 ]

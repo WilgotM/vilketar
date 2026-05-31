@@ -3,4 +3,4 @@ Allow: /
 Disallow: /daily-admin
 Disallow: /devices
 
-Sitemap: https://xn--vilketr-kua.se/sitemap.xml
+Sitemap: https://xn--vilketr-jxa.se/sitemap.xml

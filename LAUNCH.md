@@ -8,7 +8,7 @@ uppfinningar i rätt år. Byggt på Wikidata och svenska Wikipedia.
 
 ## Länk
 
-https://vilketar.pages.dev
+https://vilketår.se
 
 ## Första poster
 
@@ -18,7 +18,7 @@ Jag har byggt VilketÅr: ett svenskt tidslinjespel där du placerar kort i rätt
 år. Det finns dagligt spel och fritt spel med svenska kategorier, från Sverige,
 historia och sport till film, musik och teknik.
 
-Spela här: https://vilketar.pages.dev
+Spela här: https://vilketår.se
 
 ### Reddit / Facebook
 
@@ -29,7 +29,7 @@ rätt kronologisk ordning.
 All fakta kommer från Wikidata och svenska Wikipedia. Feedback på kort, årtal
 och kategorier är väldigt välkommen.
 
-https://vilketar.pages.dev
+https://vilketår.se
 
 ### Product Hunt / Indie Hackers
 
@@ -43,4 +43,4 @@ game and a broad free play mode.
 - Be 5-10 vänner spela dagens spel och dela score.
 - Bygg vidare med fler handplockade svenska kort i sport, politik och kultur.
 - Lägg till enkel feedbackknapp per kort för att förbättra datakvaliteten.
-- Koppla en egen domän när spelet känns stabilt.
+- Lägg till domänen i Google Search Console när DNS och deploy är klara.

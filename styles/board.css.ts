@@ -21,6 +21,15 @@ export const wrapper = style({
         [vars.size.deckWidth]: "14.25rem",
       },
     },
+    [media.shortWide]: {
+      vars: {
+        [vars.size.boardStatusWidth]: "27rem",
+        [vars.size.cardHeight]: "11rem",
+        [vars.size.cardWidth]: "8.25rem",
+        [vars.size.deckStackWidth]: "9.25rem",
+        [vars.size.deckWidth]: "11.25rem",
+      },
+    },
   },
 });
 
@@ -38,6 +47,11 @@ export const top = style({
     [media.compact]: {
       flexBasis: "50%",
       gap: vars.space.lg,
+    },
+    [media.shortWide]: {
+      flexBasis: "55%",
+      gap: vars.space.md,
+      paddingTop: vars.space.md,
     },
   },
 });
@@ -67,19 +81,27 @@ export const scoreBadge = style({
   justifyContent: "center",
   pointerEvents: "none",
   zIndex: 3,
+  "@media": {
+    [media.shortWide]: {
+      gap: vars.space.xxs,
+    },
+  },
 });
 
 export const scoreValue = style({
   color: vars.color.text,
   fontSize: "3.5rem",
   fontWeight: vars.fontWeight.black,
-  lineHeight: "1",
+  lineHeight: vars.lineHeight.tight,
   textAlign: "center",
   fontVariantNumeric: "tabular-nums",
   display: "inline-flex",
   alignItems: "center",
   "@media": {
     [media.compact]: {
+      fontSize: "3rem",
+    },
+    [media.shortWide]: {
       fontSize: "3rem",
     },
   },
@@ -114,6 +136,10 @@ export const bottom = style({
   "@media": {
     [media.compact]: {
       flexBasis: "50%",
+    },
+    [media.shortWide]: {
+      flexBasis: "45%",
+      paddingTop: vars.space.md,
     },
   },
 });

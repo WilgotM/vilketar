@@ -26,7 +26,6 @@ export interface PartyGameState {
 }
 
 export interface PartySetup {
-  mode: "device" | "tv";
   seed: string;
   selectionRoute: SelectionRoute;
   teamNames: string[];

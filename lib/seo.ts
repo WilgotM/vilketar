@@ -1,5 +1,5 @@
 export const SITE_NAME = "VilketÅr";
-export const DEFAULT_SITE_URL = "https://xn--vilketr-kua.se";
+export const DEFAULT_SITE_URL = "https://xn--vilketr-jxa.se";
 export const DEFAULT_SEO_TITLE = "VilketÅr - svenskt tidslinjespel";
 export const DEFAULT_SEO_DESCRIPTION =
   "Spela VilketÅr, ett svenskt tidslinjespel där du placerar välkända händelser, personer, musik, sport och klassiker i rätt år.";

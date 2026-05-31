@@ -20,6 +20,16 @@
     "year": 2000
   },
   {
+    "fact": "Göta kanal invigs efter ett av Sveriges största byggprojekt.",
+    "image": "Göta_kanal_vapen.svg",
+    "pageViews": 260000,
+    "qid": "Q431863",
+    "subtitle": "Svensk kanal",
+    "title": "Göta kanal invigs",
+    "wikipediaSlug": "G%C3%B6ta_kanal",
+    "year": 1832
+  },
+  {
     "fact": "Gröna Lund öppnar i Stockholm.",
     "image": "Gröna_Lund,_11_augusti_2024.jpg",
     "pageViews": 260000,
@@ -58,6 +68,16 @@
     "title": "Stockholms stadshus invigs",
     "wikipediaSlug": "Stockholms_stadshus",
     "year": 1923
+  },
+  {
+    "fact": "Ölandsbron invigs och knyter ön närmare fastlandet.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q239276",
+    "subtitle": "Svensk ö",
+    "title": "Öland får sin bro",
+    "wikipediaSlug": "%C3%96land",
+    "year": 1972
   },
   {
     "fact": "Globen invigs i Stockholm.",
@@ -100,24 +120,74 @@
     "year": 1435
   },
   {
-    "fact": "Göta kanal invigs.",
-    "image": "Göta_kanal_vapen.svg",
+    "fact": "Nordiska museets byggnad invigs på Djurgården.",
+    "image": "Nordiska_Museet_Logo.svg",
     "pageViews": 220000,
-    "qid": "Q431863",
-    "subtitle": "Svensk kanal",
-    "title": "Göta kanal invigs",
-    "wikipediaSlug": "G%C3%B6ta_kanal",
-    "year": 1832
+    "qid": "Q1142142",
+    "subtitle": "Museum i Stockholm",
+    "title": "Nordiska museet invigs",
+    "wikipediaSlug": "Nordiska_museet",
+    "year": 1907
   },
   {
-    "fact": "Ullevi invigs i Göteborg.",
+    "fact": "Naturhistoriska riksmuseets byggnad öppnar i Frescati.",
+    "image": "Naturhistoriska_Riksmuseet_Stockholm_(2010).JPG",
+    "pageViews": 220000,
+    "qid": "Q1420103",
+    "subtitle": "Museum i Stockholm",
+    "title": "Naturhistoriska riksmuseet öppnar",
+    "wikipediaSlug": "Naturhistoriska_riksmuseet",
+    "year": 1916
+  },
+  {
+    "fact": "Tekniska museet öppnar i Stockholm.",
+    "image": "Tekniska_museet_huvudbyggnad.jpg",
+    "pageViews": 220000,
+    "qid": "Q177550",
+    "subtitle": "Museum i Stockholm",
+    "title": "Tekniska museet öppnar",
+    "wikipediaSlug": "Tekniska_museet",
+    "year": 1924
+  },
+  {
+    "fact": "Råsunda fotbollsstadion invigs i Solna.",
+    "image": "Råsunda_February_2013_01.jpg",
+    "pageViews": 220000,
+    "qid": "Q725623",
+    "subtitle": "Svensk fotbollsarena",
+    "title": "Råsunda invigs",
+    "wikipediaSlug": "R%C3%A5sunda_fotbollsstadion",
+    "year": 1937
+  },
+  {
+    "fact": "Ullevi invigs inför fotbolls-VM.",
     "image": "Nya_Ullevi_2013-07-06_001.jpg",
     "pageViews": 220000,
     "qid": "Q824352",
-    "subtitle": "Svensk arena",
+    "subtitle": "Arena i Göteborg",
     "title": "Ullevi invigs",
     "wikipediaSlug": "Ullevi",
     "year": 1958
+  },
+  {
+    "fact": "Moderna museet öppnar i Stockholm.",
+    "image": "Moderna_museet,_2009.jpg",
+    "pageViews": 220000,
+    "qid": "Q1274511",
+    "subtitle": "Museum i Stockholm",
+    "title": "Moderna museet öppnar",
+    "wikipediaSlug": "Moderna_Museet",
+    "year": 1958
+  },
+  {
+    "fact": "Ölandsbron invigs mellan Kalmar och Öland.",
+    "image": "Ölandsbron_augusti_2018.jpg",
+    "pageViews": 220000,
+    "qid": "Q296799",
+    "subtitle": "Svensk bro",
+    "title": "Ölandsbron invigs",
+    "wikipediaSlug": "%C3%96landsbron",
+    "year": 1972
   },
   {
     "fact": "Allsång på Skansen börjar sändas i tv.",
@@ -130,14 +200,84 @@
     "year": 1979
   },
   {
-    "fact": "Friends Arena invigs.",
+    "fact": "Göta kanal eller Vem drog ur proppen? har premiär.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q10512738",
+    "subtitle": "Svensk filmkomedi",
+    "title": "”Göta kanal” har premiär",
+    "wikipediaSlug": "G%C3%B6ta_kanal_(film)",
+    "year": 1981
+  },
+  {
+    "fact": "Lasse Berghagen blir folkkär som programledare för Allsång på Skansen.",
+    "image": "Lasse_Berghagen_in_2014_(1_av_2).jpg",
+    "pageViews": 220000,
+    "qid": "Q493733",
+    "subtitle": "Svensk artist och programledare",
+    "title": "Lasse Berghagen leder Allsång",
+    "wikipediaSlug": "Lasse_Berghagen",
+    "year": 1994
+  },
+  {
+    "fact": "Friends Arena invigs i Solna.",
     "image": "Strawberry_Arena.jpg",
     "pageViews": 220000,
     "qid": "Q1138684",
-    "subtitle": "Svensk fotbollsarena",
+    "subtitle": "Svensk nationalarena",
     "title": "Friends Arena invigs",
     "wikipediaSlug": "Strawberry_Arena",
     "year": 2012
+  },
+  {
+    "fact": "ABBA The Museum öppnar på Djurgården.",
+    "image": "ABBA_The_Museum_logo.svg",
+    "pageViews": 220000,
+    "qid": "Q2743819",
+    "subtitle": "Musikmuseum i Stockholm",
+    "title": "ABBA The Museum öppnar",
+    "wikipediaSlug": "Abbamuseet",
+    "year": 2013
+  },
+  {
+    "fact": "Västerbron invigs i Stockholm.",
+    "image": "Västerbron_Stadshuset_Kaknästornet_dec_2013.jpg",
+    "pageViews": 200000,
+    "qid": "Q580518",
+    "subtitle": "Bro i Stockholm",
+    "title": "Västerbron invigs",
+    "wikipediaSlug": "V%C3%A4sterbron",
+    "year": 1935
+  },
+  {
+    "fact": "Höga kusten-bron invigs över Ångermanälven.",
+    "image": "Högakustenbron_12_juli_2024_Bild_6.jpg",
+    "pageViews": 200000,
+    "qid": "Q593265",
+    "subtitle": "Svensk bro",
+    "title": "Höga kusten-bron invigs",
+    "wikipediaSlug": "H%C3%B6gakustenbron",
+    "year": 1997
+  },
+  {
+    "fact": "Cirkus på Djurgården invigs.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "manual-Cirkus_(byggnad)",
+    "subtitle": "Nöjesarena i Stockholm",
+    "title": "Cirkus på Djurgården invigs",
+    "wikipediaSlug": "Cirkus_(byggnad)",
+    "year": 1892
+  },
+  {
+    "fact": "Furuviksparken öppnar utanför Gävle.",
+    "image": "Furuviksparken.JPG",
+    "pageViews": 180000,
+    "qid": "Q10500251",
+    "subtitle": "Svensk djur- och nöjespark",
+    "title": "Furuvik öppnar",
+    "wikipediaSlug": "Furuviksparken",
+    "year": 1900
   },
   {
     "fact": "Stockholms stadion invigs.",
@@ -160,16 +300,6 @@
     "year": 1912
   },
   {
-    "fact": "Råsunda fotbollsstadion invigs.",
-    "image": "Råsunda_February_2013_01.jpg",
-    "pageViews": 180000,
-    "qid": "Q725623",
-    "subtitle": "Svensk fotbollsarena",
-    "title": "Råsunda invigs",
-    "wikipediaSlug": "R%C3%A5sunda_fotbollsstadion",
-    "year": 1937
-  },
-  {
     "fact": "Icehotel öppnar i Jukkasjärvi.",
     "image": "Main_hall_ICEHOTEL_Sweden.jpg",
     "pageViews": 180000,
@@ -178,6 +308,36 @@
     "title": "Icehotel öppnar",
     "wikipediaSlug": "Ishotellet_i_Jukkasj%C3%A4rvi",
     "year": 1989
+  },
+  {
+    "fact": "Malmö Arena invigs.",
+    "image": "Malmö_Arena,_augusti_2014-1.jpg",
+    "pageViews": 180000,
+    "qid": "Q853730",
+    "subtitle": "Arena i Malmö",
+    "title": "Malmö Arena invigs",
+    "wikipediaSlug": "Malm%C3%B6_Arena",
+    "year": 2008
+  },
+  {
+    "fact": "Fotografiska öppnar i Stockholm.",
+    "image": "Fotografiska_2010b.jpg",
+    "pageViews": 180000,
+    "qid": "Q1439649",
+    "subtitle": "Museum i Stockholm",
+    "title": "Fotografiska öppnar",
+    "wikipediaSlug": "Fotografiska",
+    "year": 2010
+  },
+  {
+    "fact": "Tele2 Arena invigs.",
+    "image": "Tele2_Arena_September_2014_05.jpg",
+    "pageViews": 180000,
+    "qid": "Q2701834",
+    "subtitle": "Arena i Stockholm",
+    "title": "Tele2 Arena invigs",
+    "wikipediaSlug": "3Arena",
+    "year": 2013
   },
   {
     "qid": "Q28924",

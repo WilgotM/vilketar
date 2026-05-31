@@ -60,6 +60,26 @@
     "year": 1976
   },
   {
+    "fact": "Henrik Larsson gör mål för Sverige i fotbolls-VM.",
+    "image": "Henrik_Larsson_in_Jan_2014.jpg",
+    "pageViews": 300000,
+    "qid": "Q179334",
+    "subtitle": "Svensk fotbollsspelare",
+    "title": "Henrik Larsson gör VM-mål",
+    "wikipediaSlug": "Henrik_Larsson",
+    "year": 1994
+  },
+  {
+    "fact": "Peter Forsberg gör den klassiska straffen i OS-finalen.",
+    "image": "Peter_Forsberg_2016-03-17_001_(cropped).jpg",
+    "pageViews": 300000,
+    "qid": "Q348416",
+    "subtitle": "Svensk ishockeyspelare",
+    "title": "Peter Forsberg avgör OS-finalen",
+    "wikipediaSlug": "Peter_Forsberg",
+    "year": 1994
+  },
+  {
     "fact": "Armand Duplantis sätter världsrekord i stavhopp.",
     "image": "Armand_Duplantis_after_his_6.0_m_jump-1.jpg",
     "pageViews": 300000,
@@ -68,6 +88,16 @@
     "title": "Duplantis sätter världsrekord",
     "wikipediaSlug": "Armand_Duplantis",
     "year": 2020
+  },
+  {
+    "fact": "Ingemar Johansson blir världsmästare i tungvikt.",
+    "image": "Ingemar_Johansson_1960.jpg",
+    "pageViews": 260000,
+    "qid": "Q335872",
+    "subtitle": "Svensk boxare",
+    "title": "Ingemar Johansson blir världsmästare",
+    "wikipediaSlug": "Ingemar_Johansson",
+    "year": 1959
   },
   {
     "fact": "Ingemar Stenmark vinner OS-guld.",
@@ -80,6 +110,16 @@
     "year": 1980
   },
   {
+    "fact": "Gunde Svan tar OS-guld i Sarajevo.",
+    "image": "20190225_Seefeld_3347_Gunde_Svan.jpg",
+    "pageViews": 260000,
+    "qid": "Q357142",
+    "subtitle": "Svensk längdskidåkare",
+    "title": "Gunde Svan tar OS-guld",
+    "wikipediaSlug": "Gunde_Svan",
+    "year": 1984
+  },
+  {
     "fact": "Globen invigs i Stockholm.",
     "image": "Globen_från_Hammarbybacken,_2016a.jpg",
     "pageViews": 260000,
@@ -90,22 +130,82 @@
     "year": 1989
   },
   {
-    "fact": "Peter Forsberg avgör OS-finalen på straff.",
-    "image": "Peter_Forsberg_2016-03-17_001_(cropped).jpg",
+    "fact": "Mats Sundin väljs först i NHL-draften.",
+    "image": "Mats_Sundin_in_feb_2015.jpg",
     "pageViews": 260000,
-    "qid": "Q348416",
+    "qid": "Q368528",
     "subtitle": "Svensk ishockeyspelare",
-    "title": "Peter Forsberg avgör OS-finalen",
-    "wikipediaSlug": "Peter_Forsberg",
+    "title": "Mats Sundin blir NHL-etta",
+    "wikipediaSlug": "Mats_Sundin",
+    "year": 1989
+  },
+  {
+    "fact": "J-O Waldner tar OS-guld i Barcelona.",
+    "image": "Jan-Ove_Waldner.JPG",
+    "pageViews": 260000,
+    "qid": "Q345360",
+    "subtitle": "Svensk bordtennisspelare",
+    "title": "J-O Waldner tar OS-guld",
+    "wikipediaSlug": "Jan-Ove_Waldner",
+    "year": 1992
+  },
+  {
+    "fact": "Tomas Brolin blir en av Sveriges stora profiler under fotbolls-VM.",
+    "image": "Tomas_Brolin.jpg",
+    "pageViews": 260000,
+    "qid": "Q361435",
+    "subtitle": "Svensk fotbollsspelare",
+    "title": "Tomas Brolin gör mål i VM",
+    "wikipediaSlug": "Tomas_Brolin",
     "year": 1994
   },
   {
-    "fact": "Charlotte Kalla vinner OS-guld.",
+    "fact": "Tomas Ravelli räddar straff i VM-kvartsfinalen mot Rumänien.",
+    "image": "Thomas_Ravelli_in_January_2014.jpg",
+    "pageViews": 260000,
+    "qid": "Q313710",
+    "subtitle": "Svensk fotbollsmålvakt",
+    "title": "Tomas Ravelli räddar straff",
+    "wikipediaSlug": "Thomas_Ravelli",
+    "year": 1994
+  },
+  {
+    "fact": "Annika Sörenstam får sitt internationella genombrott.",
+    "image": "AnnikaStAndrews.JPG",
+    "pageViews": 260000,
+    "qid": "Q232711",
+    "subtitle": "Svensk golfspelare",
+    "title": "Annika Sörenstam blir världsstjärna",
+    "wikipediaSlug": "Annika_S%C3%B6renstam",
+    "year": 1995
+  },
+  {
+    "fact": "Nicklas Lidström vinner sin första Stanley Cup.",
+    "image": "Nicklas_Lidström_in_2022.jpg",
+    "pageViews": 260000,
+    "qid": "Q434200",
+    "subtitle": "Svensk ishockeyspelare",
+    "title": "Nicklas Lidström vinner Stanley Cup",
+    "wikipediaSlug": "Nicklas_Lidstr%C3%B6m",
+    "year": 1997
+  },
+  {
+    "fact": "Anja Pärson tar OS-guld i slalom.",
+    "image": "Anja_Pärson_Semmering_2008.jpg",
+    "pageViews": 260000,
+    "qid": "Q1933",
+    "subtitle": "Svensk alpin skidåkare",
+    "title": "Anja Pärson tar OS-guld",
+    "wikipediaSlug": "Anja_P%C3%A4rson",
+    "year": 2006
+  },
+  {
+    "fact": "Charlotte Kalla tar OS-guld i Vancouver.",
     "image": "20190228_FIS_NWSC_Seefeld_Medal_Ceremony_Team_Sweden_850_5868_Charlotte_Kalla.jpg",
     "pageViews": 260000,
     "qid": "Q233270",
     "subtitle": "Svensk längdskidåkare",
-    "title": "Charlotte Kalla vinner OS-guld",
+    "title": "Charlotte Kalla tar OS-guld",
     "wikipediaSlug": "Charlotte_Kalla",
     "year": 2010
   },
@@ -150,24 +250,54 @@
     "year": 2003
   },
   {
-    "fact": "Ullevi invigs i Göteborg.",
+    "fact": "Råsunda fotbollsstadion invigs i Solna.",
+    "image": "Råsunda_February_2013_01.jpg",
+    "pageViews": 220000,
+    "qid": "Q725623",
+    "subtitle": "Svensk fotbollsarena",
+    "title": "Råsunda invigs",
+    "wikipediaSlug": "R%C3%A5sunda_fotbollsstadion",
+    "year": 1937
+  },
+  {
+    "fact": "Sixten Jernberg tar OS-guld i Cortina d'Ampezzo.",
+    "image": "Sixten_Jernberg,_Innsbruck_1964.jpg",
+    "pageViews": 220000,
+    "qid": "Q314683",
+    "subtitle": "Svensk längdskidåkare",
+    "title": "Sixten Jernberg tar OS-guld",
+    "wikipediaSlug": "Sixten_Jernberg",
+    "year": 1956
+  },
+  {
+    "fact": "Ullevi invigs inför fotbolls-VM.",
     "image": "Nya_Ullevi_2013-07-06_001.jpg",
     "pageViews": 220000,
     "qid": "Q824352",
-    "subtitle": "Svensk arena",
+    "subtitle": "Arena i Göteborg",
     "title": "Ullevi invigs",
     "wikipediaSlug": "Ullevi",
     "year": 1958
   },
   {
-    "fact": "Ingemar Johansson blir världsmästare i tungviktsboxning.",
-    "image": "Ingemar_Johansson_1960.jpg",
+    "fact": "Nils Liedholm gör mål i VM-finalen på Råsunda.",
+    "image": "Nils_Liedholm-1959.jpg",
     "pageViews": 220000,
-    "qid": "Q335872",
-    "subtitle": "Svensk boxare",
-    "title": "Ingemar Johansson blir världsmästare",
-    "wikipediaSlug": "Ingemar_Johansson",
-    "year": 1959
+    "qid": "Q312633",
+    "subtitle": "Svensk fotbollsspelare",
+    "title": "Nils Liedholm spelar VM-final",
+    "wikipediaSlug": "Nils_Liedholm",
+    "year": 1958
+  },
+  {
+    "fact": "Kurt Hamrin gör ett klassiskt mål i VM-semifinalen mot Västtyskland.",
+    "image": "Kurt_Hamrin_(1970).jpg",
+    "pageViews": 220000,
+    "qid": "Q363766",
+    "subtitle": "Svensk fotbollsspelare",
+    "title": "Kurt Hamrin gör VM-semifinalmål",
+    "wikipediaSlug": "Kurt_Hamrin",
+    "year": 1958
   },
   {
     "fact": "Börje Salming debuterar i NHL.",
@@ -180,53 +310,63 @@
     "year": 1973
   },
   {
-    "fact": "Gunde Svan vinner OS-guld.",
-    "image": "20190225_Seefeld_3347_Gunde_Svan.jpg",
+    "fact": "Thomas Wassberg vinner femmilen vid OS i Lake Placid.",
+    "image": "Thomas_Wassberg_2013-12-11_001.jpg",
     "pageViews": 220000,
-    "qid": "Q357142",
+    "qid": "Q195578",
     "subtitle": "Svensk längdskidåkare",
-    "title": "Gunde Svan vinner OS-guld",
-    "wikipediaSlug": "Gunde_Svan",
+    "title": "Thomas Wassberg vinner OS-guld",
+    "wikipediaSlug": "Thomas_Wassberg",
+    "year": 1980
+  },
+  {
+    "fact": "Pia Sundhage vinner EM med Sveriges damlandslag.",
+    "image": "Pia_Sundhage_2012-12-05_001.jpg",
+    "pageViews": 220000,
+    "qid": "Q434362",
+    "subtitle": "Svensk fotbollsspelare",
+    "title": "Pia Sundhage blir landslagsikon",
+    "wikipediaSlug": "Pia_Sundhage",
     "year": 1984
   },
   {
-    "fact": "Mats Sundin blir första europé att väljas först i NHL-draften.",
-    "image": "Mats_Sundin_in_feb_2015.jpg",
+    "fact": "Ludmila Engquist tar OS-guld på 100 meter häck.",
+    "image": "",
     "pageViews": 220000,
-    "qid": "Q368528",
-    "subtitle": "Svensk ishockeyspelare",
-    "title": "Mats Sundin blir draftad först",
-    "wikipediaSlug": "Mats_Sundin",
-    "year": 1989
+    "qid": "Q240424",
+    "subtitle": "Svensk häcklöpare",
+    "title": "Ludmila Engquist tar OS-guld",
+    "wikipediaSlug": "Ludmila_Engquist",
+    "year": 1996
   },
   {
-    "fact": "Jan-Ove Waldner vinner OS-guld i bordtennis.",
-    "image": "Jan-Ove_Waldner.JPG",
+    "fact": "Therese Alshammar tar OS-medaljer i Sydney.",
+    "image": "Therese_Alshammar_2013-01-08_001_(cropped).jpg",
     "pageViews": 220000,
-    "qid": "Q345360",
-    "subtitle": "Svensk bordtennisspelare",
-    "title": "Jan-Ove Waldner vinner OS-guld",
-    "wikipediaSlug": "Jan-Ove_Waldner",
-    "year": 1992
+    "qid": "Q272910",
+    "subtitle": "Svensk simmare",
+    "title": "Therese Alshammar blir världsstjärna",
+    "wikipediaSlug": "Therese_Alshammar",
+    "year": 2000
   },
   {
-    "fact": "Annika Sörenstam vinner US Open.",
-    "image": "AnnikaStAndrews.JPG",
-    "pageViews": 220000,
-    "qid": "Q232711",
-    "subtitle": "Svensk golfspelare",
-    "title": "Annika Sörenstam vinner US Open",
-    "wikipediaSlug": "Annika_S%C3%B6renstam",
-    "year": 1995
-  },
-  {
-    "fact": "Stefan Holm vinner OS-guld.",
+    "fact": "Stefan Holm tar OS-guld i höjdhopp.",
     "image": "Stefan_Holm_2013.jpg",
     "pageViews": 220000,
     "qid": "Q311360",
     "subtitle": "Svensk höjdhoppare",
-    "title": "Stefan Holm vinner OS-guld",
+    "title": "Stefan Holm tar OS-guld",
     "wikipediaSlug": "Stefan_Holm",
+    "year": 2004
+  },
+  {
+    "fact": "Christian Olsson tar OS-guld i tresteg.",
+    "image": "Disambig_grey.svg",
+    "pageViews": 220000,
+    "qid": "Q10451548",
+    "subtitle": "Svensk trestegshoppare",
+    "title": "Christian Olsson tar OS-guld",
+    "wikipediaSlug": "Christian_Olsson",
     "year": 2004
   },
   {
@@ -240,21 +380,41 @@
     "year": 2004
   },
   {
-    "fact": "Anja Pärson vinner OS-guld.",
-    "image": "Anja_Pärson_Semmering_2008.jpg",
+    "fact": "Kajsa Bergqvist vinner VM-guld i höjdhopp.",
+    "image": "Kajsa_Bergqvist,_Unicef-ambassadörer..jpg",
     "pageViews": 220000,
-    "qid": "Q1933",
-    "subtitle": "Svensk alpin skidåkare",
-    "title": "Anja Pärson vinner OS-guld",
-    "wikipediaSlug": "Anja_P%C3%A4rson",
+    "qid": "Q231965",
+    "subtitle": "Svensk höjdhoppare",
+    "title": "Kajsa Bergqvist blir världsmästare",
+    "wikipediaSlug": "Kajsa_Bergqvist",
+    "year": 2005
+  },
+  {
+    "fact": "Lotta Schelin blir en av Sveriges stora landslagsprofiler.",
+    "image": "Lotta_Schelin_2012-11-12.jpg",
+    "pageViews": 220000,
+    "qid": "Q267563",
+    "subtitle": "Svensk fotbollsspelare",
+    "title": "Lotta Schelin blir landslagsstjärna",
+    "wikipediaSlug": "Lotta_Schelin",
     "year": 2006
   },
   {
-    "fact": "Friends Arena invigs.",
+    "fact": "Kosovare Asllani debuterar i svenska landslaget.",
+    "image": "Kosovare_Asllani_2021.jpg",
+    "pageViews": 220000,
+    "qid": "Q458155",
+    "subtitle": "Svensk fotbollsspelare",
+    "title": "Kosovare Asllani landslagsdebuterar",
+    "wikipediaSlug": "Kosovare_Asllani",
+    "year": 2008
+  },
+  {
+    "fact": "Friends Arena invigs i Solna.",
     "image": "Strawberry_Arena.jpg",
     "pageViews": 220000,
     "qid": "Q1138684",
-    "subtitle": "Svensk fotbollsarena",
+    "subtitle": "Svensk nationalarena",
     "title": "Friends Arena invigs",
     "wikipediaSlug": "Strawberry_Arena",
     "year": 2012
@@ -270,14 +430,34 @@
     "year": 2016
   },
   {
-    "fact": "Thomas Wassberg vinner OS-guld.",
-    "image": "Thomas_Wassberg_2013-12-11_001.jpg",
-    "pageViews": 200000,
-    "qid": "Q195578",
+    "fact": "Stina Nilsson tar OS-guld i sprint.",
+    "image": "Nilsson_S._–_Biathlon_2023_Nove_Mesto_444X.jpg",
+    "pageViews": 220000,
+    "qid": "Q2977362",
     "subtitle": "Svensk längdskidåkare",
-    "title": "Thomas Wassberg vinner OS-guld",
-    "wikipediaSlug": "Thomas_Wassberg",
-    "year": 1980
+    "title": "Stina Nilsson tar OS-guld",
+    "wikipediaSlug": "Stina_Nilsson",
+    "year": 2018
+  },
+  {
+    "fact": "Ebba Andersson vinner VM-guld i skiathlon.",
+    "image": "20190228_FIS_NWSC_Seefeld_Medal_Ceremony_Team_Sweden_850_5895_Ebba_Andersson.jpg",
+    "pageViews": 220000,
+    "qid": "Q19516340",
+    "subtitle": "Svensk längdskidåkare",
+    "title": "Ebba Andersson blir världsmästare",
+    "wikipediaSlug": "Ebba_Andersson",
+    "year": 2023
+  },
+  {
+    "fact": "Gert Fredriksson tar OS-guld i London.",
+    "image": "Gert_fredriksson.jpg",
+    "pageViews": 200000,
+    "qid": "Q360653",
+    "subtitle": "Svensk kanotist",
+    "title": "Gert Fredriksson tar OS-guld",
+    "wikipediaSlug": "Gert_Fredriksson",
+    "year": 1948
   },
   {
     "fact": "Pernilla Wiberg vinner OS-guld.",
@@ -290,6 +470,16 @@
     "year": 1992
   },
   {
+    "fact": "Cirkus på Djurgården invigs.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "manual-Cirkus_(byggnad)",
+    "subtitle": "Nöjesarena i Stockholm",
+    "title": "Cirkus på Djurgården invigs",
+    "wikipediaSlug": "Cirkus_(byggnad)",
+    "year": 1892
+  },
+  {
     "fact": "Stockholms stadion invigs.",
     "image": "Stockholm_Stadion_aerial.jpg",
     "pageViews": 180000,
@@ -300,23 +490,33 @@
     "year": 1912
   },
   {
-    "fact": "Råsunda fotbollsstadion invigs.",
-    "image": "Råsunda_February_2013_01.jpg",
+    "fact": "Malmö Arena invigs.",
+    "image": "Malmö_Arena,_augusti_2014-1.jpg",
     "pageViews": 180000,
-    "qid": "Q725623",
-    "subtitle": "Svensk fotbollsarena",
-    "title": "Råsunda invigs",
-    "wikipediaSlug": "R%C3%A5sunda_fotbollsstadion",
-    "year": 1937
+    "qid": "Q853730",
+    "subtitle": "Arena i Malmö",
+    "title": "Malmö Arena invigs",
+    "wikipediaSlug": "Malm%C3%B6_Arena",
+    "year": 2008
   },
   {
-    "fact": "Therese Alshammar tar VM-guld.",
-    "image": "Therese_Alshammar_2013-01-08_001_(cropped).jpg",
+    "fact": "Tele2 Arena invigs.",
+    "image": "Tele2_Arena_September_2014_05.jpg",
     "pageViews": 180000,
-    "qid": "Q272910",
-    "subtitle": "Svensk simmare",
-    "title": "Therese Alshammar tar VM-guld",
-    "wikipediaSlug": "Therese_Alshammar",
-    "year": 1999
+    "qid": "Q2701834",
+    "subtitle": "Arena i Stockholm",
+    "title": "Tele2 Arena invigs",
+    "wikipediaSlug": "3Arena",
+    "year": 2013
+  },
+  {
+    "fact": "André Myhrer tar OS-guld i slalom.",
+    "image": "FIS_Alpine_Skiing_World_Cup_in_Stockholm_2019_Andre_Myhrer_17.jpg",
+    "pageViews": 180000,
+    "qid": "Q142993",
+    "subtitle": "Svensk alpin skidåkare",
+    "title": "André Myhrer tar OS-guld",
+    "wikipediaSlug": "Andr%C3%A9_Myhrer",
+    "year": 2018
   }
 ]

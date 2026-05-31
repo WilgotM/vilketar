@@ -3,11 +3,28 @@ import { media } from "./foundation";
 import { vars } from "./theme.css";
 import { bodyTextMuted, sectionLabel } from "./ui.css";
 
+const glassSurface = {
+  background: `linear-gradient(145deg, color-mix(in srgb, ${vars.color.backdropStrong} 60%, transparent), color-mix(in srgb, ${vars.color.backdrop} 40%, transparent))`,
+  backdropFilter: "blur(2rem) saturate(1.2)",
+  WebkitBackdropFilter: "blur(2rem) saturate(1.2)",
+  border: `1px solid color-mix(in srgb, ${vars.color.text} 10%, transparent)`,
+  boxShadow:
+    "0 1.25rem 3.5rem rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08)",
+};
+
+const glassControl = {
+  background: `color-mix(in srgb, ${vars.color.text} 6%, transparent)`,
+  backdropFilter: "blur(1.25rem) saturate(1.16)",
+  WebkitBackdropFilter: "blur(1.25rem) saturate(1.16)",
+  border: `1px solid color-mix(in srgb, ${vars.color.text} 10%, transparent)`,
+  boxShadow: "inset 0 1px 0 rgba(255, 255, 255, 0.06)",
+};
+
 export const screen = style({
   display: "flex",
   flexDirection: "column",
   margin: "0 auto",
-  maxWidth: "46rem",
+  maxWidth: "52rem",
   overflowX: "hidden",
   width: "100%",
   paddingBottom: vars.space["4xl"],
@@ -15,12 +32,12 @@ export const screen = style({
 
 export const hero = style({
   display: "grid",
-  gap: vars.space.xs,
-  padding: `${vars.space.xl} ${vars.space.xl} ${vars.space.md}`,
+  gap: vars.space.sm,
+  padding: `${vars.space["2xl"]} ${vars.space.xl} ${vars.space.xl}`,
   textAlign: "center",
   "@media": {
     [media.narrow]: {
-      padding: `${vars.space.lg} ${vars.space.md} ${vars.space.md}`,
+      padding: `${vars.space.xl} ${vars.space.md} ${vars.space.lg}`,
     },
   },
 });
@@ -63,8 +80,7 @@ export const intro = style([
 ]);
 
 export const panel = style({
-  background: vars.color.surfaceStrong,
-  border: `1px solid ${vars.color.border}`,
+  ...glassSurface,
   borderRadius: vars.radius.md,
   alignSelf: "center",
   display: "grid",
@@ -98,8 +114,7 @@ export const formGrid = style({
 });
 
 export const input = style({
-  background: vars.color.backdrop,
-  border: `1px solid ${vars.color.border}`,
+  ...glassControl,
   borderRadius: vars.radius.sm,
   color: vars.color.text,
   fontSize: vars.fontSize.base,
@@ -109,7 +124,8 @@ export const input = style({
   width: "100%",
   selectors: {
     "&:focus": {
-      borderColor: vars.color.accentLogo,
+      borderColor: `color-mix(in srgb, ${vars.color.accentLogo} 70%, ${vars.color.text})`,
+      boxShadow: `${vars.shadow.focus}, inset 0 1px 0 rgba(255, 255, 255, 0.14)`,
     },
     "&::placeholder": {
       color: vars.color.textSubtle,
@@ -133,8 +149,10 @@ export const helperText = style([
 
 export const profileCard = style({
   alignSelf: "center",
-  background: `linear-gradient(135deg, color-mix(in srgb, ${vars.color.text} 8%, transparent), color-mix(in srgb, ${vars.color.accentLogo} 12%, transparent)), ${vars.color.surfaceStrong}`,
-  border: `1px solid ${vars.color.border}`,
+  ...glassSurface,
+  background: `linear-gradient(135deg, color-mix(in srgb, ${vars.color.text} 10%, transparent), color-mix(in srgb, ${vars.color.text} 4%, transparent))`,
+  borderColor: `color-mix(in srgb, ${vars.color.text} 20%, transparent)`,
+  boxShadow: `0 1.5rem 4rem rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.25)`,
   borderRadius: vars.radius.md,
   display: "grid",
   gap: vars.space.lg,
@@ -191,8 +209,8 @@ export const profileEditor = style({
 export const avatarPreview = style({
   alignItems: "center",
   aspectRatio: "1",
-  background: vars.color.backdrop,
-  border: `1px solid ${vars.color.borderStrong}`,
+  ...glassControl,
+  border: `1px solid color-mix(in srgb, ${vars.color.text} 18%, transparent)`,
   borderRadius: "50%",
   color: vars.color.textMuted,
   display: "flex",
@@ -222,8 +240,7 @@ export const avatarImage = style({
 export const avatarPicker = style({
   alignItems: "center",
   appearance: "none",
-  background: vars.color.backdrop,
-  border: `1px solid ${vars.color.border}`,
+  ...glassControl,
   borderRadius: vars.radius.sm,
   color: vars.color.text,
   cursor: "pointer",
@@ -283,8 +300,10 @@ export const tabMenuSingle = style({
 export const accountNudge = style({
   alignItems: "center",
   alignSelf: "center",
-  background: `linear-gradient(135deg, color-mix(in srgb, ${vars.color.text} 12%, transparent), color-mix(in srgb, ${vars.color.accentLogo} 16%, transparent)), ${vars.color.surfaceStrong}`,
-  border: `1px solid ${vars.color.borderStrong}`,
+  ...glassSurface,
+  background: `linear-gradient(135deg, color-mix(in srgb, ${vars.color.text} 12%, transparent), color-mix(in srgb, ${vars.color.text} 4%, transparent))`,
+  borderColor: `color-mix(in srgb, ${vars.color.text} 22%, transparent)`,
+  boxShadow: `0 1.5rem 4rem rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.25)`,
   borderRadius: vars.radius.md,
   display: "grid",
   gap: vars.space.md,
@@ -303,13 +322,14 @@ export const accountNudge = style({
 });
 
 export const accountNudgeLabel = style({
-  color: vars.color.accentLogo,
+  color: vars.color.text,
   fontSize: vars.fontSize.xs,
   fontWeight: vars.fontWeight.bold,
-  letterSpacing: "0.08em",
+  letterSpacing: "0.15em",
   lineHeight: vars.lineHeight.tight,
   marginBottom: vars.space.xxs,
   textTransform: "uppercase",
+  opacity: 0.8,
 });
 
 export const accountNudgeTitle = style({
@@ -322,7 +342,7 @@ export const accountNudgeTitle = style({
 
 export const accountNudgeButton = style({
   appearance: "none",
-  background: vars.color.text,
+  background: `linear-gradient(135deg, ${vars.color.text} 0%, color-mix(in srgb, ${vars.color.text} 80%, transparent) 100%)`,
   border: 0,
   borderRadius: vars.radius.sm,
   color: vars.color.backdropStrong,
@@ -332,6 +352,18 @@ export const accountNudgeButton = style({
   fontWeight: vars.fontWeight.bold,
   minHeight: vars.size.controlHeight,
   padding: `${vars.space.md} ${vars.space.lg}`,
+  boxShadow:
+    "0 4px 12px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.3)",
+  transition: `transform ${vars.duration.fast} ${vars.easing.standard}, filter ${vars.duration.fast} ${vars.easing.standard}`,
+  selectors: {
+    "&:hover": {
+      transform: "translateY(-1px)",
+      filter: "brightness(1.1)",
+    },
+    "&:active": {
+      transform: "translateY(1px)",
+    },
+  },
 });
 
 export const deviceLink = style({
@@ -344,7 +376,7 @@ export const deviceLink = style({
 
 export const leagueList = style({
   display: "grid",
-  gap: vars.space.xl,
+  gap: vars.space.lg,
   padding: `0 ${vars.space.xl}`,
   "@media": {
     [media.narrow]: {
@@ -354,13 +386,20 @@ export const leagueList = style({
 });
 
 export const leagueCard = style({
-  background: vars.color.surfaceStrong,
-  border: `1px solid ${vars.color.border}`,
+  ...glassSurface,
   borderRadius: vars.radius.md,
   display: "flex",
   flexDirection: "column",
   overflow: "hidden",
-  boxShadow: "0 18px 48px rgb(15 23 42 / 0.08)",
+  transition: `border-color ${vars.duration.fast} ${vars.easing.standard}, transform ${vars.duration.fast} ${vars.easing.standard}, box-shadow ${vars.duration.fast} ${vars.easing.standard}`,
+  selectors: {
+    "&:hover": {
+      borderColor: `color-mix(in srgb, ${vars.color.text} 20%, transparent)`,
+      boxShadow:
+        "0 1.55rem 4rem rgba(0, 0, 0, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.18)",
+      transform: "translateY(-0.0625rem)",
+    },
+  },
 });
 
 export const leagueHeader = style({
@@ -407,7 +446,7 @@ export const codeActions = style({
 
 export const codeBox = style({
   alignItems: "center",
-  background: vars.color.backdrop,
+  ...glassControl,
   borderRadius: vars.radius.md,
   color: vars.color.text,
   display: "inline-flex",
@@ -416,13 +455,12 @@ export const codeBox = style({
   fontWeight: vars.fontWeight.bold,
   justifyContent: "center",
   padding: `${vars.space.xxs} ${vars.space.sm}`,
-  border: `1px solid ${vars.color.border}`,
+  letterSpacing: "0.08em",
 });
 
 export const smallAction = style({
   appearance: "none",
-  background: vars.color.backdrop,
-  border: `1px solid ${vars.color.border}`,
+  ...glassControl,
   borderRadius: vars.radius.sm,
   color: vars.color.text,
   cursor: "pointer",
@@ -432,6 +470,10 @@ export const smallAction = style({
   minHeight: "2rem",
   padding: `${vars.space.xxs} ${vars.space.sm}`,
   selectors: {
+    "&:hover": {
+      background: `color-mix(in srgb, ${vars.color.text} 11%, transparent)`,
+      borderColor: `color-mix(in srgb, ${vars.color.text} 18%, transparent)`,
+    },
     "&:disabled": {
       cursor: "wait",
       opacity: 0.62,
@@ -445,7 +487,8 @@ export const copyAction = style({
 
 export const manageBar = style({
   alignItems: "center",
-  borderTop: `1px solid ${vars.color.border}`,
+  background: `linear-gradient(90deg, transparent, color-mix(in srgb, ${vars.color.text} 4%, transparent), transparent)`,
+  borderTop: `1px solid color-mix(in srgb, ${vars.color.text} 9%, transparent)`,
   display: "flex",
   gap: vars.space.sm,
   padding: `${vars.space.sm} ${vars.space.xl}`,
@@ -492,8 +535,7 @@ export const compactInput = style([
 ]);
 
 export const savedAccountBox = style({
-  background: vars.color.backdrop,
-  border: `1px solid ${vars.color.border}`,
+  ...glassControl,
   borderRadius: vars.radius.sm,
   color: vars.color.text,
   fontSize: vars.fontSize.base,
@@ -503,7 +545,7 @@ export const savedAccountBox = style({
 });
 
 export const dangerZone = style({
-  borderTop: `1px solid ${vars.color.border}`,
+  borderTop: `1px solid color-mix(in srgb, ${vars.color.text} 10%, transparent)`,
   display: "grid",
   gap: vars.space.md,
   marginTop: vars.space.sm,
@@ -520,7 +562,7 @@ export const dangerTitle = style({
 
 export const dangerButton = style({
   appearance: "none",
-  background: vars.color.dangerSoft,
+  background: `linear-gradient(145deg, ${vars.color.dangerSoft}, color-mix(in srgb, ${vars.color.dangerSoft} 70%, transparent))`,
   border: `1px solid ${vars.color.danger}`,
   borderRadius: vars.radius.sm,
   color: vars.color.danger,
@@ -546,8 +588,7 @@ export const deviceList = style({
 
 export const deviceRow = style({
   alignItems: "center",
-  background: vars.color.backdrop,
-  border: `1px solid ${vars.color.border}`,
+  ...glassControl,
   borderRadius: vars.radius.sm,
   display: "grid",
   gap: vars.space.md,
@@ -566,29 +607,30 @@ export const deviceName = style({
 });
 
 export const notice = style({
-  background: vars.color.accentSoft,
+  background: `linear-gradient(145deg, color-mix(in srgb, ${vars.color.text} 5%, transparent), color-mix(in srgb, ${vars.color.text} 1%, transparent))`,
   color: vars.color.textMuted,
   fontSize: vars.fontSize.xs,
   lineHeight: vars.lineHeight.body,
   padding: vars.space.md,
   margin: `${vars.space.md} ${vars.space.xl} 0`,
   borderRadius: vars.radius.sm,
-  border: `1px solid ${vars.color.accentTint}`,
+  border: `1px solid color-mix(in srgb, ${vars.color.text} 8%, transparent)`,
 });
 
 export const winner = style({
   padding: vars.space.md,
   textAlign: "center",
-  borderBottom: `1px solid ${vars.color.border}`,
-  background: vars.color.accentTint,
+  borderBottom: `1px solid color-mix(in srgb, ${vars.color.text} 10%, transparent)`,
+  background: `linear-gradient(135deg, color-mix(in srgb, ${vars.color.text} 8%, transparent) 0%, color-mix(in srgb, ${vars.color.text} 2%, transparent) 100%)`,
 });
 
 export const winnerLabel = style({
-  color: vars.color.accentLogo,
+  color: vars.color.text,
   fontSize: vars.fontSize.xs,
   fontWeight: vars.fontWeight.bold,
   textTransform: "uppercase",
-  letterSpacing: "0.05em",
+  letterSpacing: "0.15em",
+  opacity: 0.8,
 });
 
 export const winnerName = style({
@@ -613,7 +655,8 @@ export const memberListHeader = style({
   fontWeight: vars.fontWeight.bold,
   textTransform: "uppercase",
   letterSpacing: "0.05em",
-  borderBottom: `1px solid ${vars.color.border}`,
+  background: `color-mix(in srgb, ${vars.color.text} 4%, transparent)`,
+  borderBottom: `1px solid color-mix(in srgb, ${vars.color.text} 9%, transparent)`,
 });
 
 export const memberRow = style({
@@ -622,7 +665,7 @@ export const memberRow = style({
   gridTemplateColumns: "2rem minmax(0, 1fr) minmax(4.5rem, auto)",
   gap: vars.space.sm,
   padding: `${vars.space.md} ${vars.space.xl}`,
-  borderBottom: `1px solid ${vars.color.border}`,
+  borderBottom: `1px solid color-mix(in srgb, ${vars.color.text} 8%, transparent)`,
   minHeight: "4rem",
   color: vars.color.text,
   fontSize: vars.fontSize.base,
@@ -632,6 +675,9 @@ export const memberRow = style({
     },
   },
   selectors: {
+    "&:hover": {
+      background: `color-mix(in srgb, ${vars.color.text} 4%, transparent)`,
+    },
     "&:last-child": {
       borderBottom: "none",
     },
@@ -662,8 +708,7 @@ export const memberName = style({
 export const memberAvatar = style({
   alignItems: "center",
   aspectRatio: "1",
-  background: vars.color.backdrop,
-  border: `1px solid ${vars.color.border}`,
+  ...glassControl,
   borderRadius: "50%",
   color: vars.color.textMuted,
   display: "inline-flex",
@@ -676,13 +721,14 @@ export const memberAvatar = style({
 });
 
 export const youBadge = style({
-  background: vars.color.accentSoft,
+  background: `linear-gradient(135deg, ${vars.color.text} 0%, color-mix(in srgb, ${vars.color.text} 80%, transparent) 100%)`,
   borderRadius: vars.radius.sm,
   padding: "2px 6px",
   fontSize: "0.6rem",
   fontWeight: vars.fontWeight.bold,
   textTransform: "uppercase",
-  color: vars.color.accentLogo,
+  color: vars.color.backdropStrong,
+  boxShadow: "0 2px 6px rgba(0, 0, 0, 0.2)",
 });
 
 export const today = style({
@@ -724,6 +770,8 @@ export const kickButton = style({
 export const empty = style([
   bodyTextMuted,
   {
+    ...glassSurface,
+    borderRadius: vars.radius.md,
     fontSize: vars.fontSize.base,
     textAlign: "center",
     padding: vars.space["2xl"],
@@ -732,7 +780,9 @@ export const empty = style([
 
 export const error = style({
   alignSelf: "center",
-  background: vars.color.dangerSoft,
+  background: `linear-gradient(145deg, ${vars.color.dangerSoft}, color-mix(in srgb, ${vars.color.dangerSoft} 65%, transparent))`,
+  backdropFilter: "blur(1.25rem)",
+  WebkitBackdropFilter: "blur(1.25rem)",
   border: `1px solid ${vars.color.danger}`,
   borderRadius: vars.radius.md,
   color: vars.color.text,
@@ -751,8 +801,8 @@ export const error = style({
 export const status = style([
   error,
   {
-    background: vars.color.accentSoft,
-    borderColor: vars.color.accentTint,
+    background: `linear-gradient(145deg, color-mix(in srgb, ${vars.color.text} 8%, transparent), color-mix(in srgb, ${vars.color.text} 3%, transparent))`,
+    borderColor: `color-mix(in srgb, ${vars.color.text} 15%, transparent)`,
     color: vars.color.text,
   },
 ]);
@@ -776,8 +826,7 @@ export const quickActions = style({
 
 export const actionCard = style({
   appearance: "none",
-  background: vars.color.surfaceStrong,
-  border: `1px solid ${vars.color.border}`,
+  ...glassSurface,
   borderRadius: vars.radius.md,
   cursor: "pointer",
   display: "flex",
@@ -790,11 +839,17 @@ export const actionCard = style({
   fontFamily: vars.font.body,
   fontSize: vars.fontSize.xs,
   fontWeight: vars.fontWeight.semibold,
-  transition: "all 0.15s ease",
+  boxShadow:
+    "0 0.75rem 2rem rgba(0, 0, 0, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.14)",
+  minHeight: "6rem",
+  transition: `border-color ${vars.duration.fast} ${vars.easing.standard}, background ${vars.duration.fast} ${vars.easing.standard}, transform ${vars.duration.fast} ${vars.easing.standard}, box-shadow ${vars.duration.fast} ${vars.easing.standard}`,
   selectors: {
     "&:hover": {
-      background: vars.color.backdropStrong,
-      borderColor: vars.color.borderStrong,
+      background: `linear-gradient(145deg, color-mix(in srgb, ${vars.color.text} 14%, transparent), color-mix(in srgb, ${vars.color.text} 6%, transparent))`,
+      borderColor: `color-mix(in srgb, ${vars.color.text} 25%, transparent)`,
+      boxShadow:
+        "0 1rem 2.4rem rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.20)",
+      transform: "translateY(-0.125rem)",
     },
   },
 });
@@ -807,13 +862,72 @@ export const actionIcon = style({
   width: "2.5rem",
   height: "2.5rem",
   borderRadius: "50%",
-  background: vars.color.backdrop,
+  background: `linear-gradient(135deg, color-mix(in srgb, ${vars.color.text} 16%, transparent), color-mix(in srgb, ${vars.color.text} 4%, transparent))`,
+  border: `1px solid color-mix(in srgb, ${vars.color.text} 16%, transparent)`,
   overflow: "hidden",
+  boxShadow: "inset 0 1px 0 rgba(255, 255, 255, 0.1)",
 });
 
 export const actionAvatar = style({
   display: "block",
   height: "100%",
   objectFit: "cover",
+  width: "100%",
+});
+
+export const verifyPanel = style({
+  alignItems: "center",
+  display: "flex",
+  flexDirection: "column",
+  gap: vars.space.xl,
+  justifyContent: "center",
+  minHeight: "60vh",
+  padding: `${vars.space["4xl"]} ${vars.space.md}`,
+  textAlign: "center",
+});
+
+export const verifyIconBubble = style({
+  ...glassSurface,
+  alignItems: "center",
+  borderRadius: "50%",
+  color: vars.color.text,
+  display: "flex",
+  justifyContent: "center",
+  padding: vars.space.xl,
+});
+
+export const verifyTextStack = style({
+  display: "flex",
+  flexDirection: "column",
+  gap: vars.space.md,
+});
+
+export const verifyTitle = style({
+  color: vars.color.text,
+  fontSize: vars.fontSize["2xl"],
+  fontWeight: vars.fontWeight.bold,
+  lineHeight: vars.lineHeight.tight,
+  margin: 0,
+});
+
+export const verifyDescription = style({
+  color: vars.color.textMuted,
+  fontSize: vars.fontSize.base,
+  lineHeight: vars.lineHeight.body,
+  margin: "0 auto",
+  maxWidth: "25rem",
+});
+
+export const verifyMutedText = style([
+  verifyDescription,
+  {
+    color: vars.color.textSubtle,
+    fontSize: vars.fontSize.sm,
+  },
+]);
+
+export const verifyButtonWrap = style({
+  marginTop: vars.space.md,
+  maxWidth: "20rem",
   width: "100%",
 });

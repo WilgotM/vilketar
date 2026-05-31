@@ -2,7 +2,9 @@ import { PlayedCard } from "../types/cards";
 import { GameDifficulty } from "../types/game";
 import { GameMode, SelectionRoute } from "../types/routes";
 import { getSelectionRouteShareLabel } from "./categories";
-const PRODUCTION_ORIGIN = "https://vilketar.pages.dev";
+import { DEFAULT_SITE_URL } from "./seo";
+
+const PRODUCTION_ORIGIN = DEFAULT_SITE_URL;
 const SHARE_BRAND_LABEL = "#VilketÅr";
 const SHARE_RESULT_CORRECT = "🟩";
 const SHARE_RESULT_INCORRECT = "🟥";

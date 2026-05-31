@@ -28,7 +28,7 @@ type EntityMetadata = {
 };
 
 const USER_AGENT =
-  "VilketAr/0.1 (https://vilketar.pages.dev; Wikimedia metadata for Swedish timeline game)";
+  "VilketAr/0.1 (https://xn--vilketr-jxa.se; Wikimedia metadata for Swedish timeline game)";
 
 const WIKIPEDIA_API_ENDPOINT = "https://sv.wikipedia.org/w/api.php";
 const WIKIDATA_API_ENDPOINT = "https://www.wikidata.org/w/api.php";

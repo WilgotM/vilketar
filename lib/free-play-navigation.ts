@@ -21,12 +21,6 @@ export const FEATURED_FREE_PLAY_DECKS: readonly FeaturedFreePlayDeck[] = [
     text: "Svenska klassiker",
   },
   {
-    key: "featured-sweden",
-    routeSlug: "sverige",
-    slugPath: ["sverige", "allt"],
-    text: "Sverige",
-  },
-  {
     key: "featured-us-presidents",
     routeSlug: "usas-presidenter",
     slugPath: ["leaders", "politicians", "americas", "us"],
@@ -37,12 +31,6 @@ export const FEATURED_FREE_PLAY_DECKS: readonly FeaturedFreePlayDeck[] = [
     routeSlug: "engelska-regenter",
     slugPath: ["leaders", "rulers", "europe", "england"],
     text: "Engelska regenter",
-  },
-  {
-    key: "featured-roman-empire",
-    routeSlug: "romerska-kejsare",
-    slugPath: ["leaders", "rulers", "europe", "rome"],
-    text: "Romerska kejsare",
   },
   {
     key: "featured-wars",

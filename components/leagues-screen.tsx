@@ -1418,33 +1418,17 @@ export default function LeaguesScreen() {
             {activeTab === "verify-email" && (
               <motion.section
                 animate={{ opacity: 1, scale: 1 }}
+                className={styles.verifyPanel}
                 initial={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.4, type: "spring" }}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "4rem 1rem",
-                  gap: "2rem",
-                  textAlign: "center",
-                  minHeight: "60vh",
-                }}
               >
                 <motion.div
                   animate={{ y: [0, -10, 0] }}
+                  className={styles.verifyIconBubble}
                   transition={{
                     duration: 3,
                     repeat: Infinity,
                     ease: "easeInOut",
-                  }}
-                  style={{
-                    backgroundColor: "rgba(255, 255, 255, 0.05)",
-                    borderRadius: "50%",
-                    padding: "2rem",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
                   }}
                 >
                   <svg
@@ -1456,7 +1440,6 @@ export default function LeaguesScreen() {
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    style={{ color: "#a8c7fa" }}
                   >
                     <path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8" />
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
@@ -1465,55 +1448,20 @@ export default function LeaguesScreen() {
                   </svg>
                 </motion.div>
 
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "1rem",
-                  }}
-                >
-                  <h2
-                    style={{
-                      fontSize: "1.75rem",
-                      fontWeight: "bold",
-                      margin: 0,
-                    }}
-                  >
-                    Kolla din e-post
-                  </h2>
-                  <p
-                    style={{
-                      color: "rgba(255,255,255,0.7)",
-                      lineHeight: 1.6,
-                      maxWidth: "400px",
-                      margin: "0 auto",
-                    }}
-                  >
+                <div className={styles.verifyTextStack}>
+                  <h2 className={styles.verifyTitle}>Kolla din e-post</h2>
+                  <p className={styles.verifyDescription}>
                     Vi har skickat en länk till <strong>{accountEmail}</strong>.
                     Klicka på länken för att bekräfta ditt konto.
                   </p>
-                  <p
-                    style={{
-                      color: "rgba(255,255,255,0.5)",
-                      fontSize: "0.9rem",
-                      lineHeight: 1.5,
-                      maxWidth: "400px",
-                      margin: "0 auto",
-                    }}
-                  >
+                  <p className={styles.verifyMutedText}>
                     Om du stänger appen under tiden är det ingen fara. Du kan
                     bara öppna appen igen och logga in med din e-post och ditt
                     nya lösenord.
                   </p>
                 </div>
 
-                <div
-                  style={{
-                    width: "100%",
-                    maxWidth: "320px",
-                    marginTop: "1rem",
-                  }}
-                >
+                <div className={styles.verifyButtonWrap}>
                   <Button
                     disabled={busy}
                     fullWidth

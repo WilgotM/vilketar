@@ -126,25 +126,6 @@ function SelectorList(props: {
               onSelectPlayRoute={onSelectPlayRoute}
             />
           </div>
-          <details className={styles.categoryDropdown}>
-            <summary
-              className={classNames(
-                buttonStyles.button,
-                buttonStyles.fullWidth,
-                buttonStyles.minimal,
-                styles.categoryDropdownButton,
-              )}
-            >
-              <span>Alla kategorier</span>
-              <span aria-hidden="true" className={styles.dropdownChevron} />
-            </summary>
-            <div className={styles.categoryDropdownPanel}>
-              <SelectorOptionGrid
-                items={items}
-                onSelectPlayRoute={onSelectPlayRoute}
-              />
-            </div>
-          </details>
         </div>
       ) : null}
       {showFeaturedView ? (

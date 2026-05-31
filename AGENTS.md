@@ -65,6 +65,15 @@ ska fungera bra för pensionärer.
 - Fredag är musik: `all-entertainment-music`.
 - Lördag är Svenska klassiker: `all-swedish-classics-all`.
 - Övriga dagar är vanligt dagens spel från hela roten.
+- Dagens kortkö kan låsas i Supabase-tabellen `daily_games` som `card_qids`.
+  Appen använder den raden om den finns och fyller annars från aktuella
+  deckfiler.
+- När kort/deck ändras och deployas under samma UTC-dag kan nya deck annars
+  påverka spelare som startar efter deployen. För att kortändringar bara ska
+  påverka imorgon och framåt: lås dagens spel innan kort/deck ändras eller
+  deployas, t.ex. med `bun run daily:lock`. Scriptet kräver
+  `SUPABASE_SERVICE_ROLE_KEY` och skriver inte över en befintlig låsning utan
+  `--force`.
 
 När dagens spel behöver fler frågor, lös det helst genom fler igenkännbara,
 spelbara kort i relevanta deck, inte genom att göra urvalet svårare eller mer

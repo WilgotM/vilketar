@@ -70,16 +70,6 @@
     "year": 1983
   },
   {
-    "fact": "Kent bildas i Eskilstuna.",
-    "image": "Kent_live_in_May_2005.jpg",
-    "pageViews": 260000,
-    "qid": "Q648786",
-    "subtitle": "Svenskt rockband",
-    "title": "Kent bildas",
-    "wikipediaSlug": "Kent_(musikgrupp)",
-    "year": 1990
-  },
-  {
     "fact": "Robyn slår igenom som tonårsartist.",
     "image": "Robyn_face.jpg",
     "pageViews": 260000,
@@ -88,6 +78,16 @@
     "title": "Robyn slår igenom",
     "wikipediaSlug": "Robyn",
     "year": 1995
+  },
+  {
+    "fact": "Mamma Mia! har premiär i London.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "manual-Mamma_Mia!_(musikal)",
+    "subtitle": "Musikal med ABBA-musik",
+    "title": "”Mamma Mia!” har premiär",
+    "wikipediaSlug": "Mamma_Mia!_(musikal)",
+    "year": 1999
   },
   {
     "fact": "Håkan Hellström släpper sitt första soloalbum.",
@@ -140,6 +140,26 @@
     "year": 2023
   },
   {
+    "fact": "Sommar i P1 börjar sändas i Sveriges Radio.",
+    "image": "Sommarvärdar_2013.jpg",
+    "pageViews": 240000,
+    "qid": "Q7560435",
+    "subtitle": "Svenskt radioprogram",
+    "title": "”Sommar i P1” börjar sändas",
+    "wikipediaSlug": "Sommar_i_P1",
+    "year": 1959
+  },
+  {
+    "fact": "Jonas Gardell får sitt breda genombrott som författare och artist.",
+    "image": "Jonas_Gardell,_2022.jpg",
+    "pageViews": 240000,
+    "qid": "Q982351",
+    "subtitle": "Svensk författare och komiker",
+    "title": "Jonas Gardell slår igenom",
+    "wikipediaSlug": "Jonas_Gardell",
+    "year": 1985
+  },
+  {
     "fact": "The Final Countdown blir en av Sveriges mest kända rocklåtar.",
     "image": "",
     "pageViews": 240000,
@@ -148,6 +168,46 @@
     "title": "”The Final Countdown” släpps",
     "wikipediaSlug": "The_Final_Countdown_(s%C3%A5ng)",
     "year": 1986
+  },
+  {
+    "fact": "Darin slår igenom i Idol.",
+    "image": "Darin_Zanyar_in_2020_(cropped).jpg",
+    "pageViews": 240000,
+    "qid": "Q212649",
+    "subtitle": "Svensk artist",
+    "title": "Darin slår igenom",
+    "wikipediaSlug": "Darin",
+    "year": 2004
+  },
+  {
+    "fact": "Måns Zelmerlöw slår igenom i Idol.",
+    "image": "Melodifestivalen_2025_deltävling_4_Malmö_Måns_Zelmerlöw_presentation_03.jpg",
+    "pageViews": 240000,
+    "qid": "Q372460",
+    "subtitle": "Svensk artist",
+    "title": "Måns Zelmerlöw slår igenom",
+    "wikipediaSlug": "M%C3%A5ns_Zelmerl%C3%B6w",
+    "year": 2005
+  },
+  {
+    "fact": "Petra Mede leder Melodifestivalen och blir en stor tv-profil.",
+    "image": "Petra_Mede_Eurovision_Song_Contest_2024_Final_Malmö_press_conference_presenters_05.jpg",
+    "pageViews": 240000,
+    "qid": "Q3809242",
+    "subtitle": "Svensk programledare",
+    "title": "Petra Mede leder Melodifestivalen",
+    "wikipediaSlug": "Petra_Mede",
+    "year": 2009
+  },
+  {
+    "fact": "Gustav Vasa låter börja bygga Gripsholms slott.",
+    "image": "Gripsholm_May_2016_10.jpg",
+    "pageViews": 220000,
+    "qid": "Q714783",
+    "subtitle": "Svenskt slott",
+    "title": "Gripsholms slott börjar byggas",
+    "wikipediaSlug": "Gripsholms_slott",
+    "year": 1537
   },
   {
     "fact": "Evert Taube debuterar som författare och visdiktare.",
@@ -170,6 +230,56 @@
     "year": 1920
   },
   {
+    "fact": "Zarah Leander får sitt internationella genombrott.",
+    "image": "Zarah-Leander-1972.jpg",
+    "pageViews": 220000,
+    "qid": "Q46479",
+    "subtitle": "Svensk artist och skådespelare",
+    "title": "Zarah Leander slår igenom",
+    "wikipediaSlug": "Zarah_Leander",
+    "year": 1936
+  },
+  {
+    "fact": "Alice Babs får sitt genombrott i filmen Swing it, magistern!.",
+    "image": "Alice_Babs-1940.jpg",
+    "pageViews": 220000,
+    "qid": "Q256809",
+    "subtitle": "Svensk artist",
+    "title": "Alice Babs slår igenom",
+    "wikipediaSlug": "Alice_Babs",
+    "year": 1940
+  },
+  {
+    "fact": "Lill-Babs får sitt genombrott som ung artist.",
+    "image": "Lill-Babs_1961.jpg",
+    "pageViews": 220000,
+    "qid": "Q285351",
+    "subtitle": "Svensk artist",
+    "title": "Lill-Babs slår igenom",
+    "wikipediaSlug": "Lill-Babs",
+    "year": 1954
+  },
+  {
+    "fact": "Sven-Bertil Taube debuterar som vissångare.",
+    "image": "Sven-Bertil_Taube_(14878817541).jpg",
+    "pageViews": 220000,
+    "qid": "Q1360483",
+    "subtitle": "Svensk artist och skådespelare",
+    "title": "Sven-Bertil Taube albumdebuterar",
+    "wikipediaSlug": "Sven-Bertil_Taube",
+    "year": 1954
+  },
+  {
+    "fact": "Siw Malmkvist får sitt stora genombrott i Melodifestivalen.",
+    "image": "Siw_Malmkvist_2011-04-26_001.jpg",
+    "pageViews": 220000,
+    "qid": "Q285469",
+    "subtitle": "Svensk artist",
+    "title": "Siw Malmkvist slår igenom",
+    "wikipediaSlug": "Siw_Malmkvist",
+    "year": 1959
+  },
+  {
     "fact": "Cornelis Vreeswijk släpper sitt första album.",
     "image": "Cornelis_Vreeswijk_(1973).jpg",
     "pageViews": 220000,
@@ -180,6 +290,26 @@
     "year": 1964
   },
   {
+    "fact": "Melodikrysset börjar sändas i Sveriges Radio.",
+    "image": "Melodikrysset_14_maj_2016_-_10.JPG",
+    "pageViews": 220000,
+    "qid": "Q10581333",
+    "subtitle": "Svenskt radioprogram",
+    "title": "”Melodikrysset” börjar sändas",
+    "wikipediaSlug": "Melodikrysset",
+    "year": 1965
+  },
+  {
+    "fact": "Lill Lindfors får sitt breda genombrott som artist.",
+    "image": "Lill_Lindfors_2013-05-06.jpg",
+    "pageViews": 220000,
+    "qid": "Q262942",
+    "subtitle": "Svensk artist",
+    "title": "Lill Lindfors slår igenom",
+    "wikipediaSlug": "Lill_Lindfors",
+    "year": 1966
+  },
+  {
     "fact": "Ted Gärdestad släpper sitt debutalbum.",
     "image": "Ted_Gärdestad_1973.webp",
     "pageViews": 220000,
@@ -188,6 +318,46 @@
     "title": "Ted Gärdestad albumdebuterar",
     "wikipediaSlug": "Ted_G%C3%A4rdestad",
     "year": 1972
+  },
+  {
+    "fact": "Mikael Wiehe slår igenom med Hoola Bandoola Band.",
+    "image": "Mikael_Wiehe_Sommarkrysset_2012_By_Daniel_Åhs_Karlsson.jpg",
+    "pageViews": 220000,
+    "qid": "Q1933016",
+    "subtitle": "Svensk artist",
+    "title": "Mikael Wiehe slår igenom",
+    "wikipediaSlug": "Mikael_Wiehe",
+    "year": 1972
+  },
+  {
+    "fact": "Björn Afzelius debuterar som soloartist.",
+    "image": "Björn_Afzelius_1994_001.jpg",
+    "pageViews": 220000,
+    "qid": "Q2427845",
+    "subtitle": "Svensk artist",
+    "title": "Björn Afzelius albumdebuterar",
+    "wikipediaSlug": "Bj%C3%B6rn_Afzelius",
+    "year": 1974
+  },
+  {
+    "fact": "Ulf Lundell romandebuterar med Jack.",
+    "image": "Ulf_Lundell_1988.png",
+    "pageViews": 220000,
+    "qid": "Q713270",
+    "subtitle": "Svensk artist och författare",
+    "title": "Ulf Lundell romandebuterar",
+    "wikipediaSlug": "Ulf_Lundell",
+    "year": 1976
+  },
+  {
+    "fact": "Ebba Grön bildas i Rågsved.",
+    "image": "Ebba_Grön_1978_-_1982.svg",
+    "pageViews": 220000,
+    "qid": "Q1278479",
+    "subtitle": "Svenskt punkband",
+    "title": "Ebba Grön bildas",
+    "wikipediaSlug": "Ebba_Gr%C3%B6n",
+    "year": 1977
   },
   {
     "fact": "Gyllene Tider bildas i Halmstad.",
@@ -230,6 +400,16 @@
     "year": 1982
   },
   {
+    "fact": "Öppna landskap blir en av Ulf Lundells mest kända låtar.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q297660",
+    "subtitle": "Låt av Ulf Lundell",
+    "title": "”Öppna landskap” släpps",
+    "wikipediaSlug": "%C3%96ppna_landskap",
+    "year": 1982
+  },
+  {
     "fact": "Främling blir ett av Melodifestivalens största genombrott.",
     "image": "",
     "pageViews": 220000,
@@ -250,6 +430,66 @@
     "year": 1986
   },
   {
+    "fact": "Chess har premiär i London med musik av Benny Andersson och Björn Ulvaeus.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "manual-Chess_(musikal)",
+    "subtitle": "Musikal av svenska låtskrivare",
+    "title": "”Chess” har premiär",
+    "wikipediaSlug": "Chess_(musikal)",
+    "year": 1986
+  },
+  {
+    "fact": "Lena Philipsson får sitt breda genombrott i Melodifestivalen.",
+    "image": "Lena_Philipsson_2012-11-07_001.jpg",
+    "pageViews": 220000,
+    "qid": "Q235825",
+    "subtitle": "Svensk artist",
+    "title": "Lena Philipsson slår igenom",
+    "wikipediaSlug": "Lena_Philipsson",
+    "year": 1986
+  },
+  {
+    "fact": "Lotta Engberg slår igenom i Melodifestivalen.",
+    "image": "Lotta_Engberg_2015-05-05_002.jpg",
+    "pageViews": 220000,
+    "qid": "Q235440",
+    "subtitle": "Svensk artist och programledare",
+    "title": "Lotta Engberg slår igenom",
+    "wikipediaSlug": "Lotta_Engberg",
+    "year": 1987
+  },
+  {
+    "fact": "Orup slår igenom som soloartist.",
+    "image": "Disambig_grey.svg",
+    "pageViews": 220000,
+    "qid": "Q12330477",
+    "subtitle": "Svensk artist",
+    "title": "Orup slår igenom",
+    "wikipediaSlug": "Orup",
+    "year": 1988
+  },
+  {
+    "fact": "Neneh Cherry får internationellt genombrott med Buffalo Stance.",
+    "image": "Neneh_Cherry.jpg",
+    "pageViews": 220000,
+    "qid": "Q233342",
+    "subtitle": "Svensk artist",
+    "title": "Neneh Cherry slår igenom",
+    "wikipediaSlug": "Neneh_Cherry",
+    "year": 1988
+  },
+  {
+    "fact": "Thåström släpper sitt första soloalbum.",
+    "image": "Joakim_Thåström_1985.png",
+    "pageViews": 220000,
+    "qid": "Q3141598",
+    "subtitle": "Svensk artist",
+    "title": "Thåström solodebuterar",
+    "wikipediaSlug": "Joakim_Th%C3%A5str%C3%B6m",
+    "year": 1989
+  },
+  {
     "fact": "Fångad av en stormvind vinner Eurovision Song Contest.",
     "image": "",
     "pageViews": 220000,
@@ -257,6 +497,16 @@
     "subtitle": "Låt framförd av Carola",
     "title": "”Fångad av en stormvind” vinner Eurovision",
     "wikipediaSlug": "F%C3%A5ngad_av_en_stormvind",
+    "year": 1991
+  },
+  {
+    "fact": "Army of Lovers får sitt internationella genombrott.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q689823",
+    "subtitle": "Svensk popgrupp",
+    "title": "Army of Lovers slår igenom",
+    "wikipediaSlug": "Army_of_Lovers",
     "year": 1991
   },
   {
@@ -270,6 +520,46 @@
     "year": 1992
   },
   {
+    "fact": "Lasse Berghagen blir folkkär som programledare för Allsång på Skansen.",
+    "image": "Lasse_Berghagen_in_2014_(1_av_2).jpg",
+    "pageViews": 220000,
+    "qid": "Q493733",
+    "subtitle": "Svensk artist och programledare",
+    "title": "Lasse Berghagen leder Allsång",
+    "wikipediaSlug": "Lasse_Berghagen",
+    "year": 1994
+  },
+  {
+    "fact": "E-Type slår igenom med Set the World on Fire.",
+    "image": "Martin_E-Type_Erikson_2025.jpg",
+    "pageViews": 220000,
+    "qid": "Q346439",
+    "subtitle": "Svensk eurodanceartist",
+    "title": "E-Type slår igenom",
+    "wikipediaSlug": "E-type",
+    "year": 1994
+  },
+  {
+    "fact": "Nordman slår igenom med folkpop på svenska.",
+    "image": "Disambig_grey.svg",
+    "pageViews": 220000,
+    "qid": "Q7050845",
+    "subtitle": "Svensk musikgrupp",
+    "title": "Nordman slår igenom",
+    "wikipediaSlug": "Nordman",
+    "year": 1994
+  },
+  {
+    "fact": "Kristina från Duvemåla har premiär i Malmö.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q142885",
+    "subtitle": "Svensk musikal",
+    "title": "”Kristina från Duvemåla” har premiär",
+    "wikipediaSlug": "Kristina_fr%C3%A5n_Duvem%C3%A5la",
+    "year": 1995
+  },
+  {
     "fact": "Lovefool blir The Cardigans stora internationella hit.",
     "image": "",
     "pageViews": 220000,
@@ -278,6 +568,66 @@
     "title": "”Lovefool” släpps",
     "wikipediaSlug": "Lovefool",
     "year": 1996
+  },
+  {
+    "fact": "Lars Winnerbäck får sitt breda genombrott som singer-songwriter.",
+    "image": "Lars_Winnerbäck_2016-03-15_002.jpg",
+    "pageViews": 220000,
+    "qid": "Q1384492",
+    "subtitle": "Svensk artist",
+    "title": "Lars Winnerbäck slår igenom",
+    "wikipediaSlug": "Lars_Winnerb%C3%A4ck",
+    "year": 1996
+  },
+  {
+    "fact": "Eagle-Eye Cherry slår igenom med Save Tonight.",
+    "image": "Eagle_Eye_Cherry_Festival_du_Bout_du_Monde_2019.jpg",
+    "pageViews": 220000,
+    "qid": "Q435398",
+    "subtitle": "Svensk artist",
+    "title": "Eagle-Eye Cherry slår igenom",
+    "wikipediaSlug": "Eagle-Eye_Cherry",
+    "year": 1997
+  },
+  {
+    "fact": "Markoolio slår igenom med sommar- och partyhits.",
+    "image": "Markoolio_2022.jpg",
+    "pageViews": 220000,
+    "qid": "Q4348368",
+    "subtitle": "Svensk artist",
+    "title": "Markoolio slår igenom",
+    "wikipediaSlug": "Markoolio",
+    "year": 1998
+  },
+  {
+    "fact": "Alcazar bildas och blir ett schlager- och discopopfenomen.",
+    "image": "Alcazar_By_Daniel_Åhs.jpg",
+    "pageViews": 220000,
+    "qid": "Q1364244",
+    "subtitle": "Svensk popgrupp",
+    "title": "Alcazar bildas",
+    "wikipediaSlug": "Alcazar_(musikgrupp)",
+    "year": 1998
+  },
+  {
+    "fact": "Charlotte Perrelli vinner Eurovision Song Contest med Take Me to Your Heaven.",
+    "image": "Charlotte_Perrelli_Sommarkrysset_2016.jpg",
+    "pageViews": 220000,
+    "qid": "Q180836",
+    "subtitle": "Svensk artist",
+    "title": "Charlotte Perrelli vinner Eurovision",
+    "wikipediaSlug": "Charlotte_Perrelli",
+    "year": 1999
+  },
+  {
+    "fact": "José González får sitt genombrott med Veneer.",
+    "image": "José_González.jpg",
+    "pageViews": 220000,
+    "qid": "Q315107",
+    "subtitle": "Svensk artist",
+    "title": "José González slår igenom",
+    "wikipediaSlug": "Jos%C3%A9_Gonz%C3%A1lez",
+    "year": 2003
   },
   {
     "fact": "Idol börjar sändas i Sverige.",
@@ -290,13 +640,23 @@
     "year": 2004
   },
   {
-    "fact": "Veronica Maggio släpper sitt debutalbum.",
-    "image": "Veronica_Maggio_-_Homecoming_Festival-4_(cropped).jpg",
+    "fact": "Basshunter slår igenom med Boten Anna.",
+    "image": "Basshunter,_20_april_2008_in_Halmstad.jpg",
     "pageViews": 220000,
-    "qid": "Q260597",
-    "subtitle": "Svensk popartist",
-    "title": "Veronica Maggio albumdebuterar",
-    "wikipediaSlug": "Veronica_Maggio",
+    "qid": "Q383541",
+    "subtitle": "Svensk artist",
+    "title": "Basshunter slår igenom",
+    "wikipediaSlug": "Basshunter",
+    "year": 2006
+  },
+  {
+    "fact": "Boten Anna blir en svensk internet- och pophit.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q61044229",
+    "subtitle": "Låt av Basshunter",
+    "title": "”Boten Anna” släpps",
+    "wikipediaSlug": "Boten_Anna",
     "year": 2006
   },
   {
@@ -330,6 +690,36 @@
     "year": 2010
   },
   {
+    "fact": "Jag kommer blir en av Veronica Maggios mest kända låtar.",
+    "image": "Veronica_Maggio_-_Homecoming_Festival-4_(cropped).jpg",
+    "pageViews": 220000,
+    "qid": "Q260597",
+    "subtitle": "Låt av Veronica Maggio",
+    "title": "”Jag kommer” släpps",
+    "wikipediaSlug": "Veronica_Maggio",
+    "year": 2011
+  },
+  {
+    "fact": "Gina Dirawi leder Melodifestivalen.",
+    "image": "Gina_Dirawi_2026_Melodifestivalen_(cropped).jpg",
+    "pageViews": 220000,
+    "qid": "Q248575",
+    "subtitle": "Svensk programledare",
+    "title": "Gina Dirawi leder Melodifestivalen",
+    "wikipediaSlug": "Gina_Dirawi",
+    "year": 2012
+  },
+  {
+    "fact": "ABBA The Museum öppnar på Djurgården.",
+    "image": "ABBA_The_Museum_logo.svg",
+    "pageViews": 220000,
+    "qid": "Q2743819",
+    "subtitle": "Musikmuseum i Stockholm",
+    "title": "ABBA The Museum öppnar",
+    "wikipediaSlug": "Abbamuseet",
+    "year": 2013
+  },
+  {
     "fact": "Tove Lo slår igenom internationellt.",
     "image": "Tove_Lo_(2)_By_Daniel_Åhs_Karlsson.jpeg",
     "pageViews": 220000,
@@ -338,6 +728,76 @@
     "title": "Tove Lo slår igenom",
     "wikipediaSlug": "Tove_Lo",
     "year": 2014
+  },
+  {
+    "fact": "Sanna Nielsen vinner Melodifestivalen med Undo.",
+    "image": "Sanna_Nielsen_-_Melodifestivalen_2025,_Västerås_-_Genrep_Fredag-1_(cropped).jpg",
+    "pageViews": 220000,
+    "qid": "Q2420983",
+    "subtitle": "Svensk artist",
+    "title": "Sanna Nielsen vinner Melodifestivalen",
+    "wikipediaSlug": "Sanna_Nielsen",
+    "year": 2014
+  },
+  {
+    "fact": "Sven-Ingvars bildas i Värmland.",
+    "image": "Sven-Ingvars_2016-7.jpg",
+    "pageViews": 200000,
+    "qid": "Q696274",
+    "subtitle": "Svenskt dansband",
+    "title": "Sven-Ingvars bildas",
+    "wikipediaSlug": "Sven-Ingvars",
+    "year": 1956
+  },
+  {
+    "fact": "Olle Adolphson debuterar som vissångare.",
+    "image": "Singer_and_songwriter_Olle_Adolphson_at_Bastugatan_32,_Stockholm,_1963.jpg",
+    "pageViews": 200000,
+    "qid": "Q4580910",
+    "subtitle": "Svensk visdiktare",
+    "title": "Olle Adolphson debuterar",
+    "wikipediaSlug": "Olle_Adolphson",
+    "year": 1956
+  },
+  {
+    "fact": "Jan Malmsjö får sitt breda genombrott på scen och i tv.",
+    "image": "Jan_Malmsjö.melodifestivalen2019.19e112.1870960.jpg",
+    "pageViews": 200000,
+    "qid": "Q728985",
+    "subtitle": "Svensk skådespelare och artist",
+    "title": "Jan Malmsjö slår igenom",
+    "wikipediaSlug": "Jan_Malmsj%C3%B6",
+    "year": 1960
+  },
+  {
+    "fact": "Hoola Bandoola Band bildas i Malmö.",
+    "image": "",
+    "pageViews": 200000,
+    "qid": "Q1775501",
+    "subtitle": "Svenskt proggband",
+    "title": "Hoola Bandoola Band bildas",
+    "wikipediaSlug": "Hoola_Bandoola_Band",
+    "year": 1970
+  },
+  {
+    "fact": "Peps Persson blir en svensk reggae- och bluesprofil.",
+    "image": "",
+    "pageViews": 200000,
+    "qid": "Q1459831",
+    "subtitle": "Svensk artist",
+    "title": "Peps Persson slår igenom",
+    "wikipediaSlug": "Peps_Persson",
+    "year": 1975
+  },
+  {
+    "fact": "Ebba Grön gör Staten och kapitalet till en svensk punkklassiker.",
+    "image": "",
+    "pageViews": 200000,
+    "qid": "Q10468601",
+    "subtitle": "Låt av Ebba Grön",
+    "title": "”Staten och kapitalet” släpps",
+    "wikipediaSlug": "Den_ena_handen_vet_vad_den_andra_g%C3%B6r",
+    "year": 1980
   },
   {
     "fact": "Diggi-loo diggi-ley vinner Eurovision Song Contest.",
@@ -350,6 +810,186 @@
     "year": 1984
   },
   {
+    "fact": "Niklas Strömstedt får sitt breda genombrott som artist.",
+    "image": "Niklas_Strömstedt.jpg",
+    "pageViews": 200000,
+    "qid": "Q4353213",
+    "subtitle": "Svensk artist",
+    "title": "Niklas Strömstedt slår igenom",
+    "wikipediaSlug": "Niklas_Str%C3%B6mstedt",
+    "year": 1989
+  },
+  {
+    "fact": "Bo Kaspers Orkester bildas i Stockholm.",
+    "image": "Bokasper_press.jpg",
+    "pageViews": 200000,
+    "qid": "Q4128881",
+    "subtitle": "Svensk popgrupp",
+    "title": "Bo Kaspers Orkester bildas",
+    "wikipediaSlug": "Bo_Kaspers_Orkester",
+    "year": 1991
+  },
+  {
+    "fact": "Lisa Ekdahl får sitt genombrott med Vem vet.",
+    "image": "Lisa_Ekdahl_EM1B1465_(34342178583).jpg",
+    "pageViews": 200000,
+    "qid": "Q64164",
+    "subtitle": "Svensk artist",
+    "title": "Lisa Ekdahl slår igenom",
+    "wikipediaSlug": "Lisa_Ekdahl",
+    "year": 1994
+  },
+  {
+    "fact": "Helen Sjöholm får sitt genombrott i Kristina från Duvemåla.",
+    "image": "Helen_Sjöholm_2012-09-24_001.jpg",
+    "pageViews": 200000,
+    "qid": "Q468134",
+    "subtitle": "Svensk artist",
+    "title": "Helen Sjöholm slår igenom",
+    "wikipediaSlug": "Helen_Sj%C3%B6holm",
+    "year": 1995
+  },
+  {
+    "fact": "Petter släpper sitt debutalbum Mitt sjätte sinne.",
+    "image": "",
+    "pageViews": 200000,
+    "qid": "Q15897204",
+    "subtitle": "Svensk hiphopartist",
+    "title": "Petter albumdebuterar",
+    "wikipediaSlug": "Petter",
+    "year": 1998
+  },
+  {
+    "fact": "Take Me to Your Heaven vinner Eurovision Song Contest.",
+    "image": "",
+    "pageViews": 200000,
+    "qid": "Q62974722",
+    "subtitle": "Låt framförd av Charlotte Perrelli",
+    "title": "”Take Me to Your Heaven” vinner Eurovision",
+    "wikipediaSlug": "Tusen_och_en_natt_(s%C3%A5ng)",
+    "year": 1999
+  },
+  {
+    "fact": "Timbuktu får sitt breda genombrott i svensk hiphop.",
+    "image": "Timbuktu_på_Grammisgalan_2013.jpg",
+    "pageViews": 200000,
+    "qid": "Q44828",
+    "subtitle": "Svensk hiphopartist",
+    "title": "Timbuktu slår igenom",
+    "wikipediaSlug": "Timbuktu_(artist)",
+    "year": 2000
+  },
+  {
+    "fact": "Dom andra blir en av Kents stora 2000-talshits.",
+    "image": "Kent_live_in_May_2005.jpg",
+    "pageViews": 200000,
+    "qid": "Q648786",
+    "subtitle": "Låt av Kent",
+    "title": "”Dom andra” släpps",
+    "wikipediaSlug": "Kent_(musikgrupp)",
+    "year": 2002
+  },
+  {
+    "fact": "Amy Diamond slår igenom som ung popartist.",
+    "image": "Amy_Diamond_closeup_Umeå_Kulturnatta_2011.jpg",
+    "pageViews": 200000,
+    "qid": "Q132154",
+    "subtitle": "Svensk artist",
+    "title": "Amy Diamond slår igenom",
+    "wikipediaSlug": "Amy_Deasismont",
+    "year": 2005
+  },
+  {
+    "fact": "Owe Thörnqvist får sitt genombrott som sångare och låtskrivare.",
+    "image": "Owe_Thörnqvist_05_(cropped)_@_Melodifestivalen_2017_-_Jonatan_Svensson_Glad.jpg",
+    "pageViews": 180000,
+    "qid": "Q6210414",
+    "subtitle": "Svensk artist",
+    "title": "Owe Thörnqvist slår igenom",
+    "wikipediaSlug": "Owe_Th%C3%B6rnqvist",
+    "year": 1950
+  },
+  {
+    "fact": "Vikingarna bildas och blir ett av Sveriges mest kända dansband.",
+    "image": "Christer_Sjögren.jpg",
+    "pageViews": 180000,
+    "qid": "Q644865",
+    "subtitle": "Svenskt dansband",
+    "title": "Vikingarna bildas",
+    "wikipediaSlug": "Vikingarna_(musikgrupp)",
+    "year": 1958
+  },
+  {
+    "fact": "Grynet Molvig blir folkkär i svensk underhållning.",
+    "image": "68746_Grynet_Molvig.jpg",
+    "pageViews": 180000,
+    "qid": "Q1991301",
+    "subtitle": "Nordisk artist och skådespelare",
+    "title": "Grynet Molvig slår igenom",
+    "wikipediaSlug": "Grynet_Molvig",
+    "year": 1960
+  },
+  {
+    "fact": "Sakta vi gå genom stan blir en svensk jazzklassiker.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q4563559",
+    "subtitle": "Låt med Monica Zetterlund",
+    "title": "”Sakta vi gå genom stan” släpps",
+    "wikipediaSlug": "Walkin'_My_Baby_Back_Home",
+    "year": 1961
+  },
+  {
+    "fact": "Sånt är livet blir en svensk schlagerklassiker.",
+    "image": "Disambig_grey.svg",
+    "pageViews": 180000,
+    "qid": "Q10688442",
+    "subtitle": "Låt med Anita Lindblom",
+    "title": "”Sånt är livet” släpps",
+    "wikipediaSlug": "S%C3%A5nt_%C3%A4r_livet",
+    "year": 1961
+  },
+  {
+    "fact": "Fred Åkerström släpper sitt första album.",
+    "image": "Fred_Åkerström_11_mars_1968_(cropped).jpg",
+    "pageViews": 180000,
+    "qid": "Q1398777",
+    "subtitle": "Svensk vissångare",
+    "title": "Fred Åkerström albumdebuterar",
+    "wikipediaSlug": "Fred_%C3%85kerstr%C3%B6m",
+    "year": 1963
+  },
+  {
+    "fact": "Lasse Stefanz bildas i Kristianstad.",
+    "image": "Lasse_Stefanz.jpg",
+    "pageViews": 180000,
+    "qid": "Q742028",
+    "subtitle": "Svenskt dansband",
+    "title": "Lasse Stefanz bildas",
+    "wikipediaSlug": "Lasse_Stefanz",
+    "year": 1967
+  },
+  {
+    "fact": "Grammis delas ut för första gången.",
+    "image": "Några_Grammisvinnare_2013.jpg",
+    "pageViews": 180000,
+    "qid": "Q1542122",
+    "subtitle": "Svenskt musikpris",
+    "title": "Grammis delas ut första gången",
+    "wikipediaSlug": "Grammis",
+    "year": 1969
+  },
+  {
+    "fact": "Nationalteatern bildas i Göteborg.",
+    "image": "Nationalteatern_2013_001.jpg",
+    "pageViews": 180000,
+    "qid": "Q2425672",
+    "subtitle": "Svensk musik- och teatergrupp",
+    "title": "Nationalteatern bildas",
+    "wikipediaSlug": "Nationalteatern",
+    "year": 1969
+  },
+  {
     "fact": "Tomas Ledin släpper sitt debutalbum.",
     "image": "Tomas_Ledin_in_June_2015.jpg",
     "pageViews": 180000,
@@ -358,6 +998,16 @@
     "title": "Tomas Ledin albumdebuterar",
     "wikipediaSlug": "Tomas_Ledin",
     "year": 1972
+  },
+  {
+    "fact": "Barbro Hörberg får sitt genombrott med Med ögon känsliga för grönt.",
+    "image": "Barbro-Horberg-plays-the-guitar-352263774740.jpg",
+    "pageViews": 180000,
+    "qid": "Q4955491",
+    "subtitle": "Svensk vissångare",
+    "title": "Barbro Hörberg slår igenom",
+    "wikipediaSlug": "Barbro_H%C3%B6rberg",
+    "year": 1973
   },
   {
     "fact": "Eva Dahlgren släpper sitt debutalbum.",
@@ -370,6 +1020,36 @@
     "year": 1978
   },
   {
+    "fact": "Okej börjar ges ut och blir stor bland musikintresserade ungdomar.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q3371297",
+    "subtitle": "Svensk ungdomstidning",
+    "title": "Okej börjar ges ut",
+    "wikipediaSlug": "Okej_(tidning)",
+    "year": 1980
+  },
+  {
+    "fact": "Ratata bildas i Stockholm.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q1269895",
+    "subtitle": "Svensk popgrupp",
+    "title": "Ratata bildas",
+    "wikipediaSlug": "Ratata",
+    "year": 1980
+  },
+  {
+    "fact": "Kikki Danielsson får sitt stora genombrott i Melodifestivalen.",
+    "image": "Kikki_danielsson.melodifestivalen2018.18d873.1460296.jpg",
+    "pageViews": 180000,
+    "qid": "Q235820",
+    "subtitle": "Svensk artist",
+    "title": "Kikki Danielsson slår igenom",
+    "wikipediaSlug": "Kikki_Danielsson",
+    "year": 1982
+  },
+  {
     "fact": "Per Gessle släpper sitt första soloalbum.",
     "image": "Per_Gessle,_Bokmässan_2014_2_(crop).jpg",
     "pageViews": 180000,
@@ -377,6 +1057,16 @@
     "subtitle": "Svensk artist",
     "title": "Per Gessle solodebuterar",
     "wikipediaSlug": "Per_Gessle",
+    "year": 1983
+  },
+  {
+    "fact": "Imperiet bildas efter Ebba Grön.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q1781599",
+    "subtitle": "Svenskt rockband",
+    "title": "Imperiet bildas",
+    "wikipediaSlug": "Imperiet",
     "year": 1983
   },
   {
@@ -400,6 +1090,36 @@
     "year": 1988
   },
   {
+    "fact": "Mauro Scocco solodebuterar efter Ratata.",
+    "image": "Mauro_Scocco_2012-10-05_001.jpg",
+    "pageViews": 180000,
+    "qid": "Q3852934",
+    "subtitle": "Svensk artist",
+    "title": "Mauro Scocco solodebuterar",
+    "wikipediaSlug": "Mauro_Scocco",
+    "year": 1988
+  },
+  {
+    "fact": "Jakob Hellman släpper albumet ...och stora havet.",
+    "image": "Solid_sound_2014_089.jpg",
+    "pageViews": 180000,
+    "qid": "Q3429588",
+    "subtitle": "Svensk artist",
+    "title": "Jakob Hellman albumdebuterar",
+    "wikipediaSlug": "Jakob_Hellman",
+    "year": 1989
+  },
+  {
+    "fact": "Titiyo får sitt genombrott som soul- och popartist.",
+    "image": "Titiyo2013-10-24_001.jpg",
+    "pageViews": 180000,
+    "qid": "Q268904",
+    "subtitle": "Svensk artist",
+    "title": "Titiyo slår igenom",
+    "wikipediaSlug": "Titiyo",
+    "year": 1989
+  },
+  {
     "fact": "Ace of Base bildas i Göteborg.",
     "image": "Aob_tour.jpg",
     "pageViews": 180000,
@@ -420,6 +1140,46 @@
     "year": 1990
   },
   {
+    "fact": "Hälge blir en populär svensk älgserie.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q1285754",
+    "subtitle": "Svensk seriefigur",
+    "title": "Hälge debuterar",
+    "wikipediaSlug": "H%C3%A4lge",
+    "year": 1991
+  },
+  {
+    "fact": "Lisa Nilsson slår igenom med Himlen runt hörnet.",
+    "image": "Lisa_Nilsson_i_Allsång_på_Skansen.jpg",
+    "pageViews": 180000,
+    "qid": "Q3042906",
+    "subtitle": "Svensk artist",
+    "title": "Lisa Nilsson slår igenom",
+    "wikipediaSlug": "Lisa_Nilsson",
+    "year": 1992
+  },
+  {
+    "fact": "Himlen runt hörnet blir en svensk popklassiker.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q10524153",
+    "subtitle": "Låt av Lisa Nilsson",
+    "title": "”Himlen runt hörnet” släpps",
+    "wikipediaSlug": "Himlen_runt_h%C3%B6rnet",
+    "year": 1992
+  },
+  {
+    "fact": "ZTV börjar sända och blir en ungdomlig musik- och nöjeskanal.",
+    "image": "ZTV_Viasat.png",
+    "pageViews": 180000,
+    "qid": "Q4176314",
+    "subtitle": "Svensk tv-kanal",
+    "title": "ZTV börjar sända",
+    "wikipediaSlug": "ZTV",
+    "year": 1992
+  },
+  {
     "fact": "The Hives bildas i Fagersta.",
     "image": "The_Hives_PiP.jpg",
     "pageViews": 180000,
@@ -428,6 +1188,76 @@
     "title": "The Hives bildas",
     "wikipediaSlug": "The_Hives",
     "year": 1993
+  },
+  {
+    "fact": "Peter Jöback får sitt genombrott i Kristina från Duvemåla.",
+    "image": "Peter_Jöback_på_Grammisgalan_2013.jpg",
+    "pageViews": 180000,
+    "qid": "Q767041",
+    "subtitle": "Svensk artist",
+    "title": "Peter Jöback slår igenom",
+    "wikipediaSlug": "Peter_J%C3%B6back",
+    "year": 1995
+  },
+  {
+    "fact": "Bredbandsbolaget grundas under den svenska bredbandsboomen.",
+    "image": "B2_Glashuset_K15.jpg",
+    "pageViews": 180000,
+    "qid": "Q10435010",
+    "subtitle": "Svensk internetleverantör",
+    "title": "Bredbandsbolaget grundas",
+    "wikipediaSlug": "Bredbandsbolaget",
+    "year": 1998
+  },
+  {
+    "fact": "Martin Kellermans Rocky debuterar.",
+    "image": "Fra_roc_1376.jpg",
+    "pageViews": 180000,
+    "qid": "Q3181538",
+    "subtitle": "Svensk tecknad serie",
+    "title": "Rocky debuterar",
+    "wikipediaSlug": "Rocky_(tecknad_serie)",
+    "year": 1998
+  },
+  {
+    "fact": "Dr. Bombay slår igenom med Calcutta.",
+    "image": "Jonny_Jakobsen_som_Dr._Bombay_på_Glada_killingen_i_Kil_6_november_2022_02.jpg",
+    "pageViews": 180000,
+    "qid": "Q1344704",
+    "subtitle": "Svensk eurodanceartist",
+    "title": "Dr. Bombay slår igenom",
+    "wikipediaSlug": "Jonny_Jakobsen",
+    "year": 1998
+  },
+  {
+    "fact": "Bodies Without Organs bildas.",
+    "image": "BodiesWithoutOrgans.jpg",
+    "pageViews": 180000,
+    "qid": "Q507914",
+    "subtitle": "Svensk popgrupp",
+    "title": "BWO bildas",
+    "wikipediaSlug": "BWO",
+    "year": 2003
+  },
+  {
+    "fact": "Moneybrother får sitt genombrott som soloartist.",
+    "image": "Moneybrother_in_2018-2.jpg",
+    "pageViews": 180000,
+    "qid": "Q1345624",
+    "subtitle": "Svensk artist",
+    "title": "Moneybrother slår igenom",
+    "wikipediaSlug": "Moneybrother",
+    "year": 2003
+  },
+  {
+    "fact": "Bilddagboken lanseras och blir en populär svensk fotosajt.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q4907646",
+    "subtitle": "Svensk bildsajt",
+    "title": "Bilddagboken lanseras",
+    "wikipediaSlug": "Dayviews",
+    "year": 2004
   },
   {
     "fact": "Laleh släpper sitt debutalbum.",
@@ -440,6 +1270,56 @@
     "year": 2005
   },
   {
+    "fact": "Agnes Carlsson vinner Idol.",
+    "image": "Agnes_Carlsson_2012-06-27_001.jpg",
+    "pageViews": 180000,
+    "qid": "Q229821",
+    "subtitle": "Svensk artist",
+    "title": "Agnes vinner Idol",
+    "wikipediaSlug": "Agnes_Carlsson",
+    "year": 2005
+  },
+  {
+    "fact": "September får sitt breda genombrott med Satellites.",
+    "image": "Petra_Marklund_in_2015.jpg",
+    "pageViews": 180000,
+    "qid": "Q230066",
+    "subtitle": "Svensk artist",
+    "title": "September slår igenom",
+    "wikipediaSlug": "Petra_Marklund",
+    "year": 2005
+  },
+  {
+    "fact": "Danny Saucedo slår igenom i Idol.",
+    "image": "Danny_Saucedo_-_Melodifestivalen_2024-3.jpg",
+    "pageViews": 180000,
+    "qid": "Q324920",
+    "subtitle": "Svensk artist",
+    "title": "Danny Saucedo slår igenom",
+    "wikipediaSlug": "Danny_Saucedo",
+    "year": 2006
+  },
+  {
+    "fact": "Molly Sandén slår igenom i Junior Eurovision.",
+    "image": "Molly_Sandén_På_Sommarkrysset_2016.jpg",
+    "pageViews": 180000,
+    "qid": "Q54836",
+    "subtitle": "Svensk artist",
+    "title": "Molly Sandén slår igenom",
+    "wikipediaSlug": "Molly_Sand%C3%A9n",
+    "year": 2006
+  },
+  {
+    "fact": "Miss Li får sitt genombrott som artist.",
+    "image": "Miss_Li_2016-06-27_001.jpg",
+    "pageViews": 180000,
+    "qid": "Q127340",
+    "subtitle": "Svensk artist",
+    "title": "Miss Li slår igenom",
+    "wikipediaSlug": "Miss_Li",
+    "year": 2006
+  },
+  {
     "fact": "First Aid Kit bildas av systrarna Klara och Johanna Söderberg.",
     "image": "",
     "pageViews": 180000,
@@ -448,6 +1328,116 @@
     "title": "First Aid Kit bildas",
     "wikipediaSlug": "First_Aid_Kit_(musikgrupp)",
     "year": 2007
+  },
+  {
+    "fact": "Melissa Horn släpper sitt debutalbum.",
+    "image": "Melissa_Horn,_Live_Liseberg,_Gothenburg,_Sweden,_2018-06-29.jpg",
+    "pageViews": 180000,
+    "qid": "Q2741243",
+    "subtitle": "Svensk artist",
+    "title": "Melissa Horn albumdebuterar",
+    "wikipediaSlug": "Melissa_Horn",
+    "year": 2008
+  },
+  {
+    "fact": "Eric Saade får sitt genombrott i Melodifestivalen.",
+    "image": "Melodifestivalen_2019,_deltävling_1,_Scandinavium,_Göteborg,_Eric_Saade,_3_(cropped).jpg",
+    "pageViews": 180000,
+    "qid": "Q12007",
+    "subtitle": "Svensk artist",
+    "title": "Eric Saade slår igenom",
+    "wikipediaSlug": "Eric_Saade",
+    "year": 2010
+  },
+  {
+    "fact": "Hov1 får sitt breda genombrott bland unga svenska lyssnare.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q29647393",
+    "subtitle": "Svensk musikgrupp",
+    "title": "Hov1 slår igenom",
+    "wikipediaSlug": "Hov1",
+    "year": 2015
+  },
+  {
+    "fact": "Benjamin Ingrosso får sitt stora genombrott i Melodifestivalen.",
+    "image": "Benjamin_Ingrosso_-_Rockbjörnen_2024_(cropped).jpg",
+    "pageViews": 180000,
+    "qid": "Q4889354",
+    "subtitle": "Svensk artist",
+    "title": "Benjamin Ingrosso slår igenom",
+    "wikipediaSlug": "Benjamin_Ingrosso",
+    "year": 2018
+  },
+  {
+    "fact": "Nanne Grönvall slår igenom brett med Den vilda.",
+    "image": "Melodifestivalen_2020,_Malmö,_Nanne_Grönvall_01.jpg",
+    "pageViews": 160000,
+    "qid": "Q1922785",
+    "subtitle": "Svensk artist",
+    "title": "Nanne Grönvall slår igenom",
+    "wikipediaSlug": "Nanne_Gr%C3%B6nvall",
+    "year": 1996
+  },
+  {
+    "fact": "Den vilda vinner Melodifestivalen.",
+    "image": "",
+    "pageViews": 160000,
+    "qid": "Q3295887",
+    "subtitle": "Låt av One More Time",
+    "title": "”Den vilda” vinner Melodifestivalen",
+    "wikipediaSlug": "Den_vilda",
+    "year": 1996
+  },
+  {
+    "fact": "Sarek slår igenom i Melodifestivalen.",
+    "image": "",
+    "pageViews": 160000,
+    "qid": "Q5247306",
+    "subtitle": "Svensk musikgrupp",
+    "title": "Sarek slår igenom",
+    "wikipediaSlug": "Sarek_(musikgrupp)",
+    "year": 2003
+  },
+  {
+    "fact": "Oskar Linnros släpper sitt första soloalbum.",
+    "image": "Oskar_Linnros_på_Grammisgalan_2013.jpg",
+    "pageViews": 160000,
+    "qid": "Q4993071",
+    "subtitle": "Svensk artist",
+    "title": "Oskar Linnros solodebuterar",
+    "wikipediaSlug": "Oskar_Linnros",
+    "year": 2010
+  },
+  {
+    "fact": "Daniel Adams-Ray släpper sitt första soloalbum.",
+    "image": "Daniel_Adams-Ray_1_-_cropped.jpg",
+    "pageViews": 160000,
+    "qid": "Q5216357",
+    "subtitle": "Svensk artist",
+    "title": "Daniel Adams-Ray solodebuterar",
+    "wikipediaSlug": "Daniel_Adams-Ray",
+    "year": 2010
+  },
+  {
+    "fact": "Dina Ögon får ett brett genombrott i svensk musik.",
+    "image": "",
+    "pageViews": 160000,
+    "qid": "Q116725483",
+    "subtitle": "Svensk musikgrupp",
+    "title": "Dina Ögon slår igenom",
+    "wikipediaSlug": "Dina_%C3%96gon_(musikgrupp)",
+    "year": 2021
+  },
+  {
+    "fact": "Bolaget får ett brett genombrott med svenska poplåtar.",
+    "image": "",
+    "pageViews": 160000,
+    "qid": "Q114561023",
+    "subtitle": "Svensk musikgrupp",
+    "title": "Bolaget slår igenom",
+    "wikipediaSlug": "Bolaget_(musikgrupp)",
+    "year": 2022
   },
   {
     "qid": "Q135726298",

@@ -30,14 +30,134 @@
     "pageViews": 304114
   },
   {
-    "fact": "Den första boken om Alfons Åberg ges ut.",
+    "fact": "August Strindberg får sitt genombrott med Röda rummet.",
+    "image": "AugustStrindberg.jpg",
+    "pageViews": 300000,
+    "qid": "Q7724",
+    "subtitle": "Svensk författare",
+    "title": "August Strindberg ger ut Röda rummet",
+    "wikipediaSlug": "August_Strindberg",
+    "year": 1879
+  },
+  {
+    "fact": "Selma Lagerlöf blir första kvinna att få Nobelpriset i litteratur.",
+    "image": "Atelje_Jaeger_-_Selma_Lagerlöf_1928.jpeg",
+    "pageViews": 300000,
+    "qid": "Q44519",
+    "subtitle": "Svensk författare",
+    "title": "Selma Lagerlöf får Nobelpriset",
+    "wikipediaSlug": "Selma_Lagerl%C3%B6f",
+    "year": 1909
+  },
+  {
+    "fact": "Män som hatar kvinnor ges ut efter Stieg Larssons död.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q186317",
+    "subtitle": "Svensk författare",
+    "title": "Stieg Larsson ger ut Millennium",
+    "wikipediaSlug": "Stieg_Larsson",
+    "year": 2005
+  },
+  {
+    "fact": "Selma Lagerlöf ger ut Nils Holgerssons underbara resa genom Sverige.",
+    "image": "Nils_Holgersson_band_1-Illustration_1.jpg",
+    "pageViews": 260000,
+    "qid": "Q726254",
+    "subtitle": "Svensk barnbok",
+    "title": "Nils Holgersson ges ut",
+    "wikipediaSlug": "Nils_Holgerssons_underbara_resa_genom_Sverige",
+    "year": 1906
+  },
+  {
+    "fact": "Karin Boye ger ut dystopin Kallocain.",
+    "image": "Karin_Boye,_1940s.gif",
+    "pageViews": 260000,
+    "qid": "Q237413",
+    "subtitle": "Svensk författare",
+    "title": "Karin Boye ger ut Kallocain",
+    "wikipediaSlug": "Karin_Boye",
+    "year": 1940
+  },
+  {
+    "fact": "Tove Jansson ger ut den första boken om Mumintrollen.",
+    "image": "Disambig_grey.svg",
+    "pageViews": 260000,
+    "qid": "Q10590157",
+    "subtitle": "Nordisk barnboksfigur",
+    "title": "Mumin ges ut",
+    "wikipediaSlug": "Mumin",
+    "year": 1945
+  },
+  {
+    "fact": "Vilhelm Moberg inleder Utvandrarserien.",
+    "image": "Vilhelm_Moberg_1952.jpg",
+    "pageViews": 260000,
+    "qid": "Q365406",
+    "subtitle": "Svensk författare",
+    "title": "Vilhelm Moberg ger ut Utvandrarna",
+    "wikipediaSlug": "Vilhelm_Moberg",
+    "year": 1949
+  },
+  {
+    "fact": "Gunilla Bergström ger ut den första boken om Alfons Åberg.",
     "image": "",
     "pageViews": 260000,
     "qid": "Q1316142",
     "subtitle": "Svensk barnboksfigur",
-    "title": "Alfons Åberg ges ut",
+    "title": "Alfons Åberg debuterar",
     "wikipediaSlug": "Alfons_%C3%85berg",
     "year": 1972
+  },
+  {
+    "fact": "Astrid Lindgren ger ut Bröderna Lejonhjärta.",
+    "image": "Astrid_Lindgrens_Värld_-_Bröderna_Lejonhjärta.jpg",
+    "pageViews": 260000,
+    "qid": "Q1142693",
+    "subtitle": "Barnbok av Astrid Lindgren",
+    "title": "Bröderna Lejonhjärta ges ut",
+    "wikipediaSlug": "Br%C3%B6derna_Lejonhj%C3%A4rta",
+    "year": 1973
+  },
+  {
+    "fact": "Astrid Lindgren ger ut Ronja Rövardotter.",
+    "image": "Ronja_och_Mattis,_Astrid_Lindgrens_Värld_2014.jpg",
+    "pageViews": 260000,
+    "qid": "Q1144655",
+    "subtitle": "Barnbok av Astrid Lindgren",
+    "title": "Ronja Rövardotter ges ut",
+    "wikipediaSlug": "Ronja_r%C3%B6vardotter",
+    "year": 1981
+  },
+  {
+    "fact": "Jan Guillou ger ut romanen Ondskan.",
+    "image": "Jan_Guillou_by_Christian_Ursilva.jpg",
+    "pageViews": 260000,
+    "qid": "Q315773",
+    "subtitle": "Svensk författare",
+    "title": "Jan Guillou ger ut Ondskan",
+    "wikipediaSlug": "Jan_Guillou",
+    "year": 1981
+  },
+  {
+    "fact": "Henning Mankell ger ut den första romanen om Kurt Wallander.",
+    "image": "Henning_Mankell_2013-06-02_001.jpg",
+    "pageViews": 260000,
+    "qid": "Q193346",
+    "subtitle": "Svensk författare",
+    "title": "Henning Mankell skapar Wallander",
+    "wikipediaSlug": "Henning_Mankell",
+    "year": 1991
+  },
+  {
+    "fact": "Camilla Läckberg debuterar med Isprinsessan.",
+    "image": "Camilla_Läckberg_by_Christian_Ursilva.jpg",
+    "pageViews": 260000,
+    "qid": "Q231320",
+    "subtitle": "Svensk deckarförfattare",
+    "title": "Camilla Läckberg debuterar",
+    "wikipediaSlug": "Camilla_L%C3%A4ckberg",
+    "year": 2003
   },
   {
     "fact": "Män som hatar kvinnor ges ut.",
@@ -48,6 +168,16 @@
     "title": "”Män som hatar kvinnor” ges ut",
     "wikipediaSlug": "M%C3%A4n_som_hatar_kvinnor",
     "year": 2005
+  },
+  {
+    "fact": "Fredrik Backman ger ut En man som heter Ove.",
+    "image": "Disambig_grey.svg",
+    "pageViews": 260000,
+    "qid": "Q16277710",
+    "subtitle": "Svensk författare",
+    "title": "Fredrik Backman ger ut Ove",
+    "wikipediaSlug": "Fredrik_Backman",
+    "year": 2012
   },
   {
     "qid": "Q190192",
@@ -70,6 +200,26 @@
     "pageViews": 247015
   },
   {
+    "fact": "Sven Nordqvist ger ut den första boken om Pettson och Findus.",
+    "image": "Pettson_och_Findus.JPG",
+    "pageViews": 240000,
+    "qid": "Q164639",
+    "subtitle": "Svenska barnboksfigurer",
+    "title": "Pettson och Findus debuterar",
+    "wikipediaSlug": "Pettson_och_Findus",
+    "year": 1984
+  },
+  {
+    "fact": "Jonas Gardell får sitt breda genombrott som författare och artist.",
+    "image": "Jonas_Gardell,_2022.jpg",
+    "pageViews": 240000,
+    "qid": "Q982351",
+    "subtitle": "Svensk författare och komiker",
+    "title": "Jonas Gardell slår igenom",
+    "wikipediaSlug": "Jonas_Gardell",
+    "year": 1985
+  },
+  {
     "qid": "Q271764",
     "title": "‘Lord of the Flies’ is published",
     "subtitle": "Book by William Golding",
@@ -80,14 +230,14 @@
     "pageViews": 230366
   },
   {
-    "fact": "Nils Holgerssons underbara resa genom Sverige ges ut.",
-    "image": "Nils_Holgersson_band_1-Illustration_1.jpg",
+    "fact": "Hjalmar Söderberg ger ut Doktor Glas.",
+    "image": "Hjalmar_Söderberg_ca_1933.jpg",
     "pageViews": 220000,
-    "qid": "Q726254",
-    "subtitle": "Bok av Selma Lagerlöf",
-    "title": "Nils Holgerssons resa ges ut",
-    "wikipediaSlug": "Nils_Holgerssons_underbara_resa_genom_Sverige",
-    "year": 1906
+    "qid": "Q331845",
+    "subtitle": "Svensk författare",
+    "title": "Hjalmar Söderberg ger ut Doktor Glas",
+    "wikipediaSlug": "Hjalmar_S%C3%B6derberg",
+    "year": 1905
   },
   {
     "fact": "Evert Taube debuterar som författare och visdiktare.",
@@ -100,6 +250,46 @@
     "year": 1920
   },
   {
+    "fact": "Moa Martinson debuterar med Kvinnor och äppelträd.",
+    "image": "Moa_Martinson,_1957.jpg",
+    "pageViews": 220000,
+    "qid": "Q275893",
+    "subtitle": "Svensk författare",
+    "title": "Moa Martinson debuterar",
+    "wikipediaSlug": "Moa_Martinson",
+    "year": 1933
+  },
+  {
+    "fact": "Den första boken om Pelle Svanslös ges ut.",
+    "image": "Pelle_Svanslös-statyn,_Uppsala.jpg",
+    "pageViews": 220000,
+    "qid": "Q3491791",
+    "subtitle": "Svensk barnboksfigur",
+    "title": "Pelle Svanslös ges ut",
+    "wikipediaSlug": "Pelle_Svansl%C3%B6s",
+    "year": 1939
+  },
+  {
+    "fact": "Snusmumriken introduceras i berättelserna om Mumintrollen.",
+    "image": "Nuuskamuikkunen.jpg",
+    "pageViews": 220000,
+    "qid": "Q1289624",
+    "subtitle": "Nordisk barnboksfigur",
+    "title": "Snusmumriken introduceras",
+    "wikipediaSlug": "Snusmumriken",
+    "year": 1946
+  },
+  {
+    "fact": "Personnummer införs i Sverige.",
+    "image": "Påhittat_svenskt_personnummer_före_1990.png",
+    "pageViews": 220000,
+    "qid": "Q5453848",
+    "subtitle": "Svensk folkbokföring",
+    "title": "Personnummer införs",
+    "wikipediaSlug": "Personnummer_i_Sverige",
+    "year": 1947
+  },
+  {
     "fact": "Utvandrarna ges ut.",
     "image": "Originalmanuskriptet-Utvandrarna.jpg",
     "pageViews": 220000,
@@ -110,34 +300,164 @@
     "year": 1949
   },
   {
-    "fact": "Karlsson på taket ges ut.",
+    "fact": "Lilla My introduceras i Mumindalens värld.",
+    "image": "Pikku_Myy.jpg",
+    "pageViews": 220000,
+    "qid": "Q2503697",
+    "subtitle": "Nordisk barnboksfigur",
+    "title": "Lilla My introduceras",
+    "wikipediaSlug": "Lilla_My",
+    "year": 1950
+  },
+  {
+    "fact": "Pär Lagerkvist tilldelas Nobelpriset i litteratur.",
+    "image": "Lagerkvist.jpg",
+    "pageViews": 220000,
+    "qid": "Q93137",
+    "subtitle": "Svensk författare",
+    "title": "Pär Lagerkvist får Nobelpriset",
+    "wikipediaSlug": "P%C3%A4r_Lagerkvist",
+    "year": 1951
+  },
+  {
+    "fact": "Sara Lidman debuterar med Tjärdalen.",
+    "image": "Sara_Lidman_001.jpg",
+    "pageViews": 220000,
+    "qid": "Q287784",
+    "subtitle": "Svensk författare",
+    "title": "Sara Lidman debuterar",
+    "wikipediaSlug": "Sara_Lidman",
+    "year": 1953
+  },
+  {
+    "fact": "Astrid Lindgren ger ut Mio, min Mio.",
+    "image": "Mio_min_Mio.jpg",
+    "pageViews": 220000,
+    "qid": "Q178688",
+    "subtitle": "Barnbok av Astrid Lindgren",
+    "title": "Mio, min Mio ges ut",
+    "wikipediaSlug": "Mio%2C_min_Mio",
+    "year": 1954
+  },
+  {
+    "fact": "Astrid Lindgren ger ut den första boken om Karlsson på taket.",
     "image": "Karlsson-on-the-Roof_1992_stamp_of_Russia.jpg",
     "pageViews": 220000,
     "qid": "Q1500349",
-    "subtitle": "Barnbok av Astrid Lindgren",
+    "subtitle": "Barnboksfigur av Astrid Lindgren",
     "title": "Karlsson på taket ges ut",
     "wikipediaSlug": "Karlsson_p%C3%A5_taket",
     "year": 1955
   },
   {
-    "fact": "Bröderna Lejonhjärta ges ut.",
-    "image": "Astrid_Lindgrens_Värld_-_Bröderna_Lejonhjärta.jpg",
+    "fact": "Motbokssystemet avskaffas i Sverige.",
+    "image": "DA-2015-088692-SYS000452_Stämpel_sista_dan.jpg",
     "pageViews": 220000,
-    "qid": "Q1142693",
-    "subtitle": "Barnbok av Astrid Lindgren",
-    "title": "”Bröderna Lejonhjärta” ges ut",
-    "wikipediaSlug": "Br%C3%B6derna_Lejonhj%C3%A4rta",
-    "year": 1973
+    "qid": "Q3438486",
+    "subtitle": "Svensk alkoholhistoria",
+    "title": "Motboken avskaffas",
+    "wikipediaSlug": "Motbokssystemet",
+    "year": 1955
   },
   {
-    "fact": "Pettson och Findus debuterar i bokform.",
-    "image": "Pettson_och_Findus.JPG",
+    "fact": "Kerstin Ekman debuterar som romanförfattare.",
+    "image": "Kerstin_Ekman_2011.jpg",
     "pageViews": 220000,
-    "qid": "Q164639",
-    "subtitle": "Svensk barnboksserie",
-    "title": "Pettson och Findus debuterar",
-    "wikipediaSlug": "Pettson_och_Findus",
+    "qid": "Q237703",
+    "subtitle": "Svensk författare",
+    "title": "Kerstin Ekman debuterar",
+    "wikipediaSlug": "Kerstin_Ekman",
+    "year": 1959
+  },
+  {
+    "fact": "Astrid Lindgren ger ut den första boken om Madicken.",
+    "image": "Astrid_Lindgrens_Värld_-_Madicken.jpg",
+    "pageViews": 220000,
+    "qid": "Q1803190",
+    "subtitle": "Barnboksfigur av Astrid Lindgren",
+    "title": "Madicken ges ut",
+    "wikipediaSlug": "Madicken",
+    "year": 1960
+  },
+  {
+    "fact": "Maj Sjöwall och Per Wahlöö ger ut den första boken om Martin Beck.",
+    "image": "Maj_Sjöwall_01.jpg",
+    "pageViews": 220000,
+    "qid": "Q264855",
+    "subtitle": "Svensk deckarförfattare",
+    "title": "Sjöwall och Wahlöö skapar Beck",
+    "wikipediaSlug": "Maj_Sj%C3%B6wall",
+    "year": 1965
+  },
+  {
+    "fact": "Harry Martinson tilldelas Nobelpriset i litteratur.",
+    "image": "Harry_Martinson_001.tiff",
+    "pageViews": 220000,
+    "qid": "Q132695",
+    "subtitle": "Svensk författare",
+    "title": "Harry Martinson får Nobelpriset",
+    "wikipediaSlug": "Harry_Martinson",
+    "year": 1974
+  },
+  {
+    "fact": "Tage Danielsson skriver Sagan om Karl-Bertil Jonssons julafton.",
+    "image": "Tage_Danielsson_radio.jpg",
+    "pageViews": 220000,
+    "qid": "Q1384021",
+    "subtitle": "Svensk författare och komiker",
+    "title": "Tage Danielsson gör Sagan om Karl-Bertil",
+    "wikipediaSlug": "Tage_Danielsson",
+    "year": 1975
+  },
+  {
+    "fact": "Ulf Lundell romandebuterar med Jack.",
+    "image": "Ulf_Lundell_1988.png",
+    "pageViews": 220000,
+    "qid": "Q713270",
+    "subtitle": "Svensk artist och författare",
+    "title": "Ulf Lundell romandebuterar",
+    "wikipediaSlug": "Ulf_Lundell",
+    "year": 1976
+  },
+  {
+    "fact": "Torgny Lindgren får sitt genombrott med Ormens väg på hälleberget.",
+    "image": "Torgny_Lindgren.JPG",
+    "pageViews": 220000,
+    "qid": "Q437700",
+    "subtitle": "Svensk författare",
+    "title": "Torgny Lindgren slår igenom",
+    "wikipediaSlug": "Torgny_Lindgren",
+    "year": 1982
+  },
+  {
+    "fact": "Den första boken om Sune ges ut.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "manual-Sune_(bokserie)",
+    "subtitle": "Svensk bokserie",
+    "title": "Sune debuterar",
+    "wikipediaSlug": "Sune_(bokserie)",
     "year": 1984
+  },
+  {
+    "fact": "Den första boken om Bert ges ut.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "manual-Bert_(bokserie)",
+    "subtitle": "Svensk bokserie",
+    "title": "Bert debuterar",
+    "wikipediaSlug": "Bert_(bokserie)",
+    "year": 1987
+  },
+  {
+    "fact": "Liza Marklund slår igenom med Sprängaren.",
+    "image": "Liza-Marklund.jpg",
+    "pageViews": 220000,
+    "qid": "Q236660",
+    "subtitle": "Svensk författare",
+    "title": "Liza Marklund slår igenom",
+    "wikipediaSlug": "Liza_Marklund",
+    "year": 1998
   },
   {
     "fact": "En man som heter Ove ges ut.",
@@ -158,6 +478,56 @@
     "wikipediaSlug": "Frankenstein",
     "image": "Christie's_auction_scan_of_Frankenstein_1818.jpg",
     "pageViews": 209085
+  },
+  {
+    "fact": "Ivar Lo-Johansson debuterar som författare.",
+    "image": "Ivar_Lo-Johansson.png",
+    "pageViews": 200000,
+    "qid": "Q267242",
+    "subtitle": "Svensk författare",
+    "title": "Ivar Lo-Johansson debuterar",
+    "wikipediaSlug": "Ivar_Lo-Johansson",
+    "year": 1927
+  },
+  {
+    "fact": "Åke Holmberg ger ut den första boken om Ture Sventon.",
+    "image": "",
+    "pageViews": 200000,
+    "qid": "Q4354348",
+    "subtitle": "Svensk barnboksfigur",
+    "title": "Ture Sventon debuterar",
+    "wikipediaSlug": "Ture_Sventon",
+    "year": 1948
+  },
+  {
+    "fact": "Per Wahlöö och Maj Sjöwall ger ut den första boken om Martin Beck.",
+    "image": "Per_Wahlöö,_1926-1975,_swedish_author.jpg",
+    "pageViews": 200000,
+    "qid": "Q553730",
+    "subtitle": "Svensk deckarförfattare",
+    "title": "Per Wahlöö skapar Beck",
+    "wikipediaSlug": "Per_Wahl%C3%B6%C3%B6",
+    "year": 1965
+  },
+  {
+    "fact": "Katarina Taikon ger ut Katitzi.",
+    "image": "",
+    "pageViews": 200000,
+    "qid": "Q10544372",
+    "subtitle": "Svensk barnbok",
+    "title": "Katitzi ges ut",
+    "wikipediaSlug": "Katitzi",
+    "year": 1969
+  },
+  {
+    "fact": "Eyvind Johnson tilldelas Nobelpriset i litteratur.",
+    "image": "Eyvind.JPG",
+    "pageViews": 200000,
+    "qid": "Q131326",
+    "subtitle": "Svensk författare",
+    "title": "Eyvind Johnson får Nobelpriset",
+    "wikipediaSlug": "Eyvind_Johnson",
+    "year": 1974
   },
   {
     "qid": "Q208460",
@@ -190,24 +560,44 @@
     "year": 1891
   },
   {
-    "fact": "Mio, min Mio ges ut.",
-    "image": "Mio_min_Mio.jpg",
+    "fact": "Martha Sandwall-Bergström ger ut första boken om Kulla-Gulla.",
+    "image": "",
     "pageViews": 180000,
-    "qid": "Q178688",
-    "subtitle": "Barnbok av Astrid Lindgren",
-    "title": "”Mio, min Mio” ges ut",
-    "wikipediaSlug": "Mio%2C_min_Mio",
-    "year": 1954
+    "qid": "Q10549872",
+    "subtitle": "Svensk bokfigur",
+    "title": "Kulla-Gulla debuterar",
+    "wikipediaSlug": "Kulla-Gulla",
+    "year": 1945
   },
   {
-    "fact": "Madicken ges ut.",
-    "image": "Astrid_Lindgrens_Värld_-_Madicken.jpg",
+    "fact": "Hattifnattarna blir en del av Mumindalens värld.",
+    "image": "Hatifnat.svg",
     "pageViews": 180000,
-    "qid": "Q1803190",
+    "qid": "Q2608368",
+    "subtitle": "Nordisk barnboksfigur",
+    "title": "Hattifnattarna blir Muminfigurer",
+    "wikipediaSlug": "Hattifnattar",
+    "year": 1946
+  },
+  {
+    "fact": "Astrid Lindgren ger ut Rasmus på luffen.",
+    "image": "Astrid_Lindgrens_Värld_-_Rasmus_and_the_Vagabond.jpg",
+    "pageViews": 180000,
+    "qid": "Q3742778",
     "subtitle": "Barnbok av Astrid Lindgren",
-    "title": "Madicken ges ut",
-    "wikipediaSlug": "Madicken",
-    "year": 1960
+    "title": "Rasmus på luffen ges ut",
+    "wikipediaSlug": "Rasmus_p%C3%A5_luffen",
+    "year": 1956
+  },
+  {
+    "fact": "Lotta på Bråkmakargatan introduceras i Astrid Lindgrens böcker.",
+    "image": "Astrid_Lindgrens_Värld_-_House_of_Lotta_on_Troublemaker_Street.jpg",
+    "pageViews": 180000,
+    "qid": "Q3199262",
+    "subtitle": "Barnboksfigur av Astrid Lindgren",
+    "title": "Lotta på Bråkmakargatan ges ut",
+    "wikipediaSlug": "Lotta_p%C3%A5_Br%C3%A5kmakargatan",
+    "year": 1958
   },
   {
     "fact": "Emil i Lönneberga ges ut.",
@@ -230,44 +620,114 @@
     "year": 1965
   },
   {
-    "fact": "Ronja Rövardotter ges ut.",
-    "image": "Ronja_och_Mattis,_Astrid_Lindgrens_Värld_2014.jpg",
-    "pageViews": 180000,
-    "qid": "Q1144655",
-    "subtitle": "Barnbok av Astrid Lindgren",
-    "title": "”Ronja Rövardotter” ges ut",
-    "wikipediaSlug": "Ronja_r%C3%B6vardotter",
-    "year": 1981
-  },
-  {
-    "fact": "Sune debuterar som svensk barn- och ungdomsfigur.",
+    "fact": "Barbro Lindgren ger ut Loranga, Masarin och Dartanjang.",
     "image": "",
     "pageViews": 180000,
-    "qid": "manual-Sune_(bokserie)",
-    "subtitle": "Svensk bokserie",
-    "title": "Sune debuterar",
-    "wikipediaSlug": "Sune_(bokserie)",
-    "year": 1984
+    "qid": "Q10569746",
+    "subtitle": "Svensk barnbok",
+    "title": "Loranga, Masarin och Dartanjang ges ut",
+    "wikipediaSlug": "Loranga%2C_Masarin_och_Dartanjang",
+    "year": 1969
   },
   {
-    "fact": "Mamma Mu dyker upp i radio.",
+    "fact": "Hans Alfredson regisserar och spelar i Ägget är löst!.",
+    "image": "Hans_Alfredson_på_Guldbaggegalan_2013.JPG",
+    "pageViews": 180000,
+    "qid": "Q1033656",
+    "subtitle": "Svensk komiker och författare",
+    "title": "Hans Alfredson gör Ägget är löst!",
+    "wikipediaSlug": "Hans_Alfredson",
+    "year": 1975
+  },
+  {
+    "fact": "Mamma Mu introduceras i svensk barnkultur.",
     "image": "Mamma-mu-och-krakan.jpg",
     "pageViews": 180000,
     "qid": "Q6745311",
     "subtitle": "Svensk barnboksfigur",
-    "title": "Mamma Mu dyker upp",
+    "title": "Mamma Mu debuterar",
     "wikipediaSlug": "Mamma_Mu",
     "year": 1985
   },
   {
-    "fact": "Bert debuterar i bokform.",
+    "fact": "Moni Nilsson ger ut den första boken om Tsatsiki.",
     "image": "",
     "pageViews": 180000,
-    "qid": "manual-Bert_(bokserie)",
-    "subtitle": "Svensk bokserie",
-    "title": "Bert debuterar",
-    "wikipediaSlug": "Bert_(bokserie)",
-    "year": 1987
+    "qid": "Q454008",
+    "subtitle": "Svensk barnboksfigur",
+    "title": "Tsatsiki debuterar",
+    "wikipediaSlug": "Tsatsiki",
+    "year": 1995
+  },
+  {
+    "fact": "Bilddagboken lanseras och blir en populär svensk fotosajt.",
+    "image": "",
+    "pageViews": 180000,
+    "qid": "Q4907646",
+    "subtitle": "Svensk bildsajt",
+    "title": "Bilddagboken lanseras",
+    "wikipediaSlug": "Dayviews",
+    "year": 2004
+  },
+  {
+    "fact": "Muminpappan introduceras i Tove Janssons böcker.",
+    "image": "Muumipappa.jpg",
+    "pageViews": 160000,
+    "qid": "Q393843",
+    "subtitle": "Nordisk barnboksfigur",
+    "title": "Muminpappan introduceras",
+    "wikipediaSlug": "Muminpappan",
+    "year": 1945
+  },
+  {
+    "fact": "Muminmamman introduceras i Tove Janssons böcker.",
+    "image": "Muumimamma.jpg",
+    "pageViews": 160000,
+    "qid": "Q2569920",
+    "subtitle": "Nordisk barnboksfigur",
+    "title": "Muminmamman introduceras",
+    "wikipediaSlug": "Muminmamman",
+    "year": 1945
+  },
+  {
+    "fact": "Gummi-Tarzan blir en välkänd barnbok även i Sverige.",
+    "image": "",
+    "pageViews": 160000,
+    "qid": "manual-Gummi-Tarzan",
+    "subtitle": "Nordisk barnbok",
+    "title": "Gummi-Tarzan blir barnklassiker",
+    "wikipediaSlug": "Gummi-Tarzan",
+    "year": 1975
+  },
+  {
+    "fact": "Agaton Sax blir känd genom böcker och tv.",
+    "image": "",
+    "pageViews": 160000,
+    "qid": "Q391557",
+    "subtitle": "Svensk barnboksfigur",
+    "title": "Agaton Sax blir tv-figur",
+    "wikipediaSlug": "Agaton_Sax",
+    "year": 1976
+  },
+  {
+    "fact": "Barbro Lindgren och Eva Eriksson ger ut Sagan om den lilla farbrorn.",
+    "image": "",
+    "pageViews": 160000,
+    "qid": "manual-Sagan_om_den_lilla_farbrorn",
+    "subtitle": "Svensk bilderbok",
+    "title": "Sagan om den lilla farbrorn ges ut",
+    "wikipediaSlug": "Sagan_om_den_lilla_farbrorn",
+    "year": 1979
+  },
+  {
+    "fact": "Häxorna blir känd för svenska barn genom bok och film.",
+    "image": "",
+    "pageViews": 160000,
+    "qid": "manual-H%C3%A4xorna_(bok)",
+    "subtitle": "Barnberättelse",
+    "title": "Häxorna blir svensk barnfilmsklassiker",
+    "wikipediaSlug": "H%C3%A4xorna_(bok)",
+    "year": 1990
   },
   {
     "qid": "Q15228",

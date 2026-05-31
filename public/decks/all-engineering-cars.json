@@ -1,21 +1,71 @@
 [
   {
-    "fact": "Koenigsegg grundas.",
+    "fact": "Koenigsegg grundas av Christian von Koenigsegg.",
     "image": "Koenigsegg-logo-1994-2048x2048.png",
-    "pageViews": 260000,
+    "pageViews": 300000,
     "qid": "Q35594",
-    "subtitle": "Svensk sportbilstillverkare",
+    "subtitle": "Svenskt sportbilsföretag",
     "title": "Koenigsegg grundas",
     "wikipediaSlug": "Koenigsegg",
     "year": 1994
   },
   {
-    "fact": "Polestar blir ett fristående elbilsmärke.",
+    "fact": "Volvo introducerar trepunktsbältet.",
+    "image": "Seat_belt_BX.jpg",
+    "pageViews": 260000,
+    "qid": "Q200403",
+    "subtitle": "Svensk trafiksäkerhet",
+    "title": "Trepunktsbältet lanseras",
+    "wikipediaSlug": "S%C3%A4kerhetsb%C3%A4lte",
+    "year": 1959
+  },
+  {
+    "fact": "Volvo 240 lanseras och blir en svensk bilklassiker.",
+    "image": "1990_volvo_240dl_wagon_4.jpg",
+    "pageViews": 260000,
+    "qid": "Q1341143",
+    "subtitle": "Svensk bilmodell",
+    "title": "Volvo 240 lanseras",
+    "wikipediaSlug": "Volvo_240",
+    "year": 1974
+  },
+  {
+    "fact": "Volvo Amazon lanseras.",
+    "image": "Auto_Volvo_121_6.jpg",
+    "pageViews": 220000,
+    "qid": "Q1543111",
+    "subtitle": "Svensk bilmodell",
+    "title": "Volvo Amazon lanseras",
+    "wikipediaSlug": "Volvo_Amazon",
+    "year": 1956
+  },
+  {
+    "fact": "Nils Bohlin utvecklar trepunktsbältet på Volvo.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q982287",
+    "subtitle": "Svensk ingenjör",
+    "title": "Nils Bohlin utvecklar trepunktsbältet",
+    "wikipediaSlug": "Nils_Bohlin",
+    "year": 1959
+  },
+  {
+    "fact": "Christian von Koenigsegg grundar Koenigsegg.",
+    "image": "COA_family_de_von_Königsegg.svg",
+    "pageViews": 220000,
+    "qid": "Q1082534",
+    "subtitle": "Svensk entreprenör",
+    "title": "Christian von Koenigsegg grundar sportbilsmärke",
+    "wikipediaSlug": "Christian_von_Koenigsegg",
+    "year": 1994
+  },
+  {
+    "fact": "Polestar lanseras som självständigt elbilsmärke.",
     "image": "",
     "pageViews": 220000,
     "qid": "Q4047174",
     "subtitle": "Svenskt elbilsmärke",
-    "title": "Polestar blir bilmärke",
+    "title": "Polestar blir elbilsmärke",
     "wikipediaSlug": "Polestar",
     "year": 2017
   },
