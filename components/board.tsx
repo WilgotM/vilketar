@@ -683,19 +683,7 @@ export default function Board(props: Props) {
           initial={false}
           transition={{ duration: 0.28, ease: "easeOut" }}
         >
-          <motion.span
-            key={score}
-            initial={{ scale: 0.8, opacity: 0.5 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 400,
-              damping: 15,
-            }}
-            className={styles.scoreValue}
-          >
-            {score}
-          </motion.span>
+          <span className={styles.scoreValue}>{score}</span>
           <span className={styles.scoreLabel}>poäng</span>
         </motion.div>
         <div className={styles.statusArea}>

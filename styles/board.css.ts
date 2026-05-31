@@ -79,6 +79,7 @@ export const scoreBadge = style({
   flexDirection: "column",
   gap: vars.space.xs,
   justifyContent: "center",
+  overflow: "visible",
   pointerEvents: "none",
   zIndex: 3,
   "@media": {
@@ -90,19 +91,25 @@ export const scoreBadge = style({
 
 export const scoreValue = style({
   color: vars.color.text,
+  WebkitTextFillColor: vars.color.text,
+  display: "block",
   fontSize: "3.5rem",
   fontWeight: vars.fontWeight.black,
-  lineHeight: vars.lineHeight.tight,
+  lineHeight: "1.2",
+  minHeight: "4.2rem",
+  overflow: "visible",
+  paddingBottom: "0.05em",
+  paddingTop: "0.02em",
   textAlign: "center",
   fontVariantNumeric: "tabular-nums",
-  display: "inline-flex",
-  alignItems: "center",
   "@media": {
     [media.compact]: {
       fontSize: "3rem",
+      minHeight: "3.6rem",
     },
     [media.shortWide]: {
       fontSize: "3rem",
+      minHeight: "3.6rem",
     },
   },
 });
