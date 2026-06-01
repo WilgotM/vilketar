@@ -6,6 +6,7 @@ import createState, {
   filterCardsByDifficulty,
   hasDeckForDifficulty,
 } from "./create-state";
+import { DAILY_DIFFICULTY } from "./daily";
 import { createDeckNodeListMap, resolveDeckSelection } from "./deck-tree";
 import { preloadImage, prepareDecks } from "./game-selection";
 import { createSeededRandom } from "./seeded-random";
@@ -178,7 +179,7 @@ export function createDailyGameStateFromSnapshot(
   selectedRootDeck: DeckNode,
   cardsByDeckId: ReadonlyMap<string, Card[]>,
 ): GameState {
-  const difficulty: GameDifficulty = "hard";
+  const difficulty: GameDifficulty = DAILY_DIFFICULTY;
   const random = createSeededRandom(
     snapshot.dateKey,
     snapshot.randomState ?? undefined,

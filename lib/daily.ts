@@ -1,4 +1,6 @@
-export const DAILY_DIFFICULTY = "hard";
+import { GameDifficulty } from "../types/game";
+
+export const DAILY_DIFFICULTY: GameDifficulty = "normal";
 
 export function getCurrentUtcDateKey(now: Date = new Date()): string {
   return now.toISOString().slice(0, 10);

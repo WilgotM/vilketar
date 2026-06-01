@@ -93,15 +93,16 @@ export const scoreValue = style({
   color: vars.color.text,
   WebkitTextFillColor: vars.color.text,
   display: "block",
+  fontFeatureSettings: "normal",
   fontSize: "3.5rem",
   fontWeight: vars.fontWeight.black,
+  fontVariantNumeric: "normal",
   lineHeight: "1.2",
   minHeight: "4.2rem",
   overflow: "visible",
   paddingBottom: "0.05em",
   paddingTop: "0.02em",
   textAlign: "center",
-  fontVariantNumeric: "tabular-nums",
   "@media": {
     [media.compact]: {
       fontSize: "3rem",
