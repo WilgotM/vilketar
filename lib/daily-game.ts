@@ -10,6 +10,7 @@ export const DAILY_CARD_COUNT = 100;
 
 export interface DailyOverride {
   cardQids: string[];
+  cards?: Card[];
   dateKey: string;
 }
 
@@ -88,6 +89,45 @@ function uniqueDailyCandidates(cards: PreparedCard[]): PreparedCard[] {
   });
 }
 
+function getSpacingBucket(year: number): number {
+  if (year >= 1950) {
+    return 0;
+  }
+  if (year >= 1850) {
+    return 1;
+  }
+  if (year >= 1500) {
+    return 2;
+  }
+  if (year >= 500) {
+    return 3;
+  }
+  return 4;
+}
+
+function prepareOverrideCards(
+  selectedRootDeck: DeckNode,
+  cards: readonly Card[],
+  difficulty: GameDifficulty,
+): PreparedCard[] {
+  return cards
+    .filter((card) => {
+      return (
+        card.pageViews !== null &&
+        card.pageViews >= DIFFICULTY_MIN_PAGE_VIEWS[difficulty]
+      );
+    })
+    .map((card, index) => ({
+      ...card,
+      deckId: selectedRootDeck.id,
+      deckThemeHue: selectedRootDeck.themeHue,
+      id: `daily-override:${card.qid}:${index}`,
+      rank: index + 1,
+      spacingBucket: getSpacingBucket(card.year),
+      yearBucket: 0,
+    }));
+}
+
 export function createDailyCardQueue(
   selectedRootDeck: DeckNode,
   cardsByDeckId: ReadonlyMap<string, Card[]>,
@@ -100,10 +140,15 @@ export function createDailyCardQueue(
     getAllEligibleCards(selectedRootDeck, cardsByDeckId, difficulty, random),
   );
   const cardsByQid = new Map(allCards.map((card) => [card.qid, card]));
-  const overrideCards =
+  const snapshotOverrideCards = override?.cards
+    ? prepareOverrideCards(selectedRootDeck, override.cards, difficulty)
+    : [];
+  const qidOverrideCards =
     override?.cardQids
       .map((qid) => cardsByQid.get(qid) ?? null)
       .filter((card): card is PreparedCard => card !== null) ?? [];
+  const overrideCards =
+    snapshotOverrideCards.length > 0 ? snapshotOverrideCards : qidOverrideCards;
   const shuffledCards = shuffle(allCards, random);
   const selectedCards: PreparedCard[] = [];
   const usedQids = new Set<string>();

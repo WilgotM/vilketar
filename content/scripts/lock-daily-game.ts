@@ -7,6 +7,7 @@ import { getDailyScheduleTheme } from "../../lib/daily-schedule";
 import { collectLeafDeckIds, createDeckNodeMap } from "../../lib/deck-tree";
 import { Card } from "../../types/cards";
 import { DeckNode } from "../../types/decks";
+import { PreparedCard } from "../../types/game";
 
 const PUBLIC_DECKS_DIR = path.join(process.cwd(), "public/decks");
 const SUPABASE_URL =
@@ -70,6 +71,7 @@ async function main(): Promise<void> {
     dateKey,
   );
   const cardQids = cards.map((card) => card.qid);
+  const cardSnapshots = cards.map((card) => toCardSnapshot(card));
 
   if (cardQids.length < 2) {
     throw new Error(`Not enough cards to lock ${dateKey}.`);
@@ -101,6 +103,7 @@ async function main(): Promise<void> {
   }
 
   const response = await supabase.from("daily_games").upsert({
+    card_snapshots: cardSnapshots,
     card_qids: cardQids,
     date_key: dateKey,
     updated_at: new Date().toISOString(),
@@ -111,6 +114,19 @@ async function main(): Promise<void> {
   }
 
   console.log(`Locked daily game ${dateKey} with ${cardQids.length} cards.`);
+}
+
+function toCardSnapshot(card: PreparedCard): Card {
+  return {
+    fact: card.fact,
+    image: card.image,
+    pageViews: card.pageViews,
+    qid: card.qid,
+    subtitle: card.subtitle,
+    title: card.title,
+    wikipediaSlug: card.wikipediaSlug,
+    year: card.year,
+  };
 }
 
 main().catch((error) => {

@@ -54,8 +54,8 @@ kortet känns för svenska spelare.
 Dagens spel ska vara tydligt och återkommande, särskilt eftersom spelet också
 ska fungera bra för pensionärer.
 
-- Svårighetsgraden för dagens spel är `hard` och ska normalt behållas. Den
-  nuvarande svårighetsnivån upplevs som bra.
+- Svårighetsgraden för dagens spel styrs av `DAILY_DIFFICULTY` i
+  `lib/daily.ts`. Kontrollera faktisk kod innan du antar nivå.
 - Veckoschemat ligger i `lib/daily-schedule.ts`.
 - Startsidan visar veckorytmen som en enkel kalender, inte en rörig
   månadskalender.
@@ -65,15 +65,19 @@ ska fungera bra för pensionärer.
 - Fredag är musik: `all-entertainment-music`.
 - Lördag är Svenska klassiker: `all-swedish-classics-all`.
 - Övriga dagar är vanligt dagens spel från hela roten.
-- Dagens kortkö kan låsas i Supabase-tabellen `daily_games` som `card_qids`.
-  Appen använder den raden om den finns och fyller annars från aktuella
-  deckfiler.
-- När kort/deck ändras och deployas under samma UTC-dag kan nya deck annars
-  påverka spelare som startar efter deployen. För att kortändringar bara ska
-  påverka imorgon och framåt: lås dagens spel innan kort/deck ändras eller
-  deployas, t.ex. med `bun run daily:lock`. Scriptet kräver
-  `SUPABASE_SERVICE_ROLE_KEY` och skriver inte över en befintlig låsning utan
-  `--force`.
+- Dagens kortkö låses i Supabase-tabellen `daily_games`. Raden innehåller både
+  `card_qids` och, efter migrationen `20260603172000_daily_game_card_snapshots`,
+  `card_snapshots`. Appen använder snapshots om de finns, så dagens kort kan
+  vara stabila även om deckfiler ändras och deployas senare samma UTC-dag.
+- GitHub Actions-workflowet `.github/workflows/lock-daily.yml` låser dagens
+  spel automatiskt kl. 00:05 UTC och kan köras manuellt. Det kräver repo
+  secrets: `SUPABASE_SERVICE_ROLE_KEY` samt `SUPABASE_URL` eller
+  `NEXT_PUBLIC_SUPABASE_URL`.
+- Design-, kod- och gamemode-deploys är inte schemalagda av daily-lock-jobbet.
+  De kan deployas när som helst; låsningen påverkar bara dagens kortkö.
+- `bun run daily:lock` kan köras manuellt för dagens UTC-datum och skriver inte
+  över befintlig låsning utan `--force`. Scriptet kräver
+  `SUPABASE_SERVICE_ROLE_KEY`.
 
 När dagens spel behöver fler frågor, lös det helst genom fler igenkännbara,
 spelbara kort i relevanta deck, inte genom att göra urvalet svårare eller mer
