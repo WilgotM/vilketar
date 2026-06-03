@@ -44,24 +44,22 @@ export const topRow = style({
 
 export const appIcon = style({
   alignItems: "center",
-  background:
-    "linear-gradient(145deg, rgba(255, 253, 250, 0.98), rgba(245, 245, 240, 0.86))",
+  background: "#090a0b",
   border: `1px solid ${vars.color.border}`,
   borderRadius: vars.radius.md,
   boxShadow: vars.shadow.card,
-  color: "#d97706",
   display: "flex",
   height: "3rem",
   justifyContent: "center",
   overflow: "hidden",
   width: "3rem",
-  "@media": {
-    [media.dark]: {
-      background:
-        "linear-gradient(145deg, rgba(35, 31, 28, 0.98), rgba(12, 10, 9, 0.9))",
-      color: "#fbbf24",
-    },
-  },
+});
+
+export const appIconImage = style({
+  display: "block",
+  height: "100%",
+  objectFit: "cover",
+  width: "100%",
 });
 
 export const copy = style({

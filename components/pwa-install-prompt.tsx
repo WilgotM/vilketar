@@ -95,22 +95,13 @@ function safeGetItem(key: string) {
 
 function AppGlyph() {
   return (
-    <svg aria-hidden="true" height="30" viewBox="0 0 32 32" width="30">
-      <circle cx="16" cy="16" fill="currentColor" opacity="0.18" r="15" />
-      <circle cx="16" cy="16" fill="currentColor" r="12" />
-      <text
-        dominantBaseline="middle"
-        fill="white"
-        fontFamily="Georgia, serif"
-        fontSize="19"
-        fontWeight="900"
-        textAnchor="middle"
-        x="16.5"
-        y="17"
-      >
-        ?
-      </text>
-    </svg>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      alt="VilketÅr logotyp"
+      className={styles.appIconImage}
+      draggable={false}
+      src="/logo-with-bg.svg"
+    />
   );
 }
 
