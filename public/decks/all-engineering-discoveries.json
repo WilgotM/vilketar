@@ -1,20 +1,20 @@
 [
   {
     "qid": "Q68",
-    "title": "Computer dates to",
-    "subtitle": "Invention or discovery",
+    "title": "Datorn kan spåras tillbaka till",
+    "subtitle": "Uppfinning eller upptäckt",
     "year": 1945,
-    "fact": "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation).",
+    "fact": "En dator är en maskin som kan programmeras för att automatiskt utföra sekvenser av aritmetiska eller logiska operationer (beräkningar).",
     "wikipediaSlug": "Computer",
     "image": "ENIAC-changing_a_tube_(cropped).jpg",
     "pageViews": 141874
   },
   {
     "qid": "Q309372",
-    "title": "Mercator projection dates to",
-    "subtitle": "Invention or discovery",
+    "title": "Mercators projektion dateras till",
+    "subtitle": "Uppfinning eller upptäckt",
     "year": 1569,
-    "fact": "The Mercator projection is a conformal cylindrical map projection first presented by Flemish geographer and mapmaker Gerardus Mercator in 1569.",
+    "fact": "Mercators projektion är en konform cylindrisk kartprojektion som först presenterades av den flamländske geografen och kartografen Gerardus Mercator år 1569.",
     "wikipediaSlug": "Mercator_projection",
     "image": "Mercator_projection_Square.JPG",
     "pageViews": 57818

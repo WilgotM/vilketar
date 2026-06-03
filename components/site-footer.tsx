@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import Link from "next/link";
 import * as ui from "../styles/ui.css";
 
 interface Props {
@@ -40,6 +41,27 @@ export default function SiteFooter(props: Props) {
           Wikidata
         </a>
         .
+      </div>
+      <div
+        style={{
+          marginTop: "4px",
+          display: "flex",
+          gap: "6px",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
+      >
+        <Link href="/integritet" className={ui.linkMuted}>
+          Integritetspolicy
+        </Link>
+        <span style={{ opacity: 0.4 }}>•</span>
+        <Link href="/villkor" className={ui.linkMuted}>
+          Användarvillkor
+        </Link>
+        <span style={{ opacity: 0.4 }}>•</span>
+        <a href="mailto:wilgot10@yahoo.com" className={ui.linkMuted}>
+          Kontakt
+        </a>
       </div>
     </div>
   );

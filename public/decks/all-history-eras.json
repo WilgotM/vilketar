@@ -1,10 +1,10 @@
 [
   {
     "qid": "Q362",
-    "title": "World War II begins",
-    "subtitle": "Historical era",
+    "title": "Andra världskriget börjar",
+    "subtitle": "Historisk epok",
     "year": 1939,
-    "fact": "World War II, or the Second World War, was a global conflict between two coalitions: the Allies and the Axis powers.",
+    "fact": "Andra världskriget var en global konflikt mellan två koalitioner: de allierade och axelmakterna.",
     "wikipediaSlug": "World_War_II",
     "image": "Bundesarchiv_Bild_101I-646-5188-17,_Flugzeuge_Junkers_Ju_87.jpg",
     "pageViews": 2486615
@@ -21,10 +21,10 @@
   },
   {
     "qid": "Q8683",
-    "title": "Cold War begins",
-    "subtitle": "Historical era",
+    "title": "Kalla kriget börjar",
+    "subtitle": "Historisk epok",
     "year": 1945,
-    "fact": "The Cold War was a period of international geopolitical rivalry between the United States (US) and the Soviet Union (USSR) and their respective allies, the capitalist Western Bloc and communist Eastern Bloc.",
+    "fact": "Kalla kriget var en period av internationell geopolitisk rivalitet mellan USA och Sovjetunionen och deras respektive allierade, det kapitalistiska västblocket och det kommunistiska östblocket.",
     "wikipediaSlug": "Cold_War",
     "image": "NATO_vs._Warsaw_Pact_(1949-1990).svg",
     "pageViews": 260571

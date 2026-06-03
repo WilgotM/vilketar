@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { getCurrentUtcDateKey } from "../lib/daily";
 import { loadDailyGameSnapshot } from "../lib/daily-storage";
@@ -1315,6 +1316,25 @@ export default function LeaguesScreen() {
                             : "Spara konto"
                         }
                       />
+                      <p
+                        className={styles.helperText}
+                        style={{
+                          fontSize: "0.75rem",
+                          marginTop: "-4px",
+                          textAlign: "center",
+                        }}
+                      >
+                        Genom att spara kontot godkänner du våra{" "}
+                        <Link href="/villkor" target="_blank">
+                          användarvillkor
+                        </Link>{" "}
+                        och samtycker till att vi behandlar din e-post enligt
+                        vår{" "}
+                        <Link href="/integritet" target="_blank">
+                          integritetspolicy
+                        </Link>
+                        .
+                      </p>
                       <button
                         className={styles.textAction}
                         disabled={busy}

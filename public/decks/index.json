@@ -1,8 +1,8 @@
 {
   "difficultyCounts": {
-    "easy": 747,
-    "normal": 2718,
-    "hard": 3566
+    "easy": 744,
+    "normal": 2714,
+    "hard": 3561
   },
   "id": "all",
   "minScore": 1000,
@@ -40,9 +40,9 @@
     },
     {
       "difficultyCounts": {
-        "easy": 57,
-        "normal": 97,
-        "hard": 118
+        "easy": 55,
+        "normal": 94,
+        "hard": 115
       },
       "id": "all-history",
       "minScore": 1000,
@@ -53,9 +53,9 @@
       "children": [
         {
           "difficultyCounts": {
-            "easy": 7,
-            "normal": 13,
-            "hard": 13
+            "easy": 5,
+            "normal": 10,
+            "hard": 10
           },
           "id": "all-history-nations",
           "minScore": 12,
@@ -149,9 +149,9 @@
     },
     {
       "difficultyCounts": {
-        "easy": 51,
-        "normal": 151,
-        "hard": 210
+        "easy": 50,
+        "normal": 150,
+        "hard": 209
       },
       "id": "all-leaders",
       "minScore": 1000,
@@ -446,9 +446,9 @@
         },
         {
           "difficultyCounts": {
-            "easy": 26,
-            "normal": 86,
-            "hard": 126
+            "easy": 25,
+            "normal": 85,
+            "hard": 125
           },
           "id": "all-leaders-rulers",
           "minScore": 1000,
@@ -898,9 +898,9 @@
             },
             {
               "difficultyCounts": {
-                "easy": 2,
-                "normal": 5,
-                "hard": 7
+                "easy": 1,
+                "normal": 4,
+                "hard": 6
               },
               "id": "all-leaders-rulers-middle-east",
               "minScore": 1000,
@@ -938,9 +938,9 @@
                 },
                 {
                   "difficultyCounts": {
-                    "easy": 2,
-                    "normal": 3,
-                    "hard": 3
+                    "easy": 1,
+                    "normal": 2,
+                    "hard": 2
                   },
                   "id": "all-leaders-rulers-middle-east-persia",
                   "minScore": 20,
@@ -2038,7 +2038,7 @@
       "difficultyCounts": {
         "easy": 11,
         "normal": 44,
-        "hard": 65
+        "hard": 64
       },
       "id": "all-architecture",
       "minScore": 1000,
@@ -2051,7 +2051,7 @@
           "difficultyCounts": {
             "easy": 0,
             "normal": 5,
-            "hard": 10
+            "hard": 9
           },
           "id": "all-architecture-ancient",
           "minScore": 10,

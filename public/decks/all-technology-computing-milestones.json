@@ -1,10 +1,10 @@
 [
   {
     "qid": "Q68",
-    "title": "Computer is invented",
-    "subtitle": "Invented by Charles Babbage",
+    "title": "Datorn uppfinns",
+    "subtitle": "Uppfunnen av Charles Babbage",
     "year": 1945,
-    "fact": "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation).",
+    "fact": "En dator är en maskin som kan programmeras för att automatiskt utföra sekvenser av aritmetiska eller logiska operationer (beräkningar).",
     "wikipediaSlug": "Computer",
     "image": "ENIAC-changing_a_tube_(cropped).jpg",
     "pageViews": 141874

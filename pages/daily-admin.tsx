@@ -446,8 +446,8 @@ export default function DailyAdminPage() {
             className={styles.input}
             autoComplete="email"
             onChange={(event) => setEmail(event.target.value)}
-            placeholder="E-postadress"
-            type="email"
+            placeholder="E-postadress eller användarnamn"
+            type="text"
             value={email}
           />
           <input

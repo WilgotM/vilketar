@@ -1,53 +1,43 @@
 [
   {
     "qid": "Q12560",
-    "title": "Ottoman Empire is established",
-    "subtitle": "Historical state",
+    "title": "Osmanska riket etableras",
+    "subtitle": "Historisk stat",
     "year": 1299,
-    "fact": "The Ottoman Empire, historically also known as the Turkish Empire, was a state that spanned much of Southeast Europe, West Asia, and North Africa from the 14th century to the early 20th century, centered in modern-day Turkey.",
+    "fact": "Osmanska riket, historiskt även känt som Turkiet, var en stat som omfattade stora delar av sydöstra Europa, västra Asien och norra Afrika från 1300-talet till början av 1900-talet, med centrum i dagens Turkiet.",
     "wikipediaSlug": "Ottoman_Empire",
     "image": "Flag_of_the_Ottoman_Empire_(1844–1922).svg",
     "pageViews": 385191
   },
   {
     "qid": "Q15180",
-    "title": "Soviet Union is established",
-    "subtitle": "Historical state",
+    "title": "Sovjetunionen grundas",
+    "subtitle": "Historisk stat",
     "year": 1922,
-    "fact": "The Union of Soviet Socialist Republics (USSR), also known as the Soviet Union, was a transcontinental country that spanned much of Eurasia from 1922 until its dissolution in 1991.",
+    "fact": "Sovjetunionen (USSR), även känd som unionen av socialistiska sovjetrepubliker, var ett transkontinentalt land som sträckte sig över stora delar av Eurasien från 1922 fram till dess upplösning 1991.",
     "wikipediaSlug": "Soviet_Union",
     "image": "Flag_of_the_Soviet_Union.svg",
     "pageViews": 369427
   },
   {
     "qid": "Q2277",
-    "title": "Roman Empire is established",
-    "subtitle": "Historical state",
+    "title": "Romarriket grundas",
+    "subtitle": "Historisk stat",
     "year": -26,
-    "fact": "The Roman Empire was a state that controlled the Mediterranean and much of Western Europe, Western Asia, and North Africa during the classical period.",
+    "fact": "Romarriket var en stat som kontrollerade Medelhavsområdet och stora delar av Västeuropa, västra Asien och norra Afrika under antiken.",
     "wikipediaSlug": "Roman_Empire",
     "image": "Roman_Empire_Trajan_117AD.png",
     "pageViews": 276374
   },
   {
     "qid": "Q7318",
-    "title": "Nazi Germany is established",
-    "subtitle": "Historical state",
+    "title": "Nazityskland etableras",
+    "subtitle": "Historisk stat",
     "year": 1933,
-    "fact": "Nazi Germany, officially the German Reich and later the Greater German Reich, was the German state between 1933 and 1945, when Adolf Hitler and the Nazi Party controlled the country, transforming it into a totalitarian dictatorship.",
+    "fact": "Nazityskland, officiellt Tyska riket och senare Stortyska riket, var den tyska staten mellan 1933 och 1945, då Adolf Hitler och Nazistpartiet kontrollerade landet och förvandlade det till en totalitär diktatur.",
     "wikipediaSlug": "Nazi_Germany",
     "image": "Flag_of_Germany_(1935–1945).svg",
     "pageViews": 274812
-  },
-  {
-    "qid": "Q389688",
-    "title": "Achaemenid Empire is established",
-    "subtitle": "Historical state",
-    "year": -549,
-    "fact": "The Achaemenid Empire was an ancient Iranian empire founded by Cyrus the Great of the Achaemenid dynasty in 550 BC.",
-    "wikipediaSlug": "Achaemenid_Empire",
-    "image": "Achaemenid_Empire_500_BCE.jpg",
-    "pageViews": 261742
   },
   {
     "fact": "Kalmarunionen bildas.",
@@ -58,16 +48,6 @@
     "title": "Kalmarunionen bildas",
     "wikipediaSlug": "Kalmarunionen",
     "year": 1397
-  },
-  {
-    "qid": "Q207991",
-    "title": "Pahlavi dynasty begins",
-    "subtitle": "Dynasty",
-    "year": 1925,
-    "fact": "The Pahlavi dynasty is an Iranian royal dynasty that was the last to rule Iran before the country's monarchy was overthrown by the Iranian Revolution in 1979.",
-    "wikipediaSlug": "Pahlavi_dynasty",
-    "image": "The_Imperial_Coat_of_Arms_of_Iran.svg",
-    "pageViews": 255785
   },
   {
     "fact": "Sverige blir medlem i Europeiska unionen.",
@@ -81,50 +61,40 @@
   },
   {
     "qid": "Q12548",
-    "title": "Holy Roman Empire is established",
-    "subtitle": "Historical state",
+    "title": "Tysk-romerska riket grundas",
+    "subtitle": "Historisk stat",
     "year": 962,
-    "fact": "The Holy Roman Empire, also known as the Holy Roman Empire of the German Nation after 1512, was a polity comprising and controlling much of Central and Western Europe, headed by the Holy Roman Emperor and characterized by a decentralized political structure.",
+    "fact": "Det tysk-romerska riket, även känt som det tysk-romerska riket av tysk nation efter 1512, var ett statsbildning som omfattade och kontrollerade stora delar av Central- och Västeuropa, leddes av den tysk-romerske kejsaren och kännetecknades av en decentraliserad politisk struktur.",
     "wikipediaSlug": "Holy_Roman_Empire",
     "image": "Banner_of_the_Holy_Roman_Emperor_with_haloes_(1430-1806).svg",
     "pageViews": 189542
   },
   {
     "qid": "Q12544",
-    "title": "Byzantine Empire is established",
-    "subtitle": "Historical state",
+    "title": "Bysantinska riket grundas",
+    "subtitle": "Historisk stat",
     "year": 395,
-    "fact": "The Byzantine Empire, also known as the Eastern Roman Empire, was the continuation of the Roman Empire centred on Constantinople during late antiquity and the Middle Ages.",
+    "fact": "Det bysantinska riket, även känt som det östromerska riket, var det romerska rikets fortsättning med centrum i Konstantinopel under senantiken och medeltiden.",
     "wikipediaSlug": "Byzantine_Empire",
     "image": "Justinian555AD.png",
     "pageViews": 186693
   },
   {
     "qid": "Q8680",
-    "title": "British Empire is established",
-    "subtitle": "Colonial empire",
+    "title": "Brittiska imperiet grundas",
+    "subtitle": "Kolonialimperium",
     "year": 1583,
-    "fact": "The British Empire comprised the dominions, colonies, protectorates, mandates, and other territories headed by the British monarchy.",
+    "fact": "Brittiska imperiet bestod av dominioner, kolonier, protektorat, mandat och andra territorier som styrdes av den brittiska monarkin.",
     "wikipediaSlug": "British_Empire",
     "image": "Flag_of_Great_Britain_(1707–1800).svg",
     "pageViews": 173782
   },
   {
-    "qid": "Q83891",
-    "title": "Sasanian Empire is established",
-    "subtitle": "Historical state",
-    "year": 224,
-    "fact": "The Sasanian Empire, officially Eranshahr, was an Iranian empire that was founded and ruled by the House of Sasan from 224 to 651 AD.",
-    "wikipediaSlug": "Sasanian_Empire",
-    "image": "The_Sasanian_Empire_at_its_apex_under_Khosrow_II.svg",
-    "pageViews": 166815
-  },
-  {
     "qid": "Q36704",
-    "title": "Yugoslavia is established",
-    "subtitle": "Historical state",
+    "title": "Jugoslavien bildas",
+    "subtitle": "Historisk stat",
     "year": 1918,
-    "fact": "Yugoslavia was a country in Central Europe and the Balkans that existed from 1918 to 1992.",
+    "fact": "Jugoslavien var ett land i Centraleuropa och på Balkan som existerade mellan 1918 och 1992.",
     "wikipediaSlug": "Yugoslavia",
     "image": "Yugoslavia_location_map.svg",
     "pageViews": 154300

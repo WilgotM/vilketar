@@ -511,20 +511,20 @@
   },
   {
     "qid": "Q44696",
-    "title": "‘The Star-Spangled Banner’ dates to",
-    "subtitle": "National anthem",
+    "title": "‘The Star-Spangled Banner’ härrör från",
+    "subtitle": "Nationalsång",
     "year": 1814,
-    "fact": "\"The Star-Spangled Banner\" is the national anthem of the United States.",
+    "fact": "‘The Star-Spangled Banner’ är USA:s nationalsång.",
     "wikipediaSlug": "The_Star-Spangled_Banner",
     "image": "Star_Spangled_Banner_(Carr)_(1814).png",
     "pageViews": 98402
   },
   {
     "qid": "Q167545",
-    "title": "‘Happy Birthday to You’ dates to",
-    "subtitle": "Children's song or nursery rhyme",
+    "title": "‘Happy Birthday to You’ dateras till",
+    "subtitle": "Barnvisa eller barnramsa",
     "year": 1911,
-    "fact": "\"Happy Birthday to You\", or simply \"Happy Birthday\", is an American song traditionally sung to celebrate a person's birthday.",
+    "fact": "\"Happy Birthday to You\", eller helt enkelt \"Happy Birthday\", är en amerikansk sång som traditionellt sjungs för att fira en persons födelsedag.",
     "wikipediaSlug": "Happy_Birthday_to_You",
     "image": "Birthday_candles.jpg",
     "pageViews": 64342

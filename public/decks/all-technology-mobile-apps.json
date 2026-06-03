@@ -1,10 +1,10 @@
 [
   {
     "qid": "Q907311",
-    "title": "‘Netflix’ launches",
-    "subtitle": "Mobile app",
+    "title": "‘Netflix’ lanseras",
+    "subtitle": "Mobilapp",
     "year": 1997,
-    "fact": "Netflix is an American subscription video on-demand over-the-top streaming service.",
+    "fact": "Netflix är en amerikansk prenumerationsbaserad video on-demand over-the-top-strömningstjänst.",
     "wikipediaSlug": "Netflix",
     "image": "Netflix_UI_for_Web.png",
     "pageViews": 293820
@@ -31,40 +31,40 @@
   },
   {
     "qid": "Q116947",
-    "title": "‘Messenger’ launches",
-    "subtitle": "Mobile app",
+    "title": "‘Messenger’ lanseras",
+    "subtitle": "Mobilapp",
     "year": 2011,
-    "fact": "Messenger is an American proprietary instant messaging service developed by Meta Platforms, the company that operates Facebook.",
+    "fact": "Messenger är en amerikansk proprietär snabbmeddelandetjänst utvecklad av Meta Platforms, företaget som driver Facebook.",
     "wikipediaSlug": "Facebook_Messenger",
     "image": "Facebook_Messenger_logo_2025.svg",
     "pageViews": 120605
   },
   {
     "qid": "Q65359104",
-    "title": "‘HBO Max’ launches",
-    "subtitle": "Mobile app",
+    "title": "‘HBO Max’ lanseras",
+    "subtitle": "Mobilapp",
     "year": 2020,
-    "fact": "HBO Max is an American subscription video on-demand over-the-top streaming service, a proprietary unit of Warner Bros.",
+    "fact": "HBO Max är en amerikansk prenumerationsbaserad video on-demand over-the-top-streamingtjänst, en egen enhet inom Warner Bros.",
     "wikipediaSlug": "HBO_Max",
     "image": "HBO_Max_(2025).svg",
     "pageViews": 98047
   },
   {
     "qid": "Q603337",
-    "title": "‘Apple Wallet’ launches",
-    "subtitle": "Mobile app",
+    "title": "‘Apple Wallet’ lanseras",
+    "subtitle": "Mobilapp",
     "year": 2012,
-    "fact": "Apple Wallet is a digital wallet developed by Apple Inc. and included with iOS and watchOS that allows users to store Wallet passes such as coupons, boarding passes, student ID cards, government ID cards, business credentials, resort passes, car keys, home keys, event tickets, public transportation passes, store cards, and – starting with iOS 8.1 – credit cards, and debit cards for use via Apple Pay.",
+    "fact": "Apple Wallet är en digital plånbok utvecklad av Apple Inc. och inkluderad i iOS och watchOS som låter användare lagra Wallet-pass som kuponger, boardingkort, student-ID-kort, statliga ID-kort, företagsuppgifter, resortpass, bilnycklar, hemnycklar, evenemangsbiljetter, kollektivtrafikpass, butikskort, och – med start i iOS 8.1 – kreditkort och bankkort för användning via Apple Pay.",
     "wikipediaSlug": "Apple_Wallet",
     "image": "Apple_Wallet_screenshot.png",
     "pageViews": 53883
   },
   {
     "qid": "Q3077586",
-    "title": "‘Bilibili’ launches",
-    "subtitle": "Mobile app",
+    "title": "‘Bilibili’ lanseras",
+    "subtitle": "Mobilapp",
     "year": 2009,
-    "fact": "Bilibili, nicknamed B Site, is a Chinese online video sharing website based in Shanghai where users can submit, view, and add overlaid commentary on videos.",
+    "fact": "Bilibili, med smeknamnet B Site, är en kinesisk webbplats för videodelning online, baserad i Shanghai, där användare kan ladda upp, titta på och lägga till överlagd kommentar på videor.",
     "wikipediaSlug": "Bilibili",
     "image": "Bilibili_logo.svg",
     "pageViews": 51928

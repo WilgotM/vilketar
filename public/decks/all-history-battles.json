@@ -1,10 +1,10 @@
 [
   {
     "qid": "Q52418",
-    "title": "Attack on Pearl Harbor takes place",
-    "subtitle": "Battle in South-East Asian theater of World War II",
+    "title": "Attacken mot Pearl Harbor äger rum",
+    "subtitle": "Slag i Sydostasien under andra världskriget",
     "year": 1941,
-    "fact": "On December 7, 1941, the Empire of Japan launched a surprise military strike on the United States Pacific Fleet at its naval base at Pearl Harbor on Oahu, Hawaii.",
+    "fact": "Den 7 december 1941 inledde Kejsardömet Japan en överraskande militär attack mot USA:s Stillahavsflotta vid dess flottbas i Pearl Harbor på Oahu, Hawaii.",
     "wikipediaSlug": "Attack_on_Pearl_Harbor",
     "image": "Attack_on_Pearl_Harbor_Japanese_planes_view.jpg",
     "pageViews": 505595
@@ -321,20 +321,20 @@
   },
   {
     "qid": "Q48314",
-    "title": "Battle of Waterloo takes place",
-    "subtitle": "Battle in Waterloo Campaign",
+    "title": "Slaget vid Waterloo äger rum",
+    "subtitle": "Slag under fälttåget i Waterloo",
     "year": 1815,
-    "fact": "The Battle of Waterloo was fought on Sunday 18 June 1815, near Waterloo, marking the end of the Napoleonic Wars.",
+    "fact": "Slaget vid Waterloo utkämpades söndagen den 18 juni 1815 nära Waterloo och markerade slutet på Napoleonkrigen.",
     "wikipediaSlug": "Battle_of_Waterloo",
     "image": "Battle_of_Waterloo_1815.PNG",
     "pageViews": 134319
   },
   {
     "qid": "Q180182",
-    "title": "Battle of Iwo Jima takes place",
-    "subtitle": "Battle in Volcano and Ryukyu Islands campaign",
+    "title": "Slaget om Iwo Jima äger rum",
+    "subtitle": "Slag i fälttåget om vulkanöarna och Ryukyuöarna",
     "year": 1945,
-    "fact": "The Battle of Iwo Jima was a major battle in which the United States Marine Corps (USMC) and United States Navy (USN) landed on and eventually captured the island of Iwo Jima from the Imperial Japanese Army (IJA) during World War II.",
+    "fact": "Slaget om Iwo Jima var ett stort slag där USA:s marinkår och flotta landsteg på och slutligen erövrade ön Iwo Jima från den kejserliga japanska armén under andra världskriget.",
     "wikipediaSlug": "Battle_of_Iwo_Jima",
     "image": "Raising_the_Flag_on_Iwo_Jima,_larger_-_edit1.jpg",
     "pageViews": 123272

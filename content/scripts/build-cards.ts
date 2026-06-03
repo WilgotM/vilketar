@@ -362,17 +362,25 @@ function shouldRejectForNsfw(card: BuiltCard): boolean {
   ].some((value) => textLooksNsfw(value));
 }
 
+let translationCache: Record<string, string> = {};
+
 function toCard(card: BuiltCard): Card | null {
   if (!card.image) {
     return null;
   }
 
+  const title = translationCache[card.title] ?? card.title;
+  const subtitle = card.subtitle
+    ? (translationCache[card.subtitle] ?? card.subtitle)
+    : null;
+  const fact = card.fact ? (translationCache[card.fact] ?? card.fact) : "";
+
   return {
     qid: card.qid,
-    title: card.title,
-    subtitle: card.subtitle,
+    title,
+    subtitle,
     year: card.year,
-    fact: card.fact,
+    fact,
     wikipediaSlug: getWikipediaSlug(card.wikipediaUrl),
     image: card.image,
     pageViews: card.pageViews,
@@ -934,6 +942,19 @@ async function writeDeckArtifacts(builtDecks: BuiltDeck[]): Promise<void> {
 }
 
 async function main() {
+  try {
+    const cachePath = path.join(
+      process.cwd(),
+      "content",
+      "cache",
+      "translations-sv.json",
+    );
+    const cacheText = await readFile(cachePath, "utf8");
+    translationCache = JSON.parse(cacheText) as Record<string, string>;
+  } catch {
+    // Ignored if translation cache does not exist
+  }
+
   const args = parseArgs(process.argv.slice(2));
   const allQueries = await loadQueryDefinitions();
 
