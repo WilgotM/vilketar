@@ -10,14 +10,354 @@
     "year": 2011
   },
   {
+    "fact": "Super Mario Bros. släpps till NES och blir en av spelhistoriens största klassiker.",
+    "image": "",
+    "pageViews": 420000,
+    "qid": "Q11168",
+    "subtitle": "Nintendo-klassiker",
+    "title": "Super Mario Bros. släpps",
+    "wikipediaSlug": "Super_Mario_Bros.",
+    "year": 1985
+  },
+  {
+    "fact": "Pokémon Röd och Blå släpps och startar Pokémon-febern.",
+    "image": "Pokémon_RB_logo_2.png",
+    "pageViews": 360000,
+    "qid": "Q637137",
+    "subtitle": "Pokémon-klassiker",
+    "title": "Pokémon Röd och Blå släpps",
+    "wikipediaSlug": "Pok%C3%A9mon_R%C3%B6d_och_Bl%C3%A5",
+    "year": 1996
+  },
+  {
+    "fact": "Grand Theft Auto V släpps och blir ett av världens mest sålda spel.",
+    "image": "",
+    "pageViews": 360000,
+    "qid": "Q17452",
+    "subtitle": "GTA-klassiker",
+    "title": "GTA V släpps",
+    "wikipediaSlug": "Grand_Theft_Auto_V",
+    "year": 2013
+  },
+  {
+    "fact": "Fortnite släpps och blir ett globalt battle royale-fenomen.",
+    "image": "",
+    "pageViews": 360000,
+    "qid": "Q349375",
+    "subtitle": "Battle royale-spel",
+    "title": "Fortnite släpps",
+    "wikipediaSlug": "Fortnite",
+    "year": 2017
+  },
+  {
+    "fact": "Pac-Man släpps i arkadhallar och blir en av spelhistoriens mest kända figurer.",
+    "image": "Pac-man_computer_game_for_Atari_8-bit_computers_1982.jpg",
+    "pageViews": 340000,
     "qid": "Q173626",
-    "title": "‘Pac-Man’ releases",
-    "subtitle": "Video game by Namco",
-    "year": 1980,
-    "fact": "Pac-Man, originally titled Puck Man in Japan, is a 1980 maze video game developed and published by Namco for arcades.",
+    "subtitle": "Arkadklassiker",
+    "title": "Pac-Man släpps",
     "wikipediaSlug": "Pac-Man",
-    "image": "Pac_flyer.png",
-    "pageViews": 264635
+    "year": 1980
+  },
+  {
+    "fact": "Tetris skapas och blir ett av världens mest spridda pusselspel.",
+    "image": "Emacs_Tetris_vector_based_detail.svg",
+    "pageViews": 340000,
+    "qid": "Q71910",
+    "subtitle": "Pusselklassiker",
+    "title": "Tetris skapas",
+    "wikipediaSlug": "Tetris",
+    "year": 1984
+  },
+  {
+    "fact": "The Sims släpps och blir ett av världens mest sålda datorspel.",
+    "image": "",
+    "pageViews": 340000,
+    "qid": "Q184816",
+    "subtitle": "Livssimuleringsspel",
+    "title": "The Sims släpps",
+    "wikipediaSlug": "The_Sims",
+    "year": 2000
+  },
+  {
+    "fact": "Grand Theft Auto: San Andreas släpps och blir en modern spelklassiker.",
+    "image": "Grand_Theft_Auto_San_Andreas_logo.svg",
+    "pageViews": 340000,
+    "qid": "Q83265",
+    "subtitle": "GTA-klassiker",
+    "title": "GTA: San Andreas släpps",
+    "wikipediaSlug": "Grand_Theft_Auto%3A_San_Andreas",
+    "year": 2004
+  },
+  {
+    "fact": "Pokémon Go släpps och får människor att jaga Pokémon ute i verkligheten.",
+    "image": "Pokemon_Go_Träskända_gård.jpg",
+    "pageViews": 340000,
+    "qid": "Q20966579",
+    "subtitle": "Mobilspelsfenomen",
+    "title": "Pokémon Go släpps",
+    "wikipediaSlug": "Pok%C3%A9mon_Go",
+    "year": 2016
+  },
+  {
+    "fact": "Counter-Strike släpps och blir ett av de stora tävlingsspelen.",
+    "image": "",
+    "pageViews": 320000,
+    "qid": "Q163628",
+    "subtitle": "Klassiskt FPS-spel",
+    "title": "Counter-Strike släpps",
+    "wikipediaSlug": "Counter-Strike",
+    "year": 2000
+  },
+  {
+    "fact": "World of Warcraft släpps och gör onlinerollspel enormt populära.",
+    "image": "World_of_Warcraft_subscriptions_over_time.png",
+    "pageViews": 320000,
+    "qid": "Q131007",
+    "subtitle": "Onlinerollspel",
+    "title": "World of Warcraft släpps",
+    "wikipediaSlug": "World_of_Warcraft",
+    "year": 2004
+  },
+  {
+    "fact": "League of Legends släpps och blir ett av världens största onlinespel.",
+    "image": "League_of_Legends_2019_vector.svg",
+    "pageViews": 320000,
+    "qid": "Q223341",
+    "subtitle": "E-sportfenomen",
+    "title": "League of Legends släpps",
+    "wikipediaSlug": "League_of_Legends",
+    "year": 2009
+  },
+  {
+    "fact": "The Elder Scrolls V: Skyrim släpps och blir ett rollspelsfenomen.",
+    "image": "",
+    "pageViews": 320000,
+    "qid": "Q323862",
+    "subtitle": "Rollspelsklassiker",
+    "title": "Skyrim släpps",
+    "wikipediaSlug": "The_Elder_Scrolls_V%3A_Skyrim",
+    "year": 2011
+  },
+  {
+    "fact": "The Legend of Zelda: Breath of the Wild släpps till Nintendo Switch.",
+    "image": "The_Legend_of_Zelda_Breath_of_the_Wild.svg",
+    "pageViews": 320000,
+    "qid": "Q17185964",
+    "subtitle": "Zelda-klassiker",
+    "title": "Breath of the Wild släpps",
+    "wikipediaSlug": "The_Legend_of_Zelda%3A_Breath_of_the_Wild",
+    "year": 2017
+  },
+  {
+    "fact": "Elden Ring släpps och blir ett av decenniets stora rollspel.",
+    "image": "",
+    "pageViews": 320000,
+    "qid": "Q64826862",
+    "subtitle": "Actionrollspel",
+    "title": "Elden Ring släpps",
+    "wikipediaSlug": "Elden_Ring",
+    "year": 2022
+  },
+  {
+    "fact": "The Legend of Zelda släpps och startar Nintendos äventyrsserie.",
+    "image": "The_Legend_of_Zelda_-_Golden_Catridge.jpg",
+    "pageViews": 300000,
+    "qid": "Q12395",
+    "subtitle": "Nintendo-äventyr",
+    "title": "The Legend of Zelda släpps",
+    "wikipediaSlug": "The_Legend_of_Zelda",
+    "year": 1986
+  },
+  {
+    "fact": "Super Mario 64 släpps och gör Mario till ett 3D-spel.",
+    "image": "N64_Clear_Blue_with_Super_Mario_64_20100603.jpg",
+    "pageViews": 300000,
+    "qid": "Q216995",
+    "subtitle": "Nintendo-klassiker",
+    "title": "Super Mario blir 3D",
+    "wikipediaSlug": "Super_Mario_64",
+    "year": 1996
+  },
+  {
+    "fact": "The Legend of Zelda: Ocarina of Time släpps till Nintendo 64.",
+    "image": "The_Legend_of_Zelda_Ocarina_of_Time.svg",
+    "pageViews": 300000,
+    "qid": "Q213911",
+    "subtitle": "Zelda-klassiker",
+    "title": "Ocarina of Time släpps",
+    "wikipediaSlug": "The_Legend_of_Zelda%3A_Ocarina_of_Time",
+    "year": 1998
+  },
+  {
+    "fact": "Grand Theft Auto III släpps och gör öppna spelvärldar till mainstream.",
+    "image": "Grand_Theft_Auto_III_logo.svg",
+    "pageViews": 300000,
+    "qid": "Q149106",
+    "subtitle": "Öppen spelvärld",
+    "title": "GTA blir öppet 3D-spel",
+    "wikipediaSlug": "Grand_Theft_Auto_III",
+    "year": 2001
+  },
+  {
+    "fact": "Candy Crush Saga släpps av svenska King.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q8768018",
+    "subtitle": "Svenskt mobilspel",
+    "title": "Candy Crush Saga släpps",
+    "wikipediaSlug": "Candy_Crush_Saga",
+    "year": 2012
+  },
+  {
+    "fact": "Red Dead Redemption 2 släpps och blir ett av Rockstars mest hyllade spel.",
+    "image": "Red_Dead_Redemption_2_Logo.png",
+    "pageViews": 300000,
+    "qid": "Q27438121",
+    "subtitle": "Öppen spelvärld",
+    "title": "Red Dead Redemption 2 släpps",
+    "wikipediaSlug": "Red_Dead_Redemption_2",
+    "year": 2018
+  },
+  {
+    "fact": "Doom släpps och blir ett av de mest inflytelserika FPS-spelen.",
+    "image": "Disambig_grey.svg",
+    "pageViews": 280000,
+    "qid": "Q227619",
+    "subtitle": "FPS-klassiker",
+    "title": "Doom släpps",
+    "wikipediaSlug": "Doom",
+    "year": 1993
+  },
+  {
+    "fact": "Half-Life släpps och blir en milstolpe för berättande i actionspel.",
+    "image": "",
+    "pageViews": 280000,
+    "qid": "Q16520269",
+    "subtitle": "FPS-klassiker",
+    "title": "Half-Life släpps",
+    "wikipediaSlug": "Half-Life",
+    "year": 1998
+  },
+  {
+    "fact": "Halo: Combat Evolved släpps och blir Xbox stora genombrottsspel.",
+    "image": "",
+    "pageViews": 280000,
+    "qid": "Q276217",
+    "subtitle": "Xbox-klassiker",
+    "title": "Halo släpps",
+    "wikipediaSlug": "Halo%3A_Combat_Evolved",
+    "year": 2001
+  },
+  {
+    "fact": "Grand Theft Auto: Vice City släpps och blir en av seriens mest älskade delar.",
+    "image": "Grand_Theft_Auto_Vice_City_logo.svg",
+    "pageViews": 280000,
+    "qid": "Q94671",
+    "subtitle": "GTA-klassiker",
+    "title": "GTA: Vice City släpps",
+    "wikipediaSlug": "Grand_Theft_Auto%3A_Vice_City",
+    "year": 2002
+  },
+  {
+    "fact": "Wii Sports släpps och gör rörelsekontroller till vardagsrumssuccé.",
+    "image": "",
+    "pageViews": 280000,
+    "qid": "Q71936",
+    "subtitle": "Nintendo-fenomen",
+    "title": "Wii Sports släpps",
+    "wikipediaSlug": "Wii_Sports",
+    "year": 2006
+  },
+  {
+    "fact": "Call of Duty 4: Modern Warfare släpps och förändrar serien.",
+    "image": "",
+    "pageViews": 280000,
+    "qid": "Q76255",
+    "subtitle": "FPS-klassiker",
+    "title": "Modern Warfare släpps",
+    "wikipediaSlug": "Call_of_Duty_4%3A_Modern_Warfare",
+    "year": 2007
+  },
+  {
+    "fact": "Counter-Strike: Global Offensive släpps och blir centralt för e-sport.",
+    "image": "",
+    "pageViews": 280000,
+    "qid": "Q842146",
+    "subtitle": "E-sportspel",
+    "title": "CS:GO släpps",
+    "wikipediaSlug": "Counter-Strike%3A_Global_Offensive",
+    "year": 2012
+  },
+  {
+    "fact": "Valheim släpps i early access av svenska Iron Gate.",
+    "image": "",
+    "pageViews": 280000,
+    "qid": "Q105100327",
+    "subtitle": "Svenskt överlevnadsspel",
+    "title": "Valheim släpps",
+    "wikipediaSlug": "Valheim",
+    "year": 2021
+  },
+  {
+    "fact": "The Sims 2 släpps och bygger vidare på livssimulatorn.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q182771",
+    "subtitle": "Livssimuleringsspel",
+    "title": "The Sims 2 släpps",
+    "wikipediaSlug": "The_Sims_2",
+    "year": 2004
+  },
+  {
+    "fact": "Portal släpps och blir ett av Valves mest älskade pusselspel.",
+    "image": "Portal_logo.png",
+    "pageViews": 260000,
+    "qid": "Q274897",
+    "subtitle": "Pusselspel",
+    "title": "Portal släpps",
+    "wikipediaSlug": "Portal_(spel)",
+    "year": 2007
+  },
+  {
+    "fact": "Stardew Valley släpps och blir en modern mysig spelklassiker.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q23013817",
+    "subtitle": "Indiespel",
+    "title": "Stardew Valley släpps",
+    "wikipediaSlug": "Stardew_Valley",
+    "year": 2016
+  },
+  {
+    "fact": "Among Us får sitt stora genombrott under pandemin.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q96417649",
+    "subtitle": "Socialt partyspel",
+    "title": "Among Us slår igenom",
+    "wikipediaSlug": "Among_Us",
+    "year": 2020
+  },
+  {
+    "fact": "Animal Crossing: New Horizons släpps och blir ett pandemifenomen.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q64566657",
+    "subtitle": "Nintendo-fenomen",
+    "title": "Animal Crossing blir pandemispel",
+    "wikipediaSlug": "Animal_Crossing%3A_New_Horizons",
+    "year": 2020
+  },
+  {
+    "fact": "It Takes Two släpps av svenska Hazelight.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "manual-It_Takes_Two_(datorspel)",
+    "subtitle": "Svenskt coop-spel",
+    "title": "It Takes Two släpps",
+    "wikipediaSlug": "It_Takes_Two_(datorspel)",
+    "year": 2021
   },
   {
     "qid": "Q109278524",
@@ -30,6 +370,16 @@
     "pageViews": 251262
   },
   {
+    "fact": "Mirror's Edge släpps av svenska DICE.",
+    "image": "",
+    "pageViews": 240000,
+    "qid": "Q526350",
+    "subtitle": "Svenskt actionspel",
+    "title": "Mirror's Edge släpps",
+    "wikipediaSlug": "Mirror's_Edge",
+    "year": 2008
+  },
+  {
     "qid": "Q96216515",
     "title": "‘Resident Evil Village’ releases",
     "subtitle": "Video game by Capcom",
@@ -38,16 +388,6 @@
     "wikipediaSlug": "Resident_Evil_Village",
     "image": "Resident_Evil_Village.png",
     "pageViews": 239929
-  },
-  {
-    "qid": "Q24577667",
-    "title": "‘Resident Evil 7: Biohazard’ releases",
-    "subtitle": "Video game by Capcom",
-    "year": 2017,
-    "fact": "Resident Evil 7: Biohazard is a 2017 survival horror game developed and published by Capcom.",
-    "wikipediaSlug": "Resident_Evil_7:_Biohazard",
-    "image": "Resident_Evil_7_cover_art.jpg",
-    "pageViews": 223212
   },
   {
     "qid": "Q1248594",
@@ -70,76 +410,6 @@
     "pageViews": 186753
   },
   {
-    "qid": "Q939806",
-    "title": "‘Resident Evil 6’ releases",
-    "subtitle": "Video game by Capcom",
-    "year": 2012,
-    "fact": "Resident Evil 6 is a 2012 third-person shooter video game developed and published by Capcom.",
-    "wikipediaSlug": "Resident_Evil_6",
-    "image": "Resident_Evil_6_box_artwork.png",
-    "pageViews": 176007
-  },
-  {
-    "qid": "Q1050284",
-    "title": "‘Resident Evil – Code: Veronica’ releases",
-    "subtitle": "Video game by Capcom",
-    "year": 2000,
-    "fact": "Resident Evil – Code: Veronica is a 2000 survival horror video game developed and published by Capcom for the Dreamcast.",
-    "wikipediaSlug": "Resident_Evil_%E2%80%93_Code:_Veronica",
-    "image": "RECV_boxart.jpg",
-    "pageViews": 136212
-  },
-  {
-    "qid": "Q601050",
-    "title": "‘Resident Evil 5’ releases",
-    "subtitle": "Video game by Capcom",
-    "year": 2009,
-    "fact": "Resident Evil 5 is a 2009 third-person shooter video game developed and published by Capcom.",
-    "wikipediaSlug": "Resident_Evil_5",
-    "image": "Resident_Evil_5_Box_Artwork.jpg",
-    "pageViews": 135731
-  },
-  {
-    "qid": "Q112231148",
-    "title": "‘Resident Evil 4’ releases",
-    "subtitle": "Video game",
-    "year": 2023,
-    "fact": "Resident Evil 4 is a 2023 survival horror game developed and published by Capcom.",
-    "wikipediaSlug": "Resident_Evil_4_(2023_video_game)",
-    "image": "Resident_Evil_4_remake_cover_art.jpg",
-    "pageViews": 127408
-  },
-  {
-    "qid": "Q83265",
-    "title": "‘Grand Theft Auto: San Andreas’ releases",
-    "subtitle": "Video game",
-    "year": 2004,
-    "fact": "Grand Theft Auto: San Andreas is a 2004 action-adventure game developed by Rockstar North and published by Rockstar Games.",
-    "wikipediaSlug": "Grand_Theft_Auto:_San_Andreas",
-    "image": "GTASABOX.jpg",
-    "pageViews": 125463
-  },
-  {
-    "qid": "Q54920200",
-    "title": "‘Resident Evil 2’ releases",
-    "subtitle": "Video game by Capcom",
-    "year": 2019,
-    "fact": "Resident Evil 2 is a 2019 survival horror game developed and published by Capcom.",
-    "wikipediaSlug": "Resident_Evil_2_(2019_video_game)",
-    "image": "Resident_Evil_2_Remake.jpg",
-    "pageViews": 117212
-  },
-  {
-    "qid": "Q622336",
-    "title": "‘Resident Evil’ releases",
-    "subtitle": "Video game by Capcom",
-    "year": 2002,
-    "fact": "Resident Evil is a 2002 survival horror game developed and published by Capcom for the GameCube.",
-    "wikipediaSlug": "Resident_Evil_(2002_video_game)",
-    "image": "Resident_Evil_2002_cover.jpg",
-    "pageViews": 103665
-  },
-  {
     "qid": "Q15095106",
     "title": "‘Black Desert’ releases",
     "subtitle": "Video game by Pearl Abyss",
@@ -150,56 +420,6 @@
     "pageViews": 103538
   },
   {
-    "qid": "Q78059950",
-    "title": "‘Resident Evil 3’ releases",
-    "subtitle": "Video game by Capcom",
-    "year": 2020,
-    "fact": "Resident Evil 3 is a 2020 survival horror game developed and published by Capcom.",
-    "wikipediaSlug": "Resident_Evil_3_(2020_video_game)",
-    "image": "Resident_Evil_3.jpg",
-    "pageViews": 103269
-  },
-  {
-    "qid": "Q131007",
-    "title": "‘World of Warcraft’ releases",
-    "subtitle": "Video game by Blizzard Entertainment",
-    "year": 2004,
-    "fact": "World of Warcraft (WoW) is a 2004 massively multiplayer online role-playing (MMORPG) video game developed and published by Blizzard Entertainment for Windows and macOS.",
-    "wikipediaSlug": "World_of_Warcraft",
-    "image": "World_of_Warcraft.png",
-    "pageViews": 96764
-  },
-  {
-    "qid": "Q2088616",
-    "title": "‘Resident Evil Outbreak’ releases",
-    "subtitle": "Video game by Capcom",
-    "year": 2003,
-    "fact": "Resident Evil Outbreak is a survival horror video game developed and published by Capcom for the PlayStation 2.",
-    "wikipediaSlug": "Resident_Evil_Outbreak",
-    "image": "Re_outbreak_a.jpg",
-    "pageViews": 93993
-  },
-  {
-    "qid": "Q1056069",
-    "title": "‘Resident Evil Zero’ releases",
-    "subtitle": "Video game by Capcom",
-    "year": 2002,
-    "fact": "Resident Evil Zero is a 2002 survival horror game developed and published by Capcom for the GameCube.",
-    "wikipediaSlug": "Resident_Evil_Zero",
-    "image": "Rezerobox.jpg",
-    "pageViews": 93530
-  },
-  {
-    "qid": "Q64826862",
-    "title": "‘Elden Ring’ releases",
-    "subtitle": "Video game by FromSoftware",
-    "year": 2022,
-    "fact": "Elden Ring is a 2022 action role-playing game directed by Hidetaka Miyazaki with worldbuilding provided by the American fantasy writer George R.",
-    "wikipediaSlug": "Elden_Ring",
-    "image": "Elden_Ring_Box_art.jpg",
-    "pageViews": 92483
-  },
-  {
     "qid": "Q115641709",
     "title": "‘Death Stranding 2: On the Beach’ releases",
     "subtitle": "Video game by Kojima Productions",
@@ -208,16 +428,6 @@
     "wikipediaSlug": "Death_Stranding_2:_On_the_Beach",
     "image": "Death_Stranding_2_Icon.jpg",
     "pageViews": 90139
-  },
-  {
-    "qid": "Q739784",
-    "title": "‘Resident Evil 3: Nemesis’ releases",
-    "subtitle": "Video game by Capcom",
-    "year": 1999,
-    "fact": "Resident Evil 3: Nemesis is a 1999 survival horror video game developed and published by Capcom originally for the PlayStation.",
-    "wikipediaSlug": "Resident_Evil_3:_Nemesis",
-    "image": "Resident_Evil_3_Cover.jpg",
-    "pageViews": 88783
   },
   {
     "qid": "Q24666782",
@@ -240,26 +450,6 @@
     "pageViews": 81891
   },
   {
-    "qid": "Q23013817",
-    "title": "‘Stardew Valley’ releases",
-    "subtitle": "Video game by ConcernedApe LLC",
-    "year": 2016,
-    "fact": "Stardew Valley is a 2016 farm life simulation video game developed by Eric \"ConcernedApe\" Barone.",
-    "wikipediaSlug": "Stardew_Valley",
-    "image": "Logo_of_Stardew_Valley.png",
-    "pageViews": 77014
-  },
-  {
-    "qid": "Q223341",
-    "title": "‘League of Legends’ releases",
-    "subtitle": "Video game by Riot Games",
-    "year": 2009,
-    "fact": "League of Legends, commonly referred to as League, is a multiplayer online battle arena video game developed and published by Riot Games.",
-    "wikipediaSlug": "League_of_Legends",
-    "image": "League_of_Legends_2019_vector.svg",
-    "pageViews": 76321
-  },
-  {
     "qid": "Q548203",
     "title": "‘Red Dead Redemption’ releases",
     "subtitle": "Video game by Rockstar San Diego",
@@ -268,26 +458,6 @@
     "wikipediaSlug": "Red_Dead_Redemption",
     "image": "Red_Dead_Redemption.jpg",
     "pageViews": 76140
-  },
-  {
-    "qid": "Q1138864",
-    "title": "‘Resident Evil: Revelations’ releases",
-    "subtitle": "Video game by Capcom",
-    "year": 2012,
-    "fact": "Resident Evil: Revelations is a 2012 survival horror video game developed and published by Capcom for the Nintendo 3DS.",
-    "wikipediaSlug": "Resident_Evil:_Revelations",
-    "image": "Resident_evil_rev._2012_Capcom.png",
-    "pageViews": 75843
-  },
-  {
-    "qid": "Q11168",
-    "title": "‘Super Mario Bros.’ releases",
-    "subtitle": "Video game by Nintendo Entertainment Analysis & Development",
-    "year": 1985,
-    "fact": "Super Mario Bros. is a 1985 platform game developed and published by Nintendo for the Nintendo Entertainment System (NES).",
-    "wikipediaSlug": "Super_Mario_Bros.",
-    "image": "Super_Mario_Bros._box.png",
-    "pageViews": 75620
   },
   {
     "qid": "Q94797",
@@ -310,16 +480,6 @@
     "pageViews": 72900
   },
   {
-    "qid": "Q94671",
-    "title": "‘Grand Theft Auto: Vice City’ releases",
-    "subtitle": "Video game",
-    "year": 2002,
-    "fact": "Grand Theft Auto: Vice City is a 2002 action-adventure game developed by Rockstar North and published by Rockstar Games.",
-    "wikipediaSlug": "Grand_Theft_Auto:_Vice_City",
-    "image": "Vice-city-cover.jpg",
-    "pageViews": 71315
-  },
-  {
     "qid": "Q752835",
     "title": "‘Silent Hill 2’ releases",
     "subtitle": "Video game by Team Silent",
@@ -328,16 +488,6 @@
     "wikipediaSlug": "Silent_Hill_2",
     "image": "Silent_Hill_2.jpg",
     "pageViews": 67967
-  },
-  {
-    "qid": "Q18203301",
-    "title": "‘Resident Evil: Revelations 2’ releases",
-    "subtitle": "Video game by Capcom",
-    "year": 2015,
-    "fact": "Resident Evil: Revelations 2 is a 2015 episodic survival horror video game developed and published by Capcom as part of the Resident Evil series.",
-    "wikipediaSlug": "Resident_Evil:_Revelations_2",
-    "image": "ResidentEvilRevelations2.jpg",
-    "pageViews": 66992
   },
   {
     "qid": "Q170489",
@@ -350,16 +500,6 @@
     "pageViews": 66491
   },
   {
-    "qid": "Q274897",
-    "title": "‘Portal’ releases",
-    "subtitle": "Video game by Valve Corporation",
-    "year": 2007,
-    "fact": "Portal is a 2007 puzzle-platform game developed and published by Valve.",
-    "wikipediaSlug": "Portal_(video_game)",
-    "image": "Portal_standalonebox.jpg",
-    "pageViews": 66165
-  },
-  {
     "qid": "Q42564798",
     "title": "‘Ghost of Tsushima’ releases",
     "subtitle": "Video game",
@@ -368,16 +508,6 @@
     "wikipediaSlug": "Ghost_of_Tsushima",
     "image": "Ghost_of_Tsushima.jpg",
     "pageViews": 65091
-  },
-  {
-    "qid": "Q96417649",
-    "title": "‘Among Us’ releases",
-    "subtitle": "Video game by Innersloth",
-    "year": 2018,
-    "fact": "Among Us is a 2018 online multiplayer social deduction game developed and published by American game studio Innersloth.",
-    "wikipediaSlug": "Among_Us",
-    "image": "Among_Us_cover_art.jpg",
-    "pageViews": 64752
   },
   {
     "qid": "Q214232",
@@ -390,16 +520,6 @@
     "pageViews": 64542
   },
   {
-    "qid": "Q71910",
-    "title": "‘Tetris’ releases",
-    "subtitle": "Video game by Alexey Pajitnov",
-    "year": 1984,
-    "fact": "Tetris is a puzzle video game created by Alexey Pajitnov, a Soviet software engineer, in the mid-1980s.",
-    "wikipediaSlug": "Tetris",
-    "image": "Tetris_logo_2019.svg",
-    "pageViews": 63039
-  },
-  {
     "qid": "Q99397916",
     "title": "‘God of War Ragnarök’ releases",
     "subtitle": "Video game by Santa Monica Studio",
@@ -408,16 +528,6 @@
     "wikipediaSlug": "God_of_War_Ragnar%C3%B6k",
     "image": "God_of_War_Ragnarök_cover.jpg",
     "pageViews": 59252
-  },
-  {
-    "qid": "Q323862",
-    "title": "‘The Elder Scrolls V: Skyrim’ releases",
-    "subtitle": "Video game by Bethesda Game Studios",
-    "year": 2011,
-    "fact": "The Elder Scrolls V: Skyrim is a 2011 action role-playing game developed by Bethesda Game Studios and published by Bethesda Softworks.",
-    "wikipediaSlug": "The_Elder_Scrolls_V:_Skyrim",
-    "image": "The_Elder_Scrolls_V_Skyrim_cover.png",
-    "pageViews": 58649
   },
   {
     "qid": "Q65059474",
@@ -548,16 +658,6 @@
     "wikipediaSlug": "Until_Dawn",
     "image": "Until_Dawn_cover_art.jpg",
     "pageViews": 51234
-  },
-  {
-    "qid": "Q17185964",
-    "title": "‘The Legend of Zelda: Breath of the Wild’ releases",
-    "subtitle": "Video game by Monolith Soft Inc.",
-    "year": 2017,
-    "fact": "The Legend of Zelda: Breath of the Wild is a 2017 action-adventure game developed by Nintendo EPD for the Wii U and Nintendo Switch.",
-    "wikipediaSlug": "The_Legend_of_Zelda:_Breath_of_the_Wild",
-    "image": "The_Legend_of_Zelda_Breath_of_the_Wild.jpg",
-    "pageViews": 51147
   },
   {
     "qid": "Q60102",

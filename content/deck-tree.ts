@@ -1004,7 +1004,7 @@ const rootDeckDefinition: DeckDefinition = {
         {
           slug: "films",
           title: "Films",
-          frequency: 0.8,
+          frequency: 0.55,
           sources: [filmsReleaseYear],
         },
         {

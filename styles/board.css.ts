@@ -57,9 +57,21 @@ export const top = style({
 });
 
 export const topGameOver = style({
+  flexBasis: "68%",
   justifyContent: "center",
   paddingBottom: vars.space.lg,
   paddingTop: vars.space.lg,
+  "@media": {
+    [media.compact]: {
+      flexBasis: "70%",
+      gap: vars.space.md,
+      paddingBottom: vars.space.sm,
+      paddingTop: vars.space.sm,
+    },
+    [media.shortWide]: {
+      flexBasis: "64%",
+    },
+  },
 });
 
 export const statusArea = style({
@@ -148,6 +160,31 @@ export const bottom = style({
     [media.shortWide]: {
       flexBasis: "45%",
       paddingTop: vars.space.md,
+    },
+  },
+});
+
+export const bottomGameOver = style({
+  flexBasis: "32%",
+  paddingTop: vars.space.sm,
+  vars: {
+    [vars.size.cardHeight]: "10rem",
+    [vars.size.cardWidth]: "7.5rem",
+    [vars.size.datePillHeight]: "1.75rem",
+    [vars.size.datePillWidth]: "4.5rem",
+    [vars.size.timelineBottomPadding]: "1.75rem",
+  },
+  "@media": {
+    [media.compact]: {
+      flexBasis: "30%",
+      vars: {
+        [vars.size.cardHeight]: "8.75rem",
+        [vars.size.cardWidth]: "6.5625rem",
+        [vars.size.timelineBottomPadding]: "1.5rem",
+      },
+    },
+    [media.shortWide]: {
+      flexBasis: "36%",
     },
   },
 });

@@ -709,6 +709,7 @@ export default function Board(props: Props) {
                 transition={{ duration: 0.28, ease: "easeOut" }}
               >
                 <GameOver
+                  completedAllCards={state.lives > 0 && state.next === null}
                   dailyDateKey={dailyDateKey}
                   difficulty={difficulty}
                   gameMode={gameMode}
@@ -762,7 +763,9 @@ export default function Board(props: Props) {
         id="bottom"
         ref={bottomRef}
         layoutScroll={timelineLayoutAnimationsEnabled}
-        className={styles.bottom}
+        className={classNames(styles.bottom, {
+          [styles.bottomGameOver]: showGameOverSummary,
+        })}
       >
         <PlayedItemList
           hiddenCardId={hiddenPlayedCardId}

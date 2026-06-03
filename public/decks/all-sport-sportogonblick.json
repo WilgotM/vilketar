@@ -1,1403 +1,43 @@
 [
   {
-    "fact": "Cristiano Ronaldo lämnar Manchester United för Real Madrid.",
-    "image": "2025_Cristiano_Ronaldo_(cropped).jpg",
-    "pageViews": 520000,
-    "qid": "Q11571",
-    "subtitle": "Stor spelarövergång",
-    "title": "Cristiano Ronaldo går till Real Madrid",
-    "wikipediaSlug": "Cristiano_Ronaldo",
-    "year": 2009
-  },
-  {
-    "fact": "Lionel Messi lämnar Barcelona och skriver på för Paris Saint-Germain.",
-    "image": "Lionel_Messi_White_House_2026_(3x4_cropped).jpg",
-    "pageViews": 520000,
-    "qid": "Q615",
-    "subtitle": "Historisk spelarövergång",
-    "title": "Messi lämnar Barcelona",
-    "wikipediaSlug": "Lionel_Messi",
-    "year": 2021
-  },
-  {
-    "fact": "Neymar lämnar Barcelona för Paris Saint-Germain i fotbollens dyraste övergång.",
-    "image": "Neymar_Jr._with_Al_Hilal,_3_October_2023_-_03_(cropped).jpg",
-    "pageViews": 480000,
-    "qid": "Q142794",
-    "subtitle": "Rekordstor spelarövergång",
-    "title": "Neymar blir dyraste fotbollsspelaren",
-    "wikipediaSlug": "Neymar",
-    "year": 2017
-  },
-  {
-    "fact": "Usain Bolt avslutar sin olympiska guldera i Rio de Janeiro.",
-    "image": "Usain_Bolt_Rio_100m_final_2016k.jpg",
-    "pageViews": 460000,
-    "qid": "Q1189",
-    "subtitle": "Olympisk friidrottsikon",
-    "title": "Bolt tar sitt sista OS-guld",
-    "wikipediaSlug": "Usain_Bolt",
-    "year": 2016
-  },
-  {
-    "fact": "Zlatan Ibrahimović lämnar Inter för Barcelona.",
-    "image": "Zlatan_Ibrahimović_June_2018.jpg",
-    "pageViews": 380000,
-    "qid": "Q46896",
-    "subtitle": "Svensk spelarövergång",
-    "title": "Zlatan går till Barcelona",
-    "wikipediaSlug": "Zlatan_Ibrahimovi%C4%87",
-    "year": 2009
-  },
-  {
-    "fact": "Sommar-OS hålls i Aten.",
-    "image": "Commemorative_album_of_1896_Olympic_Games_-_cover_by_E._Gilliéron.jpg",
-    "pageViews": 360000,
-    "qid": "Q8080",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Aten",
-    "wikipediaSlug": "Olympiska_sommarspelen_1896",
-    "year": 1896
-  },
-  {
-    "fact": "Sommar-OS hålls i Paris.",
-    "image": "1900_Olympic_Games_Poster_Paris.jpg",
-    "pageViews": 360000,
-    "qid": "Q8088",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Paris",
-    "wikipediaSlug": "Olympiska_sommarspelen_1900",
-    "year": 1900
-  },
-  {
-    "fact": "Sommar-OS hålls i Saint Louis.",
-    "image": "1904summerolympicsposter.jpg",
-    "pageViews": 360000,
-    "qid": "Q8098",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Saint Louis",
-    "wikipediaSlug": "Olympiska_sommarspelen_1904",
-    "year": 1904
-  },
-  {
-    "fact": "Sommar-OS hålls i London.",
-    "image": "Olympic_games_1908_London.jpg",
-    "pageViews": 360000,
-    "qid": "Q8111",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i London",
-    "wikipediaSlug": "Olympiska_sommarspelen_1908",
-    "year": 1908
-  },
-  {
-    "fact": "Sommar-OS hålls i Stockholm.",
-    "image": "1912_Summer_Olympics_poster_(cropped).jpg",
-    "pageViews": 360000,
-    "qid": "Q8118",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Stockholm",
-    "wikipediaSlug": "Olympiska_sommarspelen_1912",
-    "year": 1912
-  },
-  {
-    "fact": "Sommar-OS hålls i Antwerpen.",
-    "image": "1920_olympics_poster.jpg",
-    "pageViews": 360000,
-    "qid": "Q8128",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Antwerpen",
-    "wikipediaSlug": "Olympiska_sommarspelen_1920",
-    "year": 1920
-  },
-  {
-    "fact": "Sommar-OS hålls i Paris.",
-    "image": "1924_Summer_Olympics_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q8132",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Paris",
-    "wikipediaSlug": "Olympiska_sommarspelen_1924",
-    "year": 1924
-  },
-  {
-    "fact": "Vinter-OS hålls i Chamonix.",
-    "image": "1924WOlympicPoster.jpg",
-    "pageViews": 360000,
-    "qid": "Q9583",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Chamonix",
-    "wikipediaSlug": "Olympiska_vinterspelen_1924",
-    "year": 1924
-  },
-  {
-    "fact": "Sommar-OS hålls i Amsterdam.",
-    "image": "IXe Olympiade.jpg",
-    "pageViews": 360000,
-    "qid": "Q8138",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Amsterdam",
-    "wikipediaSlug": "Olympiska_sommarspelen_1928",
-    "year": 1928
-  },
-  {
-    "fact": "Vinter-OS hålls i St. Moritz.",
-    "image": "Olympic_flag.svg",
-    "pageViews": 360000,
-    "qid": "Q9591",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i St. Moritz",
-    "wikipediaSlug": "Olympiska_vinterspelen_1928",
-    "year": 1928
-  },
-  {
-    "fact": "Uruguay vinner fotbolls-VM.",
-    "image": "Uruguay goal v argentina 1930.jpg",
-    "pageViews": 360000,
-    "qid": "Q48432",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Uruguay vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1930",
-    "year": 1930
-  },
-  {
-    "fact": "Sommar-OS hålls i Los Angeles.",
-    "image": "1932_Summer_Olympics_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q8143",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Los Angeles",
-    "wikipediaSlug": "Olympiska_sommarspelen_1932",
-    "year": 1932
-  },
-  {
-    "fact": "Vinter-OS hålls i Lake Placid.",
-    "image": "Olympic_flag.svg",
-    "pageViews": 360000,
-    "qid": "Q9596",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Lake Placid",
-    "wikipediaSlug": "Olympiska_vinterspelen_1932",
-    "year": 1932
-  },
-  {
-    "fact": "Italien vinner fotbolls-VM.",
-    "image": "1934_fifa_worldcup_poster.jpg",
-    "pageViews": 360000,
-    "qid": "Q1477177",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Italien vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1934",
-    "year": 1934
-  },
-  {
-    "fact": "Sommar-OS hålls i Berlin.",
-    "image": "Berlin36-2.jpg",
-    "pageViews": 360000,
-    "qid": "Q8150",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Berlin",
-    "wikipediaSlug": "Olympiska_sommarspelen_1936",
-    "year": 1936
-  },
-  {
-    "fact": "Vinter-OS hålls i Garmisch-Partenkirchen.",
-    "image": "Olympic_flag.svg",
-    "pageViews": 360000,
-    "qid": "Q9600",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Garmisch-Partenkirchen",
-    "wikipediaSlug": "Olympiska_vinterspelen_1936",
-    "year": 1936
-  },
-  {
-    "fact": "Italien vinner fotbolls-VM.",
-    "image": "1938_fifa_worldcup_poster.jpg",
-    "pageViews": 360000,
-    "qid": "Q131591",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Italien vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1938",
-    "year": 1938
-  },
-  {
-    "fact": "Sommar-OS hålls i London.",
-    "image": "100_metres_final,_London,_1948._(7649951752).jpg",
-    "pageViews": 360000,
-    "qid": "Q8403",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i London",
-    "wikipediaSlug": "Olympiska_sommarspelen_1948",
-    "year": 1948
-  },
-  {
-    "fact": "Vinter-OS hålls i St. Moritz.",
-    "image": "Olympic_rings_without_rims.svg",
-    "pageViews": 360000,
-    "qid": "Q9615",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i St. Moritz",
-    "wikipediaSlug": "Olympiska_vinterspelen_1948",
-    "year": 1948
-  },
-  {
-    "fact": "Uruguay vinner fotbolls-VM.",
-    "image": "Uruguay gol schiaffino 1950.jpg",
-    "pageViews": 360000,
-    "qid": "Q132515",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Uruguay vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1950",
-    "year": 1950
-  },
-  {
-    "fact": "Sommar-OS hålls i Helsingfors.",
-    "image": "Olympia-1952.jpg",
-    "pageViews": 360000,
-    "qid": "Q8407",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Helsingfors",
-    "wikipediaSlug": "Olympiska_sommarspelen_1952",
-    "year": 1952
-  },
-  {
-    "fact": "Vinter-OS hålls i Oslo.",
-    "image": "Olympic_flag.svg",
-    "pageViews": 360000,
-    "qid": "Q9623",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Oslo",
-    "wikipediaSlug": "Olympiska_vinterspelen_1952",
-    "year": 1952
-  },
-  {
-    "fact": "Tyskland vinner fotbolls-VM.",
-    "image": "DielautrerheldenvonBern.JPG",
-    "pageViews": 360000,
-    "qid": "Q131075",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Tyskland vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1954",
-    "year": 1954
-  },
-  {
-    "fact": "Sommar-OS hålls i Melbourne.",
-    "image": "Olympic_rings_without_rims.svg",
-    "pageViews": 360000,
-    "qid": "Q8411",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Melbourne",
-    "wikipediaSlug": "Olympiska_sommarspelen_1956",
-    "year": 1956
-  },
-  {
-    "fact": "Vinter-OS hålls i Cortina d'Ampezzo.",
-    "image": "Olympic_flag.svg",
-    "pageViews": 360000,
-    "qid": "Q9632",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Cortina d'Ampezzo",
-    "wikipediaSlug": "Olympiska_vinterspelen_1956",
-    "year": 1956
-  },
-  {
-    "fact": "Brasilien vinner fotbolls-VM.",
-    "image": "Winning brazilian National team 1958.jpg",
-    "pageViews": 360000,
-    "qid": "Q132533",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Brasilien vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1958",
-    "year": 1958
-  },
-  {
-    "fact": "Sommar-OS hålls i Rom.",
-    "image": "Olympic_rings_without_rims.svg",
-    "pageViews": 360000,
-    "qid": "Q8415",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Rom",
-    "wikipediaSlug": "Olympiska_sommarspelen_1960",
-    "year": 1960
-  },
-  {
-    "fact": "Vinter-OS hålls i Squaw Valley.",
-    "image": "Olympic_flag.svg",
-    "pageViews": 360000,
-    "qid": "Q9634",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Squaw Valley",
-    "wikipediaSlug": "Olympiska_vinterspelen_1960",
-    "year": 1960
-  },
-  {
-    "fact": "Sovjetunionen vinner fotbolls-EM.",
-    "image": "Football_(soccer_ball).svg",
-    "pageViews": 360000,
-    "qid": "Q172831",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "Sovjetunionen vinner fotbolls-EM",
-    "wikipediaSlug": "Europacupen_i_fotboll_f%C3%B6r_landslag_1960",
-    "year": 1960
-  },
-  {
-    "fact": "Brasilien vinner fotbolls-VM.",
-    "image": "FIFA_World_Cup_1962_teams.jpg",
-    "pageViews": 360000,
-    "qid": "Q160813",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Brasilien vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1962",
-    "year": 1962
-  },
-  {
-    "fact": "Sommar-OS hålls i Tokyo.",
-    "image": "Tokyo_1964_Summer_Olympics_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q8420",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Tokyo",
-    "wikipediaSlug": "Olympiska_sommarspelen_1964",
-    "year": 1964
-  },
-  {
-    "fact": "Vinter-OS hålls i Innsbruck.",
-    "image": "1964_Winter_Olympics_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q9636",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Innsbruck",
-    "wikipediaSlug": "Olympiska_vinterspelen_1964",
-    "year": 1964
-  },
-  {
-    "fact": "Spanien vinner fotbolls-EM.",
-    "image": "Euro 1964.png",
-    "pageViews": 360000,
-    "qid": "Q182205",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "Spanien vinner fotbolls-EM",
-    "wikipediaSlug": "Europacupen_i_fotboll_f%C3%B6r_landslag_1964",
-    "year": 1964
-  },
-  {
-    "fact": "England vinner fotbolls-VM.",
-    "image": "World_Cup_Ball_1966.jpg",
-    "pageViews": 360000,
-    "qid": "Q134202",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "England vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1966",
-    "year": 1966
-  },
-  {
-    "fact": "Sommar-OS hålls i Mexico City.",
-    "image": "Olympic_flag.svg",
-    "pageViews": 360000,
-    "qid": "Q8429",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Mexico City",
-    "wikipediaSlug": "Olympiska_sommarspelen_1968",
-    "year": 1968
-  },
-  {
-    "fact": "Vinter-OS hålls i Grenoble.",
-    "image": "Stade_olympique_-_Grenoble_1968.jpg",
-    "pageViews": 360000,
-    "qid": "Q9642",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Grenoble",
-    "wikipediaSlug": "Olympiska_vinterspelen_1968",
-    "year": 1968
-  },
-  {
-    "fact": "Italien vinner fotbolls-EM.",
-    "image": "UEFA Euro 1968 Final - Italian captain Giacinto Facchetti with the trophy.jpg",
-    "pageViews": 360000,
-    "qid": "Q182201",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "Italien vinner fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_1968",
-    "year": 1968
-  },
-  {
-    "fact": "Brasilien vinner fotbolls-VM.",
-    "image": "Pele celebrating 1970.jpg",
-    "pageViews": 360000,
-    "qid": "Q132664",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Brasilien vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1970",
-    "year": 1970
-  },
-  {
-    "fact": "Sommar-OS hålls i München.",
-    "image": "1972_Summer_Olympics_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q8438",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i München",
-    "wikipediaSlug": "Olympiska_sommarspelen_1972",
-    "year": 1972
-  },
-  {
-    "fact": "Vinter-OS hålls i Sapporo.",
-    "image": "Olympics rings (1913-1986).svg",
-    "pageViews": 360000,
-    "qid": "Q9646",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Sapporo",
-    "wikipediaSlug": "Olympiska_vinterspelen_1972",
-    "year": 1972
-  },
-  {
-    "fact": "Tyskland vinner fotbolls-EM.",
-    "image": "Euro 1972.png",
-    "pageViews": 360000,
-    "qid": "Q182386",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "Tyskland vinner fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_1972",
-    "year": 1972
-  },
-  {
-    "fact": "Tyskland vinner fotbolls-VM.",
-    "image": "FIFA_World_Cup_1974_-_emblem.svg",
-    "pageViews": 360000,
-    "qid": "Q166121",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Tyskland vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1974",
-    "year": 1974
-  },
-  {
-    "fact": "Sommar-OS hålls i Montréal.",
-    "image": "1976_Summer_Olympics_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q8444",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Montréal",
-    "wikipediaSlug": "Olympiska_sommarspelen_1976",
-    "year": 1976
-  },
-  {
-    "fact": "Vinter-OS hålls i Innsbruck.",
-    "image": "Olympic_flag.svg",
-    "pageViews": 360000,
-    "qid": "Q9651",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Innsbruck",
-    "wikipediaSlug": "Olympiska_vinterspelen_1976",
-    "year": 1976
-  },
-  {
-    "fact": "Tjeckoslovakien vinner fotbolls-EM.",
-    "image": "Fk Red Star stadium.jpg",
-    "pageViews": 360000,
-    "qid": "Q188548",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "Tjeckoslovakien vinner fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_1976",
-    "year": 1976
-  },
-  {
-    "fact": "Argentina vinner fotbolls-VM.",
-    "image": "1978_world_cup.png",
-    "pageViews": 360000,
-    "qid": "Q46943",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Argentina vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1978",
-    "year": 1978
-  },
-  {
-    "fact": "Sommar-OS hålls i Moskva.",
-    "image": "Emblem_of_the_1980_Summer_Olympics.svg",
-    "pageViews": 360000,
-    "qid": "Q8450",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Moskva",
-    "wikipediaSlug": "Olympiska_sommarspelen_1980",
-    "year": 1980
-  },
-  {
-    "fact": "Vinter-OS hålls i Lake Placid.",
-    "image": "Olympic_flag.svg",
-    "pageViews": 360000,
-    "qid": "Q9652",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Lake Placid",
-    "wikipediaSlug": "Olympiska_vinterspelen_1980",
-    "year": 1980
-  },
-  {
-    "fact": "Tyskland vinner fotbolls-EM.",
-    "image": "Football_(soccer_ball).svg",
-    "pageViews": 360000,
-    "qid": "Q182196",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "Tyskland vinner fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_1980",
-    "year": 1980
-  },
-  {
-    "fact": "Italien vinner fotbolls-VM.",
-    "image": "Italia82.JPG",
-    "pageViews": 360000,
-    "qid": "Q46934",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Italien vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1982",
-    "year": 1982
-  },
-  {
-    "fact": "Sommar-OS hålls i Los Angeles.",
-    "image": "Olympic_boycotts_1976_1980_1984.PNG",
-    "pageViews": 360000,
-    "qid": "Q8456",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Los Angeles",
-    "wikipediaSlug": "Olympiska_sommarspelen_1984",
-    "year": 1984
-  },
-  {
-    "fact": "Vinter-OS hålls i Sarajevo.",
-    "image": "1984_Winter_Olympics_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q9657",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Sarajevo",
-    "wikipediaSlug": "Olympiska_vinterspelen_1984",
-    "year": 1984
-  },
-  {
-    "fact": "fotbolls-EM avgörs.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 360000,
-    "qid": "Q10491397",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "fotbolls-EM avgörs",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_1984",
-    "year": 1984
-  },
-  {
-    "fact": "Argentina vinner fotbolls-VM.",
-    "image": "Maradona_cup_azteca.jpg",
-    "pageViews": 360000,
-    "qid": "Q46938",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Argentina vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1986",
-    "year": 1986
-  },
-  {
-    "fact": "Sommar-OS hålls i Seoul.",
-    "image": "1988年夏季オリンピックエンブレム.png",
-    "pageViews": 360000,
-    "qid": "Q8470",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Seoul",
-    "wikipediaSlug": "Olympiska_sommarspelen_1988",
-    "year": 1988
-  },
-  {
-    "fact": "Vinter-OS hålls i Calgary.",
-    "image": "Olympic_flag.svg",
-    "pageViews": 360000,
-    "qid": "Q9658",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Calgary",
-    "wikipediaSlug": "Olympiska_vinterspelen_1988",
-    "year": 1988
-  },
-  {
-    "fact": "Nederländerna vinner fotbolls-EM.",
-    "image": "EK voetbal in West Duitsland; Nederland tegen Ierland 1 Van Basten, Rijkaard, R. Koeman, E. Koeman, Gullit en Van Breukelen.jpg",
-    "pageViews": 360000,
-    "qid": "Q151867",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "Nederländerna vinner fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_1988",
-    "year": 1988
-  },
-  {
-    "fact": "Tyskland vinner fotbolls-VM.",
-    "image": "Mascotte_di_italia_90.JPG",
-    "pageViews": 360000,
-    "qid": "Q132529",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Tyskland vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1990",
-    "year": 1990
-  },
-  {
-    "fact": "Sommar-OS hålls i Barcelona.",
-    "image": "Barcelona-92-logo-horizontal.jpg",
-    "pageViews": 360000,
-    "qid": "Q8488",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Barcelona",
-    "wikipediaSlug": "Olympiska_sommarspelen_1992",
-    "year": 1992
-  },
-  {
-    "fact": "Vinter-OS hålls i Albertville.",
-    "image": "Olympic_flag.svg",
-    "pageViews": 360000,
-    "qid": "Q9660",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Albertville",
-    "wikipediaSlug": "Olympiska_vinterspelen_1992",
-    "year": 1992
-  },
-  {
-    "fact": "Danmark vinner fotbolls-EM.",
-    "image": "Football_(soccer_ball).svg",
-    "pageViews": 360000,
-    "qid": "Q161810",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "Danmark vinner fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_1992",
-    "year": 1992
-  },
-  {
-    "fact": "Olympique de Marseille vinner Champions League.",
-    "image": "Olympiastadion_Muenchen.jpg",
-    "pageViews": 360000,
-    "qid": "Q275673",
-    "subtitle": "Champions League-säsong",
-    "title": "Olympique de Marseille vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_1992%2F1993",
-    "year": 1993
-  },
-  {
-    "fact": "Olympique de Marseille vinner Champions League-finalen.",
-    "image": "Olympiastadion München.jpg",
-    "pageViews": 360000,
-    "qid": "Q1079611",
-    "subtitle": "Champions League-final",
-    "title": "Olympique de Marseille vinner Champions League-finalen",
-    "wikipediaSlug": "Finalen_av_Uefa_Champions_League_1992%2F1993",
-    "year": 1993
-  },
-  {
-    "fact": "Brasilien vinner fotbolls-VM.",
+    "fact": "Sverige tar VM-brons i fotboll i USA.",
     "image": "1994_FIFA_World_Cup.svg",
-    "pageViews": 360000,
+    "pageViews": 420000,
     "qid": "Q101751",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Brasilien vinner fotbolls-VM",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Sverige tar VM-brons i fotboll",
     "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1994",
     "year": 1994
   },
   {
-    "fact": "Vinter-OS hålls i Lillehammer.",
-    "image": "Olympic_flag.svg",
+    "fact": "Sverige spelar VM-final i fotboll på Råsunda mot Brasilien.",
+    "image": "Pele_con_brasil_(cropped).jpg",
     "pageViews": 360000,
-    "qid": "Q9663",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Lillehammer",
-    "wikipediaSlug": "Olympiska_vinterspelen_1994",
-    "year": 1994
+    "qid": "Q132533",
+    "subtitle": "Fotbolls-VM på hemmaplan",
+    "title": "Sverige spelar VM-final i fotboll",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1958",
+    "year": 1958
   },
   {
-    "fact": "AC Milan vinner Champions League.",
-    "image": "Greece_v_Malta,_17_Nov_2007_(06).jpg",
+    "fact": "Zlatan Ibrahimović får Guldbollen för första gången.",
+    "image": "Zlatan_Ibrahimović_June_2018.jpg",
     "pageViews": 360000,
-    "qid": "Q4405",
-    "subtitle": "Champions League-säsong",
-    "title": "AC Milan vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_1993%2F1994",
-    "year": 1994
-  },
-  {
-    "fact": "AC Milan vinner Champions League-finalen.",
-    "image": "Coreografia Curva Sud Banditi.jpg",
-    "pageViews": 360000,
-    "qid": "Q610032",
-    "subtitle": "Champions League-final",
-    "title": "AC Milan vinner Champions League-finalen",
-    "wikipediaSlug": "Finalen_av_Uefa_Champions_League_1993%2F1994",
-    "year": 1994
-  },
-  {
-    "fact": "AFC Ajax vinner Champions League.",
-    "image": "Amsterdam ArenA 15-09-2012 02.jpg",
-    "pageViews": 360000,
-    "qid": "Q455985",
-    "subtitle": "Champions League-säsong",
-    "title": "AFC Ajax vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_1994%2F1995",
-    "year": 1995
-  },
-  {
-    "fact": "Sommar-OS hålls i Atlanta.",
-    "image": "Olympic_flag.svg",
-    "pageViews": 360000,
-    "qid": "Q8531",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Atlanta",
-    "wikipediaSlug": "Olympiska_sommarspelen_1996",
-    "year": 1996
-  },
-  {
-    "fact": "Tyskland vinner fotbolls-EM.",
-    "image": "Scotland-holland_euro_96.jpg",
-    "pageViews": 360000,
-    "qid": "Q180563",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "Tyskland vinner fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_1996",
-    "year": 1996
-  },
-  {
-    "fact": "Juventus FC vinner Champions League.",
-    "image": "Litmanen_jari.jpg",
-    "pageViews": 360000,
-    "qid": "Q26170",
-    "subtitle": "Champions League-säsong",
-    "title": "Juventus FC vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_1995%2F1996",
-    "year": 1996
-  },
-  {
-    "fact": "Borussia Dortmund vinner Champions League.",
-    "image": "Otmar_Hitzfeld_in_Bulgaria_(cropped).jpg",
-    "pageViews": 360000,
-    "qid": "Q196515",
-    "subtitle": "Champions League-säsong",
-    "title": "Borussia Dortmund vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_1996%2F1997",
-    "year": 1997
-  },
-  {
-    "fact": "Vinter-OS hålls i Nagano.",
-    "image": "Olympic_flag.svg",
-    "pageViews": 360000,
-    "qid": "Q9664",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Nagano",
-    "wikipediaSlug": "Olympiska_vinterspelen_1998",
-    "year": 1998
-  },
-  {
-    "fact": "Frankrike vinner fotbolls-VM.",
-    "image": "98France 14juin.JPG",
-    "pageViews": 360000,
-    "qid": "Q101730",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Frankrike vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1998",
-    "year": 1998
-  },
-  {
-    "fact": "Real Madrid vinner Champions League.",
-    "image": "Raul_Gonzalez_10mar2007.jpg",
-    "pageViews": 360000,
-    "qid": "Q241409",
-    "subtitle": "Champions League-säsong",
-    "title": "Real Madrid vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_1997%2F1998",
-    "year": 1998
-  },
-  {
-    "fact": "Manchester United vänder Champions League-finalen mot Bayern München på tilläggstid.",
-    "image": "Logo_UEFA_Champions_League.png",
-    "pageViews": 360000,
-    "qid": "Q18756",
-    "subtitle": "Champions League-drama",
-    "title": "Manchester United vänder finalen",
-    "wikipediaSlug": "Uefa_Champions_League",
-    "year": 1999
-  },
-  {
-    "fact": "Manchester United FC vinner Champions League.",
-    "image": "PalmaresManU.jpg",
-    "pageViews": 360000,
-    "qid": "Q279736",
-    "subtitle": "Champions League-säsong",
-    "title": "Manchester United FC vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_1998%2F1999",
-    "year": 1999
-  },
-  {
-    "fact": "Sommar-OS hålls i Sydney.",
-    "image": "2000_Summer_Olympics_textlogo.svg",
-    "pageViews": 360000,
-    "qid": "Q8544",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Sydney",
-    "wikipediaSlug": "Olympiska_sommarspelen_2000",
-    "year": 2000
-  },
-  {
-    "fact": "Frankrike vinner fotbolls-EM.",
-    "image": "Italy_-_France,_2_July_2000.jpg",
-    "pageViews": 360000,
-    "qid": "Q131239",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "Frankrike vinner fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_2000",
-    "year": 2000
-  },
-  {
-    "fact": "Real Madrid vinner Champions League.",
-    "image": "Vicente_del_Bosque_-_Teamchef_Spain_(03)_edit1.jpg",
-    "pageViews": 360000,
-    "qid": "Q330050",
-    "subtitle": "Champions League-säsong",
-    "title": "Real Madrid vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_1999%2F2000",
-    "year": 2000
-  },
-  {
-    "fact": "FC Bayern München vinner Champions League.",
-    "image": "Thomas_Linke.JPG",
-    "pageViews": 360000,
-    "qid": "Q456097",
-    "subtitle": "Champions League-säsong",
-    "title": "FC Bayern München vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2000%2F2001",
-    "year": 2001
-  },
-  {
-    "fact": "Vinter-OS hålls i Salt Lake City.",
-    "image": "2002_Winter_Olympics_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q9668",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Salt Lake City",
-    "wikipediaSlug": "Olympiska_vinterspelen_2002",
-    "year": 2002
-  },
-  {
-    "fact": "Brasilien vinner fotbolls-VM.",
-    "image": "RR5216-0034R_Чемпионат_мира_по_футболу_2002_г.gif",
-    "pageViews": 360000,
-    "qid": "Q47735",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Brasilien vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_2002",
-    "year": 2002
-  },
-  {
-    "fact": "Real Madrid vinner Champions League.",
-    "image": "Zinedine_zidane_2005_cropped.jpg",
-    "pageViews": 360000,
-    "qid": "Q727058",
-    "subtitle": "Champions League-säsong",
-    "title": "Real Madrid vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2001%2F2002",
-    "year": 2002
-  },
-  {
-    "fact": "AC Milan vinner Champions League.",
-    "image": "A.C._Milan_lifting_the_European_Cup_after_winning_the_2002–03_UEFA_Champions_League_-_20030528.jpg",
-    "pageViews": 360000,
-    "qid": "Q455978",
-    "subtitle": "Champions League-säsong",
-    "title": "AC Milan vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2002%2F2003",
-    "year": 2003
-  },
-  {
-    "fact": "Sommar-OS hålls i Aten.",
-    "image": "2004_Summer_Olympics_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q8558",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Aten",
-    "wikipediaSlug": "Olympiska_sommarspelen_2004",
-    "year": 2004
-  },
-  {
-    "fact": "Grekland vinner fotbolls-EM.",
-    "image": "Euro2004OpeningCeremony.jpg",
-    "pageViews": 360000,
-    "qid": "Q102920",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "Grekland vinner fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_2004",
-    "year": 2004
-  },
-  {
-    "fact": "FC Porto vinner Champions League.",
-    "image": "FCP-CL_Supporters.jpg",
-    "pageViews": 360000,
-    "qid": "Q244467",
-    "subtitle": "Champions League-säsong",
-    "title": "FC Porto vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2003%2F2004",
-    "year": 2004
-  },
-  {
-    "fact": "Liverpool FC vinner Champions League.",
-    "image": "2005 European Champion Clubs' Cup (cropped).jpg",
-    "pageViews": 360000,
-    "qid": "Q308996",
-    "subtitle": "Champions League-säsong",
-    "title": "Liverpool FC vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2004%2F2005",
+    "qid": "Q46896",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Zlatan får Guldbollen",
+    "wikipediaSlug": "Zlatan_Ibrahimovi%C4%87",
     "year": 2005
   },
   {
-    "fact": "Vinter-OS hålls i Turin.",
-    "image": "Olympic_flag.svg",
-    "pageViews": 360000,
-    "qid": "Q9672",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Turin",
-    "wikipediaSlug": "Olympiska_vinterspelen_2006",
-    "year": 2006
-  },
-  {
-    "fact": "Italien vinner fotbolls-VM.",
-    "image": "Norway Italy - June 2025 A 50.jpg",
-    "pageViews": 360000,
-    "qid": "Q37285",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Italien vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_2006",
-    "year": 2006
-  },
-  {
-    "fact": "FC Barcelona vinner Champions League.",
-    "image": "Barca_medals.jpg",
-    "pageViews": 360000,
-    "qid": "Q219705",
-    "subtitle": "Champions League-säsong",
-    "title": "FC Barcelona vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2005%2F2006",
-    "year": 2006
-  },
-  {
-    "fact": "AC Milan vinner Champions League.",
-    "image": "AC_Milan_team_celebrate.jpg",
-    "pageViews": 360000,
-    "qid": "Q192736",
-    "subtitle": "Champions League-säsong",
-    "title": "AC Milan vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2006%2F2007",
-    "year": 2007
-  },
-  {
-    "fact": "Sommar-OS hålls i Peking.",
-    "image": "Olimpicos_Beijing_2008.jpg",
-    "pageViews": 360000,
-    "qid": "Q8567",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Peking",
-    "wikipediaSlug": "Olympiska_sommarspelen_2008",
-    "year": 2008
-  },
-  {
-    "fact": "Spanien vinner fotbolls-EM.",
-    "image": "UEFA_EURO_2008_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q241864",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "Spanien vinner fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_2008",
-    "year": 2008
-  },
-  {
-    "fact": "Manchester United FC vinner Champions League.",
-    "image": "Man_utd_(1)_v_CHELSEA_(1)_-_C_L_Final_Moscow.jpg",
-    "pageViews": 360000,
-    "qid": "Q186489",
-    "subtitle": "Champions League-säsong",
-    "title": "Manchester United FC vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2007%2F2008",
-    "year": 2008
-  },
-  {
-    "fact": "FC Barcelona vinner Champions League.",
-    "image": "002_men_at_work_UEFA_2009,_Rome.jpg",
-    "pageViews": 360000,
-    "qid": "Q188787",
-    "subtitle": "Champions League-säsong",
-    "title": "FC Barcelona vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2008%2F2009",
-    "year": 2009
-  },
-  {
-    "fact": "Vinter-OS hålls i Vancouver.",
-    "image": "Olympic_flag.svg",
-    "pageViews": 360000,
-    "qid": "Q9674",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Vancouver",
-    "wikipediaSlug": "Olympiska_vinterspelen_2010",
-    "year": 2010
-  },
-  {
-    "fact": "Spanien vinner fotbolls-VM.",
-    "image": "FIFA_World_Cup_2010_Argentina_South_Korea.jpg",
-    "pageViews": 360000,
-    "qid": "Q176883",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Spanien vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_2010",
-    "year": 2010
-  },
-  {
-    "fact": "Inter vinner Champions League.",
-    "image": "Forza_Inter!.jpg",
-    "pageViews": 360000,
-    "qid": "Q184182",
-    "subtitle": "Champions League-säsong",
-    "title": "Inter vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2009%2F2010",
-    "year": 2010
-  },
-  {
-    "fact": "FC Barcelona vinner Champions League.",
-    "image": "FC_Barcelona_flag_UEFA_Champions_League_Final_2011.jpg",
-    "pageViews": 360000,
-    "qid": "Q189180",
-    "subtitle": "Champions League-säsong",
-    "title": "FC Barcelona vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2010%2F2011",
-    "year": 2011
-  },
-  {
-    "fact": "Sommar-OS hålls i London.",
-    "image": "2012_Summer_Olympics_text_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q8577",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i London",
-    "wikipediaSlug": "Olympiska_sommarspelen_2012",
-    "year": 2012
-  },
-  {
-    "fact": "Spanien vinner fotbolls-EM.",
-    "image": "UEFA_Euro_2012_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q22669",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "Spanien vinner fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_2012",
-    "year": 2012
-  },
-  {
-    "fact": "Chelsea FC vinner Champions League.",
-    "image": "Chelsea_Champions_League_Winners_2012.jpg",
-    "pageViews": 360000,
-    "qid": "Q485002",
-    "subtitle": "Champions League-säsong",
-    "title": "Chelsea FC vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2011%2F2012",
-    "year": 2012
-  },
-  {
-    "fact": "Chelsea FC vinner Champions League-finalen.",
-    "image": "Didier Drogba Champions League Winner.jpg",
-    "pageViews": 360000,
-    "qid": "Q719820",
-    "subtitle": "Champions League-final",
-    "title": "Chelsea FC vinner Champions League-finalen",
-    "wikipediaSlug": "Finalen_av_Uefa_Champions_League_2011%2F2012",
-    "year": 2012
-  },
-  {
-    "fact": "FC Bayern München vinner Champions League.",
-    "image": "Wembley_Stadium,_illuminated.jpg",
-    "pageViews": 360000,
-    "qid": "Q485956",
-    "subtitle": "Champions League-säsong",
-    "title": "FC Bayern München vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2012%2F2013",
-    "year": 2013
-  },
-  {
-    "fact": "FC Bayern München vinner Champions League-finalen.",
-    "image": "BVB-Fans in Wembley.jpg",
-    "pageViews": 360000,
-    "qid": "Q572031",
-    "subtitle": "Champions League-final",
-    "title": "FC Bayern München vinner Champions League-finalen",
-    "wikipediaSlug": "Finalen_av_Uefa_Champions_League_2012%2F2013",
-    "year": 2013
-  },
-  {
-    "fact": "Vinter-OS hålls i Sotji.",
-    "image": "Opening_of_XXII_Winter_Olympic_Games_(2338-13).jpg",
-    "pageViews": 360000,
-    "qid": "Q9678",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Sotji",
-    "wikipediaSlug": "Olympiska_vinterspelen_2014",
-    "year": 2014
-  },
-  {
-    "fact": "Tyskland vinner fotbolls-VM.",
-    "image": "Alemanha-campea20140713 0007.jpg",
-    "pageViews": 360000,
-    "qid": "Q79859",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Tyskland vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_2014",
-    "year": 2014
-  },
-  {
-    "fact": "Real Madrid vinner Champions League.",
-    "image": "LuzLissabon.jpg",
-    "pageViews": 360000,
-    "qid": "Q30608",
-    "subtitle": "Champions League-säsong",
-    "title": "Real Madrid vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2013%2F2014",
-    "year": 2014
-  },
-  {
-    "fact": "Real Madrid vinner Champions League-finalen.",
-    "image": "Final Champions League 2014 Real Madrid - Atlético de Madrid (14081181609).jpg",
-    "pageViews": 360000,
-    "qid": "Q2614328",
-    "subtitle": "Champions League-final",
-    "title": "Real Madrid vinner Champions League-finalen",
-    "wikipediaSlug": "Finalen_av_Uefa_Champions_League_2013%2F2014",
-    "year": 2014
-  },
-  {
-    "fact": "FC Barcelona vinner Champions League.",
-    "image": "Berlin_Olympiastadion_nach_Umbau.jpg",
-    "pageViews": 360000,
-    "qid": "Q11306107",
-    "subtitle": "Champions League-säsong",
-    "title": "FC Barcelona vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2014%2F2015",
-    "year": 2015
-  },
-  {
-    "fact": "FC Barcelona vinner Champions League-finalen.",
-    "image": "Moment of the Champions League final FC Barcelona - Juventus 2015.jpg",
-    "pageViews": 360000,
-    "qid": "Q13557593",
-    "subtitle": "Champions League-final",
-    "title": "FC Barcelona vinner Champions League-finalen",
-    "wikipediaSlug": "Finalen_av_Uefa_Champions_League_2014%2F2015",
-    "year": 2015
-  },
-  {
-    "fact": "Sommar-OS hålls i Rio de Janeiro.",
-    "image": "Rio_2016_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q8613",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Rio de Janeiro",
-    "wikipediaSlug": "Olympiska_sommarspelen_2016",
-    "year": 2016
-  },
-  {
-    "fact": "Portugal vinner fotbolls-EM.",
-    "image": "UEFA_Euro_2016_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q189571",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "Portugal vinner fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_2016",
-    "year": 2016
-  },
-  {
-    "fact": "Real Madrid vinner Champions League.",
-    "image": "Scudo2009.jpg",
-    "pageViews": 360000,
-    "qid": "Q13416183",
-    "subtitle": "Champions League-säsong",
-    "title": "Real Madrid vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2015%2F2016",
-    "year": 2016
-  },
-  {
-    "fact": "Real Madrid vinner Champions League-finalen.",
-    "image": "Ramos y Zidane con la Undécima Copa de Europa.jpg",
-    "pageViews": 360000,
-    "qid": "Q18084793",
-    "subtitle": "Champions League-final",
-    "title": "Real Madrid vinner Champions League-finalen",
-    "wikipediaSlug": "Finalen_av_Uefa_Champions_League_2015%2F2016",
-    "year": 2016
-  },
-  {
-    "fact": "Real Madrid vinner Champions League.",
-    "image": "Millennium_Stadium_Reflected.jpg",
-    "pageViews": 360000,
-    "qid": "Q18740961",
-    "subtitle": "Champions League-säsong",
-    "title": "Real Madrid vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2016%2F2017",
-    "year": 2017
-  },
-  {
-    "fact": "Frankrike vinner fotbolls-VM.",
-    "image": "Luzhniki_Stadium2.jpg",
-    "pageViews": 360000,
-    "qid": "Q170645",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Frankrike vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_2018",
-    "year": 2018
-  },
-  {
-    "fact": "Vinter-OS hålls i Pyeongchang.",
-    "image": "Pyeongchang_2018_Logo.svg",
-    "pageViews": 360000,
-    "qid": "Q9680",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Pyeongchang",
-    "wikipediaSlug": "Olympiska_vinterspelen_2018",
-    "year": 2018
-  },
-  {
-    "fact": "Real Madrid vinner Champions League.",
-    "image": "Фінал_Євро-2012._НСК_«Олімпійський»._3_хвилини_після_фінального_свистка.JPG",
-    "pageViews": 360000,
-    "qid": "Q20972117",
-    "subtitle": "Champions League-säsong",
-    "title": "Real Madrid vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2017%2F2018",
-    "year": 2018
-  },
-  {
-    "fact": "Liverpool FC vinner Champions League.",
-    "image": "LFC_Parade_2019_01.jpg",
-    "pageViews": 360000,
-    "qid": "Q30032467",
-    "subtitle": "Champions League-säsong",
-    "title": "Liverpool FC vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2018%2F2019",
-    "year": 2019
-  },
-  {
-    "fact": "Sommar-OS hålls i Tokyo.",
-    "image": "2020_Summer_Olympics_text_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q181278",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Tokyo",
-    "wikipediaSlug": "Olympiska_sommarspelen_2020",
-    "year": 2020
-  },
-  {
-    "fact": "Italien vinner fotbolls-EM.",
-    "image": "UEFA_Euro_2020_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q373501",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "Italien vinner fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_2020",
-    "year": 2020
-  },
-  {
-    "fact": "FC Bayern München vinner Champions League.",
-    "image": "LuzLissabon.jpg",
-    "pageViews": 360000,
-    "qid": "Q53164830",
-    "subtitle": "Champions League-säsong",
-    "title": "FC Bayern München vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2019%2F2020",
-    "year": 2020
-  },
-  {
-    "fact": "Chelsea FC vinner Champions League.",
-    "image": "Estadio do Dragao - panoramio (1).jpg",
-    "pageViews": 360000,
-    "qid": "Q63088790",
-    "subtitle": "Champions League-säsong",
-    "title": "Chelsea FC vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2020%2F2021",
-    "year": 2021
-  },
-  {
-    "fact": "Argentina vinner fotbolls-VM.",
-    "image": "Football_(soccer_ball).svg",
-    "pageViews": 360000,
-    "qid": "Q284163",
-    "subtitle": "Herrarnas fotbolls-VM",
-    "title": "Argentina vinner fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_2022",
-    "year": 2022
-  },
-  {
-    "fact": "Vinter-OS hålls i Peking.",
-    "image": "2022_Winter_Olympics_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q193074",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Peking",
-    "wikipediaSlug": "Olympiska_vinterspelen_2022",
-    "year": 2022
-  },
-  {
-    "fact": "Real Madrid vinner Champions League.",
-    "image": "StadeFranceNationsLeague2018.jpg",
-    "pageViews": 360000,
-    "qid": "Q96621465",
-    "subtitle": "Champions League-säsong",
-    "title": "Real Madrid vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2021%2F2022",
-    "year": 2022
-  },
-  {
-    "fact": "Manchester City FC vinner Champions League.",
-    "image": "Istanbul_Atatürk_Olympic_Stadium_1.jpg",
-    "pageViews": 360000,
-    "qid": "Q106086340",
-    "subtitle": "Champions League-säsong",
-    "title": "Manchester City FC vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2022%2F2023",
+    "fact": "Sverige tar brons i damernas fotbolls-VM efter seger mot Australien.",
+    "image": "",
+    "pageViews": 340000,
+    "qid": "Q19672232",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Sverige tar VM-brons i damfotboll",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2023",
     "year": 2023
-  },
-  {
-    "fact": "Sommar-OS hålls i Paris.",
-    "image": "2024_Summer_Olympics_text_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q995653",
-    "subtitle": "Olympiskt sommarspel",
-    "title": "Sommar-OS hålls i Paris",
-    "wikipediaSlug": "Olympiska_sommarspelen_2024",
-    "year": 2024
-  },
-  {
-    "fact": "Spanien vinner fotbolls-EM.",
-    "image": "UEFA_Euro_2024_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q15098367",
-    "subtitle": "Herrarnas fotbolls-EM",
-    "title": "Spanien vinner fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_2024",
-    "year": 2024
-  },
-  {
-    "fact": "Real Madrid vinner Champions League.",
-    "image": "London_Wembley.jpg",
-    "pageViews": 360000,
-    "qid": "Q111309338",
-    "subtitle": "Champions League-säsong",
-    "title": "Real Madrid vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2023%2F2024",
-    "year": 2024
-  },
-  {
-    "fact": "Paris Saint-Germain vinner Champions League.",
-    "image": "Allianz_arena_golden_hour_Richard_Bartz.jpg",
-    "pageViews": 360000,
-    "qid": "Q117008008",
-    "subtitle": "Champions League-säsong",
-    "title": "Paris Saint-Germain vinner Champions League",
-    "wikipediaSlug": "Uefa_Champions_League_2024%2F2025",
-    "year": 2025
-  },
-  {
-    "fact": "Vinter-OS hålls i Milano-Cortina.",
-    "image": "2026_Winter_Olympics_logo.svg",
-    "pageViews": 360000,
-    "qid": "Q4630399",
-    "subtitle": "Olympiskt vinterspel",
-    "title": "Vinter-OS hålls i Milano-Cortina",
-    "wikipediaSlug": "Olympiska_vinterspelen_2026",
-    "year": 2026
   },
   {
     "fact": "Tre Kronor tar OS-guld i ishockey efter Peter Forsbergs berömda straff.",
@@ -1410,6 +50,16 @@
     "year": 1994
   },
   {
+    "fact": "Tre Kronor vinner OS-guld i Turin efter final mot Finland.",
+    "image": "Finlande_Russie.jpg",
+    "pageViews": 320000,
+    "qid": "Q645868",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Tre Kronor vinner OS-finalen mot Finland",
+    "wikipediaSlug": "Ishockey_vid_olympiska_vinterspelen_2006",
+    "year": 2006
+  },
+  {
     "fact": "Det första Vasaloppet körs.",
     "image": "Jørgen_Aukland_Vasaloppet_2013_001.jpg",
     "pageViews": 300000,
@@ -1418,6 +68,16 @@
     "title": "Första Vasaloppet körs",
     "wikipediaSlug": "Vasaloppet",
     "year": 1922
+  },
+  {
+    "fact": "Sverige tar OS-guld i herrfotboll efter final mot Jugoslavien.",
+    "image": "Olympicsemifinal1948.jpg",
+    "pageViews": 300000,
+    "qid": "Q667937",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Sverige vinner OS-guld i fotboll",
+    "wikipediaSlug": "Fotboll_vid_olympiska_sommarspelen_1948",
+    "year": 1948
   },
   {
     "fact": "Björn Borg vinner Wimbledon för första gången.",
@@ -1430,6 +90,16 @@
     "year": 1976
   },
   {
+    "fact": "Sverige arrangerar fotbolls-EM och når semifinal på hemmaplan.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q161810",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Sverige går till EM-semifinal",
+    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_1992",
+    "year": 1992
+  },
+  {
     "fact": "Peter Forsberg gör den klassiska straffen i OS-finalen.",
     "image": "Peter_Forsberg_2016-03-17_001_(cropped).jpg",
     "pageViews": 300000,
@@ -1440,24 +110,34 @@
     "year": 1994
   },
   {
-    "fact": "Henrik Larsson gör mål för Sverige i fotbolls-VM.",
-    "image": "Henrik_Larsson_in_Jan_2014.jpg",
+    "fact": "Tomas Ravelli räddar straff i VM-kvartsfinalen mot Rumänien.",
+    "image": "Thomas_Ravelli_in_January_2014.jpg",
     "pageViews": 300000,
-    "qid": "Q179334",
-    "subtitle": "Svensk fotbollsspelare",
-    "title": "Henrik Larsson gör VM-mål",
-    "wikipediaSlug": "Henrik_Larsson",
+    "qid": "Q313710",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Ravelli räddar straff i VM",
+    "wikipediaSlug": "Thomas_Ravelli",
     "year": 1994
   },
   {
-    "fact": "Bosmandomen förändrar villkoren för spelare och klubbar i europeisk fotboll.",
-    "image": "Jean-Marc_Bosman_Panini_Standard_Liege_(cropped).png",
+    "fact": "Sverige vinner både OS-guld och VM-guld i ishockey samma år.",
+    "image": "Sweden_national_ice_hockey_team_jerseys_2022_(WOG).png",
     "pageViews": 300000,
-    "qid": "Q465550",
-    "subtitle": "Avgörande fotbollsdom",
-    "title": "Bosmandomen förändrar fotbollen",
-    "wikipediaSlug": "Bosmandomen",
-    "year": 1995
+    "qid": "Q913643",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Tre Kronor tar dubbeln",
+    "wikipediaSlug": "Sveriges_herrlandslag_i_ishockey",
+    "year": 2006
+  },
+  {
+    "fact": "Sveriges damlandslag tar OS-silver i fotboll i Rio de Janeiro.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q11865693",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Damlandslaget tar OS-silver",
+    "wikipediaSlug": "Fotboll_vid_olympiska_sommarspelen_2016",
+    "year": 2016
   },
   {
     "fact": "Armand Duplantis sätter världsrekord i stavhopp.",
@@ -1468,6 +148,106 @@
     "title": "Duplantis sätter världsrekord",
     "wikipediaSlug": "Armand_Duplantis",
     "year": 2020
+  },
+  {
+    "fact": "Malmö FF spelar final i Europacupen mot Nottingham Forest.",
+    "image": "Malmo_FF_logo.svg",
+    "pageViews": 280000,
+    "qid": "Q204881",
+    "subtitle": "Svenskt klubbfotbollsminne",
+    "title": "Malmö FF spelar Europacupfinal",
+    "wikipediaSlug": "Malm%C3%B6_FF",
+    "year": 1979
+  },
+  {
+    "fact": "Sverige vinner EM i fotboll för damer efter final mot England.",
+    "image": "European_Competition_for_Women's_Football_1984_map.svg",
+    "pageViews": 280000,
+    "qid": "Q847626",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Sverige vinner damernas fotbolls-EM",
+    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_1984",
+    "year": 1984
+  },
+  {
+    "fact": "IFK Göteborg vinner Uefacupen för andra gången.",
+    "image": "",
+    "pageViews": 280000,
+    "qid": "Q201567",
+    "subtitle": "Svenskt klubbfotbollsminne",
+    "title": "IFK Göteborg vinner Uefacupen igen",
+    "wikipediaSlug": "IFK_G%C3%B6teborg",
+    "year": 1987
+  },
+  {
+    "fact": "Tomas Brolin gör ett klassiskt svenskt mål under fotbolls-VM i USA.",
+    "image": "Tomas_Brolin.jpg",
+    "pageViews": 280000,
+    "qid": "Q361435",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Brolin gör mål i fotbolls-VM",
+    "wikipediaSlug": "Tomas_Brolin",
+    "year": 1994
+  },
+  {
+    "fact": "Tre Kronor vinner VM-guld i ishockey på hemmaplan i Globen.",
+    "image": "Snowy_på_Globen.JPG",
+    "pageViews": 280000,
+    "qid": "Q1316060",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Tre Kronor vinner VM-guld hemma",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_ishockey_f%C3%B6r_herrar_1995",
+    "year": 1995
+  },
+  {
+    "fact": "Sverige tar OS-silver i damfotboll efter final mot Kanada.",
+    "image": "",
+    "pageViews": 280000,
+    "qid": "Q726066",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Sverige tar OS-silver igen",
+    "wikipediaSlug": "Sveriges_damlandslag_i_fotboll",
+    "year": 2021
+  },
+  {
+    "fact": "Sveriges damlandslag tar ännu ett OS-silver i fotboll.",
+    "image": "",
+    "pageViews": 280000,
+    "qid": "Q38278429",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Damlandslaget tar OS-silver igen",
+    "wikipediaSlug": "Fotboll_vid_olympiska_sommarspelen_2020",
+    "year": 2021
+  },
+  {
+    "fact": "Nils van der Poel vinner OS-guld och blir ett av Sveriges stora vinterspelsnamn.",
+    "image": "Nils_van_der_Poel_in_2022.jpg",
+    "pageViews": 280000,
+    "qid": "Q15615329",
+    "subtitle": "Svenskt OS-minne",
+    "title": "Nils van der Poel vinner OS-guld",
+    "wikipediaSlug": "Nils_van_der_Poel",
+    "year": 2022
+  },
+  {
+    "fact": "Örgryte IS vinner den första upplagan av Allsvenskan.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q344437",
+    "subtitle": "Svensk klubbfotboll",
+    "title": "Allsvenskan spelas första gången",
+    "wikipediaSlug": "Allsvenskan",
+    "year": 1924
+  },
+  {
+    "fact": "Råsunda fotbollsstadion invigs och blir svensk fotbolls mest klassiska landslagsarena.",
+    "image": "Råsunda_February_2013_01.jpg",
+    "pageViews": 260000,
+    "qid": "Q725623",
+    "subtitle": "Svensk fotbollsarena",
+    "title": "Råsunda blir landslagsarena",
+    "wikipediaSlug": "R%C3%A5sunda_fotbollsstadion",
+    "year": 1937
   },
   {
     "fact": "Ingemar Johansson blir världsmästare i tungvikt.",
@@ -1500,16 +280,6 @@
     "year": 1984
   },
   {
-    "fact": "Globen invigs i Stockholm.",
-    "image": "Globen_från_Hammarbybacken,_2016a.jpg",
-    "pageViews": 260000,
-    "qid": "Q32926",
-    "subtitle": "Arena i Stockholm",
-    "title": "Globen invigs",
-    "wikipediaSlug": "Globen",
-    "year": 1989
-  },
-  {
     "fact": "Mats Sundin väljs först i NHL-draften.",
     "image": "Mats_Sundin_in_feb_2015.jpg",
     "pageViews": 260000,
@@ -1518,6 +288,16 @@
     "title": "Mats Sundin blir NHL-etta",
     "wikipediaSlug": "Mats_Sundin",
     "year": 1989
+  },
+  {
+    "fact": "Tre Kronor vinner VM-guld i ishockey efter final mot Kanada.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q1316020",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Tre Kronor vinner hockey-VM",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_ishockey_f%C3%B6r_herrar_1991",
+    "year": 1991
   },
   {
     "fact": "J-O Waldner tar OS-guld i Barcelona.",
@@ -1540,24 +320,14 @@
     "year": 1992
   },
   {
-    "fact": "Tomas Brolin blir en av Sveriges stora profiler under fotbolls-VM.",
-    "image": "Tomas_Brolin.jpg",
+    "fact": "Bengan Boys tar OS-silver i handboll i Barcelona.",
+    "image": "",
     "pageViews": 260000,
-    "qid": "Q361435",
-    "subtitle": "Svensk fotbollsspelare",
-    "title": "Tomas Brolin gör mål i VM",
-    "wikipediaSlug": "Tomas_Brolin",
-    "year": 1994
-  },
-  {
-    "fact": "Tomas Ravelli räddar straff i VM-kvartsfinalen mot Rumänien.",
-    "image": "Thomas_Ravelli_in_January_2014.jpg",
-    "pageViews": 260000,
-    "qid": "Q313710",
-    "subtitle": "Svensk fotbollsmålvakt",
-    "title": "Tomas Ravelli räddar straff",
-    "wikipediaSlug": "Thomas_Ravelli",
-    "year": 1994
+    "qid": "Q649010",
+    "subtitle": "Svenskt handbollsminne",
+    "title": "Bengan Boys tar OS-silver",
+    "wikipediaSlug": "Handboll_vid_olympiska_sommarspelen_1992",
+    "year": 1992
   },
   {
     "fact": "Annika Sörenstam får sitt internationella genombrott.",
@@ -1580,14 +350,44 @@
     "year": 1997
   },
   {
-    "fact": "Luís Figo lämnar Barcelona för Real Madrid och blir en symbol för Galácticos-eran.",
-    "image": "L._Figo_2017.jpg",
+    "fact": "AIK vinner SM-guld i fotboll efter en dramatisk säsongsavslutning.",
+    "image": "AIK_players_after_a_goal_(during_AIK-Elfsborg,_2013).jpg",
     "pageViews": 260000,
-    "qid": "Q483145",
-    "subtitle": "Omtalad spelarövergång",
-    "title": "Figo går till Real Madrid",
-    "wikipediaSlug": "Lu%C3%ADs_Figo",
-    "year": 2000
+    "qid": "Q221602",
+    "subtitle": "Svenskt klubbfotbollsminne",
+    "title": "AIK vinner SM-guld",
+    "wikipediaSlug": "AIK_Fotboll",
+    "year": 1998
+  },
+  {
+    "fact": "Hammarby vinner sitt första SM-guld i fotboll.",
+    "image": "Hammarby1934.jpg",
+    "pageViews": 260000,
+    "qid": "Q460724",
+    "subtitle": "Svenskt klubbfotbollsminne",
+    "title": "Hammarby vinner sitt första SM-guld",
+    "wikipediaSlug": "Hammarby_IF_Fotboll",
+    "year": 2001
+  },
+  {
+    "fact": "Djurgården vinner både Allsvenskan och Svenska cupen.",
+    "image": "Djurgardens_IF_logo.svg",
+    "pageViews": 260000,
+    "qid": "Q622430",
+    "subtitle": "Svenskt klubbfotbollsminne",
+    "title": "Djurgården vinner dubbeln",
+    "wikipediaSlug": "Djurg%C3%A5rdens_IF_Fotboll",
+    "year": 2002
+  },
+  {
+    "fact": "Marta blir en av damfotbollens stora världsstjärnor efter genombrott i Sverige.",
+    "image": "Marta_Vieira_da_Silva_2013.jpg",
+    "pageViews": 260000,
+    "qid": "Q228616",
+    "subtitle": "Damfotboll i Sverige",
+    "title": "Marta slår igenom i Sverige",
+    "wikipediaSlug": "Marta_(fotbollsspelare)",
+    "year": 2004
   },
   {
     "fact": "Anja Pärson tar OS-guld i slalom.",
@@ -1610,6 +410,16 @@
     "year": 2010
   },
   {
+    "fact": "Sverige vinner U21-EM i fotboll efter finaldrama mot Portugal.",
+    "image": "2015_UEFA_European_Under-21_Championship_map.svg",
+    "pageViews": 260000,
+    "qid": "Q2949264",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Sverige vinner U21-EM",
+    "wikipediaSlug": "U21-Europam%C3%A4sterskapet_i_fotboll_2015",
+    "year": 2015
+  },
+  {
     "fact": "Sarah Sjöström vinner OS-guld på 100 meter fjärilsim.",
     "image": "Sarah_Sjöström_2013.jpg",
     "pageViews": 260000,
@@ -1618,16 +428,6 @@
     "title": "Sarah Sjöström vinner OS-guld",
     "wikipediaSlug": "Sarah_Sj%C3%B6str%C3%B6m",
     "year": 2016
-  },
-  {
-    "fact": "Nils van der Poel vinner OS-guld.",
-    "image": "Nils_van_der_Poel_in_2022.jpg",
-    "pageViews": 260000,
-    "qid": "Q15615329",
-    "subtitle": "Svensk skridskoåkare",
-    "title": "Nils van der Poel vinner OS-guld",
-    "wikipediaSlug": "Nils_van_der_Poel",
-    "year": 2022
   },
   {
     "fact": "Sverige tar OS-guld i ishockey i Turin med flera NHL-stjärnor i laget.",
@@ -1640,1694 +440,114 @@
     "year": 2006
   },
   {
-    "fact": "Sverige vinner damernas fotbolls-EM.",
-    "image": "European_Competition_for_Women's_Football_1984_map.svg",
+    "fact": "Svenska herrlandslaget spelar sin första landskamp i fotboll.",
+    "image": "",
     "pageViews": 240000,
-    "qid": "Q847626",
-    "subtitle": "Damernas fotbolls-EM",
-    "title": "Sverige vinner damernas fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_1984",
-    "year": 1984
+    "qid": "Q160826",
+    "subtitle": "Svensk fotbollshistoria",
+    "title": "Sverige spelar sin första fotbollslandskamp",
+    "wikipediaSlug": "Sveriges_herrlandslag_i_fotboll",
+    "year": 1908
   },
   {
-    "fact": "Bernard Hinault vinner Tour de France.",
-    "image": "Route_of_the_1985_Tour_de_France.png",
+    "fact": "Sverige vinner VM-brons i fotboll efter seger mot Västtyskland.",
+    "image": "",
     "pageViews": 240000,
-    "qid": "Q278715",
-    "subtitle": "Cykelklassiker",
-    "title": "Bernard Hinault vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_1985",
-    "year": 1985
+    "qid": "Q132515",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Sverige tar VM-brons i fotboll",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1950",
+    "year": 1950
   },
   {
-    "fact": "Greg LeMond vinner Tour de France.",
-    "image": "Route_of_the_1986_Tour_de_France.png",
+    "fact": "Damallsvenskan spelas för första gången.",
+    "image": "",
     "pageViews": 240000,
-    "qid": "Q260299",
-    "subtitle": "Cykelklassiker",
-    "title": "Greg LeMond vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_1986",
-    "year": 1986
-  },
-  {
-    "fact": "Chicago Bears vinner Super Bowl.",
-    "image": "UCLA_Bruin_Marching_Band_in_Palo_Alto,_1981.jpg",
-    "pageViews": 240000,
-    "qid": "Q1073454",
-    "subtitle": "NFL-final",
-    "title": "Chicago Bears vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XX",
-    "year": 1986
-  },
-  {
-    "fact": "Norge vinner damernas fotbolls-EM.",
-    "image": "European_Competition_for_Women's_Football_1987_map.svg",
-    "pageViews": 240000,
-    "qid": "Q599864",
-    "subtitle": "Damernas fotbolls-EM",
-    "title": "Norge vinner damernas fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_1987",
-    "year": 1987
-  },
-  {
-    "fact": "Stephen Roche vinner Tour de France.",
-    "image": "Route_of_the_1987_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q478420",
-    "subtitle": "Cykelklassiker",
-    "title": "Stephen Roche vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_1987",
-    "year": 1987
-  },
-  {
-    "fact": "New York Giants vinner Super Bowl.",
-    "image": "Rosebowl.JPG",
-    "pageViews": 240000,
-    "qid": "Q1808572",
-    "subtitle": "NFL-final",
-    "title": "New York Giants vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXI",
-    "year": 1987
-  },
-  {
-    "fact": "Pedro Delgado vinner Tour de France.",
-    "image": "Route_of_the_1988_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q639587",
-    "subtitle": "Cykelklassiker",
-    "title": "Pedro Delgado vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_1988",
+    "qid": "Q1158138",
+    "subtitle": "Svensk damfotboll",
+    "title": "Damallsvenskan startar",
+    "wikipediaSlug": "Damallsvenskan",
     "year": 1988
   },
   {
-    "fact": "Washington Commanders vinner Super Bowl.",
-    "image": "Super_Bowl_XXII_Logo.svg",
-    "pageViews": 240000,
-    "qid": "Q474760",
-    "subtitle": "NFL-final",
-    "title": "Washington Commanders vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXII",
-    "year": 1988
-  },
-  {
-    "fact": "Tyskland vinner damernas fotbolls-EM.",
-    "image": "Bremer-bruecke.jpg",
-    "pageViews": 240000,
-    "qid": "Q669670",
-    "subtitle": "Damernas fotbolls-EM",
-    "title": "Tyskland vinner damernas fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_1989",
-    "year": 1989
-  },
-  {
-    "fact": "Greg LeMond vinner Tour de France.",
-    "image": "Route_of_the_1989_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q754994",
-    "subtitle": "Cykelklassiker",
-    "title": "Greg LeMond vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_1989",
-    "year": 1989
-  },
-  {
-    "fact": "San Francisco 49ers vinner Super Bowl.",
-    "image": "200127-H-PX819-0092.jpg",
-    "pageViews": 240000,
-    "qid": "Q1307150",
-    "subtitle": "NFL-final",
-    "title": "San Francisco 49ers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXIII",
-    "year": 1989
-  },
-  {
-    "fact": "Greg LeMond vinner Tour de France.",
-    "image": "Route_of_the_1990_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q827936",
-    "subtitle": "Cykelklassiker",
-    "title": "Greg LeMond vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_1990",
-    "year": 1990
-  },
-  {
-    "fact": "San Francisco 49ers vinner Super Bowl.",
-    "image": "Super_Bowl_XXIV_Logo.svg",
-    "pageViews": 240000,
-    "qid": "Q1064807",
-    "subtitle": "NFL-final",
-    "title": "San Francisco 49ers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXIV",
-    "year": 1990
-  },
-  {
-    "fact": "USA vinner damernas fotbolls-VM.",
-    "image": "Football_(soccer_ball).svg",
-    "pageViews": 240000,
-    "qid": "Q459419",
-    "subtitle": "Damernas fotbolls-VM",
-    "title": "USA vinner damernas fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_1991",
-    "year": 1991
-  },
-  {
-    "fact": "Tyskland vinner damernas fotbolls-EM.",
-    "image": "UEFA_Women's_Euro_1991_map.svg",
-    "pageViews": 240000,
-    "qid": "Q916142",
-    "subtitle": "Damernas fotbolls-EM",
-    "title": "Tyskland vinner damernas fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_1991",
-    "year": 1991
-  },
-  {
-    "fact": "Miguel Indurain vinner Tour de France.",
-    "image": "Route_of_the_1991_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q754990",
-    "subtitle": "Cykelklassiker",
-    "title": "Miguel Indurain vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_1991",
-    "year": 1991
-  },
-  {
-    "fact": "New York Giants vinner Super Bowl.",
-    "image": "Super_Bowl_XXV.svg",
-    "pageViews": 240000,
-    "qid": "Q1512351",
-    "subtitle": "NFL-final",
-    "title": "New York Giants vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXV",
-    "year": 1991
-  },
-  {
-    "fact": "Miguel Indurain vinner Tour de France.",
-    "image": "Route_of_the_1992_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q224723",
-    "subtitle": "Cykelklassiker",
-    "title": "Miguel Indurain vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_1992",
-    "year": 1992
-  },
-  {
-    "fact": "Washington Commanders vinner Super Bowl.",
-    "image": "051207-MPLS-006Metrodome-crop.jpg",
-    "pageViews": 240000,
-    "qid": "Q1576569",
-    "subtitle": "NFL-final",
-    "title": "Washington Commanders vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXVI",
-    "year": 1992
-  },
-  {
-    "fact": "Norge vinner damernas fotbolls-EM.",
-    "image": "Orogel Stadium.jpg",
-    "pageViews": 240000,
-    "qid": "Q938277",
-    "subtitle": "Damernas fotbolls-EM",
-    "title": "Norge vinner damernas fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_1993",
-    "year": 1993
-  },
-  {
-    "fact": "Miguel Indurain vinner Tour de France.",
-    "image": "Route_of_the_1993_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q830097",
-    "subtitle": "Cykelklassiker",
-    "title": "Miguel Indurain vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_1993",
-    "year": 1993
-  },
-  {
-    "fact": "Dallas Cowboys vinner Super Bowl.",
-    "image": "Rosebowl.JPG",
-    "pageViews": 240000,
-    "qid": "Q1463422",
-    "subtitle": "NFL-final",
-    "title": "Dallas Cowboys vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXVII",
-    "year": 1993
-  },
-  {
-    "fact": "Miguel Indurain vinner Tour de France.",
-    "image": "Route_of_the_1994_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q898077",
-    "subtitle": "Cykelklassiker",
-    "title": "Miguel Indurain vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_1994",
-    "year": 1994
-  },
-  {
-    "fact": "Dallas Cowboys vinner Super Bowl.",
-    "image": "Georgia_Dome.JPG",
-    "pageViews": 240000,
-    "qid": "Q621500",
-    "subtitle": "NFL-final",
-    "title": "Dallas Cowboys vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXVIII",
-    "year": 1994
-  },
-  {
-    "fact": "Norge vinner damernas fotbolls-VM.",
-    "image": "Football_(soccer_ball).svg",
-    "pageViews": 240000,
-    "qid": "Q642445",
-    "subtitle": "Damernas fotbolls-VM",
-    "title": "Norge vinner damernas fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_1995",
-    "year": 1995
-  },
-  {
-    "fact": "Tyskland vinner damernas fotbolls-EM.",
-    "image": "Kaiserslautern 03.jpg",
-    "pageViews": 240000,
-    "qid": "Q904375",
-    "subtitle": "Damernas fotbolls-EM",
-    "title": "Tyskland vinner damernas fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_1995",
-    "year": 1995
-  },
-  {
-    "fact": "Miguel Indurain vinner Tour de France.",
-    "image": "Route_of_the_1995_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q614452",
-    "subtitle": "Cykelklassiker",
-    "title": "Miguel Indurain vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_1995",
-    "year": 1995
-  },
-  {
-    "fact": "San Francisco 49ers vinner Super Bowl.",
-    "image": "200127-H-PX819-0092.jpg",
-    "pageViews": 240000,
-    "qid": "Q1064815",
-    "subtitle": "NFL-final",
-    "title": "San Francisco 49ers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXIX",
-    "year": 1995
-  },
-  {
-    "fact": "Bjarne Riis vinner Tour de France.",
-    "image": "Route_of_the_1996_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q546013",
-    "subtitle": "Cykelklassiker",
-    "title": "Bjarne Riis vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_1996",
-    "year": 1996
-  },
-  {
-    "fact": "Dallas Cowboys vinner Super Bowl.",
-    "image": "Arizona_State_University,_Tempe_Main_Campus,_Tempe,_AZ_-_panoramio_(164).jpg",
-    "pageViews": 240000,
-    "qid": "Q1065229",
-    "subtitle": "NFL-final",
-    "title": "Dallas Cowboys vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXX",
-    "year": 1996
-  },
-  {
-    "fact": "Tyskland vinner damernas fotbolls-EM.",
-    "image": "Ullevål Stadium from air.jpg",
-    "pageViews": 240000,
-    "qid": "Q377979",
-    "subtitle": "Damernas fotbolls-EM",
-    "title": "Tyskland vinner damernas fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_1997",
-    "year": 1997
-  },
-  {
-    "fact": "Jan Ullrich vinner Tour de France.",
-    "image": "Route_of_the_1997_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q757405",
-    "subtitle": "Cykelklassiker",
-    "title": "Jan Ullrich vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_1997",
-    "year": 1997
-  },
-  {
-    "fact": "Green Bay Packers vinner Super Bowl.",
-    "image": "Louisiana_Superdome_-_Unbranded_-_26_July_2021.jpg",
-    "pageViews": 240000,
-    "qid": "Q598389",
-    "subtitle": "NFL-final",
-    "title": "Green Bay Packers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXXI",
-    "year": 1997
-  },
-  {
-    "fact": "Marco Pantani vinner Tour de France.",
-    "image": "Route_of_the_1998_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q833247",
-    "subtitle": "Cykelklassiker",
-    "title": "Marco Pantani vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_1998",
-    "year": 1998
-  },
-  {
-    "fact": "Denver Broncos vinner Super Bowl.",
-    "image": "Qualcomm_Stadium.jpg",
-    "pageViews": 240000,
-    "qid": "Q648144",
-    "subtitle": "NFL-final",
-    "title": "Denver Broncos vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXXII",
-    "year": 1998
-  },
-  {
-    "fact": "USA vinner damernas fotbolls-VM.",
-    "image": "Logo_1999_FIFA_Women's_World_Cup.svg",
-    "pageViews": 240000,
-    "qid": "Q568445",
-    "subtitle": "Damernas fotbolls-VM",
-    "title": "USA vinner damernas fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_1999",
-    "year": 1999
-  },
-  {
-    "fact": "not attributed vinner Tour de France.",
-    "image": "Route_of_the_1999_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q752416",
-    "subtitle": "Cykelklassiker",
-    "title": "not attributed vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_1999",
-    "year": 1999
-  },
-  {
-    "fact": "Denver Broncos vinner Super Bowl.",
-    "image": "200127-H-PX819-0092.jpg",
-    "pageViews": 240000,
-    "qid": "Q508448",
-    "subtitle": "NFL-final",
-    "title": "Denver Broncos vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXXIII",
-    "year": 1999
-  },
-  {
-    "fact": "not attributed vinner Tour de France.",
-    "image": "Route_of_the_2000_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q776876",
-    "subtitle": "Cykelklassiker",
-    "title": "not attributed vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2000",
-    "year": 2000
-  },
-  {
-    "fact": "Los Angeles Rams vinner Super Bowl.",
-    "image": "NewGeorgiaDome.JPG",
-    "pageViews": 240000,
-    "qid": "Q176843",
-    "subtitle": "NFL-final",
-    "title": "Los Angeles Rams vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXXIV",
-    "year": 2000
-  },
-  {
-    "fact": "Tyskland vinner damernas fotbolls-EM.",
-    "image": "Ulm Donaustadion 1.jpg",
-    "pageViews": 240000,
-    "qid": "Q669646",
-    "subtitle": "Damernas fotbolls-EM",
-    "title": "Tyskland vinner damernas fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2001",
-    "year": 2001
-  },
-  {
-    "fact": "not attributed vinner Tour de France.",
-    "image": "Route_of_the_2001_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q644632",
-    "subtitle": "Cykelklassiker",
-    "title": "not attributed vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2001",
-    "year": 2001
-  },
-  {
-    "fact": "Baltimore Ravens vinner Super Bowl.",
-    "image": "Raymond_James_Stadium_aerial.jpg",
-    "pageViews": 240000,
-    "qid": "Q625210",
-    "subtitle": "NFL-final",
-    "title": "Baltimore Ravens vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXXV",
-    "year": 2001
-  },
-  {
-    "fact": "not attributed vinner Tour de France.",
-    "image": "Route_of_the_2002_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q827953",
-    "subtitle": "Cykelklassiker",
-    "title": "not attributed vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2002",
-    "year": 2002
-  },
-  {
-    "fact": "New England Patriots vinner Super Bowl.",
-    "image": "Superdome_from_Garage.jpg",
-    "pageViews": 240000,
-    "qid": "Q1073479",
-    "subtitle": "NFL-final",
-    "title": "New England Patriots vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXXVI",
-    "year": 2002
-  },
-  {
-    "fact": "Tyskland vinner damernas fotbolls-VM.",
-    "image": "2023-07-03 Fussball, Frauen, Deutsche Nationalmannschaft, Media Day 1DX 6519 by Stepro.jpg",
+    "fact": "Sverige tar silver i damernas fotbolls-VM efter final mot Tyskland.",
+    "image": "Victoria_Svensson.jpg",
     "pageViews": 240000,
     "qid": "Q500308",
-    "subtitle": "Damernas fotbolls-VM",
-    "title": "Tyskland vinner damernas fotbolls-VM",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Sverige spelar VM-final i damfotboll",
     "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2003",
     "year": 2003
   },
   {
-    "fact": "not attributed vinner Tour de France.",
-    "image": "Route_of_the_2003_Tour_de_France.png",
+    "fact": "Umeå IK vinner Uefa Women's Cup och blir ett av Europas stora damfotbollslag.",
+    "image": "",
     "pageViews": 240000,
-    "qid": "Q45664",
-    "subtitle": "Cykelklassiker",
-    "title": "not attributed vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2003",
+    "qid": "Q1856774",
+    "subtitle": "Svenskt damfotbollsminne",
+    "title": "Umeå IK vinner Europa",
+    "wikipediaSlug": "Ume%C3%A5_IK",
     "year": 2003
   },
   {
-    "fact": "Tampa Bay Buccaneers vinner Super Bowl.",
-    "image": "Qualcomm_Stadium.jpg",
+    "fact": "Henrik Larsson återvänder till Helsingborgs IF efter åren i Europa.",
+    "image": "Henrik_Larsson_in_Jan_2014.jpg",
     "pageViews": 240000,
-    "qid": "Q939802",
-    "subtitle": "NFL-final",
-    "title": "Tampa Bay Buccaneers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXXVII",
-    "year": 2003
-  },
-  {
-    "fact": "not attributed vinner Tour de France.",
-    "image": "Route_of_the_2004_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q729763",
-    "subtitle": "Cykelklassiker",
-    "title": "not attributed vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2004",
-    "year": 2004
-  },
-  {
-    "fact": "New England Patriots vinner Super Bowl.",
-    "image": "Reliantstadium.jpg",
-    "pageViews": 240000,
-    "qid": "Q1049630",
-    "subtitle": "NFL-final",
-    "title": "New England Patriots vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXXVIII",
-    "year": 2004
-  },
-  {
-    "fact": "Tyskland vinner damernas fotbolls-EM.",
-    "image": "Ewood Park 2011.jpg",
-    "pageViews": 240000,
-    "qid": "Q836715",
-    "subtitle": "Damernas fotbolls-EM",
-    "title": "Tyskland vinner damernas fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2005",
-    "year": 2005
-  },
-  {
-    "fact": "not attributed vinner Tour de France.",
-    "image": "Route_of_the_2005_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q655118",
-    "subtitle": "Cykelklassiker",
-    "title": "not attributed vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2005",
-    "year": 2005
-  },
-  {
-    "fact": "New England Patriots vinner Super Bowl.",
-    "image": "EverBankField2014.jpg",
-    "pageViews": 240000,
-    "qid": "Q926745",
-    "subtitle": "NFL-final",
-    "title": "New England Patriots vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XXXIX",
-    "year": 2005
-  },
-  {
-    "fact": "Oscar Pereiro vinner Tour de France.",
-    "image": "Tour_de_France_2006-fr.png",
-    "pageViews": 240000,
-    "qid": "Q329871",
-    "subtitle": "Cykelklassiker",
-    "title": "Oscar Pereiro vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2006",
+    "qid": "Q179334",
+    "subtitle": "Svenskt klubbfotbollsminne",
+    "title": "Henrik Larsson återvänder till HIF",
+    "wikipediaSlug": "Henrik_Larsson",
     "year": 2006
   },
   {
-    "fact": "Pittsburgh Steelers vinner Super Bowl.",
-    "image": "Ford-Field-September-10-2006.jpg",
+    "fact": "Pia Sundhage blir förbundskapten för Sveriges damlandslag.",
+    "image": "Pia_Sundhage_2012-12-05_001.jpg",
     "pageViews": 240000,
-    "qid": "Q904928",
-    "subtitle": "NFL-final",
-    "title": "Pittsburgh Steelers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XL",
-    "year": 2006
-  },
-  {
-    "fact": "Tyskland vinner damernas fotbolls-VM.",
-    "image": "Roemerbalkon-weltmeisterinnen-empfang2007-001.jpg",
-    "pageViews": 240000,
-    "qid": "Q367805",
-    "subtitle": "Damernas fotbolls-VM",
-    "title": "Tyskland vinner damernas fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2007",
-    "year": 2007
-  },
-  {
-    "fact": "Alberto Contador vinner Tour de France.",
-    "image": "Tour_de_France_2007.png",
-    "pageViews": 240000,
-    "qid": "Q329877",
-    "subtitle": "Cykelklassiker",
-    "title": "Alberto Contador vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2007",
-    "year": 2007
-  },
-  {
-    "fact": "Indianapolis Colts vinner Super Bowl.",
-    "image": "Dolphin_Stadium.jpg",
-    "pageViews": 240000,
-    "qid": "Q597607",
-    "subtitle": "NFL-final",
-    "title": "Indianapolis Colts vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XLI",
-    "year": 2007
-  },
-  {
-    "fact": "Carlos Sastre vinner Tour de France.",
-    "image": "Route_of_the_2008_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q221530",
-    "subtitle": "Cykelklassiker",
-    "title": "Carlos Sastre vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2008",
-    "year": 2008
-  },
-  {
-    "fact": "New York Giants vinner Super Bowl.",
-    "image": "Super Bowl 2008 - XLII with Mike Vrabel.JPG",
-    "pageViews": 240000,
-    "qid": "Q597314",
-    "subtitle": "NFL-final",
-    "title": "New York Giants vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XLII",
-    "year": 2008
-  },
-  {
-    "fact": "Australian Open avgörs.",
-    "image": "Novak_Đoković_at_the_2009_French_Open_5.jpg",
-    "pageViews": 240000,
-    "qid": "Q577107",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Australian Open avgörs",
-    "wikipediaSlug": "Australiska_%C3%B6ppna_2008",
-    "year": 2008
-  },
-  {
-    "fact": "Franska öppna avgörs.",
-    "image": "Ana Ivanovic en quart de finale à Roland Garros 2008 (3).jpg",
-    "pageViews": 240000,
-    "qid": "Q277655",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Franska öppna avgörs",
-    "wikipediaSlug": "Franska_%C3%B6ppna_2008",
-    "year": 2008
-  },
-  {
-    "fact": "US Open avgörs.",
-    "image": "Roger Federer wins the US Open 2008 1.jpg",
-    "pageViews": 240000,
-    "qid": "Q388303",
-    "subtitle": "Grand Slam-tennis",
-    "title": "US Open avgörs",
-    "wikipediaSlug": "US_Open_i_tennis_2008",
-    "year": 2008
-  },
-  {
-    "fact": "Wimbledon avgörs.",
-    "image": "VenusWilliams.jpg",
-    "pageViews": 240000,
-    "qid": "Q388312",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Wimbledon avgörs",
-    "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2008",
-    "year": 2008
-  },
-  {
-    "fact": "Tyskland vinner damernas fotbolls-EM.",
-    "image": "UEFA_Women's_Euro_2009_final_(ceremony_before_the_match).jpg",
-    "pageViews": 240000,
-    "qid": "Q737666",
-    "subtitle": "Damernas fotbolls-EM",
-    "title": "Tyskland vinner damernas fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2009",
-    "year": 2009
-  },
-  {
-    "fact": "Alberto Contador vinner Tour de France.",
-    "image": "Carte_Tour_de_France_2009.png",
-    "pageViews": 240000,
-    "qid": "Q217263",
-    "subtitle": "Cykelklassiker",
-    "title": "Alberto Contador vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2009",
-    "year": 2009
-  },
-  {
-    "fact": "Pittsburgh Steelers vinner Super Bowl.",
-    "image": "Raymond_James_Stadium_aerial.jpg",
-    "pageViews": 240000,
-    "qid": "Q853768",
-    "subtitle": "NFL-final",
-    "title": "Pittsburgh Steelers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XLIII",
-    "year": 2009
-  },
-  {
-    "fact": "Australian Open avgörs.",
-    "image": "Nadal_Miami_2009_3.jpg",
-    "pageViews": 240000,
-    "qid": "Q330022",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Australian Open avgörs",
-    "wikipediaSlug": "Australiska_%C3%B6ppna_2009",
-    "year": 2009
-  },
-  {
-    "fact": "Franska öppna avgörs.",
-    "image": "Roger_Federer_at_the_2009_French_Open_10_cropped.jpg",
-    "pageViews": 240000,
-    "qid": "Q381118",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Franska öppna avgörs",
-    "wikipediaSlug": "Franska_%C3%B6ppna_2009",
-    "year": 2009
-  },
-  {
-    "fact": "US Open avgörs.",
-    "image": "Juan Martín del Potro at the 2009 US Open 03.jpg",
-    "pageViews": 240000,
-    "qid": "Q380557",
-    "subtitle": "Grand Slam-tennis",
-    "title": "US Open avgörs",
-    "wikipediaSlug": "US_Open_i_tennis_2009",
-    "year": 2009
-  },
-  {
-    "fact": "Wimbledon avgörs.",
-    "image": "Centre Court Wimbledon 2009.JPG",
-    "pageViews": 240000,
-    "qid": "Q244370",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Wimbledon avgörs",
-    "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2009",
-    "year": 2009
-  },
-  {
-    "fact": "Andy Schleck vinner Tour de France.",
-    "image": "Route_of_the_2010_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q217287",
-    "subtitle": "Cykelklassiker",
-    "title": "Andy Schleck vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2010",
-    "year": 2010
-  },
-  {
-    "fact": "New Orleans Saints vinner Super Bowl.",
-    "image": "Dolphinstadiumint.JPG",
-    "pageViews": 240000,
-    "qid": "Q268882",
-    "subtitle": "NFL-final",
-    "title": "New Orleans Saints vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XLIV",
-    "year": 2010
-  },
-  {
-    "fact": "Atlético Madrid vinner Europa League.",
-    "image": "Fulham vs Athletico Madrid (pre-match ceremony 1).jpg",
-    "pageViews": 240000,
-    "qid": "Q206626",
-    "subtitle": "Europa League-säsong",
-    "title": "Atlético Madrid vinner Europa League",
-    "wikipediaSlug": "Uefa_Europa_League_2009%2F2010",
-    "year": 2010
-  },
-  {
-    "fact": "Australian Open avgörs.",
-    "image": "Roger_Federer_at_the_2010_US_Open_06.jpg",
-    "pageViews": 240000,
-    "qid": "Q476646",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Australian Open avgörs",
-    "wikipediaSlug": "Australiska_%C3%B6ppna_2010",
-    "year": 2010
-  },
-  {
-    "fact": "Franska öppna avgörs.",
-    "image": "Roland Garros 08.JPG",
-    "pageViews": 240000,
-    "qid": "Q248438",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Franska öppna avgörs",
-    "wikipediaSlug": "Franska_%C3%B6ppna_2010",
-    "year": 2010
-  },
-  {
-    "fact": "US Open avgörs.",
-    "image": "US Open Tennis 2010 1st Round 192.jpg",
-    "pageViews": 240000,
-    "qid": "Q568472",
-    "subtitle": "Grand Slam-tennis",
-    "title": "US Open avgörs",
-    "wikipediaSlug": "US_Open_i_tennis_2010",
-    "year": 2010
-  },
-  {
-    "fact": "Wimbledon avgörs.",
-    "image": "2009.05.30_Roland_Garros_Rafael_Nadal_06.JPG",
-    "pageViews": 240000,
-    "qid": "Q476638",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Wimbledon avgörs",
-    "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2010",
-    "year": 2010
-  },
-  {
-    "fact": "Japan vinner damernas fotbolls-VM.",
-    "image": "Women's world cup 2011 North Korea - Colombia.jpg",
-    "pageViews": 240000,
-    "qid": "Q108183",
-    "subtitle": "Damernas fotbolls-VM",
-    "title": "Japan vinner damernas fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2011",
-    "year": 2011
-  },
-  {
-    "fact": "Cadel Evans vinner Tour de France.",
-    "image": "Route_of_the_2011_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q219413",
-    "subtitle": "Cykelklassiker",
-    "title": "Cadel Evans vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2011",
-    "year": 2011
-  },
-  {
-    "fact": "Green Bay Packers vinner Super Bowl.",
-    "image": "Cowboys_stadium.JPG",
-    "pageViews": 240000,
-    "qid": "Q371433",
-    "subtitle": "NFL-final",
-    "title": "Green Bay Packers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XLV",
-    "year": 2011
-  },
-  {
-    "fact": "FC Porto vinner Europa League.",
-    "image": "Aviva Stadium by Night.jpg",
-    "pageViews": 240000,
-    "qid": "Q206657",
-    "subtitle": "Europa League-säsong",
-    "title": "FC Porto vinner Europa League",
-    "wikipediaSlug": "Uefa_Europa_League_2010%2F2011",
-    "year": 2011
-  },
-  {
-    "fact": "Franska öppna avgörs.",
-    "image": "Roland Garros 08.JPG",
-    "pageViews": 240000,
-    "qid": "Q244427",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Franska öppna avgörs",
-    "wikipediaSlug": "Franska_%C3%B6ppna_2011",
-    "year": 2011
-  },
-  {
-    "fact": "Wimbledon avgörs.",
-    "image": "Centre Court Wimbledon (2).jpg",
-    "pageViews": 240000,
-    "qid": "Q245073",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Wimbledon avgörs",
-    "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2011",
-    "year": 2011
-  },
-  {
-    "fact": "Bradley Wiggins vinner Tour de France.",
-    "image": "Route_of_the_2012_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q219414",
-    "subtitle": "Cykelklassiker",
-    "title": "Bradley Wiggins vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2012",
+    "qid": "Q434362",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Pia Sundhage tar över landslaget",
+    "wikipediaSlug": "Pia_Sundhage",
     "year": 2012
   },
   {
-    "fact": "New York Giants vinner Super Bowl.",
-    "image": "LucasOilStadiumTheLuke.jpg",
+    "fact": "Sveriges herrlandslag tar OS-silver i handboll i London.",
+    "image": "",
     "pageViews": 240000,
-    "qid": "Q849079",
-    "subtitle": "NFL-final",
-    "title": "New York Giants vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XLVI",
+    "qid": "Q209129",
+    "subtitle": "Svenskt handbollsminne",
+    "title": "Sverige tar OS-silver i handboll",
+    "wikipediaSlug": "Handboll_vid_olympiska_sommarspelen_2012",
     "year": 2012
   },
   {
-    "fact": "Atlético Madrid vinner Europa League.",
-    "image": "2012 Europa League Final.jpg",
+    "fact": "Lotten Schelin blir Sveriges mesta målskytt i damlandslaget.",
+    "image": "Lotta_Schelin_2012-11-12.jpg",
     "pageViews": 240000,
-    "qid": "Q211915",
-    "subtitle": "Europa League-säsong",
-    "title": "Atlético Madrid vinner Europa League",
-    "wikipediaSlug": "Uefa_Europa_League_2011%2F2012",
-    "year": 2012
-  },
-  {
-    "fact": "Franska öppna avgörs.",
-    "image": "RolandGarrosCentral.jpg",
-    "pageViews": 240000,
-    "qid": "Q754491",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Franska öppna avgörs",
-    "wikipediaSlug": "Franska_%C3%B6ppna_2012",
-    "year": 2012
-  },
-  {
-    "fact": "Wimbledon avgörs.",
-    "image": "Centre Court Wimbledon 2009.JPG",
-    "pageViews": 240000,
-    "qid": "Q289587",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Wimbledon avgörs",
-    "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2012",
-    "year": 2012
-  },
-  {
-    "fact": "Tyskland vinner damernas fotbolls-EM.",
-    "image": "Friends_Arena_panorama.jpg",
-    "pageViews": 240000,
-    "qid": "Q618327",
-    "subtitle": "Damernas fotbolls-EM",
-    "title": "Tyskland vinner damernas fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2013",
-    "year": 2013
-  },
-  {
-    "fact": "Chris Froome vinner Tour de France.",
-    "image": "Route_of_the_2013_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q1065480",
-    "subtitle": "Cykelklassiker",
-    "title": "Chris Froome vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2013",
-    "year": 2013
-  },
-  {
-    "fact": "Baltimore Ravens vinner Super Bowl.",
-    "image": "Superdome_from_Garage.jpg",
-    "pageViews": 240000,
-    "qid": "Q126291",
-    "subtitle": "NFL-final",
-    "title": "Baltimore Ravens vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XLVII",
-    "year": 2013
-  },
-  {
-    "fact": "Chelsea FC vinner Europa League.",
-    "image": "2012-13 Europa League final - Chelsea FC vs. SL Benfica, Amsterdam ArenA, kick-off.jpg",
-    "pageViews": 240000,
-    "qid": "Q381298",
-    "subtitle": "Europa League-säsong",
-    "title": "Chelsea FC vinner Europa League",
-    "wikipediaSlug": "Uefa_Europa_League_2012%2F2013",
-    "year": 2013
-  },
-  {
-    "fact": "Franska öppna avgörs.",
-    "image": "RolandGarrosCentral.jpg",
-    "pageViews": 240000,
-    "qid": "Q3153409",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Franska öppna avgörs",
-    "wikipediaSlug": "Franska_%C3%B6ppna_2013",
-    "year": 2013
-  },
-  {
-    "fact": "Wimbledon avgörs.",
-    "image": "Centre Court Wimbledon 2009.JPG",
-    "pageViews": 240000,
-    "qid": "Q559726",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Wimbledon avgörs",
-    "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2013",
-    "year": 2013
-  },
-  {
-    "fact": "Vincenzo Nibali vinner Tour de France.",
-    "image": "Route_of_the_2014_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q895853",
-    "subtitle": "Cykelklassiker",
-    "title": "Vincenzo Nibali vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2014",
+    "qid": "Q267563",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Lotta Schelin blir målrekordhållare",
+    "wikipediaSlug": "Lotta_Schelin",
     "year": 2014
   },
   {
-    "fact": "Seattle Seahawks vinner Super Bowl.",
-    "image": "MetLife_Stadium_Exterior.jpg",
-    "pageViews": 240000,
-    "qid": "Q1190093",
-    "subtitle": "NFL-final",
-    "title": "Seattle Seahawks vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XLVIII",
-    "year": 2014
-  },
-  {
-    "fact": "Sevilla FC vinner Europa League.",
-    "image": "Inside_Juventus_Stadium_(2).jpg",
-    "pageViews": 240000,
-    "qid": "Q534168",
-    "subtitle": "Europa League-säsong",
-    "title": "Sevilla FC vinner Europa League",
-    "wikipediaSlug": "Uefa_Europa_League_2013%2F2014",
-    "year": 2014
-  },
-  {
-    "fact": "Australian Open avgörs.",
-    "image": "IBI14_Na_Li_-_14266508636.jpg",
-    "pageViews": 240000,
-    "qid": "Q12780091",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Australian Open avgörs",
-    "wikipediaSlug": "Australiska_%C3%B6ppna_2014",
-    "year": 2014
-  },
-  {
-    "fact": "Franska öppna avgörs.",
-    "image": "RolandGarrosCentral.jpg",
-    "pageViews": 240000,
-    "qid": "Q15700964",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Franska öppna avgörs",
-    "wikipediaSlug": "Franska_%C3%B6ppna_2014",
-    "year": 2014
-  },
-  {
-    "fact": "Wimbledon avgörs.",
-    "image": "Centre Court Wimbledon 2009.JPG",
-    "pageViews": 240000,
-    "qid": "Q15854765",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Wimbledon avgörs",
-    "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2014",
-    "year": 2014
-  },
-  {
-    "fact": "USA vinner damernas fotbolls-VM.",
-    "image": "BC_Place_Opening_Day_2011-09-30.jpg",
-    "pageViews": 240000,
-    "qid": "Q911847",
-    "subtitle": "Damernas fotbolls-VM",
-    "title": "USA vinner damernas fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2015",
-    "year": 2015
-  },
-  {
-    "fact": "Chris Froome vinner Tour de France.",
-    "image": "Tour_de_France_2015_map-fr.svg",
-    "pageViews": 240000,
-    "qid": "Q15220420",
-    "subtitle": "Cykelklassiker",
-    "title": "Chris Froome vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2015",
-    "year": 2015
-  },
-  {
-    "fact": "New England Patriots vinner Super Bowl.",
-    "image": "USS Sterett (DDG 104) 150203-N-GW139-083 (16268082580).jpg",
-    "pageViews": 240000,
-    "qid": "Q1710023",
-    "subtitle": "NFL-final",
-    "title": "New England Patriots vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XLIX",
-    "year": 2015
-  },
-  {
-    "fact": "Sevilla FC vinner Europa League.",
-    "image": "Stadion_Narodowy_w_Warszawie_20120422.jpg",
-    "pageViews": 240000,
-    "qid": "Q13360337",
-    "subtitle": "Europa League-säsong",
-    "title": "Sevilla FC vinner Europa League",
-    "wikipediaSlug": "Uefa_Europa_League_2014%2F2015",
-    "year": 2015
-  },
-  {
-    "fact": "Wimbledon avgörs.",
-    "image": "Alexander Peya (26746554512).jpg",
-    "pageViews": 240000,
-    "qid": "Q18410121",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Wimbledon avgörs",
-    "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2015",
-    "year": 2015
-  },
-  {
-    "fact": "Chris Froome vinner Tour de France.",
-    "image": "Tour de France 2016, Stage 18, Chris Froome.jpg",
-    "pageViews": 240000,
-    "qid": "Q18574623",
-    "subtitle": "Cykelklassiker",
-    "title": "Chris Froome vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2016",
-    "year": 2016
-  },
-  {
-    "fact": "Denver Broncos vinner Super Bowl.",
-    "image": "Levi's_Stadium_interior_1.jpg",
-    "pageViews": 240000,
-    "qid": "Q7642193",
-    "subtitle": "NFL-final",
-    "title": "Denver Broncos vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_50",
-    "year": 2016
-  },
-  {
-    "fact": "Sevilla FC vinner Europa League.",
-    "image": "Basel, St.-Jakob-Park- pic16.jpg",
-    "pageViews": 240000,
-    "qid": "Q15699191",
-    "subtitle": "Europa League-säsong",
-    "title": "Sevilla FC vinner Europa League",
-    "wikipediaSlug": "Uefa_Europa_League_2015%2F2016",
-    "year": 2016
-  },
-  {
-    "fact": "Australian Open avgörs.",
-    "image": "Djokovic_WM14_(25)_(14641439744).jpg",
-    "pageViews": 240000,
-    "qid": "Q21521385",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Australian Open avgörs",
-    "wikipediaSlug": "Australiska_%C3%B6ppna_2016",
-    "year": 2016
-  },
-  {
-    "fact": "Wimbledon avgörs.",
-    "image": "Andreja Klepac (28101895926).jpg",
-    "pageViews": 240000,
-    "qid": "Q20127632",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Wimbledon avgörs",
-    "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2016",
-    "year": 2016
-  },
-  {
-    "fact": "Nederländerna vinner damernas fotbolls-EM.",
-    "image": "Textlogo_UEFA_Women’s_Euro_2017.svg",
-    "pageViews": 240000,
-    "qid": "Q13846443",
-    "subtitle": "Damernas fotbolls-EM",
-    "title": "Nederländerna vinner damernas fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2017",
-    "year": 2017
-  },
-  {
-    "fact": "Chris Froome vinner Tour de France.",
-    "image": "2017_Tour_de_France_map.png",
-    "pageViews": 240000,
-    "qid": "Q21821246",
-    "subtitle": "Cykelklassiker",
-    "title": "Chris Froome vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2017",
-    "year": 2017
-  },
-  {
-    "fact": "New England Patriots vinner Super Bowl.",
-    "image": "NRG_stadium_prepared_for_Super_Bowl_Li_(32513086661).jpg",
-    "pageViews": 240000,
-    "qid": "Q7642194",
-    "subtitle": "NFL-final",
-    "title": "New England Patriots vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_LI",
-    "year": 2017
-  },
-  {
-    "fact": "Manchester United FC vinner Europa League.",
-    "image": "Friends_Arena_from_inside.jpg",
-    "pageViews": 240000,
-    "qid": "Q18740965",
-    "subtitle": "Europa League-säsong",
-    "title": "Manchester United FC vinner Europa League",
-    "wikipediaSlug": "Uefa_Europa_League_2016%2F2017",
-    "year": 2017
-  },
-  {
-    "fact": "Australian Open avgörs.",
-    "image": "Roger_Federer_(18953614769).jpg",
-    "pageViews": 240000,
-    "qid": "Q22077628",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Australian Open avgörs",
-    "wikipediaSlug": "Australiska_%C3%B6ppna_2017",
-    "year": 2017
-  },
-  {
-    "fact": "US Open avgörs.",
-    "image": "Julia Ostapenko (36840371096).jpg",
-    "pageViews": 240000,
-    "qid": "Q28836049",
-    "subtitle": "Grand Slam-tennis",
-    "title": "US Open avgörs",
-    "wikipediaSlug": "US_Open_i_tennis_2017",
-    "year": 2017
-  },
-  {
-    "fact": "Wimbledon avgörs.",
-    "image": "Athletic grace, Venus Williams (36093032825).jpg",
-    "pageViews": 240000,
-    "qid": "Q25344121",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Wimbledon avgörs",
-    "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2017",
-    "year": 2017
-  },
-  {
-    "fact": "Geraint Thomas vinner Tour de France.",
-    "image": "TDF34752_thomas_froome_(41961100070).jpg",
-    "pageViews": 240000,
-    "qid": "Q28859163",
-    "subtitle": "Cykelklassiker",
-    "title": "Geraint Thomas vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2018",
-    "year": 2018
-  },
-  {
-    "fact": "Philadelphia Eagles vinner Super Bowl.",
-    "image": "US_Bank_Stadium_-_West_Facade.jpg",
-    "pageViews": 240000,
-    "qid": "Q15633579",
-    "subtitle": "NFL-final",
-    "title": "Philadelphia Eagles vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_LII",
-    "year": 2018
-  },
-  {
-    "fact": "Atlético Madrid vinner Europa League.",
-    "image": "Parc_OL.jpg",
-    "pageViews": 240000,
-    "qid": "Q22976888",
-    "subtitle": "Europa League-säsong",
-    "title": "Atlético Madrid vinner Europa League",
-    "wikipediaSlug": "Uefa_Europa_League_2017%2F2018",
-    "year": 2018
-  },
-  {
-    "fact": "Australian Open avgörs.",
-    "image": "Novak Djokovic (Ser) (39690813512) (cropped).jpg",
-    "pageViews": 240000,
-    "qid": "Q42557150",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Australian Open avgörs",
-    "wikipediaSlug": "Australiska_%C3%B6ppna_2018",
-    "year": 2018
-  },
-  {
-    "fact": "Franska öppna avgörs.",
-    "image": "Anna Smith (46640809304).jpg",
-    "pageViews": 240000,
-    "qid": "Q30085136",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Franska öppna avgörs",
-    "wikipediaSlug": "Franska_%C3%B6ppna_2018",
-    "year": 2018
-  },
-  {
-    "fact": "US Open avgörs.",
-    "image": "Tennis_ball.svg",
-    "pageViews": 240000,
-    "qid": "Q50391517",
-    "subtitle": "Grand Slam-tennis",
-    "title": "US Open avgörs",
-    "wikipediaSlug": "US_Open_i_tennis_2018",
-    "year": 2018
-  },
-  {
-    "fact": "Wimbledon avgörs.",
-    "image": "Alexander Peya & Nicole Melichar (50497983243).jpg",
-    "pageViews": 240000,
-    "qid": "Q30085309",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Wimbledon avgörs",
-    "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2018",
-    "year": 2018
-  },
-  {
-    "fact": "USA vinner damernas fotbolls-VM.",
-    "image": "Cérémonie_d'ouverture_Coupe_du_monde_de_football_2019_(01).jpg",
-    "pageViews": 240000,
-    "qid": "Q4630361",
-    "subtitle": "Damernas fotbolls-VM",
-    "title": "USA vinner damernas fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2019",
-    "year": 2019
-  },
-  {
-    "fact": "Julian Alaphilippe vinner Tour de France.",
-    "image": "TDF19.png",
-    "pageViews": 240000,
-    "qid": "Q30091668",
-    "subtitle": "Cykelklassiker",
-    "title": "Julian Alaphilippe vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2019",
-    "year": 2019
-  },
-  {
-    "fact": "New England Patriots vinner Super Bowl.",
-    "image": "Mercedes_Benz_Stadium_time_lapse_capture_2017-08-13.jpg",
-    "pageViews": 240000,
-    "qid": "Q20204362",
-    "subtitle": "NFL-final",
-    "title": "New England Patriots vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_LIII",
-    "year": 2019
-  },
-  {
-    "fact": "Chelsea FC vinner Europa League.",
-    "image": "MFF-Sarpsborg_08_Europa_League_2018-2019.jpg",
-    "pageViews": 240000,
-    "qid": "Q30126418",
-    "subtitle": "Europa League-säsong",
-    "title": "Chelsea FC vinner Europa League",
-    "wikipediaSlug": "Uefa_Europa_League_2018%2F2019",
-    "year": 2019
-  },
-  {
-    "fact": "Australian Open avgörs.",
-    "image": "Bryan Bros are back! (45875703545).jpg",
-    "pageViews": 240000,
-    "qid": "Q48213268",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Australian Open avgörs",
-    "wikipediaSlug": "Australiska_%C3%B6ppna_2019",
-    "year": 2019
-  },
-  {
-    "fact": "Franska öppna avgörs.",
-    "image": "Roland-Garros-2019 47.jpg",
-    "pageViews": 240000,
-    "qid": "Q54197608",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Franska öppna avgörs",
-    "wikipediaSlug": "Franska_%C3%B6ppna_2019",
-    "year": 2019
-  },
-  {
-    "fact": "US Open avgörs.",
-    "image": "US OPEN 2019 (48667665777).jpg",
-    "pageViews": 240000,
-    "qid": "Q57063604",
-    "subtitle": "Grand Slam-tennis",
-    "title": "US Open avgörs",
-    "wikipediaSlug": "US_Open_i_tennis_2019",
-    "year": 2019
-  },
-  {
-    "fact": "Wimbledon avgörs.",
-    "image": "Anett Kontaveit (49745352222) (cropped)-2.jpg",
-    "pageViews": 240000,
-    "qid": "Q54093953",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Wimbledon avgörs",
-    "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2019",
-    "year": 2019
-  },
-  {
-    "fact": "Marc Hirschi vinner Tour de France.",
-    "image": "Route_of_the_2020_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q50411777",
-    "subtitle": "Cykelklassiker",
-    "title": "Marc Hirschi vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2020",
-    "year": 2020
-  },
-  {
-    "fact": "Kansas City Chiefs vinner Super Bowl.",
-    "image": "Hard_Rock_Stadium.jpg",
-    "pageViews": 240000,
-    "qid": "Q20204363",
-    "subtitle": "NFL-final",
-    "title": "Kansas City Chiefs vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_LIV",
-    "year": 2020
-  },
-  {
-    "fact": "Sevilla FC vinner Europa League.",
-    "image": "MFF-FCK_Uefa_Europa_League_2019-20.jpg",
-    "pageViews": 240000,
-    "qid": "Q53165589",
-    "subtitle": "Europa League-säsong",
-    "title": "Sevilla FC vinner Europa League",
-    "wikipediaSlug": "Uefa_Europa_League_2019%2F2020",
-    "year": 2020
-  },
-  {
-    "fact": "Australian Open avgörs.",
-    "image": "Australian Open 2020 (49836756523).jpg",
-    "pageViews": 240000,
-    "qid": "Q61059083",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Australian Open avgörs",
-    "wikipediaSlug": "Australiska_%C3%B6ppna_2020",
-    "year": 2020
-  },
-  {
-    "fact": "Franska öppna avgörs.",
-    "image": "Carole Monnet RG2020.jpg",
-    "pageViews": 240000,
-    "qid": "Q63367899",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Franska öppna avgörs",
-    "wikipediaSlug": "Franska_%C3%B6ppna_2020",
-    "year": 2020
-  },
-  {
-    "fact": "US Open avgörs.",
-    "image": "NaomiOsaka-smile-2020.png",
-    "pageViews": 240000,
-    "qid": "Q66309826",
-    "subtitle": "Grand Slam-tennis",
-    "title": "US Open avgörs",
-    "wikipediaSlug": "US_Open_i_tennis_2020",
-    "year": 2020
-  },
-  {
-    "fact": "Wimbledon avgörs.",
-    "image": "Tennis_ball.svg",
-    "pageViews": 240000,
-    "qid": "Q64514062",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Wimbledon avgörs",
-    "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2020",
-    "year": 2020
-  },
-  {
-    "fact": "Tadej Pogačar vinner Tour de France.",
-    "image": "2021_Tour_de_France_map.svg",
-    "pageViews": 240000,
-    "qid": "Q61778309",
-    "subtitle": "Cykelklassiker",
-    "title": "Tadej Pogačar vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2021",
-    "year": 2021
-  },
-  {
-    "fact": "Tampa Bay Buccaneers vinner Super Bowl.",
-    "image": "Raymond_James_Stadium02.JPG",
-    "pageViews": 240000,
-    "qid": "Q24233824",
-    "subtitle": "NFL-final",
-    "title": "Tampa Bay Buccaneers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_LV",
-    "year": 2021
-  },
-  {
-    "fact": "Villarreal CF vinner Europa League.",
-    "image": "PGE_Arena_Gdańsk_(6018955265).jpg",
-    "pageViews": 240000,
-    "qid": "Q63088818",
-    "subtitle": "Europa League-säsong",
-    "title": "Villarreal CF vinner Europa League",
-    "wikipediaSlug": "Uefa_Europa_League_2020%2F2021",
-    "year": 2021
-  },
-  {
-    "fact": "Australian Open avgörs.",
-    "image": "NickAusOpen2021.jpg",
-    "pageViews": 240000,
-    "qid": "Q83629820",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Australian Open avgörs",
-    "wikipediaSlug": "Australiska_%C3%B6ppna_2021",
-    "year": 2021
-  },
-  {
-    "fact": "Franska öppna avgörs.",
-    "image": "Carlos Alcaraz.jpg",
-    "pageViews": 240000,
-    "qid": "Q99526045",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Franska öppna avgörs",
-    "wikipediaSlug": "Franska_%C3%B6ppna_2021",
-    "year": 2021
-  },
-  {
-    "fact": "US Open avgörs.",
-    "image": "Tennis_ball.svg",
-    "pageViews": 240000,
-    "qid": "Q98833450",
-    "subtitle": "Grand Slam-tennis",
-    "title": "US Open avgörs",
-    "wikipediaSlug": "US_Open_i_tennis_2021",
-    "year": 2021
-  },
-  {
-    "fact": "Wimbledon avgörs.",
-    "image": "Linda Klimovičová (51314990677).jpg",
-    "pageViews": 240000,
-    "qid": "Q92032430",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Wimbledon avgörs",
-    "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2021",
-    "year": 2021
-  },
-  {
-    "fact": "England vinner damernas fotbolls-EM.",
-    "image": "UEFA_Women's_EURO_England_2022_logo_text.png",
-    "pageViews": 240000,
-    "qid": "Q36110353",
-    "subtitle": "Damernas fotbolls-EM",
-    "title": "England vinner damernas fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2022",
-    "year": 2022
-  },
-  {
-    "fact": "Jonas Vingegaard vinner Tour de France.",
-    "image": "Route_of_the_2022_Tour_de_France.png",
-    "pageViews": 240000,
-    "qid": "Q98043180",
-    "subtitle": "Cykelklassiker",
-    "title": "Jonas Vingegaard vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2022",
-    "year": 2022
-  },
-  {
-    "fact": "Los Angeles Rams vinner Super Bowl.",
-    "image": "SoFi_Stadium_2021.jpg",
-    "pageViews": 240000,
-    "qid": "Q30114464",
-    "subtitle": "NFL-final",
-    "title": "Los Angeles Rams vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_LVI",
-    "year": 2022
-  },
-  {
-    "fact": "Eintracht Frankfurt vinner Europa League.",
-    "image": "Estadio_Ramón_Sánchez_Pizjuán_Preferencia_and_Gol_Norte-2007-04-05.jpg",
-    "pageViews": 240000,
-    "qid": "Q96178492",
-    "subtitle": "Europa League-säsong",
-    "title": "Eintracht Frankfurt vinner Europa League",
-    "wikipediaSlug": "Uefa_Europa_League_2021%2F2022",
-    "year": 2022
-  },
-  {
-    "fact": "Australian Open avgörs.",
-    "image": "Rod Laver Arena Australian Open 2009 1.jpg",
-    "pageViews": 240000,
-    "qid": "Q105404832",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Australian Open avgörs",
-    "wikipediaSlug": "Australiska_%C3%B6ppna_2022",
-    "year": 2022
-  },
-  {
-    "fact": "Franska öppna avgörs.",
-    "image": "Kecmanovic RG22 (16) (52144307779).jpg",
-    "pageViews": 240000,
-    "qid": "Q107026465",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Franska öppna avgörs",
-    "wikipediaSlug": "Franska_%C3%B6ppna_2022",
-    "year": 2022
-  },
-  {
-    "fact": "US Open avgörs.",
-    "image": "Tennis_ball.svg",
-    "pageViews": 240000,
-    "qid": "Q108454355",
-    "subtitle": "Grand Slam-tennis",
-    "title": "US Open avgörs",
-    "wikipediaSlug": "US_Open_i_tennis_2022",
-    "year": 2022
-  },
-  {
-    "fact": "Spanien vinner damernas fotbolls-VM.",
-    "image": "2023-07-07 Fussball, Frauen, Länderspiel, Deutschland - Sambia 1DX 6938 by Stepro.jpg",
-    "pageViews": 240000,
-    "qid": "Q19672232",
-    "subtitle": "Damernas fotbolls-VM",
-    "title": "Spanien vinner damernas fotbolls-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2023",
-    "year": 2023
-  },
-  {
-    "fact": "Jonas Vingegaard vinner Tour de France.",
-    "image": "TDF31466_vingegaard_(53062211779).jpg",
-    "pageViews": 240000,
-    "qid": "Q106203524",
-    "subtitle": "Cykelklassiker",
-    "title": "Jonas Vingegaard vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2023",
-    "year": 2023
-  },
-  {
-    "fact": "Kansas City Chiefs vinner Super Bowl.",
-    "image": "State Farm Stadium Super Bowl LVII by Gage Skidmore 2.jpg",
-    "pageViews": 240000,
-    "qid": "Q54196526",
-    "subtitle": "NFL-final",
-    "title": "Kansas City Chiefs vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_LVII",
-    "year": 2023
-  },
-  {
-    "fact": "Sevilla FC vinner Europa League.",
-    "image": "Puskás Aréna 05.jpg",
-    "pageViews": 240000,
-    "qid": "Q106085551",
-    "subtitle": "Europa League-säsong",
-    "title": "Sevilla FC vinner Europa League",
-    "wikipediaSlug": "Uefa_Europa_League_2022%2F2023",
-    "year": 2023
-  },
-  {
-    "fact": "Australian Open avgörs.",
-    "image": "Bryan Brothers, Radek Štěpánek and Marcos Baghdatis in the Legends Mens Doubles Final at the 2023 Australian Open (52679822391).jpg",
-    "pageViews": 240000,
-    "qid": "Q110487791",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Australian Open avgörs",
-    "wikipediaSlug": "Australiska_%C3%B6ppna_2023",
-    "year": 2023
-  },
-  {
-    "fact": "US Open avgörs.",
-    "image": "Albert Ramos Viñolas (2023 US Open) 04.jpg",
-    "pageViews": 240000,
-    "qid": "Q114750854",
-    "subtitle": "Grand Slam-tennis",
-    "title": "US Open avgörs",
-    "wikipediaSlug": "US_Open_i_tennis_2023",
-    "year": 2023
-  },
-  {
-    "fact": "Tadej Pogačar vinner Tour de France.",
-    "image": "TF241534_Almeida_Roglic_Pogacar_Yates_(53873615951).jpg",
-    "pageViews": 240000,
-    "qid": "Q115137730",
-    "subtitle": "Cykelklassiker",
-    "title": "Tadej Pogačar vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2024",
-    "year": 2024
-  },
-  {
-    "fact": "Kansas City Chiefs vinner Super Bowl.",
-    "image": "Allegiant_Stadium.jpg",
-    "pageViews": 240000,
-    "qid": "Q54196525",
-    "subtitle": "NFL-final",
-    "title": "Kansas City Chiefs vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_LVIII",
-    "year": 2024
-  },
-  {
-    "fact": "Atalanta BC vinner Europa League.",
-    "image": "Dublin aviva stadium.jpg",
-    "pageViews": 240000,
-    "qid": "Q108662765",
-    "subtitle": "Europa League-säsong",
-    "title": "Atalanta BC vinner Europa League",
-    "wikipediaSlug": "Uefa_Europa_League_2023%2F2024",
-    "year": 2024
-  },
-  {
-    "fact": "England vinner damernas fotbolls-EM.",
-    "image": "Downing Street reception 28 July 2025 England women's football team 26.jpg",
-    "pageViews": 240000,
-    "qid": "Q105752884",
-    "subtitle": "Damernas fotbolls-EM",
-    "title": "England vinner damernas fotbolls-EM",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2025",
-    "year": 2025
-  },
-  {
-    "fact": "Ben Healy vinner Tour de France.",
-    "image": "Tour_de_France_2025_-_Étape_10_-_Départ_fictif_dans_une_seconde_2025-07-14_13-09-59_(raf_1).JPG",
-    "pageViews": 240000,
-    "qid": "Q123096769",
-    "subtitle": "Cykelklassiker",
-    "title": "Ben Healy vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_2025",
-    "year": 2025
-  },
-  {
-    "fact": "Philadelphia Eagles vinner Super Bowl.",
-    "image": "Louisiana_Superdome_-_Unbranded_-_26_July_2021.jpg",
-    "pageViews": 240000,
-    "qid": "Q91157899",
-    "subtitle": "NFL-final",
-    "title": "Philadelphia Eagles vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_LIX",
-    "year": 2025
-  },
-  {
-    "fact": "Tottenham Hotspur FC vinner Europa League.",
-    "image": "San_Mames_Barria_eta_Bilboko_ikuspegia.jpg",
-    "pageViews": 240000,
-    "qid": "Q117008018",
-    "subtitle": "Europa League-säsong",
-    "title": "Tottenham Hotspur FC vinner Europa League",
-    "wikipediaSlug": "Uefa_Europa_League_2024%2F2025",
-    "year": 2025
-  },
-  {
-    "fact": "Råsunda fotbollsstadion invigs i Solna.",
-    "image": "Råsunda_February_2013_01.jpg",
+    "fact": "Svenska cupen i fotboll spelas för första gången.",
+    "image": "",
     "pageViews": 220000,
-    "qid": "Q725623",
-    "subtitle": "Svensk fotbollsarena",
-    "title": "Råsunda invigs",
-    "wikipediaSlug": "R%C3%A5sunda_fotbollsstadion",
-    "year": 1937
+    "qid": "Q750585",
+    "subtitle": "Svensk klubbfotboll",
+    "title": "Svenska cupen startar",
+    "wikipediaSlug": "Svenska_cupen_i_fotboll",
+    "year": 1941
+  },
+  {
+    "fact": "Elitloppet körs för första gången på Solvalla.",
+    "image": "Johnny_Takter_&_Iceland_Elitloppet_2010_001.jpg",
+    "pageViews": 220000,
+    "qid": "Q3051173",
+    "subtitle": "Svensk travklassiker",
+    "title": "Elitloppet startar",
+    "wikipediaSlug": "Elitloppet",
+    "year": 1952
   },
   {
     "fact": "Sixten Jernberg tar OS-guld i Cortina d'Ampezzo.",
@@ -3338,16 +558,6 @@
     "title": "Sixten Jernberg tar OS-guld",
     "wikipediaSlug": "Sixten_Jernberg",
     "year": 1956
-  },
-  {
-    "fact": "Ullevi invigs inför fotbolls-VM.",
-    "image": "Nya_Ullevi_2013-07-06_001.jpg",
-    "pageViews": 220000,
-    "qid": "Q824352",
-    "subtitle": "Arena i Göteborg",
-    "title": "Ullevi invigs",
-    "wikipediaSlug": "Ullevi",
-    "year": 1958
   },
   {
     "fact": "Nils Liedholm gör mål i VM-finalen på Råsunda.",
@@ -3388,16 +598,6 @@
     "title": "Thomas Wassberg vinner OS-guld",
     "wikipediaSlug": "Thomas_Wassberg",
     "year": 1980
-  },
-  {
-    "fact": "Pia Sundhage vinner EM med Sveriges damlandslag.",
-    "image": "Pia_Sundhage_2012-12-05_001.jpg",
-    "pageViews": 220000,
-    "qid": "Q434362",
-    "subtitle": "Svensk fotbollsspelare",
-    "title": "Pia Sundhage blir landslagsikon",
-    "wikipediaSlug": "Pia_Sundhage",
-    "year": 1984
   },
   {
     "fact": "Ludmila Engquist tar OS-guld på 100 meter häck.",
@@ -3460,13 +660,13 @@
     "year": 2005
   },
   {
-    "fact": "Lotta Schelin blir en av Sveriges stora landslagsprofiler.",
-    "image": "Lotta_Schelin_2012-11-12.jpg",
+    "fact": "Färjestad vinner SM-guld i ishockey efter final mot Frölunda.",
+    "image": "2013-12-30_Magnus_Nygren_01.jpg",
     "pageViews": 220000,
-    "qid": "Q267563",
-    "subtitle": "Svensk fotbollsspelare",
-    "title": "Lotta Schelin blir landslagsstjärna",
-    "wikipediaSlug": "Lotta_Schelin",
+    "qid": "Q1122553",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Färjestad vinner SM-guld",
+    "wikipediaSlug": "F%C3%A4rjestad_BK",
     "year": 2006
   },
   {
@@ -3480,16 +680,6 @@
     "year": 2008
   },
   {
-    "fact": "Friends Arena invigs i Solna.",
-    "image": "Strawberry_Arena.jpg",
-    "pageViews": 220000,
-    "qid": "Q1138684",
-    "subtitle": "Svensk nationalarena",
-    "title": "Friends Arena invigs",
-    "wikipediaSlug": "Strawberry_Arena",
-    "year": 2012
-  },
-  {
     "fact": "Henrik Stenson vinner The Open Championship.",
     "image": "Henrik_Stenson_in_Jan_2014.jpg",
     "pageViews": 220000,
@@ -3497,6 +687,16 @@
     "subtitle": "Svensk golfspelare",
     "title": "Henrik Stenson vinner The Open",
     "wikipediaSlug": "Henrik_Stenson",
+    "year": 2016
+  },
+  {
+    "fact": "Frölunda vinner Champions Hockey League och blir europeisk mästare.",
+    "image": "Fredrik_Pettersson.jpg",
+    "pageViews": 220000,
+    "qid": "Q1142013",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Frölunda blir europeiska mästare",
+    "wikipediaSlug": "Fr%C3%B6lunda_HC",
     "year": 2016
   },
   {
@@ -3540,46 +740,6 @@
     "year": 1992
   },
   {
-    "fact": "Cirkus på Djurgården invigs.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "manual-Cirkus_(byggnad)",
-    "subtitle": "Nöjesarena i Stockholm",
-    "title": "Cirkus på Djurgården invigs",
-    "wikipediaSlug": "Cirkus_(byggnad)",
-    "year": 1892
-  },
-  {
-    "fact": "Stockholms stadion invigs.",
-    "image": "Stockholm_Stadion_aerial.jpg",
-    "pageViews": 180000,
-    "qid": "Q727078",
-    "subtitle": "Svensk idrottsarena",
-    "title": "Stockholms stadion invigs",
-    "wikipediaSlug": "Stockholms_stadion",
-    "year": 1912
-  },
-  {
-    "fact": "Malmö Arena invigs.",
-    "image": "Malmö_Arena,_augusti_2014-1.jpg",
-    "pageViews": 180000,
-    "qid": "Q853730",
-    "subtitle": "Arena i Malmö",
-    "title": "Malmö Arena invigs",
-    "wikipediaSlug": "Malm%C3%B6_Arena",
-    "year": 2008
-  },
-  {
-    "fact": "Tele2 Arena invigs.",
-    "image": "Tele2_Arena_September_2014_05.jpg",
-    "pageViews": 180000,
-    "qid": "Q2701834",
-    "subtitle": "Arena i Stockholm",
-    "title": "Tele2 Arena invigs",
-    "wikipediaSlug": "3Arena",
-    "year": 2013
-  },
-  {
     "fact": "André Myhrer tar OS-guld i slalom.",
     "image": "FIS_Alpine_Skiing_World_Cup_in_Stockholm_2019_Andre_Myhrer_17.jpg",
     "pageViews": 180000,
@@ -3588,215 +748,5 @@
     "title": "André Myhrer tar OS-guld",
     "wikipediaSlug": "Andr%C3%A9_Myhrer",
     "year": 2018
-  },
-  {
-    "fact": "Maurice Garin vinner Tour de France.",
-    "image": "Tour_de_France_1904_map-fr.svg",
-    "pageViews": 140000,
-    "qid": "Q506911",
-    "subtitle": "Cykelklassiker",
-    "title": "Maurice Garin vinner Tour de France",
-    "wikipediaSlug": "Tour_de_France_1903",
-    "year": 1903
-  },
-  {
-    "fact": "Green Bay Packers vinner Super Bowl.",
-    "image": "Super_Bowl_I_Logo.svg",
-    "pageViews": 140000,
-    "qid": "Q847827",
-    "subtitle": "NFL-final",
-    "title": "Green Bay Packers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_I",
-    "year": 1967
-  },
-  {
-    "fact": "Green Bay Packers vinner Super Bowl.",
-    "image": "Football_(soccer_ball).svg",
-    "pageViews": 140000,
-    "qid": "Q617167",
-    "subtitle": "NFL-final",
-    "title": "Green Bay Packers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_II",
-    "year": 1968
-  },
-  {
-    "fact": "New York Jets vinner Super Bowl.",
-    "image": "Super_Bowl_III_logo.svg",
-    "pageViews": 140000,
-    "qid": "Q939846",
-    "subtitle": "NFL-final",
-    "title": "New York Jets vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_III",
-    "year": 1969
-  },
-  {
-    "fact": "Kansas City Chiefs vinner Super Bowl.",
-    "image": "Super_Bowl_IV_Logo.svg",
-    "pageViews": 140000,
-    "qid": "Q376026",
-    "subtitle": "NFL-final",
-    "title": "Kansas City Chiefs vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_IV",
-    "year": 1970
-  },
-  {
-    "fact": "Baltimore Colts vinner Super Bowl.",
-    "image": "1986 Jeno's Pizza - 32 - Earl Morrall.jpg",
-    "pageViews": 140000,
-    "qid": "Q168380",
-    "subtitle": "NFL-final",
-    "title": "Baltimore Colts vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_V",
-    "year": 1971
-  },
-  {
-    "fact": "Dallas Cowboys vinner Super Bowl.",
-    "image": "1986 Jeno's Pizza - 01 - Duane Thomas.jpg",
-    "pageViews": 140000,
-    "qid": "Q1064741",
-    "subtitle": "NFL-final",
-    "title": "Dallas Cowboys vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_VI",
-    "year": 1972
-  },
-  {
-    "fact": "Washington Commanders vinner Super Bowl.",
-    "image": "Washington Commanders Uniforms (2026).png",
-    "pageViews": 140000,
-    "qid": "Q378744",
-    "subtitle": "NFL-final",
-    "title": "Washington Commanders vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_VII",
-    "year": 1973
-  },
-  {
-    "fact": "Miami Dolphins vinner Super Bowl.",
-    "image": "Tom Brady and the Miami Dolphins.jpg",
-    "pageViews": 140000,
-    "qid": "Q1188158",
-    "subtitle": "NFL-final",
-    "title": "Miami Dolphins vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_VIII",
-    "year": 1974
-  },
-  {
-    "fact": "Pittsburgh Steelers vinner Super Bowl.",
-    "image": "Super_Bowl_IX_Logo.svg",
-    "pageViews": 140000,
-    "qid": "Q1188005",
-    "subtitle": "NFL-final",
-    "title": "Pittsburgh Steelers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_IX",
-    "year": 1975
-  },
-  {
-    "fact": "Pittsburgh Steelers vinner Super Bowl.",
-    "image": "Super_Bowl_X.svg",
-    "pageViews": 140000,
-    "qid": "Q620277",
-    "subtitle": "NFL-final",
-    "title": "Pittsburgh Steelers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_X",
-    "year": 1976
-  },
-  {
-    "fact": "Wimbledon avgörs.",
-    "image": "Wimbledon trophies.jpg",
-    "pageViews": 140000,
-    "qid": "Q740252",
-    "subtitle": "Grand Slam-tennis",
-    "title": "Wimbledon avgörs",
-    "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_1976",
-    "year": 1976
-  },
-  {
-    "fact": "Las Vegas Raiders vinner Super Bowl.",
-    "image": "Football_(soccer_ball).svg",
-    "pageViews": 140000,
-    "qid": "Q389690",
-    "subtitle": "NFL-final",
-    "title": "Las Vegas Raiders vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XI",
-    "year": 1977
-  },
-  {
-    "fact": "Dallas Cowboys vinner Super Bowl.",
-    "image": "Superdome_from_Garage.jpg",
-    "pageViews": 140000,
-    "qid": "Q632774",
-    "subtitle": "NFL-final",
-    "title": "Dallas Cowboys vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XII",
-    "year": 1978
-  },
-  {
-    "fact": "Pittsburgh Steelers vinner Super Bowl.",
-    "image": "Super_Bowl_XIII.svg",
-    "pageViews": 140000,
-    "qid": "Q632786",
-    "subtitle": "NFL-final",
-    "title": "Pittsburgh Steelers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XIII",
-    "year": 1979
-  },
-  {
-    "fact": "Pittsburgh Steelers vinner Super Bowl.",
-    "image": "Rosebowl.JPG",
-    "pageViews": 140000,
-    "qid": "Q585801",
-    "subtitle": "NFL-final",
-    "title": "Pittsburgh Steelers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XIV",
-    "year": 1980
-  },
-  {
-    "fact": "Las Vegas Raiders vinner Super Bowl.",
-    "image": "Louisiana_Superdome_-_Unbranded_-_26_July_2021.jpg",
-    "pageViews": 140000,
-    "qid": "Q766921",
-    "subtitle": "NFL-final",
-    "title": "Las Vegas Raiders vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XV",
-    "year": 1981
-  },
-  {
-    "fact": "San Francisco 49ers vinner Super Bowl.",
-    "image": "1986_Jeno's_Pizza_-_27_-_Dan_Bunz_(cropped).jpg",
-    "pageViews": 140000,
-    "qid": "Q912929",
-    "subtitle": "NFL-final",
-    "title": "San Francisco 49ers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XVI",
-    "year": 1982
-  },
-  {
-    "fact": "Washington Commanders vinner Super Bowl.",
-    "image": "Rosebowl.JPG",
-    "pageViews": 140000,
-    "qid": "Q1770746",
-    "subtitle": "NFL-final",
-    "title": "Washington Commanders vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XVII",
-    "year": 1983
-  },
-  {
-    "fact": "Los Angeles Raiders vinner Super Bowl.",
-    "image": "Tampa_Stadium1.jpg",
-    "pageViews": 140000,
-    "qid": "Q1848392",
-    "subtitle": "NFL-final",
-    "title": "Los Angeles Raiders vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XVIII",
-    "year": 1984
-  },
-  {
-    "fact": "San Francisco 49ers vinner Super Bowl.",
-    "image": "UCLA_Bruin_Marching_Band_in_Palo_Alto,_1981.jpg",
-    "pageViews": 140000,
-    "qid": "Q1965838",
-    "subtitle": "NFL-final",
-    "title": "San Francisco 49ers vinner Super Bowl",
-    "wikipediaSlug": "Super_Bowl_XIX",
-    "year": 1985
   }
 ]

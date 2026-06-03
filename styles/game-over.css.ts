@@ -36,6 +36,26 @@ export const scoresWrapper = style({
   width: "100%",
 });
 
+export const completionMessage = style({
+  border: `1px solid ${vars.color.border}`,
+  borderRadius: vars.radius.md,
+  display: "grid",
+  gap: vars.space.xs,
+  padding: vars.space.lg,
+  textAlign: "center",
+});
+
+export const completionTitle = style({
+  fontSize: vars.fontSize.lg,
+  fontWeight: vars.fontWeight.bold,
+});
+
+export const completionText = style({
+  color: vars.color.textMuted,
+  fontSize: vars.fontSize.sm,
+  lineHeight: 1.45,
+});
+
 export const buttons = style({
   display: "grid",
   gap: vars.space.lg,

@@ -21,6 +21,7 @@ interface Props {
   gameMode: GameMode;
   highscore: number;
   onDailyRemoteCompleted?: (result: StoredDailyResult) => void;
+  completedAllCards?: boolean;
   played: PlayedCard[];
   resetGame?: () => void;
   routePath: string;
@@ -37,6 +38,7 @@ export default function GameOver(props: Props) {
     gameMode,
     highscore,
     onDailyRemoteCompleted,
+    completedAllCards = false,
     played,
     resetGame,
     routePath,
@@ -198,6 +200,16 @@ export default function GameOver(props: Props) {
             <Score score={score} title="Poäng" />
             <Score score={highscore} title="Bäst" />
           </div>
+          {completedAllCards ? (
+            <div className={styles.completionMessage}>
+              <div className={styles.completionTitle}>
+                Du klarade hela kategorin
+              </div>
+              <div className={styles.completionText}>
+                Alla tillgängliga kort är spelade. Snyggt jobbat.
+              </div>
+            </div>
+          ) : null}
           <div className={styles.buttons}>
             {resetGame ? (
               <Button fullWidth onClick={resetGame} text="Spela igen" />

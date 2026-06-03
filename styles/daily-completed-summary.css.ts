@@ -1,4 +1,5 @@
 import { style } from "@vanilla-extract/css";
+import { media } from "./foundation";
 import { vars } from "./theme.css";
 import { sectionLabel } from "./ui.css";
 
@@ -7,6 +8,11 @@ export const summary = style({
   flexDirection: "column",
   gap: vars.space.lg,
   width: `min(100%, ${vars.size.contentWidth})`,
+  "@media": {
+    [media.compact]: {
+      gap: vars.space.md,
+    },
+  },
 });
 
 export const dailyLabel = style([
@@ -37,6 +43,10 @@ export const leagueTip = style({
   padding: vars.space.lg,
   width: "100%",
   "@media": {
+    [media.compact]: {
+      gap: vars.space.sm,
+      padding: vars.space.md,
+    },
     "screen and (max-width: 520px)": {
       gridTemplateColumns: "1fr",
     },
@@ -55,6 +65,11 @@ export const leagueTipText = style({
   fontSize: vars.fontSize.sm,
   lineHeight: vars.lineHeight.snug,
   margin: 0,
+  "@media": {
+    [media.compact]: {
+      fontSize: vars.fontSize.xs,
+    },
+  },
 });
 
 export const leagueLink = style({

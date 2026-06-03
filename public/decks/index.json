@@ -1,8 +1,8 @@
 {
   "difficultyCounts": {
-    "easy": 813,
-    "normal": 2981,
-    "hard": 3845
+    "easy": 747,
+    "normal": 2718,
+    "hard": 3566
   },
   "id": "all",
   "minScore": 1000,
@@ -1490,8 +1490,8 @@
     {
       "difficultyCounts": {
         "easy": 133,
-        "normal": 795,
-        "hard": 1036
+        "normal": 782,
+        "hard": 1023
       },
       "id": "all-entertainment",
       "minScore": 1000,
@@ -1511,7 +1511,7 @@
           "slug": "films",
           "themeHue": 216,
           "title": "Films",
-          "frequency": 0.8
+          "frequency": 0.55
         },
         {
           "difficultyCounts": {
@@ -1542,8 +1542,8 @@
         {
           "difficultyCounts": {
             "easy": 14,
-            "normal": 148,
-            "hard": 168
+            "normal": 135,
+            "hard": 155
           },
           "id": "all-entertainment-music",
           "minScore": 5,
@@ -1734,9 +1734,9 @@
     },
     {
       "difficultyCounts": {
-        "easy": 26,
-        "normal": 69,
-        "hard": 146
+        "easy": 60,
+        "normal": 95,
+        "hard": 156
       },
       "id": "all-technology",
       "minScore": 1000,
@@ -1846,9 +1846,9 @@
         },
         {
           "difficultyCounts": {
-            "easy": 3,
-            "normal": 16,
-            "hard": 59
+            "easy": 37,
+            "normal": 42,
+            "hard": 69
           },
           "id": "all-technology-video-games",
           "minScore": 10,
@@ -2103,9 +2103,9 @@
     },
     {
       "difficultyCounts": {
-        "easy": 196,
-        "normal": 465,
-        "hard": 538
+        "easy": 96,
+        "normal": 189,
+        "hard": 262
       },
       "id": "all-sport",
       "minScore": 1000,
@@ -2121,9 +2121,9 @@
           "themeHue": 144,
           "frequency": 2.6,
           "difficultyCounts": {
-            "easy": 164,
-            "normal": 380,
-            "hard": 380
+            "easy": 44,
+            "normal": 75,
+            "hard": 75
           },
           "minScore": 1000
         },
@@ -2134,9 +2134,9 @@
           "themeHue": 120,
           "frequency": 2,
           "difficultyCounts": {
-            "easy": 24,
-            "normal": 52,
-            "hard": 52
+            "easy": 44,
+            "normal": 81,
+            "hard": 81
           },
           "minScore": 1000
         },

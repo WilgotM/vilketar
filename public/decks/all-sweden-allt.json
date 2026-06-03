@@ -100,16 +100,6 @@
     "year": 1974
   },
   {
-    "fact": "Sverige tar VM-brons i fotboll i USA.",
-    "image": "1994_FIFA_World_Cup.svg",
-    "pageViews": 420000,
-    "qid": "Q101751",
-    "subtitle": "Svenskt fotbollsminne",
-    "title": "Sverige tar VM-brons i fotboll",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1994",
-    "year": 1994
-  },
-  {
     "fact": "Avicii slår igenom internationellt med Levels.",
     "image": "Avicii_2014_003.jpg",
     "pageViews": 420000,
@@ -128,16 +118,6 @@
     "title": "Greta Thunberg skolstrejkar",
     "wikipediaSlug": "Greta_Thunberg",
     "year": 2018
-  },
-  {
-    "fact": "Zlatan Ibrahimović lämnar Inter för Barcelona.",
-    "image": "Zlatan_Ibrahimović_June_2018.jpg",
-    "pageViews": 380000,
-    "qid": "Q46896",
-    "subtitle": "Svensk spelarövergång",
-    "title": "Zlatan går till Barcelona",
-    "wikipediaSlug": "Zlatan_Ibrahimovi%C4%87",
-    "year": 2009
   },
   {
     "fact": "Göteborg grundas av Gustav II Adolf.",
@@ -180,6 +160,16 @@
     "year": 1976
   },
   {
+    "fact": "Zlatan Ibrahimović får Guldbollen för första gången.",
+    "image": "Zlatan_Ibrahimović_June_2018.jpg",
+    "pageViews": 360000,
+    "qid": "Q46896",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Zlatan får Guldbollen",
+    "wikipediaSlug": "Zlatan_Ibrahimovi%C4%87",
+    "year": 2005
+  },
+  {
     "fact": "Volvo grundas i Göteborg.",
     "image": "",
     "pageViews": 350000,
@@ -188,6 +178,16 @@
     "title": "Volvo grundas",
     "wikipediaSlug": "Volvo",
     "year": 1927
+  },
+  {
+    "fact": "Sverige tar brons i damernas fotbolls-VM efter seger mot Australien.",
+    "image": "",
+    "pageViews": 340000,
+    "qid": "Q19672232",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Sverige tar VM-brons i damfotboll",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2023",
+    "year": 2023
   },
   {
     "fact": "Gotland blir svenskt genom freden i Brömsebro.",
@@ -238,6 +238,16 @@
     "title": "Tre Kronor tar OS-guld",
     "wikipediaSlug": "Ishockey_vid_olympiska_vinterspelen_1994",
     "year": 1994
+  },
+  {
+    "fact": "Tre Kronor vinner OS-guld i Turin efter final mot Finland.",
+    "image": "Finlande_Russie.jpg",
+    "pageViews": 320000,
+    "qid": "Q645868",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Tre Kronor vinner OS-finalen mot Finland",
+    "wikipediaSlug": "Ishockey_vid_olympiska_vinterspelen_2006",
+    "year": 2006
   },
   {
     "fact": "Uppsala blir kyrkligt centrum i Sverige.",
@@ -360,6 +370,16 @@
     "year": 1944
   },
   {
+    "fact": "Sverige tar OS-guld i herrfotboll efter final mot Jugoslavien.",
+    "image": "Olympicsemifinal1948.jpg",
+    "pageViews": 300000,
+    "qid": "Q667937",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Sverige vinner OS-guld i fotboll",
+    "wikipediaSlug": "Fotboll_vid_olympiska_sommarspelen_1948",
+    "year": 1948
+  },
+  {
     "fact": "Dag Hammarskjöld blir FN:s generalsekreterare.",
     "image": "Dag_Hammarskjöld.jpg",
     "pageViews": 300000,
@@ -470,6 +490,16 @@
     "year": 1982
   },
   {
+    "fact": "Sverige arrangerar fotbolls-EM och når semifinal på hemmaplan.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q161810",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Sverige går till EM-semifinal",
+    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_1992",
+    "year": 1992
+  },
+  {
     "fact": "Estoniakatastrofen inträffar på Östersjön.",
     "image": "Estonia_ferry2.jpg",
     "pageViews": 300000,
@@ -477,16 +507,6 @@
     "subtitle": "Fartygskatastrof på Östersjön",
     "title": "Estoniakatastrofen inträffar",
     "wikipediaSlug": "Estoniakatastrofen",
-    "year": 1994
-  },
-  {
-    "fact": "Henrik Larsson gör mål för Sverige i fotbolls-VM.",
-    "image": "Henrik_Larsson_in_Jan_2014.jpg",
-    "pageViews": 300000,
-    "qid": "Q179334",
-    "subtitle": "Svensk fotbollsspelare",
-    "title": "Henrik Larsson gör VM-mål",
-    "wikipediaSlug": "Henrik_Larsson",
     "year": 1994
   },
   {
@@ -517,6 +537,16 @@
     "subtitle": "Svenskt sportbilsföretag",
     "title": "Koenigsegg grundas",
     "wikipediaSlug": "Koenigsegg",
+    "year": 1994
+  },
+  {
+    "fact": "Tomas Ravelli räddar straff i VM-kvartsfinalen mot Rumänien.",
+    "image": "Thomas_Ravelli_in_January_2014.jpg",
+    "pageViews": 300000,
+    "qid": "Q313710",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Ravelli räddar straff i VM",
+    "wikipediaSlug": "Thomas_Ravelli",
     "year": 1994
   },
   {
@@ -570,6 +600,16 @@
     "year": 2005
   },
   {
+    "fact": "Sverige vinner både OS-guld och VM-guld i ishockey samma år.",
+    "image": "Sweden_national_ice_hockey_team_jerseys_2022_(WOG).png",
+    "pageViews": 300000,
+    "qid": "Q913643",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Tre Kronor tar dubbeln",
+    "wikipediaSlug": "Sveriges_herrlandslag_i_ishockey",
+    "year": 2006
+  },
+  {
     "fact": "Levels blir Aviciis internationella genombrott.",
     "image": "",
     "pageViews": 300000,
@@ -620,6 +660,16 @@
     "year": 2013
   },
   {
+    "fact": "Sveriges damlandslag tar OS-silver i fotboll i Rio de Janeiro.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q11865693",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Damlandslaget tar OS-silver",
+    "wikipediaSlug": "Fotboll_vid_olympiska_sommarspelen_2016",
+    "year": 2016
+  },
+  {
     "fact": "Metoo får stort genomslag även i Sverige.",
     "image": "Metoo-manifestation_2017_Stockholm.jpg",
     "pageViews": 300000,
@@ -668,6 +718,86 @@
     "title": "H&M grundas",
     "wikipediaSlug": "Hennes_%26_Mauritz",
     "year": 1947
+  },
+  {
+    "fact": "Malmö FF spelar final i Europacupen mot Nottingham Forest.",
+    "image": "Malmo_FF_logo.svg",
+    "pageViews": 280000,
+    "qid": "Q204881",
+    "subtitle": "Svenskt klubbfotbollsminne",
+    "title": "Malmö FF spelar Europacupfinal",
+    "wikipediaSlug": "Malm%C3%B6_FF",
+    "year": 1979
+  },
+  {
+    "fact": "Sverige vinner EM i fotboll för damer efter final mot England.",
+    "image": "European_Competition_for_Women's_Football_1984_map.svg",
+    "pageViews": 280000,
+    "qid": "Q847626",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Sverige vinner damernas fotbolls-EM",
+    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_1984",
+    "year": 1984
+  },
+  {
+    "fact": "IFK Göteborg vinner Uefacupen för andra gången.",
+    "image": "",
+    "pageViews": 280000,
+    "qid": "Q201567",
+    "subtitle": "Svenskt klubbfotbollsminne",
+    "title": "IFK Göteborg vinner Uefacupen igen",
+    "wikipediaSlug": "IFK_G%C3%B6teborg",
+    "year": 1987
+  },
+  {
+    "fact": "Tomas Brolin gör ett klassiskt svenskt mål under fotbolls-VM i USA.",
+    "image": "Tomas_Brolin.jpg",
+    "pageViews": 280000,
+    "qid": "Q361435",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Brolin gör mål i fotbolls-VM",
+    "wikipediaSlug": "Tomas_Brolin",
+    "year": 1994
+  },
+  {
+    "fact": "Tre Kronor vinner VM-guld i ishockey på hemmaplan i Globen.",
+    "image": "Snowy_på_Globen.JPG",
+    "pageViews": 280000,
+    "qid": "Q1316060",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Tre Kronor vinner VM-guld hemma",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_ishockey_f%C3%B6r_herrar_1995",
+    "year": 1995
+  },
+  {
+    "fact": "Sverige tar OS-silver i damfotboll efter final mot Kanada.",
+    "image": "",
+    "pageViews": 280000,
+    "qid": "Q726066",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Sverige tar OS-silver igen",
+    "wikipediaSlug": "Sveriges_damlandslag_i_fotboll",
+    "year": 2021
+  },
+  {
+    "fact": "Sveriges damlandslag tar ännu ett OS-silver i fotboll.",
+    "image": "",
+    "pageViews": 280000,
+    "qid": "Q38278429",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Damlandslaget tar OS-silver igen",
+    "wikipediaSlug": "Fotboll_vid_olympiska_sommarspelen_2020",
+    "year": 2021
+  },
+  {
+    "fact": "Nils van der Poel vinner OS-guld och blir ett av Sveriges stora vinterspelsnamn.",
+    "image": "Nils_van_der_Poel_in_2022.jpg",
+    "pageViews": 280000,
+    "qid": "Q15615329",
+    "subtitle": "Svenskt OS-minne",
+    "title": "Nils van der Poel vinner OS-guld",
+    "wikipediaSlug": "Nils_van_der_Poel",
+    "year": 2022
   },
   {
     "fact": "Visby blir en viktig handelsstad i Östersjön.",
@@ -1050,6 +1180,16 @@
     "year": 1923
   },
   {
+    "fact": "Örgryte IS vinner den första upplagan av Allsvenskan.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q344437",
+    "subtitle": "Svensk klubbfotboll",
+    "title": "Allsvenskan spelas första gången",
+    "wikipediaSlug": "Allsvenskan",
+    "year": 1924
+  },
+  {
     "fact": "Radiotjänst startar reguljära radiosändningar i Sverige.",
     "image": "Radiohuset,_Stockholm,_juni_2022.jpg",
     "pageViews": 260000,
@@ -1107,6 +1247,16 @@
     "subtitle": "Svenskt industriföretag",
     "title": "Saab grundas",
     "wikipediaSlug": "Saab_AB",
+    "year": 1937
+  },
+  {
+    "fact": "Råsunda fotbollsstadion invigs och blir svensk fotbolls mest klassiska landslagsarena.",
+    "image": "Råsunda_February_2013_01.jpg",
+    "pageViews": 260000,
+    "qid": "Q725623",
+    "subtitle": "Svensk fotbollsarena",
+    "title": "Råsunda blir landslagsarena",
+    "wikipediaSlug": "R%C3%A5sunda_fotbollsstadion",
     "year": 1937
   },
   {
@@ -1600,6 +1750,16 @@
     "year": 1991
   },
   {
+    "fact": "Tre Kronor vinner VM-guld i ishockey efter final mot Kanada.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q1316020",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Tre Kronor vinner hockey-VM",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_ishockey_f%C3%B6r_herrar_1991",
+    "year": 1991
+  },
+  {
     "fact": "Lasermannen grips av polis.",
     "image": "John_Ausonius.jpg",
     "pageViews": 260000,
@@ -1620,24 +1780,14 @@
     "year": 1992
   },
   {
-    "fact": "Tomas Brolin blir en av Sveriges stora profiler under fotbolls-VM.",
-    "image": "Tomas_Brolin.jpg",
+    "fact": "Bengan Boys tar OS-silver i handboll i Barcelona.",
+    "image": "",
     "pageViews": 260000,
-    "qid": "Q361435",
-    "subtitle": "Svensk fotbollsspelare",
-    "title": "Tomas Brolin gör mål i VM",
-    "wikipediaSlug": "Tomas_Brolin",
-    "year": 1994
-  },
-  {
-    "fact": "Tomas Ravelli räddar straff i VM-kvartsfinalen mot Rumänien.",
-    "image": "Thomas_Ravelli_in_January_2014.jpg",
-    "pageViews": 260000,
-    "qid": "Q313710",
-    "subtitle": "Svensk fotbollsmålvakt",
-    "title": "Tomas Ravelli räddar straff",
-    "wikipediaSlug": "Thomas_Ravelli",
-    "year": 1994
+    "qid": "Q649010",
+    "subtitle": "Svenskt handbollsminne",
+    "title": "Bengan Boys tar OS-silver",
+    "wikipediaSlug": "Handboll_vid_olympiska_sommarspelen_1992",
+    "year": 1992
   },
   {
     "fact": "Rolf Lassgård spelar Kurt Wallander och blir folkkär.",
@@ -1770,6 +1920,16 @@
     "year": 1998
   },
   {
+    "fact": "AIK vinner SM-guld i fotboll efter en dramatisk säsongsavslutning.",
+    "image": "AIK_players_after_a_goal_(during_AIK-Elfsborg,_2013).jpg",
+    "pageViews": 260000,
+    "qid": "Q221602",
+    "subtitle": "Svenskt klubbfotbollsminne",
+    "title": "AIK vinner SM-guld",
+    "wikipediaSlug": "AIK_Fotboll",
+    "year": 1998
+  },
+  {
     "fact": "Mamma Mia! har premiär i London.",
     "image": "",
     "pageViews": 260000,
@@ -1820,6 +1980,26 @@
     "year": 2000
   },
   {
+    "fact": "Hammarby vinner sitt första SM-guld i fotboll.",
+    "image": "Hammarby1934.jpg",
+    "pageViews": 260000,
+    "qid": "Q460724",
+    "subtitle": "Svenskt klubbfotbollsminne",
+    "title": "Hammarby vinner sitt första SM-guld",
+    "wikipediaSlug": "Hammarby_IF_Fotboll",
+    "year": 2001
+  },
+  {
+    "fact": "Djurgården vinner både Allsvenskan och Svenska cupen.",
+    "image": "Djurgardens_IF_logo.svg",
+    "pageViews": 260000,
+    "qid": "Q622430",
+    "subtitle": "Svenskt klubbfotbollsminne",
+    "title": "Djurgården vinner dubbeln",
+    "wikipediaSlug": "Djurg%C3%A5rdens_IF_Fotboll",
+    "year": 2002
+  },
+  {
     "fact": "Anna Lindh mördas i Stockholm.",
     "image": "Anna_Lindh_2002.jpg",
     "pageViews": 260000,
@@ -1858,6 +2038,16 @@
     "title": "Bank-id lanseras",
     "wikipediaSlug": "Bank-id",
     "year": 2003
+  },
+  {
+    "fact": "Marta blir en av damfotbollens stora världsstjärnor efter genombrott i Sverige.",
+    "image": "Marta_Vieira_da_Silva_2013.jpg",
+    "pageViews": 260000,
+    "qid": "Q228616",
+    "subtitle": "Damfotboll i Sverige",
+    "title": "Marta slår igenom i Sverige",
+    "wikipediaSlug": "Marta_(fotbollsspelare)",
+    "year": 2004
   },
   {
     "fact": "Män som hatar kvinnor ges ut.",
@@ -2060,6 +2250,16 @@
     "year": 2015
   },
   {
+    "fact": "Sverige vinner U21-EM i fotboll efter finaldrama mot Portugal.",
+    "image": "2015_UEFA_European_Under-21_Championship_map.svg",
+    "pageViews": 260000,
+    "qid": "Q2949264",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Sverige vinner U21-EM",
+    "wikipediaSlug": "U21-Europam%C3%A4sterskapet_i_fotboll_2015",
+    "year": 2015
+  },
+  {
     "fact": "Sarah Sjöström vinner OS-guld på 100 meter fjärilsim.",
     "image": "Sarah_Sjöström_2013.jpg",
     "pageViews": 260000,
@@ -2078,16 +2278,6 @@
     "title": "Bill Skarsgård slår igenom",
     "wikipediaSlug": "Bill_Skarsg%C3%A5rd",
     "year": 2017
-  },
-  {
-    "fact": "Nils van der Poel vinner OS-guld.",
-    "image": "Nils_van_der_Poel_in_2022.jpg",
-    "pageViews": 260000,
-    "qid": "Q15615329",
-    "subtitle": "Svensk skridskoåkare",
-    "title": "Nils van der Poel vinner OS-guld",
-    "wikipediaSlug": "Nils_van_der_Poel",
-    "year": 2022
   },
   {
     "fact": "Ulf Kristersson blir Sveriges statsminister.",
@@ -2140,6 +2330,16 @@
     "year": 1900
   },
   {
+    "fact": "Svenska herrlandslaget spelar sin första landskamp i fotboll.",
+    "image": "",
+    "pageViews": 240000,
+    "qid": "Q160826",
+    "subtitle": "Svensk fotbollshistoria",
+    "title": "Sverige spelar sin första fotbollslandskamp",
+    "wikipediaSlug": "Sveriges_herrlandslag_i_fotboll",
+    "year": 1908
+  },
+  {
     "fact": "SAS bildas genom skandinaviskt samarbete.",
     "image": "SAS_Group_logo.svg",
     "pageViews": 240000,
@@ -2148,6 +2348,16 @@
     "title": "SAS bildas",
     "wikipediaSlug": "SAS_Group",
     "year": 1946
+  },
+  {
+    "fact": "Sverige vinner VM-brons i fotboll efter seger mot Västtyskland.",
+    "image": "",
+    "pageViews": 240000,
+    "qid": "Q132515",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Sverige tar VM-brons i fotboll",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1950",
+    "year": 1950
   },
   {
     "fact": "Sommar i P1 börjar sändas i Sveriges Radio.",
@@ -2218,6 +2428,16 @@
     "title": "”Bolibompa” börjar sändas",
     "wikipediaSlug": "Bolibompa",
     "year": 1987
+  },
+  {
+    "fact": "Damallsvenskan spelas för första gången.",
+    "image": "",
+    "pageViews": 240000,
+    "qid": "Q1158138",
+    "subtitle": "Svensk damfotboll",
+    "title": "Damallsvenskan startar",
+    "wikipediaSlug": "Damallsvenskan",
+    "year": 1988
   },
   {
     "fact": "Fångarna på fortet börjar sändas i svensk tv.",
@@ -2300,6 +2520,16 @@
     "year": 2003
   },
   {
+    "fact": "Umeå IK vinner Uefa Women's Cup och blir ett av Europas stora damfotbollslag.",
+    "image": "",
+    "pageViews": 240000,
+    "qid": "Q1856774",
+    "subtitle": "Svenskt damfotbollsminne",
+    "title": "Umeå IK vinner Europa",
+    "wikipediaSlug": "Ume%C3%A5_IK",
+    "year": 2003
+  },
+  {
     "fact": "Darin slår igenom i Idol.",
     "image": "Darin_Zanyar_in_2020_(cropped).jpg",
     "pageViews": 240000,
@@ -2340,6 +2570,16 @@
     "year": 2005
   },
   {
+    "fact": "Henrik Larsson återvänder till Helsingborgs IF efter åren i Europa.",
+    "image": "Henrik_Larsson_in_Jan_2014.jpg",
+    "pageViews": 240000,
+    "qid": "Q179334",
+    "subtitle": "Svenskt klubbfotbollsminne",
+    "title": "Henrik Larsson återvänder till HIF",
+    "wikipediaSlug": "Henrik_Larsson",
+    "year": 2006
+  },
+  {
     "fact": "Mia Skäringer får sitt breda genombrott i svensk humor.",
     "image": "Mia_Skäringer_Lisebergsapplåden_2015_001_(cropped).jpg",
     "pageViews": 240000,
@@ -2370,6 +2610,26 @@
     "year": 2010
   },
   {
+    "fact": "Pia Sundhage blir förbundskapten för Sveriges damlandslag.",
+    "image": "Pia_Sundhage_2012-12-05_001.jpg",
+    "pageViews": 240000,
+    "qid": "Q434362",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Pia Sundhage tar över landslaget",
+    "wikipediaSlug": "Pia_Sundhage",
+    "year": 2012
+  },
+  {
+    "fact": "Sveriges herrlandslag tar OS-silver i handboll i London.",
+    "image": "",
+    "pageViews": 240000,
+    "qid": "Q209129",
+    "subtitle": "Svenskt handbollsminne",
+    "title": "Sverige tar OS-silver i handboll",
+    "wikipediaSlug": "Handboll_vid_olympiska_sommarspelen_2012",
+    "year": 2012
+  },
+  {
     "fact": "Hundraåringen som klev ut genom fönstret och försvann har premiär.",
     "image": "Hundraåringen_logo_(film).svg",
     "pageViews": 240000,
@@ -2378,6 +2638,16 @@
     "title": "”Hundraåringen” har premiär",
     "wikipediaSlug": "Hundra%C3%A5ringen_som_klev_ut_genom_f%C3%B6nstret_och_f%C3%B6rsvann_(film)",
     "year": 2013
+  },
+  {
+    "fact": "Lotten Schelin blir Sveriges mesta målskytt i damlandslaget.",
+    "image": "Lotta_Schelin_2012-11-12.jpg",
+    "pageViews": 240000,
+    "qid": "Q267563",
+    "subtitle": "Svenskt damlandslagsminne",
+    "title": "Lotta Schelin blir målrekordhållare",
+    "wikipediaSlug": "Lotta_Schelin",
+    "year": 2014
   },
   {
     "fact": "Stora Kopparbergs bergslag blir ett av Sveriges äldsta företag.",
@@ -2920,16 +3190,6 @@
     "year": 1936
   },
   {
-    "fact": "Råsunda fotbollsstadion invigs i Solna.",
-    "image": "Råsunda_February_2013_01.jpg",
-    "pageViews": 220000,
-    "qid": "Q725623",
-    "subtitle": "Svensk fotbollsarena",
-    "title": "Råsunda invigs",
-    "wikipediaSlug": "R%C3%A5sunda_fotbollsstadion",
-    "year": 1937
-  },
-  {
     "fact": "Monopol ges ut i svensk version.",
     "image": "Monopoly_game_tokens_01.JPG",
     "pageViews": 220000,
@@ -2988,6 +3248,16 @@
     "title": "Alice Babs slår igenom",
     "wikipediaSlug": "Alice_Babs",
     "year": 1940
+  },
+  {
+    "fact": "Svenska cupen i fotboll spelas för första gången.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q750585",
+    "subtitle": "Svensk klubbfotboll",
+    "title": "Svenska cupen startar",
+    "wikipediaSlug": "Svenska_cupen_i_fotboll",
+    "year": 1941
   },
   {
     "fact": "GB Glace bildas genom sammanslagning av svenska glasstillverkare.",
@@ -3098,6 +3368,16 @@
     "title": "Pär Lagerkvist får Nobelpriset",
     "wikipediaSlug": "P%C3%A4r_Lagerkvist",
     "year": 1951
+  },
+  {
+    "fact": "Elitloppet körs för första gången på Solvalla.",
+    "image": "Johnny_Takter_&_Iceland_Elitloppet_2010_001.jpg",
+    "pageViews": 220000,
+    "qid": "Q3051173",
+    "subtitle": "Svensk travklassiker",
+    "title": "Elitloppet startar",
+    "wikipediaSlug": "Elitloppet",
+    "year": 1952
   },
   {
     "fact": "Ahlgrens bilar lanseras av Läkerol.",
@@ -3930,16 +4210,6 @@
     "year": 1984
   },
   {
-    "fact": "Pia Sundhage vinner EM med Sveriges damlandslag.",
-    "image": "Pia_Sundhage_2012-12-05_001.jpg",
-    "pageViews": 220000,
-    "qid": "Q434362",
-    "subtitle": "Svensk fotbollsspelare",
-    "title": "Pia Sundhage blir landslagsikon",
-    "wikipediaSlug": "Pia_Sundhage",
-    "year": 1984
-  },
-  {
     "fact": "Mitt liv som hund har premiär.",
     "image": "",
     "pageViews": 220000,
@@ -4730,16 +5000,6 @@
     "year": 2005
   },
   {
-    "fact": "Lotta Schelin blir en av Sveriges stora landslagsprofiler.",
-    "image": "Lotta_Schelin_2012-11-12.jpg",
-    "pageViews": 220000,
-    "qid": "Q267563",
-    "subtitle": "Svensk fotbollsspelare",
-    "title": "Lotta Schelin blir landslagsstjärna",
-    "wikipediaSlug": "Lotta_Schelin",
-    "year": 2006
-  },
-  {
     "fact": "Let's Dance börjar sändas i TV4.",
     "image": "",
     "pageViews": 220000,
@@ -4777,6 +5037,16 @@
     "subtitle": "Låt av Basshunter",
     "title": "”Boten Anna” släpps",
     "wikipediaSlug": "Boten_Anna",
+    "year": 2006
+  },
+  {
+    "fact": "Färjestad vinner SM-guld i ishockey efter final mot Frölunda.",
+    "image": "2013-12-30_Magnus_Nygren_01.jpg",
+    "pageViews": 220000,
+    "qid": "Q1122553",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Färjestad vinner SM-guld",
+    "wikipediaSlug": "F%C3%A4rjestad_BK",
     "year": 2006
   },
   {
@@ -4977,6 +5247,16 @@
     "subtitle": "Svensk golfspelare",
     "title": "Henrik Stenson vinner The Open",
     "wikipediaSlug": "Henrik_Stenson",
+    "year": 2016
+  },
+  {
+    "fact": "Frölunda vinner Champions Hockey League och blir europeisk mästare.",
+    "image": "Fredrik_Pettersson.jpg",
+    "pageViews": 220000,
+    "qid": "Q1142013",
+    "subtitle": "Svenskt ishockeyminne",
+    "title": "Frölunda blir europeiska mästare",
+    "wikipediaSlug": "Fr%C3%B6lunda_HC",
     "year": 2016
   },
   {
