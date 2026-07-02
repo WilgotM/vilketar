@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -6,6 +7,11 @@ import {
   hasStartedDailyGameProgress,
   loadDailyGameSnapshot,
 } from "../lib/daily-storage";
+import {
+  getLeagueProfile,
+  isLeaguesConfigured,
+  type LeagueProfile,
+} from "../lib/leagues";
 import ButtonLink from "./button-link";
 import DailyWeekSchedule from "./daily-week-schedule";
 import PageShell from "./page-shell";
@@ -182,6 +188,19 @@ function readDailyHomeStatus(): DailyHomeStatus {
 }
 
 export default function HomeScreen() {
+  const [profile, setProfile] = React.useState<LeagueProfile | null>(null);
+
+  React.useEffect(() => {
+    if (!isLeaguesConfigured()) {
+      return;
+    }
+    void getLeagueProfile()
+      .then((p) => {
+        setProfile(p);
+      })
+      .catch(() => undefined);
+  }, []);
+
   const [calendarOpen, setCalendarOpen] = React.useState(false);
   const [calendarDragY, setCalendarDragY] = React.useState(0);
   const [calendarDragging, setCalendarDragging] = React.useState(false);
@@ -327,6 +346,38 @@ export default function HomeScreen() {
   return (
     <PageShell showHeader={false}>
       <div className={styles.home}>
+        {profile ? (
+          <div className={styles.profileButtonWrapper}>
+            <Link
+              href="/leagues"
+              className={styles.profileButton}
+              title={`Visa din profil (${profile.displayName})`}
+            >
+              <motion.div
+                className={styles.profileAvatar}
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 25 }}
+              >
+                {profile.avatarDataUrl ? (
+                  <Image
+                    alt={profile.displayName}
+                    className={styles.profileAvatarImage}
+                    height={72}
+                    src={profile.avatarDataUrl}
+                    unoptimized
+                    width={72}
+                  />
+                ) : (
+                  <span>
+                    {profile.displayName.trim().charAt(0).toUpperCase() || "?"}
+                  </span>
+                )}
+                <div className={styles.profileAvatarShine} />
+              </motion.div>
+            </Link>
+          </div>
+        ) : null}
         <ThemeToggle />
         <ScatterDots />
         <div className={styles.wrapper}>

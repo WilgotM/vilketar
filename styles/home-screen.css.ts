@@ -616,3 +616,67 @@ export const dot = style({
   borderRadius: "50%",
   position: "absolute",
 });
+
+/* ── iOS 18 Profile Button Styles ──────────────────────────── */
+
+export const profileButtonWrapper = style({
+  height: "44px", // Touch target size
+  position: "absolute",
+  left: vars.space.md,
+  top: vars.space.md,
+  width: "44px",
+  zIndex: 100, // Ensure it's above hero decorations
+  "@media": {
+    [media.compact]: {
+      left: vars.space.sm,
+      top: vars.space.sm,
+    },
+  },
+});
+
+export const profileButton = style({
+  alignItems: "center",
+  background: "transparent",
+  border: "none",
+  borderRadius: "50%",
+  cursor: "pointer",
+  display: "flex",
+  justifyContent: "center",
+  padding: 0,
+  textDecoration: "none",
+  width: "100%",
+  height: "100%",
+  outline: "none",
+});
+
+export const profileAvatar = style({
+  width: "36px",
+  height: "36px",
+  borderRadius: "50%",
+  overflow: "hidden",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  fontWeight: vars.fontWeight.bold,
+  fontSize: vars.fontSize.sm,
+  color: "#ffffff",
+  background: "linear-gradient(135deg, #E85D9C 0%, #9B59B6 100%)", // Vibrant brand matching gradient
+  boxShadow: `0 2px 8px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 0 1px color-mix(in srgb, ${vars.color.text} 15%, transparent)`,
+  position: "relative",
+});
+
+export const profileAvatarImage = style({
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+  borderRadius: "50%",
+});
+
+export const profileAvatarShine = style({
+  position: "absolute",
+  inset: 0,
+  background:
+    "linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.08) 100%)",
+  pointerEvents: "none",
+  borderRadius: "50%",
+});

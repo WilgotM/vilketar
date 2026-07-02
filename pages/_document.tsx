@@ -17,6 +17,11 @@ export default function Document() {
     <Html className={appThemeClass} lang="sv-SE">
       <Head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7124466525094907"
+          crossOrigin="anonymous"
+        />
       </Head>
       <body>
         <Main />

@@ -58,15 +58,35 @@ bun run test
 
 ## Innehåll
 
-Källrader ligger i `content/queries/`. Deck-filer byggs till `public/decks/`:
+Korten byggs och cureras via en pipeline i `content/scripts/`:
 
-```bash
-bun run decks:build
-```
+1. **Bygg kortlekar**: Genererar kort från SPARQL-queries i `content/queries/`:
+   ```bash
+   bun run decks:build
+   ```
+2. **Lägg till svenska klassiker**: Läser handplockade kort från `content/scripts/add-handpicked-swedish-cards.ts` och trycker in dem i berörda kortlekar:
+   ```bash
+   bun run decks:add-swedish-cards
+   ```
+3. **Översättningspipeline**:
+   - **Skanna efter engelska kort**: Skanna `public/decks/*.json` efter kort som saknar översättning och spara unika texter till `content/cache/english-texts-report.txt`:
+     ```bash
+     bun run content/scripts/find-english-cards.ts
+     ```
+   - **Översätt med Gemini**: Kör översättning av de skannade engelska strängarna mot Gemini API (kräver `GEMINI_API_KEY` i `.env`) och spara resultaten i `content/cache/translations-sv.json`:
+     ```bash
+     bun run content/scripts/translate-english-cards.ts
+     ```
+   - **Applicera översättningar**: Skriv tillbaka översatta texter till kortlekarna i `public/decks/`:
+     ```bash
+     bun run content/scripts/apply-translations.ts
+     ```
+4. **Kurera kortlekar**: Filtrerar och rensar kortlekarna i `public/decks/` (ställer in t.ex. `pageViews` och tar bort felaktiga/ogiltiga kort):
+   ```bash
+   bun run decks:curate
+   ```
 
-Den publicerade spelkatalogen ligger i `public/decks/` och är filtrerad mot
-svenska Wikipedia. Metadata hämtas från Wikidata och svenska Wikipedia. Cacher
-ligger i `content/cache/`.
+Den slutliga publicerade spelkatalogen ligger i `public/decks/`. Cacher ligger i `content/cache/`.
 
 ## Supabase
 
