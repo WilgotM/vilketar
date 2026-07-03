@@ -91,6 +91,7 @@ export const scoreBadge = style({
   flexDirection: "column",
   gap: vars.space.xs,
   justifyContent: "center",
+  minWidth: "4rem",
   overflow: "visible",
   pointerEvents: "none",
   zIndex: 3,
@@ -102,27 +103,28 @@ export const scoreBadge = style({
 });
 
 export const scoreValue = style({
+  alignItems: "center",
   color: vars.color.text,
   WebkitTextFillColor: vars.color.text,
-  display: "block",
+  display: "inline-flex",
   fontFeatureSettings: "normal",
   fontSize: "3.5rem",
   fontWeight: vars.fontWeight.black,
   fontVariantNumeric: "normal",
-  lineHeight: "1.2",
-  minHeight: "4.2rem",
+  height: "3.75rem",
+  justifyContent: "center",
+  lineHeight: "1",
+  minWidth: "1.6ch",
   overflow: "visible",
-  paddingBottom: "0.05em",
-  paddingTop: "0.02em",
   textAlign: "center",
   "@media": {
     [media.compact]: {
       fontSize: "3rem",
-      minHeight: "3.6rem",
+      height: "3.25rem",
     },
     [media.shortWide]: {
       fontSize: "3rem",
-      minHeight: "3.6rem",
+      height: "3.25rem",
     },
   },
 });
