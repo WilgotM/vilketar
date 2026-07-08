@@ -23,6 +23,12 @@ export const list = style({
     [media.shortWide]: {
       padding: `${vars.space.sm} ${vars.space.md} ${vars.space.md}`,
     },
+    "screen and (max-height: 43rem)": {
+      padding: `${vars.space.sm} ${vars.space.md} ${vars.space.lg}`,
+    },
+    "screen and (max-height: 36rem)": {
+      padding: `${vars.space.xxs} ${vars.space.md} ${vars.space.md}`,
+    },
   },
 });
 

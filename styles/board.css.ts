@@ -36,22 +36,44 @@ export const wrapper = style({
 export const top = style({
   alignItems: "center",
   display: "flex",
-  flex: "0 0 52%",
+  flex: "0 0 auto",
   flexDirection: "column",
-  gap: vars.space.xl,
-  justifyContent: "flex-end",
+  gap: vars.space.lg,
+  justifyContent: "flex-start",
   minHeight: 0,
-  paddingTop: vars.space.xl,
+  paddingTop: vars.space.md,
   position: "relative",
   "@media": {
     [media.compact]: {
-      flexBasis: "50%",
-      gap: vars.space.lg,
+      gap: vars.space.md,
     },
     [media.shortWide]: {
-      flexBasis: "55%",
-      gap: vars.space.md,
-      paddingTop: vars.space.md,
+      gap: vars.space.sm,
+      paddingTop: vars.space.sm,
+      vars: {
+        [vars.size.cardHeight]: "10rem",
+        [vars.size.cardWidth]: "7.5rem",
+        [vars.size.deckStackWidth]: "8.5rem",
+        [vars.size.deckWidth]: "10.5rem",
+      },
+    },
+    "screen and (max-height: 43rem)": {
+      gap: vars.space.sm,
+      paddingTop: vars.space.sm,
+      vars: {
+        [vars.size.cardHeight]: "10rem",
+        [vars.size.cardWidth]: "7.5rem",
+        [vars.size.deckStackWidth]: "8.5rem",
+        [vars.size.deckWidth]: "10.5rem",
+      },
+    },
+    "screen and (max-height: 36rem)": {
+      vars: {
+        [vars.size.cardHeight]: "8.75rem",
+        [vars.size.cardWidth]: "6.5625rem",
+        [vars.size.deckStackWidth]: "7.25rem",
+        [vars.size.deckWidth]: "9rem",
+      },
     },
   },
 });
@@ -143,20 +165,19 @@ export const scoreLabel = style({
 export const bottom = style({
   alignItems: "flex-start",
   display: "flex",
-  flex: "0 0 48%",
+  flex: "1 1 0",
   minHeight: 0,
   overflowX: "auto",
   overflowY: "hidden",
-  paddingTop: vars.space.lg,
+  paddingTop: vars.space.md,
   position: "relative",
   width: "100%",
   "@media": {
-    [media.compact]: {
-      flexBasis: "50%",
-    },
     [media.shortWide]: {
-      flexBasis: "45%",
-      paddingTop: vars.space.md,
+      paddingTop: vars.space.sm,
+    },
+    "screen and (max-height: 43rem)": {
+      paddingTop: vars.space.sm,
     },
   },
 });
