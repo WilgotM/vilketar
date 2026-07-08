@@ -683,11 +683,7 @@ export default function Board(props: Props) {
           initial={false}
           transition={{ duration: 0.28, ease: "easeOut" }}
         >
-          <span
-            aria-hidden="true"
-            className={styles.scoreValue}
-            style={{ color: "#fffdfa" }}
-          >
+          <span aria-hidden="true" className={styles.scoreValue}>
             {score}
           </span>
           <span className={styles.scoreLabel}>poäng</span>

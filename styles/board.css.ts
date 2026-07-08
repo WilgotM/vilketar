@@ -125,6 +125,7 @@ export const scoreBadge = style({
 });
 
 export const scoreValue = style({
+  color: vars.color.text,
   display: "block",
   fontFamily: vars.font.display,
   fontFeatureSettings: "normal",
@@ -135,7 +136,6 @@ export const scoreValue = style({
   minWidth: "1.6ch",
   overflow: "visible",
   textAlign: "center",
-  textShadow: "0 0 0.0625rem #fffdfa",
   "@media": {
     [media.compact]: {
       fontSize: "3rem",
