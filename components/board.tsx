@@ -657,6 +657,8 @@ export default function Board(props: Props) {
       state.played.filter((item) => item.played.correct).length - 1,
     );
   }, [state.played]);
+  const scoreText = String(score);
+  const scoreSvgWidth = Math.max(72, scoreText.length * 42 + 24);
 
   React.useLayoutEffect(() => {
     if (score > highscore) {
@@ -683,7 +685,23 @@ export default function Board(props: Props) {
           initial={false}
           transition={{ duration: 0.28, ease: "easeOut" }}
         >
-          <span className={styles.scoreValue}>{score}</span>
+          <span aria-hidden="true" className={styles.scoreValue}>
+            <svg
+              className={styles.scoreValueSvg}
+              height="72"
+              viewBox={`0 0 ${scoreSvgWidth} 72`}
+              width={scoreSvgWidth}
+            >
+              <text
+                className={styles.scoreValueText}
+                textAnchor="middle"
+                x={scoreSvgWidth / 2}
+                y="54"
+              >
+                {scoreText}
+              </text>
+            </svg>
+          </span>
           <span className={styles.scoreLabel}>poäng</span>
         </motion.div>
         <div className={styles.statusArea}>
