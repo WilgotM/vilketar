@@ -103,37 +103,25 @@ export const scoreBadge = style({
 });
 
 export const scoreValue = style({
-  alignItems: "center",
-  color: vars.color.text,
-  display: "inline-flex",
-  height: "3.75rem",
-  justifyContent: "center",
-  minWidth: "1.6ch",
-  overflow: "visible",
-  "@media": {
-    [media.compact]: {
-      height: "3.25rem",
-    },
-    [media.shortWide]: {
-      height: "3.25rem",
-    },
-  },
-});
-
-export const scoreValueSvg = style({
   display: "block",
-  height: "100%",
-  overflow: "visible",
-  width: "auto",
-});
-
-export const scoreValueText = style({
-  fill: "currentColor",
   fontFamily: vars.font.display,
   fontFeatureSettings: "normal",
-  fontSize: "56px",
+  fontSize: "3.5rem",
   fontVariantNumeric: "normal",
   fontWeight: vars.fontWeight.black,
+  lineHeight: "1",
+  minWidth: "1.6ch",
+  overflow: "visible",
+  textAlign: "center",
+  textShadow: "0 0 0.0625rem #fffdfa",
+  "@media": {
+    [media.compact]: {
+      fontSize: "3rem",
+    },
+    [media.shortWide]: {
+      fontSize: "3rem",
+    },
+  },
 });
 
 export const scoreLabel = style({
