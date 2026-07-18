@@ -30,16 +30,6 @@
     "year": 2018
   },
   {
-    "fact": "Alfred Nobel patenterar dynamiten.",
-    "image": "AlfredNobel2.jpg",
-    "pageViews": 360000,
-    "qid": "Q23810",
-    "subtitle": "Svensk uppfinnare",
-    "title": "Alfred Nobel uppfinner dynamiten",
-    "wikipediaSlug": "Alfred_Nobel",
-    "year": 1867
-  },
-  {
     "fact": "Stockholms blodbad äger rum.",
     "image": "Stockholm_Bloodbath.jpg",
     "pageViews": 300000,
@@ -48,16 +38,6 @@
     "title": "Stockholms blodbad äger rum",
     "wikipediaSlug": "Stockholms_blodbad",
     "year": 1520
-  },
-  {
-    "fact": "Alfred Nobel patenterar dynamiten.",
-    "image": "Dynamite_Diagram.svg",
-    "pageViews": 300000,
-    "qid": "Q80728",
-    "subtitle": "Svensk uppfinning",
-    "title": "Dynamiten patenteras",
-    "wikipediaSlug": "Dynamit",
-    "year": 1867
   },
   {
     "fact": "Selma Lagerlöf blir första kvinna att få Nobelpriset i litteratur.",
@@ -151,7 +131,7 @@
   },
   {
     "fact": "Sverige håller folkomröstning om kärnkraften.",
-    "image": "",
+    "image": "P_history.svg",
     "pageViews": 260000,
     "qid": "Q6980136",
     "subtitle": "Svensk folkomröstning",
@@ -240,16 +220,6 @@
     "year": 1912
   },
   {
-    "fact": "Naturhistoriska riksmuseets byggnad öppnar i Frescati.",
-    "image": "Naturhistoriska_Riksmuseet_Stockholm_(2010).JPG",
-    "pageViews": 220000,
-    "qid": "Q1420103",
-    "subtitle": "Museum i Stockholm",
-    "title": "Naturhistoriska riksmuseet öppnar",
-    "wikipediaSlug": "Naturhistoriska_riksmuseet",
-    "year": 1916
-  },
-  {
     "fact": "Pär Lagerkvist tilldelas Nobelpriset i litteratur.",
     "image": "Lagerkvist.jpg",
     "pageViews": 220000,
@@ -271,7 +241,7 @@
   },
   {
     "fact": "Harry Martinson tilldelas Nobelpriset i litteratur.",
-    "image": "Harry_Martinson_001.tiff",
+    "image": "Harry Martinson.jpg",
     "pageViews": 220000,
     "qid": "Q132695",
     "subtitle": "Svensk författare",

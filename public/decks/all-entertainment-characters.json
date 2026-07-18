@@ -10,18 +10,8 @@
     "year": 1945
   },
   {
-    "fact": "Tove Jansson ger ut den första boken om Mumintrollen.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 260000,
-    "qid": "Q10590157",
-    "subtitle": "Nordisk barnboksfigur",
-    "title": "Mumin ges ut",
-    "wikipediaSlug": "Mumin",
-    "year": 1945
-  },
-  {
     "fact": "Gunilla Bergström ger ut den första boken om Alfons Åberg.",
-    "image": "",
+    "image": "Alfons Åberg, Arlanda 2010 1.JPG",
     "pageViews": 260000,
     "qid": "Q1316142",
     "subtitle": "Svensk barnboksfigur",
@@ -41,7 +31,7 @@
   },
   {
     "fact": "Sagan om Karl-Bertil Jonssons julafton börjar visas i svensk tv.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q1758868",
     "subtitle": "Svensk julklassiker",
@@ -81,7 +71,7 @@
   },
   {
     "fact": "Sunes jul sänds som SVT:s julkalender.",
-    "image": "",
+    "image": "Sunes jul papperskalender.jpg",
     "pageViews": 240000,
     "qid": "Q4993680",
     "subtitle": "Svensk julkalender",
@@ -171,7 +161,7 @@
   },
   {
     "fact": "Trazan och Banarne blir folkkära figurer i svensk barn-tv.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q1764283",
     "subtitle": "Svenskt barnprogram",
@@ -181,7 +171,7 @@
   },
   {
     "fact": "Den första boken om Sune ges ut.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "manual-Sune_(bokserie)",
     "subtitle": "Svensk bokserie",
@@ -191,7 +181,7 @@
   },
   {
     "fact": "Den första boken om Bert ges ut.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "manual-Bert_(bokserie)",
     "subtitle": "Svensk bokserie",
@@ -241,7 +231,7 @@
   },
   {
     "fact": "Åke Holmberg ger ut den första boken om Ture Sventon.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 200000,
     "qid": "Q4354348",
     "subtitle": "Svensk barnboksfigur",
@@ -261,7 +251,7 @@
   },
   {
     "fact": "Martha Sandwall-Bergström ger ut första boken om Kulla-Gulla.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q10549872",
     "subtitle": "Svensk bokfigur",
@@ -341,7 +331,7 @@
   },
   {
     "fact": "Hälge blir en populär svensk älgserie.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q1285754",
     "subtitle": "Svensk seriefigur",
@@ -351,7 +341,7 @@
   },
   {
     "fact": "Moni Nilsson ger ut den första boken om Tsatsiki.",
-    "image": "",
+    "image": "Cacik-1.jpg",
     "pageViews": 180000,
     "qid": "Q454008",
     "subtitle": "Svensk barnboksfigur",
@@ -381,7 +371,7 @@
   },
   {
     "fact": "Agaton Sax blir känd genom böcker och tv.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 160000,
     "qid": "Q391557",
     "subtitle": "Svensk barnboksfigur",
@@ -418,115 +408,5 @@
     "wikipediaSlug": "Batman",
     "image": "Batman_Infobox.jpg",
     "pageViews": 104680
-  },
-  {
-    "qid": "Q79015",
-    "title": "Stålmannen gör sitt första framträdande",
-    "subtitle": "Superhjälte som förekommer i DC Comics publikationer",
-    "year": 1938,
-    "fact": "Superman är en superhjälte skapad av författaren Jerry Siegel och tecknaren Joe Shuster, som gjorde sin första framträdande i det första numret av Action Comics, utgivet i USA den 18 april 1938.",
-    "wikipediaSlug": "Superman",
-    "image": "Supermanflying.png",
-    "pageViews": 93662
-  },
-  {
-    "qid": "Q12379",
-    "title": "Mario dyker upp för första gången",
-    "subtitle": "Fiktiv karaktär i Mario-spelserien",
-    "year": 1981,
-    "fact": "Mario är en karaktär skapad av den japanska TV-spelsdesignern Shigeru Miyamoto.",
-    "wikipediaSlug": "Mario",
-    "image": "Mario_by_Shigehisa_Nakaue.png",
-    "pageViews": 83331
-  },
-  {
-    "qid": "Q9351",
-    "title": "Pikachu gör sitt första framträdande",
-    "subtitle": "Pokémonart, maskot för Pokémon-franchisen",
-    "year": 1996,
-    "fact": "Pikachu är en Pokémon-art i Nintendo och Game Freaks mediafranchise Pokémon, och franchisens maskot.",
-    "wikipediaSlug": "Pikachu",
-    "image": "Pokémon_Pikachu_art.png",
-    "pageViews": 83276
-  },
-  {
-    "qid": "Q23554",
-    "title": "Walter White dyker upp för första gången",
-    "subtitle": "Fiktiv karaktär i dramaserien Breaking Bad",
-    "year": 2008,
-    "fact": "Walter Hartwell White, även känd under sitt alias Heisenberg, är en fiktiv karaktär och huvudpersonen i den amerikanska kriminalserien ‘Breaking Bad’.",
-    "wikipediaSlug": "Walter_White_(Breaking_Bad)",
-    "image": "Walter_White_S5B.png",
-    "pageViews": 63656
-  },
-  {
-    "qid": "Q176772",
-    "title": "Severus Snape dyker upp för första gången",
-    "subtitle": "Fiktiv karaktär i Harry Potter-serien",
-    "year": 1997,
-    "fact": "Severus Snape är en fiktiv karaktär i bokserien Harry Potter av J.K. Rowling.",
-    "wikipediaSlug": "Severus_Snape",
-    "image": "Ootp076.jpg",
-    "pageViews": 61268
-  },
-  {
-    "qid": "Q188760",
-    "title": "Hulk dyker upp för första gången",
-    "subtitle": "Fiktiv karaktär i Marvel Comics",
-    "year": 1962,
-    "fact": "Hulken är en superhjälte som förekommer i amerikanska serietidningar utgivna av Marvel Comics.",
-    "wikipediaSlug": "Hulk",
-    "image": "Hulk_(circa_2019).png",
-    "pageViews": 56803
-  },
-  {
-    "qid": "Q430178",
-    "title": "Doctor Doom framträder för första gången",
-    "subtitle": "Fiktiv karaktär i Marvel Comics",
-    "year": 1962,
-    "fact": "Doctor Doom är en superskurk som förekommer i amerikanska serietidningar utgivna av Marvel Comics.",
-    "wikipediaSlug": "Doctor_Doom",
-    "image": "Doctor_Doom_(Marvel_Comics_character).png",
-    "pageViews": 56128
-  },
-  {
-    "qid": "Q51797",
-    "title": "Prinsessan Leia gör sitt första framträdande",
-    "subtitle": "Fiktiv karaktär från Star Wars",
-    "year": 1977,
-    "fact": "Prinsessan Leia Organa är en fiktiv karaktär i ‘Star Wars’-franchisen.",
-    "wikipediaSlug": "Princess_Leia",
-    "image": "Princess_Leia's_characteristic_hairstyle.jpg",
-    "pageViews": 56086
-  },
-  {
-    "qid": "Q12206942",
-    "title": "Darth Vader dyker upp för första gången",
-    "subtitle": "Huvudskurken i Star Wars-trilogin",
-    "year": 1976,
-    "fact": "Darth Vader är en fiktiv karaktär i ‘Star Wars’-franchisen.",
-    "wikipediaSlug": "Darth_Vader",
-    "image": "Darth_Vader_-_2007_Disney_Weekends.jpg",
-    "pageViews": 54128
-  },
-  {
-    "qid": "Q199796",
-    "title": "Karl-Alfred gör sitt första framträdande",
-    "subtitle": "Tecknad fiktiv karaktär",
-    "year": 1919,
-    "fact": "Karl-Alfred är en seriefigur skapad av Elzie Crisler Segar, som först dök upp den 17 januari 1929 i King Features dagliga seriestripp ‘Thimble Theatre’.",
-    "wikipediaSlug": "Popeye",
-    "image": "Popeye_transparent.png",
-    "pageViews": 53954
-  },
-  {
-    "qid": "Q849477",
-    "title": "Harley Quinn framträder för första gången",
-    "subtitle": "Fiktiv karaktär i DC Comics",
-    "year": 1992,
-    "fact": "Harley Quinn är en fiktiv karaktär som förekommer i amerikanska serietidningar utgivna av DC Comics.",
-    "wikipediaSlug": "Harley_Quinn",
-    "image": "HarleyQuinn_Various_incarnations.jpg",
-    "pageViews": 52556
   }
 ]

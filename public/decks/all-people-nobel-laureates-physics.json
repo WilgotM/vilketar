@@ -1,15 +1,5 @@
 [
   {
-    "qid": "Q937",
-    "title": "Albert Einstein tilldelas Nobelpriset i fysik",
-    "subtitle": null,
-    "year": 1921,
-    "fact": "Albert Einstein var en tyskfödd teoretisk fysiker mest känd för att ha utvecklat relativitetsteorin.",
-    "wikipediaSlug": "Albert_Einstein",
-    "image": "Albert_Einstein_Head_cleaned.jpg",
-    "pageViews": 536822
-  },
-  {
     "qid": "Q7186",
     "title": "Marie Curie vinner Nobelpriset i fysik",
     "subtitle": null,
@@ -28,15 +18,5 @@
     "wikipediaSlug": "Richard_Feynman",
     "image": "Richard_Feynman_Nobel.jpg",
     "pageViews": 144292
-  },
-  {
-    "qid": "Q40904",
-    "title": "Werner Heisenberg tilldelas Nobelpriset i fysik",
-    "subtitle": null,
-    "year": 1932,
-    "fact": "Werner Karl Heisenberg var en tysk teoretisk fysiker, en av pionjärerna inom kvantmekanik och ledande vetenskapsman i det tyska kärnenergiprogrammet under andra världskriget.",
-    "wikipediaSlug": "Werner_Heisenberg",
-    "image": "Werner_Heisenberg_Portrait_(3x4_cropped).jpg",
-    "pageViews": 62283
   }
 ]

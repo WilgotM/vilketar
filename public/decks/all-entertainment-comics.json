@@ -21,7 +21,7 @@
   },
   {
     "fact": "Kalle Anka & C:o börjar ges ut i Sverige.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q2743606",
     "subtitle": "Svensk serietidning",
@@ -91,7 +91,7 @@
   },
   {
     "fact": "Hälge blir en populär svensk älgserie.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q1285754",
     "subtitle": "Svensk seriefigur",
@@ -148,135 +148,5 @@
     "wikipediaSlug": "Death_Note",
     "image": "Death_Note_Vol_1.jpg",
     "pageViews": 106830
-  },
-  {
-    "qid": "Q97310775",
-    "title": "‘Oshi no Ko’ påbörjas",
-    "subtitle": "Japansk mangaserie",
-    "year": 2020,
-    "fact": "‘Oshi no Ko’ (【推しの子】) är en japansk mangaserie skriven av Aka Akasaka och illustrerad av Mengo Yokoyari.",
-    "wikipediaSlug": "Oshi_no_Ko",
-    "image": "Oshi_no_Ko_Volume_1.jpg",
-    "pageViews": 85771
-  },
-  {
-    "qid": "Q18047903",
-    "title": "‘My Hero Academia’ påbörjas",
-    "subtitle": "Japansk mangaserie",
-    "year": 2014,
-    "fact": "‘My Hero Academia’ är en japansk mangaserie skriven och illustrerad av Kōhei Horikoshi.",
-    "wikipediaSlug": "My_Hero_Academia",
-    "image": "Boku_no_Hero_Academia_Volume_1.png",
-    "pageViews": 84280
-  },
-  {
-    "qid": "Q18558978",
-    "title": "‘Berserk’ påbörjas",
-    "subtitle": "Japansk mangaserie",
-    "year": 1989,
-    "fact": "Berserk är en japansk mangaserie skapad av Kentaro Miura.",
-    "wikipediaSlug": "Berserk_(manga)",
-    "image": "Berserk_vol01.png",
-    "pageViews": 82228
-  },
-  {
-    "qid": "Q696071",
-    "title": "‘Hunter × Hunter’ påbörjas",
-    "subtitle": "Japansk mangaserie",
-    "year": 1998,
-    "fact": "‘Hunter × Hunter’ är en japansk mangaserie skriven och illustrerad av Yoshihiro Togashi.",
-    "wikipediaSlug": "Hunter_%C3%97_Hunter",
-    "image": "Hunter_×_Hunter_vol._1.png",
-    "pageViews": 77779
-  },
-  {
-    "qid": "Q30924292",
-    "title": "‘Beastars’ påbörjas",
-    "subtitle": "Japansk mangaserie",
-    "year": 2016,
-    "fact": "Beastars är en japansk mangaserie skriven och illustrerad av Paru Itagaki.",
-    "wikipediaSlug": "Beastars",
-    "image": "BEASTARS,_volume_1.jpg",
-    "pageViews": 74921
-  },
-  {
-    "qid": "Q20016948",
-    "title": "‘Delicious in Dungeon’ har premiär",
-    "subtitle": "Japansk mangaserie",
-    "year": 2015,
-    "fact": "Delicious in Dungeon är en japansk mangaserie skriven och illustrerad av Ryoko Kui.",
-    "wikipediaSlug": "Delicious_in_Dungeon",
-    "image": "Dungeon_Meshi_cover.jpeg",
-    "pageViews": 74742
-  },
-  {
-    "qid": "Q235311",
-    "title": "‘Doraemon’ ges ut",
-    "subtitle": "Serietidning av Fujiko F. Fujio",
-    "year": 1969,
-    "fact": "‘Doraemon’ (ドラえもん) är en japansk mangaserie skriven och illustrerad av Fujiko F.",
-    "wikipediaSlug": "Doraemon",
-    "image": "Doraemon_volume_1_cover.jpg",
-    "pageViews": 64332
-  },
-  {
-    "qid": "Q1643098",
-    "title": "‘Sailor Moon’ ges ut",
-    "subtitle": "Serietidning av Naoko Takeuchi",
-    "year": 1991,
-    "fact": "‘Sailor Moon’ är en japansk mangaserie skriven och illustrerad av Naoko Takeuchi.",
-    "wikipediaSlug": "Sailor_Moon",
-    "image": "SMVolume1.jpg",
-    "pageViews": 61614
-  },
-  {
-    "qid": "Q65231576",
-    "title": "‘Spy × Family’ har premiär",
-    "subtitle": "Japansk mangaserie",
-    "year": 2019,
-    "fact": "Spy × Family är en japansk webbmangaserie skriven och illustrerad av Tatsuya Endo.",
-    "wikipediaSlug": "Spy_%C3%97_Family",
-    "image": "Spy_Family_vol_1.jpg",
-    "pageViews": 60015
-  },
-  {
-    "qid": "Q108069627",
-    "title": "‘Dandadan’ har premiär",
-    "subtitle": "Japansk mangaserie",
-    "year": 2021,
-    "fact": "‘Dandadan’ (ダンダダン), även skrivet som Dan Da Dan, är en japansk webbmangaserie skriven och illustrerad av Yukinobu Tatsu.",
-    "wikipediaSlug": "Dandadan",
-    "image": "Dandadan_vol._1_cover.jpg",
-    "pageViews": 59810
-  },
-  {
-    "qid": "Q189562",
-    "title": "‘Fullmetal Alchemist’ ges ut",
-    "subtitle": "Serietidning av Hiromu Arakawa",
-    "year": 2001,
-    "fact": "‘Fullmetal Alchemist’ är en japansk mangaserie skriven och illustrerad av Hiromu Arakawa.",
-    "wikipediaSlug": "Fullmetal_Alchemist",
-    "image": "Fullmetal123.jpg",
-    "pageViews": 57967
-  },
-  {
-    "qid": "Q744536",
-    "title": "‘The Adventures of Tintin’ börjar",
-    "subtitle": "Serie med 24 seriealbum av den belgiske tecknaren Georges Remi",
-    "year": 1929,
-    "fact": "Tintins äventyr är en serie av 24 seriealbum skapade av den belgiske tecknaren Hergé.",
-    "wikipediaSlug": "The_Adventures_of_Tintin",
-    "image": "Tintin-mainCast.png",
-    "pageViews": 56118
-  },
-  {
-    "qid": "Q20638503",
-    "title": "‘Black Clover’ påbörjas",
-    "subtitle": "Japansk mangaserie",
-    "year": 2015,
-    "fact": "Black Clover är en japansk mangaserie skriven och illustrerad av Yūki Tabata.",
-    "wikipediaSlug": "Black_Clover",
-    "image": "Black_Clover,_volume_1.jpg",
-    "pageViews": 50282
   }
 ]

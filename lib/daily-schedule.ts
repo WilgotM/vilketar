@@ -33,6 +33,19 @@ const SCHEDULED_THEMES: Partial<Record<number, DailyScheduleTheme>> = {
   },
 };
 
+export function getDailyHistoryWindow(deckId: string | null): number {
+  switch (deckId) {
+    case "all-sport-sportogonblick":
+      return 2;
+    case "all-entertainment-music":
+      return 3;
+    case "all-swedish-classics-all":
+      return 5;
+    default:
+      return 3;
+  }
+}
+
 const WEEKDAY_LABELS = [
   "Söndag",
   "Måndag",

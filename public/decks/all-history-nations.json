@@ -1,15 +1,5 @@
 [
   {
-    "qid": "Q12560",
-    "title": "Osmanska riket etableras",
-    "subtitle": "Historisk stat",
-    "year": 1299,
-    "fact": "Osmanska riket, historiskt även känt som Turkiet, var en stat som omfattade stora delar av sydöstra Europa, västra Asien och norra Afrika från 1300-talet till början av 1900-talet, med centrum i dagens Turkiet.",
-    "wikipediaSlug": "Ottoman_Empire",
-    "image": "Flag_of_the_Ottoman_Empire_(1844–1922).svg",
-    "pageViews": 385191
-  },
-  {
     "qid": "Q15180",
     "title": "Sovjetunionen grundas",
     "subtitle": "Historisk stat",
@@ -51,43 +41,13 @@
   },
   {
     "fact": "Sverige blir medlem i Europeiska unionen.",
-    "image": "",
+    "image": "P_history.svg",
     "pageViews": 200000,
     "qid": "manual-Sverige_och_Europeiska_unionen",
     "subtitle": "Svensk samtidshistoria",
     "title": "Sverige går med i EU",
     "wikipediaSlug": "Sverige_och_Europeiska_unionen",
     "year": 1995
-  },
-  {
-    "qid": "Q12548",
-    "title": "Tysk-romerska riket grundas",
-    "subtitle": "Historisk stat",
-    "year": 962,
-    "fact": "Det tysk-romerska riket, även känt som det tysk-romerska riket av tysk nation efter 1512, var ett statsbildning som omfattade och kontrollerade stora delar av Central- och Västeuropa, leddes av den tysk-romerske kejsaren och kännetecknades av en decentraliserad politisk struktur.",
-    "wikipediaSlug": "Holy_Roman_Empire",
-    "image": "Banner_of_the_Holy_Roman_Emperor_with_haloes_(1430-1806).svg",
-    "pageViews": 189542
-  },
-  {
-    "qid": "Q12544",
-    "title": "Bysantinska riket grundas",
-    "subtitle": "Historisk stat",
-    "year": 395,
-    "fact": "Det bysantinska riket, även känt som det östromerska riket, var det romerska rikets fortsättning med centrum i Konstantinopel under senantiken och medeltiden.",
-    "wikipediaSlug": "Byzantine_Empire",
-    "image": "Justinian555AD.png",
-    "pageViews": 186693
-  },
-  {
-    "qid": "Q8680",
-    "title": "Brittiska imperiet grundas",
-    "subtitle": "Kolonialimperium",
-    "year": 1583,
-    "fact": "Brittiska imperiet bestod av dominioner, kolonier, protektorat, mandat och andra territorier som styrdes av den brittiska monarkin.",
-    "wikipediaSlug": "British_Empire",
-    "image": "Flag_of_Great_Britain_(1707–1800).svg",
-    "pageViews": 173782
   },
   {
     "qid": "Q36704",

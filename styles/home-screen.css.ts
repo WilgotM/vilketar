@@ -330,6 +330,13 @@ export const calendarDialog = style({
   },
 });
 
+export const calendarDialogDragging = style([
+  calendarDialog,
+  {
+    animation: "none",
+  },
+]);
+
 export const calendarDialogClosing = style([
   calendarDialog,
   {
@@ -351,12 +358,18 @@ export const calendarHandle = style({
   touchAction: "none",
   WebkitTapHighlightColor: "transparent",
   width: "3rem",
-  zIndex: 1,
+  // Give the visible handle a generous touch target without changing its appearance.
   selectors: {
+    "&::before": {
+      content: '""',
+      inset: "-0.75rem -1.5rem",
+      position: "absolute",
+    },
     "&:active": {
       cursor: "grabbing",
     },
   },
+  zIndex: 1,
 });
 
 export const footer = style({
