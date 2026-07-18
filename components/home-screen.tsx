@@ -209,6 +209,7 @@ export default function HomeScreen() {
     React.useState<DailyHomeStatus>("completed");
   const calendarDragStartY = React.useRef<number | null>(null);
   const calendarDragYRef = React.useRef(0);
+  const calendarDidDragRef = React.useRef(false);
   const closeTimerRef = React.useRef<number | null>(null);
 
   const closeCalendar = React.useCallback(() => {
@@ -239,6 +240,7 @@ export default function HomeScreen() {
     calendarDragYRef.current = 0;
     setCalendarDragging(false);
     calendarDragStartY.current = null;
+    calendarDidDragRef.current = false;
     setCalendarOpen(true);
   }, []);
 
@@ -286,8 +288,9 @@ export default function HomeScreen() {
   }, [calendarOpen, closeCalendar]);
 
   const startCalendarDrag = React.useCallback(
-    (event: React.PointerEvent<HTMLButtonElement>) => {
+    (event: React.PointerEvent<HTMLDivElement>) => {
       calendarDragStartY.current = event.clientY;
+      calendarDidDragRef.current = false;
       setCalendarDragging(true);
       event.currentTarget.setPointerCapture(event.pointerId);
     },
@@ -295,12 +298,15 @@ export default function HomeScreen() {
   );
 
   const moveCalendarDrag = React.useCallback(
-    (event: React.PointerEvent<HTMLButtonElement>) => {
+    (event: React.PointerEvent<HTMLDivElement>) => {
       if (calendarDragStartY.current === null) {
         return;
       }
 
       const nextDragY = Math.max(0, event.clientY - calendarDragStartY.current);
+      if (nextDragY > 8) {
+        calendarDidDragRef.current = true;
+      }
       calendarDragYRef.current = nextDragY;
       setCalendarDragY(nextDragY);
     },
@@ -308,7 +314,7 @@ export default function HomeScreen() {
   );
 
   const finishCalendarDrag = React.useCallback(
-    (event: React.PointerEvent<HTMLButtonElement>) => {
+    (event: React.PointerEvent<HTMLDivElement>) => {
       if (calendarDragStartY.current === null) {
         return;
       }
@@ -427,16 +433,16 @@ export default function HomeScreen() {
                 className={styles.actionItem}
                 fullWidth
                 href="/party"
+                homeTone="party"
                 leadingIcon="group"
-                minimal
                 text="Sällskapsspel"
               />
               <ButtonLink
                 className={styles.actionItem}
                 fullWidth
                 href="/play"
+                homeTone="freePlay"
                 leadingIcon="group"
-                minimal
                 text="Fritt spel"
               />
             </div>
@@ -461,7 +467,17 @@ export default function HomeScreen() {
                     ? styles.calendarDialogDragging
                     : styles.calendarDialog
               }
-              onClick={(event) => event.stopPropagation()}
+              onClick={(event) => {
+                event.stopPropagation();
+                if (calendarDidDragRef.current) {
+                  event.preventDefault();
+                  calendarDidDragRef.current = false;
+                }
+              }}
+              onPointerCancel={finishCalendarDrag}
+              onPointerDown={startCalendarDrag}
+              onPointerMove={moveCalendarDrag}
+              onPointerUp={finishCalendarDrag}
               role="dialog"
               style={{
                 transform: `translateY(${calendarDragY}px)`,
@@ -476,10 +492,6 @@ export default function HomeScreen() {
                     closeCalendar();
                   }
                 }}
-                onPointerCancel={finishCalendarDrag}
-                onPointerDown={startCalendarDrag}
-                onPointerMove={moveCalendarDrag}
-                onPointerUp={finishCalendarDrag}
                 type="button"
               />
               <DailyWeekSchedule compact />

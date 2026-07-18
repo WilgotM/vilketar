@@ -316,6 +316,7 @@ export const calendarDialog = style({
   overflow: "auto",
   padding: `${vars.space["2xl"]} ${vars.space.lg} ${vars.space.lg}`,
   position: "relative",
+  touchAction: "none",
   transition: `transform ${vars.duration.normal} ${vars.easing.emphasized}`,
   width: "min(100%, 32rem)",
   "@media": {

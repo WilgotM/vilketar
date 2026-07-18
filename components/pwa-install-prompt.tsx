@@ -3,7 +3,43 @@ import * as styles from "../styles/pwa-install-prompt.css";
 
 const DISMISSED_KEY = "vilketar-pwa-install-dismissed-at";
 const INSTALLED_KEY = "vilketar-pwa-installed-at";
+const VISITED_DAYS_KEY = "vilketar-pwa-visited-days";
+const REQUIRED_VISITED_DAYS = 5;
 const DISMISS_DAYS = 21;
+
+function getLocalDateKey() {
+  const date = new Date();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+
+  return `${date.getFullYear()}-${month}-${day}`;
+}
+
+function recordVisitedDay() {
+  const today = getLocalDateKey();
+  const storedDays = safeGetItem(VISITED_DAYS_KEY);
+  let visitedDays: string[] = [];
+
+  if (storedDays) {
+    try {
+      const parsed = JSON.parse(storedDays);
+      if (Array.isArray(parsed)) {
+        visitedDays = parsed.filter(
+          (value): value is string => typeof value === "string",
+        );
+      }
+    } catch {
+      // Ignore malformed visit history and start a new one.
+    }
+  }
+
+  if (!visitedDays.includes(today)) {
+    visitedDays.push(today);
+    safeSetItem(VISITED_DAYS_KEY, JSON.stringify(visitedDays));
+  }
+
+  return visitedDays.length;
+}
 
 function isDismissedRecently() {
   if (typeof window === "undefined") {
@@ -168,6 +204,10 @@ export default function PwaInstallPrompt() {
     React.useState<BeforeInstallPromptEvent | null>(null);
   const [showIosPrompt, setShowIosPrompt] = React.useState(false);
   const [hasUserIntent, setHasUserIntent] = React.useState(false);
+  const [hasVisitedEnoughDays, setHasVisitedEnoughDays] = React.useState(false);
+  const pendingInstallEvent = React.useRef<BeforeInstallPromptEvent | null>(
+    null,
+  );
 
   React.useEffect(() => {
     if (!("serviceWorker" in navigator)) {
@@ -186,6 +226,11 @@ export default function PwaInstallPrompt() {
       .catch(() => {
         // Installation still works as a normal website if registration fails.
       });
+  }, []);
+
+  React.useEffect(() => {
+    const visitedDays = recordVisitedDay();
+    setHasVisitedEnoughDays(visitedDays >= REQUIRED_VISITED_DAYS);
   }, []);
 
   React.useEffect(() => {
@@ -224,6 +269,11 @@ export default function PwaInstallPrompt() {
       }
 
       event.preventDefault();
+      pendingInstallEvent.current = event;
+      if (!hasVisitedEnoughDays) {
+        return;
+      }
+
       if (hasUserIntent) {
         setInstallEvent(event);
       } else {
@@ -234,6 +284,20 @@ export default function PwaInstallPrompt() {
         window.setTimeout(showWhenReady, 6500);
       }
     };
+
+    if (pendingInstallEvent.current && hasVisitedEnoughDays) {
+      if (hasUserIntent) {
+        setInstallEvent(pendingInstallEvent.current);
+      } else {
+        const showWhenReady = () => {
+          if (pendingInstallEvent.current) {
+            setInstallEvent(pendingInstallEvent.current);
+          }
+        };
+        window.addEventListener("pointerdown", showWhenReady, { once: true });
+        window.setTimeout(showWhenReady, 6500);
+      }
+    }
 
     const onAppInstalled = () => {
       rememberInstalled();
@@ -246,7 +310,8 @@ export default function PwaInstallPrompt() {
 
     const iosTimer = window.setTimeout(() => {
       setShowIosPrompt(
-        hasUserIntent &&
+        hasVisitedEnoughDays &&
+          hasUserIntent &&
           isIosSafari() &&
           !isStandalone() &&
           !isKnownInstalled() &&
@@ -259,7 +324,7 @@ export default function PwaInstallPrompt() {
       window.removeEventListener("appinstalled", onAppInstalled);
       window.clearTimeout(iosTimer);
     };
-  }, [hasUserIntent]);
+  }, [hasUserIntent, hasVisitedEnoughDays]);
 
   const close = React.useCallback(() => {
     dismiss();

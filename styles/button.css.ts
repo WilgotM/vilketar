@@ -1,4 +1,4 @@
-import { keyframes, style } from "@vanilla-extract/css";
+import { keyframes, style, styleVariants } from "@vanilla-extract/css";
 import { media } from "./foundation";
 import { vars } from "./theme.css";
 import { action, actionContent, actionIcon, actionLabel } from "./ui.css";
@@ -40,6 +40,54 @@ export const minimal = style({
       transform: "scale(0.98)",
     },
   },
+});
+
+const homeSecondaryBase = style({
+  background: "linear-gradient(145deg, #202a36 0%, #11161d 100%)",
+  border: "1px solid rgba(211, 228, 245, 0.18)",
+  boxShadow:
+    "0 0.5rem 1.3rem rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.3)",
+  color: "#f8fafc",
+  textShadow: "0 1px 1px rgba(0, 0, 0, 0.32)",
+  transition: `transform ${vars.duration.fast} ${vars.easing.standard}, background ${vars.duration.fast} ${vars.easing.standard}, border-color ${vars.duration.fast} ${vars.easing.standard}, box-shadow ${vars.duration.fast} ${vars.easing.standard}`,
+  selectors: {
+    "&:hover": {
+      borderColor: "rgba(219, 234, 254, 0.36)",
+      boxShadow:
+        "0 0.7rem 1.55rem rgba(0, 0, 0, 0.36), inset 0 1px 0 rgba(255, 255, 255, 0.13), inset 0 -1px 0 rgba(0, 0, 0, 0.28)",
+      transform: "translateY(-0.0625rem)",
+    },
+    "&:active": {
+      transform: "translateY(0.0625rem) scale(0.985)",
+    },
+  },
+});
+
+export const homeTone = styleVariants({
+  party: [
+    homeSecondaryBase,
+    {
+      background: "linear-gradient(145deg, #263342 0%, #11161d 100%)",
+      selectors: {
+        "&:hover": {
+          background: "linear-gradient(145deg, #304156 0%, #161d26 100%)",
+        },
+      },
+    },
+  ],
+  freePlay: [
+    homeSecondaryBase,
+    {
+      background: "linear-gradient(145deg, #382b23 0%, #18130f 100%)",
+      borderColor: "rgba(255, 201, 136, 0.2)",
+      selectors: {
+        "&:hover": {
+          background: "linear-gradient(145deg, #49372a 0%, #21170f 100%)",
+          borderColor: "rgba(255, 211, 157, 0.4)",
+        },
+      },
+    },
+  ],
 });
 
 export const withTrailingIcon = style({

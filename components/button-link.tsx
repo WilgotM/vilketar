@@ -6,6 +6,7 @@ interface Props {
   className?: string;
   fullWidth?: boolean;
   href: string;
+  homeTone?: keyof typeof styles.homeTone;
   leadingIcon?: "play" | "group";
   minimal?: boolean;
   onClick?: React.MouseEventHandler<HTMLAnchorElement>;
@@ -99,6 +100,7 @@ export default function ButtonLink(props: Props) {
     className,
     fullWidth = false,
     href,
+    homeTone,
     leadingIcon,
     minimal = false,
     onClick,
@@ -115,6 +117,7 @@ export default function ButtonLink(props: Props) {
           [styles.minimal]: minimal,
           [styles.withTrailingIcon]: trailingIcon,
         },
+        homeTone ? styles.homeTone[homeTone] : undefined,
         className,
       )}
       href={href}
