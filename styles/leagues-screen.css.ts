@@ -1,30 +1,29 @@
 import { style } from "@vanilla-extract/css";
 import { media } from "./foundation";
 import { vars } from "./theme.css";
-import { bodyTextMuted, sectionLabel } from "./ui.css";
+import { bodyTextMuted, screenTitle, sectionLabel } from "./ui.css";
 
 const glassSurface = {
-  background: `linear-gradient(145deg, color-mix(in srgb, ${vars.color.backdropStrong} 60%, transparent), color-mix(in srgb, ${vars.color.backdrop} 40%, transparent))`,
-  backdropFilter: "blur(2rem) saturate(1.2)",
-  WebkitBackdropFilter: "blur(2rem) saturate(1.2)",
-  border: `1px solid color-mix(in srgb, ${vars.color.text} 10%, transparent)`,
-  boxShadow:
-    "0 1.25rem 3.5rem rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08)",
+  background: vars.color.surfaceChrome,
+  backdropFilter: "blur(1.5rem)",
+  WebkitBackdropFilter: "blur(1.5rem)",
+  border: `1px solid ${vars.color.border}`,
+  boxShadow: vars.shadow.panel,
 };
 
 const glassControl = {
-  background: `color-mix(in srgb, ${vars.color.text} 6%, transparent)`,
-  backdropFilter: "blur(1.25rem) saturate(1.16)",
-  WebkitBackdropFilter: "blur(1.25rem) saturate(1.16)",
-  border: `1px solid color-mix(in srgb, ${vars.color.text} 10%, transparent)`,
-  boxShadow: "inset 0 1px 0 rgba(255, 255, 255, 0.06)",
+  background: vars.color.surfaceStrong,
+  backdropFilter: "none",
+  WebkitBackdropFilter: "none",
+  border: `1px solid ${vars.color.border}`,
+  boxShadow: "none",
 };
 
 export const screen = style({
   display: "flex",
   flexDirection: "column",
   margin: "0 auto",
-  maxWidth: "52rem",
+  maxWidth: vars.size.pageWidth,
   overflowX: "hidden",
   width: "100%",
   paddingBottom: vars.space["4xl"],
@@ -51,20 +50,17 @@ export const eyebrow = style([
   },
 ]);
 
-export const title = style({
-  fontFamily: vars.font.body,
-  fontSize: vars.fontSize["2xl"],
-  fontWeight: vars.fontWeight.bold,
-  letterSpacing: 0,
-  lineHeight: vars.lineHeight.tight,
-  margin: 0,
-  overflowWrap: "anywhere",
-  "@media": {
-    [media.narrow]: {
-      fontSize: vars.fontSize.xl,
+export const title = style([
+  screenTitle,
+  {
+    overflowWrap: "anywhere",
+    "@media": {
+      [media.narrow]: {
+        fontSize: vars.fontSize.xl,
+      },
     },
   },
-});
+]);
 
 export const intro = style([
   bodyTextMuted,
@@ -81,7 +77,7 @@ export const intro = style([
 
 export const panel = style({
   ...glassSurface,
-  borderRadius: vars.radius.md,
+  borderRadius: vars.radius.xl,
   alignSelf: "center",
   display: "grid",
   gap: vars.space.lg,
@@ -150,10 +146,10 @@ export const helperText = style([
 export const profileCard = style({
   alignSelf: "center",
   ...glassSurface,
-  background: `linear-gradient(135deg, color-mix(in srgb, ${vars.color.text} 10%, transparent), color-mix(in srgb, ${vars.color.text} 4%, transparent))`,
-  borderColor: `color-mix(in srgb, ${vars.color.text} 20%, transparent)`,
-  boxShadow: `0 1.5rem 4rem rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.25)`,
-  borderRadius: vars.radius.md,
+  background: vars.color.surfaceChrome,
+  borderColor: vars.color.borderStrong,
+  boxShadow: vars.shadow.panel,
+  borderRadius: vars.radius.xl,
   display: "grid",
   gap: vars.space.lg,
   margin: `0 0 ${vars.space.lg}`,

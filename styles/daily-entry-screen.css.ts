@@ -1,7 +1,12 @@
 import { globalStyle, style } from "@vanilla-extract/css";
 import { media } from "./foundation";
 import { vars } from "./theme.css";
-import { sectionLabel, stage as stageBase } from "./ui.css";
+import {
+  action,
+  screenTitle,
+  sectionLabel,
+  stage as stageBase,
+} from "./ui.css";
 
 export const screen = style({
   display: "flex",
@@ -27,11 +32,14 @@ export const content = style({
   gap: vars.space.xl,
   width: `min(100%, ${vars.size.contentWidthWide})`,
   height: "100%",
-  paddingBottom: vars.space.xl,
+  justifyContent: "center",
+  margin: "0 auto",
+  padding: `clamp(${vars.space.lg}, 4vh, ${vars.space["3xl"]}) 0 ${vars.space.xl}`,
   "@media": {
     [media.compact]: {
-      gap: vars.space.sm, // Tight gap between elements
-      paddingTop: vars.space.xl, // Give ample room for calendar icon glow to prevent clipping
+      gap: vars.space.md,
+      justifyContent: "flex-start",
+      paddingTop: vars.space.xl,
       paddingBottom: vars.space.xs,
     },
   },
@@ -65,14 +73,13 @@ export const score = style({
   justifyContent: "center",
 });
 
-// Premium iOS welcome layout styles:
 export const welcomeHeader = style({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   textAlign: "center",
   gap: vars.space.sm,
-  marginTop: vars.space.lg,
+  marginTop: 0,
   "@media": {
     [media.compact]: {
       marginTop: vars.space.sm,
@@ -86,17 +93,17 @@ export const iconWrapper = style({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  width: "4.75rem",
-  height: "4.75rem",
-  borderRadius: "1.25rem", // smooth iOS squircle
-  background: `linear-gradient(135deg, ${vars.color.accentLogo} 0%, #f59e0b 100%)`,
-  color: "#ffffff",
-  boxShadow:
-    "0 0 52px 20px rgba(217, 119, 6, 0.22), 0 12px 28px rgba(217, 119, 6, 0.22), inset 0 2px 4px rgba(255, 255, 255, 0.35)",
+  width: "4.25rem",
+  height: "4.25rem",
+  borderRadius: vars.radius.xl,
+  background: vars.color.accentSoft,
+  border: `1px solid color-mix(in srgb, ${vars.color.accentLogo} 42%, transparent)`,
+  color: vars.color.accentLogo,
+  boxShadow: `0 0 2.5rem ${vars.color.accentGlow}, inset 0 1px 0 color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
   marginBottom: vars.space.xs,
   "@media": {
     [media.compact]: {
-      width: "3.25rem", // Smaller compact icon container
+      width: "3.25rem",
       height: "3.25rem",
       borderRadius: "0.85rem",
       marginBottom: 0,
@@ -116,27 +123,23 @@ export const dateBadge = style({
   padding: `${vars.space.xs} ${vars.space.md}`,
   fontSize: vars.fontSize.xs,
   fontWeight: vars.fontWeight.bold,
-  letterSpacing: "0.14em",
+  letterSpacing: "0.12em",
   textTransform: "uppercase",
   display: "inline-flex",
   alignItems: "center",
   gap: vars.space.xxs,
 });
 
-export const iosTitle = style({
-  fontFamily: vars.font.display,
-  fontSize: vars.fontSize["2xl"],
-  fontWeight: vars.fontWeight.black,
-  color: vars.color.text,
-  margin: 0,
-  letterSpacing: "-0.03em",
-  lineHeight: vars.lineHeight.tight,
-  "@media": {
-    [media.compact]: {
-      fontSize: "1.35rem", // More compact title size
+export const iosTitle = style([
+  screenTitle,
+  {
+    "@media": {
+      [media.compact]: {
+        fontSize: vars.fontSize.xl,
+      },
     },
   },
-});
+]);
 
 export const iosSubtitle = style({
   color: vars.color.textMuted,
@@ -147,8 +150,8 @@ export const iosSubtitle = style({
   textWrap: "balance",
   "@media": {
     [media.compact]: {
-      fontSize: "0.8rem", // More compact subtitle description
-      lineHeight: 1.25,
+      fontSize: vars.fontSize.sm,
+      lineHeight: vars.lineHeight.snug,
     },
   },
 });
@@ -166,41 +169,19 @@ export const buttonContainer = style({
   marginTop: "auto",
 });
 
-export const iosWhiteButton = style({
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  width: "100%",
-  minHeight: "3.75rem", // Large height for premium iOS action button feel
-  background: "#ffffff", // Pure white button background
-  color: "#000000", // High contrast black text
-  border: "none",
-  borderRadius: vars.radius.pill, // Oval/pill shape
-  fontSize: vars.fontSize.md, // Slightly larger, clear font size
-  fontWeight: vars.fontWeight.bold, // Bold weight for premium readability
-  cursor: "pointer",
-  boxShadow:
-    "0 10px 30px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(255, 255, 255, 0.2)",
-  transition: "all 0.2s cubic-bezier(0.2, 0, 0, 1)",
-  outline: "none",
-  selectors: {
-    "&:hover:not(:disabled)": {
-      background: "#f4f4f5", // Smooth iOS system off-white
-      boxShadow:
-        "0 14px 36px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(255, 255, 255, 0.2)",
-    },
-    "&:active:not(:disabled)": {
-      background: "#e4e4e7", // Smooth iOS system active gray
-      transform: "scale(0.96)",
-    },
-    "&:disabled": {
-      cursor: "not-allowed",
-      opacity: 0.4,
-      background: "rgba(255, 255, 255, 0.6)",
-      color: "rgba(0, 0, 0, 0.5)",
+export const iosWhiteButton = style([
+  action({ fullWidth: true, tone: "primary" }),
+  {
+    minHeight: "3.75rem",
+    borderRadius: vars.radius.pill,
+    fontSize: vars.fontSize.md,
+    selectors: {
+      "&:active:not(:disabled)": {
+        transform: "scale(0.96)",
+      },
     },
   },
-});
+]);
 
 export const buttonArrow = style({
   marginLeft: vars.space.xs,
