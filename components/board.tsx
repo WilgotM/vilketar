@@ -3,6 +3,10 @@ import { AnimatePresence, motion } from "motion/react";
 import React from "react";
 import { markStartedDailyGameProgress } from "../lib/daily-storage";
 import {
+  loadDailyTutorialStatus,
+  shouldStartDailyTutorial,
+} from "../lib/daily-tutorial";
+import {
   checkCorrect,
   drawNextCard,
   preloadImage,
@@ -16,6 +20,9 @@ import {
 import { GameDifficulty, GameState } from "../types/game";
 import { PreparedCard } from "../types/game";
 import { GameMode, SelectionRoute } from "../types/routes";
+import DailyGameTutorial, {
+  DailyGameTutorialHandle,
+} from "./daily-game-tutorial";
 import DealAnimationLayer from "./deal-animation-layer";
 import GameOver from "./game-over";
 import Lives from "./lives";
@@ -105,6 +112,7 @@ export default function Board(props: Props) {
   const [hiddenPlayedCardId, setHiddenPlayedCardId] = React.useState<
     null | string
   >(null);
+  const [dailyTutorialActive, setDailyTutorialActive] = React.useState(false);
   const boardRef = React.useRef<HTMLDivElement | null>(null);
   const bottomRef = React.useRef<HTMLDivElement | null>(null);
   const deckAnchorRef = React.useRef<HTMLDivElement | null>(null);
@@ -114,6 +122,8 @@ export default function Board(props: Props) {
   const lastDragCentreXRef = React.useRef<number | null>(null);
   const previousNextIdRef = React.useRef<string | null>(null);
   const previewIndexRef = React.useRef<number | null>(null);
+  const tutorialRef = React.useRef<DailyGameTutorialHandle | null>(null);
+  const tutorialEligibilityCheckedRef = React.useRef(false);
   const isPlacementSettling =
     pendingPlacement !== null || placementAnimation !== null;
   const isDeckExhausted = state.next === null;
@@ -162,6 +172,21 @@ export default function Board(props: Props) {
       }, -1) + 1
     );
   }, [state.played]);
+
+  React.useEffect(() => {
+    if (tutorialEligibilityCheckedRef.current || gameMode !== "daily") {
+      return;
+    }
+
+    tutorialEligibilityCheckedRef.current = true;
+    setDailyTutorialActive(
+      shouldStartDailyTutorial({
+        playedCardCount: state.played.length,
+        restoredFromSnapshot,
+        status: loadDailyTutorialStatus(),
+      }),
+    );
+  }, [gameMode, restoredFromSnapshot, state.played.length]);
 
   const commitPlacedCard = React.useCallback(
     (card: PreparedCard) => {
@@ -321,6 +346,7 @@ export default function Board(props: Props) {
     point: { x: number; y: number },
     rect: DOMRect | null,
   ) {
+    tutorialRef.current?.handleDragStart();
     setIsDragging(true);
     dragDirectionRef.current = 0;
     lastDragCentreXRef.current = rect ? rect.left + rect.width / 2 : point.x;
@@ -416,10 +442,12 @@ export default function Board(props: Props) {
     setPreviewIndex(null);
 
     if (state.next === null || droppedIndex === null || rect === null) {
+      tutorialRef.current?.handleDropRejected();
       return false;
     }
 
     commitDeckDrop(state.next, droppedIndex, rect);
+    tutorialRef.current?.handleDropAccepted();
     return true;
   }
 
@@ -805,8 +833,26 @@ export default function Board(props: Props) {
             }
             setHiddenPlayedCardId(null);
             setPlacementAnimation(null);
+            tutorialRef.current?.handlePlacementComplete();
           }}
           scrollContainerRef={bottomRef}
+        />
+      ) : null}
+      {dailyTutorialActive ? (
+        <DailyGameTutorial
+          ref={tutorialRef}
+          boardRef={boardRef}
+          bottomRef={bottomRef}
+          deckAnchorRef={deckAnchorRef}
+          layoutKey={`${deckState}:${state.played.map((item) => item.id).join(":")}`}
+          onFinished={() => setDailyTutorialActive(false)}
+          ready={
+            showLives &&
+            deckState === "ready" &&
+            state.next !== null &&
+            state.played.length > 0 &&
+            !isPlacementSettling
+          }
         />
       ) : null}
     </div>
