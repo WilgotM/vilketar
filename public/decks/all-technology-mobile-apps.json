@@ -18,55 +18,5 @@
     "title": "”Melodikrysset” börjar sändas",
     "wikipediaSlug": "Melodikrysset",
     "year": 1965
-  },
-  {
-    "fact": "Kry grundas som digital vårdtjänst.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "manual-Kry_(f%C3%B6retag)",
-    "subtitle": "Svensk vårdapp",
-    "title": "Kry grundas",
-    "wikipediaSlug": "Kry_(f%C3%B6retag)",
-    "year": 2015
-  },
-  {
-    "qid": "Q116947",
-    "title": "‘Messenger’ lanseras",
-    "subtitle": "Mobilapp",
-    "year": 2011,
-    "fact": "Messenger är en amerikansk proprietär snabbmeddelandetjänst utvecklad av Meta Platforms, företaget som driver Facebook.",
-    "wikipediaSlug": "Facebook_Messenger",
-    "image": "Facebook_Messenger_logo_2025.svg",
-    "pageViews": 120605
-  },
-  {
-    "qid": "Q65359104",
-    "title": "‘HBO Max’ lanseras",
-    "subtitle": "Mobilapp",
-    "year": 2020,
-    "fact": "HBO Max är en amerikansk prenumerationsbaserad video on-demand over-the-top-streamingtjänst, en egen enhet inom Warner Bros.",
-    "wikipediaSlug": "HBO_Max",
-    "image": "HBO_Max_(2025).svg",
-    "pageViews": 98047
-  },
-  {
-    "qid": "Q603337",
-    "title": "‘Apple Wallet’ lanseras",
-    "subtitle": "Mobilapp",
-    "year": 2012,
-    "fact": "Apple Wallet är en digital plånbok utvecklad av Apple Inc. och inkluderad i iOS och watchOS som låter användare lagra Wallet-pass som kuponger, boardingkort, student-ID-kort, statliga ID-kort, företagsuppgifter, resortpass, bilnycklar, hemnycklar, evenemangsbiljetter, kollektivtrafikpass, butikskort, och – med start i iOS 8.1 – kreditkort och bankkort för användning via Apple Pay.",
-    "wikipediaSlug": "Apple_Wallet",
-    "image": "Apple_Wallet_screenshot.png",
-    "pageViews": 53883
-  },
-  {
-    "qid": "Q3077586",
-    "title": "‘Bilibili’ lanseras",
-    "subtitle": "Mobilapp",
-    "year": 2009,
-    "fact": "Bilibili, med smeknamnet B Site, är en kinesisk webbplats för videodelning online, baserad i Shanghai, där användare kan ladda upp, titta på och lägga till överlagd kommentar på videor.",
-    "wikipediaSlug": "Bilibili",
-    "image": "Bilibili_logo.svg",
-    "pageViews": 51928
   }
 ]

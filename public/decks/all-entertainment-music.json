@@ -10,16 +10,6 @@
     "year": 1972
   },
   {
-    "fact": "Avicii slår igenom internationellt med Levels.",
-    "image": "Avicii_2014_003.jpg",
-    "pageViews": 420000,
-    "qid": "Q505476",
-    "subtitle": "Svensk DJ och musikproducent",
-    "title": "Avicii slår igenom",
-    "wikipediaSlug": "Avicii",
-    "year": 2011
-  },
-  {
     "fact": "Max Martin får ett internationellt genombrott som låtskrivare.",
     "image": "MaxMartin.jpg",
     "pageViews": 300000,
@@ -28,46 +18,6 @@
     "title": "Max Martin får sitt stora genombrott",
     "wikipediaSlug": "Max_Martin",
     "year": 1998
-  },
-  {
-    "fact": "Levels blir Aviciis internationella genombrott.",
-    "image": "",
-    "pageViews": 300000,
-    "qid": "Q2315784",
-    "subtitle": "Låt av Avicii",
-    "title": "”Levels” släpps",
-    "wikipediaSlug": "Levels",
-    "year": 2011
-  },
-  {
-    "fact": "Wake Me Up blir en av Aviciis största låtar.",
-    "image": "",
-    "pageViews": 300000,
-    "qid": "manual-Wake_Me_Up_(Avicii-l%C3%A5t)",
-    "subtitle": "Låt av Avicii",
-    "title": "”Wake Me Up” släpps",
-    "wikipediaSlug": "Wake_Me_Up_(Avicii-l%C3%A5t)",
-    "year": 2013
-  },
-  {
-    "fact": "Loreen blir första kvinna att vinna Eurovision två gånger.",
-    "image": "Loreen_-_Melodifestivalen_2023,_Malmö_118_(cropped).jpg",
-    "pageViews": 300000,
-    "qid": "Q483376",
-    "subtitle": "Svensk artist",
-    "title": "Loreen vinner Eurovision igen",
-    "wikipediaSlug": "Loreen",
-    "year": 2023
-  },
-  {
-    "fact": "Carola slår igenom i Melodifestivalen med Främling.",
-    "image": "Carola_Häggkvist_in_June_2015-3.jpg",
-    "pageViews": 260000,
-    "qid": "Q212524",
-    "subtitle": "Svensk artist",
-    "title": "Carola slår igenom",
-    "wikipediaSlug": "Carola_H%C3%A4ggkvist",
-    "year": 1983
   },
   {
     "fact": "Robyn slår igenom som tonårsartist.",
@@ -81,7 +31,7 @@
   },
   {
     "fact": "Mamma Mia! har premiär i London.",
-    "image": "",
+    "image": "ABBA_-_TopPop_1974_5.png",
     "pageViews": 260000,
     "qid": "manual-Mamma_Mia!_(musikal)",
     "subtitle": "Musikal med ABBA-musik",
@@ -120,16 +70,6 @@
     "year": 2008
   },
   {
-    "fact": "Dancing On My Own blir en modern svensk popklassiker.",
-    "image": "",
-    "pageViews": 260000,
-    "qid": "Q3488185",
-    "subtitle": "Låt av Robyn",
-    "title": "”Dancing On My Own” släpps",
-    "wikipediaSlug": "Dancing_on_My_Own",
-    "year": 2010
-  },
-  {
     "fact": "Tattoo vinner Eurovision Song Contest för Sverige.",
     "image": "Loreen_-_Melodifestivalen_2023,_Malmö_563.jpg",
     "pageViews": 260000,
@@ -150,26 +90,6 @@
     "year": 1959
   },
   {
-    "fact": "Jonas Gardell får sitt breda genombrott som författare och artist.",
-    "image": "Jonas_Gardell,_2022.jpg",
-    "pageViews": 240000,
-    "qid": "Q982351",
-    "subtitle": "Svensk författare och komiker",
-    "title": "Jonas Gardell slår igenom",
-    "wikipediaSlug": "Jonas_Gardell",
-    "year": 1985
-  },
-  {
-    "fact": "The Final Countdown blir en av Sveriges mest kända rocklåtar.",
-    "image": "",
-    "pageViews": 240000,
-    "qid": "Q1165771",
-    "subtitle": "Låt av Europe",
-    "title": "”The Final Countdown” släpps",
-    "wikipediaSlug": "The_Final_Countdown_(s%C3%A5ng)",
-    "year": 1986
-  },
-  {
     "fact": "Darin slår igenom i Idol.",
     "image": "Darin_Zanyar_in_2020_(cropped).jpg",
     "pageViews": 240000,
@@ -188,16 +108,6 @@
     "title": "Måns Zelmerlöw slår igenom",
     "wikipediaSlug": "M%C3%A5ns_Zelmerl%C3%B6w",
     "year": 2005
-  },
-  {
-    "fact": "Petra Mede leder Melodifestivalen och blir en stor tv-profil.",
-    "image": "Petra_Mede_Eurovision_Song_Contest_2024_Final_Malmö_press_conference_presenters_05.jpg",
-    "pageViews": 240000,
-    "qid": "Q3809242",
-    "subtitle": "Svensk programledare",
-    "title": "Petra Mede leder Melodifestivalen",
-    "wikipediaSlug": "Petra_Mede",
-    "year": 2009
   },
   {
     "fact": "Evert Taube debuterar som författare och visdiktare.",
@@ -320,16 +230,6 @@
     "year": 1974
   },
   {
-    "fact": "Ulf Lundell romandebuterar med Jack.",
-    "image": "Ulf_Lundell_1988.png",
-    "pageViews": 220000,
-    "qid": "Q713270",
-    "subtitle": "Svensk artist och författare",
-    "title": "Ulf Lundell romandebuterar",
-    "wikipediaSlug": "Ulf_Lundell",
-    "year": 1976
-  },
-  {
     "fact": "Gyllene Tider bildas i Halmstad.",
     "image": "Gyllene_Tider.jpg",
     "pageViews": 220000,
@@ -338,16 +238,6 @@
     "title": "Gyllene Tider bildas",
     "wikipediaSlug": "Gyllene_Tider",
     "year": 1978
-  },
-  {
-    "fact": "Europe bildas i Upplands Väsby.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "manual-Europe_(musikgrupp)",
-    "subtitle": "Svenskt rockband",
-    "title": "Europe bildas",
-    "wikipediaSlug": "Europe_(musikgrupp)",
-    "year": 1979
   },
   {
     "fact": "Allsång på Skansen börjar sändas i tv.",
@@ -360,36 +250,6 @@
     "year": 1979
   },
   {
-    "fact": "Sommartider blir en svensk sommarklassiker.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q7560439",
-    "subtitle": "Låt av Gyllene Tider",
-    "title": "”Sommartider” släpps",
-    "wikipediaSlug": "Sommartider",
-    "year": 1982
-  },
-  {
-    "fact": "Öppna landskap blir en av Ulf Lundells mest kända låtar.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q297660",
-    "subtitle": "Låt av Ulf Lundell",
-    "title": "”Öppna landskap” släpps",
-    "wikipediaSlug": "%C3%96ppna_landskap",
-    "year": 1982
-  },
-  {
-    "fact": "Främling blir ett av Melodifestivalens största genombrott.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q373108",
-    "subtitle": "Låt framförd av Carola",
-    "title": "”Främling” slår igenom",
-    "wikipediaSlug": "Fr%C3%A4mling_(s%C3%A5ng)",
-    "year": 1983
-  },
-  {
     "fact": "Roxette bildas av Marie Fredriksson och Per Gessle.",
     "image": "Roxette2.jpg",
     "pageViews": 220000,
@@ -397,16 +257,6 @@
     "subtitle": "Svensk popduo",
     "title": "Roxette bildas",
     "wikipediaSlug": "Roxette",
-    "year": 1986
-  },
-  {
-    "fact": "Chess har premiär i London med musik av Benny Andersson och Björn Ulvaeus.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "manual-Chess_(musikal)",
-    "subtitle": "Musikal av svenska låtskrivare",
-    "title": "”Chess” har premiär",
-    "wikipediaSlug": "Chess_(musikal)",
     "year": 1986
   },
   {
@@ -430,16 +280,6 @@
     "year": 1987
   },
   {
-    "fact": "Orup slår igenom som soloartist.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 220000,
-    "qid": "Q12330477",
-    "subtitle": "Svensk artist",
-    "title": "Orup slår igenom",
-    "wikipediaSlug": "Orup",
-    "year": 1988
-  },
-  {
     "fact": "Neneh Cherry får internationellt genombrott med Buffalo Stance.",
     "image": "Neneh_Cherry.jpg",
     "pageViews": 220000,
@@ -460,18 +300,8 @@
     "year": 1989
   },
   {
-    "fact": "Fångad av en stormvind vinner Eurovision Song Contest.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q1004668",
-    "subtitle": "Låt framförd av Carola",
-    "title": "”Fångad av en stormvind” vinner Eurovision",
-    "wikipediaSlug": "F%C3%A5ngad_av_en_stormvind",
-    "year": 1991
-  },
-  {
     "fact": "Army of Lovers får sitt internationella genombrott.",
-    "image": "",
+    "image": "Army of Lovers.png",
     "pageViews": 220000,
     "qid": "Q689823",
     "subtitle": "Svensk popgrupp",
@@ -498,36 +328,6 @@
     "title": "Lasse Berghagen leder Allsång",
     "wikipediaSlug": "Lasse_Berghagen",
     "year": 1994
-  },
-  {
-    "fact": "Nordman slår igenom med folkpop på svenska.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 220000,
-    "qid": "Q7050845",
-    "subtitle": "Svensk musikgrupp",
-    "title": "Nordman slår igenom",
-    "wikipediaSlug": "Nordman",
-    "year": 1994
-  },
-  {
-    "fact": "Kristina från Duvemåla har premiär i Malmö.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q142885",
-    "subtitle": "Svensk musikal",
-    "title": "”Kristina från Duvemåla” har premiär",
-    "wikipediaSlug": "Kristina_fr%C3%A5n_Duvem%C3%A5la",
-    "year": 1995
-  },
-  {
-    "fact": "Lovefool blir The Cardigans stora internationella hit.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q2547704",
-    "subtitle": "Låt av The Cardigans",
-    "title": "”Lovefool” släpps",
-    "wikipediaSlug": "Lovefool",
-    "year": 1996
   },
   {
     "fact": "Lars Winnerbäck får sitt breda genombrott som singer-songwriter.",
@@ -570,16 +370,6 @@
     "year": 1998
   },
   {
-    "fact": "Charlotte Perrelli vinner Eurovision Song Contest med Take Me to Your Heaven.",
-    "image": "Charlotte_Perrelli_Sommarkrysset_2016.jpg",
-    "pageViews": 220000,
-    "qid": "Q180836",
-    "subtitle": "Svensk artist",
-    "title": "Charlotte Perrelli vinner Eurovision",
-    "wikipediaSlug": "Charlotte_Perrelli",
-    "year": 1999
-  },
-  {
     "fact": "José González får sitt genombrott med Veneer.",
     "image": "José_González.jpg",
     "pageViews": 220000,
@@ -588,36 +378,6 @@
     "title": "José González slår igenom",
     "wikipediaSlug": "Jos%C3%A9_Gonz%C3%A1lez",
     "year": 2003
-  },
-  {
-    "fact": "Idol börjar sändas i Sverige.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q1656877",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Idol” börjar sändas",
-    "wikipediaSlug": "Idol_(Sverige)",
-    "year": 2004
-  },
-  {
-    "fact": "Basshunter slår igenom med Boten Anna.",
-    "image": "Basshunter,_20_april_2008_in_Halmstad.jpg",
-    "pageViews": 220000,
-    "qid": "Q383541",
-    "subtitle": "Svensk artist",
-    "title": "Basshunter slår igenom",
-    "wikipediaSlug": "Basshunter",
-    "year": 2006
-  },
-  {
-    "fact": "Boten Anna blir en svensk internet- och pophit.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q61044229",
-    "subtitle": "Låt av Basshunter",
-    "title": "”Boten Anna” släpps",
-    "wikipediaSlug": "Boten_Anna",
-    "year": 2006
   },
   {
     "fact": "Swedish House Mafia bildas.",
@@ -630,16 +390,6 @@
     "year": 2008
   },
   {
-    "fact": "Så mycket bättre börjar sändas i TV4.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q2757779",
-    "subtitle": "Svenskt musikprogram",
-    "title": "”Så mycket bättre” börjar sändas",
-    "wikipediaSlug": "S%C3%A5_mycket_b%C3%A4ttre",
-    "year": 2010
-  },
-  {
     "fact": "Jag kommer blir en av Veronica Maggios mest kända låtar.",
     "image": "Veronica_Maggio_-_Homecoming_Festival-4_(cropped).jpg",
     "pageViews": 220000,
@@ -648,26 +398,6 @@
     "title": "”Jag kommer” släpps",
     "wikipediaSlug": "Veronica_Maggio",
     "year": 2011
-  },
-  {
-    "fact": "Gina Dirawi leder Melodifestivalen.",
-    "image": "Gina_Dirawi_2026_Melodifestivalen_(cropped).jpg",
-    "pageViews": 220000,
-    "qid": "Q248575",
-    "subtitle": "Svensk programledare",
-    "title": "Gina Dirawi leder Melodifestivalen",
-    "wikipediaSlug": "Gina_Dirawi",
-    "year": 2012
-  },
-  {
-    "fact": "ABBA The Museum öppnar på Djurgården.",
-    "image": "ABBA_The_Museum_logo.svg",
-    "pageViews": 220000,
-    "qid": "Q2743819",
-    "subtitle": "Musikmuseum i Stockholm",
-    "title": "ABBA The Museum öppnar",
-    "wikipediaSlug": "Abbamuseet",
-    "year": 2013
   },
   {
     "fact": "Tove Lo slår igenom internationellt.",
@@ -688,865 +418,5 @@
     "title": "Sanna Nielsen vinner Melodifestivalen",
     "wikipediaSlug": "Sanna_Nielsen",
     "year": 2014
-  },
-  {
-    "fact": "Olle Adolphson debuterar som vissångare.",
-    "image": "Singer_and_songwriter_Olle_Adolphson_at_Bastugatan_32,_Stockholm,_1963.jpg",
-    "pageViews": 200000,
-    "qid": "Q4580910",
-    "subtitle": "Svensk visdiktare",
-    "title": "Olle Adolphson debuterar",
-    "wikipediaSlug": "Olle_Adolphson",
-    "year": 1956
-  },
-  {
-    "fact": "Jan Malmsjö får sitt breda genombrott på scen och i tv.",
-    "image": "Jan_Malmsjö.melodifestivalen2019.19e112.1870960.jpg",
-    "pageViews": 200000,
-    "qid": "Q728985",
-    "subtitle": "Svensk skådespelare och artist",
-    "title": "Jan Malmsjö slår igenom",
-    "wikipediaSlug": "Jan_Malmsj%C3%B6",
-    "year": 1960
-  },
-  {
-    "fact": "Hoola Bandoola Band bildas i Malmö.",
-    "image": "",
-    "pageViews": 200000,
-    "qid": "Q1775501",
-    "subtitle": "Svenskt proggband",
-    "title": "Hoola Bandoola Band bildas",
-    "wikipediaSlug": "Hoola_Bandoola_Band",
-    "year": 1970
-  },
-  {
-    "fact": "Peps Persson blir en svensk reggae- och bluesprofil.",
-    "image": "",
-    "pageViews": 200000,
-    "qid": "Q1459831",
-    "subtitle": "Svensk artist",
-    "title": "Peps Persson slår igenom",
-    "wikipediaSlug": "Peps_Persson",
-    "year": 1975
-  },
-  {
-    "fact": "Ebba Grön gör Staten och kapitalet till en svensk punkklassiker.",
-    "image": "",
-    "pageViews": 200000,
-    "qid": "Q10468601",
-    "subtitle": "Låt av Ebba Grön",
-    "title": "”Staten och kapitalet” släpps",
-    "wikipediaSlug": "Den_ena_handen_vet_vad_den_andra_g%C3%B6r",
-    "year": 1980
-  },
-  {
-    "fact": "Diggi-loo diggi-ley vinner Eurovision Song Contest.",
-    "image": "",
-    "pageViews": 200000,
-    "qid": "Q718759",
-    "subtitle": "Låt av Herreys",
-    "title": "”Diggi-loo diggi-ley” vinner Eurovision",
-    "wikipediaSlug": "Diggi_loo_diggi_ley",
-    "year": 1984
-  },
-  {
-    "fact": "Niklas Strömstedt får sitt breda genombrott som artist.",
-    "image": "Niklas_Strömstedt.jpg",
-    "pageViews": 200000,
-    "qid": "Q4353213",
-    "subtitle": "Svensk artist",
-    "title": "Niklas Strömstedt slår igenom",
-    "wikipediaSlug": "Niklas_Str%C3%B6mstedt",
-    "year": 1989
-  },
-  {
-    "fact": "Bo Kaspers Orkester bildas i Stockholm.",
-    "image": "Bokasper_press.jpg",
-    "pageViews": 200000,
-    "qid": "Q4128881",
-    "subtitle": "Svensk popgrupp",
-    "title": "Bo Kaspers Orkester bildas",
-    "wikipediaSlug": "Bo_Kaspers_Orkester",
-    "year": 1991
-  },
-  {
-    "fact": "Lisa Ekdahl får sitt genombrott med Vem vet.",
-    "image": "Lisa_Ekdahl_EM1B1465_(34342178583).jpg",
-    "pageViews": 200000,
-    "qid": "Q64164",
-    "subtitle": "Svensk artist",
-    "title": "Lisa Ekdahl slår igenom",
-    "wikipediaSlug": "Lisa_Ekdahl",
-    "year": 1994
-  },
-  {
-    "fact": "Helen Sjöholm får sitt genombrott i Kristina från Duvemåla.",
-    "image": "Helen_Sjöholm_2012-09-24_001.jpg",
-    "pageViews": 200000,
-    "qid": "Q468134",
-    "subtitle": "Svensk artist",
-    "title": "Helen Sjöholm slår igenom",
-    "wikipediaSlug": "Helen_Sj%C3%B6holm",
-    "year": 1995
-  },
-  {
-    "fact": "Take Me to Your Heaven vinner Eurovision Song Contest.",
-    "image": "",
-    "pageViews": 200000,
-    "qid": "Q62974722",
-    "subtitle": "Låt framförd av Charlotte Perrelli",
-    "title": "”Take Me to Your Heaven” vinner Eurovision",
-    "wikipediaSlug": "Tusen_och_en_natt_(s%C3%A5ng)",
-    "year": 1999
-  },
-  {
-    "fact": "Timbuktu får sitt breda genombrott i svensk hiphop.",
-    "image": "Timbuktu_på_Grammisgalan_2013.jpg",
-    "pageViews": 200000,
-    "qid": "Q44828",
-    "subtitle": "Svensk hiphopartist",
-    "title": "Timbuktu slår igenom",
-    "wikipediaSlug": "Timbuktu_(artist)",
-    "year": 2000
-  },
-  {
-    "fact": "Dom andra blir en av Kents stora 2000-talshits.",
-    "image": "Kent_live_in_May_2005.jpg",
-    "pageViews": 200000,
-    "qid": "Q648786",
-    "subtitle": "Låt av Kent",
-    "title": "”Dom andra” släpps",
-    "wikipediaSlug": "Kent_(musikgrupp)",
-    "year": 2002
-  },
-  {
-    "fact": "Amy Diamond slår igenom som ung popartist.",
-    "image": "Amy_Diamond_closeup_Umeå_Kulturnatta_2011.jpg",
-    "pageViews": 200000,
-    "qid": "Q132154",
-    "subtitle": "Svensk artist",
-    "title": "Amy Diamond slår igenom",
-    "wikipediaSlug": "Amy_Deasismont",
-    "year": 2005
-  },
-  {
-    "fact": "Owe Thörnqvist får sitt genombrott som sångare och låtskrivare.",
-    "image": "Owe_Thörnqvist_05_(cropped)_@_Melodifestivalen_2017_-_Jonatan_Svensson_Glad.jpg",
-    "pageViews": 180000,
-    "qid": "Q6210414",
-    "subtitle": "Svensk artist",
-    "title": "Owe Thörnqvist slår igenom",
-    "wikipediaSlug": "Owe_Th%C3%B6rnqvist",
-    "year": 1950
-  },
-  {
-    "fact": "Vikingarna bildas och blir ett av Sveriges mest kända dansband.",
-    "image": "Christer_Sjögren.jpg",
-    "pageViews": 180000,
-    "qid": "Q644865",
-    "subtitle": "Svenskt dansband",
-    "title": "Vikingarna bildas",
-    "wikipediaSlug": "Vikingarna_(musikgrupp)",
-    "year": 1958
-  },
-  {
-    "fact": "Grynet Molvig blir folkkär i svensk underhållning.",
-    "image": "68746_Grynet_Molvig.jpg",
-    "pageViews": 180000,
-    "qid": "Q1991301",
-    "subtitle": "Nordisk artist och skådespelare",
-    "title": "Grynet Molvig slår igenom",
-    "wikipediaSlug": "Grynet_Molvig",
-    "year": 1960
-  },
-  {
-    "fact": "Sakta vi gå genom stan blir en svensk jazzklassiker.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q4563559",
-    "subtitle": "Låt med Monica Zetterlund",
-    "title": "”Sakta vi gå genom stan” släpps",
-    "wikipediaSlug": "Walkin'_My_Baby_Back_Home",
-    "year": 1961
-  },
-  {
-    "fact": "Sånt är livet blir en svensk schlagerklassiker.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 180000,
-    "qid": "Q10688442",
-    "subtitle": "Låt med Anita Lindblom",
-    "title": "”Sånt är livet” släpps",
-    "wikipediaSlug": "S%C3%A5nt_%C3%A4r_livet",
-    "year": 1961
-  },
-  {
-    "fact": "Fred Åkerström släpper sitt första album.",
-    "image": "Fred_Åkerström_11_mars_1968_(cropped).jpg",
-    "pageViews": 180000,
-    "qid": "Q1398777",
-    "subtitle": "Svensk vissångare",
-    "title": "Fred Åkerström albumdebuterar",
-    "wikipediaSlug": "Fred_%C3%85kerstr%C3%B6m",
-    "year": 1963
-  },
-  {
-    "fact": "Grammis delas ut för första gången.",
-    "image": "Några_Grammisvinnare_2013.jpg",
-    "pageViews": 180000,
-    "qid": "Q1542122",
-    "subtitle": "Svenskt musikpris",
-    "title": "Grammis delas ut första gången",
-    "wikipediaSlug": "Grammis",
-    "year": 1969
-  },
-  {
-    "fact": "Nationalteatern bildas i Göteborg.",
-    "image": "Nationalteatern_2013_001.jpg",
-    "pageViews": 180000,
-    "qid": "Q2425672",
-    "subtitle": "Svensk musik- och teatergrupp",
-    "title": "Nationalteatern bildas",
-    "wikipediaSlug": "Nationalteatern",
-    "year": 1969
-  },
-  {
-    "fact": "Tomas Ledin släpper sitt debutalbum.",
-    "image": "Tomas_Ledin_in_June_2015.jpg",
-    "pageViews": 180000,
-    "qid": "Q955209",
-    "subtitle": "Svensk artist",
-    "title": "Tomas Ledin albumdebuterar",
-    "wikipediaSlug": "Tomas_Ledin",
-    "year": 1972
-  },
-  {
-    "fact": "Barbro Hörberg får sitt genombrott med Med ögon känsliga för grönt.",
-    "image": "Barbro-Horberg-plays-the-guitar-352263774740.jpg",
-    "pageViews": 180000,
-    "qid": "Q4955491",
-    "subtitle": "Svensk vissångare",
-    "title": "Barbro Hörberg slår igenom",
-    "wikipediaSlug": "Barbro_H%C3%B6rberg",
-    "year": 1973
-  },
-  {
-    "fact": "Eva Dahlgren släpper sitt debutalbum.",
-    "image": "Eva_Dahlgren_2016-03-10_004.jpg",
-    "pageViews": 180000,
-    "qid": "Q446588",
-    "subtitle": "Svensk artist",
-    "title": "Eva Dahlgren albumdebuterar",
-    "wikipediaSlug": "Eva_Dahlgren",
-    "year": 1978
-  },
-  {
-    "fact": "Okej börjar ges ut och blir stor bland musikintresserade ungdomar.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q3371297",
-    "subtitle": "Svensk ungdomstidning",
-    "title": "Okej börjar ges ut",
-    "wikipediaSlug": "Okej_(tidning)",
-    "year": 1980
-  },
-  {
-    "fact": "Ratata bildas i Stockholm.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q1269895",
-    "subtitle": "Svensk popgrupp",
-    "title": "Ratata bildas",
-    "wikipediaSlug": "Ratata",
-    "year": 1980
-  },
-  {
-    "fact": "Kikki Danielsson får sitt stora genombrott i Melodifestivalen.",
-    "image": "Kikki_danielsson.melodifestivalen2018.18d873.1460296.jpg",
-    "pageViews": 180000,
-    "qid": "Q235820",
-    "subtitle": "Svensk artist",
-    "title": "Kikki Danielsson slår igenom",
-    "wikipediaSlug": "Kikki_Danielsson",
-    "year": 1982
-  },
-  {
-    "fact": "Per Gessle släpper sitt första soloalbum.",
-    "image": "Per_Gessle,_Bokmässan_2014_2_(crop).jpg",
-    "pageViews": 180000,
-    "qid": "Q312801",
-    "subtitle": "Svensk artist",
-    "title": "Per Gessle solodebuterar",
-    "wikipediaSlug": "Per_Gessle",
-    "year": 1983
-  },
-  {
-    "fact": "Imperiet bildas efter Ebba Grön.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q1781599",
-    "subtitle": "Svenskt rockband",
-    "title": "Imperiet bildas",
-    "wikipediaSlug": "Imperiet",
-    "year": 1983
-  },
-  {
-    "fact": "Marie Fredriksson släpper sitt första soloalbum.",
-    "image": "Roxette_2014-04-08_002_(cropped).jpg",
-    "pageViews": 180000,
-    "qid": "Q184841",
-    "subtitle": "Svensk artist",
-    "title": "Marie Fredriksson solodebuterar",
-    "wikipediaSlug": "Marie_Fredriksson",
-    "year": 1984
-  },
-  {
-    "fact": "Stad i ljus vinner Melodifestivalen.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 180000,
-    "qid": "Q10677107",
-    "subtitle": "Låt framförd av Tommy Körberg",
-    "title": "”Stad i ljus” vinner Melodifestivalen",
-    "wikipediaSlug": "Stad_i_ljus",
-    "year": 1988
-  },
-  {
-    "fact": "Mauro Scocco solodebuterar efter Ratata.",
-    "image": "Mauro_Scocco_2012-10-05_001.jpg",
-    "pageViews": 180000,
-    "qid": "Q3852934",
-    "subtitle": "Svensk artist",
-    "title": "Mauro Scocco solodebuterar",
-    "wikipediaSlug": "Mauro_Scocco",
-    "year": 1988
-  },
-  {
-    "fact": "Jakob Hellman släpper albumet ...och stora havet.",
-    "image": "Solid_sound_2014_089.jpg",
-    "pageViews": 180000,
-    "qid": "Q3429588",
-    "subtitle": "Svensk artist",
-    "title": "Jakob Hellman albumdebuterar",
-    "wikipediaSlug": "Jakob_Hellman",
-    "year": 1989
-  },
-  {
-    "fact": "Titiyo får sitt genombrott som soul- och popartist.",
-    "image": "Titiyo2013-10-24_001.jpg",
-    "pageViews": 180000,
-    "qid": "Q268904",
-    "subtitle": "Svensk artist",
-    "title": "Titiyo slår igenom",
-    "wikipediaSlug": "Titiyo",
-    "year": 1989
-  },
-  {
-    "fact": "Ace of Base bildas i Göteborg.",
-    "image": "Aob_tour.jpg",
-    "pageViews": 180000,
-    "qid": "Q151634",
-    "subtitle": "Svensk popgrupp",
-    "title": "Ace of Base bildas",
-    "wikipediaSlug": "Ace_of_Base",
-    "year": 1990
-  },
-  {
-    "fact": "Opeth bildas i Stockholm.",
-    "image": "Metal_band_Opeth_live_at_Tuska_(Finland)_2006.jpg",
-    "pageViews": 180000,
-    "qid": "Q18557",
-    "subtitle": "Svenskt metalband",
-    "title": "Opeth bildas",
-    "wikipediaSlug": "Opeth",
-    "year": 1990
-  },
-  {
-    "fact": "Lisa Nilsson slår igenom med Himlen runt hörnet.",
-    "image": "Lisa_Nilsson_i_Allsång_på_Skansen.jpg",
-    "pageViews": 180000,
-    "qid": "Q3042906",
-    "subtitle": "Svensk artist",
-    "title": "Lisa Nilsson slår igenom",
-    "wikipediaSlug": "Lisa_Nilsson",
-    "year": 1992
-  },
-  {
-    "fact": "Himlen runt hörnet blir en svensk popklassiker.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q10524153",
-    "subtitle": "Låt av Lisa Nilsson",
-    "title": "”Himlen runt hörnet” släpps",
-    "wikipediaSlug": "Himlen_runt_h%C3%B6rnet",
-    "year": 1992
-  },
-  {
-    "fact": "ZTV börjar sända och blir en ungdomlig musik- och nöjeskanal.",
-    "image": "ZTV_Viasat.png",
-    "pageViews": 180000,
-    "qid": "Q4176314",
-    "subtitle": "Svensk tv-kanal",
-    "title": "ZTV börjar sända",
-    "wikipediaSlug": "ZTV",
-    "year": 1992
-  },
-  {
-    "fact": "The Hives bildas i Fagersta.",
-    "image": "The_Hives_PiP.jpg",
-    "pageViews": 180000,
-    "qid": "Q287690",
-    "subtitle": "Svenskt rockband",
-    "title": "The Hives bildas",
-    "wikipediaSlug": "The_Hives",
-    "year": 1993
-  },
-  {
-    "fact": "Peter Jöback får sitt genombrott i Kristina från Duvemåla.",
-    "image": "Peter_Jöback_på_Grammisgalan_2013.jpg",
-    "pageViews": 180000,
-    "qid": "Q767041",
-    "subtitle": "Svensk artist",
-    "title": "Peter Jöback slår igenom",
-    "wikipediaSlug": "Peter_J%C3%B6back",
-    "year": 1995
-  },
-  {
-    "fact": "Bodies Without Organs bildas.",
-    "image": "BodiesWithoutOrgans.jpg",
-    "pageViews": 180000,
-    "qid": "Q507914",
-    "subtitle": "Svensk popgrupp",
-    "title": "BWO bildas",
-    "wikipediaSlug": "BWO",
-    "year": 2003
-  },
-  {
-    "fact": "Moneybrother får sitt genombrott som soloartist.",
-    "image": "Moneybrother_in_2018-2.jpg",
-    "pageViews": 180000,
-    "qid": "Q1345624",
-    "subtitle": "Svensk artist",
-    "title": "Moneybrother slår igenom",
-    "wikipediaSlug": "Moneybrother",
-    "year": 2003
-  },
-  {
-    "fact": "Laleh släpper sitt debutalbum.",
-    "image": "Laleh_promotional_photo_in_2016.jpg",
-    "pageViews": 180000,
-    "qid": "Q2757867",
-    "subtitle": "Svensk artist",
-    "title": "Laleh albumdebuterar",
-    "wikipediaSlug": "Laleh",
-    "year": 2005
-  },
-  {
-    "fact": "Agnes Carlsson vinner Idol.",
-    "image": "Agnes_Carlsson_2012-06-27_001.jpg",
-    "pageViews": 180000,
-    "qid": "Q229821",
-    "subtitle": "Svensk artist",
-    "title": "Agnes vinner Idol",
-    "wikipediaSlug": "Agnes_Carlsson",
-    "year": 2005
-  },
-  {
-    "fact": "September får sitt breda genombrott med Satellites.",
-    "image": "Petra_Marklund_in_2015.jpg",
-    "pageViews": 180000,
-    "qid": "Q230066",
-    "subtitle": "Svensk artist",
-    "title": "September slår igenom",
-    "wikipediaSlug": "Petra_Marklund",
-    "year": 2005
-  },
-  {
-    "fact": "Danny Saucedo slår igenom i Idol.",
-    "image": "Danny_Saucedo_-_Melodifestivalen_2024-3.jpg",
-    "pageViews": 180000,
-    "qid": "Q324920",
-    "subtitle": "Svensk artist",
-    "title": "Danny Saucedo slår igenom",
-    "wikipediaSlug": "Danny_Saucedo",
-    "year": 2006
-  },
-  {
-    "fact": "Molly Sandén slår igenom i Junior Eurovision.",
-    "image": "Molly_Sandén_På_Sommarkrysset_2016.jpg",
-    "pageViews": 180000,
-    "qid": "Q54836",
-    "subtitle": "Svensk artist",
-    "title": "Molly Sandén slår igenom",
-    "wikipediaSlug": "Molly_Sand%C3%A9n",
-    "year": 2006
-  },
-  {
-    "fact": "Miss Li får sitt genombrott som artist.",
-    "image": "Miss_Li_2016-06-27_001.jpg",
-    "pageViews": 180000,
-    "qid": "Q127340",
-    "subtitle": "Svensk artist",
-    "title": "Miss Li slår igenom",
-    "wikipediaSlug": "Miss_Li",
-    "year": 2006
-  },
-  {
-    "fact": "First Aid Kit bildas av systrarna Klara och Johanna Söderberg.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "manual-First_Aid_Kit_(musikgrupp)",
-    "subtitle": "Svensk musikduo",
-    "title": "First Aid Kit bildas",
-    "wikipediaSlug": "First_Aid_Kit_(musikgrupp)",
-    "year": 2007
-  },
-  {
-    "fact": "Melissa Horn släpper sitt debutalbum.",
-    "image": "Melissa_Horn,_Live_Liseberg,_Gothenburg,_Sweden,_2018-06-29.jpg",
-    "pageViews": 180000,
-    "qid": "Q2741243",
-    "subtitle": "Svensk artist",
-    "title": "Melissa Horn albumdebuterar",
-    "wikipediaSlug": "Melissa_Horn",
-    "year": 2008
-  },
-  {
-    "fact": "Eric Saade får sitt genombrott i Melodifestivalen.",
-    "image": "Melodifestivalen_2019,_deltävling_1,_Scandinavium,_Göteborg,_Eric_Saade,_3_(cropped).jpg",
-    "pageViews": 180000,
-    "qid": "Q12007",
-    "subtitle": "Svensk artist",
-    "title": "Eric Saade slår igenom",
-    "wikipediaSlug": "Eric_Saade",
-    "year": 2010
-  },
-  {
-    "fact": "Hov1 får sitt breda genombrott bland unga svenska lyssnare.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q29647393",
-    "subtitle": "Svensk musikgrupp",
-    "title": "Hov1 slår igenom",
-    "wikipediaSlug": "Hov1",
-    "year": 2015
-  },
-  {
-    "fact": "Benjamin Ingrosso får sitt stora genombrott i Melodifestivalen.",
-    "image": "Benjamin_Ingrosso_-_Rockbjörnen_2024_(cropped).jpg",
-    "pageViews": 180000,
-    "qid": "Q4889354",
-    "subtitle": "Svensk artist",
-    "title": "Benjamin Ingrosso slår igenom",
-    "wikipediaSlug": "Benjamin_Ingrosso",
-    "year": 2018
-  },
-  {
-    "fact": "Nanne Grönvall slår igenom brett med Den vilda.",
-    "image": "Melodifestivalen_2020,_Malmö,_Nanne_Grönvall_01.jpg",
-    "pageViews": 160000,
-    "qid": "Q1922785",
-    "subtitle": "Svensk artist",
-    "title": "Nanne Grönvall slår igenom",
-    "wikipediaSlug": "Nanne_Gr%C3%B6nvall",
-    "year": 1996
-  },
-  {
-    "fact": "Den vilda vinner Melodifestivalen.",
-    "image": "",
-    "pageViews": 160000,
-    "qid": "Q3295887",
-    "subtitle": "Låt av One More Time",
-    "title": "”Den vilda” vinner Melodifestivalen",
-    "wikipediaSlug": "Den_vilda",
-    "year": 1996
-  },
-  {
-    "fact": "Sarek slår igenom i Melodifestivalen.",
-    "image": "",
-    "pageViews": 160000,
-    "qid": "Q5247306",
-    "subtitle": "Svensk musikgrupp",
-    "title": "Sarek slår igenom",
-    "wikipediaSlug": "Sarek_(musikgrupp)",
-    "year": 2003
-  },
-  {
-    "fact": "Oskar Linnros släpper sitt första soloalbum.",
-    "image": "Oskar_Linnros_på_Grammisgalan_2013.jpg",
-    "pageViews": 160000,
-    "qid": "Q4993071",
-    "subtitle": "Svensk artist",
-    "title": "Oskar Linnros solodebuterar",
-    "wikipediaSlug": "Oskar_Linnros",
-    "year": 2010
-  },
-  {
-    "fact": "Daniel Adams-Ray släpper sitt första soloalbum.",
-    "image": "Daniel_Adams-Ray_1_-_cropped.jpg",
-    "pageViews": 160000,
-    "qid": "Q5216357",
-    "subtitle": "Svensk artist",
-    "title": "Daniel Adams-Ray solodebuterar",
-    "wikipediaSlug": "Daniel_Adams-Ray",
-    "year": 2010
-  },
-  {
-    "fact": "Dina Ögon får ett brett genombrott i svensk musik.",
-    "image": "",
-    "pageViews": 160000,
-    "qid": "Q116725483",
-    "subtitle": "Svensk musikgrupp",
-    "title": "Dina Ögon slår igenom",
-    "wikipediaSlug": "Dina_%C3%96gon_(musikgrupp)",
-    "year": 2021
-  },
-  {
-    "fact": "Bolaget får ett brett genombrott med svenska poplåtar.",
-    "image": "",
-    "pageViews": 160000,
-    "qid": "Q114561023",
-    "subtitle": "Svensk musikgrupp",
-    "title": "Bolaget slår igenom",
-    "wikipediaSlug": "Bolaget_(musikgrupp)",
-    "year": 2022
-  },
-  {
-    "qid": "Q135726298",
-    "title": "‘The Life of a Showgirl’ släpps",
-    "subtitle": "Album av Taylor Swift",
-    "year": 2025,
-    "fact": "‘The Life of a Showgirl’ är det tolfte studioalbumet av den amerikanska singer-songwritern Taylor Swift.",
-    "wikipediaSlug": "The_Life_of_a_Showgirl",
-    "image": "Taylor_Swift_–_The_Life_of_a_Showgirl_(album_cover).png",
-    "pageViews": 122142
-  },
-  {
-    "qid": "Q173643",
-    "title": "‘Abbey Road’ ges ut",
-    "subtitle": "Album av The Beatles",
-    "year": 1969,
-    "fact": "‘Abbey Road’ är det elfte studioalbumet av det engelska rockbandet The Beatles, som släpptes den 26 september 1969 av Apple Records.",
-    "wikipediaSlug": "Abbey_Road",
-    "image": "The_Beatles_Abbey_Road_album_cover.jpg",
-    "pageViews": 114239
-  },
-  {
-    "qid": "Q150901",
-    "title": "‘The Dark Side of the Moon’ släpps",
-    "subtitle": "Album av Pink Floyd",
-    "year": 1973,
-    "fact": "‘The Dark Side of the Moon’ är det engelska progressiva rockbandet Pink Floyds åttonde studioalbum, som gavs ut den 1 mars 1973 av Capitol Records i USA och den 16 mars 1973 av Harvest Records i Storbritannien.",
-    "wikipediaSlug": "The_Dark_Side_of_the_Moon",
-    "image": "The_Dark_Side_of_the_Moon_cover.svg",
-    "pageViews": 109977
-  },
-  {
-    "qid": "Q169226",
-    "title": "‘Sgt. Pepper's Lonely Hearts Club Band’ släpps",
-    "subtitle": "Album av The Beatles",
-    "year": 1967,
-    "fact": "Sgt.",
-    "wikipediaSlug": "Sgt._Pepper%27s_Lonely_Hearts_Club_Band",
-    "image": "Sgt._Pepper's_Lonely_Hearts_Club_Band_album_art.jpg",
-    "pageViews": 100409
-  },
-  {
-    "qid": "Q44320",
-    "title": "‘Thriller’ ges ut",
-    "subtitle": "Album av Michael Jackson",
-    "year": 1982,
-    "fact": "Thriller är det sjätte studioalbumet av den amerikanske sångaren och låtskrivaren Michael Jackson.",
-    "wikipediaSlug": "Thriller_(album)",
-    "image": "Michael_Jackson_-_Thriller.png",
-    "pageViews": 92732
-  },
-  {
-    "qid": "Q199585",
-    "title": "‘Let It Be’ har premiär",
-    "subtitle": "Album av The Beatles",
-    "year": 1970,
-    "fact": "‘Let It Be’ är det tolfte och sista studioalbumet av det engelska rockbandet The Beatles.",
-    "wikipediaSlug": "Let_It_Be_(album)",
-    "image": "The_Beatles_-_Let_It_Be.png",
-    "pageViews": 89735
-  },
-  {
-    "qid": "Q3295515",
-    "title": "‘The Beatles’ ges ut",
-    "subtitle": "Album av The Beatles",
-    "year": 1968,
-    "fact": "‘The Beatles’ är det nionde studioalbumet och den enda dubbel-LP:n av det engelska rockbandet The Beatles, och ges ut den 22 november 1968.",
-    "wikipediaSlug": "The_Beatles_(album)",
-    "image": "TheBeatles68LP.jpg",
-    "pageViews": 89237
-  },
-  {
-    "qid": "Q151114",
-    "title": "‘The Wall’ ges ut",
-    "subtitle": "Album av Pink Floyd",
-    "year": 1979,
-    "fact": "The Wall är det elfte studioalbumet av det engelska rockbandet Pink Floyd, som ges ut den 30 november 1979 av Harvest/EMI och Columbia/CBS Records.",
-    "wikipediaSlug": "The_Wall",
-    "image": "PinkFloydWallCoverOriginalNoText.jpg",
-    "pageViews": 77766
-  },
-  {
-    "qid": "Q695405",
-    "title": "‘Rumours’ släpps",
-    "subtitle": "Album av Fleetwood Mac",
-    "year": 1977,
-    "fact": "‘Rumours’ är det elfte studioalbumet av det brittisk-amerikanska rockbandet Fleetwood Mac, som gavs ut den 4 februari 1977 av Warner Bros.",
-    "wikipediaSlug": "Rumours_(album)",
-    "image": "FMacRumours.PNG",
-    "pageViews": 73857
-  },
-  {
-    "qid": "Q185121",
-    "title": "‘Revolver’ släpps",
-    "subtitle": "Album av The Beatles",
-    "year": 1966,
-    "fact": "‘Revolver’ ges ut som det sjunde studioalbumet av det engelska rockbandet The Beatles.",
-    "wikipediaSlug": "Revolver_(Beatles_album)",
-    "image": "Revolver_(album_cover).jpg",
-    "pageViews": 72591
-  },
-  {
-    "qid": "Q187507",
-    "title": "‘Master of Puppets’ ges ut",
-    "subtitle": "Album av Metallica",
-    "year": 1986,
-    "fact": "‘Master of Puppets’ är det tredje studioalbumet av det amerikanska heavy metal-bandet Metallica, som släpptes den 3 mars 1986 av Elektra Records.",
-    "wikipediaSlug": "Master_of_Puppets",
-    "image": "Metallica_-_Master_of_Puppets_cover.jpg",
-    "pageViews": 72327
-  },
-  {
-    "qid": "Q572093",
-    "title": "‘Band on the Run’ ges ut",
-    "subtitle": "Album av Wings",
-    "year": 1973,
-    "fact": "‘Band on the Run’ är det tredje studioalbumet av det brittiska rockbandet Paul McCartney and Wings, som släpptes den 30 november 1973 i Storbritannien och den 5 december 1973 i USA.",
-    "wikipediaSlug": "Band_on_the_Run",
-    "image": "Paul_McCartney_&_Wings-Band_on_the_Run_album_cover.jpg",
-    "pageViews": 72300
-  },
-  {
-    "qid": "Q638409",
-    "title": "‘Mother's Milk’ har premiär",
-    "subtitle": "Album av Red Hot Chili Peppers",
-    "year": 1989,
-    "fact": "‘Mother’s Milk’ är det fjärde studioalbumet av det amerikanska rockbandet Red Hot Chili Peppers, som släpptes den 16 augusti 1989 av EMI Records.",
-    "wikipediaSlug": "Mother%27s_Milk_(album)",
-    "image": "Mother'sMilkAlbumcover.jpg",
-    "pageViews": 69494
-  },
-  {
-    "qid": "Q329396",
-    "title": "‘Blood Sugar Sex Magik’ ges ut",
-    "subtitle": "Album av Red Hot Chili Peppers",
-    "year": 1991,
-    "fact": "Blood Sugar Sex Magik är det femte studioalbumet av det amerikanska rockbandet Red Hot Chili Peppers, som släpptes den 24 september 1991 av Warner Bros.",
-    "wikipediaSlug": "Blood_Sugar_Sex_Magik",
-    "image": "RHCP-BSSM.jpg",
-    "pageViews": 66121
-  },
-  {
-    "qid": "Q190640",
-    "title": "‘Rubber Soul’ släpps",
-    "subtitle": "Album av The Beatles",
-    "year": 1965,
-    "fact": "‘Rubber Soul’ är det sjätte studioalbumet av det engelska rockbandet The Beatles.",
-    "wikipediaSlug": "Rubber_Soul",
-    "image": "Rubber_Soul.png",
-    "pageViews": 63918
-  },
-  {
-    "qid": "Q200872",
-    "title": "‘Wish You Were Here’ ges ut",
-    "subtitle": "Album av Pink Floyd",
-    "year": 1975,
-    "fact": "‘Wish You Were Here’ är det nionde studioalbumet av det engelska rockbandet Pink Floyd, som gavs ut den 12 september 1975 via Harvest Records i Storbritannien och en dag senare i USA via Columbia Records, som deras första album för skivbolaget.",
-    "wikipediaSlug": "Wish_You_Were_Here_(Pink_Floyd_album)",
-    "image": "Pink_Floyd,_Wish_You_Were_Here_(1975).png",
-    "pageViews": 62461
-  },
-  {
-    "qid": "Q111343757",
-    "title": "‘Harry's House’ släpps",
-    "subtitle": "Album av Harry Styles",
-    "year": 2022,
-    "fact": "Harry's House är det tredje studioalbumet av den engelska sångaren och låtskrivaren Harry Styles, som släpptes den 20 maj 2022 av Erskine och Columbia Records.",
-    "wikipediaSlug": "Harry%27s_House",
-    "image": "Harry_Styles_-_Harry's_House.png",
-    "pageViews": 61374
-  },
-  {
-    "qid": "Q852024",
-    "title": "‘Nebraska’ har premiär",
-    "subtitle": "Album av Bruce Springsteen",
-    "year": 1982,
-    "fact": "‘Nebraska’ är det sjätte studioalbumet av den amerikanska singer-songwritern Bruce Springsteen, som släpptes den 30 september 1982 genom Columbia Records.",
-    "wikipediaSlug": "Nebraska_(album)",
-    "image": "Bruce_Springsteen_-_Nebraska.jpg",
-    "pageViews": 60770
-  },
-  {
-    "qid": "Q538380",
-    "title": "‘Gorillaz’ släpps",
-    "subtitle": "Album av Gorillaz",
-    "year": 2001,
-    "fact": "Gorillaz är debutalbumet av det engelska virtuella bandet Gorillaz, som släpptes den 26 mars 2001 i Storbritannien av Parlophone och den 19 juni 2001 i USA av Virgin Records.",
-    "wikipediaSlug": "Gorillaz_(album)",
-    "image": "Gorillaz_2001_album.png",
-    "pageViews": 60633
-  },
-  {
-    "qid": "Q834418",
-    "title": "‘Demon Days’ ges ut",
-    "subtitle": "Album av Gorillaz",
-    "year": 2005,
-    "fact": "‘Demon Days’ är det andra studioalbumet av det brittiska virtuella bandet Gorillaz.",
-    "wikipediaSlug": "Demon_Days",
-    "image": "Gorillaz_Demon_Days.PNG",
-    "pageViews": 60561
-  },
-  {
-    "qid": "Q252230",
-    "title": "‘Ram’ släpps",
-    "subtitle": "Album av Paul & Linda McCartney",
-    "year": 1971,
-    "fact": "‘Ram’ ges ut som det enda studioalbumet krediterat musikduon Paul och Linda McCartney, och är den förres andra soloalbum efter uppbrottet från Beatles.",
-    "wikipediaSlug": "Ram_(album)",
-    "image": "RamMcCartneyalbumcover.jpg",
-    "pageViews": 60241
-  },
-  {
-    "qid": "Q17444",
-    "title": "‘Nevermind’ ges ut",
-    "subtitle": "Album av Nirvana",
-    "year": 1991,
-    "fact": "‘Nevermind’ är det andra studioalbumet och skivbolagsdebuten av det amerikanska rockbandet Nirvana, som släpptes den 24 september 1991 av DGC Records.",
-    "wikipediaSlug": "Nevermind",
-    "image": "NirvanaNevermindalbumcover.jpg",
-    "pageViews": 55969
-  },
-  {
-    "qid": "Q183034",
-    "title": "‘The Uplift Mofo Party Plan’ ges ut",
-    "subtitle": "Album av Red Hot Chili Peppers",
-    "year": 1987,
-    "fact": "The Uplift Mofo Party Plan är det tredje studioalbumet av det amerikanska rockbandet Red Hot Chili Peppers, som ges ut den 29 september 1987 av EMI Manhattan.",
-    "wikipediaSlug": "The_Uplift_Mofo_Party_Plan",
-    "image": "UpliftMofoCover.jpg",
-    "pageViews": 53656
-  },
-  {
-    "qid": "Q181826",
-    "title": "‘Please Please Me’ ges ut",
-    "subtitle": "Album av The Beatles",
-    "year": 1963,
-    "fact": "‘Please Please Me’ är debutstudioalbumet av den engelska rockgruppen The Beatles.",
-    "wikipediaSlug": "Please_Please_Me",
-    "image": "Please_Please_Me.png",
-    "pageViews": 50769
   }
 ]

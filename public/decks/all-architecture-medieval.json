@@ -48,45 +48,5 @@
     "wikipediaSlug": "Hagia_Sophia",
     "image": "Hagia_Sophia_(228968325).jpeg",
     "pageViews": 104610
-  },
-  {
-    "qid": "Q43473",
-    "title": "Angkor Wat står klart",
-    "subtitle": "Buddhistiskt tempelkomplex i Kambodja",
-    "year": 802,
-    "fact": "Angkor Wat är ett Theravada-buddhistiskt tempelkomplex och det största religiösa komplexet i världen.",
-    "wikipediaSlug": "Angkor_Wat",
-    "image": "Buddhist_monks_in_front_of_the_Angkor_Wat.jpg",
-    "pageViews": 87678
-  },
-  {
-    "qid": "Q42646",
-    "title": "Windsor Castle färdigställs",
-    "subtitle": "Kungligt residens i Windsor i Berkshire, England, Storbritannien",
-    "year": 1070,
-    "fact": "Windsor Castle är en kunglig residens i Windsor i det engelska grevskapet Berkshire, cirka 40 km väster om centrala London.",
-    "wikipediaSlug": "Windsor_Castle",
-    "image": "Windsor_Castle_at_Sunset_-_Nov_2006.jpg",
-    "pageViews": 61000
-  },
-  {
-    "qid": "Q62378",
-    "title": "Tower of London färdigställs",
-    "subtitle": "Slott i centrala London, Storbritannien",
-    "year": 1066,
-    "fact": "Tower of London, officiellt His Majesty's Royal Palace and Fortress of the Tower of London, är ett historiskt citadell och slott på Themsens norra strand i London, England.",
-    "wikipediaSlug": "Tower_of_London",
-    "image": "Tower_of_London_from_the_Shard_(8515883950).jpg",
-    "pageViews": 60474
-  },
-  {
-    "qid": "Q47476",
-    "title": "Alhambra står klart",
-    "subtitle": "Palats- och fästningskomplex i Granada, Andalusien, Spanien",
-    "year": 1239,
-    "fact": "Alhambra är ett palats- och borgområde i Granada, Spanien.",
-    "wikipediaSlug": "Alhambra",
-    "image": "Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg",
-    "pageViews": 60347
   }
 ]

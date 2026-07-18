@@ -1,13 +1,33 @@
 [
   {
-    "fact": "Sverige tar VM-brons i fotboll i USA.",
-    "image": "1994_FIFA_World_Cup.svg",
+    "fact": "Zlatan Ibrahimović klackar in ett klassiskt mål mot Italien i EM.",
+    "image": "Zlatan_Ibrahimović_June_2018.jpg",
     "pageViews": 420000,
-    "qid": "Q101751",
+    "qid": "Q46896",
     "subtitle": "Svenskt fotbollsminne",
-    "title": "Sverige tar VM-brons i fotboll",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1994",
-    "year": 1994
+    "title": "Zlatan klackar mot Italien",
+    "wikipediaSlug": "Zlatan_Ibrahimovi%C4%87",
+    "year": 2004
+  },
+  {
+    "fact": "Zlatan Ibrahimović gör sitt berömda bicykletamål mot England.",
+    "image": "Zlatan_Ibrahimović_June_2018.jpg",
+    "pageViews": 420000,
+    "qid": "Q46896",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Zlatan gör cykelspark mot England",
+    "wikipediaSlug": "Zlatan_Ibrahimovi%C4%87",
+    "year": 2012
+  },
+  {
+    "fact": "Zlatan Ibrahimović lämnar Inter för Barcelona.",
+    "image": "Zlatan_Ibrahimović_June_2018.jpg",
+    "pageViews": 380000,
+    "qid": "Q46896",
+    "subtitle": "Svensk spelarövergång",
+    "title": "Zlatan går till Barcelona",
+    "wikipediaSlug": "Zlatan_Ibrahimovi%C4%87",
+    "year": 2009
   },
   {
     "fact": "Sverige spelar VM-final i fotboll på Råsunda mot Brasilien.",
@@ -30,8 +50,18 @@
     "year": 2005
   },
   {
+    "fact": "Sverige slår Italien i playoff och går till fotbolls-VM.",
+    "image": "Swedishnationalteam1930.jpg",
+    "pageViews": 340000,
+    "qid": "Q160826",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Sverige slår ut Italien",
+    "wikipediaSlug": "Sveriges_herrlandslag_i_fotboll",
+    "year": 2017
+  },
+  {
     "fact": "Sverige tar brons i damernas fotbolls-VM efter seger mot Australien.",
-    "image": "",
+    "image": "2023-07-07 Fussball, Frauen, Länderspiel, Deutschland - Sambia 1DX 6938 by Stepro.jpg",
     "pageViews": 340000,
     "qid": "Q19672232",
     "subtitle": "Svenskt damlandslagsminne",
@@ -40,24 +70,24 @@
     "year": 2023
   },
   {
-    "fact": "Tre Kronor tar OS-guld i ishockey efter Peter Forsbergs berömda straff.",
-    "image": "Peter_Forsberg_2016-03-17_001_(cropped).jpg",
+    "fact": "Henrik Larsson gör mål när Sverige tar VM-brons i fotboll.",
+    "image": "Henrik_Larsson_in_Jan_2014.jpg",
     "pageViews": 320000,
-    "qid": "Q653041",
-    "subtitle": "Svenskt ishockeyminne",
-    "title": "Tre Kronor tar OS-guld",
-    "wikipediaSlug": "Ishockey_vid_olympiska_vinterspelen_1994",
+    "qid": "Q179334",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Henrik Larsson gör VM-mål",
+    "wikipediaSlug": "Henrik_Larsson",
     "year": 1994
   },
   {
-    "fact": "Tre Kronor vinner OS-guld i Turin efter final mot Finland.",
-    "image": "Finlande_Russie.jpg",
+    "fact": "Sveriges herrlandslag vänder mot Tyskland efter 0-4 i Berlin.",
+    "image": "Swedishnationalteam1930.jpg",
     "pageViews": 320000,
-    "qid": "Q645868",
-    "subtitle": "Svenskt ishockeyminne",
-    "title": "Tre Kronor vinner OS-finalen mot Finland",
-    "wikipediaSlug": "Ishockey_vid_olympiska_vinterspelen_2006",
-    "year": 2006
+    "qid": "Q160826",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Sverige hämtar upp mot Tyskland",
+    "wikipediaSlug": "Sveriges_herrlandslag_i_fotboll",
+    "year": 2012
   },
   {
     "fact": "Det första Vasaloppet körs.",
@@ -70,16 +100,6 @@
     "year": 1922
   },
   {
-    "fact": "Sverige tar OS-guld i herrfotboll efter final mot Jugoslavien.",
-    "image": "Olympicsemifinal1948.jpg",
-    "pageViews": 300000,
-    "qid": "Q667937",
-    "subtitle": "Svenskt fotbollsminne",
-    "title": "Sverige vinner OS-guld i fotboll",
-    "wikipediaSlug": "Fotboll_vid_olympiska_sommarspelen_1948",
-    "year": 1948
-  },
-  {
     "fact": "Björn Borg vinner Wimbledon för första gången.",
     "image": "Björn_Borg_2013-11-06_001_(cropped).jpg",
     "pageViews": 300000,
@@ -88,16 +108,6 @@
     "title": "Björn Borg vinner Wimbledon",
     "wikipediaSlug": "Bj%C3%B6rn_Borg",
     "year": 1976
-  },
-  {
-    "fact": "Sverige arrangerar fotbolls-EM och når semifinal på hemmaplan.",
-    "image": "",
-    "pageViews": 300000,
-    "qid": "Q161810",
-    "subtitle": "Svenskt fotbollsminne",
-    "title": "Sverige går till EM-semifinal",
-    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_1992",
-    "year": 1992
   },
   {
     "fact": "Peter Forsberg gör den klassiska straffen i OS-finalen.",
@@ -110,28 +120,8 @@
     "year": 1994
   },
   {
-    "fact": "Tomas Ravelli räddar straff i VM-kvartsfinalen mot Rumänien.",
-    "image": "Thomas_Ravelli_in_January_2014.jpg",
-    "pageViews": 300000,
-    "qid": "Q313710",
-    "subtitle": "Svenskt fotbollsminne",
-    "title": "Ravelli räddar straff i VM",
-    "wikipediaSlug": "Thomas_Ravelli",
-    "year": 1994
-  },
-  {
-    "fact": "Sverige vinner både OS-guld och VM-guld i ishockey samma år.",
-    "image": "Sweden_national_ice_hockey_team_jerseys_2022_(WOG).png",
-    "pageViews": 300000,
-    "qid": "Q913643",
-    "subtitle": "Svenskt ishockeyminne",
-    "title": "Tre Kronor tar dubbeln",
-    "wikipediaSlug": "Sveriges_herrlandslag_i_ishockey",
-    "year": 2006
-  },
-  {
     "fact": "Sveriges damlandslag tar OS-silver i fotboll i Rio de Janeiro.",
-    "image": "",
+    "image": "Olympic_flag.svg",
     "pageViews": 300000,
     "qid": "Q11865693",
     "subtitle": "Svenskt damlandslagsminne",
@@ -150,16 +140,6 @@
     "year": 2020
   },
   {
-    "fact": "Malmö FF spelar final i Europacupen mot Nottingham Forest.",
-    "image": "Malmo_FF_logo.svg",
-    "pageViews": 280000,
-    "qid": "Q204881",
-    "subtitle": "Svenskt klubbfotbollsminne",
-    "title": "Malmö FF spelar Europacupfinal",
-    "wikipediaSlug": "Malm%C3%B6_FF",
-    "year": 1979
-  },
-  {
     "fact": "Sverige vinner EM i fotboll för damer efter final mot England.",
     "image": "European_Competition_for_Women's_Football_1984_map.svg",
     "pageViews": 280000,
@@ -168,16 +148,6 @@
     "title": "Sverige vinner damernas fotbolls-EM",
     "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_1984",
     "year": 1984
-  },
-  {
-    "fact": "IFK Göteborg vinner Uefacupen för andra gången.",
-    "image": "",
-    "pageViews": 280000,
-    "qid": "Q201567",
-    "subtitle": "Svenskt klubbfotbollsminne",
-    "title": "IFK Göteborg vinner Uefacupen igen",
-    "wikipediaSlug": "IFK_G%C3%B6teborg",
-    "year": 1987
   },
   {
     "fact": "Tomas Brolin gör ett klassiskt svenskt mål under fotbolls-VM i USA.",
@@ -190,28 +160,8 @@
     "year": 1994
   },
   {
-    "fact": "Tre Kronor vinner VM-guld i ishockey på hemmaplan i Globen.",
-    "image": "Snowy_på_Globen.JPG",
-    "pageViews": 280000,
-    "qid": "Q1316060",
-    "subtitle": "Svenskt ishockeyminne",
-    "title": "Tre Kronor vinner VM-guld hemma",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_ishockey_f%C3%B6r_herrar_1995",
-    "year": 1995
-  },
-  {
-    "fact": "Sverige tar OS-silver i damfotboll efter final mot Kanada.",
-    "image": "",
-    "pageViews": 280000,
-    "qid": "Q726066",
-    "subtitle": "Svenskt damlandslagsminne",
-    "title": "Sverige tar OS-silver igen",
-    "wikipediaSlug": "Sveriges_damlandslag_i_fotboll",
-    "year": 2021
-  },
-  {
     "fact": "Sveriges damlandslag tar ännu ett OS-silver i fotboll.",
-    "image": "",
+    "image": "Olympic_flag.svg",
     "pageViews": 280000,
     "qid": "Q38278429",
     "subtitle": "Svenskt damlandslagsminne",
@@ -230,24 +180,14 @@
     "year": 2022
   },
   {
-    "fact": "Örgryte IS vinner den första upplagan av Allsvenskan.",
-    "image": "",
+    "fact": "Sverige tar OS-guld i fotboll i London.",
+    "image": "Swedishnationalteam1930.jpg",
     "pageViews": 260000,
-    "qid": "Q344437",
-    "subtitle": "Svensk klubbfotboll",
-    "title": "Allsvenskan spelas första gången",
-    "wikipediaSlug": "Allsvenskan",
-    "year": 1924
-  },
-  {
-    "fact": "Råsunda fotbollsstadion invigs och blir svensk fotbolls mest klassiska landslagsarena.",
-    "image": "Råsunda_February_2013_01.jpg",
-    "pageViews": 260000,
-    "qid": "Q725623",
-    "subtitle": "Svensk fotbollsarena",
-    "title": "Råsunda blir landslagsarena",
-    "wikipediaSlug": "R%C3%A5sunda_fotbollsstadion",
-    "year": 1937
+    "qid": "Q160826",
+    "subtitle": "Svenskt fotbollsminne",
+    "title": "Sverige tar OS-guld i fotboll",
+    "wikipediaSlug": "Sveriges_herrlandslag_i_fotboll",
+    "year": 1948
   },
   {
     "fact": "Ingemar Johansson blir världsmästare i tungvikt.",
@@ -290,16 +230,6 @@
     "year": 1989
   },
   {
-    "fact": "Tre Kronor vinner VM-guld i ishockey efter final mot Kanada.",
-    "image": "",
-    "pageViews": 260000,
-    "qid": "Q1316020",
-    "subtitle": "Svenskt ishockeyminne",
-    "title": "Tre Kronor vinner hockey-VM",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_ishockey_f%C3%B6r_herrar_1991",
-    "year": 1991
-  },
-  {
     "fact": "J-O Waldner tar OS-guld i Barcelona.",
     "image": "Jan-Ove_Waldner.JPG",
     "pageViews": 260000,
@@ -321,23 +251,13 @@
   },
   {
     "fact": "Bengan Boys tar OS-silver i handboll i Barcelona.",
-    "image": "",
+    "image": "Palauesportgranollers.JPG",
     "pageViews": 260000,
     "qid": "Q649010",
     "subtitle": "Svenskt handbollsminne",
     "title": "Bengan Boys tar OS-silver",
     "wikipediaSlug": "Handboll_vid_olympiska_sommarspelen_1992",
     "year": 1992
-  },
-  {
-    "fact": "Annika Sörenstam får sitt internationella genombrott.",
-    "image": "AnnikaStAndrews.JPG",
-    "pageViews": 260000,
-    "qid": "Q232711",
-    "subtitle": "Svensk golfspelare",
-    "title": "Annika Sörenstam blir världsstjärna",
-    "wikipediaSlug": "Annika_S%C3%B6renstam",
-    "year": 1995
   },
   {
     "fact": "Nicklas Lidström vinner sin första Stanley Cup.",
@@ -350,43 +270,13 @@
     "year": 1997
   },
   {
-    "fact": "AIK vinner SM-guld i fotboll efter en dramatisk säsongsavslutning.",
-    "image": "AIK_players_after_a_goal_(during_AIK-Elfsborg,_2013).jpg",
+    "fact": "Carolina Klüft tar OS-guld i sjukamp.",
+    "image": "Carolina_Klüft_in_2025-4-2.jpg",
     "pageViews": 260000,
-    "qid": "Q221602",
-    "subtitle": "Svenskt klubbfotbollsminne",
-    "title": "AIK vinner SM-guld",
-    "wikipediaSlug": "AIK_Fotboll",
-    "year": 1998
-  },
-  {
-    "fact": "Hammarby vinner sitt första SM-guld i fotboll.",
-    "image": "Hammarby1934.jpg",
-    "pageViews": 260000,
-    "qid": "Q460724",
-    "subtitle": "Svenskt klubbfotbollsminne",
-    "title": "Hammarby vinner sitt första SM-guld",
-    "wikipediaSlug": "Hammarby_IF_Fotboll",
-    "year": 2001
-  },
-  {
-    "fact": "Djurgården vinner både Allsvenskan och Svenska cupen.",
-    "image": "Djurgardens_IF_logo.svg",
-    "pageViews": 260000,
-    "qid": "Q622430",
-    "subtitle": "Svenskt klubbfotbollsminne",
-    "title": "Djurgården vinner dubbeln",
-    "wikipediaSlug": "Djurg%C3%A5rdens_IF_Fotboll",
-    "year": 2002
-  },
-  {
-    "fact": "Marta blir en av damfotbollens stora världsstjärnor efter genombrott i Sverige.",
-    "image": "Marta_Vieira_da_Silva_2013.jpg",
-    "pageViews": 260000,
-    "qid": "Q228616",
-    "subtitle": "Damfotboll i Sverige",
-    "title": "Marta slår igenom i Sverige",
-    "wikipediaSlug": "Marta_(fotbollsspelare)",
+    "qid": "Q223672",
+    "subtitle": "Svensk friidrottare",
+    "title": "Carolina Klüft tar OS-guld",
+    "wikipediaSlug": "Carolina_Kl%C3%BCft",
     "year": 2004
   },
   {
@@ -398,6 +288,16 @@
     "title": "Anja Pärson tar OS-guld",
     "wikipediaSlug": "Anja_P%C3%A4rson",
     "year": 2006
+  },
+  {
+    "fact": "Sarah Sjöström vinner VM-guld som tonåring.",
+    "image": "Sarah_Sjöström_2013.jpg",
+    "pageViews": 260000,
+    "qid": "Q235315",
+    "subtitle": "Svensk simmare",
+    "title": "Sarah Sjöström blir världsmästare",
+    "wikipediaSlug": "Sarah_Sj%C3%B6str%C3%B6m",
+    "year": 2009
   },
   {
     "fact": "Charlotte Kalla tar OS-guld i Vancouver.",
@@ -440,34 +340,14 @@
     "year": 2006
   },
   {
-    "fact": "Svenska herrlandslaget spelar sin första landskamp i fotboll.",
-    "image": "",
+    "fact": "Svenska damlandslaget spelar sin första officiella landskamp.",
+    "image": "Sweden at the Women's Algarve Cup 2015 (16708133912).jpg",
     "pageViews": 240000,
-    "qid": "Q160826",
-    "subtitle": "Svensk fotbollshistoria",
-    "title": "Sverige spelar sin första fotbollslandskamp",
-    "wikipediaSlug": "Sveriges_herrlandslag_i_fotboll",
-    "year": 1908
-  },
-  {
-    "fact": "Sverige vinner VM-brons i fotboll efter seger mot Västtyskland.",
-    "image": "",
-    "pageViews": 240000,
-    "qid": "Q132515",
-    "subtitle": "Svenskt fotbollsminne",
-    "title": "Sverige tar VM-brons i fotboll",
-    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1950",
-    "year": 1950
-  },
-  {
-    "fact": "Damallsvenskan spelas för första gången.",
-    "image": "",
-    "pageViews": 240000,
-    "qid": "Q1158138",
-    "subtitle": "Svensk damfotboll",
-    "title": "Damallsvenskan startar",
-    "wikipediaSlug": "Damallsvenskan",
-    "year": 1988
+    "qid": "Q726066",
+    "subtitle": "Svensk damfotbollshistoria",
+    "title": "Damlandslaget spelar första landskampen",
+    "wikipediaSlug": "Sveriges_damlandslag_i_fotboll",
+    "year": 1973
   },
   {
     "fact": "Sverige tar silver i damernas fotbolls-VM efter final mot Tyskland.",
@@ -480,38 +360,8 @@
     "year": 2003
   },
   {
-    "fact": "Umeå IK vinner Uefa Women's Cup och blir ett av Europas stora damfotbollslag.",
-    "image": "",
-    "pageViews": 240000,
-    "qid": "Q1856774",
-    "subtitle": "Svenskt damfotbollsminne",
-    "title": "Umeå IK vinner Europa",
-    "wikipediaSlug": "Ume%C3%A5_IK",
-    "year": 2003
-  },
-  {
-    "fact": "Henrik Larsson återvänder till Helsingborgs IF efter åren i Europa.",
-    "image": "Henrik_Larsson_in_Jan_2014.jpg",
-    "pageViews": 240000,
-    "qid": "Q179334",
-    "subtitle": "Svenskt klubbfotbollsminne",
-    "title": "Henrik Larsson återvänder till HIF",
-    "wikipediaSlug": "Henrik_Larsson",
-    "year": 2006
-  },
-  {
-    "fact": "Pia Sundhage blir förbundskapten för Sveriges damlandslag.",
-    "image": "Pia_Sundhage_2012-12-05_001.jpg",
-    "pageViews": 240000,
-    "qid": "Q434362",
-    "subtitle": "Svenskt damlandslagsminne",
-    "title": "Pia Sundhage tar över landslaget",
-    "wikipediaSlug": "Pia_Sundhage",
-    "year": 2012
-  },
-  {
     "fact": "Sveriges herrlandslag tar OS-silver i handboll i London.",
-    "image": "",
+    "image": "London Handball Arena (June 10, 2011).jpg",
     "pageViews": 240000,
     "qid": "Q209129",
     "subtitle": "Svenskt handbollsminne",
@@ -520,7 +370,7 @@
     "year": 2012
   },
   {
-    "fact": "Lotten Schelin blir Sveriges mesta målskytt i damlandslaget.",
+    "fact": "Lotta Schelin blir Sveriges mesta målskytt i damlandslaget.",
     "image": "Lotta_Schelin_2012-11-12.jpg",
     "pageViews": 240000,
     "qid": "Q267563",
@@ -528,16 +378,6 @@
     "title": "Lotta Schelin blir målrekordhållare",
     "wikipediaSlug": "Lotta_Schelin",
     "year": 2014
-  },
-  {
-    "fact": "Svenska cupen i fotboll spelas för första gången.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q750585",
-    "subtitle": "Svensk klubbfotboll",
-    "title": "Svenska cupen startar",
-    "wikipediaSlug": "Svenska_cupen_i_fotboll",
-    "year": 1941
   },
   {
     "fact": "Elitloppet körs för första gången på Solvalla.",
@@ -580,16 +420,6 @@
     "year": 1958
   },
   {
-    "fact": "Börje Salming debuterar i NHL.",
-    "image": "BorjeSalming2012.jpg",
-    "pageViews": 220000,
-    "qid": "Q739746",
-    "subtitle": "Svensk ishockeyspelare",
-    "title": "Börje Salming NHL-debuterar",
-    "wikipediaSlug": "B%C3%B6rje_Salming",
-    "year": 1973
-  },
-  {
     "fact": "Thomas Wassberg vinner femmilen vid OS i Lake Placid.",
     "image": "Thomas_Wassberg_2013-12-11_001.jpg",
     "pageViews": 220000,
@@ -600,34 +430,24 @@
     "year": 1980
   },
   {
+    "fact": "Annika Sörenstam vinner US Open.",
+    "image": "AnnikaStAndrews.JPG",
+    "pageViews": 220000,
+    "qid": "Q232711",
+    "subtitle": "Svensk golfspelare",
+    "title": "Annika Sörenstam vinner US Open",
+    "wikipediaSlug": "Annika_S%C3%B6renstam",
+    "year": 1995
+  },
+  {
     "fact": "Ludmila Engquist tar OS-guld på 100 meter häck.",
-    "image": "",
+    "image": "Olympic_flag.svg",
     "pageViews": 220000,
     "qid": "Q240424",
     "subtitle": "Svensk häcklöpare",
     "title": "Ludmila Engquist tar OS-guld",
     "wikipediaSlug": "Ludmila_Engquist",
     "year": 1996
-  },
-  {
-    "fact": "Therese Alshammar tar OS-medaljer i Sydney.",
-    "image": "Therese_Alshammar_2013-01-08_001_(cropped).jpg",
-    "pageViews": 220000,
-    "qid": "Q272910",
-    "subtitle": "Svensk simmare",
-    "title": "Therese Alshammar blir världsstjärna",
-    "wikipediaSlug": "Therese_Alshammar",
-    "year": 2000
-  },
-  {
-    "fact": "Carolina Klüft vinner OS-guld i sjukamp i Aten.",
-    "image": "Carolina_Klüft_in_2025-4-2.jpg",
-    "pageViews": 220000,
-    "qid": "Q223672",
-    "subtitle": "Svensk friidrottsklassiker",
-    "title": "Carolina Klüft vinner OS-guld",
-    "wikipediaSlug": "Carolina_Kl%C3%BCft",
-    "year": 2004
   },
   {
     "fact": "Stefan Holm tar OS-guld i höjdhopp.",
@@ -637,16 +457,6 @@
     "subtitle": "Svensk höjdhoppare",
     "title": "Stefan Holm tar OS-guld",
     "wikipediaSlug": "Stefan_Holm",
-    "year": 2004
-  },
-  {
-    "fact": "Christian Olsson tar OS-guld i tresteg.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 220000,
-    "qid": "Q10451548",
-    "subtitle": "Svensk trestegshoppare",
-    "title": "Christian Olsson tar OS-guld",
-    "wikipediaSlug": "Christian_Olsson",
     "year": 2004
   },
   {
@@ -660,26 +470,6 @@
     "year": 2005
   },
   {
-    "fact": "Färjestad vinner SM-guld i ishockey efter final mot Frölunda.",
-    "image": "2013-12-30_Magnus_Nygren_01.jpg",
-    "pageViews": 220000,
-    "qid": "Q1122553",
-    "subtitle": "Svenskt ishockeyminne",
-    "title": "Färjestad vinner SM-guld",
-    "wikipediaSlug": "F%C3%A4rjestad_BK",
-    "year": 2006
-  },
-  {
-    "fact": "Kosovare Asllani debuterar i svenska landslaget.",
-    "image": "Kosovare_Asllani_2021.jpg",
-    "pageViews": 220000,
-    "qid": "Q458155",
-    "subtitle": "Svensk fotbollsspelare",
-    "title": "Kosovare Asllani landslagsdebuterar",
-    "wikipediaSlug": "Kosovare_Asllani",
-    "year": 2008
-  },
-  {
     "fact": "Henrik Stenson vinner The Open Championship.",
     "image": "Henrik_Stenson_in_Jan_2014.jpg",
     "pageViews": 220000,
@@ -687,16 +477,6 @@
     "subtitle": "Svensk golfspelare",
     "title": "Henrik Stenson vinner The Open",
     "wikipediaSlug": "Henrik_Stenson",
-    "year": 2016
-  },
-  {
-    "fact": "Frölunda vinner Champions Hockey League och blir europeisk mästare.",
-    "image": "Fredrik_Pettersson.jpg",
-    "pageViews": 220000,
-    "qid": "Q1142013",
-    "subtitle": "Svenskt ishockeyminne",
-    "title": "Frölunda blir europeiska mästare",
-    "wikipediaSlug": "Fr%C3%B6lunda_HC",
     "year": 2016
   },
   {
@@ -738,6 +518,16 @@
     "title": "Pernilla Wiberg vinner OS-guld",
     "wikipediaSlug": "Pernilla_Wiberg",
     "year": 1992
+  },
+  {
+    "fact": "Therese Alshammar tar VM-guld.",
+    "image": "Therese_Alshammar_2013-01-08_001_(cropped).jpg",
+    "pageViews": 180000,
+    "qid": "Q272910",
+    "subtitle": "Svensk simmare",
+    "title": "Therese Alshammar tar VM-guld",
+    "wikipediaSlug": "Therese_Alshammar",
+    "year": 1999
   },
   {
     "fact": "André Myhrer tar OS-guld i slalom.",

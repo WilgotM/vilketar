@@ -93,3 +93,16 @@ test("daily override places chosen cards first", () => {
     ["Q3", "Q2"],
   );
 });
+
+test("daily queue prefers cards that were not used recently", () => {
+  const queue = createDailyCardQueue(
+    deck,
+    cardsByDeckId,
+    "hard",
+    "2026-05-23",
+    null,
+    { excludedQids: new Set(["Q1", "Q2", "Q3"]) },
+  );
+
+  assert.ok(!["Q1", "Q2", "Q3"].includes(queue[0]?.qid ?? ""));
+});

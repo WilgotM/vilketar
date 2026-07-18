@@ -1,15 +1,5 @@
 [
   {
-    "qid": "Q924355",
-    "title": "XXXX lanseras",
-    "subtitle": "Australiskt ölmärke",
-    "year": 1924,
-    "fact": "XXXX är ett australiskt ölmärke som bryggs i Milton, Brisbane, av det queensländska bryggeriet Castlemaine Perkins, numera en division av det japanska företaget Kirin.",
-    "wikipediaSlug": "XXXX_(beer)",
-    "image": "XXXX_Brewery_Milton.jpg",
-    "pageViews": 1392468
-  },
-  {
     "fact": "Marabou grundas i Sundbyberg.",
     "image": "Marabou_chocolate.jpg",
     "pageViews": 260000,
@@ -241,7 +231,7 @@
   },
   {
     "fact": "O'boy lanseras i Sverige.",
-    "image": "",
+    "image": "Wikidata-logo.svg",
     "pageViews": 200000,
     "qid": "Q1783471",
     "subtitle": "Chokladdryck",
@@ -271,7 +261,7 @@
   },
   {
     "fact": "Zoégas grundas i Helsingborg.",
-    "image": "",
+    "image": "Zoégas Café & Butik.jpg",
     "pageViews": 180000,
     "qid": "Q10725034",
     "subtitle": "Svenskt kaffemärke",
@@ -341,7 +331,7 @@
   },
   {
     "fact": "Felix grundas i Eslöv.",
-    "image": "",
+    "image": "Wikidata-logo.svg",
     "pageViews": 180000,
     "qid": "manual-Felix_(livsmedelsf%C3%B6retag)",
     "subtitle": "Svenskt livsmedelsvarumärke",
@@ -371,7 +361,7 @@
   },
   {
     "fact": "Ahlgrens bilar blir ett av Sveriges mest kända godis.",
-    "image": "",
+    "image": "Wikidata-logo.svg",
     "pageViews": 180000,
     "qid": "manual-Bilar_(godis)",
     "subtitle": "Svenskt godis",
@@ -381,7 +371,7 @@
   },
   {
     "fact": "Polly lanseras av Cloetta.",
-    "image": "",
+    "image": "Wikidata-logo.svg",
     "pageViews": 180000,
     "qid": "manual-Polly_(godis)",
     "subtitle": "Svenskt godis",
@@ -398,16 +388,6 @@
     "title": "Falukorven får skyddad beteckning",
     "wikipediaSlug": "Falukorv",
     "year": 1973
-  },
-  {
-    "fact": "Loranga lanseras som svensk apelsinläsk.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 160000,
-    "qid": "Q10569747",
-    "subtitle": "Svensk läskedryck",
-    "title": "Loranga lanseras",
-    "wikipediaSlug": "Loranga",
-    "year": 1934
   },
   {
     "fact": "Center lanseras av Cloetta.",
@@ -448,45 +428,5 @@
     "wikipediaSlug": "Red_Bull",
     "image": "RedBullEnergyDrink.svg",
     "pageViews": 109230
-  },
-  {
-    "qid": "Q194297",
-    "title": "Guinness lanseras",
-    "subtitle": "Irländskt ölmärke",
-    "year": 1759,
-    "fact": "Guinness är en stout som har sitt ursprung i Arthur Guinness bryggeri vid St.",
-    "wikipediaSlug": "Guinness",
-    "image": "Guinness_logo_dark_text.svg",
-    "pageViews": 89063
-  },
-  {
-    "qid": "Q524757",
-    "title": "KFC grundas",
-    "subtitle": "Amerikansk snabbmatskedja specialiserad på friterad kyckling",
-    "year": 1930,
-    "fact": "KFC Corporation, verksamt som KFC, är en amerikansk multinationell snabbmatskedja som specialiserar sig på friterad kyckling i sydstatsstil och kycklingsmörgåsar.",
-    "wikipediaSlug": "KFC",
-    "image": "KFC_Paraparaumu_154510.jpg",
-    "pageViews": 77021
-  },
-  {
-    "qid": "Q544293",
-    "title": "Monster Energy lanseras",
-    "subtitle": "Amerikansk energidryck",
-    "year": 2002,
-    "fact": "Monster Energy är ett märke av energidrycker som skapades av Hansen Natural Company i april 2002 och släpptes till allmänheten med sin originalsmak den 18 april 2002.",
-    "wikipediaSlug": "Monster_Energy",
-    "image": "Monster_Energy_drink_(cropped).jpg",
-    "pageViews": 65725
-  },
-  {
-    "qid": "Q277641",
-    "title": "A&W Restaurants grundas",
-    "subtitle": "Amerikansk snabbmatskedja",
-    "year": 1919,
-    "fact": "A&W Concentrate Company, verksamt som A&W Restaurants, eller helt enkelt A&W, är en amerikansk snabbmatskedja som utmärker sig med sina \"Burger Family\"-kombinationer, fatöl med root beer och root beer floats.",
-    "wikipediaSlug": "A%26W_Restaurants",
-    "image": "All_American_Food_Logo.svg",
-    "pageViews": 50261
   }
 ]

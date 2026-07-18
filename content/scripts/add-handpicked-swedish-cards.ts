@@ -7997,7 +7997,7 @@ const SPORT_CARDS: HandpickedCard[] = [
       "all-sweden-allt",
       "all-sport-svensk-sport",
     ],
-    fact: "Lotten Schelin blir Sveriges mesta målskytt i damlandslaget.",
+    fact: "Lotta Schelin blir Sveriges mesta målskytt i damlandslaget.",
     pageTitle: "Lotta Schelin",
     pageViews: 240_000,
     subtitle: "Svenskt damlandslagsminne",
@@ -8809,7 +8809,12 @@ async function writeDeck(deckId: string, cards: Card[]) {
       ? cards.filter(shouldKeepVideoGameCard)
       : cards;
   const dedupedCards = Array.from(
-    new Map(filteredCards.map((card) => [card.qid, card])).values(),
+    new Map(
+      filteredCards.map((card) => [
+        card.title.trim().replace(/\s+/gu, " ").toLocaleLowerCase("sv-SE"),
+        card,
+      ]),
+    ).values(),
   );
   const sortedCards = dedupedCards.sort(
     (left, right) =>

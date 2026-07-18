@@ -457,7 +457,9 @@ export default function HomeScreen() {
               className={
                 calendarClosing
                   ? styles.calendarDialogClosing
-                  : styles.calendarDialog
+                  : calendarDragging
+                    ? styles.calendarDialogDragging
+                    : styles.calendarDialog
               }
               onClick={(event) => event.stopPropagation()}
               role="dialog"

@@ -70,16 +70,6 @@
     "year": 1936
   },
   {
-    "qid": "Q219424",
-    "title": "‘Scary Movie’ har premiär",
-    "subtitle": "Film i regi av Keenen Ivory Wayans",
-    "year": 2000,
-    "fact": "‘Scary Movie’ är en amerikansk parodifilm från 2000.",
-    "wikipediaSlug": "Scary_Movie",
-    "image": "Movie_poster_for_\"Scary_Movie\".jpg",
-    "pageViews": 307545
-  },
-  {
     "fact": "Greta Garbo får sitt genombrott i svensk stumfilm.",
     "image": "Greta_Garbo_-_Ninotchka_1939.JPG",
     "pageViews": 300000,
@@ -151,7 +141,7 @@
   },
   {
     "fact": "Sällskapsresan har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q1765389",
     "subtitle": "Svensk filmkomedi",
@@ -161,7 +151,7 @@
   },
   {
     "fact": "Den första filmen om Jönssonligan har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q378302",
     "subtitle": "Svensk filmserie",
@@ -171,7 +161,7 @@
   },
   {
     "fact": "Fanny och Alexander har premiär.",
-    "image": "",
+    "image": "Fanny & Alexander logotype.png",
     "pageViews": 260000,
     "qid": "Q165651",
     "subtitle": "Film av Ingmar Bergman",
@@ -211,7 +201,7 @@
   },
   {
     "fact": "Den moderna filmserien om Martin Beck startar.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "manual-Beck_(filmserie)",
     "subtitle": "Svensk filmserie",
@@ -221,7 +211,7 @@
   },
   {
     "fact": "Peter Haber börjar spela Martin Beck.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q1437612",
     "subtitle": "Svensk skådespelare",
@@ -241,7 +231,7 @@
   },
   {
     "fact": "Mamma Mia! har premiär i London.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "manual-Mamma_Mia!_(musikal)",
     "subtitle": "Musikal med ABBA-musik",
@@ -261,7 +251,7 @@
   },
   {
     "fact": "Män som hatar kvinnor har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q276343",
     "subtitle": "Svensk thriller",
@@ -281,7 +271,7 @@
   },
   {
     "fact": "Snabba Cash har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q2068245",
     "subtitle": "Svensk film",
@@ -291,7 +281,7 @@
   },
   {
     "fact": "Solsidan har premiär i TV4.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q10673360",
     "subtitle": "Svensk tv-serie",
@@ -301,7 +291,7 @@
   },
   {
     "fact": "Bron har premiär i SVT.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q1211796",
     "subtitle": "Svensk-dansk tv-serie",
@@ -311,7 +301,7 @@
   },
   {
     "fact": "En man som heter Ove har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q21935502",
     "subtitle": "Svensk film",
@@ -361,7 +351,7 @@
   },
   {
     "fact": "Svensson, Svensson har premiär i SVT.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 240000,
     "qid": "Q7652181",
     "subtitle": "Svensk komediserie",
@@ -461,7 +451,7 @@
   },
   {
     "fact": "Persona har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q695255",
     "subtitle": "Film av Ingmar Bergman",
@@ -501,7 +491,7 @@
   },
   {
     "fact": "Utvandrarna har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "manual-Utvandrarna_(film%2C_1971)",
     "subtitle": "Svensk film",
@@ -511,7 +501,7 @@
   },
   {
     "fact": "Repmånad har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q7307594",
     "subtitle": "Svensk filmkomedi",
@@ -521,7 +511,7 @@
   },
   {
     "fact": "Göta kanal eller Vem drog ur proppen? har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q10512738",
     "subtitle": "Svensk filmkomedi",
@@ -531,7 +521,7 @@
   },
   {
     "fact": "Mitt liv som hund har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q1342900",
     "subtitle": "Svensk film",
@@ -541,7 +531,7 @@
   },
   {
     "fact": "Chess har premiär i London med musik av Benny Andersson och Björn Ulvaeus.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "manual-Chess_(musikal)",
     "subtitle": "Musikal av svenska låtskrivare",
@@ -570,18 +560,8 @@
     "year": 1994
   },
   {
-    "fact": "Kan du vissla Johanna? börjar visas som återkommande svensk tv-tradition.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 220000,
-    "qid": "Q18670584",
-    "subtitle": "Svensk tv-film",
-    "title": "”Kan du vissla Johanna?” visas på tv",
-    "wikipediaSlug": "Kan_du_vissla_Johanna%3F",
-    "year": 1994
-  },
-  {
     "fact": "Kristina från Duvemåla har premiär i Malmö.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q142885",
     "subtitle": "Svensk musikal",
@@ -591,7 +571,7 @@
   },
   {
     "fact": "Jägarna har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "manual-J%C3%A4garna_(film)",
     "subtitle": "Svensk thriller",
@@ -601,7 +581,7 @@
   },
   {
     "fact": "Skärgårdsdoktorn har premiär i SVT.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q3505375",
     "subtitle": "Svensk tv-serie",
@@ -611,7 +591,7 @@
   },
   {
     "fact": "Tomten är far till alla barnen har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q1388936",
     "subtitle": "Svensk julfilm",
@@ -621,7 +601,7 @@
   },
   {
     "fact": "Torsk på Tallinn har premiär i SVT.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q6804910",
     "subtitle": "Svensk tv-film",
@@ -631,7 +611,7 @@
   },
   {
     "fact": "Ondskan har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q1382421",
     "subtitle": "Svensk film",
@@ -641,7 +621,7 @@
   },
   {
     "fact": "Så som i himmelen har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q912049",
     "subtitle": "Svensk film",
@@ -771,7 +751,7 @@
   },
   {
     "fact": "Änglagård har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 200000,
     "qid": "Q1767472",
     "subtitle": "Svensk film",
@@ -891,7 +871,7 @@
   },
   {
     "fact": "Äppelkriget har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q4993673",
     "subtitle": "Svensk filmkomedi",
@@ -901,7 +881,7 @@
   },
   {
     "fact": "Nybyggarna har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q1171481",
     "subtitle": "Svensk film",
@@ -911,7 +891,7 @@
   },
   {
     "fact": "Picassos äventyr har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q1047872",
     "subtitle": "Svensk filmkomedi",
@@ -921,7 +901,7 @@
   },
   {
     "fact": "Den enfaldige mördaren har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q4973909",
     "subtitle": "Svensk film",
@@ -941,7 +921,7 @@
   },
   {
     "fact": "Varuhuset har premiär i SVT.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "manual-Varuhuset_(TV-serie)",
     "subtitle": "Svensk tv-serie",
@@ -951,7 +931,7 @@
   },
   {
     "fact": "Yrrol har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q8059663",
     "subtitle": "Svensk filmkomedi",
@@ -961,7 +941,7 @@
   },
   {
     "fact": "Tusenbröder har premiär i SVT.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q7856738",
     "subtitle": "Svensk tv-serie",
@@ -971,7 +951,7 @@
   },
   {
     "fact": "Hem till Midgård har premiär i TV4.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q5710883",
     "subtitle": "Svensk komediserie",
@@ -981,7 +961,7 @@
   },
   {
     "fact": "Kopps har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q431948",
     "subtitle": "Svensk filmkomedi",
@@ -991,7 +971,7 @@
   },
   {
     "fact": "Masjävlar har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q230545",
     "subtitle": "Svensk film",
@@ -1001,7 +981,7 @@
   },
   {
     "fact": "Morden i Sandhamn har premiär i TV4.",
-    "image": "",
+    "image": "Sandhamns_hotell.jpg",
     "pageViews": 180000,
     "qid": "Q4132634",
     "subtitle": "Svensk kriminalserie",
@@ -1011,7 +991,7 @@
   },
   {
     "fact": "Äkta människor har premiär i SVT.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q2690883",
     "subtitle": "Svensk tv-serie",
@@ -1021,7 +1001,7 @@
   },
   {
     "fact": "Bonusfamiljen har premiär i SVT.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q29384710",
     "subtitle": "Svensk tv-serie",
@@ -1031,7 +1011,7 @@
   },
   {
     "fact": "Kalifat har premiär i SVT.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q82070811",
     "subtitle": "Svensk tv-serie",
@@ -1041,7 +1021,7 @@
   },
   {
     "fact": "Tunna blå linjen har premiär i SVT.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q104808770",
     "subtitle": "Svensk tv-serie",
@@ -1181,7 +1161,7 @@
   },
   {
     "fact": "Svenska hjärtan har premiär i TV4.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 160000,
     "qid": "Q10685373",
     "subtitle": "Svensk tv-serie",
@@ -1191,7 +1171,7 @@
   },
   {
     "fact": "Häxorna blir känd för svenska barn genom bok och film.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 160000,
     "qid": "manual-H%C3%A4xorna_(bok)",
     "subtitle": "Barnberättelse",
@@ -1201,7 +1181,7 @@
   },
   {
     "fact": "Patrik 1,5 har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 160000,
     "qid": "Q964843",
     "subtitle": "Svensk film",
@@ -2448,1185 +2428,5 @@
     "wikipediaSlug": "Tropic_Thunder",
     "image": "Tropic_thunder_ver3.jpg",
     "pageViews": 100187
-  },
-  {
-    "qid": "Q108946",
-    "title": "‘A Few Good Men’ har premiär",
-    "subtitle": "Film regisserad av Rob Reiner",
-    "year": 1992,
-    "fact": "‘A Few Good Men’ är en amerikansk rättsdramafilm från 1992, producerad och regisserad av Rob Reiner och skriven av Aaron Sorkin, som anpassade sin pjäs från 1989.",
-    "wikipediaSlug": "A_Few_Good_Men",
-    "image": "A_Few_Good_Men_poster.jpg",
-    "pageViews": 98784
-  },
-  {
-    "qid": "Q193573",
-    "title": "‘Moulin Rouge!’ har premiär",
-    "subtitle": "Film regisserad av Baz Luhrmann",
-    "year": 2001,
-    "fact": "Moulin Rouge!",
-    "wikipediaSlug": "Moulin_Rouge!",
-    "image": "Moulin_rouge_poster.jpg",
-    "pageViews": 98713
-  },
-  {
-    "qid": "Q188035",
-    "title": "‘Apocalypto’ har premiär",
-    "subtitle": "Film i regi av Mel Gibson",
-    "year": 2006,
-    "fact": "Filmen ‘Apocalypto’ har premiär. Den är en episk historisk action-äventyrsfilm från 2006 producerad och regisserad av Mel Gibson, som skrev manus tillsammans med Farhad Safinia.",
-    "wikipediaSlug": "Apocalypto",
-    "image": "Apocalypto-poster01.jpg",
-    "pageViews": 98439
-  },
-  {
-    "qid": "Q24278982",
-    "title": "‘Indiana Jones and the Dial of Destiny’ har premiär",
-    "subtitle": "Film regisserad av James Mangold",
-    "year": 2023,
-    "fact": "‘Indiana Jones and the Dial of Destiny’ är en amerikansk actionäventyrsfilm från 2023, regisserad av James Mangold och skriven av Mangold, David Koepp, Jez Butterworth och John-Henry Butterworth.",
-    "wikipediaSlug": "Indiana_Jones_and_the_Dial_of_Destiny",
-    "image": "Indiana_Jones_and_the_Dial_of_Destiny_theatrical_poster.jpg",
-    "pageViews": 98426
-  },
-  {
-    "qid": "Q183063",
-    "title": "‘The Sixth Sense’ har premiär",
-    "subtitle": "Film i regi av M. Night Shyamalan",
-    "year": 1999,
-    "fact": "The Sixth Sense är en amerikansk psykologisk thrillerfilm från 1999, skriven och regisserad av M.",
-    "wikipediaSlug": "The_Sixth_Sense",
-    "image": "The_Sixth_Sense_poster.png",
-    "pageViews": 98253
-  },
-  {
-    "qid": "Q156539",
-    "title": "‘Highlander’ har premiär",
-    "subtitle": "Film regisserad av Russell Mulcahy",
-    "year": 1986,
-    "fact": "‘Highlander’ är en fantasy-actionäventyrsfilm från 1986 och den första delen i ‘Highlander’-serien.",
-    "wikipediaSlug": "Highlander_(film)",
-    "image": "Highlander_1986,poster.jpg",
-    "pageViews": 98015
-  },
-  {
-    "qid": "Q26698156",
-    "title": "‘The Shape of Water’ har premiär",
-    "subtitle": "Film regisserad av Guillermo del Toro",
-    "year": 2017,
-    "fact": "‘The Shape of Water’ är en romantisk dark fantasy-film från 2017 som utspelar sig i en historisk miljö, regisserad och producerad av Guillermo del Toro, som skrev manuset tillsammans med Vanessa Taylor.",
-    "wikipediaSlug": "The_Shape_of_Water",
-    "image": "The_Shape_of_Water_(film).png",
-    "pageViews": 97831
-  },
-  {
-    "qid": "Q55081822",
-    "title": "‘Ford v Ferrari’ har premiär",
-    "subtitle": "Film regisserad av James Mangold",
-    "year": 2019,
-    "fact": "‘Ford v Ferrari’ är en amerikansk biografisk sportdramafilm från 2019 i regi av James Mangold och skriven av Jez Butterworth, John-Henry Butterworth och Jason Keller.",
-    "wikipediaSlug": "Ford_v_Ferrari",
-    "image": "Ford_v._Ferrari_(2019_film_poster).png",
-    "pageViews": 97456
-  },
-  {
-    "qid": "Q105702",
-    "title": "‘Dr. Strangelove’ har premiär",
-    "subtitle": "Film regisserad av Stanley Kubrick",
-    "year": 1964,
-    "fact": "Dr.",
-    "wikipediaSlug": "Dr._Strangelove",
-    "image": "Dr._Strangelove_poster.jpg",
-    "pageViews": 96865
-  },
-  {
-    "qid": "Q243439",
-    "title": "‘Full Metal Jacket’ har premiär",
-    "subtitle": "Film regisserad av Stanley Kubrick",
-    "year": 1987,
-    "fact": "‘Full Metal Jacket’ är en krigsfilm från 1987 i regi av och producerad av Stanley Kubrick efter ett manus han skrev tillsammans med Michael Herr och Gustav Hasford.",
-    "wikipediaSlug": "Full_Metal_Jacket",
-    "image": "Full_Metal_Jacket_poster.jpg",
-    "pageViews": 96716
-  },
-  {
-    "qid": "Q41483",
-    "title": "‘The Good, the Bad and the Ugly’ har premiär",
-    "subtitle": "Film regisserad av Sergio Leone",
-    "year": 1966,
-    "fact": "Den gode, den onde, den fule är en italiensk episk spaghettiwestern från 1966 i regi av Sergio Leone, med Clint Eastwood som \"den gode\", Lee Van Cleef som \"den onde\" och Eli Wallach som \"den fule\".",
-    "wikipediaSlug": "The_Good,_the_Bad_and_the_Ugly",
-    "image": "Good_the_bad_and_the_ugly_poster.jpg",
-    "pageViews": 96703
-  },
-  {
-    "qid": "Q10350033",
-    "title": "‘Pirates of the Caribbean: Dead Men Tell no Tales’ har premiär",
-    "subtitle": "Film i regi av Joachim Rønning",
-    "year": 2017,
-    "fact": "‘Pirates of the Caribbean: Dead Men Tell No Tales’ är en amerikansk äventyrs-fantasyfilm från 2017 regisserad av Joachim Rønning och Espen Sandberg, och skriven av Jeff Nathanson.",
-    "wikipediaSlug": "Pirates_of_the_Caribbean:_Dead_Men_Tell_No_Tales",
-    "image": "Pirates_of_the_Caribbean,_Dead_Men_Tell_No_Tales.jpg",
-    "pageViews": 96499
-  },
-  {
-    "qid": "Q3520498",
-    "title": "‘Dallas Buyers Club’ har premiär",
-    "subtitle": "Film i regi av Jean-Marc Vallée",
-    "year": 2013,
-    "fact": "‘Dallas Buyers Club’ är en amerikansk biografisk dramafilm från 2013, skriven av Craig Borten och Melisa Wallack, och regisserad av Jean-Marc Vallée.",
-    "wikipediaSlug": "Dallas_Buyers_Club",
-    "image": "Dallas_Buyers_Club_poster.jpg",
-    "pageViews": 96239
-  },
-  {
-    "qid": "Q47075",
-    "title": "‘Scarface’ har premiär",
-    "subtitle": "Film regisserad av Brian De Palma",
-    "year": 1983,
-    "fact": "‘Scarface’ är en amerikansk kriminaldramafilm från 1983 i regi av Brian De Palma och skriven av Oliver Stone.",
-    "wikipediaSlug": "Scarface_(1983_film)",
-    "image": "Scarface_-_1983_film.jpg",
-    "pageViews": 95998
-  },
-  {
-    "qid": "Q188000",
-    "title": "‘Crash’ har premiär",
-    "subtitle": "Film regisserad av Paul Haggis",
-    "year": 2004,
-    "fact": "‘Crash’ är en amerikansk kriminaldramafilm från 2004, regisserad av Paul Haggis, som medförfattade manuset och producerade filmen tillsammans med Robert Moresco.",
-    "wikipediaSlug": "Crash_(2004_film)",
-    "image": "Crash_ver2.jpg",
-    "pageViews": 95888
-  },
-  {
-    "qid": "Q213411",
-    "title": "‘Cast Away’ har premiär",
-    "subtitle": "Film regisserad av Robert Zemeckis",
-    "year": 2000,
-    "fact": "‘Cast Away’ är en amerikansk överlevnadsdramafilm från 2000, regisserad och producerad av Robert Zemeckis, skriven av William Broyles Jr. och med Tom Hanks, Helen Hunt och Nick Searcy i huvudrollerna.",
-    "wikipediaSlug": "Cast_Away",
-    "image": "Cast_away_film_poster.jpg",
-    "pageViews": 95401
-  },
-  {
-    "qid": "Q193577",
-    "title": "‘Kramer vs. Kramer’ har premiär",
-    "subtitle": "Film regisserad av Robert Benton",
-    "year": 1979,
-    "fact": "Kramer vs.",
-    "wikipediaSlug": "Kramer_vs._Kramer",
-    "image": "Oscar_posters_79.jpg",
-    "pageViews": 95318
-  },
-  {
-    "qid": "Q18602670",
-    "title": "‘Spectre’ har premiär",
-    "subtitle": "Film regisserad av Sam Mendes",
-    "year": 2015,
-    "fact": "‘Spectre’ är en spionthriller från 2015 och den tjugofjärde delen i James Bond-filmserien, producerad av Eon Productions.",
-    "wikipediaSlug": "Spectre_(2015_film)",
-    "image": "Spectre_2015_poster.jpg",
-    "pageViews": 95118
-  },
-  {
-    "qid": "Q21527875",
-    "title": "‘Moonlight’ har premiär",
-    "subtitle": "Film regisserad av Barry Jenkins",
-    "year": 2016,
-    "fact": "‘Moonlight’ är en amerikansk dramafilm från 2016 om att växa upp, skriven och regisserad av Barry Jenkins, baserad på Tarell Alvin McCraney’s opublicerade semi-självbiografiska pjäs ‘In Moonlight Black Boys Look Blue’.",
-    "wikipediaSlug": "Moonlight_(2016_film)",
-    "image": "Moonlight_(2016_film).png",
-    "pageViews": 94848
-  },
-  {
-    "qid": "Q152531",
-    "title": "‘Zero Dark Thirty’ har premiär",
-    "subtitle": "Film i regi av Kathryn Bigelow",
-    "year": 2012,
-    "fact": "‘Zero Dark Thirty’ är en amerikansk politisk action-thriller från 2012 i regi av Kathryn Bigelow och skriven av Mark Boal.",
-    "wikipediaSlug": "Zero_Dark_Thirty",
-    "image": "ZeroDarkThirty2012Poster.jpg",
-    "pageViews": 94548
-  },
-  {
-    "qid": "Q61740820",
-    "title": "‘Nomadland’ har premiär",
-    "subtitle": "Film regisserad av Chloé Zhao",
-    "year": 2020,
-    "fact": "‘Nomadland’ är en amerikansk dramafilm från 2020, skriven, producerad, klippt och regisserad av Chloé Zhao.",
-    "wikipediaSlug": "Nomadland",
-    "image": "Nomadland_poster.jpeg",
-    "pageViews": 94391
-  },
-  {
-    "qid": "Q46717",
-    "title": "‘Pirates of the Caribbean: The Curse of the Black Pearl’ har premiär",
-    "subtitle": "Film regisserad av Gore Verbinski",
-    "year": 2003,
-    "fact": "‘Pirates of the Caribbean: The Curse of the Black Pearl’ är en amerikansk fantasy-äventyrsfilm från 2003 regisserad av Gore Verbinski.",
-    "wikipediaSlug": "Pirates_of_the_Caribbean:_The_Curse_of_the_Black_Pearl",
-    "image": "Pirates_of_the_Caribbean_-_The_Curse_of_the_Black_Pearl.png",
-    "pageViews": 93412
-  },
-  {
-    "qid": "Q186587",
-    "title": "‘Troy’ har premiär",
-    "subtitle": "Film i regi av Wolfgang Petersen",
-    "year": 2004,
-    "fact": "Troja är en episk historisk actionfilm från 2004, regisserad av Wolfgang Petersen och skriven av David Benioff.",
-    "wikipediaSlug": "Troy_(film)",
-    "image": "Troy_03500296.png",
-    "pageViews": 93378
-  },
-  {
-    "qid": "Q42759035",
-    "title": "‘Joker’ har premiär",
-    "subtitle": "Film regisserad av Todd Phillips",
-    "year": 2019,
-    "fact": "'Joker' är en amerikansk psykologisk thrillerfilm från 2019, regisserad av Todd Phillips utifrån ett manus han skrev tillsammans med Scott Silver.",
-    "wikipediaSlug": "Joker_(2019_film)",
-    "image": "Joker_(2019_film)_poster.jpg",
-    "pageViews": 92969
-  },
-  {
-    "qid": "Q318766",
-    "title": "‘The Terminal’ har premiär",
-    "subtitle": "Film regisserad av Steven Spielberg",
-    "year": 2004,
-    "fact": "The Terminal är en amerikansk komedidramafilm från 2004, producerad och regisserad av Steven Spielberg med Tom Hanks, Catherine Zeta-Jones och Stanley Tucci i huvudrollerna.",
-    "wikipediaSlug": "The_Terminal",
-    "image": "Movie_poster_the_terminal.jpg",
-    "pageViews": 91932
-  },
-  {
-    "qid": "Q164103",
-    "title": "‘A Beautiful Mind’ släpps",
-    "subtitle": "Film regisserad av Ron Howard",
-    "year": 2001,
-    "fact": "‘A Beautiful Mind’ är en amerikansk biografisk dramafilm från 2001 om matematikern John Nash som vann Nobelpriset i ekonomisk vetenskap.",
-    "wikipediaSlug": "A_Beautiful_Mind_(film)",
-    "image": "A_Beautiful_Mind_Poster.jpg",
-    "pageViews": 91679
-  },
-  {
-    "qid": "Q180098",
-    "title": "‘Ben-Hur’ har premiär",
-    "subtitle": "Film i regi av William Wyler",
-    "year": 1959,
-    "fact": "Ben-Hur är en amerikansk religiös episk film från 1959, regisserad av William Wyler, producerad av Sam Zimbalist, med Charlton Heston i titelrollen.",
-    "wikipediaSlug": "Ben-Hur_(1959_film)",
-    "image": "Ben_Hur_1959_film_Poster.jpg",
-    "pageViews": 91273
-  },
-  {
-    "qid": "Q125076",
-    "title": "‘Slumdog Millionaire’ har premiär",
-    "subtitle": "Film regisserad av Danny Boyle",
-    "year": 2008,
-    "fact": "‘Slumdog Millionaire’ är en brittisk dramafilm från 2008 i regi av Danny Boyle, skriven av Simon Beaufoy och producerad av Christian Colson, med Loveleen Tandan som medregissör.",
-    "wikipediaSlug": "Slumdog_Millionaire",
-    "image": "Slumdog_Millionaire_poster.png",
-    "pageViews": 91200
-  },
-  {
-    "qid": "Q190145",
-    "title": "‘Spider-Man 2’ har premiär",
-    "subtitle": "Film regisserad av Sam Raimi",
-    "year": 2004,
-    "fact": "‘Spider-Man 2’ är en amerikansk superhjältefilm från 2004 baserad på Marvel Comics karaktär Spider-Man.",
-    "wikipediaSlug": "Spider-Man_2",
-    "image": "Spider-Man_2_USA_poster.jpg",
-    "pageViews": 91017
-  },
-  {
-    "qid": "Q660894",
-    "title": "‘Gilbert Grape’ har premiär",
-    "subtitle": "Film i regi av Lasse Hallström",
-    "year": 1993,
-    "fact": "‘Gilbert Grape’ är en amerikansk dramafilm från 1993 i regi av Lasse Hallström, med Johnny Depp, Juliette Lewis, Mary Steenburgen, Leonardo DiCaprio och John C. i rollerna.",
-    "wikipediaSlug": "What%27s_Eating_Gilbert_Grape",
-    "image": "What's_Eating_Gilbert_Grape_poster.png",
-    "pageViews": 90775
-  },
-  {
-    "qid": "Q308929",
-    "title": "‘Training Day’ har premiär",
-    "subtitle": "Film regisserad av Antoine Fuqua",
-    "year": 2001,
-    "fact": "Training Day är en amerikansk kriminalthriller från 2001, regisserad av Antoine Fuqua och skriven av David Ayer.",
-    "wikipediaSlug": "Training_Day",
-    "image": "Training_Day_Poster.jpg",
-    "pageViews": 90637
-  },
-  {
-    "qid": "Q464964",
-    "title": "‘The Dictator’ har premiär",
-    "subtitle": "Film i regi av Larry Charles",
-    "year": 2012,
-    "fact": "‘Diktatorn’ är en politisk satirisk svart komedi från 2012, regisserad av Larry Charles och skriven av Sacha Baron Cohen, Alec Berg, David Mandel och Jeff Schaffer.",
-    "wikipediaSlug": "The_Dictator",
-    "image": "The_Dictator_Poster.jpg",
-    "pageViews": 90539
-  },
-  {
-    "qid": "Q112322116",
-    "title": "‘Captain America: Brave New World’ har premiär",
-    "subtitle": "Film i regi av Julius Onah",
-    "year": 2025,
-    "fact": "‘Captain America: Brave New World’ är en amerikansk superhjältefilm från 2025 baserad på Marvel Comics och med karaktären Sam Wilson / Captain America i huvudrollen.",
-    "wikipediaSlug": "Captain_America:_Brave_New_World",
-    "image": "Captain_America_Brave_New_World_poster.jpg",
-    "pageViews": 90280
-  },
-  {
-    "qid": "Q21869840",
-    "title": "‘Split’ har premiär",
-    "subtitle": "Film i regi av M. Night Shyamalan",
-    "year": 2016,
-    "fact": "Split är en amerikansk psykologisk thrillerfilm från 2016 skriven, regisserad och producerad av M.",
-    "wikipediaSlug": "Split_(2016_American_film)",
-    "image": "Split_(2017_film).jpg",
-    "pageViews": 88941
-  },
-  {
-    "qid": "Q180214",
-    "title": "‘Black Swan’ har premiär",
-    "subtitle": "Film regisserad av Darren Aronofsky",
-    "year": 2010,
-    "fact": "Black Swan är en amerikansk psykologisk skräckthrillerfilm från 2010, regisserad av Darren Aronofsky efter ett manus av Mark Heyman, John McLaughlin och Andres Heinz, baserad på en berättelse av Heinz.",
-    "wikipediaSlug": "Black_Swan_(film)",
-    "image": "Black_Swan_poster.jpg",
-    "pageViews": 88823
-  },
-  {
-    "qid": "Q114819",
-    "title": "‘Dune’ har premiär",
-    "subtitle": "Film regisserad av David Lynch",
-    "year": 1984,
-    "fact": "‘Dune’ är en amerikansk episk rymdoperfilm från 1984 skriven och regisserad av David Lynch, och baserad på 1965 års roman med samma namn av Frank Herbert.",
-    "wikipediaSlug": "Dune_(1984_film)",
-    "image": "Dune_1984_Poster.jpg",
-    "pageViews": 88740
-  },
-  {
-    "qid": "Q24815",
-    "title": "‘Citizen Kane’ har premiär",
-    "subtitle": "Film i regi av Orson Welles",
-    "year": 1941,
-    "fact": "‘Citizen Kane’ är en amerikansk dramafilm från 1941, regisserad av, producerad av och med Orson Welles i huvudrollen, samt medförfattad av Welles och Herman J.",
-    "wikipediaSlug": "Citizen_Kane",
-    "image": "Citizen_Kane_poster,_1941_(Style_B,_unrestored).jpg",
-    "pageViews": 88729
-  },
-  {
-    "qid": "Q108745",
-    "title": "‘Ghostbusters’ har premiär",
-    "subtitle": "Film regisserad av Ivan Reitman",
-    "year": 1984,
-    "fact": "Ghostbusters är en amerikansk övernaturlig komedifilm från 1984 regisserad av Ivan Reitman och skriven av Dan Aykroyd och Harold Ramis.",
-    "wikipediaSlug": "Ghostbusters",
-    "image": "Ghostbusters_(1984)_theatrical_poster.png",
-    "pageViews": 88658
-  },
-  {
-    "qid": "Q190643",
-    "title": "‘Platoon’ har premiär",
-    "subtitle": "Film i regi av Oliver Stone",
-    "year": 1986,
-    "fact": "‘Platoon’ är en amerikansk krigsfilm från 1986 skriven och regisserad av Oliver Stone, med Tom Berenger, Willem Dafoe, Charlie Sheen i huvudrollerna, och med biroller av Forest Whitaker, Francesco Quinn, John C.",
-    "wikipediaSlug": "Platoon_(film)",
-    "image": "Platoon_posters_86.jpg",
-    "pageViews": 88594
-  },
-  {
-    "qid": "Q221384",
-    "title": "‘Black Hawk Down’ har premiär",
-    "subtitle": "Film regisserad av Ridley Scott",
-    "year": 2001,
-    "fact": "Black Hawk Down är en amerikansk krigsfilm från 2001, regisserad och producerad av Ridley Scott, och samproducerad av Jerry Bruckheimer, baserad på ett manus av Ken Nolan.",
-    "wikipediaSlug": "Black_Hawk_Down_(film)",
-    "image": "Black_hawk_down_ver1.jpg",
-    "pageViews": 88293
-  },
-  {
-    "qid": "Q166262",
-    "title": "‘Batman Begins’ har premiär",
-    "subtitle": "Film regisserad av Christopher Nolan",
-    "year": 2005,
-    "fact": "‘Batman Begins’ är en superhjältefilm från 2005, baserad på DC Comics-karaktären Batman.",
-    "wikipediaSlug": "Batman_Begins",
-    "image": "Batman_Begins_Poster.jpg",
-    "pageViews": 87390
-  },
-  {
-    "qid": "Q192724",
-    "title": "‘Iron Man’ har premiär",
-    "subtitle": "Film i regi av Jon Favreau",
-    "year": 2008,
-    "fact": "‘Iron Man’ är en amerikansk superhjältefilm från 2008, baserad på Marvel Comics-karaktären med samma namn.",
-    "wikipediaSlug": "Iron_Man_(2008_film)",
-    "image": "Iron_Man_(2008_film)_poster.jpg",
-    "pageViews": 87279
-  },
-  {
-    "qid": "Q169082",
-    "title": "‘10 orsaker att hata dig’ släpps",
-    "subtitle": "Film regisserad av Gil Junger",
-    "year": 1999,
-    "fact": "‘10 Things I Hate About You’ är en amerikansk romantisk tonårskomedifilm från 1999, regisserad av Gil Junger i hans regidebut och med Julia Stiles, Heath Ledger, Joseph Gordon-Levitt, Larisa Oleynik, Larry Miller, Andrew Keegan, David Krumholtz, Susan May Pratt och Gabrielle Union i rollerna.",
-    "wikipediaSlug": "10_Things_I_Hate_About_You",
-    "image": "10_Things_I_Hate_About_You_film.jpg",
-    "pageViews": 86947
-  },
-  {
-    "qid": "Q27480769",
-    "title": "‘Lady Bird’ har premiär",
-    "subtitle": "Film regisserad av Greta Gerwig",
-    "year": 2017,
-    "fact": "‘Lady Bird’ är en amerikansk drama-komedi-film om att bli vuxen från 2017, skriven och regisserad av Greta Gerwig i hennes regidebut, med Saoirse Ronan, Laurie Metcalf, Tracy Letts, Lucas Hedges, Timothée Chalamet, Beanie Feldstein, Stephen McKinley Henderson och Lois Smith i rollerna.",
-    "wikipediaSlug": "Lady_Bird_(film)",
-    "image": "Lady_Bird_poster.jpeg",
-    "pageViews": 86436
-  },
-  {
-    "qid": "Q229808",
-    "title": "‘The Amazing Spider-Man’ har premiär",
-    "subtitle": "Film i regi av Marc Webb",
-    "year": 2012,
-    "fact": "‘The Amazing Spider-Man’ är en amerikansk superhjältefilm från 2012 baserad på Marvel Comics-karaktären Spider-Man.",
-    "wikipediaSlug": "The_Amazing_Spider-Man_(film)",
-    "image": "The_Amazing_Spider-Man_(film)_poster.jpg",
-    "pageViews": 86255
-  },
-  {
-    "qid": "Q162729",
-    "title": "‘Braveheart’ har premiär",
-    "subtitle": "Film i regi av Mel Gibson",
-    "year": 1995,
-    "fact": "Braveheart är en amerikansk episk historisk krigsdramafilm från 1995, regisserad och producerad av Mel Gibson, som porträtterar den skotske krigaren Sir William Wallace under det första skotska självständighetskriget.",
-    "wikipediaSlug": "Braveheart",
-    "image": "Braveheart_film_poster.png",
-    "pageViews": 86020
-  },
-  {
-    "qid": "Q220515",
-    "title": "‘The Pursuit of Happyness’ har premiär",
-    "subtitle": "Film regisserad av Gabriele Muccino",
-    "year": 2006,
-    "fact": "‘The Pursuit of Happyness’ är en amerikansk biografisk dramafilm från 2006 i regi av Gabriele Muccino, med Will Smith i huvudrollen som Chris Gardner, en hemlös försäljare.",
-    "wikipediaSlug": "The_Pursuit_of_Happyness",
-    "image": "Poster-pursuithappyness.jpg",
-    "pageViews": 85060
-  },
-  {
-    "qid": "Q660950",
-    "title": "‘Blue Velvet’ har premiär",
-    "subtitle": "Film regisserad av David Lynch",
-    "year": 1986,
-    "fact": "Blue Velvet är en amerikansk neo-noir mysterietrillerfilm från 1986, skriven och regisserad av David Lynch.",
-    "wikipediaSlug": "Blue_Velvet_(film)",
-    "image": "Blue_Velvet_(1986).png",
-    "pageViews": 85046
-  },
-  {
-    "qid": "Q390052",
-    "title": "‘The Talented Mr. Ripley’ har premiär",
-    "subtitle": "Film regisserad av Anthony Minghella",
-    "year": 1999,
-    "fact": "The Talented Mr.",
-    "wikipediaSlug": "The_Talented_Mr._Ripley_(film)",
-    "image": "Talented_mr_ripley.jpg",
-    "pageViews": 84918
-  },
-  {
-    "qid": "Q675468",
-    "title": "‘The Perks of Being a Wallflower’ har premiär",
-    "subtitle": "Film regisserad av Stephen Chbosky",
-    "year": 2012,
-    "fact": "‘The Perks of Being a Wallflower’ är en amerikansk uppväxtskildring och romantisk dramafilm från 2012, skriven och regisserad av Stephen Chbosky, baserad på hans roman från 1999.",
-    "wikipediaSlug": "The_Perks_of_Being_a_Wallflower_(film)",
-    "image": "The_Perks_of_Being_a_Wallflower_Poster.jpg",
-    "pageViews": 84875
-  },
-  {
-    "qid": "Q176826",
-    "title": "‘The Last King of Scotland’ har premiär",
-    "subtitle": "Film i regi av Kevin Macdonald",
-    "year": 2006,
-    "fact": "The Last King of Scotland är en historisk dramafilm från 2006 i regi av Kevin Macdonald efter ett manus av Peter Morgan och Jeremy Brock.",
-    "wikipediaSlug": "The_Last_King_of_Scotland_(film)",
-    "image": "Last_king_of_scotland_uk.jpg",
-    "pageViews": 84471
-  },
-  {
-    "qid": "Q109135",
-    "title": "‘Trainspotting’ har premiär",
-    "subtitle": "Film regisserad av Danny Boyle",
-    "year": 1996,
-    "fact": "Trainspotting är en brittisk svart komedi och dramafilm från 1996, regisserad av Danny Boyle och med Ewan McGregor, Ewen Bremner, Jonny Lee Miller, Kevin McKidd, Robert Carlyle samt Kelly Macdonald i sin filmdebut i huvudrollerna.",
-    "wikipediaSlug": "Trainspotting_(film)",
-    "image": "Trainspotting_ver2.jpg",
-    "pageViews": 84244
-  },
-  {
-    "qid": "Q189505",
-    "title": "‘Jaws’ har premiär",
-    "subtitle": "Film regisserad av Steven Spielberg",
-    "year": 1975,
-    "fact": "‘Jaws’ är en amerikansk thrillerfilm från 1975 regisserad av Steven Spielberg.",
-    "wikipediaSlug": "Jaws_(film)",
-    "image": "Jaws_movie_poster.jpg",
-    "pageViews": 83894
-  },
-  {
-    "qid": "Q200804",
-    "title": "‘Predator’ har premiär",
-    "subtitle": "Film i regi av John McTiernan",
-    "year": 1987,
-    "fact": "‘Predator’ är en amerikansk science fiction-action-skräckfilm från 1987 regisserad av John McTiernan och skriven av bröderna Jim och John Thomas.",
-    "wikipediaSlug": "Predator_(film)",
-    "image": "Predator_Movie.jpg",
-    "pageViews": 83859
-  },
-  {
-    "qid": "Q201674",
-    "title": "‘The Deer Hunter’ har premiär",
-    "subtitle": "Film i regi av Michael Cimino",
-    "year": 1978,
-    "fact": "‘Deer Hunter’ är ett amerikanskt krigsdramatiserat epos från 1978, medskrivet och regisserat av Michael Cimino, om tre rysk-amerikanska stålarbetare vars liv vänds upp och ner av kriget i Vietnam.",
-    "wikipediaSlug": "The_Deer_Hunter",
-    "image": "The_Deer_Hunter_poster.jpg",
-    "pageViews": 83656
-  },
-  {
-    "qid": "Q28196",
-    "title": "‘World War Z’ har premiär",
-    "subtitle": "Film i regi av Marc Forster",
-    "year": 2013,
-    "fact": "‘World War Z’ är en amerikansk action-skräckfilm från 2013 med Brad Pitt i huvudrollen som Gerry Lane, en före detta FN-utredare som reser världen runt i sökandet efter en lösning på en plötslig zombieapokalyps.",
-    "wikipediaSlug": "World_War_Z_(film)",
-    "image": "World_War_Z_poster.jpg",
-    "pageViews": 83597
-  },
-  {
-    "qid": "Q23780914",
-    "title": "‘Avengers: Infinity War’ har premiär",
-    "subtitle": "Film regisserad av Anthony Russo",
-    "year": 2018,
-    "fact": "‘Avengers: Infinity War’ är en amerikansk superhjältefilm från 2018, baserad på Marvel Comics superhjälteteam Avengers.",
-    "wikipediaSlug": "Avengers:_Infinity_War",
-    "image": "Avengers_Infinity_War_poster.jpg",
-    "pageViews": 83490
-  },
-  {
-    "qid": "Q188845",
-    "title": "‘Rain Man’ har premiär",
-    "subtitle": "Film regisserad av Barry Levinson",
-    "year": 1988,
-    "fact": "‘Rain Man’ har premiär 1988 som en amerikansk roadmovie i komedi-dramagenren, regisserad av Barry Levinson och skriven av Barry Morrow och Ronald Bass.",
-    "wikipediaSlug": "Rain_Man",
-    "image": "Rain_Man_poster.jpg",
-    "pageViews": 83462
-  },
-  {
-    "qid": "Q15732802",
-    "title": "‘John Wick’ har premiär",
-    "subtitle": "Film regisserad av David Leitch",
-    "year": 2014,
-    "fact": "'John Wick' är en amerikansk actionthrillerfilm från 2014, regisserad av Chad Stahelski och skriven av Derek Kolstad.",
-    "wikipediaSlug": "John_Wick_(film)",
-    "image": "John_Wick_TeaserPoster.jpg",
-    "pageViews": 83172
-  },
-  {
-    "qid": "Q274167",
-    "title": "‘The Exorcist’ har premiär",
-    "subtitle": "Film regisserad av William Friedkin",
-    "year": 1973,
-    "fact": "‘Exorcisten’ är en amerikansk övernaturlig skräckfilm från 1973, regisserad av William Friedkin efter ett manus av William Peter Blatty, baserat på hans roman från 1971.",
-    "wikipediaSlug": "The_Exorcist",
-    "image": "Exorcist_ver2.jpg",
-    "pageViews": 82849
-  },
-  {
-    "qid": "Q753899",
-    "title": "‘Scott Pilgrim vs. the World’ har premiär",
-    "subtitle": "Film regisserad av Edgar Wright",
-    "year": 2010,
-    "fact": "‘Scott Pilgrim vs. the World’ är en romantisk actionkomedifilm från 2010 i regi av Edgar Wright, skriven av Wright och Michael Bacall, baserad på den tecknade serien ‘Scott Pilgrim’ av Bryan Lee O'Malley.",
-    "wikipediaSlug": "Scott_Pilgrim_vs._the_World",
-    "image": "Scott_Pilgrim_vs._the_World_teaser.jpg",
-    "pageViews": 82834
-  },
-  {
-    "qid": "Q20430699",
-    "title": "‘Alien: Covenant’ har premiär",
-    "subtitle": "Film regisserad av Ridley Scott",
-    "year": 2017,
-    "fact": "Filmen ‘Alien: Covenant’ har premiär. Den är en science fiction-skräckfilm från 2017 regisserad av Ridley Scott och skriven av John Logan och Dante Harper.",
-    "wikipediaSlug": "Alien:_Covenant",
-    "image": "Alien_Covenant_Teaser_Poster.jpg",
-    "pageViews": 82713
-  },
-  {
-    "qid": "Q270351",
-    "title": "‘American Gangster’ har premiär",
-    "subtitle": "Film regisserad av Ridley Scott",
-    "year": 2007,
-    "fact": "Filmen ‘American Gangster’ har premiär. Den är en amerikansk biografisk kriminaldramafilm från 2007 regisserad och producerad av Ridley Scott och skriven av Steven Zaillian.",
-    "wikipediaSlug": "American_Gangster_(film)",
-    "image": "American_Gangster_poster.jpg",
-    "pageViews": 82652
-  },
-  {
-    "qid": "Q1757288",
-    "title": "‘Mad Max: Fury Road’ har premiär",
-    "subtitle": "Film regisserad av George Miller",
-    "year": 2015,
-    "fact": "Mad Max: Fury Road är en australisk postapokalyptisk actionfilm från 2015, som skrevs, producerades och regisserades av George Miller, som samarbetade med Brendan McCarthy och Nico Lathouris kring manuset.",
-    "wikipediaSlug": "Mad_Max:_Fury_Road",
-    "image": "Mad_Max_Fury_Road.jpg",
-    "pageViews": 82509
-  },
-  {
-    "qid": "Q54862508",
-    "title": "‘Jojo Rabbit’ har premiär",
-    "subtitle": "Film regisserad av Taika Waititi",
-    "year": 2019,
-    "fact": "'Jojo Rabbit' är en satirisk svart komedidramafilm från 2019, skriven och regisserad av Taika Waititi, adapterad från Christine Leunens bok 'Caging Skies' från 2008.",
-    "wikipediaSlug": "Jojo_Rabbit",
-    "image": "Jojo_Rabbit_(2019)_poster.jpg",
-    "pageViews": 82389
-  },
-  {
-    "qid": "Q224647",
-    "title": "‘The Devil's Advocate’ har premiär",
-    "subtitle": "Film regisserad av Taylor Hackford",
-    "year": 1997,
-    "fact": "‘Devil’s Advocate’ är en amerikansk övernaturlig skräckfilm från 1997 i regi av Taylor Hackford, skriven av Jonathan Lemkin och Tony Gilroy, med Keanu Reeves, Al Pacino och Charlize Theron i rollerna.",
-    "wikipediaSlug": "The_Devil%27s_Advocate_(1997_film)",
-    "image": "Devilsadvocate.jpg",
-    "pageViews": 82338
-  },
-  {
-    "qid": "Q153484",
-    "title": "‘Resident Evil’ har premiär",
-    "subtitle": "Film regisserad av Paul W. S. Anderson",
-    "year": 2002,
-    "fact": "‘Resident Evil’ har premiär 2002 som en action-skräckfilm skriven och regisserad av Paul W.",
-    "wikipediaSlug": "Resident_Evil_(2002_film)",
-    "image": "Resident_evil_ver4.jpg",
-    "pageViews": 81766
-  },
-  {
-    "qid": "Q471716",
-    "title": "‘Barry Lyndon’ har premiär",
-    "subtitle": "Film regisserad av Stanley Kubrick",
-    "year": 1975,
-    "fact": "‘Barry Lyndon’ är en episk historisk dramafilm från 1975, skriven, regisserad och producerad av Stanley Kubrick, baserad på romanen ‘The Luck of Barry Lyndon’ från 1844 av William Makepeace Thackeray.",
-    "wikipediaSlug": "Barry_Lyndon",
-    "image": "Barry_Lyndon_A.jpg",
-    "pageViews": 81484
-  },
-  {
-    "qid": "Q61876370",
-    "title": "‘Mission: Impossible – Dead Reckoning Part One’ har premiär",
-    "subtitle": "Film regisserad av Christopher McQuarrie",
-    "year": 2023,
-    "fact": "‘Mission: Impossible – Dead Reckoning Part One’ är en amerikansk actionspionfilm från 2023, regisserad av Christopher McQuarrie efter ett manus han skrev tillsammans med Erik Jendresen.",
-    "wikipediaSlug": "Mission:_Impossible_%E2%80%93_Dead_Reckoning_Part_One",
-    "image": "Mission-_Impossible_–_Dead_Reckoning_Part_One_poster.jpg",
-    "pageViews": 81421
-  },
-  {
-    "qid": "Q270385",
-    "title": "‘Pride & Prejudice’ har premiär",
-    "subtitle": "Film i regi av Joe Wright",
-    "year": 2005,
-    "fact": "‘Pride & Prejudice’ är en kostymromantisk film från 2005 regisserad av Joe Wright, i hans debut som långfilmsregissör, baserad på Jane Austens roman från 1813 med samma namn.",
-    "wikipediaSlug": "Pride_%26_Prejudice_(2005_film)",
-    "image": "Prideandprejudiceposter.jpg",
-    "pageViews": 81372
-  },
-  {
-    "qid": "Q207954",
-    "title": "‘Pretty Woman’ har premiär",
-    "subtitle": "Film regisserad av Garry Marshall",
-    "year": 1990,
-    "fact": "‘Pretty Woman’ är en amerikansk romantisk komedifilm från 1990 regisserad av Garry Marshall och skriven av J.",
-    "wikipediaSlug": "Pretty_Woman",
-    "image": "Pretty_woman_movie.jpg",
-    "pageViews": 81106
-  },
-  {
-    "qid": "Q13255497",
-    "title": "‘Birdman’ har premiär",
-    "subtitle": "Film regisserad av Alejandro González Iñárritu",
-    "year": 2014,
-    "fact": "Birdman, stiliserad som BİRDMAN or, är en amerikansk satirisk surrealistisk svart komedidramafilm från 2014, regisserad av Alejandro González Iñárritu.",
-    "wikipediaSlug": "Birdman_(film)",
-    "image": "Birdman_poster.png",
-    "pageViews": 81084
-  },
-  {
-    "qid": "Q163038",
-    "title": "‘Psycho’ har premiär",
-    "subtitle": "Film regisserad av Alfred Hitchcock",
-    "year": 1960,
-    "fact": "‘Psycho’ är en amerikansk skräckfilm från 1960 producerad och regisserad av Alfred Hitchcock.",
-    "wikipediaSlug": "Psycho_(1960_film)",
-    "image": "Psycho_(1960)_theatrical_poster_(retouched).jpg",
-    "pageViews": 81057
-  },
-  {
-    "qid": "Q208572",
-    "title": "‘American History X’ har premiär",
-    "subtitle": "Film regisserad av Tony Kaye",
-    "year": 1998,
-    "fact": "Filmen ‘American History X’ har premiär. Den är en amerikansk kriminaldramafilm från 1998 regisserad av Tony Kaye i hans långfilmsdebut och skriven av David McKenna.",
-    "wikipediaSlug": "American_History_X",
-    "image": "American_History_X_poster.png",
-    "pageViews": 81014
-  },
-  {
-    "qid": "Q80322391",
-    "title": "‘The Matrix Resurrections’ har premiär",
-    "subtitle": "Film i regi av Wachowski-syskonen",
-    "year": 2021,
-    "fact": "‘The Matrix Resurrections’ är en amerikansk science fiction-actionfilm från 2021, samproducerad och regisserad av Lana Wachowski, som skrev manus tillsammans med David Mitchell och Aleksandar Hemon.",
-    "wikipediaSlug": "The_Matrix_Resurrections",
-    "image": "The_Matrix_Resurrections.jpg",
-    "pageViews": 80659
-  },
-  {
-    "qid": "Q60501923",
-    "title": "‘Jumanji: The Next Level’ har premiär",
-    "subtitle": "Film regisserad av Jake Kasdan",
-    "year": 2019,
-    "fact": "'Jumanji: The Next Level' är en amerikansk actionäventyrskomedi-film från 2019, regisserad av Jake Kasdan, som skrev manuset tillsammans med Jeff Pinkner och Scott Rosenberg.",
-    "wikipediaSlug": "Jumanji:_The_Next_Level",
-    "image": "Jumanji_-The_Next_Level_film_poster.jpg",
-    "pageViews": 80579
-  },
-  {
-    "qid": "Q56881140",
-    "title": "‘Little Women’ har premiär",
-    "subtitle": "Film regisserad av Greta Gerwig",
-    "year": 2019,
-    "fact": "‘Little Women’ är en amerikansk historisk dramafilm från 2019, skriven och regisserad av Greta Gerwig.",
-    "wikipediaSlug": "Little_Women_(2019_film)",
-    "image": "Little_Women_(2019_film).jpeg",
-    "pageViews": 80566
-  },
-  {
-    "qid": "Q18154496",
-    "title": "‘Spotlight’ har premiär",
-    "subtitle": "Film regisserad av Tom McCarthy",
-    "year": 2015,
-    "fact": "Spotlight är en amerikansk biografisk dramafilm från 2015 regisserad av Tom McCarthy och skriven av McCarthy och Josh Singer.",
-    "wikipediaSlug": "Spotlight_(film)",
-    "image": "Spotlight_(film)_poster.jpg",
-    "pageViews": 80418
-  },
-  {
-    "qid": "Q676513",
-    "title": "‘Meet Joe Black’ har premiär",
-    "subtitle": "Film i regi av Martin Brest",
-    "year": 1998,
-    "fact": "Meet Joe Black är en amerikansk romantisk fantasydramafilm från 1998, regisserad och producerad av Martin Brest, med Brad Pitt, Anthony Hopkins och Claire Forlani i rollerna.",
-    "wikipediaSlug": "Meet_Joe_Black",
-    "image": "Meet_Joe_Black-_1998.jpg",
-    "pageViews": 80342
-  },
-  {
-    "qid": "Q65768589",
-    "title": "‘Shang-Chi and the Legend of the Ten Rings’ har premiär",
-    "subtitle": "Film regisserad av Destin Daniel Cretton",
-    "year": 2021,
-    "fact": "‘Shang-Chi and the Legend of the Ten Rings’ är en amerikansk superhjältefilm från 2021 baserad på Marvel Comics med karaktären Shang-Chi.",
-    "wikipediaSlug": "Shang-Chi_and_the_Legend_of_the_Ten_Rings",
-    "image": "Shang-Chi_and_the_Legend_of_the_Ten_Rings_poster.jpeg",
-    "pageViews": 80336
-  },
-  {
-    "qid": "Q188652",
-    "title": "‘Rocky’ har premiär",
-    "subtitle": "Film i regi av John G. Avildsen",
-    "year": 1976,
-    "fact": "Rocky är en amerikansk oberoende sportdramafilm från 1976 i regi av John G.",
-    "wikipediaSlug": "Rocky",
-    "image": "Rocky_poster.jpg",
-    "pageViews": 80294
-  },
-  {
-    "qid": "Q182218",
-    "title": "‘The Avengers’ har premiär",
-    "subtitle": "Film i regi av Joss Whedon",
-    "year": 2012,
-    "fact": "Marvel's The Avengers är en amerikansk superhjältefilm från 2012 baserad på Marvel Comics superhjälteteam med samma namn.",
-    "wikipediaSlug": "The_Avengers_(2012_film)",
-    "image": "The_Avengers_(2012_film)_poster.jpg",
-    "pageViews": 79892
-  },
-  {
-    "qid": "Q106506",
-    "title": "‘The Fifth Element’ har premiär",
-    "subtitle": "Film i regi av Luc Besson",
-    "year": 1997,
-    "fact": "‘Det femte elementet’ är en engelskspråkig fransk science fiction-actionfilm från 1997, skapad och regisserad av Luc Besson, och medskriven av Besson och Robert Mark Kamen.",
-    "wikipediaSlug": "The_Fifth_Element",
-    "image": "Fifth_element_poster_(1997).jpg",
-    "pageViews": 79445
-  },
-  {
-    "qid": "Q220713",
-    "title": "‘American Pie’ har premiär",
-    "subtitle": "Film regisserad av Chris Weitz",
-    "year": 1999,
-    "fact": "Filmen ‘American Pie’ har premiär. Den är en amerikansk tonårskomedi från 1999 regisserad och samproducerad av Paul Weitz och skriven av Adam Herz.",
-    "wikipediaSlug": "American_Pie_(film)",
-    "image": "American_Pie1.jpg",
-    "pageViews": 79351
-  },
-  {
-    "qid": "Q732960",
-    "title": "‘Drive’ har premiär",
-    "subtitle": "Film i regi av Nicolas Winding Refn",
-    "year": 2011,
-    "fact": "‘Drive’ är en amerikansk actiondramafilm från 2011 i regi av Nicolas Winding Refn.",
-    "wikipediaSlug": "Drive_(2011_film)",
-    "image": "Drive2011Poster.jpg",
-    "pageViews": 79271
-  },
-  {
-    "qid": "Q220394",
-    "title": "‘The Birth of a Nation’ har premiär",
-    "subtitle": "Film regisserad av D. W. Griffith",
-    "year": 1915,
-    "fact": "‘Nationens födelse’ är en amerikansk stumfilm från 1915, regisserad av D.W. Griffith.",
-    "wikipediaSlug": "The_Birth_of_a_Nation",
-    "image": "Birth_of_a_Nation_theatrical_poster.jpg",
-    "pageViews": 79233
-  },
-  {
-    "qid": "Q1243029",
-    "title": "‘Friday the 13th’ har premiär",
-    "subtitle": "Film regisserad av Sean S. Cunningham",
-    "year": 1980,
-    "fact": "‘Friday the 13th’ är en amerikansk slasherfilm från 1980 producerad och regisserad av Sean S.",
-    "wikipediaSlug": "Friday_the_13th_(1980_film)",
-    "image": "Friday_the_13th_(1980)_theatrical_poster.jpg",
-    "pageViews": 79205
-  },
-  {
-    "qid": "Q491800",
-    "title": "‘Gattaca’ har premiär",
-    "subtitle": "Film regisserad av Andrew Niccol",
-    "year": 1997,
-    "fact": "Gattaca är en amerikansk dystopisk science fiction-film från 1997 skriven och regisserad av Andrew Niccol i hans regidebut som långfilm.",
-    "wikipediaSlug": "Gattaca",
-    "image": "Gattaca_poster.jpg",
-    "pageViews": 79023
-  },
-  {
-    "qid": "Q6074",
-    "title": "‘Star Wars: Episode VII – The Force Awakens’ har premiär",
-    "subtitle": "Film regisserad av J. J. Abrams",
-    "year": 2015,
-    "fact": "Star Wars: The Force Awakens är en amerikansk episk science fiction-film från 2015 producerad, medförfattad och regisserad av J.",
-    "wikipediaSlug": "Star_Wars:_The_Force_Awakens",
-    "image": "Star_Wars_The_Force_Awakens_Theatrical_Poster.jpg",
-    "pageViews": 78818
-  },
-  {
-    "qid": "Q185888",
-    "title": "‘The Social Network’ har premiär",
-    "subtitle": "Film regisserad av David Fincher",
-    "year": 2010,
-    "fact": "The Social Network är en amerikansk biografisk dramafilm från 2010, regisserad av David Fincher och skriven av Aaron Sorkin.",
-    "wikipediaSlug": "The_Social_Network",
-    "image": "The_Social_Network_film_poster.png",
-    "pageViews": 78649
-  },
-  {
-    "qid": "Q2345",
-    "title": "‘12 edsvurna män’ släpps",
-    "subtitle": "Film regisserad av Sidney Lumet",
-    "year": 1957,
-    "fact": "‘12 Angry Men’ är en amerikansk dramafilm från 1957 om rättsväsendet, regisserad av Sidney Lumet i hans långfilmsregidebut, bearbetad av Reginald Rose från hans TV-pjäs från 1954.",
-    "wikipediaSlug": "12_Angry_Men_(1957_film)",
-    "image": "12_Angry_Men_(1957_film_poster).jpg",
-    "pageViews": 78545
-  },
-  {
-    "qid": "Q150804",
-    "title": "‘The Pianist’ har premiär",
-    "subtitle": "Film regisserad av Roman Polanski",
-    "year": 2002,
-    "fact": "‘The Pianist’ är en episk biografisk historisk dramafilm från 2002, samproducerad och regisserad av Roman Polanski, med manus av Ronald Harwood och Adrien Brody i huvudrollen.",
-    "wikipediaSlug": "The_Pianist_(2002_film)",
-    "image": "Adrien_Brody_2011_Shankbone_(2).jpg",
-    "pageViews": 78415
-  },
-  {
-    "qid": "Q321561",
-    "title": "‘Scent of a Woman’ har premiär",
-    "subtitle": "Film i regi av Martin Brest",
-    "year": 1992,
-    "fact": "‘En doft av kvinna’ är en amerikansk dramafilm från 1992 som producerats och regisserats av Martin Brest. Filmen handlar om en elev på en förberedande skola som tar ett korttidsjobb under Thanksgiving som sällskap och assistent till en pensionerad, blind, deprimerad och vresig arméöverste.",
-    "wikipediaSlug": "Scent_of_a_Woman_(1992_film)",
-    "image": "Scent_of_a_Woman.jpg",
-    "pageViews": 78326
-  },
-  {
-    "qid": "Q3286391",
-    "title": "‘A Star Is Born’ har premiär",
-    "subtitle": "Film regisserad av Bradley Cooper",
-    "year": 2018,
-    "fact": "‘A Star Is Born’ är ett amerikanskt musikaldrama och romantiskt drama från 2018, producerat och regisserat av Bradley Cooper med ett manus av Cooper, Eric Roth och Will Fetters.",
-    "wikipediaSlug": "A_Star_Is_Born_(2018_film)",
-    "image": "A_Star_is_Born.png",
-    "pageViews": 78099
-  },
-  {
-    "qid": "Q29226331",
-    "title": "‘Guardians of the Galaxy Vol. 3’ har premiär",
-    "subtitle": "Film regisserad av James Gunn",
-    "year": 2023,
-    "fact": "Guardians of the Galaxy Vol. 3 är en amerikansk superhjältefilm från 2023, baserad på Marvel Comics superhjälteteam Guardians of the Galaxy, producerad av Marvel Studios och distribuerad av Walt Disney Studios Motion Pictures.",
-    "wikipediaSlug": "Guardians_of_the_Galaxy_Vol._3",
-    "image": "Guardians_of_the_Galaxy_Vol._3_poster.jpg",
-    "pageViews": 77758
-  },
-  {
-    "qid": "Q107270",
-    "title": "‘Lost in Translation’ har premiär",
-    "subtitle": "Film regisserad av Sofia Coppola",
-    "year": 2003,
-    "fact": "‘Lost in Translation’ är en romantisk komedi-drama-film från 2003, skriven och regisserad av Sofia Coppola.",
-    "wikipediaSlug": "Lost_in_Translation_(film)",
-    "image": "Lost_in_Translation_poster.jpg",
-    "pageViews": 77486
-  },
-  {
-    "qid": "Q183066",
-    "title": "‘The Hurt Locker’ har premiär",
-    "subtitle": "Film i regi av Kathryn Bigelow",
-    "year": 2008,
-    "fact": "The Hurt Locker är en amerikansk krigsfilm från 2008 regisserad av Kathryn Bigelow och skriven av Mark Boal.",
-    "wikipediaSlug": "The_Hurt_Locker",
-    "image": "HLposterUSA2.jpg",
-    "pageViews": 77366
-  },
-  {
-    "qid": "Q190956",
-    "title": "‘Amadeus’ har premiär",
-    "subtitle": "Film i regi av Miloš Forman",
-    "year": 1984,
-    "fact": "Filmen ‘Amadeus’ har premiär. Den är en amerikansk historisk dramafilm från 1984 regisserad av Miloš Forman.",
-    "wikipediaSlug": "Amadeus_(film)",
-    "image": "Amadeusmov.jpg",
-    "pageViews": 77280
-  },
-  {
-    "qid": "Q267721",
-    "title": "‘Grease’ har premiär",
-    "subtitle": "Film regisserad av Randal Kleiser",
-    "year": 1978,
-    "fact": "Grease är en amerikansk musikalisk romantisk komedifilm från 1978, regisserad av Randal Kleiser från ett manus av Bronté Woodard och en adaption av medproducent Allan Carr, baserad på scenmusikalen med samma namn från 1971 av Jim Jacobs och Warren Casey.",
-    "wikipediaSlug": "Grease_(film)",
-    "image": "Grease_ver2.jpg",
-    "pageViews": 77187
-  },
-  {
-    "qid": "Q4254026",
-    "title": "‘The Amazing Spider-Man 2’ har premiär",
-    "subtitle": "Film i regi av Marc Webb",
-    "year": 2014,
-    "fact": "‘The Amazing Spider-Man 2’ är en amerikansk superhjältefilm från 2014 baserad på Marvel Comics-karaktären Spider-Man.",
-    "wikipediaSlug": "The_Amazing_Spider-Man_2",
-    "image": "The_Amazing_Spider-Man_2_poster.jpg",
-    "pageViews": 77126
-  },
-  {
-    "qid": "Q192073",
-    "title": "‘Little Miss Sunshine’ har premiär",
-    "subtitle": "Film regisserad av Valerie Faris",
-    "year": 2006,
-    "fact": "‘Little Miss Sunshine’ är en amerikansk tragikomedi-film från 2006, regisserad av Jonathan Dayton och Valerie Faris efter ett manus av Michael Arndt.",
-    "wikipediaSlug": "Little_Miss_Sunshine",
-    "image": "Little_miss_sunshine_poster.jpg",
-    "pageViews": 77085
-  },
-  {
-    "qid": "Q152780",
-    "title": "‘Life of Pi’ har premiär",
-    "subtitle": "Film regisserad av Ang Lee",
-    "year": 2012,
-    "fact": "‘Life of Pi’ är en äventyrs-drama-film från 2012, regisserad och producerad av Ang Lee och skriven av David Magee.",
-    "wikipediaSlug": "Life_of_Pi_(film)",
-    "image": "Life_of_Pi_2012_Poster.jpg",
-    "pageViews": 76940
-  },
-  {
-    "qid": "Q201924",
-    "title": "‘The Aviator’ har premiär",
-    "subtitle": "Film i regi av Martin Scorsese",
-    "year": 2004,
-    "fact": "‘The Aviator’ är en episk biografisk dramafilm från 2004, regisserad av Martin Scorsese och skriven av John Logan.",
-    "wikipediaSlug": "The_Aviator_(2004_film)",
-    "image": "The_Aviator_(2004).png",
-    "pageViews": 76614
-  },
-  {
-    "qid": "Q144483",
-    "title": "‘The Last of the Mohicans’ har premiär",
-    "subtitle": "Film i regi av Michael Mann",
-    "year": 1992,
-    "fact": "‘The Last of the Mohicans’ är en amerikansk historisk krigseposfilm från 1992, samproducerad och regisserad av Michael Mann. Han skrev även manus tillsammans med Christopher Crowe, baserat på James Fenimore Coopers roman med samma namn från 1826 samt dess filmatisering från 1936.",
-    "wikipediaSlug": "The_Last_of_the_Mohicans_(1992_film)",
-    "image": "Mohicansposter.jpg",
-    "pageViews": 76375
-  },
-  {
-    "qid": "Q109767",
-    "title": "‘The Blues Brothers’ har premiär",
-    "subtitle": "Film i regi av John Landis",
-    "year": 1980,
-    "fact": "‘The Blues Brothers’ är en amerikansk musikalisk actionkomedi från 1980, regisserad av John Landis.",
-    "wikipediaSlug": "The_Blues_Brothers_(film)",
-    "image": "Bluesbrothersmovieposter.jpg",
-    "pageViews": 76286
-  },
-  {
-    "qid": "Q104137",
-    "title": "‘Unforgiven’ har premiär",
-    "subtitle": "Film regisserad av Clint Eastwood",
-    "year": 1992,
-    "fact": "De skoningslösa, originaltitel 'Unforgiven', är en amerikansk revisionistisk westernfilm från 1992, producerad och regisserad av Clint Eastwood baserat på ett manus av David Webb Peoples.",
-    "wikipediaSlug": "Unforgiven",
-    "image": "Unforgiven_2.jpg",
-    "pageViews": 76232
-  },
-  {
-    "qid": "Q5887360",
-    "title": "‘Guardians of the Galaxy’ har premiär",
-    "subtitle": "Film regisserad av James Gunn",
-    "year": 2014,
-    "fact": "Guardians of the Galaxy är en amerikansk superhjältefilm från 2014, baserad på Marvel Comics superhjälteteam med samma namn.",
-    "wikipediaSlug": "Guardians_of_the_Galaxy_(film)",
-    "image": "Guardians_of_the_Galaxy_(film)_poster.jpg",
-    "pageViews": 76122
-  },
-  {
-    "qid": "Q18225084",
-    "title": "‘The Hateful Eight’ har premiär",
-    "subtitle": "Film regisserad av Quentin Tarantino",
-    "year": 2015,
-    "fact": "The Hateful Eight är en amerikansk western-thriller från 2015, skriven och regisserad av Quentin Tarantino.",
-    "wikipediaSlug": "The_Hateful_Eight",
-    "image": "The_Hateful_Eight.jpg",
-    "pageViews": 76110
-  },
-  {
-    "qid": "Q302174",
-    "title": "‘I Know What You Did Last Summer’ har premiär",
-    "subtitle": "Film i regi av Jim Gillespie",
-    "year": 1997,
-    "fact": "‘I Know What You Did Last Summer’ är en amerikansk slasherfilm från 1997 med Jennifer Love Hewitt, Sarah Michelle Gellar, Ryan Phillippe och Freddie Prinze Jr. i huvudrollerna som fyra tonårsföräldrar som blir förföljda av en krokbeväpnad mördare ett år efter att de mörkat en bilolycka där de påstods ha dödat en man.",
-    "wikipediaSlug": "I_Know_What_You_Did_Last_Summer",
-    "image": "I_Know_What_You_Did_Last_Summer.jpg",
-    "pageViews": 76056
-  },
-  {
-    "qid": "Q7731172",
-    "title": "‘Godzilla’ har premiär",
-    "subtitle": "Film regisserad av Gareth Edwards",
-    "year": 2014,
-    "fact": "Godzilla är en amerikansk monsterfilm från 2014 regisserad av Gareth Edwards.",
-    "wikipediaSlug": "Godzilla_(2014_film)",
-    "image": "Godzilla_(2014)_poster.jpg",
-    "pageViews": 75999
-  },
-  {
-    "qid": "Q20977110",
-    "title": "‘Star Wars: Episode IX – The Rise of Skywalker’ har premiär",
-    "subtitle": "Film regisserad av J. J. Abrams",
-    "year": 2019,
-    "fact": "Star Wars: The Rise of Skywalker är en amerikansk episk science fiction-film från 2019 producerad, medförfattad och regisserad av J.",
-    "wikipediaSlug": "Star_Wars:_The_Rise_of_Skywalker",
-    "image": "Star_Wars_The_Rise_of_Skywalker_poster.jpg",
-    "pageViews": 75909
-  },
-  {
-    "qid": "Q726294",
-    "title": "‘Almost Famous’ har premiär",
-    "subtitle": "Film regisserad av Cameron Crowe",
-    "year": 2000,
-    "fact": "Filmen ‘Almost Famous’ har premiär. Den är en amerikansk komedi-dramafilm från 2000 skriven och regisserad av Cameron Crowe, med Billy Crudup, Frances McDormand, Kate Hudson, Patrick Fugit och Philip Seymour Hoffman i huvudrollerna.",
-    "wikipediaSlug": "Almost_Famous",
-    "image": "Almost_famous_poster1.jpg",
-    "pageViews": 75899
-  },
-  {
-    "qid": "Q64211112",
-    "title": "‘Doctor Strange in the Multiverse of Madness’ har premiär",
-    "subtitle": "Film regisserad av Sam Raimi",
-    "year": 2022,
-    "fact": "‘Doctor Strange in the Multiverse of Madness’ är en amerikansk superhjältefilm från 2022 baserad på Marvel Comics med karaktären Doctor Strange.",
-    "wikipediaSlug": "Doctor_Strange_in_the_Multiverse_of_Madness",
-    "image": "Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg",
-    "pageViews": 75652
-  },
-  {
-    "qid": "Q5540479",
-    "title": "‘The Conjuring’ har premiär",
-    "subtitle": "Film regisserad av James Wan",
-    "year": 2013,
-    "fact": "‘The Conjuring’ är en amerikansk övernaturlig skräckfilm från 2013, regisserad av James Wan och skriven av Chad Hayes och Carey W. Hayes.",
-    "wikipediaSlug": "The_Conjuring",
-    "image": "The_Conjuring_poster.jpg",
-    "pageViews": 75522
-  },
-  {
-    "qid": "Q206388",
-    "title": "‘Once Upon a Time in America’ har premiär",
-    "subtitle": "Film regisserad av Sergio Leone",
-    "year": 1984,
-    "fact": "‘Once Upon a Time in America’ är en episk kriminalfilm från 1984, baserad på Harry Greys semi-självbiografiska roman ‘The Hoods’ från 1952.",
-    "wikipediaSlug": "Once_Upon_a_Time_in_America",
-    "image": "Once_Upon_a_Time_in_America.png",
-    "pageViews": 75446
-  },
-  {
-    "qid": "Q14918344",
-    "title": "‘The Imitation Game’ har premiär",
-    "subtitle": "Film i regi av Morten Tyldum",
-    "year": 2014,
-    "fact": "The Imitation Game är en amerikansk biografisk thrillerfilm från 2014 i regi av Morten Tyldum och skriven av Graham Moore, baserad på biografin Alan Turing: The Enigma från 1983 av Andrew Hodges.",
-    "wikipediaSlug": "The_Imitation_Game",
-    "image": "The_Imitation_Game_(2014).png",
-    "pageViews": 75363
-  },
-  {
-    "qid": "Q13099455",
-    "title": "‘The Maze Runner’ har premiär",
-    "subtitle": "Film regisserad av Wes Ball",
-    "year": 2014,
-    "fact": "‘The Maze Runner’ är en amerikansk dystopisk science fiction-film från 2014, regisserad av Wes Ball i hans debut som långfilmsregissör, baserad på James Dashners roman från 2009.",
-    "wikipediaSlug": "The_Maze_Runner_(film)",
-    "image": "The_Maze_Runner_poster.jpg",
-    "pageViews": 75267
-  },
-  {
-    "qid": "Q218172",
-    "title": "‘Zodiac’ har premiär",
-    "subtitle": "Film regisserad av David Fincher",
-    "year": 2007,
-    "fact": "‘Zodiac’ är en amerikansk historisk dramathriller från 2007 i regi av David Fincher och skriven av James Vanderbilt, baserad på Robert Graysmiths fackböcker ‘Zodiac’ (1986) och ‘Zodiac Unmasked’ (2002).",
-    "wikipediaSlug": "Zodiac_(film)",
-    "image": "Zodiac2007Poster.jpg",
-    "pageViews": 75072
   }
 ]

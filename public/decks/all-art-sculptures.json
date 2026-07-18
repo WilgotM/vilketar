@@ -18,45 +18,5 @@
     "wikipediaSlug": "Christ_the_Redeemer_(statue)",
     "image": "Christ_the_Redeemer_-_Cristo_Redentor.jpg",
     "pageViews": 100247
-  },
-  {
-    "qid": "Q179900",
-    "title": "David skapas",
-    "subtitle": "Skulptur av Michelangelo",
-    "year": 1500,
-    "fact": "‘David’ är ett mästerverk av italiensk renässansskulptur i marmor, skapat från 1501 till 1504 av Michelangelo.",
-    "wikipediaSlug": "David_(Michelangelo)",
-    "image": "'David'_by_Michelangelo_Fir_JBU004.jpg",
-    "pageViews": 72544
-  },
-  {
-    "qid": "Q151952",
-    "title": "Venus de Milo skapas",
-    "subtitle": "Antik grekisk marmorstaty föreställande en kvinna",
-    "year": -140,
-    "fact": "Venus från Milo eller Afrodite från Melos är en antik grekisk marmorskulptur som skapades under den hellenistiska perioden.",
-    "wikipediaSlug": "Venus_de_Milo",
-    "image": "Front_views_of_the_Venus_de_Milo.jpg",
-    "pageViews": 59033
-  },
-  {
-    "qid": "Q235242",
-    "title": "Pietà (Michelangelo) skapas",
-    "subtitle": "Skulptur av Michelangelo",
-    "year": 1499,
-    "fact": "‘Pietà’ är en skulptur i Carrara-marmor föreställande Jesus och Maria på Golgata, som representerar Jungfru Marias ”sjätte smärta”, utförd av Michelangelo Buonarroti och placerad i Peterskyrkan i Vatikanstaten, för vilken den skapades.",
-    "wikipediaSlug": "Piet%C3%A0_(Michelangelo)",
-    "image": "Pieta_de_Michelangelo_-_Vaticano.jpg",
-    "pageViews": 56394
-  },
-  {
-    "qid": "Q7604504",
-    "title": "Statue of Unity färdigställs",
-    "subtitle": "Staty av Vallabhbhai Patel vid Narmadaflodens strand, Gujarat, Indien",
-    "year": 2018,
-    "fact": "Statue of Unity är världens högsta staty, 182 meter hög, belägen i Narmadadalen nära Kevadia i delstaten Gujarat i Indien.",
-    "wikipediaSlug": "Statue_of_Unity",
-    "image": "Statue_of_Unity.jpg",
-    "pageViews": 51949
   }
 ]
