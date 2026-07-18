@@ -279,7 +279,7 @@ const DailyGameTutorial = React.forwardRef<DailyGameTutorialHandle, Props>(
                 role="dialog"
               >
                 <motion.div
-                  animate={{ opacity: 1, scale: 1, x: "-50%", y: "-50%" }}
+                  animate={{ opacity: 1, scale: 1, y: 0 }}
                   className={styles.introCard}
                   initial={{ opacity: 0, scale: 0.96, y: 18 }}
                   transition={{
@@ -321,7 +321,12 @@ const DailyGameTutorial = React.forwardRef<DailyGameTutorialHandle, Props>(
               </div>
             ) : step === "success" ? (
               <motion.div
-                animate={{ opacity: 1, scale: 1, y: 0 }}
+                animate={{
+                  opacity: 1,
+                  scale: 1,
+                  x: "-50%",
+                  y: "-50%",
+                }}
                 aria-live="polite"
                 className={styles.successCard}
                 initial={{
