@@ -357,10 +357,12 @@ export const action = recipe({
       minHeight: vars.size.controlHeight,
       outline: "none",
       textDecoration: "none",
-      transition: `opacity ${vars.duration.fast} ${vars.easing.standard}, transform ${vars.duration.fast} ${vars.easing.standard}, border-color ${vars.duration.fast} ${vars.easing.standard}`,
+      boxShadow: vars.shadow.card,
+      transition: `opacity ${vars.duration.fast} ${vars.easing.standard}, transform ${vars.duration.fast} ${vars.easing.standard}, border-color ${vars.duration.fast} ${vars.easing.standard}, background ${vars.duration.fast} ${vars.easing.standard}, box-shadow ${vars.duration.fast} ${vars.easing.standard}`,
       willChange: "transform",
       selectors: {
         "&:hover": {
+          boxShadow: vars.shadow.panel,
           transform: "translateY(-0.0625rem) scale(1.01)",
         },
         "&:active": {
@@ -503,6 +505,27 @@ export const surface = recipe({
       },
     },
   },
+});
+
+export const eyebrow = style({
+  color: vars.color.accentLogo,
+  fontSize: vars.fontSize.xs,
+  fontWeight: vars.fontWeight.bold,
+  letterSpacing: "0.14em",
+  lineHeight: vars.lineHeight.tight,
+  margin: 0,
+  textTransform: "uppercase",
+});
+
+export const screenTitle = style({
+  color: vars.color.text,
+  fontFamily: vars.font.display,
+  fontSize: `clamp(${vars.fontSize.xl}, 5vw, ${vars.fontSize["2xl"]})`,
+  fontWeight: vars.fontWeight.black,
+  letterSpacing: "-0.035em",
+  lineHeight: vars.lineHeight.tight,
+  margin: 0,
+  textWrap: "balance",
 });
 
 export const footerNotes = style([

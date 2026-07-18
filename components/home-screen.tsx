@@ -20,63 +20,6 @@ import SiteHero from "./site-hero";
 import { ThemeToggle } from "./theme-toggle";
 import * as styles from "../styles/home-screen.css";
 
-function ScatterDots() {
-  return (
-    <div className={styles.scatterDots} aria-hidden="true">
-      <div
-        className={styles.dot}
-        style={{
-          background: "#4E9FE5",
-          height: 8,
-          left: "52%",
-          top: "12%",
-          width: 8,
-        }}
-      />
-      <div
-        className={styles.dot}
-        style={{
-          background: "#E85D9C",
-          height: 6,
-          left: "12%",
-          top: "62%",
-          width: 6,
-        }}
-      />
-      <div
-        className={styles.dot}
-        style={{
-          background: "#4E9FE5",
-          height: 7,
-          right: "18%",
-          top: "52%",
-          width: 7,
-        }}
-      />
-      <div
-        className={styles.dot}
-        style={{
-          background: "#F5B731",
-          height: 5,
-          left: "8%",
-          top: "38%",
-          width: 5,
-        }}
-      />
-      <div
-        className={styles.dot}
-        style={{
-          background: "#9B59B6",
-          height: 6,
-          right: "6%",
-          top: "68%",
-          width: 6,
-        }}
-      />
-    </div>
-  );
-}
-
 function HeroDecorations() {
   return (
     <div className={styles.heroDecorations} aria-hidden="true">
@@ -385,7 +328,6 @@ export default function HomeScreen() {
           </div>
         ) : null}
         <ThemeToggle />
-        <ScatterDots />
         <div className={styles.wrapper}>
           <HeroDecorations />
           <div className={styles.stage}>

@@ -22,18 +22,18 @@ export const fullWidth = style({
 });
 
 export const minimal = style({
-  background: `color-mix(in srgb, ${vars.color.text} 8%, transparent)`,
-  backdropFilter: "blur(20px)",
-  WebkitBackdropFilter: "blur(20px)",
-  border: `1px solid color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
-  boxShadow: "0 4px 16px rgba(0, 0, 0, 0.15)",
+  background: "transparent",
+  backdropFilter: "none",
+  WebkitBackdropFilter: "none",
+  border: 0,
+  borderRadius: vars.radius.xl,
+  boxShadow: "none",
   color: vars.color.text,
   transition: `all ${vars.duration.fast} ${vars.easing.standard}`,
   selectors: {
     "&:hover": {
-      background: `color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
-      borderColor: `color-mix(in srgb, ${vars.color.text} 20%, transparent)`,
-      boxShadow: "0 6px 20px rgba(0, 0, 0, 0.2)",
+      background: vars.color.accentSoft,
+      boxShadow: "none",
     },
     "&:active": {
       opacity: 0.8,
@@ -43,18 +43,15 @@ export const minimal = style({
 });
 
 const homeSecondaryBase = style({
-  background: "linear-gradient(145deg, #202a36 0%, #11161d 100%)",
-  border: "1px solid rgba(211, 228, 245, 0.18)",
-  boxShadow:
-    "0 0.5rem 1.3rem rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.3)",
-  color: "#f8fafc",
-  textShadow: "0 1px 1px rgba(0, 0, 0, 0.32)",
+  background: vars.color.surfaceChrome,
+  border: `1px solid ${vars.color.border}`,
+  boxShadow: vars.shadow.card,
+  color: vars.color.text,
   transition: `transform ${vars.duration.fast} ${vars.easing.standard}, background ${vars.duration.fast} ${vars.easing.standard}, border-color ${vars.duration.fast} ${vars.easing.standard}, box-shadow ${vars.duration.fast} ${vars.easing.standard}`,
   selectors: {
     "&:hover": {
-      borderColor: "rgba(219, 234, 254, 0.36)",
-      boxShadow:
-        "0 0.7rem 1.55rem rgba(0, 0, 0, 0.36), inset 0 1px 0 rgba(255, 255, 255, 0.13), inset 0 -1px 0 rgba(0, 0, 0, 0.28)",
+      borderColor: vars.color.borderStrong,
+      boxShadow: vars.shadow.panel,
       transform: "translateY(-0.0625rem)",
     },
     "&:active": {
@@ -67,10 +64,9 @@ export const homeTone = styleVariants({
   party: [
     homeSecondaryBase,
     {
-      background: "linear-gradient(145deg, #263342 0%, #11161d 100%)",
       selectors: {
         "&:hover": {
-          background: "linear-gradient(145deg, #304156 0%, #161d26 100%)",
+          background: vars.color.surfaceRaised,
         },
       },
     },
@@ -78,12 +74,11 @@ export const homeTone = styleVariants({
   freePlay: [
     homeSecondaryBase,
     {
-      background: "linear-gradient(145deg, #382b23 0%, #18130f 100%)",
-      borderColor: "rgba(255, 201, 136, 0.2)",
+      borderColor: `color-mix(in srgb, ${vars.color.accentLogo} 28%, ${vars.color.border})`,
       selectors: {
         "&:hover": {
-          background: "linear-gradient(145deg, #49372a 0%, #21170f 100%)",
-          borderColor: "rgba(255, 211, 157, 0.4)",
+          background: vars.color.accentSoft,
+          borderColor: vars.color.accentLogo,
         },
       },
     },

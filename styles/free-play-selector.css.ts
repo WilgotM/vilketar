@@ -1,7 +1,7 @@
 import { keyframes, style } from "@vanilla-extract/css";
 import { media } from "./foundation";
 import { vars } from "./theme.css";
-import { sectionLabel } from "./ui.css";
+import { sectionLabel, surface } from "./ui.css";
 
 const selectorItemIn = keyframes({
   from: {
@@ -42,7 +42,7 @@ export const stage = style({
   gap: vars.space.lg,
   marginLeft: "auto",
   marginRight: "auto",
-  maxWidth: vars.size.contentWidth,
+  maxWidth: vars.size.contentWidthWide,
   width: "100%",
 });
 
@@ -149,7 +149,7 @@ export const introControl = style({
 
 export const grid = style({
   display: "grid",
-  gap: vars.space.lg,
+  gap: vars.space.md,
   gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
   minWidth: 0,
   width: "100%",
@@ -192,6 +192,30 @@ export const gridItem = style({
     },
   },
 });
+
+export const optionCard = style([
+  surface({ density: "compact", tone: "chrome" }),
+  {
+    minHeight: "4.5rem",
+    justifyContent: "center",
+    padding: 0,
+    overflow: "hidden",
+    transition: `border-color ${vars.duration.fast} ${vars.easing.standard}, transform ${vars.duration.fast} ${vars.easing.standard}, box-shadow ${vars.duration.fast} ${vars.easing.standard}`,
+    selectors: {
+      "&:hover": {
+        borderColor: vars.color.borderStrong,
+        boxShadow: `0 0 0 1px ${vars.color.accentSoft}, ${vars.shadow.panel}`,
+        transform: "translateY(-0.125rem)",
+      },
+    },
+    "@media": {
+      [media.reduceMotion]: {
+        transition: "none",
+        selectors: { "&:hover": { transform: "none" } },
+      },
+    },
+  },
+]);
 
 export const gridFiller = style({
   borderRadius: vars.radius.lg,
