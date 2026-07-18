@@ -34,6 +34,33 @@ const EMPTY_LAYOUT: TutorialLayout = {
   dropMarkers: [],
 };
 
+function layoutsMatch(left: TutorialLayout, right: TutorialLayout): boolean {
+  if (
+    left.deck === null ||
+    right.deck === null ||
+    left.dropMarkers.length !== right.dropMarkers.length
+  ) {
+    return left.deck === right.deck && left.dropMarkers.length === 0;
+  }
+
+  const closeEnough = (first: number, second: number) =>
+    Math.abs(first - second) < 0.5;
+
+  return (
+    closeEnough(left.deck.height, right.deck.height) &&
+    closeEnough(left.deck.left, right.deck.left) &&
+    closeEnough(left.deck.top, right.deck.top) &&
+    closeEnough(left.deck.width, right.deck.width) &&
+    closeEnough(left.dragDelta.x, right.dragDelta.x) &&
+    closeEnough(left.dragDelta.y, right.dragDelta.y) &&
+    left.dropMarkers.every(
+      (marker, index) =>
+        closeEnough(marker.x, right.dropMarkers[index].x) &&
+        closeEnough(marker.y, right.dropMarkers[index].y),
+    )
+  );
+}
+
 function TutorialDiagram({ reduceMotion }: { reduceMotion: boolean }) {
   return (
     <div aria-hidden="true" className={styles.diagram}>
@@ -211,7 +238,7 @@ const DailyGameTutorial = React.forwardRef<DailyGameTutorialHandle, Props>(
         const targetY =
           bottomRect.top - boardRect.top + bottomRect.height * 0.28;
 
-        setLayout({
+        const nextLayout: TutorialLayout = {
           deck: {
             height: deckRect.height,
             left: deckLeft,
@@ -226,7 +253,11 @@ const DailyGameTutorial = React.forwardRef<DailyGameTutorialHandle, Props>(
             x: Math.max(18, Math.min(boardRect.width - 18, x)),
             y: markerY,
           })),
-        });
+        };
+
+        setLayout((currentLayout) =>
+          layoutsMatch(currentLayout, nextLayout) ? currentLayout : nextLayout,
+        );
       };
 
       measure();
@@ -239,13 +270,35 @@ const DailyGameTutorial = React.forwardRef<DailyGameTutorialHandle, Props>(
       if (deckElement) resizeObserver.observe(deckElement);
       bottomElement?.addEventListener("scroll", measure, { passive: true });
       window.addEventListener("resize", measure);
+      let animationFrameId: number | null = null;
+
+      const trackTimelineAnimation = () => {
+        measure();
+        animationFrameId = window.requestAnimationFrame(trackTimelineAnimation);
+      };
+
+      if (dragStarted && !placementPending) {
+        animationFrameId = window.requestAnimationFrame(trackTimelineAnimation);
+      }
 
       return () => {
+        if (animationFrameId !== null) {
+          window.cancelAnimationFrame(animationFrameId);
+        }
         resizeObserver.disconnect();
         bottomElement?.removeEventListener("scroll", measure);
         window.removeEventListener("resize", measure);
       };
-    }, [boardRef, bottomRef, deckAnchorRef, layoutKey, step, visible]);
+    }, [
+      boardRef,
+      bottomRef,
+      deckAnchorRef,
+      dragStarted,
+      layoutKey,
+      placementPending,
+      step,
+      visible,
+    ]);
 
     const coachCopy =
       step === "first-card"
