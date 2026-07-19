@@ -1,7 +1,6 @@
-import classNames from "classnames";
 import DailyLeaguesSummary from "./daily-leagues-summary";
+import DailyShareTutorial from "./daily-share-tutorial";
 import Score from "./score";
-import * as buttonStyles from "../styles/button.css";
 import * as styles from "../styles/daily-completed-summary.css";
 
 interface Props {
@@ -23,13 +22,11 @@ export default function DailyCompletedSummary(props: Props) {
       <div className={styles.score}>
         <Score score={score} title="Poäng" />
       </div>
-      <button
-        className={classNames(buttonStyles.button, styles.shareButton)}
-        onClick={onShare}
-        type="button"
-      >
-        {shareText}
-      </button>
+      <DailyShareTutorial
+        onShare={onShare}
+        score={score}
+        shareText={shareText}
+      />
       <DailyLeaguesSummary dateKey={dateKey} />
       <div className={styles.metaText}>{nextDailyText}</div>
     </div>
