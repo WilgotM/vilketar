@@ -1,7 +1,7 @@
 [
   {
     "fact": "ABBA vinner Eurovision Song Contest med Waterloo.",
-    "image": "ABBA_-_TopPop_1974_5.png",
+    "image": "",
     "pageViews": 420000,
     "qid": "Q32503",
     "subtitle": "Svensk Eurovision-klassiker",
@@ -11,7 +11,7 @@
   },
   {
     "fact": "Dancing Queen släpps och blir en av ABBAs största låtar.",
-    "image": "ABBA_-_TopPop_1974_5.png",
+    "image": "",
     "pageViews": 360000,
     "qid": "Q870786",
     "subtitle": "Låt av ABBA",
@@ -31,7 +31,7 @@
   },
   {
     "fact": "Levels blir Aviciis internationella genombrott.",
-    "image": "ABBA_-_TopPop_1974_5.png",
+    "image": "",
     "pageViews": 300000,
     "qid": "Q2315784",
     "subtitle": "Låt av Avicii",
@@ -51,7 +51,7 @@
   },
   {
     "fact": "Wake Me Up blir en av Aviciis största låtar.",
-    "image": "ABBA_-_TopPop_1974_5.png",
+    "image": "",
     "pageViews": 300000,
     "qid": "manual-Wake_Me_Up_(Avicii-l%C3%A5t)",
     "subtitle": "Låt av Avicii",
@@ -91,7 +91,7 @@
   },
   {
     "fact": "Dancing On My Own blir en modern svensk popklassiker.",
-    "image": "ABBA_-_TopPop_1974_5.png",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q3488185",
     "subtitle": "Låt av Robyn",
@@ -121,7 +121,7 @@
   },
   {
     "fact": "The Final Countdown blir en av Sveriges mest kända rocklåtar.",
-    "image": "ABBA_-_TopPop_1974_5.png",
+    "image": "",
     "pageViews": 240000,
     "qid": "Q1165771",
     "subtitle": "Låt av Europe",
@@ -180,18 +180,8 @@
     "year": 1964
   },
   {
-    "fact": "Allsång på Skansen börjar sändas i tv.",
-    "image": "Artisterna_i_Allsång_på_Skansen_2013.jpg",
-    "pageViews": 220000,
-    "qid": "Q1757014",
-    "subtitle": "Svenskt musikprogram",
-    "title": "Allsång på Skansen börjar sändas",
-    "wikipediaSlug": "Alls%C3%A5ng_p%C3%A5_Skansen",
-    "year": 1979
-  },
-  {
     "fact": "Sommartider blir en svensk sommarklassiker.",
-    "image": "ABBA_-_TopPop_1974_5.png",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q7560439",
     "subtitle": "Låt av Gyllene Tider",
@@ -201,7 +191,7 @@
   },
   {
     "fact": "Öppna landskap blir en av Ulf Lundells mest kända låtar.",
-    "image": "ABBA_-_TopPop_1974_5.png",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q297660",
     "subtitle": "Låt av Ulf Lundell",
@@ -211,7 +201,7 @@
   },
   {
     "fact": "Främling blir ett av Melodifestivalens största genombrott.",
-    "image": "ABBA_-_TopPop_1974_5.png",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q373108",
     "subtitle": "Låt framförd av Carola",
@@ -221,7 +211,7 @@
   },
   {
     "fact": "Chess har premiär i London med musik av Benny Andersson och Björn Ulvaeus.",
-    "image": "ABBA_-_TopPop_1974_5.png",
+    "image": "",
     "pageViews": 220000,
     "qid": "manual-Chess_(musikal)",
     "subtitle": "Musikal av svenska låtskrivare",
@@ -231,7 +221,7 @@
   },
   {
     "fact": "Fångad av en stormvind vinner Eurovision Song Contest.",
-    "image": "ABBA_-_TopPop_1974_5.png",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q1004668",
     "subtitle": "Låt framförd av Carola",
@@ -251,7 +241,7 @@
   },
   {
     "fact": "Lovefool blir The Cardigans stora internationella hit.",
-    "image": "ABBA_-_TopPop_1974_5.png",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q2547704",
     "subtitle": "Låt av The Cardigans",
@@ -261,23 +251,13 @@
   },
   {
     "fact": "Boten Anna blir en svensk internet- och pophit.",
-    "image": "ABBA_-_TopPop_1974_5.png",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q61044229",
     "subtitle": "Låt av Basshunter",
     "title": "”Boten Anna” släpps",
     "wikipediaSlug": "Boten_Anna",
     "year": 2006
-  },
-  {
-    "fact": "Låt den rätte komma in har premiär.",
-    "image": "Låt-den-rätte-komma-in-logotyp.png",
-    "pageViews": 220000,
-    "qid": "Q144756",
-    "subtitle": "Svensk film",
-    "title": "”Låt den rätte komma in” har premiär",
-    "wikipediaSlug": "L%C3%A5t_den_r%C3%A4tte_komma_in_(film)",
-    "year": 2008
   },
   {
     "fact": "Jag kommer blir en av Veronica Maggios mest kända låtar.",

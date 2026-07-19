@@ -39,12 +39,6 @@ export const FEATURED_FREE_PLAY_DECKS: readonly FeaturedFreePlayDeck[] = [
     text: "Krig",
   },
   {
-    key: "featured-films",
-    routeSlug: "film",
-    slugPath: ["entertainment", "films"],
-    text: "Film",
-  },
-  {
     key: "featured-music",
     routeSlug: "musik",
     slugPath: ["entertainment", "music"],

@@ -21,7 +21,7 @@
   },
   {
     "fact": "Kalle Anka & C:o börjar ges ut i Sverige.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q2743606",
     "subtitle": "Svensk serietidning",
@@ -60,16 +60,6 @@
     "pageViews": 213267
   },
   {
-    "fact": "Åsa-Nisse introduceras och blir en svensk buskisfigur.",
-    "image": "John_Elfstrom-Asa-Nisse.jpg",
-    "pageViews": 200000,
-    "qid": "Q8077214",
-    "subtitle": "Svensk film- och seriefigur",
-    "title": "Åsa-Nisse debuterar",
-    "wikipediaSlug": "%C3%85sa-Nisse",
-    "year": 1944
-  },
-  {
     "qid": "Q65240543",
     "title": "‘Chainsaw Man’ påbörjas",
     "subtitle": "Japansk mangaserie",
@@ -91,7 +81,7 @@
   },
   {
     "fact": "Hälge blir en populär svensk älgserie.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 180000,
     "qid": "Q1285754",
     "subtitle": "Svensk seriefigur",

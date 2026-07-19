@@ -20,6 +20,26 @@
     "year": 1998
   },
   {
+    "fact": "Levels blir Aviciis internationella genombrott.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q2315784",
+    "subtitle": "Låt av Avicii",
+    "title": "”Levels” släpps",
+    "wikipediaSlug": "Levels",
+    "year": 2011
+  },
+  {
+    "fact": "Wake Me Up blir en av Aviciis största låtar.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "manual-Wake_Me_Up_(Avicii-l%C3%A5t)",
+    "subtitle": "Låt av Avicii",
+    "title": "”Wake Me Up” släpps",
+    "wikipediaSlug": "Wake_Me_Up_(Avicii-l%C3%A5t)",
+    "year": 2013
+  },
+  {
     "fact": "Robyn slår igenom som tonårsartist.",
     "image": "Robyn_face.jpg",
     "pageViews": 260000,
@@ -31,7 +51,7 @@
   },
   {
     "fact": "Mamma Mia! har premiär i London.",
-    "image": "ABBA_-_TopPop_1974_5.png",
+    "image": "",
     "pageViews": 260000,
     "qid": "manual-Mamma_Mia!_(musikal)",
     "subtitle": "Musikal med ABBA-musik",
@@ -70,6 +90,16 @@
     "year": 2008
   },
   {
+    "fact": "Dancing On My Own blir en modern svensk popklassiker.",
+    "image": "",
+    "pageViews": 260000,
+    "qid": "Q3488185",
+    "subtitle": "Låt av Robyn",
+    "title": "”Dancing On My Own” släpps",
+    "wikipediaSlug": "Dancing_on_My_Own",
+    "year": 2010
+  },
+  {
     "fact": "Tattoo vinner Eurovision Song Contest för Sverige.",
     "image": "Loreen_-_Melodifestivalen_2023,_Malmö_563.jpg",
     "pageViews": 260000,
@@ -88,6 +118,16 @@
     "title": "”Sommar i P1” börjar sändas",
     "wikipediaSlug": "Sommar_i_P1",
     "year": 1959
+  },
+  {
+    "fact": "The Final Countdown blir en av Sveriges mest kända rocklåtar.",
+    "image": "",
+    "pageViews": 240000,
+    "qid": "Q1165771",
+    "subtitle": "Låt av Europe",
+    "title": "”The Final Countdown” släpps",
+    "wikipediaSlug": "The_Final_Countdown_(s%C3%A5ng)",
+    "year": 1986
   },
   {
     "fact": "Darin slår igenom i Idol.",
@@ -240,14 +280,44 @@
     "year": 1978
   },
   {
-    "fact": "Allsång på Skansen börjar sändas i tv.",
-    "image": "Artisterna_i_Allsång_på_Skansen_2013.jpg",
+    "fact": "Europe bildas i Upplands Väsby.",
+    "image": "",
     "pageViews": 220000,
-    "qid": "Q1757014",
-    "subtitle": "Svenskt musikprogram",
-    "title": "Allsång på Skansen börjar sändas",
-    "wikipediaSlug": "Alls%C3%A5ng_p%C3%A5_Skansen",
+    "qid": "manual-Europe_(musikgrupp)",
+    "subtitle": "Svenskt rockband",
+    "title": "Europe bildas",
+    "wikipediaSlug": "Europe_(musikgrupp)",
     "year": 1979
+  },
+  {
+    "fact": "Sommartider blir en svensk sommarklassiker.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q7560439",
+    "subtitle": "Låt av Gyllene Tider",
+    "title": "”Sommartider” släpps",
+    "wikipediaSlug": "Sommartider",
+    "year": 1982
+  },
+  {
+    "fact": "Öppna landskap blir en av Ulf Lundells mest kända låtar.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q297660",
+    "subtitle": "Låt av Ulf Lundell",
+    "title": "”Öppna landskap” släpps",
+    "wikipediaSlug": "%C3%96ppna_landskap",
+    "year": 1982
+  },
+  {
+    "fact": "Främling blir ett av Melodifestivalens största genombrott.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q373108",
+    "subtitle": "Låt framförd av Carola",
+    "title": "”Främling” slår igenom",
+    "wikipediaSlug": "Fr%C3%A4mling_(s%C3%A5ng)",
+    "year": 1983
   },
   {
     "fact": "Roxette bildas av Marie Fredriksson och Per Gessle.",
@@ -257,6 +327,16 @@
     "subtitle": "Svensk popduo",
     "title": "Roxette bildas",
     "wikipediaSlug": "Roxette",
+    "year": 1986
+  },
+  {
+    "fact": "Chess har premiär i London med musik av Benny Andersson och Björn Ulvaeus.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "manual-Chess_(musikal)",
+    "subtitle": "Musikal av svenska låtskrivare",
+    "title": "”Chess” har premiär",
+    "wikipediaSlug": "Chess_(musikal)",
     "year": 1986
   },
   {
@@ -300,8 +380,18 @@
     "year": 1989
   },
   {
+    "fact": "Fångad av en stormvind vinner Eurovision Song Contest.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q1004668",
+    "subtitle": "Låt framförd av Carola",
+    "title": "”Fångad av en stormvind” vinner Eurovision",
+    "wikipediaSlug": "F%C3%A5ngad_av_en_stormvind",
+    "year": 1991
+  },
+  {
     "fact": "Army of Lovers får sitt internationella genombrott.",
-    "image": "Army of Lovers.png",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q689823",
     "subtitle": "Svensk popgrupp",
@@ -328,6 +418,26 @@
     "title": "Lasse Berghagen leder Allsång",
     "wikipediaSlug": "Lasse_Berghagen",
     "year": 1994
+  },
+  {
+    "fact": "Kristina från Duvemåla har premiär i Malmö.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q142885",
+    "subtitle": "Svensk musikal",
+    "title": "”Kristina från Duvemåla” har premiär",
+    "wikipediaSlug": "Kristina_fr%C3%A5n_Duvem%C3%A5la",
+    "year": 1995
+  },
+  {
+    "fact": "Lovefool blir The Cardigans stora internationella hit.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q2547704",
+    "subtitle": "Låt av The Cardigans",
+    "title": "”Lovefool” släpps",
+    "wikipediaSlug": "Lovefool",
+    "year": 1996
   },
   {
     "fact": "Lars Winnerbäck får sitt breda genombrott som singer-songwriter.",
@@ -378,6 +488,16 @@
     "title": "José González slår igenom",
     "wikipediaSlug": "Jos%C3%A9_Gonz%C3%A1lez",
     "year": 2003
+  },
+  {
+    "fact": "Boten Anna blir en svensk internet- och pophit.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q61044229",
+    "subtitle": "Låt av Basshunter",
+    "title": "”Boten Anna” släpps",
+    "wikipediaSlug": "Boten_Anna",
+    "year": 2006
   },
   {
     "fact": "Swedish House Mafia bildas.",

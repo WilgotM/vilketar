@@ -61,7 +61,7 @@
   },
   {
     "fact": "Spotify grundas i Stockholm.",
-    "image": "Spotify HK Stockholm.jpg",
+    "image": "",
     "pageViews": 450000,
     "qid": "Q689141",
     "subtitle": "Svensk musiktjänst",
@@ -91,7 +91,7 @@
   },
   {
     "fact": "ABBA vinner Eurovision Song Contest med Waterloo.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 420000,
     "qid": "Q32503",
     "subtitle": "Svensk Eurovision-klassiker",
@@ -131,7 +131,7 @@
   },
   {
     "fact": "Dancing Queen släpps och blir en av ABBAs största låtar.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 360000,
     "qid": "Q870786",
     "subtitle": "Låt av ABBA",
@@ -151,7 +151,7 @@
   },
   {
     "fact": "Volvo grundas i Göteborg.",
-    "image": "Volvo Powertrain.jpg",
+    "image": "",
     "pageViews": 350000,
     "qid": "Q163810",
     "subtitle": "Svenskt industriföretag",
@@ -161,7 +161,7 @@
   },
   {
     "fact": "Sverige tar brons i damernas fotbolls-VM efter seger mot Australien.",
-    "image": "2023-07-07 Fussball, Frauen, Länderspiel, Deutschland - Sambia 1DX 6938 by Stepro.jpg",
+    "image": "",
     "pageViews": 340000,
     "qid": "Q19672232",
     "subtitle": "Svenskt damlandslagsminne",
@@ -171,7 +171,7 @@
   },
   {
     "fact": "Gotland blir svenskt genom freden i Brömsebro.",
-    "image": "Helgumannen (2) hq.JPG",
+    "image": "",
     "pageViews": 320000,
     "qid": "Q1027830",
     "subtitle": "Svensk ö",
@@ -281,7 +281,7 @@
   },
   {
     "fact": "Kvinnor och män röstar i riksdagsval på lika villkor.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 300000,
     "qid": "manual-Allm%C3%A4n_r%C3%B6str%C3%A4tt_i_Sverige",
     "subtitle": "Svensk demokrati",
@@ -350,18 +350,8 @@
     "year": 1957
   },
   {
-    "fact": "Kalle Anka och hans vänner önskar God Jul börjar visas i svensk tv.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 300000,
-    "qid": "Q1755521",
-    "subtitle": "Svensk tv-tradition",
-    "title": "Kalle Anka visas på julafton",
-    "wikipediaSlug": "Kalle_Anka_och_hans_v%C3%A4nner_%C3%B6nskar_God_Jul",
-    "year": 1960
-  },
-  {
     "fact": "Regalskeppet Vasa bärgas.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 300000,
     "qid": "manual-Vasa_(regalskepp)",
     "subtitle": "Svenskt regalskepp",
@@ -431,7 +421,7 @@
   },
   {
     "fact": "Sverige arrangerar fotbolls-EM och når semifinal på hemmaplan.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 300000,
     "qid": "Q161810",
     "subtitle": "Svenskt fotbollsminne",
@@ -511,7 +501,7 @@
   },
   {
     "fact": "Män som hatar kvinnor ges ut efter Stieg Larssons död.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 300000,
     "qid": "Q186317",
     "subtitle": "Svensk författare",
@@ -521,7 +511,7 @@
   },
   {
     "fact": "Levels blir Aviciis internationella genombrott.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 300000,
     "qid": "Q2315784",
     "subtitle": "Låt av Avicii",
@@ -561,7 +551,7 @@
   },
   {
     "fact": "Wake Me Up blir en av Aviciis största låtar.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 300000,
     "qid": "manual-Wake_Me_Up_(Avicii-l%C3%A5t)",
     "subtitle": "Låt av Avicii",
@@ -571,7 +561,7 @@
   },
   {
     "fact": "Sveriges damlandslag tar OS-silver i fotboll i Rio de Janeiro.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 300000,
     "qid": "Q11865693",
     "subtitle": "Svenskt damlandslagsminne",
@@ -631,7 +621,7 @@
   },
   {
     "fact": "Sveriges damlandslag tar ännu ett OS-silver i fotboll.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 280000,
     "qid": "Q38278429",
     "subtitle": "Svenskt damlandslagsminne",
@@ -721,7 +711,7 @@
   },
   {
     "fact": "Karl XII blir kung av Sverige.",
-    "image": "Copy Charles XII - Nationalmuseum - 17886.png",
+    "image": "Porträtt_av_Karl_XII._Alt-Ranstad_-_Skoklosters_slott_-_86683.tif",
     "pageViews": 260000,
     "qid": "Q52934",
     "subtitle": "Svensk kung",
@@ -761,7 +751,7 @@
   },
   {
     "fact": "Offentlighetsprincipen införs genom tryckfrihetsförordningen.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q10607870",
     "subtitle": "Svensk demokratiprincip",
@@ -851,7 +841,7 @@
   },
   {
     "fact": "Sandvik grundas i Sandviken.",
-    "image": "Sandvik_LH517_LHD.JPG",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q1753718",
     "subtitle": "Svenskt industriföretag",
@@ -1021,7 +1011,7 @@
   },
   {
     "fact": "Per Albin Hansson använder folkhemmet som politisk vision.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q957260",
     "subtitle": "Svensk samhällsidé",
@@ -1041,7 +1031,7 @@
   },
   {
     "fact": "Saab grundas.",
-    "image": "Gripen ag1.jpg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q219501",
     "subtitle": "Svenskt industriföretag",
@@ -1091,7 +1081,7 @@
   },
   {
     "fact": "Kalle Anka & C:o börjar ges ut i Sverige.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q2743606",
     "subtitle": "Svensk serietidning",
@@ -1118,26 +1108,6 @@
     "title": "Midsommar blir svensk storhelg",
     "wikipediaSlug": "Midsommar",
     "year": 1953
-  },
-  {
-    "fact": "Reguljära tv-sändningar startar i Sverige.",
-    "image": "Kontorshuset_(Sveriges_Television),_juni_2022a.jpg",
-    "pageViews": 260000,
-    "qid": "Q215363",
-    "subtitle": "Svensk tv-historia",
-    "title": "Reguljära tv-sändningar startar",
-    "wikipediaSlug": "Sveriges_Television",
-    "year": 1956
-  },
-  {
-    "fact": "Det sjunde inseglet har premiär.",
-    "image": "7th_Seal_logo.jpg",
-    "pageViews": 260000,
-    "qid": "Q217189",
-    "subtitle": "Film av Ingmar Bergman",
-    "title": "”Det sjunde inseglet” har premiär",
-    "wikipediaSlug": "Det_sjunde_inseglet",
-    "year": 1957
   },
   {
     "fact": "Ingemar Johansson blir världsmästare i tungvikt.",
@@ -1200,16 +1170,6 @@
     "year": 1960
   },
   {
-    "fact": "Vi på Saltkråkan börjar sändas i svensk tv.",
-    "image": "Astrid_Lindgren_with_actors_of_Vi_på_Saltkråkan.webp",
-    "pageViews": 260000,
-    "qid": "Q1406295",
-    "subtitle": "Svensk tv-serie",
-    "title": "”Vi på Saltkråkan” börjar sändas",
-    "wikipediaSlug": "Vi_p%C3%A5_Saltkr%C3%A5kan",
-    "year": 1964
-  },
-  {
     "fact": "Miljonprogrammet startar för att bygga en miljon bostäder.",
     "image": "Tensta_2009d.jpg",
     "pageViews": 260000,
@@ -1231,7 +1191,7 @@
   },
   {
     "fact": "Hasselbladkameror används under månlandningen.",
-    "image": "Hasselblad_HQ.jpg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q1208831",
     "subtitle": "Svensk kamera",
@@ -1240,18 +1200,8 @@
     "year": 1969
   },
   {
-    "fact": "Sverige inför enkammarriksdag.",
-    "image": "Riksdagen_(current_composition).svg",
-    "pageViews": 260000,
-    "qid": "Q1179506",
-    "subtitle": "Svensk demokrati",
-    "title": "Tvåkammarriksdagen avskaffas",
-    "wikipediaSlug": "Riksdagen",
-    "year": 1971
-  },
-  {
     "fact": "Gunilla Bergström ger ut den första boken om Alfons Åberg.",
-    "image": "Alfons Åberg, Arlanda 2010 1.JPG",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q1316142",
     "subtitle": "Svensk barnboksfigur",
@@ -1261,7 +1211,7 @@
   },
   {
     "fact": "Ölandsbron invigs och knyter ön närmare fastlandet.",
-    "image": "Resmo,Kvarnar vid Gynge hög 01.jpg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q239276",
     "subtitle": "Svensk ö",
@@ -1271,7 +1221,7 @@
   },
   {
     "fact": "Fem myror är fler än fyra elefanter börjar sändas.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q5442718",
     "subtitle": "Svenskt barnprogram",
@@ -1311,7 +1261,7 @@
   },
   {
     "fact": "Sagan om Karl-Bertil Jonssons julafton börjar visas i svensk tv.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q1758868",
     "subtitle": "Svensk julklassiker",
@@ -1340,34 +1290,14 @@
     "year": 1979
   },
   {
-    "fact": "Sällskapsresan har premiär.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 260000,
-    "qid": "Q1765389",
-    "subtitle": "Svensk filmkomedi",
-    "title": "”Sällskapsresan” har premiär",
-    "wikipediaSlug": "S%C3%A4llskapsresan",
-    "year": 1980
-  },
-  {
     "fact": "Sverige håller folkomröstning om kärnkraften.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q6980136",
     "subtitle": "Svensk folkomröstning",
     "title": "Sverige röstar om kärnkraft",
     "wikipediaSlug": "Folkomr%C3%B6stningen_om_k%C3%A4rnkraften_i_Sverige_1980",
     "year": 1980
-  },
-  {
-    "fact": "Den första filmen om Jönssonligan har premiär.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 260000,
-    "qid": "Q378302",
-    "subtitle": "Svensk filmserie",
-    "title": "Jönssonligan får sin första film",
-    "wikipediaSlug": "J%C3%B6nssonligan",
-    "year": 1981
   },
   {
     "fact": "Astrid Lindgren ger ut Ronja Rövardotter.",
@@ -1390,16 +1320,6 @@
     "year": 1981
   },
   {
-    "fact": "Fanny och Alexander har premiär.",
-    "image": "Fanny & Alexander logotype.png",
-    "pageViews": 260000,
-    "qid": "Q165651",
-    "subtitle": "Film av Ingmar Bergman",
-    "title": "”Fanny och Alexander” har premiär",
-    "wikipediaSlug": "Fanny_och_Alexander",
-    "year": 1982
-  },
-  {
     "fact": "Gunde Svan tar OS-guld i Sarajevo.",
     "image": "20190225_Seefeld_3347_Gunde_Svan.jpg",
     "pageViews": 260000,
@@ -1410,16 +1330,6 @@
     "year": 1984
   },
   {
-    "fact": "På spåret börjar sändas i SVT.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 260000,
-    "qid": "Q7264617",
-    "subtitle": "Svenskt tv-program",
-    "title": "”På spåret” börjar sändas",
-    "wikipediaSlug": "P%C3%A5_sp%C3%A5ret",
-    "year": 1987
-  },
-  {
     "fact": "Jas 39 Gripen gör sin första flygning.",
     "image": "Saab_JAS_39_Gripen_at_Kaivopuisto_Air_Show,_June_2017_(altered)_copy.jpg",
     "pageViews": 260000,
@@ -1428,16 +1338,6 @@
     "title": "Jas Gripen premiärflyger",
     "wikipediaSlug": "Saab_39_Gripen",
     "year": 1988
-  },
-  {
-    "fact": "Bingolotto börjar sändas i lokal-tv i Göteborg.",
-    "image": "Bingolottoreklamskylt.jpg",
-    "pageViews": 260000,
-    "qid": "Q4579330",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Bingolotto” börjar sändas",
-    "wikipediaSlug": "Bingolotto",
-    "year": 1989
   },
   {
     "fact": "Globen invigs i Stockholm.",
@@ -1467,16 +1367,6 @@
     "subtitle": "Museum i Stockholm",
     "title": "Vasamuseet öppnar",
     "wikipediaSlug": "Vasamuseet",
-    "year": 1990
-  },
-  {
-    "fact": "TV4 börjar sända via satellit.",
-    "image": "TV4sweden_logo.svg",
-    "pageViews": 260000,
-    "qid": "Q1466723",
-    "subtitle": "Svensk tv-kanal",
-    "title": "TV4 börjar sända",
-    "wikipediaSlug": "TV4",
     "year": 1990
   },
   {
@@ -1511,7 +1401,7 @@
   },
   {
     "fact": "Bengan Boys tar OS-silver i handboll i Barcelona.",
-    "image": "Palauesportgranollers.JPG",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q649010",
     "subtitle": "Svenskt handbollsminne",
@@ -1550,26 +1440,6 @@
     "year": 1995
   },
   {
-    "fact": "Den moderna filmserien om Martin Beck startar.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 260000,
-    "qid": "manual-Beck_(filmserie)",
-    "subtitle": "Svensk filmserie",
-    "title": "Beck får sin första film",
-    "wikipediaSlug": "Beck_(filmserie)",
-    "year": 1997
-  },
-  {
-    "fact": "Expedition Robinson blir ett av Sveriges första stora dokusåpefenomen.",
-    "image": "Robinson_Haparanda,_2021,_örådet_inspelning_bild_2.jpg",
-    "pageViews": 260000,
-    "qid": "Q3359114",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Expedition Robinson” börjar sändas",
-    "wikipediaSlug": "Robinson_(TV-serie)",
-    "year": 1997
-  },
-  {
     "fact": "Nicklas Lidström vinner sin första Stanley Cup.",
     "image": "Nicklas_Lidström_in_2022.jpg",
     "pageViews": 260000,
@@ -1591,23 +1461,13 @@
   },
   {
     "fact": "Peter Haber börjar spela Martin Beck.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q1437612",
     "subtitle": "Svensk skådespelare",
     "title": "Peter Haber blir Martin Beck",
     "wikipediaSlug": "Peter_Haber",
     "year": 1997
-  },
-  {
-    "fact": "Fucking Åmål har premiär.",
-    "image": "Fucking_Åmål.jpg",
-    "pageViews": 260000,
-    "qid": "Q304394",
-    "subtitle": "Svensk film",
-    "title": "”Fucking Åmål” har premiär",
-    "wikipediaSlug": "Fucking_%C3%85m%C3%A5l",
-    "year": 1998
   },
   {
     "fact": "Diskoteksbranden i Göteborg inträffar.",
@@ -1631,22 +1491,12 @@
   },
   {
     "fact": "Mamma Mia! har premiär i London.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 260000,
     "qid": "manual-Mamma_Mia!_(musikal)",
     "subtitle": "Musikal med ABBA-musik",
     "title": "”Mamma Mia!” har premiär",
     "wikipediaSlug": "Mamma_Mia!_(musikal)",
-    "year": 1999
-  },
-  {
-    "fact": "Leif GW Persson blir en folkkär kriminalexpert i tv.",
-    "image": "Leif_GW_Persson,_Bokmässan_2013_3_(crop).jpg",
-    "pageViews": 260000,
-    "qid": "Q582603",
-    "subtitle": "Svensk kriminolog",
-    "title": "Leif GW Persson blir tv-profil",
-    "wikipediaSlug": "Leif_G.W._Persson",
     "year": 1999
   },
   {
@@ -1661,7 +1511,7 @@
   },
   {
     "fact": "Flashback Forum startar på webben.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q17632367",
     "subtitle": "Svenskt internetforum",
@@ -1711,7 +1561,7 @@
   },
   {
     "fact": "Bank-id lanseras i Sverige.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q116980761",
     "subtitle": "Svensk e-legitimation",
@@ -1770,16 +1620,6 @@
     "year": 2008
   },
   {
-    "fact": "Män som hatar kvinnor har premiär.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 260000,
-    "qid": "Q276343",
-    "subtitle": "Svensk thriller",
-    "title": "”Män som hatar kvinnor” har premiär",
-    "wikipediaSlug": "M%C3%A4n_som_hatar_kvinnor_(film)",
-    "year": 2009
-  },
-  {
     "fact": "Noomi Rapace spelar Lisbeth Salander i Millenniumfilmerna.",
     "image": "Noomi_Rapace_PFW_2019.jpg",
     "pageViews": 260000,
@@ -1791,32 +1631,12 @@
   },
   {
     "fact": "Dancing On My Own blir en modern svensk popklassiker.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q3488185",
     "subtitle": "Låt av Robyn",
     "title": "”Dancing On My Own” släpps",
     "wikipediaSlug": "Dancing_on_My_Own",
-    "year": 2010
-  },
-  {
-    "fact": "Snabba Cash har premiär.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 260000,
-    "qid": "Q2068245",
-    "subtitle": "Svensk film",
-    "title": "”Snabba Cash” har premiär",
-    "wikipediaSlug": "Snabba_cash",
-    "year": 2010
-  },
-  {
-    "fact": "Solsidan har premiär i TV4.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 260000,
-    "qid": "Q10673360",
-    "subtitle": "Svensk tv-serie",
-    "title": "”Solsidan” har premiär",
-    "wikipediaSlug": "Solsidan",
     "year": 2010
   },
   {
@@ -1850,16 +1670,6 @@
     "year": 2010
   },
   {
-    "fact": "Bron har premiär i SVT.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 260000,
-    "qid": "Q1211796",
-    "subtitle": "Svensk-dansk tv-serie",
-    "title": "”Bron” har premiär",
-    "wikipediaSlug": "Bron_(TV-serie)",
-    "year": 2011
-  },
-  {
     "fact": "Tomas Tranströmer tilldelas Nobelpriset i litteratur.",
     "image": "Transtroemer.jpg",
     "pageViews": 260000,
@@ -1871,23 +1681,13 @@
   },
   {
     "fact": "Mobilt Bank-id lanseras och blir vardagsteknik i Sverige.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 260000,
     "qid": "manual-Mobilt_Bank-id",
     "subtitle": "Svensk e-legitimation",
     "title": "Mobilt Bank-id lanseras",
     "wikipediaSlug": "Mobilt_Bank-id",
     "year": 2011
-  },
-  {
-    "fact": "En man som heter Ove har premiär.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 260000,
-    "qid": "Q21935502",
-    "subtitle": "Svensk film",
-    "title": "”En man som heter Ove” har premiär",
-    "wikipediaSlug": "En_man_som_heter_Ove_(film)",
-    "year": 2015
   },
   {
     "fact": "Sverige vinner U21-EM i fotboll efter finaldrama mot Portugal.",
@@ -2001,7 +1801,7 @@
   },
   {
     "fact": "The Final Countdown blir en av Sveriges mest kända rocklåtar.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 240000,
     "qid": "Q1165771",
     "subtitle": "Låt av Europe",
@@ -2020,16 +1820,6 @@
     "year": 1987
   },
   {
-    "fact": "Fångarna på fortet börjar sändas i svensk tv.",
-    "image": "Fort_Boyard.jpeg",
-    "pageViews": 240000,
-    "qid": "Q16155879",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Fångarna på fortet” börjar sändas",
-    "wikipediaSlug": "F%C3%A5ngarna_p%C3%A5_fortet",
-    "year": 1990
-  },
-  {
     "fact": "Robert Gustafsson blir ett återkommande ansikte i svensk humor-tv.",
     "image": "Robert_Gustafsson,_2015.jpg",
     "pageViews": 240000,
@@ -2041,23 +1831,13 @@
   },
   {
     "fact": "Sunes jul sänds som SVT:s julkalender.",
-    "image": "Sunes jul papperskalender.jpg",
+    "image": "",
     "pageViews": 240000,
     "qid": "Q4993680",
     "subtitle": "Svensk julkalender",
     "title": "”Sunes jul” sänds",
     "wikipediaSlug": "Sunes_jul",
     "year": 1991
-  },
-  {
-    "fact": "Svensson, Svensson har premiär i SVT.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 240000,
-    "qid": "Q7652181",
-    "subtitle": "Svensk komediserie",
-    "title": "”Svensson, Svensson” har premiär",
-    "wikipediaSlug": "Svensson%2C_Svensson",
-    "year": 1994
   },
   {
     "fact": "Mysteriet på Greveholm sänds som SVT:s julkalender.",
@@ -2131,23 +1911,13 @@
   },
   {
     "fact": "Sveriges herrlandslag tar OS-silver i handboll i London.",
-    "image": "London Handball Arena (June 10, 2011).jpg",
+    "image": "",
     "pageViews": 240000,
     "qid": "Q209129",
     "subtitle": "Svenskt handbollsminne",
     "title": "Sverige tar OS-silver i handboll",
     "wikipediaSlug": "Handboll_vid_olympiska_sommarspelen_2012",
     "year": 2012
-  },
-  {
-    "fact": "Hundraåringen som klev ut genom fönstret och försvann har premiär.",
-    "image": "Hundraåringen_logo_(film).svg",
-    "pageViews": 240000,
-    "qid": "Q10527185",
-    "subtitle": "Svensk filmkomedi",
-    "title": "”Hundraåringen” har premiär",
-    "wikipediaSlug": "Hundra%C3%A5ringen_som_klev_ut_genom_f%C3%B6nstret_och_f%C3%B6rsvann_(film)",
-    "year": 2013
   },
   {
     "fact": "Lotta Schelin blir Sveriges mesta målskytt i damlandslaget.",
@@ -2191,7 +1961,7 @@
   },
   {
     "fact": "Jämtland blir svenskt genom freden i Brömsebro.",
-    "image": "Jamtlandvy.jpg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q211661",
     "subtitle": "Svenskt landskap",
@@ -2201,7 +1971,7 @@
   },
   {
     "fact": "Bohuslän blir svenskt genom freden i Roskilde.",
-    "image": "D81 2336 (28603718425).jpg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q209523",
     "subtitle": "Svenskt landskap",
@@ -2221,7 +1991,7 @@
   },
   {
     "fact": "Husqvarna grundas som gevärsfaktori.",
-    "image": "Husqvarna fabriksmuseum oktober 2013 01.jpg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q899356",
     "subtitle": "Svenskt industriföretag",
@@ -2351,7 +2121,7 @@
   },
   {
     "fact": "Den moderna skiftnyckeln patenteras av Johan Petter Johansson.",
-    "image": "Chrome Vanadium Adjustable Wrench.jpg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q449109",
     "subtitle": "Svensk uppfinning",
@@ -2361,7 +2131,7 @@
   },
   {
     "fact": "Kamratposten börjar ges ut.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q3377873",
     "subtitle": "Svensk barntidning",
@@ -2371,7 +2141,7 @@
   },
   {
     "fact": "Åhléns grundas som postorderföretag.",
-    "image": "Åhléns_City_in_Stockholm.jpg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q270851",
     "subtitle": "Svensk varuhuskedja",
@@ -2391,7 +2161,7 @@
   },
   {
     "fact": "Lappland blir starkt förknippat med fjäll, midnattssol och norrsken.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q1168034",
     "subtitle": "Svenskt landskap",
@@ -2461,7 +2231,7 @@
   },
   {
     "fact": "Sarek blir en av Sveriges första nationalparker.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "manual-Sarek_nationalpark",
     "subtitle": "Svensk nationalpark",
@@ -2541,7 +2311,7 @@
   },
   {
     "fact": "Sverige beslutar om åtta timmars arbetsdag.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q341050",
     "subtitle": "Svensk arbetslivsreform",
@@ -2651,7 +2421,7 @@
   },
   {
     "fact": "Sverige inför två veckors lagstadgad semester.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q10665497",
     "subtitle": "Svensk arbetslivsreform",
@@ -3051,7 +2821,7 @@
   },
   {
     "fact": "Nils Bohlin utvecklar trepunktsbältet på Volvo.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q982287",
     "subtitle": "Svensk ingenjör",
@@ -3098,16 +2868,6 @@
     "title": "ATP-systemet införs",
     "wikipediaSlug": "%C3%85lderspension_i_Sverige",
     "year": 1960
-  },
-  {
-    "fact": "Hylands hörna börjar sändas och blir ett tidigt svenskt tv-fenomen.",
-    "image": "Hylands_Hörna_1960-tal.jpg",
-    "pageViews": 220000,
-    "qid": "Q4579633",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Hylands hörna” börjar sändas",
-    "wikipediaSlug": "Hylands_h%C3%B6rna",
-    "year": 1962
   },
   {
     "fact": "Biltema grundas.",
@@ -3180,16 +2940,6 @@
     "year": 1965
   },
   {
-    "fact": "Persona har premiär.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "Q695255",
-    "subtitle": "Film av Ingmar Bergman",
-    "title": "”Persona” har premiär",
-    "wikipediaSlug": "Persona_(film)",
-    "year": 1966
-  },
-  {
     "fact": "Lill Lindfors får sitt breda genombrott som artist.",
     "image": "Lill_Lindfors_2013-05-06.jpg",
     "pageViews": 220000,
@@ -3250,16 +3000,6 @@
     "year": 1970
   },
   {
-    "fact": "Utvandrarna har premiär.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "manual-Utvandrarna_(film%2C_1971)",
-    "subtitle": "Svensk film",
-    "title": "”Utvandrarna” har premiär",
-    "wikipediaSlug": "Utvandrarna_(film%2C_1971)",
-    "year": 1971
-  },
-  {
     "fact": "Apoteket AB bildas när apoteksväsendet förstatligas.",
     "image": "Apotekets_huvudkontor_September_2014_01.jpg",
     "pageViews": 220000,
@@ -3290,16 +3030,6 @@
     "year": 1972
   },
   {
-    "fact": "Arne Weise blir folkkär som SVT:s julvärd.",
-    "image": "Kristallen-vinnaren_Arne_Weise.jpg",
-    "pageViews": 220000,
-    "qid": "Q3376530",
-    "subtitle": "Svensk tv-profil",
-    "title": "Arne Weise blir julvärd",
-    "wikipediaSlug": "Arne_Weise",
-    "year": 1972
-  },
-  {
     "fact": "Mikael Wiehe slår igenom med Hoola Bandoola Band.",
     "image": "Mikael_Wiehe_Sommarkrysset_2012_By_Daniel_Åhs_Karlsson.jpg",
     "pageViews": 220000,
@@ -3308,26 +3038,6 @@
     "title": "Mikael Wiehe slår igenom",
     "wikipediaSlug": "Mikael_Wiehe",
     "year": 1972
-  },
-  {
-    "fact": "Magnus Härenstam blir folkkär genom Fem myror.",
-    "image": "Magnus_Härenstam_2012-01-25_004.jpg",
-    "pageViews": 220000,
-    "qid": "Q1776879",
-    "subtitle": "Svensk skådespelare och programledare",
-    "title": "Magnus Härenstam blir barn-tv-ikon",
-    "wikipediaSlug": "Magnus_H%C3%A4renstam",
-    "year": 1973
-  },
-  {
-    "fact": "Brasse Brännström blir folkkär genom Fem myror.",
-    "image": "Brasse_Brännström_Lisebergsapplåden_2013_2.jpg",
-    "pageViews": 220000,
-    "qid": "Q279709",
-    "subtitle": "Svensk skådespelare",
-    "title": "Brasse Brännström blir barn-tv-ikon",
-    "wikipediaSlug": "Brasse_Br%C3%A4nnstr%C3%B6m",
-    "year": 1973
   },
   {
     "fact": "Gunnar Myrdal tilldelas Sveriges Riksbanks pris i ekonomisk vetenskap.",
@@ -3351,7 +3061,7 @@
   },
   {
     "fact": "Harry Martinson tilldelas Nobelpriset i litteratur.",
-    "image": "Harry Martinson.jpg",
+    "image": "Harry_Martinson_001.tiff",
     "pageViews": 220000,
     "qid": "Q132695",
     "subtitle": "Svensk författare",
@@ -3371,7 +3081,7 @@
   },
   {
     "fact": "Sverige inför föräldraförsäkring.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q132228",
     "subtitle": "Svensk välfärdsreform",
@@ -3381,7 +3091,7 @@
   },
   {
     "fact": "Linköpings universitet grundas.",
-    "image": "Linköping University admin building.jpeg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q782600",
     "subtitle": "Svenskt universitet",
@@ -3401,7 +3111,7 @@
   },
   {
     "fact": "Trazan och Banarne blir folkkära figurer i svensk barn-tv.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q1764283",
     "subtitle": "Svenskt barnprogram",
@@ -3441,7 +3151,7 @@
   },
   {
     "fact": "Europe bildas i Upplands Väsby.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "manual-Europe_(musikgrupp)",
     "subtitle": "Svenskt rockband",
@@ -3450,18 +3160,8 @@
     "year": 1979
   },
   {
-    "fact": "Allsång på Skansen börjar sändas i tv.",
-    "image": "Artisterna_i_Allsång_på_Skansen_2013.jpg",
-    "pageViews": 220000,
-    "qid": "Q1757014",
-    "subtitle": "Svenskt musikprogram",
-    "title": "Allsång på Skansen börjar sändas",
-    "wikipediaSlug": "Alls%C3%A5ng_p%C3%A5_Skansen",
-    "year": 1979
-  },
-  {
     "fact": "Trolltider sänds som SVT:s julkalender.",
-    "image": "Trolltider 1985 papperskalender.jpg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q10704922",
     "subtitle": "Svensk julkalender",
@@ -3470,18 +3170,8 @@
     "year": 1979
   },
   {
-    "fact": "Repmånad har premiär.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "Q7307594",
-    "subtitle": "Svensk filmkomedi",
-    "title": "”Repmånad” har premiär",
-    "wikipediaSlug": "Repetitions%C3%B6vning",
-    "year": 1979
-  },
-  {
     "fact": "Håkan Lans uppmärksammas för uppfinningar inom grafik och navigation.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q360819",
     "subtitle": "Svensk uppfinnare",
@@ -3520,18 +3210,8 @@
     "year": 1980
   },
   {
-    "fact": "Göta kanal eller Vem drog ur proppen? har premiär.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "Q10512738",
-    "subtitle": "Svensk filmkomedi",
-    "title": "”Göta kanal” har premiär",
-    "wikipediaSlug": "G%C3%B6ta_kanal_(film)",
-    "year": 1981
-  },
-  {
     "fact": "Sommartider blir en svensk sommarklassiker.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q7560439",
     "subtitle": "Låt av Gyllene Tider",
@@ -3551,7 +3231,7 @@
   },
   {
     "fact": "Öppna landskap blir en av Ulf Lundells mest kända låtar.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q297660",
     "subtitle": "Låt av Ulf Lundell",
@@ -3581,7 +3261,7 @@
   },
   {
     "fact": "Främling blir ett av Melodifestivalens största genombrott.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q373108",
     "subtitle": "Låt framförd av Carola",
@@ -3601,23 +3281,13 @@
   },
   {
     "fact": "Den första boken om Sune ges ut.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "manual-Sune_(bokserie)",
     "subtitle": "Svensk bokserie",
     "title": "Sune debuterar",
     "wikipediaSlug": "Sune_(bokserie)",
     "year": 1984
-  },
-  {
-    "fact": "Mitt liv som hund har premiär.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "Q1342900",
-    "subtitle": "Svensk film",
-    "title": "”Mitt liv som hund” har premiär",
-    "wikipediaSlug": "Mitt_liv_som_hund",
-    "year": 1985
   },
   {
     "fact": "Roxette bildas av Marie Fredriksson och Per Gessle.",
@@ -3630,18 +3300,8 @@
     "year": 1986
   },
   {
-    "fact": "Macken börjar sändas i SVT.",
-    "image": "Roy_&_Roger.jpg",
-    "pageViews": 220000,
-    "qid": "Q6724324",
-    "subtitle": "Svensk humorserie",
-    "title": "”Macken” börjar sändas",
-    "wikipediaSlug": "Macken",
-    "year": 1986
-  },
-  {
     "fact": "Chess har premiär i London med musik av Benny Andersson och Björn Ulvaeus.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "manual-Chess_(musikal)",
     "subtitle": "Musikal av svenska låtskrivare",
@@ -3671,22 +3331,12 @@
   },
   {
     "fact": "Den första boken om Bert ges ut.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "manual-Bert_(bokserie)",
     "subtitle": "Svensk bokserie",
     "title": "Bert debuterar",
     "wikipediaSlug": "Bert_(bokserie)",
-    "year": 1987
-  },
-  {
-    "fact": "TV3 börjar sända till svenska tittare.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "Q378424",
-    "subtitle": "Svensk tv-kanal",
-    "title": "TV3 börjar sända",
-    "wikipediaSlug": "TV3",
     "year": 1987
   },
   {
@@ -3720,16 +3370,6 @@
     "year": 1988
   },
   {
-    "fact": "Antikrundan börjar sändas i SVT.",
-    "image": "Antikrundan_001.jpg",
-    "pageViews": 220000,
-    "qid": "Q4774875",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Antikrundan” börjar sändas",
-    "wikipediaSlug": "Antikrundan",
-    "year": 1989
-  },
-  {
     "fact": "Thåström släpper sitt första soloalbum.",
     "image": "Joakim_Thåström_1985.png",
     "pageViews": 220000,
@@ -3740,18 +3380,8 @@
     "year": 1989
   },
   {
-    "fact": "Den animerade Muminserien blir älskad av svenska barn.",
-    "image": "Mumindalen papperskalender.jpg",
-    "pageViews": 220000,
-    "qid": "Q10590158",
-    "subtitle": "Nordisk barnserie",
-    "title": "Mumin blir tv-klassiker",
-    "wikipediaSlug": "Mumindalen_(TV-serie)",
-    "year": 1990
-  },
-  {
     "fact": "Suzanne Reuter blir ett av Sveriges mest välkända komedinamn.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q4356245",
     "subtitle": "Svensk skådespelare",
@@ -3760,18 +3390,8 @@
     "year": 1990
   },
   {
-    "fact": "Mark Levengood blir en folkkär svensk tv-profil.",
-    "image": "Mark_Levengood_på_Bokmässan_2024,_P1270485f.jpg",
-    "pageViews": 220000,
-    "qid": "Q349472",
-    "subtitle": "Svensk programledare",
-    "title": "Mark Levengood blir tv-profil",
-    "wikipediaSlug": "Mark_Levengood",
-    "year": 1990
-  },
-  {
     "fact": "Fångad av en stormvind vinner Eurovision Song Contest.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q1004668",
     "subtitle": "Låt framförd av Carola",
@@ -3781,7 +3401,7 @@
   },
   {
     "fact": "Army of Lovers får sitt internationella genombrott.",
-    "image": "Army of Lovers.png",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q689823",
     "subtitle": "Svensk popgrupp",
@@ -3807,16 +3427,6 @@
     "subtitle": "Svensk popgrupp",
     "title": "The Cardigans bildas",
     "wikipediaSlug": "The_Cardigans",
-    "year": 1992
-  },
-  {
-    "fact": "Rederiet börjar sändas i SVT.",
-    "image": "Birka_Princess_1986c.jpg",
-    "pageViews": 220000,
-    "qid": "Q3354779",
-    "subtitle": "Svensk tv-serie",
-    "title": "”Rederiet” börjar sändas",
-    "wikipediaSlug": "Rederiet",
     "year": 1992
   },
   {
@@ -3860,16 +3470,6 @@
     "year": 1993
   },
   {
-    "fact": "Wallander börjar filmatiseras.",
-    "image": "Rolf_Lassgård_(Berlin_Film_Festival_2009).jpg",
-    "pageViews": 220000,
-    "qid": "Q21996819",
-    "subtitle": "Svensk kriminalserie",
-    "title": "Wallander blir filmserie",
-    "wikipediaSlug": "Kurt_Wallander_(filmer)",
-    "year": 1994
-  },
-  {
     "fact": "Oatly grundas.",
     "image": "Oatly.jpg",
     "pageViews": 220000,
@@ -3910,18 +3510,8 @@
     "year": 1994
   },
   {
-    "fact": "NileCity 105,6 börjar sändas i SVT.",
-    "image": "NileCity_105,6_logotyp.png",
-    "pageViews": 220000,
-    "qid": "Q1785682",
-    "subtitle": "Svensk humorserie",
-    "title": "”NileCity” börjar sändas",
-    "wikipediaSlug": "NileCity_105%2C6",
-    "year": 1995
-  },
-  {
     "fact": "Kristina från Duvemåla har premiär i Malmö.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q142885",
     "subtitle": "Svensk musikal",
@@ -3941,7 +3531,7 @@
   },
   {
     "fact": "Lovefool blir The Cardigans stora internationella hit.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q2547704",
     "subtitle": "Låt av The Cardigans",
@@ -3950,18 +3540,8 @@
     "year": 1996
   },
   {
-    "fact": "Jägarna har premiär.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "manual-J%C3%A4garna_(film)",
-    "subtitle": "Svensk thriller",
-    "title": "”Jägarna” har premiär",
-    "wikipediaSlug": "J%C3%A4garna_(film)",
-    "year": 1996
-  },
-  {
     "fact": "Ludmila Engquist tar OS-guld på 100 meter häck.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q240424",
     "subtitle": "Svensk häcklöpare",
@@ -3998,16 +3578,6 @@
     "title": "Lars Winnerbäck slår igenom",
     "wikipediaSlug": "Lars_Winnerb%C3%A4ck",
     "year": 1996
-  },
-  {
-    "fact": "Skärgårdsdoktorn har premiär i SVT.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "Q3505375",
-    "subtitle": "Svensk tv-serie",
-    "title": "”Skärgårdsdoktorn” har premiär",
-    "wikipediaSlug": "Sk%C3%A4rg%C3%A5rdsdoktorn",
-    "year": 1997
   },
   {
     "fact": "Magdalena Forsberg vinner världscupen i skidskytte.",
@@ -4060,28 +3630,8 @@
     "year": 1998
   },
   {
-    "fact": "Tomten är far till alla barnen har premiär.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "Q1388936",
-    "subtitle": "Svensk julfilm",
-    "title": "”Tomten är far till alla barnen” har premiär",
-    "wikipediaSlug": "Tomten_%C3%A4r_far_till_alla_barnen",
-    "year": 1999
-  },
-  {
-    "fact": "Torsk på Tallinn har premiär i SVT.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "Q6804910",
-    "subtitle": "Svensk tv-film",
-    "title": "”Torsk på Tallinn” har premiär",
-    "wikipediaSlug": "Torsk_p%C3%A5_Tallinn",
-    "year": 1999
-  },
-  {
     "fact": "Tradera grundas som svensk auktionssajt.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q4051696",
     "subtitle": "Svensk auktionssajt",
@@ -4091,7 +3641,7 @@
   },
   {
     "fact": "Avanza grundas som svensk nätmäklare.",
-    "image": "Höjden 14, Stockholm 01.jpg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q4827724",
     "subtitle": "Svensk nätmäklare",
@@ -4131,42 +3681,12 @@
   },
   {
     "fact": "Vem vill bli miljonär? börjar sändas i Sverige.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q72006076",
     "subtitle": "Svenskt frågesportprogram",
     "title": "”Vem vill bli miljonär?” börjar sändas",
     "wikipediaSlug": "Vem_vill_bli_miljon%C3%A4r%3F",
-    "year": 2000
-  },
-  {
-    "fact": "Big Brother börjar sändas i svensk tv.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "Q16827221",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Big Brother” börjar sändas",
-    "wikipediaSlug": "Big_Brother_(Sverige)",
-    "year": 2000
-  },
-  {
-    "fact": "David Hellenius blir ett välkänt ansikte i TV4.",
-    "image": "David_Hellenius_in_August_2013.jpg",
-    "pageViews": 220000,
-    "qid": "Q5234881",
-    "subtitle": "Svensk programledare",
-    "title": "David Hellenius blir tv-profil",
-    "wikipediaSlug": "David_Hellenius",
-    "year": 2000
-  },
-  {
-    "fact": "Carina Berg blir en välkänd svensk tv-profil.",
-    "image": "Carina_Berg_-_Melodifestivalen_2024,_Malmö-7_(cropped).jpg",
-    "pageViews": 220000,
-    "qid": "Q4938281",
-    "subtitle": "Svensk programledare",
-    "title": "Carina Berg blir tv-profil",
-    "wikipediaSlug": "Carina_Berg",
     "year": 2000
   },
   {
@@ -4178,26 +3698,6 @@
     "title": "SJ blir aktiebolag",
     "wikipediaSlug": "SJ",
     "year": 2001
-  },
-  {
-    "fact": "Farmen börjar sändas i TV4.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "Q20113827",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Farmen” börjar sändas",
-    "wikipediaSlug": "Farmen",
-    "year": 2001
-  },
-  {
-    "fact": "Fredrik Lindström blir folkkär genom tv-program om språk och historia.",
-    "image": "Fredrik_Lindström_2015-05-28_001.jpg",
-    "pageViews": 220000,
-    "qid": "Q332401",
-    "subtitle": "Svensk språkprofil",
-    "title": "Fredrik Lindström blir tv-profil",
-    "wikipediaSlug": "Fredrik_Lindstr%C3%B6m",
-    "year": 2002
   },
   {
     "fact": "Filip Hammar slår igenom i tv-duon Filip och Fredrik.",
@@ -4220,16 +3720,6 @@
     "year": 2002
   },
   {
-    "fact": "Ondskan har premiär.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "Q1382421",
-    "subtitle": "Svensk film",
-    "title": "”Ondskan” har premiär",
-    "wikipediaSlug": "Ondskan_(film)",
-    "year": 2003
-  },
-  {
     "fact": "José González får sitt genombrott med Veneer.",
     "image": "José_González.jpg",
     "pageViews": 220000,
@@ -4238,26 +3728,6 @@
     "title": "José González slår igenom",
     "wikipediaSlug": "Jos%C3%A9_Gonz%C3%A1lez",
     "year": 2003
-  },
-  {
-    "fact": "Idol börjar sändas i Sverige.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "Q1656877",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Idol” börjar sändas",
-    "wikipediaSlug": "Idol_(Sverige)",
-    "year": 2004
-  },
-  {
-    "fact": "Så som i himmelen har premiär.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "Q912049",
-    "subtitle": "Svensk film",
-    "title": "”Så som i himmelen” har premiär",
-    "wikipediaSlug": "S%C3%A5_som_i_himmelen",
-    "year": 2004
   },
   {
     "fact": "Stefan Holm tar OS-guld i höjdhopp.",
@@ -4290,44 +3760,14 @@
     "year": 2005
   },
   {
-    "fact": "Let's Dance börjar sändas i TV4.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "manual-Let's_Dance_(Sverige)",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Let's Dance” börjar sändas",
-    "wikipediaSlug": "Let's_Dance_(Sverige)",
-    "year": 2006
-  },
-  {
-    "fact": "Bonde söker fru börjar sändas i TV4.",
-    "image": "Linda_Lindorff_in_August_2013.jpg",
-    "pageViews": 220000,
-    "qid": "Q661146",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Bonde söker fru” börjar sändas",
-    "wikipediaSlug": "Bonde_s%C3%B6ker_fru",
-    "year": 2006
-  },
-  {
     "fact": "Boten Anna blir en svensk internet- och pophit.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q61044229",
     "subtitle": "Låt av Basshunter",
     "title": "”Boten Anna” släpps",
     "wikipediaSlug": "Boten_Anna",
     "year": 2006
-  },
-  {
-    "fact": "Talang börjar sändas i Sverige.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "manual-Talang_(Sverige)",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Talang” börjar sändas",
-    "wikipediaSlug": "Talang_(Sverige)",
-    "year": 2007
   },
   {
     "fact": "Swedish House Mafia bildas.",
@@ -4337,16 +3777,6 @@
     "subtitle": "Svensk DJ-grupp",
     "title": "Swedish House Mafia bildas",
     "wikipediaSlug": "Swedish_House_Mafia",
-    "year": 2008
-  },
-  {
-    "fact": "Låt den rätte komma in har premiär.",
-    "image": "Låt-den-rätte-komma-in-logotyp.png",
-    "pageViews": 220000,
-    "qid": "Q144756",
-    "subtitle": "Svensk film",
-    "title": "”Låt den rätte komma in” har premiär",
-    "wikipediaSlug": "L%C3%A5t_den_r%C3%A4tte_komma_in_(film)",
     "year": 2008
   },
   {
@@ -4360,34 +3790,14 @@
     "year": 2008
   },
   {
-    "fact": "Mästarnas mästare börjar sändas i SVT.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "Q670761",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Mästarnas mästare” börjar sändas",
-    "wikipediaSlug": "M%C3%A4starnas_m%C3%A4stare",
-    "year": 2009
-  },
-  {
     "fact": "Sverige inför könsneutralt äktenskap.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "manual-Samk%C3%B6nade_%C3%A4ktenskap_i_Sverige",
     "subtitle": "Svensk lagändring",
     "title": "Samkönade äktenskap införs",
     "wikipediaSlug": "Samk%C3%B6nade_%C3%A4ktenskap_i_Sverige",
     "year": 2009
-  },
-  {
-    "fact": "Så mycket bättre börjar sändas i TV4.",
-    "image": "Flag_of_Sweden.svg",
-    "pageViews": 220000,
-    "qid": "Q2757779",
-    "subtitle": "Svenskt musikprogram",
-    "title": "”Så mycket bättre” börjar sändas",
-    "wikipediaSlug": "S%C3%A5_mycket_b%C3%A4ttre",
-    "year": 2010
   },
   {
     "fact": "Jag kommer blir en av Veronica Maggios mest kända låtar.",
@@ -4401,7 +3811,7 @@
   },
   {
     "fact": "En man som heter Ove ges ut.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q22815069",
     "subtitle": "Roman av Fredrik Backman",
@@ -4451,7 +3861,7 @@
   },
   {
     "fact": "Svensk polis omorganiseras till en nationell myndighet.",
-    "image": "Flag_of_Sweden.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "manual-Polismyndigheten_(Sverige)",
     "subtitle": "Svensk myndighet",
@@ -4470,18 +3880,8 @@
     "year": 2016
   },
   {
-    "fact": "Vår tid är nu har premiär i SVT.",
-    "image": "Vår_tid_är_nu_-_Calle_och_Nina.jpg",
-    "pageViews": 220000,
-    "qid": "Q28154022",
-    "subtitle": "Svensk tv-serie",
-    "title": "”Vår tid är nu” har premiär",
-    "wikipediaSlug": "V%C3%A5r_tid_%C3%A4r_nu",
-    "year": 2017
-  },
-  {
     "fact": "Polestar lanseras som självständigt elbilsmärke.",
-    "image": "Polestar_headquarters_in_Gothenburg,_Sweden.png",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q4047174",
     "subtitle": "Svenskt elbilsmärke",

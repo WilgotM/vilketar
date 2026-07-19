@@ -239,33 +239,6 @@ const CARDS: HandpickedCard[] = [
     year: 1994,
   },
   {
-    deckIds: ["all-sweden", "all-sweden-allt", "all-entertainment-tv"],
-    fact: "Melodifestivalen arrangeras för första gången.",
-    pageTitle: "Melodifestivalen",
-    pageViews: 500_000,
-    subtitle: "Svensk musiktävling",
-    title: "Melodifestivalen startar",
-    year: 1959,
-  },
-  {
-    deckIds: ["all-sweden", "all-sweden-allt", "all-entertainment-tv"],
-    fact: "På spåret börjar sändas i SVT.",
-    pageTitle: "På spåret",
-    pageViews: 260_000,
-    subtitle: "Svenskt tv-program",
-    title: "”På spåret” börjar sändas",
-    year: 1987,
-  },
-  {
-    deckIds: ["all-sweden", "all-sweden-allt", "all-entertainment-tv"],
-    fact: "Solsidan börjar sändas i TV4.",
-    pageTitle: "Solsidan",
-    pageViews: 220_000,
-    subtitle: "Svensk tv-serie",
-    title: "”Solsidan” börjar sändas",
-    year: 2010,
-  },
-  {
     deckIds: ["all-sweden", "all-sweden-allt", "all-sport-svensk-sport"],
     fact: "Sverige tar VM-brons i fotboll i USA.",
     pageTitle: "Världsmästerskapet i fotboll 1994",
@@ -316,20 +289,6 @@ function inferClassicDeckIds(input: ClassicTuple): string[] {
     /låt|sång|Eurovision|Främling|Waterloo|Dancing|Levels|Tattoo/i.test(text)
   ) {
     deckIds.add("all-entertainment-songs");
-  }
-
-  if (
-    /film|premiär|filmserie|Bergman|Jönssonligan|Beck|Wallander/i.test(text)
-  ) {
-    deckIds.add("all-entertainment-films");
-  }
-
-  if (
-    /tv|TV|program|serie|SVT|TV4|Bolibompa|Kalle Anka|Rederiet|Robinson|Bingolotto|Rapport/i.test(
-      text,
-    )
-  ) {
-    deckIds.add("all-entertainment-tv");
   }
 
   if (
@@ -485,6 +444,24 @@ function classicCard(input: ClassicTuple): HandpickedCard {
     title,
     year,
   };
+}
+
+function isFilmOrTvCard(card: HandpickedCard): boolean {
+  const text = `${card.pageTitle}\n${card.title}\n${card.subtitle}`;
+  return isFilmOrTvText(text);
+}
+
+function isFilmOrTvText(text: string): boolean {
+  return /\bfilm(?:serie|er|komedi)?\b|julfilm|\btv(?:-serie|-program|-film|-tradition)?\b|television|dokusåpa|komediserie|humorserie|musikprogram/i.test(
+    text,
+  );
+}
+
+function isFilmOrTvRuntimeCard(card: Card): boolean {
+  return (
+    isFilmOrTvText(`${card.title}\n${card.subtitle ?? ""}`) ||
+    /(?:%28|\(|_)(?:film|TV-serie|TV-program)/i.test(card.wikipediaSlug ?? "")
+  );
 }
 
 const EXTRA_CLASSIC_CARDS: HandpickedCard[] = (
@@ -7482,7 +7459,9 @@ const EXTRA_CLASSIC_CARDS: HandpickedCard[] = (
       220_000,
     ],
   ] satisfies ClassicTuple[]
-).map(classicCard);
+)
+  .map(classicCard)
+  .filter((card) => !isFilmOrTvCard(card));
 
 const SPORT_CARDS: HandpickedCard[] = [
   {
@@ -8655,7 +8634,9 @@ const VIDEO_GAME_CARDS: HandpickedCard[] = [
   },
 ];
 
-const CLASSIC_CARDS = [...CARDS, ...EXTRA_CLASSIC_CARDS];
+const CLASSIC_CARDS = [...CARDS, ...EXTRA_CLASSIC_CARDS].filter(
+  (card) => !isFilmOrTvCard(card),
+);
 
 function shouldKeepVideoGameCard(card: Card): boolean {
   if (!/Resident Evil/i.test(`${card.title}\n${card.wikipediaSlug}`)) {
@@ -8839,7 +8820,14 @@ async function removeCardsFromExistingDecks(
   for (const deckId of deckIds) {
     const existingCards = cardsByDeckId.get(deckId) ?? (await readDeck(deckId));
     const filteredCards = existingCards.filter((card) => {
-      return !removeQids.has(card.qid) && !removeTitles.has(card.title);
+      const wikipediaSlug = card.wikipediaSlug ?? "";
+      const isFilmOrTvWork = isFilmOrTvRuntimeCard({ ...card, wikipediaSlug });
+
+      return (
+        !removeQids.has(card.qid) &&
+        !removeTitles.has(card.title) &&
+        !isFilmOrTvWork
+      );
     });
 
     if (filteredCards.length !== existingCards.length) {
@@ -8885,6 +8873,10 @@ async function main() {
       wikipediaSlug: slugFromTitle(metadata.title),
       year: card.year,
     };
+    if (isFilmOrTvRuntimeCard(runtimeCard)) {
+      continue;
+    }
+
     preparedCards.push({ card, runtimeCard });
   }
 

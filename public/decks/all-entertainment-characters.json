@@ -11,7 +11,7 @@
   },
   {
     "fact": "Gunilla Bergström ger ut den första boken om Alfons Åberg.",
-    "image": "Alfons Åberg, Arlanda 2010 1.JPG",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q1316142",
     "subtitle": "Svensk barnboksfigur",
@@ -31,7 +31,7 @@
   },
   {
     "fact": "Sagan om Karl-Bertil Jonssons julafton börjar visas i svensk tv.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q1758868",
     "subtitle": "Svensk julklassiker",
@@ -71,7 +71,7 @@
   },
   {
     "fact": "Sunes jul sänds som SVT:s julkalender.",
-    "image": "Sunes jul papperskalender.jpg",
+    "image": "",
     "pageViews": 240000,
     "qid": "Q4993680",
     "subtitle": "Svensk julkalender",
@@ -161,7 +161,7 @@
   },
   {
     "fact": "Trazan och Banarne blir folkkära figurer i svensk barn-tv.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q1764283",
     "subtitle": "Svenskt barnprogram",
@@ -171,7 +171,7 @@
   },
   {
     "fact": "Den första boken om Sune ges ut.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "manual-Sune_(bokserie)",
     "subtitle": "Svensk bokserie",
@@ -181,7 +181,7 @@
   },
   {
     "fact": "Den första boken om Bert ges ut.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "manual-Bert_(bokserie)",
     "subtitle": "Svensk bokserie",
@@ -220,18 +220,8 @@
     "year": 1941
   },
   {
-    "fact": "Åsa-Nisse introduceras och blir en svensk buskisfigur.",
-    "image": "John_Elfstrom-Asa-Nisse.jpg",
-    "pageViews": 200000,
-    "qid": "Q8077214",
-    "subtitle": "Svensk film- och seriefigur",
-    "title": "Åsa-Nisse debuterar",
-    "wikipediaSlug": "%C3%85sa-Nisse",
-    "year": 1944
-  },
-  {
     "fact": "Åke Holmberg ger ut den första boken om Ture Sventon.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 200000,
     "qid": "Q4354348",
     "subtitle": "Svensk barnboksfigur",
@@ -251,7 +241,7 @@
   },
   {
     "fact": "Martha Sandwall-Bergström ger ut första boken om Kulla-Gulla.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 180000,
     "qid": "Q10549872",
     "subtitle": "Svensk bokfigur",
@@ -331,7 +321,7 @@
   },
   {
     "fact": "Hälge blir en populär svensk älgserie.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 180000,
     "qid": "Q1285754",
     "subtitle": "Svensk seriefigur",
@@ -341,7 +331,7 @@
   },
   {
     "fact": "Moni Nilsson ger ut den första boken om Tsatsiki.",
-    "image": "Cacik-1.jpg",
+    "image": "",
     "pageViews": 180000,
     "qid": "Q454008",
     "subtitle": "Svensk barnboksfigur",
@@ -368,16 +358,6 @@
     "title": "Muminmamman introduceras",
     "wikipediaSlug": "Muminmamman",
     "year": 1945
-  },
-  {
-    "fact": "Agaton Sax blir känd genom böcker och tv.",
-    "image": "Video-x-generic.svg",
-    "pageViews": 160000,
-    "qid": "Q391557",
-    "subtitle": "Svensk barnboksfigur",
-    "title": "Agaton Sax blir tv-figur",
-    "wikipediaSlug": "Agaton_Sax",
-    "year": 1976
   },
   {
     "fact": "Kapten Stofil debuterar som svensk seriefigur.",
