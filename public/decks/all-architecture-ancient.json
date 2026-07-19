@@ -48,45 +48,5 @@
     "wikipediaSlug": "Terracotta_Army",
     "image": "51714-Terracota-Army.jpg",
     "pageViews": 102591
-  },
-  {
-    "qid": "Q5788",
-    "title": "Petra står klart",
-    "subtitle": "Forntida klippstad i Jordanien",
-    "year": -799,
-    "fact": "Petra, ursprungligen känd för sina invånare som Raqmu, är en antik stad och arkeologisk plats i södra Jordanien.",
-    "wikipediaSlug": "Petra",
-    "image": "Al_Deir_Petra.JPG",
-    "pageViews": 96465
-  },
-  {
-    "qid": "Q134821",
-    "title": "Västra muren färdigställs",
-    "subtitle": "Helig judisk plats i Jerusalem",
-    "year": -18,
-    "fact": "Klagomuren är en gammal stödmur till den uppbyggda kulle som judar och kristna känner som Tempelberget i Jerusalem.",
-    "wikipediaSlug": "Western_Wall",
-    "image": "Westernwall2.jpg",
-    "pageViews": 81072
-  },
-  {
-    "qid": "Q5859",
-    "title": "Chichen Itza färdigställs",
-    "subtitle": "Förcolumbiansk mayastad i Mexiko",
-    "year": 455,
-    "fact": "Chichén Itzá var en stor förkolumbiansk stad byggd av mayafolket under den sengamla klassiska perioden.",
-    "wikipediaSlug": "Chichen_Itza",
-    "image": "Chichen_Itza_3.jpg",
-    "pageViews": 65348
-  },
-  {
-    "qid": "Q130958",
-    "title": "Sfinxen i Giza färdigställs",
-    "subtitle": "Fornegyptisk monumental skulptur",
-    "year": -2559,
-    "fact": "Sfinxen i Giza är en kalkstensstaty av en liggande sfinx, en mytologisk varelse med ett människohuvud och en kropp av ett lejon.",
-    "wikipediaSlug": "Great_Sphinx_of_Giza",
-    "image": "Sphinx_with_the_third_pyramid.jpg",
-    "pageViews": 51376
   }
 ]

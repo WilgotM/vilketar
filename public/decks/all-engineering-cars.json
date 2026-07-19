@@ -41,7 +41,7 @@
   },
   {
     "fact": "Nils Bohlin utvecklar trepunktsbältet på Volvo.",
-    "image": "",
+    "image": "Crystal_Clear_app_kservices.png",
     "pageViews": 220000,
     "qid": "Q982287",
     "subtitle": "Svensk ingenjör",
@@ -61,22 +61,12 @@
   },
   {
     "fact": "Polestar lanseras som självständigt elbilsmärke.",
-    "image": "",
+    "image": "Polestar_headquarters_in_Gothenburg,_Sweden.png",
     "pageViews": 220000,
     "qid": "Q4047174",
     "subtitle": "Svenskt elbilsmärke",
     "title": "Polestar blir elbilsmärke",
     "wikipediaSlug": "Polestar",
     "year": 2017
-  },
-  {
-    "qid": "Q226062",
-    "title": "Chevrolet Impala introduceras",
-    "subtitle": "Bilmodell från General Motors",
-    "year": 1959,
-    "fact": "Chevrolet Impala är en bil i full storlek som tillverkades av Chevrolet under modellåren 1958–1985, 1994–1996 och 2000–2020.",
-    "wikipediaSlug": "Chevrolet_Impala",
-    "image": "Chevrolet_Impala_(14373209694)_(cropped).jpg",
-    "pageViews": 52736
   }
 ]

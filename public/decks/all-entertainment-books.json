@@ -51,7 +51,7 @@
   },
   {
     "fact": "Män som hatar kvinnor ges ut efter Stieg Larssons död.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 300000,
     "qid": "Q186317",
     "subtitle": "Svensk författare",
@@ -80,16 +80,6 @@
     "year": 1940
   },
   {
-    "fact": "Tove Jansson ger ut den första boken om Mumintrollen.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 260000,
-    "qid": "Q10590157",
-    "subtitle": "Nordisk barnboksfigur",
-    "title": "Mumin ges ut",
-    "wikipediaSlug": "Mumin",
-    "year": 1945
-  },
-  {
     "fact": "Vilhelm Moberg inleder Utvandrarserien.",
     "image": "Vilhelm_Moberg_1952.jpg",
     "pageViews": 260000,
@@ -101,7 +91,7 @@
   },
   {
     "fact": "Gunilla Bergström ger ut den första boken om Alfons Åberg.",
-    "image": "",
+    "image": "Alfons Åberg, Arlanda 2010 1.JPG",
     "pageViews": 260000,
     "qid": "Q1316142",
     "subtitle": "Svensk barnboksfigur",
@@ -160,26 +150,6 @@
     "year": 2003
   },
   {
-    "fact": "Män som hatar kvinnor ges ut.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 260000,
-    "qid": "Q1770863",
-    "subtitle": "Roman av Stieg Larsson",
-    "title": "”Män som hatar kvinnor” ges ut",
-    "wikipediaSlug": "M%C3%A4n_som_hatar_kvinnor",
-    "year": 2005
-  },
-  {
-    "fact": "Fredrik Backman ger ut En man som heter Ove.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 260000,
-    "qid": "Q16277710",
-    "subtitle": "Svensk författare",
-    "title": "Fredrik Backman ger ut Ove",
-    "wikipediaSlug": "Fredrik_Backman",
-    "year": 2012
-  },
-  {
     "qid": "Q190192",
     "title": "‘Dune’ ges ut",
     "subtitle": "Bok av Frank Herbert",
@@ -208,16 +178,6 @@
     "title": "Pettson och Findus debuterar",
     "wikipediaSlug": "Pettson_och_Findus",
     "year": 1984
-  },
-  {
-    "fact": "Jonas Gardell får sitt breda genombrott som författare och artist.",
-    "image": "Jonas_Gardell,_2022.jpg",
-    "pageViews": 240000,
-    "qid": "Q982351",
-    "subtitle": "Svensk författare och komiker",
-    "title": "Jonas Gardell slår igenom",
-    "wikipediaSlug": "Jonas_Gardell",
-    "year": 1985
   },
   {
     "qid": "Q271764",
@@ -391,7 +351,7 @@
   },
   {
     "fact": "Harry Martinson tilldelas Nobelpriset i litteratur.",
-    "image": "Harry_Martinson_001.tiff",
+    "image": "Harry Martinson.jpg",
     "pageViews": 220000,
     "qid": "Q132695",
     "subtitle": "Svensk författare",
@@ -410,16 +370,6 @@
     "year": 1975
   },
   {
-    "fact": "Ulf Lundell romandebuterar med Jack.",
-    "image": "Ulf_Lundell_1988.png",
-    "pageViews": 220000,
-    "qid": "Q713270",
-    "subtitle": "Svensk artist och författare",
-    "title": "Ulf Lundell romandebuterar",
-    "wikipediaSlug": "Ulf_Lundell",
-    "year": 1976
-  },
-  {
     "fact": "Torgny Lindgren får sitt genombrott med Ormens väg på hälleberget.",
     "image": "Torgny_Lindgren.JPG",
     "pageViews": 220000,
@@ -431,7 +381,7 @@
   },
   {
     "fact": "Den första boken om Sune ges ut.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "manual-Sune_(bokserie)",
     "subtitle": "Svensk bokserie",
@@ -441,7 +391,7 @@
   },
   {
     "fact": "Den första boken om Bert ges ut.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "manual-Bert_(bokserie)",
     "subtitle": "Svensk bokserie",
@@ -461,7 +411,7 @@
   },
   {
     "fact": "En man som heter Ove ges ut.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q22815069",
     "subtitle": "Roman av Fredrik Backman",
@@ -491,7 +441,7 @@
   },
   {
     "fact": "Åke Holmberg ger ut den första boken om Ture Sventon.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 200000,
     "qid": "Q4354348",
     "subtitle": "Svensk barnboksfigur",
@@ -511,7 +461,7 @@
   },
   {
     "fact": "Katarina Taikon ger ut Katitzi.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 200000,
     "qid": "Q10544372",
     "subtitle": "Svensk barnbok",
@@ -561,7 +511,7 @@
   },
   {
     "fact": "Martha Sandwall-Bergström ger ut första boken om Kulla-Gulla.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q10549872",
     "subtitle": "Svensk bokfigur",
@@ -621,7 +571,7 @@
   },
   {
     "fact": "Barbro Lindgren ger ut Loranga, Masarin och Dartanjang.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q10569746",
     "subtitle": "Svensk barnbok",
@@ -651,7 +601,7 @@
   },
   {
     "fact": "Moni Nilsson ger ut den första boken om Tsatsiki.",
-    "image": "",
+    "image": "Cacik-1.jpg",
     "pageViews": 180000,
     "qid": "Q454008",
     "subtitle": "Svensk barnboksfigur",
@@ -661,7 +611,7 @@
   },
   {
     "fact": "Bilddagboken lanseras och blir en populär svensk fotosajt.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 180000,
     "qid": "Q4907646",
     "subtitle": "Svensk bildsajt",
@@ -691,7 +641,7 @@
   },
   {
     "fact": "Gummi-Tarzan blir en välkänd barnbok även i Sverige.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 160000,
     "qid": "manual-Gummi-Tarzan",
     "subtitle": "Nordisk barnbok",
@@ -701,7 +651,7 @@
   },
   {
     "fact": "Agaton Sax blir känd genom böcker och tv.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 160000,
     "qid": "Q391557",
     "subtitle": "Svensk barnboksfigur",
@@ -711,7 +661,7 @@
   },
   {
     "fact": "Barbro Lindgren och Eva Eriksson ger ut Sagan om den lilla farbrorn.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 160000,
     "qid": "manual-Sagan_om_den_lilla_farbrorn",
     "subtitle": "Svensk bilderbok",
@@ -721,7 +671,7 @@
   },
   {
     "fact": "Häxorna blir känd för svenska barn genom bok och film.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 160000,
     "qid": "manual-H%C3%A4xorna_(bok)",
     "subtitle": "Barnberättelse",
@@ -858,355 +808,5 @@
     "wikipediaSlug": "Dracula",
     "image": "Dracula_1st_ed_cover_reproduction.jpg",
     "pageViews": 100695
-  },
-  {
-    "qid": "Q182961",
-    "title": "‘Jane Eyre’ ges ut",
-    "subtitle": "Bok av Charlotte Brontë",
-    "year": 1847,
-    "fact": "‘Jane Eyre’ är en roman av den engelska författaren Charlotte Brontë.",
-    "wikipediaSlug": "Jane_Eyre",
-    "image": "Jane_Eyre_title_page.jpg",
-    "pageViews": 93438
-  },
-  {
-    "qid": "Q401619",
-    "title": "‘God Emperor of Dune’ ges ut",
-    "subtitle": "Bok av Frank Herbert",
-    "year": 1981,
-    "fact": "‘God Emperor of Dune’ är en science fiction-roman av den amerikanske författaren Frank Herbert, som ges ut 1981.",
-    "wikipediaSlug": "God_Emperor_of_Dune",
-    "image": "God_Emperor_of_Dune-Frank_Herbert_(1981)_First_edition.jpg",
-    "pageViews": 93019
-  },
-  {
-    "qid": "Q178869",
-    "title": "‘One Hundred Years of Solitude’ ges ut",
-    "subtitle": "Bok av Gabriel García Márquez",
-    "year": 1967,
-    "fact": "‘Hundra år av ensamhet’ är en roman från 1967 av den colombianske författaren Gabriel García Márquez som berättar den flergenerationella historien om familjen Buendía, vars patriark, José Arcadio Buendía, grundade den fiktiva staden Macondo.",
-    "wikipediaSlug": "One_Hundred_Years_of_Solitude",
-    "image": "Cien_años_de_soledad_(book_cover,_1967).jpg",
-    "pageViews": 92150
-  },
-  {
-    "qid": "Q191949",
-    "title": "‘Brave New World’ ges ut",
-    "subtitle": "Bok av Aldous Huxley",
-    "year": 1932,
-    "fact": "Brave New World är en dystopisk roman av den engelske författaren Aldous Huxley, skriven 1931 och utgiven 1932.",
-    "wikipediaSlug": "Brave_New_World",
-    "image": "BraveNewWorld_FirstEdition.jpg",
-    "pageViews": 91524
-  },
-  {
-    "qid": "Q749783",
-    "title": "‘The Man in the High Castle’ ges ut",
-    "subtitle": "Bok av Philip K. Dick",
-    "year": 1962,
-    "fact": "‘The Man in the High Castle’ är en kontrafaktisk roman av Philip K. Dick.",
-    "wikipediaSlug": "The_Man_in_the_High_Castle",
-    "image": "The_Man_in_the_High_Castle_(1962).jpg",
-    "pageViews": 90427
-  },
-  {
-    "qid": "Q174596",
-    "title": "‘Moby-Dick’ ges ut",
-    "subtitle": "Bok av Herman Melville",
-    "year": 1851,
-    "fact": "‘Moby-Dick; or, The Whale’ är en episk roman från 1851 av den amerikanske författaren Herman Melville.",
-    "wikipediaSlug": "Moby-Dick",
-    "image": "Moby-Dick_FE_title_page.jpg",
-    "pageViews": 88836
-  },
-  {
-    "qid": "Q165318",
-    "title": "‘Crime and Punishment’ ges ut",
-    "subtitle": "Bok av Fjodor Dostojevskij",
-    "year": 1866,
-    "fact": "‘Brott och straff’ är en roman av den ryske författaren Fjodor Dostojevskij.",
-    "wikipediaSlug": "Crime_and_Punishment",
-    "image": "Crimeandpunishmentcover.png",
-    "pageViews": 86685
-  },
-  {
-    "qid": "Q17111624",
-    "title": "‘The Martian’ ges ut",
-    "subtitle": "Bok av Andy Weir",
-    "year": 2011,
-    "fact": "‘The Martian’ är en science fiction-debutroman från 2011 skriven av Andy Weir.",
-    "wikipediaSlug": "The_Martian_(Weir_novel)",
-    "image": "The_Martian_(Weir_novel).jpg",
-    "pageViews": 82546
-  },
-  {
-    "qid": "Q6511",
-    "title": "‘Ulysses’ ges ut",
-    "subtitle": "Bok av James Joyce",
-    "year": 1922,
-    "fact": "Odysseus, originaltitel 'Ulysses', är en modernistisk roman av den irländske författaren James Joyce.",
-    "wikipediaSlug": "Ulysses_(novel)",
-    "image": "JoyceUlysses2.jpg",
-    "pageViews": 78720
-  },
-  {
-    "qid": "Q184222",
-    "title": "‘The Metamorphosis’ ges ut",
-    "subtitle": "Bok av Franz Kafka",
-    "year": 1915,
-    "fact": "‘Förvandlingen’ är en kortroman av Franz Kafka som gavs ut 1915.",
-    "wikipediaSlug": "The_Metamorphosis",
-    "image": "Franz_Kafka_Die_Verwandlung_1916_Orig.-Pappband.jpg",
-    "pageViews": 76331
-  },
-  {
-    "qid": "Q163297",
-    "title": "‘The Stranger’ ges ut",
-    "subtitle": "Bok av Albert Camus",
-    "year": 1942,
-    "fact": "‘Främlingen’, även utgiven på engelska som ‘The Outsider’, är en kortroman från 1942 skriven av den algerisk-franske författaren Albert Camus.",
-    "wikipediaSlug": "The_Stranger_(Camus_novel)",
-    "image": "L'Étranger_-_Albert_Camus.jpg",
-    "pageViews": 73079
-  },
-  {
-    "qid": "Q179021",
-    "title": "‘The Alchemist’ ges ut",
-    "subtitle": "Bok av Paulo Coelho",
-    "year": 1988,
-    "fact": "Alkemisten är en roman av den brasilianske författaren Paulo Coelho som först gavs ut 1988.",
-    "wikipediaSlug": "The_Alchemist_(novel)",
-    "image": "TheAlchemist.jpg",
-    "pageViews": 71180
-  },
-  {
-    "qid": "Q25338",
-    "title": "‘The Little Prince’ ges ut",
-    "subtitle": "Bok av Antoine de Saint-Exupéry",
-    "year": 1943,
-    "fact": "‘The Little Prince’ är en kortroman skriven och illustrerad av den franske författaren och flygaren Antoine de Saint-Exupéry.",
-    "wikipediaSlug": "The_Little_Prince",
-    "image": "Littleprince.JPG",
-    "pageViews": 70141
-  },
-  {
-    "qid": "Q183883",
-    "title": "‘The Catcher in the Rye’ ges ut",
-    "subtitle": "Bok av J. D. Salinger",
-    "year": 1951,
-    "fact": "‘The Catcher in the Rye’ är en amerikansk uppväxtroman från 1951 av den amerikanske författaren J.D. Salinger.",
-    "wikipediaSlug": "The_Catcher_in_the_Rye",
-    "image": "The_Catcher_in_the_Rye_(1951,_first_edition_cover).jpg",
-    "pageViews": 70033
-  },
-  {
-    "qid": "Q523076",
-    "title": "‘Little Women’ ges ut",
-    "subtitle": "Bok av Louisa May Alcott",
-    "year": 1861,
-    "fact": "‘Little Women’ är en roman om att bli vuxen, skriven av den amerikanska författaren Louisa May Alcott, ursprungligen utgiven i två volymer 1868 och 1869.",
-    "wikipediaSlug": "Little_Women",
-    "image": "Houghton_AC85.Aℓ194L.1869_pt.2aa_-_Little_Women,_title.jpg",
-    "pageViews": 69079
-  },
-  {
-    "qid": "Q217352",
-    "title": "‘Strange Case of Dr Jekyll and Mr Hyde’ ges ut",
-    "subtitle": "Bok av Robert Louis Stevenson",
-    "year": 1886,
-    "fact": "Strange Case of Dr Jekyll and Mr Hyde är en gotisk skräckroman från 1886 av den skotske författaren Robert Louis Stevenson.",
-    "wikipediaSlug": "Strange_Case_of_Dr_Jekyll_and_Mr_Hyde",
-    "image": "Jekyll_and_Hyde_Title.jpg",
-    "pageViews": 64683
-  },
-  {
-    "qid": "Q1140295",
-    "title": "‘The Road’ ges ut",
-    "subtitle": "Bok av Cormac McCarthy",
-    "year": 2006,
-    "fact": "‘The Road’ är en postapokalyptisk roman från 2006 av den amerikanske författaren Cormac McCarthy.",
-    "wikipediaSlug": "The_Road",
-    "image": "The-road.jpg",
-    "pageViews": 63868
-  },
-  {
-    "qid": "Q161531",
-    "title": "‘Krig och fred’ ges ut",
-    "subtitle": "Bok av Leo Tolstoj",
-    "year": 1869,
-    "fact": "‘Krig och fred’ är ett litterärt verk av den ryske författaren Leo Tolstoj.",
-    "wikipediaSlug": "War_and_Peace",
-    "image": "Tolstoy_-_War_and_Peace_-_first_edition,_1869.jpg",
-    "pageViews": 63749
-  },
-  {
-    "qid": "Q74287",
-    "title": "‘The Hobbit’ ges ut",
-    "subtitle": "Bok av J. R. R. Tolkien",
-    "year": 1937,
-    "fact": "Hobbiten: eller bort och hem igen är en barnbok/fantasyroman av den engelska författaren J.",
-    "wikipediaSlug": "The_Hobbit",
-    "image": "TheHobbit_FirstEdition.jpg",
-    "pageViews": 63719
-  },
-  {
-    "qid": "Q457252",
-    "title": "‘The Seven Dials Mystery’ ges ut",
-    "subtitle": "Bok av Agatha Christie",
-    "year": 1929,
-    "fact": "‘The Seven Dials Mystery’ är en kriminalroman av Agatha Christie, som först gavs ut i Storbritannien av William Collins & Sons den 24 januari 1929 och i USA av Dodd, Mead and Company senare samma år.",
-    "wikipediaSlug": "The_Seven_Dials_Mystery",
-    "image": "The_Seven_Dials_Mystery_First_Edition_Cover_1929.jpg",
-    "pageViews": 62869
-  },
-  {
-    "qid": "Q43361",
-    "title": "‘Harry Potter och de vises sten’ ges ut",
-    "subtitle": "Bok av J. K. Rowling",
-    "year": 1997,
-    "fact": "Harry Potter och de vises sten är en fantasyroman av den brittiska författaren J.",
-    "wikipediaSlug": "Harry_Potter_and_the_Philosopher%27s_Stone",
-    "image": "Harry_Potter_and_the_Philosopher's_Stone_Book_Cover.jpg",
-    "pageViews": 60522
-  },
-  {
-    "qid": "Q70784",
-    "title": "‘Journey to the West’ ges ut",
-    "subtitle": "Bok av Wu Cheng'en",
-    "year": 1592,
-    "fact": "'Färden till Väst' är en kinesisk roman som gavs ut på 1500-talet under Mingdynastin och tillskrivs Wu Cheng'en.",
-    "wikipediaSlug": "Journey_to_the_West",
-    "image": "Evl53201b_pic.jpg",
-    "pageViews": 59100
-  },
-  {
-    "qid": "Q1751870",
-    "title": "‘A Game of Thrones’ ges ut",
-    "subtitle": "Bok av George R. R. Martin",
-    "year": 1996,
-    "fact": "‘A Game of Thrones’ är en episk fantasyroman av den amerikanske författaren George R.",
-    "wikipediaSlug": "A_Game_of_Thrones",
-    "image": "AGameOfThrones.jpg",
-    "pageViews": 58850
-  },
-  {
-    "qid": "Q605249",
-    "title": "‘Do Androids Dream of Electric Sheep?’ ges ut",
-    "subtitle": "Bok av Philip K. Dick",
-    "year": 1968,
-    "fact": "Drömmer androider om elektriska får?",
-    "wikipediaSlug": "Do_Androids_Dream_of_Electric_Sheep%3F",
-    "image": "DoAndroidsDream.png",
-    "pageViews": 57740
-  },
-  {
-    "qid": "Q662029",
-    "title": "‘Neuromancer’ ges ut",
-    "subtitle": "Bok av William Gibson",
-    "year": 1984,
-    "fact": "‘Neuromancer’ är en science fiction-roman från 1984 av William Gibson.",
-    "wikipediaSlug": "Neuromancer",
-    "image": "Neuromancer_(Book).jpg",
-    "pageViews": 56569
-  },
-  {
-    "qid": "Q565911",
-    "title": "‘Anne of Green Gables’ ges ut",
-    "subtitle": "Bok av Lucy Maud Montgomery",
-    "year": 1908,
-    "fact": "Romanen ‘Anne of Green Gables’ av den kanadensiska författaren Lucy Maud Montgomery ges ut 1908.",
-    "wikipediaSlug": "Anne_of_Green_Gables",
-    "image": "Montgomery_Anne_of_Green_Gables.jpg",
-    "pageViews": 54010
-  },
-  {
-    "qid": "Q1334940",
-    "title": "‘Rebecca’ ges ut",
-    "subtitle": "Bok av Lautaro de la Iglesia",
-    "year": 1938,
-    "fact": "‘Rebecca’ ges ut 1938 som en gotisk roman av den engelska författaren Daphne du Maurier.",
-    "wikipediaSlug": "Rebecca_(novel)",
-    "image": "Rebecca-FE.jpg",
-    "pageViews": 53876
-  },
-  {
-    "qid": "Q265954",
-    "title": "‘Slaughterhouse-Five’ ges ut",
-    "subtitle": "Bok av Kurt Vonnegut",
-    "year": 1969,
-    "fact": "‘Slaughterhouse-Five, or, The Children's Crusade: A Duty-Dance with Death’ är en delvis självbiografisk, science fiction-inspirerad antikrigsroman från 1969 av Kurt Vonnegut.",
-    "wikipediaSlug": "Slaughterhouse-Five",
-    "image": "Slaughterhouse-Five_(first_edition)_-_Kurt_Vonnegut.jpg",
-    "pageViews": 53587
-  },
-  {
-    "qid": "Q274744",
-    "title": "‘Sense and Sensibility’ ges ut",
-    "subtitle": "Bok av Jane Austen",
-    "year": 1811,
-    "fact": "‘Förnuft och känsla’ är debutromanen av den engelska författaren Jane Austen, som gavs ut 1811.",
-    "wikipediaSlug": "Sense_and_Sensibility",
-    "image": "SenseAndSensibilityTitlePage.jpg",
-    "pageViews": 53137
-  },
-  {
-    "qid": "Q213019",
-    "title": "‘The War of the Worlds’ ges ut",
-    "subtitle": "Bok av H. G. Wells",
-    "year": 1897,
-    "fact": "‘Världarnas krig’ är en science fiction-roman av den engelske författaren H.",
-    "wikipediaSlug": "The_War_of_the_Worlds",
-    "image": "The_War_of_the_Worlds_first_edition.jpg",
-    "pageViews": 52989
-  },
-  {
-    "qid": "Q837934",
-    "title": "‘Flowers for Algernon’ ges ut",
-    "subtitle": "Bok av Daniel Keyes",
-    "year": 1959,
-    "fact": "‘Flowers for Algernon’ är en kort novell av den amerikanske författaren Daniel Keyes, som han senare utökade till en roman och anpassade för film och andra medier.",
-    "wikipediaSlug": "Flowers_for_Algernon",
-    "image": "FlowersForAlgernon.jpg",
-    "pageViews": 52288
-  },
-  {
-    "qid": "Q185118",
-    "title": "‘Treasure Island’ ges ut",
-    "subtitle": "Bok av Robert Louis Stevenson",
-    "year": 1883,
-    "fact": "Skattkammarön är en äventyrs- och historisk roman av den skotske författaren Robert Louis Stevenson.",
-    "wikipediaSlug": "Treasure_Island",
-    "image": "Treasure_Island_(title_page,_1883).webp",
-    "pageViews": 51748
-  },
-  {
-    "qid": "Q734493",
-    "title": "‘I Am Legend’ ges ut",
-    "subtitle": "Bok av Richard Matheson",
-    "year": 1954,
-    "fact": "‘I Am Legend’ är en postapokalyptisk skräckroman från 1954 av den amerikanska författaren Richard Matheson som var inflytelserik för den moderna utvecklingen av zombie- och vampyrlitteratur, och för att popularisera konceptet med en världsomspännande apokalyps orsakad av sjukdom.",
-    "wikipediaSlug": "I_Am_Legend_(novel)",
-    "image": "IAmLegend25028.jpg",
-    "pageViews": 51059
-  },
-  {
-    "qid": "Q164974",
-    "title": "‘Oliver Twist’ ges ut",
-    "subtitle": "Bok av Charles Dickens",
-    "year": 1800,
-    "fact": "‘Oliver Twist; eller, The Parish Boy's Progress’, är den andra romanen av den engelske författaren Charles Dickens.",
-    "wikipediaSlug": "Oliver_Twist",
-    "image": "Olivertwist_front.jpg",
-    "pageViews": 50896
-  },
-  {
-    "qid": "Q374098",
-    "title": "‘Atlas Shrugged’ ges ut",
-    "subtitle": "Bok av Ayn Rand",
-    "year": 1957,
-    "fact": "‘Atlas Shrugged’ är en roman från 1957 av Ayn Rand.",
-    "wikipediaSlug": "Atlas_Shrugged",
-    "image": "Atlas_Shrugged_(1957_1st_ed)_-_Ayn_Rand.jpg",
-    "pageViews": 50509
   }
 ]

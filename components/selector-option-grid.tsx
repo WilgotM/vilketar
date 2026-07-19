@@ -26,7 +26,10 @@ export default function SelectorOptionGrid(props: Props) {
   return (
     <div className={styles.grid}>
       {validItems.map((item) => (
-        <div className={styles.gridItem} key={item.key}>
+        <div
+          className={`${styles.gridItem} ${styles.optionCard}`}
+          key={item.key}
+        >
           <ButtonLink
             href={item.href}
             minimal

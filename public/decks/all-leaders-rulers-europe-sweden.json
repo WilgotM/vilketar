@@ -31,7 +31,7 @@
   },
   {
     "fact": "Karl XII blir kung av Sverige.",
-    "image": "Porträtt_av_Karl_XII._Alt-Ranstad_-_Skoklosters_slott_-_86683.tif",
+    "image": "Copy Charles XII - Nationalmuseum - 17886.png",
     "pageViews": 260000,
     "qid": "Q52934",
     "subtitle": "Svensk kung",
@@ -60,36 +60,6 @@
     "year": 1818
   },
   {
-    "fact": "Kungliga Tekniska högskolan grundas.",
-    "image": "KTH_logotype.jpg",
-    "pageViews": 260000,
-    "qid": "Q854280",
-    "subtitle": "Svenskt universitet",
-    "title": "KTH grundas",
-    "wikipediaSlug": "Kungliga_Tekniska_h%C3%B6gskolan",
-    "year": 1827
-  },
-  {
-    "fact": "Jussi Björling debuterar på Kungliga Operan.",
-    "image": "Jussi_Björling_1953.jpg",
-    "pageViews": 260000,
-    "qid": "Q56157",
-    "subtitle": "Svensk operasångare",
-    "title": "Jussi Björling debuterar på Operan",
-    "wikipediaSlug": "Jussi_Bj%C3%B6rling",
-    "year": 1930
-  },
-  {
-    "fact": "Birgit Nilsson debuterar på Kungliga Operan.",
-    "image": "Birgit-Nilsson-standing-and-singing-on-the-stage-391837722733.jpg",
-    "pageViews": 260000,
-    "qid": "Q233951",
-    "subtitle": "Svensk operasångare",
-    "title": "Birgit Nilsson debuterar på Operan",
-    "wikipediaSlug": "Birgit_Nilsson",
-    "year": 1946
-  },
-  {
     "fact": "Silvia Sommerlath gifter sig med kung Carl XVI Gustaf.",
     "image": "Queen_Silvia_of_Sweden_in_June_2023-2_(cropped).jpg",
     "pageViews": 260000,
@@ -108,16 +78,6 @@
     "title": "Kronprinsessbröllopet äger rum",
     "wikipediaSlug": "Br%C3%B6llopet_mellan_kronprinsessan_Victoria_och_Daniel_Westling",
     "year": 2010
-  },
-  {
-    "fact": "Gustav Vasa låter börja bygga Gripsholms slott.",
-    "image": "Gripsholm_May_2016_10.jpg",
-    "pageViews": 220000,
-    "qid": "Q714783",
-    "subtitle": "Svenskt slott",
-    "title": "Gripsholms slott börjar byggas",
-    "wikipediaSlug": "Gripsholms_slott",
-    "year": 1537
   },
   {
     "fact": "Drottningholms slott börjar byggas i sin nuvarande form.",
@@ -140,16 +100,6 @@
     "year": 1782
   },
   {
-    "fact": "Kristina från Duvemåla har premiär i Malmö.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q142885",
-    "subtitle": "Svensk musikal",
-    "title": "”Kristina från Duvemåla” har premiär",
-    "wikipediaSlug": "Kristina_fr%C3%A5n_Duvem%C3%A5la",
-    "year": 1995
-  },
-  {
     "fact": "Kungsträdgården blir en central mötesplats i Stockholm.",
     "image": "Kungstradgarden_2008.jpg",
     "pageViews": 200000,
@@ -160,16 +110,6 @@
     "year": 1800
   },
   {
-    "fact": "Helen Sjöholm får sitt genombrott i Kristina från Duvemåla.",
-    "image": "Helen_Sjöholm_2012-09-24_001.jpg",
-    "pageViews": 200000,
-    "qid": "Q468134",
-    "subtitle": "Svensk artist",
-    "title": "Helen Sjöholm slår igenom",
-    "wikipediaSlug": "Helen_Sj%C3%B6holm",
-    "year": 1995
-  },
-  {
     "fact": "Drottningholms slottsteater invigs.",
     "image": "Drottningholms_slottsteater_2011b.jpg",
     "pageViews": 180000,
@@ -178,15 +118,5 @@
     "title": "Drottningholms slottsteater invigs",
     "wikipediaSlug": "Drottningholms_slottsteater",
     "year": 1766
-  },
-  {
-    "fact": "Peter Jöback får sitt genombrott i Kristina från Duvemåla.",
-    "image": "Peter_Jöback_på_Grammisgalan_2013.jpg",
-    "pageViews": 180000,
-    "qid": "Q767041",
-    "subtitle": "Svensk artist",
-    "title": "Peter Jöback slår igenom",
-    "wikipediaSlug": "Peter_J%C3%B6back",
-    "year": 1995
   }
 ]

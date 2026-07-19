@@ -14,6 +14,11 @@ export interface DailyOverride {
   dateKey: string;
 }
 
+export interface DailyQueueOptions {
+  /** Cards used in recent daily games for the same theme. */
+  excludedQids?: ReadonlySet<string>;
+}
+
 function shuffle<T>(entries: T[], random: () => number): T[] {
   const shuffled = [...entries];
 
@@ -62,13 +67,15 @@ export function createDailySearchCards(
       difficulty,
       createSeededRandom("daily-search"),
     ),
-  ).sort((left, right) => {
-    const leftViews = left.pageViews ?? 0;
-    const rightViews = right.pageViews ?? 0;
-    return (
-      rightViews - leftViews || left.title.localeCompare(right.title, "sv")
-    );
-  });
+  )
+    .filter((card) => isDailyEditorialCard(card, selectedRootDeck))
+    .sort((left, right) => {
+      const leftViews = left.pageViews ?? 0;
+      const rightViews = right.pageViews ?? 0;
+      return (
+        rightViews - leftViews || left.title.localeCompare(right.title, "sv")
+      );
+    });
 }
 
 function normalizeVisibleTitle(title: string): string {
@@ -87,6 +94,36 @@ function uniqueDailyCandidates(cards: PreparedCard[]): PreparedCard[] {
     usedTitles.add(titleKey);
     return true;
   });
+}
+
+function isDailyEditorialCard(
+  card: PreparedCard,
+  selectedRootDeck: DeckNode,
+): boolean {
+  // The themed daily decks are curated separately. The editorial filter is
+  // only for the broad default deck, where the raw Wikimedia pool is widest.
+  if (selectedRootDeck.id !== "all") {
+    return true;
+  }
+
+  // These sources are useful in free play, but are too database-like for the
+  // welcoming, cross-generational daily game.
+  if (
+    card.deckId.startsWith("all-people-famous-deaths-") ||
+    card.deckId.startsWith("all-leaders-") ||
+    card.deckId.startsWith("all-engineering-") ||
+    card.deckId.startsWith("all-technology-") ||
+    card.deckId === "all-sport-teams" ||
+    card.deckId === "all-sport-stadiums"
+  ) {
+    return false;
+  }
+
+  // Keep the occasional iconic event, while dropping technical catalogue
+  // entries that are hard to recognise around a family table.
+  return !/(?:första flygningen|flyger för första gången|franchise grundas|F\.C\.|Club de Fútbol)/iu.test(
+    card.title,
+  );
 }
 
 function getSpacingBucket(year: number): number {
@@ -134,11 +171,12 @@ export function createDailyCardQueue(
   difficulty: GameDifficulty,
   dateKey: string,
   override?: DailyOverride | null,
+  options: DailyQueueOptions = {},
 ): PreparedCard[] {
   const random = createSeededRandom(`daily:${dateKey}`);
   const allCards = uniqueDailyCandidates(
     getAllEligibleCards(selectedRootDeck, cardsByDeckId, difficulty, random),
-  );
+  ).filter((card) => isDailyEditorialCard(card, selectedRootDeck));
   const cardsByQid = new Map(allCards.map((card) => [card.qid, card]));
   const snapshotOverrideCards = override?.cards
     ? prepareOverrideCards(selectedRootDeck, override.cards, difficulty)
@@ -149,12 +187,20 @@ export function createDailyCardQueue(
       .filter((card): card is PreparedCard => card !== null) ?? [];
   const overrideCards =
     snapshotOverrideCards.length > 0 ? snapshotOverrideCards : qidOverrideCards;
-  const shuffledCards = shuffle(allCards, random);
+  const preferredCards = allCards.filter(
+    (card) => !options.excludedQids?.has(card.qid),
+  );
+  const shuffledPreferredCards = shuffle(preferredCards, random);
+  const shuffledFallbackCards = shuffle(allCards, random);
   const selectedCards: PreparedCard[] = [];
   const usedQids = new Set<string>();
   const usedYears = new Set<number>();
 
-  for (const card of [...overrideCards, ...shuffledCards]) {
+  for (const card of [
+    ...overrideCards,
+    ...shuffledPreferredCards,
+    ...shuffledFallbackCards,
+  ]) {
     if (usedQids.has(card.qid) || usedYears.has(card.year)) {
       continue;
     }
@@ -177,6 +223,7 @@ export async function createDailyGameState(
   difficulty: GameDifficulty,
   dateKey: string,
   override?: DailyOverride | null,
+  options: DailyQueueOptions = {},
 ): Promise<GameState> {
   const dailyQueue = createDailyCardQueue(
     selectedRootDeck,
@@ -184,6 +231,7 @@ export async function createDailyGameState(
     difficulty,
     dateKey,
     override,
+    options,
   );
   const [firstCard, secondCard, ...remainingCards] = dailyQueue;
 

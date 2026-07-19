@@ -11,7 +11,7 @@
   },
   {
     "fact": "Volvo grundas i Göteborg.",
-    "image": "",
+    "image": "Volvo Powertrain.jpg",
     "pageViews": 350000,
     "qid": "Q163810",
     "subtitle": "Svenskt industriföretag",
@@ -38,16 +38,6 @@
     "title": "Systembolaget bildas",
     "wikipediaSlug": "Systembolaget",
     "year": 1955
-  },
-  {
-    "fact": "Bluetooth utvecklas av ingenjörer på Ericsson.",
-    "image": "Bluetooth_FM_Color.png",
-    "pageViews": 300000,
-    "qid": "Q39531",
-    "subtitle": "Svensk teknik",
-    "title": "Bluetooth utvecklas",
-    "wikipediaSlug": "Bluetooth",
-    "year": 1994
   },
   {
     "fact": "Koenigsegg grundas av Christian von Koenigsegg.",
@@ -81,43 +71,13 @@
   },
   {
     "fact": "Sandvik grundas i Sandviken.",
-    "image": "",
+    "image": "Sandvik_LH517_LHD.JPG",
     "pageViews": 260000,
     "qid": "Q1753718",
     "subtitle": "Svenskt industriföretag",
     "title": "Sandvik grundas",
     "wikipediaSlug": "Sandvik_AB",
     "year": 1862
-  },
-  {
-    "fact": "Atlas Copco grundas i Stockholm.",
-    "image": "Atlas-Copco-Logo.svg",
-    "pageViews": 260000,
-    "qid": "Q757164",
-    "subtitle": "Svenskt industriföretag",
-    "title": "Atlas Copco grundas",
-    "wikipediaSlug": "Atlas_Copco",
-    "year": 1873
-  },
-  {
-    "fact": "LKAB grundas för järnmalmsbrytning i norra Sverige.",
-    "image": "LKAB_huvudkontor.jpg",
-    "pageViews": 260000,
-    "qid": "Q52579",
-    "subtitle": "Svenskt gruvföretag",
-    "title": "LKAB grundas",
-    "wikipediaSlug": "LKAB",
-    "year": 1890
-  },
-  {
-    "fact": "SKF grundas efter Sven Wingquists kullageruppfinning.",
-    "image": "Gotaholm.png",
-    "pageViews": 260000,
-    "qid": "Q52846",
-    "subtitle": "Svenskt industriföretag",
-    "title": "SKF grundas",
-    "wikipediaSlug": "SKF",
-    "year": 1907
   },
   {
     "fact": "Marabou grundas i Sundbyberg.",
@@ -141,7 +101,7 @@
   },
   {
     "fact": "Saab grundas.",
-    "image": "",
+    "image": "Gripen ag1.jpg",
     "pageViews": 260000,
     "qid": "Q219501",
     "subtitle": "Svenskt industriföretag",
@@ -171,7 +131,7 @@
   },
   {
     "fact": "Hasselbladkameror används under månlandningen.",
-    "image": "",
+    "image": "Hasselblad_HQ.jpg",
     "pageViews": 260000,
     "qid": "Q1208831",
     "subtitle": "Svensk kamera",
@@ -221,7 +181,7 @@
   },
   {
     "fact": "Husqvarna grundas som gevärsfaktori.",
-    "image": "",
+    "image": "Husqvarna fabriksmuseum oktober 2013 01.jpg",
     "pageViews": 220000,
     "qid": "Q899356",
     "subtitle": "Svenskt industriföretag",
@@ -261,23 +221,13 @@
   },
   {
     "fact": "Åhléns grundas som postorderföretag.",
-    "image": "",
+    "image": "Åhléns_City_in_Stockholm.jpg",
     "pageViews": 220000,
     "qid": "Q270851",
     "subtitle": "Svensk varuhuskedja",
     "title": "Åhléns grundas",
     "wikipediaSlug": "%C3%85hl%C3%A9ns",
     "year": 1899
-  },
-  {
-    "fact": "Scania bildas genom en sammanslagning.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q219960",
-    "subtitle": "Svensk fordonstillverkare",
-    "title": "Scania bildas",
-    "wikipediaSlug": "Scania",
-    "year": 1911
   },
   {
     "fact": "Pharmacia grundas i Stockholm.",
@@ -320,36 +270,6 @@
     "year": 1924
   },
   {
-    "fact": "Svenska Cellulosa AB bildas.",
-    "image": "SCA_company_logo.svg",
-    "pageViews": 220000,
-    "qid": "Q52601",
-    "subtitle": "Svenskt skogsindustriföretag",
-    "title": "SCA bildas",
-    "wikipediaSlug": "Svenska_Cellulosa_AB_SCA",
-    "year": 1929
-  },
-  {
-    "fact": "Boliden grundas efter guldfynd i Västerbotten.",
-    "image": "Garpvallen.jpg",
-    "pageViews": 220000,
-    "qid": "Q891345",
-    "subtitle": "Svenskt gruvföretag",
-    "title": "Boliden grundas",
-    "wikipediaSlug": "Boliden_AB",
-    "year": 1931
-  },
-  {
-    "fact": "Securitas grundas i Helsingborg.",
-    "image": "Securitas_AB_logo.svg",
-    "pageViews": 220000,
-    "qid": "Q662174",
-    "subtitle": "Svenskt säkerhetsföretag",
-    "title": "Securitas grundas",
-    "wikipediaSlug": "Securitas",
-    "year": 1934
-  },
-  {
     "fact": "GB Glace bildas genom sammanslagning av svenska glasstillverkare.",
     "image": "GB_Glace-logo.png",
     "pageViews": 220000,
@@ -381,7 +301,7 @@
   },
   {
     "fact": "Nils Bohlin utvecklar trepunktsbältet på Volvo.",
-    "image": "",
+    "image": "Wikidata-logo.svg",
     "pageViews": 220000,
     "qid": "Q982287",
     "subtitle": "Svensk ingenjör",
@@ -440,16 +360,6 @@
     "year": 1978
   },
   {
-    "fact": "SSAB bildas genom sammanslagning av svenska stålbolag.",
-    "image": "SSAB-Svenskt-Stål-AB-Logo.svg",
-    "pageViews": 220000,
-    "qid": "Q54075",
-    "subtitle": "Svenskt stålföretag",
-    "title": "SSAB bildas",
-    "wikipediaSlug": "SSAB",
-    "year": 1978
-  },
-  {
     "fact": "Oatly grundas.",
     "image": "Oatly.jpg",
     "pageViews": 220000,
@@ -467,16 +377,6 @@
     "subtitle": "Svensk entreprenör",
     "title": "Christian von Koenigsegg grundar sportbilsmärke",
     "wikipediaSlug": "Christian_von_Koenigsegg",
-    "year": 1994
-  },
-  {
-    "fact": "Assa och Abloy går samman.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q738421",
-    "subtitle": "Svenskt låsföretag",
-    "title": "Assa Abloy bildas",
-    "wikipediaSlug": "Assa_Abloy",
     "year": 1994
   },
   {
@@ -501,7 +401,7 @@
   },
   {
     "fact": "Polestar lanseras som självständigt elbilsmärke.",
-    "image": "",
+    "image": "Polestar_headquarters_in_Gothenburg,_Sweden.png",
     "pageViews": 220000,
     "qid": "Q4047174",
     "subtitle": "Svenskt elbilsmärke",
@@ -511,7 +411,7 @@
   },
   {
     "fact": "Bahco växer fram ur Johan Petter Johanssons verktygsföretag.",
-    "image": "",
+    "image": "Combination pliers 2621 7 by Bahco Tools Sweden.jpg",
     "pageViews": 200000,
     "qid": "Q2656321",
     "subtitle": "Svenskt verktygsföretag",
@@ -621,7 +521,7 @@
   },
   {
     "fact": "Den kooperativa dagligvarurörelsen etableras i Sverige.",
-    "image": "",
+    "image": "Wikidata-logo.svg",
     "pageViews": 180000,
     "qid": "Q106684510",
     "subtitle": "Svensk dagligvarurörelse",
@@ -651,7 +551,7 @@
   },
   {
     "fact": "Felix grundas i Eslöv.",
-    "image": "",
+    "image": "Wikidata-logo.svg",
     "pageViews": 180000,
     "qid": "manual-Felix_(livsmedelsf%C3%B6retag)",
     "subtitle": "Svenskt livsmedelsvarumärke",
@@ -661,7 +561,7 @@
   },
   {
     "fact": "Estrella etableras på den svenska snacksmarknaden.",
-    "image": "",
+    "image": "Wikidata-logo.svg",
     "pageViews": 180000,
     "qid": "manual-Estrella_(varum%C3%A4rke)",
     "subtitle": "Svenskt snacksvarumärke",
@@ -681,7 +581,7 @@
   },
   {
     "fact": "Fjällrävens ryggsäck Kånken lanseras.",
-    "image": "",
+    "image": "Fjallraven,_OutDoor_2018,_Friedrichshafen_(1X7A0438).jpg",
     "pageViews": 180000,
     "qid": "manual-K%C3%A5nken",
     "subtitle": "Svensk ryggsäck",
@@ -711,7 +611,7 @@
   },
   {
     "fact": "Stadium grundas i Norrköping.",
-    "image": "",
+    "image": "Wikidata-logo.svg",
     "pageViews": 180000,
     "qid": "Q1198317",
     "subtitle": "Svensk butikskedja",
@@ -728,26 +628,6 @@
     "title": "Posten blir aktiebolag",
     "wikipediaSlug": "Posten",
     "year": 1994
-  },
-  {
-    "fact": "Kry grundas som digital vårdtjänst.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "manual-Kry_(f%C3%B6retag)",
-    "subtitle": "Svensk vårdapp",
-    "title": "Kry grundas",
-    "wikipediaSlug": "Kry_(f%C3%B6retag)",
-    "year": 2015
-  },
-  {
-    "fact": "Essity knoppas av från SCA.",
-    "image": "Essity_logo_colour_RGB.jpg",
-    "pageViews": 180000,
-    "qid": "Q30938280",
-    "subtitle": "Svenskt hygienföretag",
-    "title": "Essity börsnoteras",
-    "wikipediaSlug": "Essity",
-    "year": 2017
   },
   {
     "fact": "Eton grundas i Gånghester.",
@@ -790,16 +670,6 @@
     "year": 2005
   },
   {
-    "qid": "Q79576",
-    "title": "Google Play grundas",
-    "subtitle": "Digital plattform för mjukvarudistribution från Google",
-    "year": 2008,
-    "fact": "Google Play, även känt som Google Play Butik eller Play Butik, och tidigare som Android Market, är en digital distributionstjänst som drivs och utvecklas av Google.",
-    "wikipediaSlug": "Google_Play",
-    "image": "Google_Play_screenshot.png",
-    "pageViews": 153288
-  },
-  {
     "qid": "Q2813",
     "title": "Coca-Cola grundas",
     "subtitle": "Kolsyrad brun läskedryck",
@@ -808,16 +678,6 @@
     "wikipediaSlug": "Coca-Cola",
     "image": "Coca_Cola_Flasche_-_Original_Taste.jpg",
     "pageViews": 147415
-  },
-  {
-    "qid": "Q679322",
-    "title": "Saudi Aramco grundas",
-    "subtitle": "Saudiarabiskt statligt oljebolag",
-    "year": 1932,
-    "fact": "Saudi Aramco, officiellt Saudi Arabian Oil Company, är ett statligt majoritetsägt olje- och naturgasbolag; det är Saudiarabiens nationella oljebolag.",
-    "wikipediaSlug": "Saudi_Aramco",
-    "image": "Aramco_Tower.jpg",
-    "pageViews": 127267
   },
   {
     "qid": "Q36008",
@@ -848,305 +708,5 @@
     "wikipediaSlug": "Red_Bull",
     "image": "RedBullEnergyDrink.svg",
     "pageViews": 109230
-  },
-  {
-    "qid": "Q27423",
-    "title": "BYD Auto grundas",
-    "subtitle": "Kinesisk biltillverkare",
-    "year": 2003,
-    "fact": "BYD Auto Co., Ltd. är biltillverkningsdotterbolaget till BYD Company, ett börsnoterat kinesiskt multinationellt tillverkningsföretag.",
-    "wikipediaSlug": "BYD_Auto",
-    "image": "BYD_Zhengzhou_All-Terrain_Circuit_entrance.png",
-    "pageViews": 102582
-  },
-  {
-    "qid": "Q37158",
-    "title": "Starbucks grundas",
-    "subtitle": "Amerikanskt multinationellt kaffeföretag",
-    "year": 1971,
-    "fact": "Starbucks Corporation är en amerikansk multinationell kedja av kaféer och rosterier med huvudkontor i Seattle, Washington.",
-    "wikipediaSlug": "Starbucks",
-    "image": "Starbuckscenter.jpg",
-    "pageViews": 92105
-  },
-  {
-    "qid": "Q41187",
-    "title": "Sony Group grundas",
-    "subtitle": "Japansk multinationell konglomeratkoncern",
-    "year": 1946,
-    "fact": "Sony Group Corporation, vanligen kallat Sony, är en japansk multinationell koncern med huvudkontor i Sony City i Minato, Tokyo, Japan.",
-    "wikipediaSlug": "Sony",
-    "image": "Sony_headquaters_1.jpg",
-    "pageViews": 89426
-  },
-  {
-    "qid": "Q194297",
-    "title": "Guinness grundas",
-    "subtitle": "Irländskt ölmärke",
-    "year": 1759,
-    "fact": "Guinness är en stout som har sitt ursprung i Arthur Guinness bryggeri vid St.",
-    "wikipediaSlug": "Guinness",
-    "image": "Guinness_logo_dark_text.svg",
-    "pageViews": 89063
-  },
-  {
-    "qid": "Q131324035",
-    "title": "Labubu grundas",
-    "subtitle": "Varumärke för samlingsbara gosedjur",
-    "year": 2015,
-    "fact": "Labubu är en serie samlarvänliga plyschleksaker skapade av den Hongkongbaserade illustratören Kasing Lung.",
-    "wikipediaSlug": "Labubu",
-    "image": "Pop_Mart_Labubu_The_Monsters_Exciting_Macaron.jpg",
-    "pageViews": 84056
-  },
-  {
-    "qid": "Q27586",
-    "title": "Ferrari grundas",
-    "subtitle": "Italiensk tillverkare av lyxsportbilar",
-    "year": 1947,
-    "fact": "Ferrari S.p.A. är en italiensk tillverkare av lyxsportbilar baserad i Maranello, Italien.",
-    "wikipediaSlug": "Ferrari",
-    "image": "フェラーリ本社前_(36309429124).jpg",
-    "pageViews": 78124
-  },
-  {
-    "qid": "Q154950",
-    "title": "Shell grundas",
-    "subtitle": "Brittiskt multinationellt olje- och gasbolag",
-    "year": 1890,
-    "fact": "Shell plc är ett brittiskt multinationellt olje- och gasbolag med huvudkontor i London, England.",
-    "wikipediaSlug": "Shell_plc",
-    "image": "The_Shell_Centre_(8709496019).jpg",
-    "pageViews": 78074
-  },
-  {
-    "qid": "Q246",
-    "title": "Volkswagen grundas",
-    "subtitle": "Tyskt bilmärke; dotterbolag till Volkswagen Group",
-    "year": 1937,
-    "fact": "Volkswagen är en tysk fordonstillverkare med huvudkontor i Wolfsburg, Niedersachsen, Tyskland.",
-    "wikipediaSlug": "Volkswagen",
-    "image": "Volkswagen_logo_2019.svg",
-    "pageViews": 77930
-  },
-  {
-    "qid": "Q125054",
-    "title": "Aldi grundas",
-    "subtitle": "Varumärke för två globala lågprisvaruhuskedjor",
-    "year": 1946,
-    "fact": "Aldi är det vanliga företagsnamnet för två tyska multinationella familjeägda lågprisstormarknadskedjor som driver över 13 500 butiker i 18 länder.",
-    "wikipediaSlug": "Aldi",
-    "image": "Exterior_of_an_Aldi_Süd_supermarket_in_Franklin,_North_Carolina,_US_04.jpg",
-    "pageViews": 77722
-  },
-  {
-    "qid": "Q524757",
-    "title": "KFC grundas",
-    "subtitle": "Amerikansk snabbmatskedja specialiserad på friterad kyckling",
-    "year": 1930,
-    "fact": "KFC Corporation, verksamt som KFC, är en amerikansk multinationell snabbmatskedja som specialiserar sig på friterad kyckling i sydstatsstil och kycklingsmörgåsar.",
-    "wikipediaSlug": "KFC",
-    "image": "KFC_Paraparaumu_154510.jpg",
-    "pageViews": 77021
-  },
-  {
-    "qid": "Q259340",
-    "title": "7-Eleven grundas",
-    "subtitle": "Amerikansk närbutikskedja",
-    "year": 1927,
-    "fact": "7-Eleven, Inc. är en amerikansk närbutikskedja med huvudkontor i Irving, Texas.",
-    "wikipediaSlug": "7-Eleven",
-    "image": "7-Eleven_on_Lem_Turner_Blvd,_Jacksonville,_Florida.jpg",
-    "pageViews": 75467
-  },
-  {
-    "qid": "Q661871",
-    "title": "Jägermeister grundas",
-    "subtitle": "Tysk digestif",
-    "year": 1935,
-    "fact": "Jägermeister, stiliserad som \"Jägermeiſter\", är en tysk kryddad digestiflikör.",
-    "wikipediaSlug": "J%C3%A4germeister",
-    "image": "17-03-16-Jägermeister-Miniaturen-RR7_8310.jpg",
-    "pageViews": 69345
-  },
-  {
-    "qid": "Q623561",
-    "title": "Dr Pepper grundas",
-    "subtitle": "Kolsyrad läskedryck",
-    "year": 1885,
-    "fact": "Dr Pepper är en kolsyrad läskedryck som skapades på 1880-talet av den amerikanske apotekaren Charles Alderton i Waco, Texas.",
-    "wikipediaSlug": "Dr_Pepper",
-    "image": "Dr_Pepper_Dose_2024.jpg",
-    "pageViews": 68614
-  },
-  {
-    "qid": "Q156238",
-    "title": "ExxonMobil grundas",
-    "subtitle": "Amerikanskt multinationellt olje- och gasbolag",
-    "year": 1882,
-    "fact": "Exxon Mobil Corporation är ett amerikanskt multinationellt olje- och gasbolag med huvudkontor i Spring, Texas, en förort till Houston.",
-    "wikipediaSlug": "ExxonMobil",
-    "image": "Cube_xom_mine.png",
-    "pageViews": 66532
-  },
-  {
-    "qid": "Q544293",
-    "title": "Monster Energy grundas",
-    "subtitle": "Amerikansk energidryck",
-    "year": 2002,
-    "fact": "Monster Energy är ett märke av energidrycker som skapades av Hansen Natural Company i april 2002 och släpptes till allmänheten med sin originalsmak den 18 april 2002.",
-    "wikipediaSlug": "Monster_Energy",
-    "image": "Monster_Energy_drink_(cropped).jpg",
-    "pageViews": 65725
-  },
-  {
-    "qid": "Q1068628",
-    "title": "Calvin Klein grundas",
-    "subtitle": "Amerikanskt modehus",
-    "year": 1968,
-    "fact": "Calvin Klein Inc. är en amerikansk återförsäljarkedja för designermode som marknadsför sina namngivna produkter över hela världen.",
-    "wikipediaSlug": "Calvin_Klein_(fashion_house)",
-    "image": "CalvinKleinFairviewMall.JPG",
-    "pageViews": 63806
-  },
-  {
-    "qid": "Q167447",
-    "title": "Barbie grundas",
-    "subtitle": "Varumärke för modedockor och mediafranchise",
-    "year": 1959,
-    "fact": "Barbie är en modedockfranschise skapad av den amerikanska affärskvinnan Ruth Handler, tillverkad av det amerikanska leksaks- och underhållningsföretaget Mattel och introducerades den 9 mars 1959.",
-    "wikipediaSlug": "Barbie",
-    "image": "Barbie_Logo.svg",
-    "pageViews": 63644
-  },
-  {
-    "qid": "Q55931",
-    "title": "Hyundai Motor Company grundas",
-    "subtitle": "Sydkoreansk multinationell biltillverkare",
-    "year": 1967,
-    "fact": "Hyundai Motor Company, ofta benämnt Hyundai Motors (koreanska: 현대자동차) och allmänt känt som Hyundai, är en sydkoreansk multinationell biltillverkare med huvudkontor i Seoul, Sydkorea, som grundades 1967.",
-    "wikipediaSlug": "Hyundai_Motor_Company",
-    "image": "HyundaiMotorsCompany_KiaMotorsCompany.jpg",
-    "pageViews": 62010
-  },
-  {
-    "qid": "Q1046951",
-    "title": "Target Corporation grundas",
-    "subtitle": "Amerikansk detaljhandels- och stormarknadskedja",
-    "year": 1902,
-    "fact": "Target Corporation, verksamt som Target, är ett amerikanskt detaljhandelsföretag med huvudkontor i Minneapolis, Minnesota, USA.",
-    "wikipediaSlug": "Target_Corporation",
-    "image": "Target_(2018).svg",
-    "pageViews": 60638
-  },
-  {
-    "qid": "Q47719",
-    "title": "Pepsi grundas",
-    "subtitle": "Läskedryck som ägs och tillverkas av PepsiCo",
-    "year": 1893,
-    "fact": "Pepsi är en kolsyrad läskedryck med colasmak, tillverkad av PepsiCo som fungerar som dess flaggskeppsprodukt.",
-    "wikipediaSlug": "Pepsi",
-    "image": "Pepsi_2023.svg",
-    "pageViews": 60633
-  },
-  {
-    "qid": "Q20165",
-    "title": "Nissan grundas",
-    "subtitle": "Japansk biltillverkare",
-    "year": 1933,
-    "fact": "Nissan Motor Co., Ltd. är en japansk multinationell biltillverkare med huvudkontor i Yokohama, Kanagawa, Japan.",
-    "wikipediaSlug": "Nissan",
-    "image": "Nissan_Yokohama.jpg",
-    "pageViews": 58338
-  },
-  {
-    "qid": "Q864407",
-    "title": "The Home Depot grundas",
-    "subtitle": "Amerikanskt multinationellt detaljhandelsföretag för hemförbättring",
-    "year": 1978,
-    "fact": "The Home Depot, Inc., ofta kallat Home Depot, är ett amerikanskt multinationellt detaljhandelsföretag inom hemförbättring som säljer verktyg, byggmaterial, vitvaror och tjänster inklusive bränsle och transportuthyrning.",
-    "wikipediaSlug": "Home_Depot",
-    "image": "TheHomeDepot.svg",
-    "pageViews": 54898
-  },
-  {
-    "qid": "Q26070",
-    "title": "UNIQLO grundas",
-    "subtitle": "Japansk designer, tillverkare och återförsäljare av vardagskläder",
-    "year": 1949,
-    "fact": "Uniqlo Co., Ltd. är ett japanskt modeföretag specialiserat på 'fast fashion' med fokus på vardagskläder.",
-    "wikipediaSlug": "Uniqlo",
-    "image": "Uniqlo_Ginza_2018.jpg",
-    "pageViews": 54582
-  },
-  {
-    "qid": "Q47043",
-    "title": "Rubiks kub uppfinns",
-    "subtitle": "Tredimensionellt kombinationspussel med många olika permutationer",
-    "year": 1974,
-    "fact": "Rubiks kub är ett tredimensionellt pussel som uppfanns 1974 av den ungerske skulptören och arkitekturprofessorn Ernő Rubik.",
-    "wikipediaSlug": "Rubik%27s_Cube",
-    "image": "Rubiks_cube_solved.jpg",
-    "pageViews": 53807
-  },
-  {
-    "qid": "Q55606242",
-    "title": "ByteDance grundas",
-    "subtitle": "Kinesiskt internet- och teknikföretag",
-    "year": 2012,
-    "fact": "ByteDance är ett kinesiskt internetteknikföretag med huvudkontor i Haidian, Peking.",
-    "wikipediaSlug": "ByteDance",
-    "image": "ByteDance_1733_Commercial_Space_(20240731145554).jpg",
-    "pageViews": 51638
-  },
-  {
-    "qid": "Q622358",
-    "title": "Indian Institutes of Technology grundas",
-    "subtitle": "Grupp av autonoma indiska offentliga ingenjörshögskolor",
-    "year": 1956,
-    "fact": "Indian Institutes of Technology (IITs) är ett nätverk av prestigefyllda, självständiga offentliga ingenjörs- och tekniklärosäten i Indien.",
-    "wikipediaSlug": "Indian_Institutes_of_Technology",
-    "image": "IIT_Kharagpur_2016.jpg",
-    "pageViews": 51512
-  },
-  {
-    "qid": "Q29570",
-    "title": "Chevrolet grundas",
-    "subtitle": "Amerikansk biltillverkare inom GM",
-    "year": 1911,
-    "fact": "Chevrolet är ett amerikanskt bilmärke som ingår i tillverkaren General Motors (GM).",
-    "wikipediaSlug": "Chevrolet",
-    "image": "Chevy_(14467564735).jpg",
-    "pageViews": 51209
-  },
-  {
-    "qid": "Q35996",
-    "title": "Mazda grundas",
-    "subtitle": "Japansk multinationell biltillverkare",
-    "year": 1920,
-    "fact": "Mazda Motor Corporation är en japansk multinationell biltillverkare med huvudkontor i Fuchū, Hiroshima, Japan.",
-    "wikipediaSlug": "Mazda",
-    "image": "Mazda_logo_2024_(vertical).svg",
-    "pageViews": 50832
-  },
-  {
-    "qid": "Q277641",
-    "title": "A&W Restaurants grundas",
-    "subtitle": "Amerikansk snabbmatskedja",
-    "year": 1919,
-    "fact": "A&W Concentrate Company, verksamt som A&W Restaurants, eller helt enkelt A&W, är en amerikansk snabbmatskedja som utmärker sig med sina \"Burger Family\"-kombinationer, fatöl med root beer och root beer floats.",
-    "wikipediaSlug": "A%26W_Restaurants",
-    "image": "All_American_Food_Logo.svg",
-    "pageViews": 50261
-  },
-  {
-    "qid": "Q215293",
-    "title": "Volvo Cars grundas",
-    "subtitle": "Bilvarumärke och dotterbolag till Geely",
-    "year": 1927,
-    "fact": "Volvo Car AB, verksamma som Volvo Cars, är en svensk multinationell tillverkare av lyxbilar.",
-    "wikipediaSlug": "Volvo_Cars",
-    "image": "Volvo-Iron-Mark-Black.svg",
-    "pageViews": 50032
   }
 ]

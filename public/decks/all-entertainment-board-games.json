@@ -20,16 +20,6 @@
     "year": 1937
   },
   {
-    "fact": "Kubb sprids som ett vanligt svenskt sommarspel.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 220000,
-    "qid": "Q10549763",
-    "subtitle": "Svenskt utomhusspel",
-    "title": "Kubb blir sommarklassiker",
-    "wikipediaSlug": "Kubb",
-    "year": 1990
-  },
-  {
     "fact": "Mölkky sprids från Finland och blir välkänt i Sverige.",
     "image": "Molkky.jpg",
     "pageViews": 160000,
@@ -38,15 +28,5 @@
     "title": "Mölkky blir sommarspel",
     "wikipediaSlug": "M%C3%B6lkky",
     "year": 1996
-  },
-  {
-    "qid": "Q12263",
-    "title": "‘Mahjong’ släpps",
-    "subtitle": "Brädspel av",
-    "year": 1900,
-    "fact": "Mahjong är ett brickbaserat spel som utvecklades på 1800-talet i Kina och har spridit sig över hela världen sedan tidigt 1900-tal.",
-    "wikipediaSlug": "Mahjong",
-    "image": "Mahjong_game.jpg",
-    "pageViews": 91402
   }
 ]

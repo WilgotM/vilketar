@@ -1,7 +1,7 @@
 import { style } from "@vanilla-extract/css";
 import { media } from "./foundation";
 import { vars } from "./theme.css";
-import { sectionLabel } from "./ui.css";
+import { sectionLabel, surface } from "./ui.css";
 
 export const summary = style({
   display: "flex",
@@ -30,7 +30,7 @@ export const score = style({
 
 export const leagueTip = style({
   alignItems: "center",
-  background: vars.color.surfaceStrong,
+  background: vars.color.surfaceChrome,
   border: `1px solid ${vars.color.border}`,
   borderRadius: vars.radius.md,
   display: "grid",
@@ -83,16 +83,10 @@ export const leagueLink = style({
   textDecoration: "none",
 });
 
-export const leagueResults = style({
-  background: `linear-gradient(145deg, ${vars.color.surfaceChrome}, ${vars.color.surfaceStrong})`,
-  border: `1px solid rgba(255, 255, 255, 0.08)`,
-  borderRadius: vars.radius.xl,
-  boxShadow: "0 8px 32px rgba(0, 0, 0, 0.12)",
-  display: "grid",
-  gap: vars.space.md,
-  padding: vars.space.xl,
-  width: "100%",
-});
+export const leagueResults = style([
+  surface({ density: "normal", tone: "chrome" }),
+  { display: "grid" },
+]);
 
 export const leagueResultsHeader = style({
   alignItems: "center",
@@ -108,7 +102,7 @@ export const leagueStack = style({
 
 export const dailyLeagueCard = style({
   background: vars.color.backdropStrong,
-  border: `1px solid rgba(255, 255, 255, 0.06)`,
+  border: `1px solid ${vars.color.border}`,
   borderRadius: vars.radius.lg,
   overflow: "hidden",
 });
@@ -126,7 +120,7 @@ export const dailyLeagueMembers = style({
 
 export const dailyLeagueRow = style({
   alignItems: "center",
-  borderTop: `1px solid rgba(255, 255, 255, 0.04)`,
+  borderTop: `1px solid ${vars.color.border}`,
   display: "grid",
   gap: vars.space.sm,
   gridTemplateColumns: "1.5rem minmax(0, 1fr) auto",
@@ -135,7 +129,7 @@ export const dailyLeagueRow = style({
   transition: "background 0.2s ease",
   selectors: {
     "&:hover": {
-      background: "rgba(255, 255, 255, 0.02)",
+      background: vars.color.accentTint,
     },
   },
 });

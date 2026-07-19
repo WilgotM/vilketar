@@ -1,4 +1,4 @@
-import { keyframes, style } from "@vanilla-extract/css";
+import { keyframes, style, styleVariants } from "@vanilla-extract/css";
 import { media } from "./foundation";
 import { vars } from "./theme.css";
 import { action, actionContent, actionIcon, actionLabel } from "./ui.css";
@@ -22,24 +22,67 @@ export const fullWidth = style({
 });
 
 export const minimal = style({
-  background: `color-mix(in srgb, ${vars.color.text} 8%, transparent)`,
-  backdropFilter: "blur(20px)",
-  WebkitBackdropFilter: "blur(20px)",
-  border: `1px solid color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
-  boxShadow: "0 4px 16px rgba(0, 0, 0, 0.15)",
+  background: "transparent",
+  backdropFilter: "none",
+  WebkitBackdropFilter: "none",
+  border: 0,
+  borderRadius: vars.radius.xl,
+  boxShadow: "none",
   color: vars.color.text,
   transition: `all ${vars.duration.fast} ${vars.easing.standard}`,
   selectors: {
     "&:hover": {
-      background: `color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
-      borderColor: `color-mix(in srgb, ${vars.color.text} 20%, transparent)`,
-      boxShadow: "0 6px 20px rgba(0, 0, 0, 0.2)",
+      background: vars.color.accentSoft,
+      boxShadow: "none",
     },
     "&:active": {
       opacity: 0.8,
       transform: "scale(0.98)",
     },
   },
+});
+
+const homeSecondaryBase = style({
+  background: vars.color.surfaceChrome,
+  border: `1px solid ${vars.color.border}`,
+  boxShadow: vars.shadow.card,
+  color: vars.color.text,
+  transition: `transform ${vars.duration.fast} ${vars.easing.standard}, background ${vars.duration.fast} ${vars.easing.standard}, border-color ${vars.duration.fast} ${vars.easing.standard}, box-shadow ${vars.duration.fast} ${vars.easing.standard}`,
+  selectors: {
+    "&:hover": {
+      borderColor: vars.color.borderStrong,
+      boxShadow: vars.shadow.panel,
+      transform: "translateY(-0.0625rem)",
+    },
+    "&:active": {
+      transform: "translateY(0.0625rem) scale(0.985)",
+    },
+  },
+});
+
+export const homeTone = styleVariants({
+  party: [
+    homeSecondaryBase,
+    {
+      selectors: {
+        "&:hover": {
+          background: vars.color.surfaceRaised,
+        },
+      },
+    },
+  ],
+  freePlay: [
+    homeSecondaryBase,
+    {
+      borderColor: `color-mix(in srgb, ${vars.color.accentLogo} 28%, ${vars.color.border})`,
+      selectors: {
+        "&:hover": {
+          background: vars.color.accentSoft,
+          borderColor: vars.color.accentLogo,
+        },
+      },
+    },
+  ],
 });
 
 export const withTrailingIcon = style({

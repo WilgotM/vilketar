@@ -20,6 +20,35 @@ Svenskt tidslinjespel byggt med Next.js, Bun och Wikimedia-data.
 - Appen har en universell tillbaka-knapp längst upp till vänster. Lägg inte
   till egna tillbaka-knappar i vyer, paneler eller formulär.
 
+## Designriktning
+
+Tutorialen för dagens spel på `feature/daily-game-tutorial` är den främsta
+visuella referensen för VilketÅrs designspråk. Efter merge, se
+`components/daily-game-tutorial.tsx` och
+`styles/daily-game-tutorial.css.ts` när nya vyer eller större designändringar
+görs.
+
+- Helheten ska kännas varm, lekfull, tydlig och påkostad, men fortfarande lugn
+  och lätt att förstå för alla åldrar.
+- Använd mörka, mjuka ytor med subtilt djup, guldgula accenter som leder blicken,
+  stor självsäker typografi och få men starka grafiska element.
+- Animation ska förklara hierarki, riktning eller resultat. Undvik dekorativ
+  rörelse som konkurrerar med spelet och stöd alltid `prefers-reduced-motion`.
+- Prioritera generösa tryckytor, hög kontrast, tydlig textstorlek och robust
+  responsiv layout på smala, breda, korta och höga skärmar. Spelet ska vara
+  bekvämt även för äldre spelare.
+- Återanvänd tokens och mönster från `styles/theme.css.ts` och Vanilla Extract.
+  Lägg inte in ett separat designsystem eller spridda engångsfärger när
+  befintliga semantiska tokens räcker.
+- Översätt känslan till varje vys funktion. Alla ytor ska inte bli overlays,
+  glaspaneler eller spelkort; startsida, menyer, resultat och admin ska använda
+  samma typografi, färglogik, djup och rörelsekvalitet på ett sätt som passar
+  respektive vy.
+- Undvik generiska dashboard-rutnät, överdrivet många inramade kort, dekorativa
+  badges och visuellt brus. Färre och tydligare element är bättre.
+- Vid större visuella ändringar: kontrollera den riktiga renderingen på minst en
+  smal mobil, en kort/liggande skärm och desktop innan arbetet räknas som klart.
+
 ## Kort, deck och innehåll
 
 Kort kommer i praktiken från två håll:

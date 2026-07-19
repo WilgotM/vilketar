@@ -20,63 +20,6 @@ import SiteHero from "./site-hero";
 import { ThemeToggle } from "./theme-toggle";
 import * as styles from "../styles/home-screen.css";
 
-function ScatterDots() {
-  return (
-    <div className={styles.scatterDots} aria-hidden="true">
-      <div
-        className={styles.dot}
-        style={{
-          background: "#4E9FE5",
-          height: 8,
-          left: "52%",
-          top: "12%",
-          width: 8,
-        }}
-      />
-      <div
-        className={styles.dot}
-        style={{
-          background: "#E85D9C",
-          height: 6,
-          left: "12%",
-          top: "62%",
-          width: 6,
-        }}
-      />
-      <div
-        className={styles.dot}
-        style={{
-          background: "#4E9FE5",
-          height: 7,
-          right: "18%",
-          top: "52%",
-          width: 7,
-        }}
-      />
-      <div
-        className={styles.dot}
-        style={{
-          background: "#F5B731",
-          height: 5,
-          left: "8%",
-          top: "38%",
-          width: 5,
-        }}
-      />
-      <div
-        className={styles.dot}
-        style={{
-          background: "#9B59B6",
-          height: 6,
-          right: "6%",
-          top: "68%",
-          width: 6,
-        }}
-      />
-    </div>
-  );
-}
-
 function HeroDecorations() {
   return (
     <div className={styles.heroDecorations} aria-hidden="true">
@@ -209,6 +152,7 @@ export default function HomeScreen() {
     React.useState<DailyHomeStatus>("completed");
   const calendarDragStartY = React.useRef<number | null>(null);
   const calendarDragYRef = React.useRef(0);
+  const calendarDidDragRef = React.useRef(false);
   const closeTimerRef = React.useRef<number | null>(null);
 
   const closeCalendar = React.useCallback(() => {
@@ -239,6 +183,7 @@ export default function HomeScreen() {
     calendarDragYRef.current = 0;
     setCalendarDragging(false);
     calendarDragStartY.current = null;
+    calendarDidDragRef.current = false;
     setCalendarOpen(true);
   }, []);
 
@@ -286,8 +231,9 @@ export default function HomeScreen() {
   }, [calendarOpen, closeCalendar]);
 
   const startCalendarDrag = React.useCallback(
-    (event: React.PointerEvent<HTMLButtonElement>) => {
+    (event: React.PointerEvent<HTMLDivElement>) => {
       calendarDragStartY.current = event.clientY;
+      calendarDidDragRef.current = false;
       setCalendarDragging(true);
       event.currentTarget.setPointerCapture(event.pointerId);
     },
@@ -295,12 +241,15 @@ export default function HomeScreen() {
   );
 
   const moveCalendarDrag = React.useCallback(
-    (event: React.PointerEvent<HTMLButtonElement>) => {
+    (event: React.PointerEvent<HTMLDivElement>) => {
       if (calendarDragStartY.current === null) {
         return;
       }
 
       const nextDragY = Math.max(0, event.clientY - calendarDragStartY.current);
+      if (nextDragY > 8) {
+        calendarDidDragRef.current = true;
+      }
       calendarDragYRef.current = nextDragY;
       setCalendarDragY(nextDragY);
     },
@@ -308,7 +257,7 @@ export default function HomeScreen() {
   );
 
   const finishCalendarDrag = React.useCallback(
-    (event: React.PointerEvent<HTMLButtonElement>) => {
+    (event: React.PointerEvent<HTMLDivElement>) => {
       if (calendarDragStartY.current === null) {
         return;
       }
@@ -379,7 +328,6 @@ export default function HomeScreen() {
           </div>
         ) : null}
         <ThemeToggle />
-        <ScatterDots />
         <div className={styles.wrapper}>
           <HeroDecorations />
           <div className={styles.stage}>
@@ -427,16 +375,16 @@ export default function HomeScreen() {
                 className={styles.actionItem}
                 fullWidth
                 href="/party"
+                homeTone="party"
                 leadingIcon="group"
-                minimal
                 text="Sällskapsspel"
               />
               <ButtonLink
                 className={styles.actionItem}
                 fullWidth
                 href="/play"
+                homeTone="freePlay"
                 leadingIcon="group"
-                minimal
                 text="Fritt spel"
               />
             </div>
@@ -457,9 +405,21 @@ export default function HomeScreen() {
               className={
                 calendarClosing
                   ? styles.calendarDialogClosing
-                  : styles.calendarDialog
+                  : calendarDragging
+                    ? styles.calendarDialogDragging
+                    : styles.calendarDialog
               }
-              onClick={(event) => event.stopPropagation()}
+              onClick={(event) => {
+                event.stopPropagation();
+                if (calendarDidDragRef.current) {
+                  event.preventDefault();
+                  calendarDidDragRef.current = false;
+                }
+              }}
+              onPointerCancel={finishCalendarDrag}
+              onPointerDown={startCalendarDrag}
+              onPointerMove={moveCalendarDrag}
+              onPointerUp={finishCalendarDrag}
               role="dialog"
               style={{
                 transform: `translateY(${calendarDragY}px)`,
@@ -474,10 +434,6 @@ export default function HomeScreen() {
                     closeCalendar();
                   }
                 }}
-                onPointerCancel={finishCalendarDrag}
-                onPointerDown={startCalendarDrag}
-                onPointerMove={moveCalendarDrag}
-                onPointerUp={finishCalendarDrag}
                 type="button"
               />
               <DailyWeekSchedule compact />

@@ -70,16 +70,6 @@
     "pageViews": 389160
   },
   {
-    "qid": "Q113244844",
-    "title": "‘Daredevil: Born Again’ har premiär",
-    "subtitle": "TV-serie från Marvel Studios",
-    "year": 2025,
-    "fact": "‘Daredevil: Born Again’ är en amerikansk tv-serie skapad av Dario Scardapane och Matt Corman & Chris Ord för streamingtjänsten Disney+, baserad på Marvel Comics med karaktären Daredevil.",
-    "wikipediaSlug": "Daredevil:_Born_Again",
-    "image": "Daredevil_Born_Again_logo.jpeg",
-    "pageViews": 385848
-  },
-  {
     "qid": "Q48796994",
     "title": "‘The Boys’ sänds för första gången",
     "subtitle": "Amerikansk TV-serie",
@@ -101,33 +91,13 @@
   },
   {
     "fact": "Kalle Anka och hans vänner önskar God Jul börjar visas i svensk tv.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 300000,
     "qid": "Q1755521",
     "subtitle": "Svensk tv-tradition",
     "title": "Kalle Anka visas på julafton",
     "wikipediaSlug": "Kalle_Anka_och_hans_v%C3%A4nner_%C3%B6nskar_God_Jul",
     "year": 1960
-  },
-  {
-    "fact": "Bluetooth utvecklas av ingenjörer på Ericsson.",
-    "image": "Bluetooth_FM_Color.png",
-    "pageViews": 300000,
-    "qid": "Q39531",
-    "subtitle": "Svensk teknik",
-    "title": "Bluetooth utvecklas",
-    "wikipediaSlug": "Bluetooth",
-    "year": 1994
-  },
-  {
-    "fact": "Loreen blir första kvinna att vinna Eurovision två gånger.",
-    "image": "Loreen_-_Melodifestivalen_2023,_Malmö_118_(cropped).jpg",
-    "pageViews": 300000,
-    "qid": "Q483376",
-    "subtitle": "Svensk artist",
-    "title": "Loreen vinner Eurovision igen",
-    "wikipediaSlug": "Loreen",
-    "year": 2023
   },
   {
     "qid": "Q1079",
@@ -171,7 +141,7 @@
   },
   {
     "fact": "Kalle Anka & C:o börjar ges ut i Sverige.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q2743606",
     "subtitle": "Svensk serietidning",
@@ -221,7 +191,7 @@
   },
   {
     "fact": "Sverige inför enkammarriksdag.",
-    "image": "",
+    "image": "Riksdagen_(current_composition).svg",
     "pageViews": 260000,
     "qid": "Q1179506",
     "subtitle": "Svensk demokrati",
@@ -231,7 +201,7 @@
   },
   {
     "fact": "Fem myror är fler än fyra elefanter börjar sändas.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q5442718",
     "subtitle": "Svenskt barnprogram",
@@ -251,7 +221,7 @@
   },
   {
     "fact": "Sagan om Karl-Bertil Jonssons julafton börjar visas i svensk tv.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q1758868",
     "subtitle": "Svensk julklassiker",
@@ -271,7 +241,7 @@
   },
   {
     "fact": "Den första filmen om Jönssonligan har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q378302",
     "subtitle": "Svensk filmserie",
@@ -281,7 +251,7 @@
   },
   {
     "fact": "På spåret börjar sändas i SVT.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q7264617",
     "subtitle": "Svenskt tv-program",
@@ -311,7 +281,7 @@
   },
   {
     "fact": "Den moderna filmserien om Martin Beck startar.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "manual-Beck_(filmserie)",
     "subtitle": "Svensk filmserie",
@@ -351,7 +321,7 @@
   },
   {
     "fact": "Solsidan har premiär i TV4.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q10673360",
     "subtitle": "Svensk tv-serie",
@@ -361,7 +331,7 @@
   },
   {
     "fact": "Bron har premiär i SVT.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 260000,
     "qid": "Q1211796",
     "subtitle": "Svensk-dansk tv-serie",
@@ -451,7 +421,7 @@
   },
   {
     "fact": "Sunes jul sänds som SVT:s julkalender.",
-    "image": "",
+    "image": "Sunes jul papperskalender.jpg",
     "pageViews": 240000,
     "qid": "Q4993680",
     "subtitle": "Svensk julkalender",
@@ -461,7 +431,7 @@
   },
   {
     "fact": "Svensson, Svensson har premiär i SVT.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 240000,
     "qid": "Q7652181",
     "subtitle": "Svensk komediserie",
@@ -478,16 +448,6 @@
     "title": "”Mysteriet på Greveholm” sänds",
     "wikipediaSlug": "Mysteriet_p%C3%A5_Greveholm",
     "year": 1996
-  },
-  {
-    "fact": "Petra Mede leder Melodifestivalen och blir en stor tv-profil.",
-    "image": "Petra_Mede_Eurovision_Song_Contest_2024_Final_Malmö_press_conference_presenters_05.jpg",
-    "pageViews": 240000,
-    "qid": "Q3809242",
-    "subtitle": "Svensk programledare",
-    "title": "Petra Mede leder Melodifestivalen",
-    "wikipediaSlug": "Petra_Mede",
-    "year": 2009
   },
   {
     "qid": "Q207375",
@@ -561,7 +521,7 @@
   },
   {
     "fact": "Sverige inför två veckors lagstadgad semester.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q10665497",
     "subtitle": "Svensk arbetslivsreform",
@@ -581,7 +541,7 @@
   },
   {
     "fact": "Nils Bohlin utvecklar trepunktsbältet på Volvo.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q982287",
     "subtitle": "Svensk ingenjör",
@@ -621,7 +581,7 @@
   },
   {
     "fact": "Utvandrarna har premiär.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "manual-Utvandrarna_(film%2C_1971)",
     "subtitle": "Svensk film",
@@ -661,7 +621,7 @@
   },
   {
     "fact": "Trazan och Banarne blir folkkära figurer i svensk barn-tv.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q1764283",
     "subtitle": "Svenskt barnprogram",
@@ -681,7 +641,7 @@
   },
   {
     "fact": "Trolltider sänds som SVT:s julkalender.",
-    "image": "",
+    "image": "Trolltider 1985 papperskalender.jpg",
     "pageViews": 220000,
     "qid": "Q10704922",
     "subtitle": "Svensk julkalender",
@@ -701,7 +661,7 @@
   },
   {
     "fact": "Den första boken om Sune ges ut.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "manual-Sune_(bokserie)",
     "subtitle": "Svensk bokserie",
@@ -731,7 +691,7 @@
   },
   {
     "fact": "Den första boken om Bert ges ut.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "manual-Bert_(bokserie)",
     "subtitle": "Svensk bokserie",
@@ -741,7 +701,7 @@
   },
   {
     "fact": "TV3 börjar sända till svenska tittare.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q378424",
     "subtitle": "Svensk tv-kanal",
@@ -771,7 +731,7 @@
   },
   {
     "fact": "Den animerade Muminserien blir älskad av svenska barn.",
-    "image": "",
+    "image": "Mumindalen papperskalender.jpg",
     "pageViews": 220000,
     "qid": "Q10590158",
     "subtitle": "Nordisk barnserie",
@@ -810,16 +770,6 @@
     "year": 1994
   },
   {
-    "fact": "Kan du vissla Johanna? börjar visas som återkommande svensk tv-tradition.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 220000,
-    "qid": "Q18670584",
-    "subtitle": "Svensk tv-film",
-    "title": "”Kan du vissla Johanna?” visas på tv",
-    "wikipediaSlug": "Kan_du_vissla_Johanna%3F",
-    "year": 1994
-  },
-  {
     "fact": "Lasse Berghagen blir folkkär som programledare för Allsång på Skansen.",
     "image": "Lasse_Berghagen_in_2014_(1_av_2).jpg",
     "pageViews": 220000,
@@ -851,7 +801,7 @@
   },
   {
     "fact": "Skärgårdsdoktorn har premiär i SVT.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q3505375",
     "subtitle": "Svensk tv-serie",
@@ -861,7 +811,7 @@
   },
   {
     "fact": "Torsk på Tallinn har premiär i SVT.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q6804910",
     "subtitle": "Svensk tv-film",
@@ -881,7 +831,7 @@
   },
   {
     "fact": "Vem vill bli miljonär? börjar sändas i Sverige.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q72006076",
     "subtitle": "Svenskt frågesportprogram",
@@ -891,7 +841,7 @@
   },
   {
     "fact": "Big Brother börjar sändas i svensk tv.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q16827221",
     "subtitle": "Svenskt tv-program",
@@ -921,7 +871,7 @@
   },
   {
     "fact": "Farmen börjar sändas i TV4.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q20113827",
     "subtitle": "Svenskt tv-program",
@@ -961,7 +911,7 @@
   },
   {
     "fact": "Idol börjar sändas i Sverige.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q1656877",
     "subtitle": "Svenskt tv-program",
@@ -981,7 +931,7 @@
   },
   {
     "fact": "Let's Dance börjar sändas i TV4.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "manual-Let's_Dance_(Sverige)",
     "subtitle": "Svenskt tv-program",
@@ -1001,7 +951,7 @@
   },
   {
     "fact": "Talang börjar sändas i Sverige.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "manual-Talang_(Sverige)",
     "subtitle": "Svenskt tv-program",
@@ -1011,7 +961,7 @@
   },
   {
     "fact": "Mästarnas mästare börjar sändas i SVT.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q670761",
     "subtitle": "Svenskt tv-program",
@@ -1021,23 +971,13 @@
   },
   {
     "fact": "Så mycket bättre börjar sändas i TV4.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 220000,
     "qid": "Q2757779",
     "subtitle": "Svenskt musikprogram",
     "title": "”Så mycket bättre” börjar sändas",
     "wikipediaSlug": "S%C3%A5_mycket_b%C3%A4ttre",
     "year": 2010
-  },
-  {
-    "fact": "Gina Dirawi leder Melodifestivalen.",
-    "image": "Gina_Dirawi_2026_Melodifestivalen_(cropped).jpg",
-    "pageViews": 220000,
-    "qid": "Q248575",
-    "subtitle": "Svensk programledare",
-    "title": "Gina Dirawi leder Melodifestivalen",
-    "wikipediaSlug": "Gina_Dirawi",
-    "year": 2012
   },
   {
     "fact": "Vår tid är nu har premiär i SVT.",
@@ -1101,7 +1041,7 @@
   },
   {
     "fact": "Rapport börjar sändas i Sveriges Television.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 200000,
     "qid": "manual-Rapport_(TV-program)",
     "subtitle": "Svenskt nyhetsprogram",
@@ -1111,7 +1051,7 @@
   },
   {
     "fact": "Eva Remaeus blir folkkär genom Fem myror.",
-    "image": "",
+    "image": "Video-x-generic.svg",
     "pageViews": 200000,
     "qid": "Q3373253",
     "subtitle": "Svensk skådespelare",
@@ -1178,1045 +1118,5 @@
     "title": "”Postkodmiljonären” börjar sändas",
     "wikipediaSlug": "Postkodmiljon%C3%A4ren",
     "year": 2005
-  },
-  {
-    "qid": "Q34316",
-    "title": "‘Doctor Who’ har premiär",
-    "subtitle": "Brittisk science fiction-serie",
-    "year": 1963,
-    "fact": "‘Doctor Who’ är en brittisk science fiction-TV-serie som sänds av BBC sedan 1963.",
-    "wikipediaSlug": "Doctor_Who",
-    "image": "Doctor_Who_title_card.png",
-    "pageViews": 193503
-  },
-  {
-    "qid": "Q14925221",
-    "title": "‘Better Call Saul’ har premiär",
-    "subtitle": "Amerikansk kriminaldramaserie",
-    "year": 2015,
-    "fact": "Better Call Saul är en amerikansk neo-noir juridisk kriminaldramaserie skapad av Vince Gilligan och Peter Gould för AMC.",
-    "wikipediaSlug": "Better_Call_Saul",
-    "image": "Better_Call_Saul_logo.svg",
-    "pageViews": 192024
-  },
-  {
-    "qid": "Q25207350",
-    "title": "‘The Handmaid's Tale’ sänds för första gången",
-    "subtitle": "Amerikansk webb-TV-serie",
-    "year": 2017,
-    "fact": "The Handmaid's Tale är en amerikansk dystopisk TV-serie skapad av Bruce Miller, baserad på romanen Tjänarinnans berättelse från 1985 av den kanadensiska författaren Margaret Atwood.",
-    "wikipediaSlug": "The_Handmaid%27s_Tale_(TV_series)",
-    "image": "The_Handmaid's_Tale_intertitle.png",
-    "pageViews": 190267
-  },
-  {
-    "qid": "Q8539",
-    "title": "‘The Big Bang Theory’ sänds för första gången",
-    "subtitle": "Amerikansk TV-situationskomedi",
-    "year": 2007,
-    "fact": "‘The Big Bang Theory’ är en amerikansk situationskomedi skapad av Chuck Lorre och Bill Prady för CBS.",
-    "wikipediaSlug": "The_Big_Bang_Theory",
-    "image": "The_Big_Bang_Theory_(Official_Title_Card).png",
-    "pageViews": 186978
-  },
-  {
-    "qid": "Q30611820",
-    "title": "‘9-1-1’ sänds för första gången",
-    "subtitle": "Amerikansk procedurdramaserie",
-    "year": 2018,
-    "fact": "‘9-1-1’ är en amerikansk procedur-, dramaserie skapad av Ryan Murphy, Brad Falchuk och Tim Minear.",
-    "wikipediaSlug": "9-1-1_(TV_series)",
-    "image": "9-1-1_intertitle.png",
-    "pageViews": 181996
-  },
-  {
-    "qid": "Q15931555",
-    "title": "‘Fargo’ har premiär",
-    "subtitle": "Amerikansk kriminaldramaserie",
-    "year": 2014,
-    "fact": "‘Fargo’ är en amerikansk svart komedi-kriminaldramaserie skapad av Noah Hawley för FX.",
-    "wikipediaSlug": "Fargo_(TV_series)",
-    "image": "Fargo_(TV_logo).svg",
-    "pageViews": 180026
-  },
-  {
-    "fact": "Kronblom debuterar i svensk press.",
-    "image": "Kronblomstatyn_i_Örebro.jpg",
-    "pageViews": 180000,
-    "qid": "Q3363728",
-    "subtitle": "Svensk seriefigur",
-    "title": "Kronblom debuterar",
-    "wikipediaSlug": "Kronblom",
-    "year": 1927
-  },
-  {
-    "fact": "Mona Malm blir ett välkänt ansikte i svensk film och tv.",
-    "image": "Mona_Malm_in_2015-2.jpg",
-    "pageViews": 180000,
-    "qid": "Q3320068",
-    "subtitle": "Svensk skådespelare",
-    "title": "Mona Malm slår igenom",
-    "wikipediaSlug": "Mona_Malm",
-    "year": 1950
-  },
-  {
-    "fact": "Tiotusenkronorsfrågan blir ett tidigt svenskt tv-fenomen.",
-    "image": "Hajen_Hannerz.jpg",
-    "pageViews": 180000,
-    "qid": "Q10551210",
-    "subtitle": "Svenskt frågesportprogram",
-    "title": "Tiotusenkronorsfrågan blir tv-succé",
-    "wikipediaSlug": "Kvitt_eller_dubbelt",
-    "year": 1957
-  },
-  {
-    "fact": "Fråga Lund börjar sändas i SVT.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q10499639",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Fråga Lund” börjar sändas",
-    "wikipediaSlug": "Fr%C3%A5ga_Lund",
-    "year": 1962
-  },
-  {
-    "fact": "Anita och Televinken blir folkkära i svensk barnradio och tv.",
-    "image": "Anita_&_Televinken_1966.jpg",
-    "pageViews": 180000,
-    "qid": "Q10412213",
-    "subtitle": "Svensk barnradio",
-    "title": "Televinken blir barnradiofigur",
-    "wikipediaSlug": "Anita_och_Televinken",
-    "year": 1964
-  },
-  {
-    "fact": "Ring så spelar vi börjar sändas i Sveriges Radio.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q10655464",
-    "subtitle": "Svenskt radioprogram",
-    "title": "”Ring så spelar vi” börjar sändas",
-    "wikipediaSlug": "Ring_s%C3%A5_spelar_vi",
-    "year": 1968
-  },
-  {
-    "fact": "Beppes godnattstund börjar sändas i svensk tv.",
-    "image": "Beppe-Wolgers-in-quot-Beppes-good-night-time-quot-391848733514.jpg",
-    "pageViews": 180000,
-    "qid": "Q10428217",
-    "subtitle": "Svenskt barnprogram",
-    "title": "Beppes godnattstund börjar sändas",
-    "wikipediaSlug": "Beppes_godnattstund",
-    "year": 1968
-  },
-  {
-    "fact": "Beppe Wolgers blir en folkkär profil i svensk barn-tv.",
-    "image": "Beppe-Wolgers-in-quot-Beppes-good-night-time-quot-391848733514.jpg",
-    "pageViews": 180000,
-    "qid": "Q706560",
-    "subtitle": "Svensk barn-tv-profil",
-    "title": "Beppe Wolgers gör barn-tv",
-    "wikipediaSlug": "Beppe_Wolgers",
-    "year": 1969
-  },
-  {
-    "fact": "Hajk med Bengt Alsterlind börjar sändas.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 180000,
-    "qid": "Q1270294",
-    "subtitle": "Svenskt barnprogram",
-    "title": "Hajk börjar sändas",
-    "wikipediaSlug": "Hajk",
-    "year": 1971
-  },
-  {
-    "fact": "Vilse i pannkakan börjar sändas i SVT.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q10715600",
-    "subtitle": "Svenskt barnprogram",
-    "title": "Vilse i pannkakan börjar sändas",
-    "wikipediaSlug": "Vilse_i_pannkakan",
-    "year": 1975
-  },
-  {
-    "fact": "Staffan Westerberg blir en omtalad profil i svensk barn-tv.",
-    "image": "Staffan_Westerberg_1967-07-05.jpg",
-    "pageViews": 180000,
-    "qid": "Q6237608",
-    "subtitle": "Svensk barn-tv-profil",
-    "title": "Staffan Westerberg gör barn-tv",
-    "wikipediaSlug": "Staffan_Westerberg",
-    "year": 1978
-  },
-  {
-    "fact": "Tracks börjar sändas i Sveriges Radio.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q549303",
-    "subtitle": "Svenskt radioprogram",
-    "title": "”Tracks” börjar sändas",
-    "wikipediaSlug": "Tracks",
-    "year": 1984
-  },
-  {
-    "fact": "Fragglarna börjar visas för svenska tittare.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q1212572",
-    "subtitle": "Barnprogram i svensk tv",
-    "title": "Fragglarna börjar visas i Sverige",
-    "wikipediaSlug": "Fragglarna",
-    "year": 1984
-  },
-  {
-    "fact": "Skrotnisse och hans vänner börjar sändas i svensk tv.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q3195565",
-    "subtitle": "Svenskt barnprogram",
-    "title": "Skrotnisse börjar sändas",
-    "wikipediaSlug": "Skrotnisse_och_hans_v%C3%A4nner",
-    "year": 1985
-  },
-  {
-    "fact": "Nöjesmassakern börjar sändas i SVT.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q10605547",
-    "subtitle": "Svenskt humorprogram",
-    "title": "”Nöjesmassakern” börjar sändas",
-    "wikipediaSlug": "N%C3%B6jesmassakern",
-    "year": 1985
-  },
-  {
-    "fact": "Trasdockorna blir ett minne för många svenska tv-barn.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q259342",
-    "subtitle": "Barnprogram i svensk tv",
-    "title": "Trasdockorna börjar visas",
-    "wikipediaSlug": "Trasdockorna",
-    "year": 1986
-  },
-  {
-    "fact": "Varuhuset har premiär i SVT.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "manual-Varuhuset_(TV-serie)",
-    "subtitle": "Svensk tv-serie",
-    "title": "”Varuhuset” har premiär",
-    "wikipediaSlug": "Varuhuset_(TV-serie)",
-    "year": 1987
-  },
-  {
-    "fact": "Spanarna börjar sändas i Sveriges Radio.",
-    "image": "Ingvar_Storm.JPG",
-    "pageViews": 180000,
-    "qid": "Q10674288",
-    "subtitle": "Svenskt radioprogram",
-    "title": "”Spanarna” börjar sändas",
-    "wikipediaSlug": "Spanarna",
-    "year": 1988
-  },
-  {
-    "fact": "Ika i rutan börjar sändas i SVT.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q10534303",
-    "subtitle": "Svenskt barnprogram",
-    "title": "Ika i rutan börjar sändas",
-    "wikipediaSlug": "Ika_i_rutan",
-    "year": 1988
-  },
-  {
-    "fact": "Lorry börjar sändas i SVT.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q10569809",
-    "subtitle": "Svensk humorserie",
-    "title": "”Lorry” börjar sändas",
-    "wikipediaSlug": "Lorry",
-    "year": 1989
-  },
-  {
-    "fact": "Bengt Magnusson blir en av TV4:s mest kända nyhetsankare.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 180000,
-    "qid": "Q10428088",
-    "subtitle": "Svensk nyhetsprofil",
-    "title": "Bengt Magnusson börjar i TV4",
-    "wikipediaSlug": "Bengt_Magnusson",
-    "year": 1990
-  },
-  {
-    "fact": "Hälge blir en populär svensk älgserie.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q1285754",
-    "subtitle": "Svensk seriefigur",
-    "title": "Hälge debuterar",
-    "wikipediaSlug": "H%C3%A4lge",
-    "year": 1991
-  },
-  {
-    "fact": "Jeopardy! börjar sändas i svensk version.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "manual-Jeopardy!_(Sverige)",
-    "subtitle": "Svenskt frågesportprogram",
-    "title": "”Jeopardy!” börjar sändas i Sverige",
-    "wikipediaSlug": "Jeopardy!_(Sverige)",
-    "year": 1991
-  },
-  {
-    "fact": "Morgonpasset i P3 börjar sändas.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q10589094",
-    "subtitle": "Svenskt radioprogram",
-    "title": "”Morgonpasset” börjar sändas",
-    "wikipediaSlug": "Morgonpasset_i_P3",
-    "year": 1992
-  },
-  {
-    "fact": "ZTV börjar sända och blir en ungdomlig musik- och nöjeskanal.",
-    "image": "ZTV_Viasat.png",
-    "pageViews": 180000,
-    "qid": "Q4176314",
-    "subtitle": "Svensk tv-kanal",
-    "title": "ZTV börjar sända",
-    "wikipediaSlug": "ZTV",
-    "year": 1992
-  },
-  {
-    "fact": "Snacka om nyheter börjar sändas i SVT.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q10672606",
-    "subtitle": "Svenskt satirprogram",
-    "title": "”Snacka om nyheter” börjar sändas",
-    "wikipediaSlug": "Snacka_om_nyheter",
-    "year": 1995
-  },
-  {
-    "fact": "Kanal 5 får sitt nuvarande namn.",
-    "image": "Kanal_5_&_TV5_Logo_2024.svg",
-    "pageViews": 180000,
-    "qid": "Q1723571",
-    "subtitle": "Svensk tv-kanal",
-    "title": "Kanal 5 får sitt namn",
-    "wikipediaSlug": "Kanal_5",
-    "year": 1996
-  },
-  {
-    "fact": "Sen kväll med Luuk börjar sändas i TV4.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q7449907",
-    "subtitle": "Svenskt talkshowprogram",
-    "title": "”Sen kväll med Luuk” börjar sändas",
-    "wikipediaSlug": "Sen_kv%C3%A4ll_med_Luuk",
-    "year": 1996
-  },
-  {
-    "fact": "Martin Kellermans Rocky debuterar.",
-    "image": "Fra_roc_1376.jpg",
-    "pageViews": 180000,
-    "qid": "Q3181538",
-    "subtitle": "Svensk tecknad serie",
-    "title": "Rocky debuterar",
-    "wikipediaSlug": "Rocky_(tecknad_serie)",
-    "year": 1998
-  },
-  {
-    "fact": "Christine Meltzer slår igenom i svensk humor-tv.",
-    "image": "Kristallen-vinnaren_Christine_Meltzer_för_Partaj.jpg",
-    "pageViews": 180000,
-    "qid": "Q4966976",
-    "subtitle": "Svensk komiker",
-    "title": "Christine Meltzer slår igenom",
-    "wikipediaSlug": "Christine_Meltzer",
-    "year": 2000
-  },
-  {
-    "fact": "Hipp Hipp! börjar sändas i SVT.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q5768311",
-    "subtitle": "Svenskt humorprogram",
-    "title": "”Hipp Hipp!” börjar sändas",
-    "wikipediaSlug": "Hipp_Hipp!",
-    "year": 2001
-  },
-  {
-    "fact": "Tusenbröder har premiär i SVT.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q7856738",
-    "subtitle": "Svensk tv-serie",
-    "title": "”Tusenbröder” har premiär",
-    "wikipediaSlug": "Tusenbr%C3%B6der",
-    "year": 2002
-  },
-  {
-    "fact": "Hem till Midgård har premiär i TV4.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q5710883",
-    "subtitle": "Svensk komediserie",
-    "title": "”Hem till Midgård” har premiär",
-    "wikipediaSlug": "Hem_till_Midg%C3%A5rd",
-    "year": 2003
-  },
-  {
-    "fact": "Doobidoo börjar sändas i SVT.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q5296965",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Doobidoo” börjar sändas",
-    "wikipediaSlug": "Doobidoo",
-    "year": 2005
-  },
-  {
-    "fact": "Paradise Hotel börjar sändas i Sverige.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "manual-Paradise_Hotel_(Sverige)",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Paradise Hotel” börjar sändas",
-    "wikipediaSlug": "Paradise_Hotel_(Sverige)",
-    "year": 2005
-  },
-  {
-    "fact": "Grotesco börjar sändas i SVT.",
-    "image": "Grotesco_(cropped).jpg",
-    "pageViews": 180000,
-    "qid": "Q49094906",
-    "subtitle": "Svensk humorgrupp",
-    "title": "”Grotesco” börjar sändas",
-    "wikipediaSlug": "Grotesco",
-    "year": 2007
-  },
-  {
-    "fact": "Kristian Luuk och Fredrik Lindström tar över På spåret.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q72981599",
-    "subtitle": "Svenska programledare",
-    "title": "Luuk och Hallberg gör På spåret",
-    "wikipediaSlug": "Luuk_%26_Hallberg",
-    "year": 2009
-  },
-  {
-    "fact": "Morden i Sandhamn har premiär i TV4.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q4132634",
-    "subtitle": "Svensk kriminalserie",
-    "title": "”Morden i Sandhamn” har premiär",
-    "wikipediaSlug": "Morden_i_Sandhamn",
-    "year": 2010
-  },
-  {
-    "fact": "Äkta människor har premiär i SVT.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q2690883",
-    "subtitle": "Svensk tv-serie",
-    "title": "”Äkta människor” har premiär",
-    "wikipediaSlug": "%C3%84kta_m%C3%A4nniskor",
-    "year": 2012
-  },
-  {
-    "fact": "Historieätarna börjar sändas i SVT.",
-    "image": "Erik_Haag_och_Lotta_Lundgren_2014.jpg",
-    "pageViews": 180000,
-    "qid": "Q10524624",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Historieätarna” börjar sändas",
-    "wikipediaSlug": "Historie%C3%A4tarna",
-    "year": 2012
-  },
-  {
-    "fact": "Bonusfamiljen har premiär i SVT.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q29384710",
-    "subtitle": "Svensk tv-serie",
-    "title": "”Bonusfamiljen” har premiär",
-    "wikipediaSlug": "Bonusfamiljen",
-    "year": 2017
-  },
-  {
-    "fact": "Kalifat har premiär i SVT.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q82070811",
-    "subtitle": "Svensk tv-serie",
-    "title": "”Kalifat” har premiär",
-    "wikipediaSlug": "Kalifat_(TV-serie)",
-    "year": 2020
-  },
-  {
-    "fact": "Tunna blå linjen har premiär i SVT.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q104808770",
-    "subtitle": "Svensk tv-serie",
-    "title": "”Tunna blå linjen” har premiär",
-    "wikipediaSlug": "Tunna_bl%C3%A5_linjen",
-    "year": 2021
-  },
-  {
-    "qid": "Q478360",
-    "title": "‘The Wire’ sänds för första gången",
-    "subtitle": "Amerikansk kriminaldramaserie",
-    "year": 2002,
-    "fact": "The Wire är en amerikansk kriminaldramaserie skapad och främst skriven av den amerikanske författaren och före detta kriminalreportern David Simon för kabeltevekanalen HBO.",
-    "wikipediaSlug": "The_Wire",
-    "image": "The_Wire_logo.svg",
-    "pageViews": 160709
-  },
-  {
-    "fact": "Hedvig och ugglan blir ett svenskt barn-tv-minne.",
-    "image": "",
-    "pageViews": 160000,
-    "qid": "manual-Hedvig_och_ugglan",
-    "subtitle": "Svenskt barnprogram",
-    "title": "Hedvig och ugglan börjar sändas",
-    "wikipediaSlug": "Hedvig_och_ugglan",
-    "year": 1975
-  },
-  {
-    "fact": "Agaton Sax blir känd genom böcker och tv.",
-    "image": "",
-    "pageViews": 160000,
-    "qid": "Q391557",
-    "subtitle": "Svensk barnboksfigur",
-    "title": "Agaton Sax blir tv-figur",
-    "wikipediaSlug": "Agaton_Sax",
-    "year": 1976
-  },
-  {
-    "fact": "Doktor Snuggles börjar visas för svenska barn.",
-    "image": "",
-    "pageViews": 160000,
-    "qid": "Q1233879",
-    "subtitle": "Barnprogram i svensk tv",
-    "title": "Doktor Snuggles börjar visas",
-    "wikipediaSlug": "Doktor_Snuggles",
-    "year": 1979
-  },
-  {
-    "fact": "Gäster med gester börjar sändas i SVT.",
-    "image": "",
-    "pageViews": 160000,
-    "qid": "Q10512401",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Gäster med gester” börjar sändas",
-    "wikipediaSlug": "G%C3%A4ster_med_gester",
-    "year": 1982
-  },
-  {
-    "fact": "Razzel börjar sändas i SVT.",
-    "image": "",
-    "pageViews": 160000,
-    "qid": "Q10650024",
-    "subtitle": "Svenskt nöjesprogram",
-    "title": "”Razzel” börjar sändas",
-    "wikipediaSlug": "Razzel",
-    "year": 1983
-  },
-  {
-    "fact": "Svenska hjärtan har premiär i TV4.",
-    "image": "",
-    "pageViews": 160000,
-    "qid": "Q10685373",
-    "subtitle": "Svensk tv-serie",
-    "title": "”Svenska hjärtan” har premiär",
-    "wikipediaSlug": "Svenska_hj%C3%A4rtan",
-    "year": 1987
-  },
-  {
-    "fact": "Landet runt börjar sändas i SVT.",
-    "image": "",
-    "pageViews": 160000,
-    "qid": "Q6484483",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Landet runt” börjar sändas",
-    "wikipediaSlug": "Landet_runt",
-    "year": 1987
-  },
-  {
-    "fact": "Tippen börjar sändas i SVT.",
-    "image": "",
-    "pageViews": 160000,
-    "qid": "Q10698609",
-    "subtitle": "Svenskt barnprogram",
-    "title": "Tippen börjar sändas",
-    "wikipediaSlug": "Tippen_(TV-program)",
-    "year": 1993
-  },
-  {
-    "fact": "Knesset börjar sändas på ZTV.",
-    "image": "",
-    "pageViews": 160000,
-    "qid": "Q10546629",
-    "subtitle": "Svenskt humorprogram",
-    "title": "”Knesset” börjar sändas",
-    "wikipediaSlug": "Knesset_(TV-program)",
-    "year": 1995
-  },
-  {
-    "fact": "Kapten Stofil debuterar som svensk seriefigur.",
-    "image": "Joakim_Lindengren.JPG",
-    "pageViews": 160000,
-    "qid": "Q10543522",
-    "subtitle": "Svensk seriefigur",
-    "title": "Kapten Stofil debuterar",
-    "wikipediaSlug": "Kapten_Stofil",
-    "year": 1999
-  },
-  {
-    "fact": "Elvis blir en svensk seriestripp.",
-    "image": "Cronstam.jpg",
-    "pageViews": 160000,
-    "qid": "Q5368159",
-    "subtitle": "Svensk tecknad serie",
-    "title": "Elvis debuterar",
-    "wikipediaSlug": "Elvis_(tecknad_serie)",
-    "year": 2000
-  },
-  {
-    "fact": "Baren börjar sändas i TV3.",
-    "image": "",
-    "pageViews": 160000,
-    "qid": "manual-Baren_(TV-program)",
-    "subtitle": "Svenskt dokusåpeprogram",
-    "title": "”Baren” börjar sändas",
-    "wikipediaSlug": "Baren_(TV-program)",
-    "year": 2000
-  },
-  {
-    "fact": "Kristallen delas ut för första gången.",
-    "image": "KristallenTelevisionAward.jpg",
-    "pageViews": 160000,
-    "qid": "Q477551",
-    "subtitle": "Svenskt tv-pris",
-    "title": "Kristallen delas ut första gången",
-    "wikipediaSlug": "Kristallen",
-    "year": 2005
-  },
-  {
-    "qid": "Q7847400",
-    "title": "‘True Detective’ har premiär",
-    "subtitle": "Amerikansk TV-serie",
-    "year": 2014,
-    "fact": "True Detective är en amerikansk kriminalantologiserie skapad av Nic Pizzolatto för premiumkabelkanalen HBO.",
-    "wikipediaSlug": "True_Detective",
-    "image": "True_Detective_2014_Intertitle.jpg",
-    "pageViews": 159914
-  },
-  {
-    "qid": "Q112761982",
-    "title": "‘The Bear’ sänds för första gången",
-    "subtitle": "Amerikansk komedi-TV-serie",
-    "year": 2022,
-    "fact": "‘The Bear’ är en amerikansk komediserie skapad av Christopher Storer för FX på Hulu.",
-    "wikipediaSlug": "The_Bear_(TV_series)",
-    "image": "The_Bear_Title_Card.jpg",
-    "pageViews": 154755
-  },
-  {
-    "qid": "Q23670",
-    "title": "‘It's Always Sunny in Philadelphia’ sänds för första gången",
-    "subtitle": "Amerikansk komedi-TV-serie",
-    "year": 2005,
-    "fact": "‘It's Always Sunny in Philadelphia’, även ofta kallad Always Sunny eller IASIP, är en amerikansk sitcom skapad av Rob Mac och medutvecklad av Glenn Howerton för FX, som för närvarande sänds på FXX.",
-    "wikipediaSlug": "It%27s_Always_Sunny_in_Philadelphia",
-    "image": "IASIPTC.svg",
-    "pageViews": 153689
-  },
-  {
-    "qid": "Q30014613",
-    "title": "‘Young Sheldon’ har premiär",
-    "subtitle": "Amerikansk komediserie",
-    "year": 2017,
-    "fact": "‘Young Sheldon’ är en amerikansk sitcom-serie skapad av Chuck Lorre och Steven Molaro som sändes på CBS från 25 september 2017 till 16 maj 2024.",
-    "wikipediaSlug": "Young_Sheldon",
-    "image": "Young_Sheldon_title_card.png",
-    "pageViews": 153629
-  },
-  {
-    "qid": "Q223977",
-    "title": "‘Mad Men’ har premiär",
-    "subtitle": "Amerikansk historisk dramaserie",
-    "year": 2007,
-    "fact": "Mad Men är en amerikansk dramaserie i tidstypisk miljö, skapad av Matthew Weiner för AMC.",
-    "wikipediaSlug": "Mad_Men",
-    "image": "Mad-men-title-card.jpg",
-    "pageViews": 152368
-  },
-  {
-    "qid": "Q23577",
-    "title": "‘Dexter’ har premiär",
-    "subtitle": "Amerikansk kriminaldramaserie",
-    "year": 2006,
-    "fact": "‘Dexter’ är en amerikansk kriminal-TV-serie som ursprungligen sändes på Showtime från den 1 oktober 2006 till den 22 september 2013.",
-    "wikipediaSlug": "Dexter_(TV_series)",
-    "image": "Dexter_Logo.svg",
-    "pageViews": 152002
-  },
-  {
-    "qid": "Q53922",
-    "title": "‘American Horror Story’ sänds för första gången",
-    "subtitle": "Amerikansk skräckantologi-TV-serie",
-    "year": 2011,
-    "fact": "American Horror Story (AHS) är en amerikansk skräckantologiserie skapad av Ryan Murphy och Brad Falchuk för kabelnätverket FX.",
-    "wikipediaSlug": "American_Horror_Story",
-    "image": "American_Horror_Story_(FX_television_series)_red_logo.svg",
-    "pageViews": 140234
-  },
-  {
-    "qid": "Q83071",
-    "title": "‘Downton Abbey’ har premiär",
-    "subtitle": "Brittisk historisk dramaserie",
-    "year": 2010,
-    "fact": "‘Downton Abbey’ är en brittisk historisk dramaserie som utspelar sig i början av 1900-talet, skapad och medskriven av Julian Fellowes.",
-    "wikipediaSlug": "Downton_Abbey",
-    "image": "Downton_Abbey_Title_Card.jpg",
-    "pageViews": 138001
-  },
-  {
-    "qid": "Q207803",
-    "title": "‘Bones’ har premiär",
-    "subtitle": "Amerikansk kriminalkomediserie",
-    "year": 2005,
-    "fact": "Bones är en amerikansk polisprocedural dramaserie skapad av Hart Hanson för Fox.",
-    "wikipediaSlug": "Bones_(TV_series)",
-    "image": "Bones_title_card.png",
-    "pageViews": 130981
-  },
-  {
-    "qid": "Q56276181",
-    "title": "‘Shōgun’ har premiär",
-    "subtitle": "Amerikansk TV-serie",
-    "year": 2024,
-    "fact": "‘Shōgun’ är en amerikansk historisk dramaserie skapad av Rachel Kondo och Justin Marks.",
-    "wikipediaSlug": "Sh%C5%8Dgun_(2024_TV_series)",
-    "image": "Shōgun_(2024_miniseries)_poster.jpg",
-    "pageViews": 128877
-  },
-  {
-    "qid": "Q20707362",
-    "title": "‘The Crown’ sänds för första gången",
-    "subtitle": "Brittisk-amerikansk dramaserie",
-    "year": 2016,
-    "fact": "‘The Crown’ är en historisk dramaserie om drottning Elizabeth II:s regeringstid, skapad och till största delen skriven av Peter Morgan, och producerad av Left Bank Pictures och Sony Pictures Television för Netflix.",
-    "wikipediaSlug": "The_Crown_(TV_series)",
-    "image": "The_Crown_Title_Card.jpg",
-    "pageViews": 123565
-  },
-  {
-    "qid": "Q4529",
-    "title": "‘Veronica Mars’ har premiär",
-    "subtitle": "Amerikansk TV-serie",
-    "year": 2004,
-    "fact": "‘Veronica Mars’ är en amerikansk neo-noir-mysterieserie för ungdomar, skapad av manusförfattaren Rob Thomas.",
-    "wikipediaSlug": "Veronica_Mars",
-    "image": "Veronica_mars_intro.jpg",
-    "pageViews": 120660
-  },
-  {
-    "qid": "Q193462",
-    "title": "‘Gilmore Girls’ sänds för första gången",
-    "subtitle": "Amerikansk dramakomediserie för The WB och The CW",
-    "year": 2000,
-    "fact": "Gilmore Girls är en amerikansk komedidramaserie skapad av Amy Sherman-Palladino.",
-    "wikipediaSlug": "Gilmore_Girls",
-    "image": "Gilmore_girls_title_screen.jpg",
-    "pageViews": 120315
-  },
-  {
-    "qid": "Q2579463",
-    "title": "‘Vikings’ har premiär",
-    "subtitle": "Kanadensisk-irländsk historisk dramaserie",
-    "year": 2013,
-    "fact": "‘Vikings’ är en historisk dramaserie skapad och skriven av Michael Hirst.",
-    "wikipediaSlug": "Vikings_(TV_series)",
-    "image": "Vikings_Title.png",
-    "pageViews": 110257
-  },
-  {
-    "qid": "Q35791",
-    "title": "‘Sex and the City’ har premiär",
-    "subtitle": "Amerikansk TV-serie",
-    "year": 1998,
-    "fact": "‘Sex and the City’ är en amerikansk romantisk komedi- och dramaserie skapad av Darren Star för HBO, baserad på tidningskrönikan och boken från 1996 av Candace Bushnell.",
-    "wikipediaSlug": "Sex_and_the_City",
-    "image": "SATC_Title.jpg",
-    "pageViews": 108156
-  },
-  {
-    "qid": "Q23567",
-    "title": "‘Lost’ har premiär",
-    "subtitle": "Amerikansk TV-serie",
-    "year": 2004,
-    "fact": "‘Lost’ är en amerikansk science fiction-äventyrs-drama-TV-serie skapad av Jeffrey Lieber, J.",
-    "wikipediaSlug": "Lost_(TV_series)",
-    "image": "Lost_main_title.svg",
-    "pageViews": 106152
-  },
-  {
-    "qid": "Q1187416",
-    "title": "‘Chicago Fire’ har premiär",
-    "subtitle": "Amerikansk dramaserie",
-    "year": 2012,
-    "fact": "‘Chicago Fire’ är en amerikansk procedurdramaserie som sänds av NBC.",
-    "wikipediaSlug": "Chicago_Fire_(TV_series)",
-    "image": "Chicago_Fire_Title_Card.jpg",
-    "pageViews": 104840
-  },
-  {
-    "qid": "Q201052",
-    "title": "‘American Idol’ sänds för första gången",
-    "subtitle": "Amerikansk sångtävling",
-    "year": 2002,
-    "fact": "American Idol är en amerikansk sångtävlingsserie skapad av Simon Fuller, producerad av Fremantle North America och 19 Entertainment, och distribuerad av Fremantle North America.",
-    "wikipediaSlug": "American_Idol",
-    "image": "American_Idol_ABC_logo.png",
-    "pageViews": 104461
-  },
-  {
-    "qid": "Q23733",
-    "title": "‘Seinfeld’ har premiär",
-    "subtitle": "Amerikansk TV-situationskomedi",
-    "year": 1989,
-    "fact": "‘Seinfeld’ är en amerikansk situationskomedi skapad av Larry David och Jerry Seinfeld.",
-    "wikipediaSlug": "Seinfeld",
-    "image": "Seinfeld_logo.svg",
-    "pageViews": 103922
-  },
-  {
-    "qid": "Q104007235",
-    "title": "‘Only Murders in the Building’ sänds för första gången",
-    "subtitle": "Amerikansk mysterie-komediserie från 2020-talet",
-    "year": 2021,
-    "fact": "‘Only Murders in the Building’ är en amerikansk tv-serie i genren mysterium, komedi och drama skapad av Steve Martin och John Hoffman.",
-    "wikipediaSlug": "Only_Murders_in_the_Building",
-    "image": "Only_Murders_logo.jpeg",
-    "pageViews": 98747
-  },
-  {
-    "qid": "Q147235",
-    "title": "‘How I Met Your Mother’ sänds för första gången",
-    "subtitle": "Amerikansk situationskomedi",
-    "year": 2005,
-    "fact": "‘How I Met Your Mother’ är en amerikansk sitcom skapad av Craig Thomas och Carter Bays för CBS.",
-    "wikipediaSlug": "How_I_Met_Your_Mother",
-    "image": "HowIMetYourMother.svg",
-    "pageViews": 96929
-  },
-  {
-    "qid": "Q171254",
-    "title": "‘Sons of Anarchy’ har premiär",
-    "subtitle": "Amerikansk TV-serie",
-    "year": 2008,
-    "fact": "‘Sons of Anarchy’ är en amerikansk action-krimdramaserie skapad av Kurt Sutter för FX.",
-    "wikipediaSlug": "Sons_of_Anarchy",
-    "image": "SOATitlecard.jpg",
-    "pageViews": 95631
-  },
-  {
-    "qid": "Q2813828",
-    "title": "‘Banshee’ sänds för första gången",
-    "subtitle": "Amerikansk actiondramaserie",
-    "year": 2013,
-    "fact": "‘Banshee’ är en amerikansk actionkriminalthrillerserie skapad av Jonathan Tropper och David Schickler som sändes på Cinemax under fyra säsonger från den 11 januari 2013 till den 20 maj 2016, och omfattade totalt 38 avsnitt.",
-    "wikipediaSlug": "Banshee_(TV_series)",
-    "image": "Banshee_(Home_Box_Office,_Inc)_blood_red_logo.svg",
-    "pageViews": 94988
-  },
-  {
-    "qid": "Q13417244",
-    "title": "‘Brooklyn Nine-Nine’ har premiär",
-    "subtitle": "Amerikansk TV-serie",
-    "year": 2013,
-    "fact": "Brooklyn Nine-Nine är en amerikansk polisprocedural sitcomeserie som sändes på Fox från den 17 september 2013 till den 20 maj 2018, och senare på NBC, från den 10 januari 2019 till den 16 september 2021, i åtta säsonger och 153 avsnitt.",
-    "wikipediaSlug": "Brooklyn_Nine-Nine",
-    "image": "Brooklyn_Nine-Nine_Logo.png",
-    "pageViews": 93225
-  },
-  {
-    "qid": "Q19520525",
-    "title": "‘Lucifer’ har premiär",
-    "subtitle": "Amerikansk TV-serie",
-    "year": 2016,
-    "fact": "‘Lucifer’ är en amerikansk urban fantasy-TV-serie utvecklad av Tom Kapinos som började sändas den 25 januari 2016 och avslutades den 10 september 2021.",
-    "wikipediaSlug": "Lucifer_(TV_series)",
-    "image": "Lucifer,_title.jpg",
-    "pageViews": 91042
-  },
-  {
-    "qid": "Q13417213",
-    "title": "‘Mom’ har premiär",
-    "subtitle": "Amerikansk situationskomedi skapad av Chuck Lorre för CBS",
-    "year": 2013,
-    "fact": "‘Mom’ är en amerikansk tv-sitcom skapad av Chuck Lorre, Eddie Gorodetsky och Gemma Baker som sändes under åtta säsonger på CBS från den 23 september 2013 till den 13 maj 2021.",
-    "wikipediaSlug": "Mom_(TV_series)",
-    "image": "Mom_TV_series_logo.png",
-    "pageViews": 90495
-  },
-  {
-    "qid": "Q23673",
-    "title": "‘Once Upon a Time’ sänds för första gången",
-    "subtitle": "Amerikansk TV-serie",
-    "year": 2011,
-    "fact": "‘Once Upon a Time’ är en amerikansk fantasyäventyrsdramaserie som sändes under sju säsonger på ABC från den 23 oktober 2011 till den 18 maj 2018.",
-    "wikipediaSlug": "Once_Upon_a_Time_(TV_series)",
-    "image": "Once_Upon_A_Time_logo.svg",
-    "pageViews": 90381
-  },
-  {
-    "qid": "Q27089570",
-    "title": "‘The Punisher’ sänds för första gången",
-    "subtitle": "Amerikansk superhjälte-TV-serie",
-    "year": 2017,
-    "fact": "Marvel's The Punisher är en amerikansk TV-serie skapad av Steve Lightfoot för streamingtjänsten Netflix, baserad på Marvel Comics karaktär Punisher.",
-    "wikipediaSlug": "The_Punisher_(TV_series)",
-    "image": "Punisher_(TV_series)_logo.jpg",
-    "pageViews": 90150
-  },
-  {
-    "qid": "Q16290",
-    "title": "‘Star Trek: The Next Generation’ sänds för första gången",
-    "subtitle": "Amerikansk TV-serie",
-    "year": 1987,
-    "fact": "Star Trek: The Next Generation (TNG) är en amerikansk science fiction-serie skapad av Gene Roddenberry.",
-    "wikipediaSlug": "Star_Trek:_The_Next_Generation",
-    "image": "Star_Trek_The_Next_Generation_Logo.svg",
-    "pageViews": 89875
-  },
-  {
-    "qid": "Q836393",
-    "title": "‘Teen Wolf’ sänds för första gången",
-    "subtitle": "Amerikansk övernaturlig tonårsdramaserie",
-    "year": 2011,
-    "fact": "Teen Wolf är en amerikansk övernaturlig ungdomsdramaserie utvecklad av Jeff Davis för MTV.",
-    "wikipediaSlug": "Teen_Wolf_(2011_TV_series)",
-    "image": "Teen_Wolf_Intertitle.png",
-    "pageViews": 89747
-  },
-  {
-    "qid": "Q494244",
-    "title": "‘M*A*S*H’ har premiär",
-    "subtitle": "Amerikansk TV-serie",
-    "year": 1972,
-    "fact": "‘M*A*S*H’ är en amerikansk krigskomedidrama-TV-serie som sändes på CBS från den 17 september 1972 till den 28 februari 1983.",
-    "wikipediaSlug": "M*A*S*H_(TV_series)",
-    "image": "M*A*S*H_TV_title_screen.jpg",
-    "pageViews": 89427
-  },
-  {
-    "qid": "Q32488",
-    "title": "‘2 Broke Girls’ sänds för första gången",
-    "subtitle": "Amerikansk situationskomedi",
-    "year": 2011,
-    "fact": "‘2 Broke Girls’ är en amerikansk tv-sitcom som sändes på CBS från den 19 september 2011 till den 17 april 2017.",
-    "wikipediaSlug": "2_Broke_Girls",
-    "image": "2_Broke_Girls_logo.jpg",
-    "pageViews": 84415
-  },
-  {
-    "qid": "Q751917",
-    "title": "‘Midsomer Murders’ har premiär",
-    "subtitle": "Brittisk kriminalserie",
-    "year": 1997,
-    "fact": "‘Midsomer Murders’ är en brittisk deckarserie, bearbetad av Anthony Horowitz och Douglas Watkinson från romanerna i bokserien om kommissarie Barnaby, skapad av Caroline Graham.",
-    "wikipediaSlug": "Midsomer_Murders",
-    "image": "Midsomer_Murders_logo.svg",
-    "pageViews": 83734
-  },
-  {
-    "qid": "Q20642206",
-    "title": "‘Narcos’ sänds för första gången",
-    "subtitle": "Amerikansk kriminaldramaserie",
-    "year": 2015,
-    "fact": "‘Narcos’ är en amerikansk kriminaldramaserie skapad och producerad av Chris Brancato, Carlo Bernard och Doug Miro.",
-    "wikipediaSlug": "Narcos",
-    "image": "Narcos_title_card.jpg",
-    "pageViews": 83424
-  },
-  {
-    "qid": "Q56194",
-    "title": "‘24’ sänds för första gången",
-    "subtitle": "Amerikansk TV-serie",
-    "year": 2001,
-    "fact": "‘24’ är en amerikansk actiondramaserie skapad av Joel Surnow och Robert Cochran för Fox.",
-    "wikipediaSlug": "24_(TV_series)",
-    "image": "24-Logo.svg",
-    "pageViews": 77811
-  },
-  {
-    "qid": "Q208647",
-    "title": "‘Married... with Children’ har premiär",
-    "subtitle": "Amerikansk TV-situationskomedi",
-    "year": 1987,
-    "fact": "Married... with Children är en amerikansk TV-sitcom skapad av Michael G.",
-    "wikipediaSlug": "Married..._with_Children",
-    "image": "Married_…_With_Children_(Sony_Pictures_Television_series_logo).svg",
-    "pageViews": 77620
-  },
-  {
-    "qid": "Q80044",
-    "title": "‘Prison Break’ sänds för första gången",
-    "subtitle": "Amerikansk TV-serie",
-    "year": 2005,
-    "fact": "‘Prison Break’ är en amerikansk kriminaldramaserie skapad av Paul Scheuring för Fox.",
-    "wikipediaSlug": "Prison_Break",
-    "image": "Prison-break-s1-intro.jpg",
-    "pageViews": 77045
-  },
-  {
-    "qid": "Q30634329",
-    "title": "‘The Marvelous Mrs. Maisel’ sänds för första gången",
-    "subtitle": "Amerikansk TV-serie",
-    "year": 2017,
-    "fact": "The Marvelous Mrs. Maisel.",
-    "wikipediaSlug": "The_Marvelous_Mrs._Maisel",
-    "image": "The_Marvelous_Mrs._Maisel.svg",
-    "pageViews": 76379
-  },
-  {
-    "qid": "Q64584978",
-    "title": "‘Emily in Paris’ har premiär",
-    "subtitle": "Amerikansk dramakomediserie",
-    "year": 2020,
-    "fact": "‘Emily in Paris’ är en amerikansk romantisk komedi-dramaserie skapad av Darren Star för Netflix.",
-    "wikipediaSlug": "Emily_in_Paris",
-    "image": "Emily_in_Paris_logo.svg",
-    "pageViews": 75283
-  },
-  {
-    "qid": "Q484020",
-    "title": "‘Mr Bean’ sänds för första gången",
-    "subtitle": "Brittisk komediserie",
-    "year": 1990,
-    "fact": "Herr",
-    "wikipediaSlug": "Mr._Bean",
-    "image": "Mr._bean_title_card.jpg",
-    "pageViews": 75202
-  },
-  {
-    "qid": "Q3330940",
-    "title": "‘House of Cards’ sänds för första gången",
-    "subtitle": "Politiskt TV-drama från 2010-talet",
-    "year": 2013,
-    "fact": "‘House of Cards’ är en amerikansk politisk thriller-tv-serie skapad av Beau Willimon för streamingtjänsten Netflix.",
-    "wikipediaSlug": "House_of_Cards_(American_TV_series)",
-    "image": "House_of_Cards_title_card.png",
-    "pageViews": 75134
   }
 ]

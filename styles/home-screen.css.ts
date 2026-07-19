@@ -53,17 +53,6 @@ const homeStageIn = keyframes({
   },
 });
 
-const homeStageInCompact = keyframes({
-  from: {
-    opacity: 0,
-    transform: "translateY(-2.15rem) scale(0.97)",
-  },
-  to: {
-    opacity: 1,
-    transform: "translateY(-3.5rem) scale(1)",
-  },
-});
-
 const actionRise = keyframes({
   from: {
     opacity: 0,
@@ -99,8 +88,8 @@ export const wrapper = style({
   width: "100%",
   "@media": {
     [media.compact]: {
-      padding: `0 ${vars.space.lg}`,
-      paddingBottom: vars.space["2xl"],
+      justifyContent: "flex-start",
+      padding: `${vars.space["4xl"]} ${vars.space.lg} ${vars.space.xl}`,
     },
   },
 });
@@ -116,8 +105,8 @@ export const stage = style({
   zIndex: 2,
   "@media": {
     [media.compact]: {
-      animation: `${homeStageInCompact} ${vars.duration.cinematic} ${vars.easing.ios} both`,
-      transform: "translateY(-3.5rem)",
+      gap: vars.space.xl,
+      width: `min(100%, ${vars.size.contentWidth})`,
     },
     [media.reduceMotion]: {
       animation: "none",
@@ -180,11 +169,10 @@ export const dailyAction = style({
 
 const dailyStatusBadge = style({
   alignItems: "center",
-  backdropFilter: "blur(20px) saturate(1.45)",
-  WebkitBackdropFilter: "blur(20px) saturate(1.45)",
+  backdropFilter: "blur(1rem)",
+  WebkitBackdropFilter: "blur(1rem)",
   borderRadius: vars.radius.pill,
-  boxShadow:
-    "0 0.55rem 1.35rem rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.42)",
+  boxShadow: vars.shadow.card,
   display: "inline-flex",
   fontSize: vars.fontSize.xs,
   fontWeight: vars.fontWeight.bold,
@@ -212,16 +200,12 @@ const dailyStatusBadge = style({
 export const dailyStatusBadgeNew = style([
   dailyStatusBadge,
   {
-    background:
-      "linear-gradient(180deg, rgba(34, 197, 94, 0.7), rgba(21, 128, 61, 0.48))",
-    border: "1px solid rgba(187, 247, 208, 0.72)",
-    color: "#ecfdf5",
-    textShadow: "0 1px 0 rgba(0, 0, 0, 0.28)",
+    background: vars.color.surfaceRaised,
+    border: `1px solid ${vars.color.accentLogo}`,
+    color: vars.color.accentLogo,
     selectors: {
       "&:hover": {
-        background:
-          "linear-gradient(180deg, rgba(34, 197, 94, 0.82), rgba(21, 128, 61, 0.58))",
-        borderColor: "rgba(220, 252, 231, 0.86)",
+        background: vars.color.accentSoft,
       },
     },
   },
@@ -230,16 +214,12 @@ export const dailyStatusBadgeNew = style([
 export const dailyStatusBadgeUnfinished = style([
   dailyStatusBadge,
   {
-    background:
-      "linear-gradient(180deg, rgba(59, 130, 246, 0.72), rgba(29, 78, 216, 0.5))",
-    border: "1px solid rgba(191, 219, 254, 0.76)",
-    color: "#eff6ff",
-    textShadow: "0 1px 0 rgba(0, 0, 0, 0.3)",
+    background: vars.color.surfaceRaised,
+    border: `1px solid ${vars.color.borderStrong}`,
+    color: vars.color.text,
     selectors: {
       "&:hover": {
-        background:
-          "linear-gradient(180deg, rgba(59, 130, 246, 0.84), rgba(29, 78, 216, 0.6))",
-        borderColor: "rgba(219, 234, 254, 0.9)",
+        background: vars.color.surfaceStrong,
       },
     },
   },
@@ -247,12 +227,12 @@ export const dailyStatusBadgeUnfinished = style([
 
 export const calendarButton = style({
   alignItems: "center",
-  background: `color-mix(in srgb, ${vars.color.text} 8%, transparent)`,
-  backdropFilter: "blur(20px)",
-  WebkitBackdropFilter: "blur(20px)",
-  border: `1px solid color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
+  background: vars.color.surfaceChrome,
+  backdropFilter: "blur(1rem)",
+  WebkitBackdropFilter: "blur(1rem)",
+  border: `1px solid ${vars.color.border}`,
   borderRadius: vars.radius.sm,
-  boxShadow: "0 4px 16px rgba(0, 0, 0, 0.15)",
+  boxShadow: vars.shadow.card,
   color: vars.color.text,
   display: "inline-flex",
   flex: "0 0 auto",
@@ -263,9 +243,9 @@ export const calendarButton = style({
   width: vars.size.controlHeight,
   selectors: {
     "&:hover": {
-      background: `color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
-      borderColor: `color-mix(in srgb, ${vars.color.text} 20%, transparent)`,
-      boxShadow: "0 6px 20px rgba(0, 0, 0, 0.2)",
+      background: vars.color.surfaceRaised,
+      borderColor: vars.color.borderStrong,
+      boxShadow: vars.shadow.panel,
     },
     "&:active": {
       opacity: 0.8,
@@ -316,6 +296,7 @@ export const calendarDialog = style({
   overflow: "auto",
   padding: `${vars.space["2xl"]} ${vars.space.lg} ${vars.space.lg}`,
   position: "relative",
+  touchAction: "none",
   transition: `transform ${vars.duration.normal} ${vars.easing.emphasized}`,
   width: "min(100%, 32rem)",
   "@media": {
@@ -329,6 +310,13 @@ export const calendarDialog = style({
     },
   },
 });
+
+export const calendarDialogDragging = style([
+  calendarDialog,
+  {
+    animation: "none",
+  },
+]);
 
 export const calendarDialogClosing = style([
   calendarDialog,
@@ -351,12 +339,18 @@ export const calendarHandle = style({
   touchAction: "none",
   WebkitTapHighlightColor: "transparent",
   width: "3rem",
-  zIndex: 1,
+  // Give the visible handle a generous touch target without changing its appearance.
   selectors: {
+    "&::before": {
+      content: '""',
+      inset: "-0.75rem -1.5rem",
+      position: "absolute",
+    },
     "&:active": {
       cursor: "grabbing",
     },
   },
+  zIndex: 1,
 });
 
 export const footer = style({
@@ -375,6 +369,11 @@ export const footer = style({
       paddingBottom: `calc(${vars.space["2xl"]} + env(safe-area-inset-bottom, 0px))`,
       paddingLeft: vars.space.lg,
       paddingRight: vars.space.lg,
+      position: "relative",
+      bottom: "auto",
+      left: "auto",
+      marginTop: vars.space["3xl"],
+      transform: "none",
       width: "100%",
     },
   },
@@ -475,9 +474,7 @@ export const heroItemRadio = style([
     width: "clamp(140px, 22vw, 340px)",
     "@media": {
       [media.compact]: {
-        bottom: "13%",
-        left: "-2%",
-        width: "clamp(130px, 38vw, 170px)",
+        display: "none",
       },
     },
   },
@@ -501,9 +498,7 @@ export const heroItemVinyl = style([
     width: "clamp(150px, 24vw, 360px)",
     "@media": {
       [media.compact]: {
-        bottom: "11%",
-        right: "-4%",
-        width: "clamp(140px, 40vw, 180px)",
+        display: "none",
       },
     },
   },
@@ -516,9 +511,10 @@ export const heroImageVinyl = style([heroImageBase]);
 const yearBadgeBase = style({
   alignItems: "center",
   borderRadius: "50%",
-  boxShadow:
-    "0 8px 16px rgba(0, 0, 0, 0.3), inset 0 -4px 8px rgba(0, 0, 0, 0.2), inset 0 4px 8px rgba(255, 255, 255, 0.4)",
-  color: "#fff",
+  background: vars.color.surfaceRaised,
+  border: `1px solid ${vars.color.accentLogo}`,
+  boxShadow: `0 0 1.75rem ${vars.color.accentGlow}, ${vars.shadow.card}`,
+  color: vars.color.accentLogo,
   display: "flex",
   fontFamily: vars.font.body,
   fontSize: "clamp(0.85rem, 1.5vw, 1.25rem)",
@@ -527,7 +523,6 @@ const yearBadgeBase = style({
   justifyContent: "center",
   letterSpacing: "0.02em",
   position: "absolute",
-  textShadow: "0 1px 2px rgba(0,0,0,0.3)",
   width: "clamp(3rem, 5vw, 4.5rem)",
   zIndex: 3,
   "@media": {
@@ -542,8 +537,6 @@ const yearBadgeBase = style({
 export const yearBadge1949 = style([
   yearBadgeBase,
   {
-    background:
-      "radial-gradient(circle at 30% 30%, #ffd466 0%, #f5b731 40%, #c88c0b 100%)",
     right: "-1rem",
     top: "10%",
     "@media": {
@@ -558,8 +551,6 @@ export const yearBadge1949 = style([
 export const yearBadge1969 = style([
   yearBadgeBase,
   {
-    background:
-      "radial-gradient(circle at 30% 30%, #ff8cc0 0%, #e85d9c 40%, #b8306c 100%)",
     left: "-1.5rem",
     top: "20%",
     "@media": {
@@ -574,8 +565,6 @@ export const yearBadge1969 = style([
 export const yearBadge1962 = style([
   yearBadgeBase,
   {
-    background:
-      "radial-gradient(circle at 30% 30%, #c482de 0%, #9b59b6 40%, #6f2d8a 100%)",
     bottom: "10%",
     right: "-1.5rem",
     "@media": {
@@ -590,8 +579,6 @@ export const yearBadge1962 = style([
 export const yearBadge1974 = style([
   yearBadgeBase,
   {
-    background:
-      "radial-gradient(circle at 30% 30%, #7ee082 0%, #4caf50 40%, #2e7a31 100%)",
     bottom: "20%",
     left: "-1rem",
     "@media": {
@@ -604,18 +591,6 @@ export const yearBadge1974 = style([
 ]);
 
 /* ── Scattered small decorations (dots, shapes) ────────────── */
-
-export const scatterDots = style({
-  inset: 0,
-  pointerEvents: "none",
-  position: "absolute",
-  zIndex: 0,
-});
-
-export const dot = style({
-  borderRadius: "50%",
-  position: "absolute",
-});
 
 /* ── iOS 18 Profile Button Styles ──────────────────────────── */
 
@@ -659,9 +634,9 @@ export const profileAvatar = style({
   justifyContent: "center",
   fontWeight: vars.fontWeight.bold,
   fontSize: vars.fontSize.sm,
-  color: "#ffffff",
-  background: "linear-gradient(135deg, #E85D9C 0%, #9B59B6 100%)", // Vibrant brand matching gradient
-  boxShadow: `0 2px 8px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 0 1px color-mix(in srgb, ${vars.color.text} 15%, transparent)`,
+  color: vars.color.backdropStrong,
+  background: vars.color.accentLogo,
+  boxShadow: `0 0 0 1px ${vars.color.borderStrong}, ${vars.shadow.card}`,
   position: "relative",
 });
 

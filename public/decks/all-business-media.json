@@ -1,15 +1,5 @@
 [
   {
-    "qid": "Q19909",
-    "title": "‘France Musique’ lanseras",
-    "subtitle": "Radiostation",
-    "year": 1954,
-    "fact": "France Musique är en fransk nationell public service-radiokanal som ägs och drivs av Radio France.",
-    "wikipediaSlug": "France_Musique",
-    "image": "France_Musique_logo_2021.svg",
-    "pageViews": 1019730
-  },
-  {
     "fact": "Aftonbladet grundas av Lars Johan Hierta.",
     "image": "Kungsbrohuset1.JPG",
     "pageViews": 260000,
@@ -41,7 +31,7 @@
   },
   {
     "fact": "Kalle Anka & C:o börjar ges ut i Sverige.",
-    "image": "",
+    "image": "Wikidata-logo.svg",
     "pageViews": 260000,
     "qid": "Q2743606",
     "subtitle": "Svensk serietidning",
@@ -81,7 +71,7 @@
   },
   {
     "fact": "Solsidan har premiär i TV4.",
-    "image": "",
+    "image": "Wikidata-logo.svg",
     "pageViews": 260000,
     "qid": "Q10673360",
     "subtitle": "Svensk tv-serie",
@@ -111,7 +101,7 @@
   },
   {
     "fact": "Kamratposten börjar ges ut.",
-    "image": "",
+    "image": "Wikidata-logo.svg",
     "pageViews": 220000,
     "qid": "Q3377873",
     "subtitle": "Svensk barntidning",
@@ -161,7 +151,7 @@
   },
   {
     "fact": "Farmen börjar sändas i TV4.",
-    "image": "",
+    "image": "Wikidata-logo.svg",
     "pageViews": 220000,
     "qid": "Q20113827",
     "subtitle": "Svenskt tv-program",
@@ -171,7 +161,7 @@
   },
   {
     "fact": "Let's Dance börjar sändas i TV4.",
-    "image": "",
+    "image": "Wikidata-logo.svg",
     "pageViews": 220000,
     "qid": "manual-Let's_Dance_(Sverige)",
     "subtitle": "Svenskt tv-program",
@@ -191,7 +181,7 @@
   },
   {
     "fact": "Så mycket bättre börjar sändas i TV4.",
-    "image": "",
+    "image": "Wikidata-logo.svg",
     "pageViews": 220000,
     "qid": "Q2757779",
     "subtitle": "Svenskt musikprogram",
@@ -221,7 +211,7 @@
   },
   {
     "fact": "Rapport börjar sändas i Sveriges Television.",
-    "image": "",
+    "image": "Wikidata-logo.svg",
     "pageViews": 200000,
     "qid": "manual-Rapport_(TV-program)",
     "subtitle": "Svenskt nyhetsprogram",
@@ -268,345 +258,5 @@
     "title": "”Postkodmiljonären” börjar sändas",
     "wikipediaSlug": "Postkodmiljon%C3%A4ren",
     "year": 2005
-  },
-  {
-    "fact": "Sydsvenskan grundas i Malmö.",
-    "image": "Kvarteret_Kaninen,_Malmö_2014.jpg",
-    "pageViews": 180000,
-    "qid": "Q1371686",
-    "subtitle": "Svensk dagstidning",
-    "title": "Sydsvenskan grundas",
-    "wikipediaSlug": "Sydsvenskan",
-    "year": 1848
-  },
-  {
-    "fact": "VeckoRevyn börjar ges ut.",
-    "image": "Inga_Tidblad.jpg",
-    "pageViews": 180000,
-    "qid": "Q7917761",
-    "subtitle": "Svensk veckotidning",
-    "title": "VeckoRevyn börjar ges ut",
-    "wikipediaSlug": "Veckorevyn",
-    "year": 1935
-  },
-  {
-    "fact": "Anita och Televinken blir folkkära i svensk barnradio och tv.",
-    "image": "Anita_&_Televinken_1966.jpg",
-    "pageViews": 180000,
-    "qid": "Q10412213",
-    "subtitle": "Svensk barnradio",
-    "title": "Televinken blir barnradiofigur",
-    "wikipediaSlug": "Anita_och_Televinken",
-    "year": 1964
-  },
-  {
-    "fact": "Ring så spelar vi börjar sändas i Sveriges Radio.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q10655464",
-    "subtitle": "Svenskt radioprogram",
-    "title": "”Ring så spelar vi” börjar sändas",
-    "wikipediaSlug": "Ring_s%C3%A5_spelar_vi",
-    "year": 1968
-  },
-  {
-    "fact": "Okej börjar ges ut och blir stor bland musikintresserade ungdomar.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q3371297",
-    "subtitle": "Svensk ungdomstidning",
-    "title": "Okej börjar ges ut",
-    "wikipediaSlug": "Okej_(tidning)",
-    "year": 1980
-  },
-  {
-    "fact": "Tracks börjar sändas i Sveriges Radio.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q549303",
-    "subtitle": "Svenskt radioprogram",
-    "title": "”Tracks” börjar sändas",
-    "wikipediaSlug": "Tracks",
-    "year": 1984
-  },
-  {
-    "fact": "Mamma Mu dyker upp i radio.",
-    "image": "Mamma-mu-och-krakan.jpg",
-    "pageViews": 180000,
-    "qid": "Q6745311",
-    "subtitle": "Svensk barnboksfigur",
-    "title": "Mamma Mu dyker upp",
-    "wikipediaSlug": "Mamma_Mu",
-    "year": 1985
-  },
-  {
-    "fact": "Spanarna börjar sändas i Sveriges Radio.",
-    "image": "Ingvar_Storm.JPG",
-    "pageViews": 180000,
-    "qid": "Q10674288",
-    "subtitle": "Svenskt radioprogram",
-    "title": "”Spanarna” börjar sändas",
-    "wikipediaSlug": "Spanarna",
-    "year": 1988
-  },
-  {
-    "fact": "Bengt Magnusson blir en av TV4:s mest kända nyhetsankare.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 180000,
-    "qid": "Q10428088",
-    "subtitle": "Svensk nyhetsprofil",
-    "title": "Bengt Magnusson börjar i TV4",
-    "wikipediaSlug": "Bengt_Magnusson",
-    "year": 1990
-  },
-  {
-    "fact": "Morgonpasset i P3 börjar sändas.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q10589094",
-    "subtitle": "Svenskt radioprogram",
-    "title": "”Morgonpasset” börjar sändas",
-    "wikipediaSlug": "Morgonpasset_i_P3",
-    "year": 1992
-  },
-  {
-    "fact": "Sen kväll med Luuk börjar sändas i TV4.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q7449907",
-    "subtitle": "Svenskt talkshowprogram",
-    "title": "”Sen kväll med Luuk” börjar sändas",
-    "wikipediaSlug": "Sen_kv%C3%A4ll_med_Luuk",
-    "year": 1996
-  },
-  {
-    "fact": "Hem till Midgård har premiär i TV4.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q5710883",
-    "subtitle": "Svensk komediserie",
-    "title": "”Hem till Midgård” har premiär",
-    "wikipediaSlug": "Hem_till_Midg%C3%A5rd",
-    "year": 2003
-  },
-  {
-    "fact": "Morden i Sandhamn har premiär i TV4.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q4132634",
-    "subtitle": "Svensk kriminalserie",
-    "title": "”Morden i Sandhamn” har premiär",
-    "wikipediaSlug": "Morden_i_Sandhamn",
-    "year": 2010
-  },
-  {
-    "fact": "Allers börjar ges ut.",
-    "image": "IMG_9245_Allers_no1_1899_Ernst_Westerlund.JPG",
-    "pageViews": 160000,
-    "qid": "Q2837951",
-    "subtitle": "Svensk veckotidning",
-    "title": "Allers börjar ges ut",
-    "wikipediaSlug": "Allers",
-    "year": 1879
-  },
-  {
-    "fact": "Hemmets Journal börjar ges ut.",
-    "image": "Hemmets_Journal_nr_38_1961_(Ria_Wägner).jpg",
-    "pageViews": 160000,
-    "qid": "Q5712416",
-    "subtitle": "Svensk veckotidning",
-    "title": "Hemmets Journal börjar ges ut",
-    "wikipediaSlug": "Hemmets_Journal",
-    "year": 1921
-  },
-  {
-    "fact": "Svenska hjärtan har premiär i TV4.",
-    "image": "",
-    "pageViews": 160000,
-    "qid": "Q10685373",
-    "subtitle": "Svensk tv-serie",
-    "title": "”Svenska hjärtan” har premiär",
-    "wikipediaSlug": "Svenska_hj%C3%A4rtan",
-    "year": 1987
-  },
-  {
-    "qid": "Q186068",
-    "title": "‘Fox News’ lanseras",
-    "subtitle": "TV-kanal",
-    "year": 1996,
-    "fact": "Fox News Channel (FNC), ofta kallad Fox News, är en amerikansk multinationell konservativ nyhets- och politisk kommentatorskanal samt webbplats baserad i New York.",
-    "wikipediaSlug": "Fox_News",
-    "image": "Fox_News_Channel_logo.svg",
-    "pageViews": 139686
-  },
-  {
-    "qid": "Q122864421",
-    "title": "‘Fresh and Fit Podcast’ startar",
-    "subtitle": "Podcast om mäns rättigheter",
-    "year": 2020,
-    "fact": "‘Fresh and Fit Podcast’ är ett program som leds av den sudanesisk-amerikanske bloggaren Amrou Fudl, känd online under pseudonymen Myron Gaines, och den barbados-amerikanske Walter Weekes, som går under smeknamnet \"FreshPrinceCEO\".",
-    "wikipediaSlug": "Fresh_and_Fit_Podcast",
-    "image": "Fresh_&_Fit_logo.jpg",
-    "pageViews": 133923
-  },
-  {
-    "qid": "Q48340",
-    "title": "‘CNN’ lanseras",
-    "subtitle": "TV-kanal",
-    "year": 1980,
-    "fact": "Cable News Network (CNN) är ett amerikanskt multinationellt nyhetsmedieföretag och flaggskeppet för CNN Worldwide, en division inom Warner Bros.",
-    "wikipediaSlug": "CNN",
-    "image": "CNN_Logo_(2014).svg",
-    "pageViews": 133098
-  },
-  {
-    "qid": "Q11148",
-    "title": "‘The Guardian’ lanseras",
-    "subtitle": "Tidning",
-    "year": 1821,
-    "fact": "The Guardian är en brittisk dagstidning.",
-    "wikipediaSlug": "The_Guardian",
-    "image": "The_Guardian_2018.svg",
-    "pageViews": 132174
-  },
-  {
-    "qid": "Q154958",
-    "title": "‘Nickelodeon’ lanseras",
-    "subtitle": "TV-kanal",
-    "year": 1979,
-    "fact": "Nickelodeon är en amerikansk betal-tv-kanal och flaggskeppet för Nickelodeon Group, en underavdelning av Paramount Media Networks, en division inom Paramount Skydance.",
-    "wikipediaSlug": "Nickelodeon",
-    "image": "Nickelodeon_2023_logo_(outline).svg",
-    "pageViews": 104191
-  },
-  {
-    "qid": "Q310172",
-    "title": "‘Al Arabiya’ lanseras",
-    "subtitle": "TV-kanal",
-    "year": 2003,
-    "fact": "Al Arabiya är en statlig saudisk internationell arabiskspråkig tv-nyhetskanal.",
-    "wikipediaSlug": "Al_Arabiya",
-    "image": "Al_Arabiya_-Logo_(1).png",
-    "pageViews": 98508
-  },
-  {
-    "qid": "Q708290",
-    "title": "‘Cartoon Network’ lanseras",
-    "subtitle": "TV-kanal",
-    "year": 1992,
-    "fact": "Cartoon Network (CN) är en amerikansk kabel-TV-kanal som drivs av divisionen Global Linear Networks inom Warner Bros.",
-    "wikipediaSlug": "Cartoon_Network",
-    "image": "Cartoon_Network_2010_logo.svg",
-    "pageViews": 97260
-  },
-  {
-    "qid": "Q1160945",
-    "title": "‘BBC News’ lanseras",
-    "subtitle": "Tidning",
-    "year": 1922,
-    "fact": "BBC News är en verksamhetsdivision inom British Broadcasting Corporation (BBC) ansvarig för insamling och sändning av nyheter och aktuella händelser i Storbritannien och världen över.",
-    "wikipediaSlug": "BBC_News",
-    "image": "BBC_News_2022_(Alt).svg",
-    "pageViews": 88864
-  },
-  {
-    "qid": "Q210534",
-    "title": "‘Daily Mail’ lanseras",
-    "subtitle": "Tidning",
-    "year": 1896,
-    "fact": "‘Daily Mail’, ofta bara kallad ‘Mail’, är en brittisk daglig konservativ kvällstidning som grundades 1896 och ges ut i London.",
-    "wikipediaSlug": "Daily_Mail",
-    "image": "Daily_Mail_10_July_2021.png",
-    "pageViews": 87576
-  },
-  {
-    "qid": "Q104863837",
-    "title": "‘Call Her Daddy’ startar",
-    "subtitle": "Sexrådgivnings- och komedipodcast",
-    "year": 2018,
-    "fact": "Call Her Daddy är en podcast för rådgivning och komedi, skapad av Alex Cooper och Sofia Franklyn 2018.",
-    "wikipediaSlug": "Call_Her_Daddy",
-    "image": "Call_Her_Daddy_Podcast_Cover.jpg",
-    "pageViews": 84840
-  },
-  {
-    "qid": "Q501070",
-    "title": "‘Channel 4’ lanseras",
-    "subtitle": "TV-kanal",
-    "year": 1982,
-    "fact": "Channel 4 är en brittisk gratis, marksänd offentlig TV-kanal som ägs och drivs av Channel Four Television Corporation.",
-    "wikipediaSlug": "Channel_4",
-    "image": "Channel_4_(On_Demand)_2023.svg",
-    "pageViews": 81304
-  },
-  {
-    "qid": "Q166180",
-    "title": "‘France 24’ lanseras",
-    "subtitle": "TV-kanal",
-    "year": 2006,
-    "fact": "France 24 är en fransk statlig, offentligt finansierad internationell nyhets-tv-kanal baserad i Paris.",
-    "wikipediaSlug": "France_24",
-    "image": "France_24_logo_(2013).svg",
-    "pageViews": 80994
-  },
-  {
-    "qid": "Q23633",
-    "title": "‘HBO’ lanseras",
-    "subtitle": "TV-kanal",
-    "year": 1972,
-    "fact": "Home Box Office (HBO) är ett amerikanskt premium-tv-nätverk och tjänst, som är flaggskeppsprodukten för det namngivna moderbolaget Home Box Office, Inc., ett dotterbolag till Warner Bros.",
-    "wikipediaSlug": "HBO",
-    "image": "HBO_logo.svg",
-    "pageViews": 80348
-  },
-  {
-    "qid": "Q166032",
-    "title": "‘The Washington Post’ lanseras",
-    "subtitle": "Tidning",
-    "year": 1877,
-    "fact": "The Washington Post är en amerikansk dagstidning som publiceras i Washington, D.C.",
-    "wikipediaSlug": "The_Washington_Post",
-    "image": "The-Washington-Post-10-June-2020.jpg",
-    "pageViews": 72025
-  },
-  {
-    "qid": "Q824451",
-    "title": "‘Boston Globe’ lanseras",
-    "subtitle": "Tidning",
-    "year": 1872,
-    "fact": "‘The Boston Globe’, även känd lokalt som The Globe, är en amerikansk dagstidning grundad och baserad i Boston, Massachusetts.",
-    "wikipediaSlug": "The_Boston_Globe",
-    "image": "The_Boston_Globe,_April_18,_2011.jpeg",
-    "pageViews": 71755
-  },
-  {
-    "qid": "Q46807",
-    "title": "‘The Times of India’ lanseras",
-    "subtitle": "Tidning",
-    "year": 1838,
-    "fact": "The Times of India (TOI) är en indisk dagstidning på engelska och en digital nyhetskälla.",
-    "wikipediaSlug": "The_Times_of_India",
-    "image": "The_Times_of_India_cover_03-22-10.jpg",
-    "pageViews": 57161
-  },
-  {
-    "qid": "Q178837",
-    "title": "‘Disney Channel’ lanseras",
-    "subtitle": "TV-kanal",
-    "year": 1983,
-    "fact": "Disney Channel är en amerikansk betal-TV-kanal som fungerar som flaggskeppsegendom för Disney Branded Television, en del av Walt Disney Companys affärssegment Disney Entertainment.",
-    "wikipediaSlug": "Disney_Channel",
-    "image": "DisneyChannelHQ.JPG",
-    "pageViews": 55602
-  },
-  {
-    "qid": "Q192621",
-    "title": "‘The Daily Telegraph’ lanseras",
-    "subtitle": "Tidning",
-    "year": 1855,
-    "fact": "‘The Daily Telegraph’, känd på nätet och annars som ‘The Telegraph’, är en brittisk daglig konservativ morgontidning som ges ut i London av Telegraph Media Group och distribueras i Storbritannien och internationellt.",
-    "wikipediaSlug": "The_Daily_Telegraph",
-    "image": "The_Daily_Telegraph_(British_newspaper)_front_page.jpg",
-    "pageViews": 50672
   }
 ]
