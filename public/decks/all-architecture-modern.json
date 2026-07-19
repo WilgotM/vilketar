@@ -71,7 +71,7 @@
   },
   {
     "fact": "Ölandsbron invigs och knyter ön närmare fastlandet.",
-    "image": "Resmo,Kvarnar vid Gynge hög 01.jpg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q239276",
     "subtitle": "Svensk ö",
@@ -170,26 +170,6 @@
     "year": 1972
   },
   {
-    "fact": "Allsång på Skansen börjar sändas i tv.",
-    "image": "Artisterna_i_Allsång_på_Skansen_2013.jpg",
-    "pageViews": 220000,
-    "qid": "Q1757014",
-    "subtitle": "Svenskt musikprogram",
-    "title": "Allsång på Skansen börjar sändas",
-    "wikipediaSlug": "Alls%C3%A5ng_p%C3%A5_Skansen",
-    "year": 1979
-  },
-  {
-    "fact": "Göta kanal eller Vem drog ur proppen? har premiär.",
-    "image": "P_architecture.svg",
-    "pageViews": 220000,
-    "qid": "Q10512738",
-    "subtitle": "Svensk filmkomedi",
-    "title": "”Göta kanal” har premiär",
-    "wikipediaSlug": "G%C3%B6ta_kanal_(film)",
-    "year": 1981
-  },
-  {
     "fact": "Lasse Berghagen blir folkkär som programledare för Allsång på Skansen.",
     "image": "Lasse_Berghagen_in_2014_(1_av_2).jpg",
     "pageViews": 220000,
@@ -231,7 +211,7 @@
   },
   {
     "fact": "Cirkus på Djurgården invigs.",
-    "image": "P_architecture.svg",
+    "image": "",
     "pageViews": 180000,
     "qid": "manual-Cirkus_(byggnad)",
     "subtitle": "Nöjesarena i Stockholm",

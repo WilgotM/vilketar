@@ -1,8 +1,8 @@
 {
   "difficultyCounts": {
-    "easy": 516,
-    "normal": 1480,
-    "hard": 1480
+    "easy": 429,
+    "normal": 1064,
+    "hard": 1064
   },
   "id": "all",
   "minScore": 1000,
@@ -17,9 +17,9 @@
       "themeHue": 15,
       "frequency": 2.45,
       "difficultyCounts": {
-        "easy": 186,
-        "normal": 434,
-        "hard": 434
+        "easy": 169,
+        "normal": 383,
+        "hard": 383
       },
       "minScore": 1000,
       "children": [
@@ -30,9 +30,9 @@
           "themeHue": 15,
           "frequency": 1,
           "difficultyCounts": {
-            "easy": 186,
-            "normal": 434,
-            "hard": 434
+            "easy": 169,
+            "normal": 383,
+            "hard": 383
           },
           "minScore": 1000
         }
@@ -40,9 +40,9 @@
     },
     {
       "difficultyCounts": {
-        "easy": 52,
-        "normal": 86,
-        "hard": 86
+        "easy": 51,
+        "normal": 85,
+        "hard": 85
       },
       "id": "all-history",
       "minScore": 1000,
@@ -66,9 +66,9 @@
         },
         {
           "difficultyCounts": {
-            "easy": 7,
-            "normal": 16,
-            "hard": 16
+            "easy": 6,
+            "normal": 15,
+            "hard": 15
           },
           "id": "all-history-eras",
           "minScore": 3,
@@ -1489,9 +1489,9 @@
     },
     {
       "difficultyCounts": {
-        "easy": 116,
-        "normal": 570,
-        "hard": 570
+        "easy": 49,
+        "normal": 220,
+        "hard": 220
       },
       "id": "all-entertainment",
       "minScore": 1000,
@@ -1502,35 +1502,9 @@
       "children": [
         {
           "difficultyCounts": {
-            "easy": 33,
-            "normal": 243,
-            "hard": 243
-          },
-          "id": "all-entertainment-films",
-          "minScore": 10,
-          "slug": "films",
-          "themeHue": 216,
-          "title": "Films",
-          "frequency": 0.55
-        },
-        {
-          "difficultyCounts": {
-            "easy": 37,
-            "normal": 112,
-            "hard": 112
-          },
-          "id": "all-entertainment-tv",
-          "minScore": 20,
-          "slug": "tv",
-          "themeHue": 216,
-          "title": "TV",
-          "frequency": 0.8
-        },
-        {
-          "difficultyCounts": {
             "easy": 16,
-            "normal": 81,
-            "hard": 81
+            "normal": 79,
+            "hard": 79
           },
           "id": "all-entertainment-books",
           "minScore": 10,
@@ -1541,9 +1515,9 @@
         },
         {
           "difficultyCounts": {
-            "easy": 8,
-            "normal": 42,
-            "hard": 42
+            "easy": 11,
+            "normal": 54,
+            "hard": 54
           },
           "id": "all-entertainment-music",
           "minScore": 5,
@@ -1581,8 +1555,8 @@
         {
           "difficultyCounts": {
             "easy": 4,
-            "normal": 41,
-            "hard": 41
+            "normal": 39,
+            "hard": 39
           },
           "id": "all-entertainment-characters",
           "minScore": 30,
@@ -1595,8 +1569,8 @@
         {
           "difficultyCounts": {
             "easy": 4,
-            "normal": 15,
-            "hard": 15
+            "normal": 14,
+            "hard": 14
           },
           "id": "all-entertainment-comics",
           "minScore": 25,
@@ -1623,8 +1597,8 @@
         {
           "difficultyCounts": {
             "easy": 12,
-            "normal": 30,
-            "hard": 30
+            "normal": 28,
+            "hard": 28
           },
           "id": "all-entertainment-songs",
           "minScore": 0,
@@ -2037,8 +2011,8 @@
     {
       "difficultyCounts": {
         "easy": 11,
-        "normal": 41,
-        "hard": 41
+        "normal": 37,
+        "hard": 37
       },
       "id": "all-architecture",
       "minScore": 1000,
@@ -2063,8 +2037,8 @@
         {
           "difficultyCounts": {
             "easy": 0,
-            "normal": 5,
-            "hard": 5
+            "normal": 3,
+            "hard": 3
           },
           "id": "all-architecture-medieval",
           "minScore": 10,
@@ -2089,8 +2063,8 @@
         {
           "difficultyCounts": {
             "easy": 11,
-            "normal": 31,
-            "hard": 31
+            "normal": 29,
+            "hard": 29
           },
           "id": "all-architecture-modern",
           "minScore": 10,
@@ -2103,9 +2077,9 @@
     },
     {
       "difficultyCounts": {
-        "easy": 55,
-        "normal": 98,
-        "hard": 98
+        "easy": 56,
+        "normal": 99,
+        "hard": 99
       },
       "id": "all-sport",
       "minScore": 1000,
@@ -2121,9 +2095,9 @@
           "themeHue": 144,
           "frequency": 2.6,
           "difficultyCounts": {
-            "easy": 28,
-            "normal": 48,
-            "hard": 48
+            "easy": 29,
+            "normal": 49,
+            "hard": 49
           },
           "minScore": 1000
         },
@@ -2170,9 +2144,9 @@
     },
     {
       "difficultyCounts": {
-        "easy": 26,
-        "normal": 140,
-        "hard": 140
+        "easy": 23,
+        "normal": 129,
+        "hard": 129
       },
       "id": "all-business",
       "minScore": 1000,
@@ -2209,9 +2183,9 @@
         },
         {
           "difficultyCounts": {
-            "easy": 8,
-            "normal": 26,
-            "hard": 26
+            "easy": 5,
+            "normal": 15,
+            "hard": 15
           },
           "id": "all-business-media",
           "minScore": 0,

@@ -31,23 +31,13 @@
   },
   {
     "fact": "Kalle Anka & C:o börjar ges ut i Sverige.",
-    "image": "Wikidata-logo.svg",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q2743606",
     "subtitle": "Svensk serietidning",
     "title": "Kalle Anka & C:o börjar ges ut",
     "wikipediaSlug": "Kalle_Anka_%26_C%3Ao",
     "year": 1948
-  },
-  {
-    "fact": "Reguljära tv-sändningar startar i Sverige.",
-    "image": "Kontorshuset_(Sveriges_Television),_juni_2022a.jpg",
-    "pageViews": 260000,
-    "qid": "Q215363",
-    "subtitle": "Svensk tv-historia",
-    "title": "Reguljära tv-sändningar startar",
-    "wikipediaSlug": "Sveriges_Television",
-    "year": 1956
   },
   {
     "fact": "Bamse får en egen serietidning.",
@@ -58,26 +48,6 @@
     "title": "”Bamse” får egen serietidning",
     "wikipediaSlug": "Bamse",
     "year": 1973
-  },
-  {
-    "fact": "TV4 börjar sända via satellit.",
-    "image": "TV4sweden_logo.svg",
-    "pageViews": 260000,
-    "qid": "Q1466723",
-    "subtitle": "Svensk tv-kanal",
-    "title": "TV4 börjar sända",
-    "wikipediaSlug": "TV4",
-    "year": 1990
-  },
-  {
-    "fact": "Solsidan har premiär i TV4.",
-    "image": "Wikidata-logo.svg",
-    "pageViews": 260000,
-    "qid": "Q10673360",
-    "subtitle": "Svensk tv-serie",
-    "title": "”Solsidan” har premiär",
-    "wikipediaSlug": "Solsidan",
-    "year": 2010
   },
   {
     "fact": "Svenska Dagbladet grundas.",
@@ -101,7 +71,7 @@
   },
   {
     "fact": "Kamratposten börjar ges ut.",
-    "image": "Wikidata-logo.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q3377873",
     "subtitle": "Svensk barntidning",
@@ -140,56 +110,6 @@
     "year": 1965
   },
   {
-    "fact": "David Hellenius blir ett välkänt ansikte i TV4.",
-    "image": "David_Hellenius_in_August_2013.jpg",
-    "pageViews": 220000,
-    "qid": "Q5234881",
-    "subtitle": "Svensk programledare",
-    "title": "David Hellenius blir tv-profil",
-    "wikipediaSlug": "David_Hellenius",
-    "year": 2000
-  },
-  {
-    "fact": "Farmen börjar sändas i TV4.",
-    "image": "Wikidata-logo.svg",
-    "pageViews": 220000,
-    "qid": "Q20113827",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Farmen” börjar sändas",
-    "wikipediaSlug": "Farmen",
-    "year": 2001
-  },
-  {
-    "fact": "Let's Dance börjar sändas i TV4.",
-    "image": "Wikidata-logo.svg",
-    "pageViews": 220000,
-    "qid": "manual-Let's_Dance_(Sverige)",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Let's Dance” börjar sändas",
-    "wikipediaSlug": "Let's_Dance_(Sverige)",
-    "year": 2006
-  },
-  {
-    "fact": "Bonde söker fru börjar sändas i TV4.",
-    "image": "Linda_Lindorff_in_August_2013.jpg",
-    "pageViews": 220000,
-    "qid": "Q661146",
-    "subtitle": "Svenskt tv-program",
-    "title": "”Bonde söker fru” börjar sändas",
-    "wikipediaSlug": "Bonde_s%C3%B6ker_fru",
-    "year": 2006
-  },
-  {
-    "fact": "Så mycket bättre börjar sändas i TV4.",
-    "image": "Wikidata-logo.svg",
-    "pageViews": 220000,
-    "qid": "Q2757779",
-    "subtitle": "Svenskt musikprogram",
-    "title": "”Så mycket bättre” börjar sändas",
-    "wikipediaSlug": "S%C3%A5_mycket_b%C3%A4ttre",
-    "year": 2010
-  },
-  {
     "fact": "Göteborgs-Posten grundas.",
     "image": "GP_logotyp_transparent.png",
     "pageViews": 200000,
@@ -210,26 +130,6 @@
     "year": 1925
   },
   {
-    "fact": "Rapport börjar sändas i Sveriges Television.",
-    "image": "Wikidata-logo.svg",
-    "pageViews": 200000,
-    "qid": "manual-Rapport_(TV-program)",
-    "subtitle": "Svenskt nyhetsprogram",
-    "title": "”Rapport” börjar sändas",
-    "wikipediaSlug": "Rapport_(TV-program)",
-    "year": 1969
-  },
-  {
-    "fact": "Tre kronor har premiär i TV4.",
-    "image": "Farstahallen.jpg",
-    "pageViews": 200000,
-    "qid": "Q4579718",
-    "subtitle": "Svensk tv-serie",
-    "title": "”Tre kronor” har premiär",
-    "wikipediaSlug": "Tre_Kronor_(TV-serie)",
-    "year": 1994
-  },
-  {
     "fact": "Parlamentet börjar sändas i TV4.",
     "image": "Parlamentet_bild_1.jpg",
     "pageViews": 200000,
@@ -238,16 +138,6 @@
     "title": "”Parlamentet” börjar sändas",
     "wikipediaSlug": "Parlamentet",
     "year": 1999
-  },
-  {
-    "fact": "Tilde de Paula blir en välkänd TV4-profil.",
-    "image": "Tilde_de_Paula_Eby_in_August_2013.jpg",
-    "pageViews": 200000,
-    "qid": "Q1653452",
-    "subtitle": "Svensk programledare",
-    "title": "Tilde de Paula blir tv-profil",
-    "wikipediaSlug": "Tilde_de_Paula_Eby",
-    "year": 2000
   },
   {
     "fact": "Postkodmiljonären börjar sändas i TV4.",

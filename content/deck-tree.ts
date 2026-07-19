@@ -70,7 +70,6 @@ import famousStatespeopleDeathYear from "./queries/famous-statespeople-death-yea
 import famousWritersDeathYear from "./queries/famous-writers-death-year/query";
 import fatimidCaliphsTakingOffice from "./queries/fatimid-caliphs-taking-office/query";
 import fictionalCharactersFirstAppearanceYear from "./queries/fictional-characters-first-appearance-year/query";
-import filmsReleaseYear from "./queries/films-release-year/query";
 import footballClubsFoundingYear from "./queries/football-clubs-founding-year/query";
 import frenchMonarchsTakingOffice from "./queries/french-monarchs-taking-office/query";
 import frenchPresidentsTakingOffice from "./queries/french-presidents-taking-office/query";
@@ -167,7 +166,6 @@ import toyLinesReleaseYear from "./queries/toy-lines-release-year/query";
 import toysIntroductionYear from "./queries/toys-introduction-year/query";
 import trebizondEmperorsTakingOffice from "./queries/trebizond-emperors-taking-office/query";
 import tvChannelsLaunchYear from "./queries/tv-channels-launch-year/query";
-import tvShowsFirstAirYear from "./queries/tv-shows-first-air-year/query";
 import ukPrimeMinistersTakingOffice from "./queries/uk-prime-ministers-taking-office/query";
 import umayyadCaliphsTakingOffice from "./queries/umayyad-caliphs-taking-office/query";
 import usPresidentsTakingOffice from "./queries/us-presidents-taking-office/query";
@@ -1001,18 +999,6 @@ const rootDeckDefinition: DeckDefinition = {
       themeHue: 216,
       frequency: 1,
       children: [
-        {
-          slug: "films",
-          title: "Films",
-          frequency: 0.55,
-          sources: [filmsReleaseYear],
-        },
-        {
-          slug: "tv",
-          title: "TV",
-          frequency: 0.8,
-          sources: [tvShowsFirstAirYear],
-        },
         {
           slug: "books",
           title: "Books",

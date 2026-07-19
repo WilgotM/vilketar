@@ -51,7 +51,7 @@
   },
   {
     "fact": "Män som hatar kvinnor ges ut efter Stieg Larssons död.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 300000,
     "qid": "Q186317",
     "subtitle": "Svensk författare",
@@ -91,7 +91,7 @@
   },
   {
     "fact": "Gunilla Bergström ger ut den första boken om Alfons Åberg.",
-    "image": "Alfons Åberg, Arlanda 2010 1.JPG",
+    "image": "",
     "pageViews": 260000,
     "qid": "Q1316142",
     "subtitle": "Svensk barnboksfigur",
@@ -351,7 +351,7 @@
   },
   {
     "fact": "Harry Martinson tilldelas Nobelpriset i litteratur.",
-    "image": "Harry Martinson.jpg",
+    "image": "Harry_Martinson_001.tiff",
     "pageViews": 220000,
     "qid": "Q132695",
     "subtitle": "Svensk författare",
@@ -381,7 +381,7 @@
   },
   {
     "fact": "Den första boken om Sune ges ut.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "manual-Sune_(bokserie)",
     "subtitle": "Svensk bokserie",
@@ -391,7 +391,7 @@
   },
   {
     "fact": "Den första boken om Bert ges ut.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "manual-Bert_(bokserie)",
     "subtitle": "Svensk bokserie",
@@ -411,7 +411,7 @@
   },
   {
     "fact": "En man som heter Ove ges ut.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 220000,
     "qid": "Q22815069",
     "subtitle": "Roman av Fredrik Backman",
@@ -441,7 +441,7 @@
   },
   {
     "fact": "Åke Holmberg ger ut den första boken om Ture Sventon.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 200000,
     "qid": "Q4354348",
     "subtitle": "Svensk barnboksfigur",
@@ -461,7 +461,7 @@
   },
   {
     "fact": "Katarina Taikon ger ut Katitzi.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 200000,
     "qid": "Q10544372",
     "subtitle": "Svensk barnbok",
@@ -511,7 +511,7 @@
   },
   {
     "fact": "Martha Sandwall-Bergström ger ut första boken om Kulla-Gulla.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 180000,
     "qid": "Q10549872",
     "subtitle": "Svensk bokfigur",
@@ -571,7 +571,7 @@
   },
   {
     "fact": "Barbro Lindgren ger ut Loranga, Masarin och Dartanjang.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 180000,
     "qid": "Q10569746",
     "subtitle": "Svensk barnbok",
@@ -601,7 +601,7 @@
   },
   {
     "fact": "Moni Nilsson ger ut den första boken om Tsatsiki.",
-    "image": "Cacik-1.jpg",
+    "image": "",
     "pageViews": 180000,
     "qid": "Q454008",
     "subtitle": "Svensk barnboksfigur",
@@ -611,7 +611,7 @@
   },
   {
     "fact": "Bilddagboken lanseras och blir en populär svensk fotosajt.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 180000,
     "qid": "Q4907646",
     "subtitle": "Svensk bildsajt",
@@ -641,7 +641,7 @@
   },
   {
     "fact": "Gummi-Tarzan blir en välkänd barnbok även i Sverige.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 160000,
     "qid": "manual-Gummi-Tarzan",
     "subtitle": "Nordisk barnbok",
@@ -650,18 +650,8 @@
     "year": 1975
   },
   {
-    "fact": "Agaton Sax blir känd genom böcker och tv.",
-    "image": "Video-x-generic.svg",
-    "pageViews": 160000,
-    "qid": "Q391557",
-    "subtitle": "Svensk barnboksfigur",
-    "title": "Agaton Sax blir tv-figur",
-    "wikipediaSlug": "Agaton_Sax",
-    "year": 1976
-  },
-  {
     "fact": "Barbro Lindgren och Eva Eriksson ger ut Sagan om den lilla farbrorn.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 160000,
     "qid": "manual-Sagan_om_den_lilla_farbrorn",
     "subtitle": "Svensk bilderbok",
@@ -671,7 +661,7 @@
   },
   {
     "fact": "Häxorna blir känd för svenska barn genom bok och film.",
-    "image": "Video-x-generic.svg",
+    "image": "",
     "pageViews": 160000,
     "qid": "manual-H%C3%A4xorna_(bok)",
     "subtitle": "Barnberättelse",
@@ -728,16 +718,6 @@
     "wikipediaSlug": "Animal_Farm",
     "image": "Animal_Farm_-_1st_edition.jpg",
     "pageViews": 125835
-  },
-  {
-    "qid": "Q4509219",
-    "title": "‘Inferno’ ges ut",
-    "subtitle": "Bok av Dante Alighieri",
-    "year": 1304,
-    "fact": "‘Inferno’ är den första delen av den italienske författaren Dante Alighieris berättande dikt ‘Den gudomliga komedin’ från 1300-talet, följd av ‘Purgatorio’ och ‘Paradiso’.",
-    "wikipediaSlug": "Inferno_(Dante)",
-    "image": "Inferno.jpg",
-    "pageViews": 123822
   },
   {
     "qid": "Q1541914",

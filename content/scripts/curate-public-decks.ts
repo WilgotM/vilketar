@@ -32,7 +32,6 @@ const DECK_MIN_PAGE_VIEWS: Array<[RegExp, number]> = [
   [/^all-history-battles$/, 100_000],
   [/^all-leaders-rulers-europe-sweden$/, 100_000],
   [/^all-entertainment-(music|songs)$/, 220_000],
-  [/^all-entertainment-tv$/, 200_000],
   [/^all-entertainment-/, 100_000],
   [/^all-technology-websites$/, 250_000],
   [/^all-technology-mobile-apps$/, 200_000],
