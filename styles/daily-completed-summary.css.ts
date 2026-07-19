@@ -28,10 +28,6 @@ export const score = style({
   width: "100%",
 });
 
-export const shareButton = style({
-  width: "100%",
-});
-
 export const leagueTip = style({
   alignItems: "center",
   background: vars.color.surfaceStrong,

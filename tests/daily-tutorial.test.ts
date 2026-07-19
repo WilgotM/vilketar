@@ -1,6 +1,9 @@
 import assert from "node:assert/strict";
 import { describe, test } from "node:test";
-import { shouldStartDailyTutorial } from "../lib/daily-tutorial";
+import {
+  shouldStartDailyShareTutorial,
+  shouldStartDailyTutorial,
+} from "../lib/daily-tutorial";
 
 describe("daily tutorial", () => {
   test("starts for a new daily game on a new device", () => {
@@ -47,5 +50,11 @@ describe("daily tutorial", () => {
         false,
       );
     }
+  });
+
+  test("shows the share tutorial once after a daily result", () => {
+    assert.equal(shouldStartDailyShareTutorial(null), true);
+    assert.equal(shouldStartDailyShareTutorial("completed"), false);
+    assert.equal(shouldStartDailyShareTutorial("skipped"), false);
   });
 });
