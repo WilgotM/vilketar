@@ -7,6 +7,7 @@ import MenuFlowShell, {
   shouldUseMenuFlowShell,
 } from "../components/menu-flow-shell";
 import { NavigationSourceProvider } from "../components/navigation-source-provider";
+import OfflineStatus from "../components/offline-status";
 import PwaInstallPrompt from "../components/pwa-install-prompt";
 import { FreePlayDifficultyProvider } from "../lib/use-free-play-difficulty";
 import * as uiStyles from "../styles/ui.css";
@@ -71,6 +72,7 @@ function App({ Component, pageProps }: AppProps) {
                 </motion.div>
               </AnimatePresence>
             )}
+            <OfflineStatus />
             <PwaInstallPrompt />
           </div>
         </DeckProvider>
