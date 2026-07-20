@@ -1,8 +1,8 @@
 {
   "difficultyCounts": {
-    "easy": 429,
-    "normal": 1064,
-    "hard": 1064
+    "easy": 511,
+    "normal": 1158,
+    "hard": 1158
   },
   "id": "all",
   "minScore": 1000,
@@ -2077,9 +2077,9 @@
     },
     {
       "difficultyCounts": {
-        "easy": 56,
-        "normal": 99,
-        "hard": 99
+        "easy": 138,
+        "normal": 193,
+        "hard": 193
       },
       "id": "all-sport",
       "minScore": 1000,
@@ -2095,9 +2095,9 @@
           "themeHue": 144,
           "frequency": 2.6,
           "difficultyCounts": {
-            "easy": 29,
-            "normal": 49,
-            "hard": 49
+            "easy": 70,
+            "normal": 96,
+            "hard": 96
           },
           "minScore": 1000
         },
@@ -2108,9 +2108,9 @@
           "themeHue": 120,
           "frequency": 2,
           "difficultyCounts": {
-            "easy": 27,
-            "normal": 50,
-            "hard": 50
+            "easy": 68,
+            "normal": 97,
+            "hard": 97
           },
           "minScore": 1000
         },

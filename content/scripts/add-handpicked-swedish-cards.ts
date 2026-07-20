@@ -7463,7 +7463,437 @@ const EXTRA_CLASSIC_CARDS: HandpickedCard[] = (
   .map(classicCard)
   .filter((card) => !isFilmOrTvCard(card));
 
+// Reviewed from an AI-assisted candidate batch. These are deliberately kept as
+// concrete shared memories rather than a comprehensive results archive.
+const CURATED_SPORT_BATCH: ClassicTuple[] = [
+  [
+    "Ishockey vid olympiska vinterspelen 2002",
+    "Sverige faller mot Belarus",
+    2002,
+    "Den osannolika OS-kvartsfinalen",
+    "Sverige förlorar OS-kvartsfinalen efter ett långskott som går in bakom Tommy Salo.",
+    300_000,
+  ],
+  [
+    "Curling vid olympiska vinterspelen 2006",
+    "Lag Norberg vinner OS-guld",
+    2006,
+    "Svenskt guld i damcurling",
+    "Anette Norbergs lag besegrar Schweiz i OS-finalen.",
+    300_000,
+  ],
+  [
+    "Friidrott vid olympiska sommarspelen 1976",
+    "Gärderud vinner OS-guld",
+    1976,
+    "Hinderloppet i Montréal",
+    "Anders Gärderud vinner 3 000 meter hinder.",
+    300_000,
+  ],
+  [
+    "Europamästerskapen i friidrott 2006",
+    "Kallur vinner EM på Ullevi",
+    2006,
+    "Guld inför hemmapubliken",
+    "Susanna Kallur vinner 100 meter häck på Ullevi.",
+    300_000,
+  ],
+  [
+    "Friidrott vid olympiska sommarspelen 2020",
+    "Sverige tar dubbelt i diskus",
+    2021,
+    "Ståhl före Pettersson",
+    "Daniel Ståhl vinner OS-guld före Simon Pettersson i diskus.",
+    300_000,
+  ],
+  [
+    "Friidrott vid olympiska sommarspelen 2024",
+    "Duplantis försvarar OS-guldet",
+    2024,
+    "Ny triumf i stavhopp",
+    "Armand Duplantis vinner sitt andra raka OS-guld och sätter världsrekord.",
+    400_000,
+  ],
+  [
+    "Mats Wilander",
+    "Wilander vinner Franska öppna",
+    1982,
+    "Genombrottet som 17-åring",
+    "Mats Wilander vinner Franska öppna som 17-åring.",
+    300_000,
+  ],
+  [
+    "Franska öppna 2009",
+    "Söderling slår Nadal i Paris",
+    2009,
+    "Sensationen på Roland Garros",
+    "Robin Söderling blir den förste som besegrar Rafael Nadal i Franska öppna.",
+    300_000,
+  ],
+  [
+    "Bordtennis vid olympiska sommarspelen 2024",
+    "Truls Möregårdh tar OS-silver",
+    2024,
+    "Svensk succé i herrsingel",
+    "Truls Möregårdh går till OS-final och tar silver i herrsingel.",
+    300_000,
+  ],
+  [
+    "Världsmästerskapet i handboll för herrar 1990",
+    "Bengan Boys vinner VM-guld",
+    1990,
+    "Sverige tillbaka på handbollstronen",
+    "Sverige besegrar Sovjetunionen i finalen och blir världsmästare.",
+    300_000,
+  ],
+  [
+    "Europamästerskapet i handboll för herrar 2002",
+    "Bengan Boys vinner hemma-EM",
+    2002,
+    "Finalseger inför svensk publik",
+    "Sverige besegrar Tyskland i finalen och vinner EM på hemmaplan.",
+    300_000,
+  ],
+  [
+    "Brottning vid olympiska sommarspelen 2008",
+    "Ara lämnar medaljen på mattan",
+    2008,
+    "Protesten efter semifinalen",
+    "Ara Abrahamian lägger bronsmedaljen på mattan och lämnar prisutdelningen.",
+    300_000,
+  ],
+  [
+    "Ridsport vid olympiska sommarspelen 2020",
+    "Sverige vinner lagguldet i hoppning",
+    2021,
+    "Dramatisk final i Tokyo",
+    "Sverige vinner OS-guld i laghoppning efter omhoppning.",
+    300_000,
+  ],
+  [
+    "Cykling vid olympiska sommarspelen 2016",
+    "Jenny Rissveds vinner OS-guld",
+    2016,
+    "Seger på mountainbikebanan",
+    "Jenny Rissveds vinner terrängloppet i mountainbike och tar OS-guld.",
+    220_000,
+  ],
+  [
+    "Triathlon vid olympiska sommarspelen 2012",
+    "Lisa Nordén tar silver i målfoto",
+    2012,
+    "Centimeter från OS-guldet",
+    "Lisa Nordén tar OS-silver när målfoto avgör damernas triathlon.",
+    300_000,
+  ],
+  [
+    "Marcus Ericsson",
+    "Ericsson vinner Indy 500",
+    2022,
+    "Svensk seger i racingklassikern",
+    "Marcus Ericsson vinner klassiska Indianapolis 500.",
+    300_000,
+  ],
+  [
+    "Längdskidåkning vid olympiska vinterspelen 2014",
+    "Kalla spurtar hem stafettguldet",
+    2014,
+    "Den stora svenska upphämtningen",
+    "Charlotte Kalla hämtar in täten på sista sträckan och säkrar stafettguldet.",
+    400_000,
+  ],
+  [
+    "Damernas turnering i ishockey vid olympiska vinterspelen 2006",
+    "Damkronorna tar OS-silver",
+    2006,
+    "Skrällseger i semifinalen",
+    "Sverige slår USA i OS-semifinalen och tar silver.",
+    300_000,
+  ],
+  [
+    "Skidskytte vid olympiska vinterspelen 2018",
+    "Hanna Öberg tar OS-guld",
+    2018,
+    "Fullträff på distansloppet",
+    "Hanna Öberg skjuter fullt och vinner OS-guld i distansloppet.",
+    300_000,
+  ],
+  [
+    "Längdskidåkning vid olympiska vinterspelen 2022",
+    "Jonna Sundling vinner OS-sprinten",
+    2022,
+    "Svenskt guld i fristil",
+    "Jonna Sundling vinner OS-finalen i sprint med klar marginal.",
+    300_000,
+  ],
+  [
+    "Alpin skidåkning vid olympiska vinterspelen 2022",
+    "Sara Hector vinner OS-guld",
+    2022,
+    "Fullträff i storslalom",
+    "Sara Hector vinner storslalomen och tar sitt första OS-guld.",
+    300_000,
+  ],
+  [
+    "Hastighetsåkning på skridskor vid olympiska vinterspelen 2022",
+    "Nils van der Poel tar dubbla OS-guld",
+    2022,
+    "Seger på båda långdistanserna",
+    "Nils van der Poel vinner både 5 000 och 10 000 meter.",
+    300_000,
+  ],
+  [
+    "Världsmästerskapet i ishockey för herrar 1987",
+    "Tre Kronor blir världsmästare i kavaj",
+    1987,
+    "Guldet avgörs från läktaren",
+    "Sverige säkrar VM-guldet när Sovjetunionen besegrar Tjeckoslovakien i turneringens sista match.",
+    300_000,
+  ],
+  [
+    "Världsmästerskapet i ishockey för herrar 2017",
+    "Tre Kronor vinner VM efter straffar",
+    2017,
+    "Finaldrama mot Kanada",
+    "Sverige besegrar Kanada efter straffläggning och blir världsmästare.",
+    300_000,
+  ],
+  [
+    "Världsmästerskapet i fotboll 2018",
+    "Sverige når VM-kvartsfinal",
+    2018,
+    "Längsta VM-resan på många år",
+    "Sverige vinner sin grupp och tar sig till kvartsfinal mot England.",
+    300_000,
+  ],
+  [
+    "Världsmästerskapet i fotboll för damer 2011",
+    "Sverige tar VM-brons",
+    2011,
+    "Seger i bronsmatchen",
+    "Sverige besegrar Frankrike och tar brons i damernas fotbolls-VM.",
+    220_000,
+  ],
+  [
+    "Europamästerskapet i handboll för herrar 1994",
+    "Sverige vinner sitt första handbolls-EM",
+    1994,
+    "Premiärguldet i Portugal",
+    "Sverige besegrar Ryssland i finalen och vinner det första europamästerskapet.",
+    220_000,
+  ],
+  [
+    "Världsmästerskapet i handboll för herrar 1999",
+    "Sverige vinner handbolls-VM",
+    1999,
+    "Finalseger mot Ryssland",
+    "Sverige besegrar Ryssland i finalen och blir världsmästare.",
+    300_000,
+  ],
+  [
+    "Europamästerskapet i handboll för herrar 2022",
+    "Sverige vinner EM efter rysare",
+    2022,
+    "Straff avgör finalen",
+    "Niclas Ekberg sätter den avgörande straffen mot Spanien när Sverige vinner EM-guld.",
+    300_000,
+  ],
+  [
+    "Europamästerskapet i handboll för damer 2010",
+    "Sverige tar historiskt EM-silver",
+    2010,
+    "Damlandslagets första mästerskapsmedalj",
+    "Sverige når final och tar sin första mästerskapsmedalj i damhandboll.",
+    220_000,
+  ],
+  [
+    "Stefan Edberg",
+    "Edberg vinner Wimbledon",
+    1988,
+    "Svensk seger på gräset",
+    "Stefan Edberg besegrar Boris Becker i finalen och vinner Wimbledon.",
+    300_000,
+  ],
+  [
+    "Sveriges Davis Cup-lag",
+    "Sverige vinner Davis Cup",
+    1984,
+    "Finalseger mot USA",
+    "Sverige besegrar USA och vinner tennisens lagtävling Davis Cup.",
+    300_000,
+  ],
+  [
+    "Patrik Sjöberg",
+    "Sjöberg sätter världsrekord",
+    1987,
+    "Rekordhopp på Stockholms stadion",
+    "Patrik Sjöberg klarar 2,42 meter och sätter världsrekord i höjdhopp.",
+    300_000,
+  ],
+  [
+    "Christian Olsson",
+    "Olsson vinner VM i tresteg",
+    2003,
+    "Svenskt guld i Paris",
+    "Christian Olsson vinner trestegsfinalen och blir världsmästare.",
+    220_000,
+  ],
+  [
+    "Simning vid olympiska sommarspelen 2024",
+    "Sarah Sjöström tar två OS-guld",
+    2024,
+    "Dubbel triumf i Paris",
+    "Sarah Sjöström vinner både 50 och 100 meter frisim.",
+    400_000,
+  ],
+  [
+    "Gunnar Larsson",
+    "Gunnar Larsson tar dubbla OS-guld",
+    1972,
+    "Svensk dominans i medley",
+    "Gunnar Larsson vinner både 200 och 400 meter medley.",
+    300_000,
+  ],
+  [
+    "Bengt Baron",
+    "Bengt Baron vinner OS-guld",
+    1980,
+    "Överraskningen i ryggsim",
+    "Bengt Baron vinner finalen på 100 meter ryggsim.",
+    220_000,
+  ],
+  [
+    "Världsmästerskapen i alpin skidsport 2007",
+    "Anja Pärson tar tre VM-guld",
+    2007,
+    "Storslam på hemmaplan",
+    "Anja Pärson vinner störtlopp, super-G och superkombination i Åre.",
+    400_000,
+  ],
+  [
+    "Torgny Mogren",
+    "Mogren vinner femmilen",
+    1993,
+    "Sololoppet i Falun",
+    "Torgny Mogren vinner femmilen vid skid-VM inför svensk publik.",
+    300_000,
+  ],
+  [
+    "Sven-Åke Lundbäck",
+    "Lundbäck vinner OS-guld",
+    1972,
+    "Svensk seger på 15 kilometer",
+    "Sven-Åke Lundbäck vinner det olympiska loppet över 15 kilometer.",
+    220_000,
+  ],
+  [
+    "Magdalena Forsberg",
+    "Forsberg tar dubbla VM-guld",
+    1997,
+    "Genombrottet som skidskytt",
+    "Magdalena Forsberg vinner både sprinten och jaktstarten vid skidskytte-VM.",
+    300_000,
+  ],
+  [
+    "Curling vid olympiska vinterspelen 2010",
+    "Lag Norberg försvarar OS-guldet",
+    2010,
+    "Finalvändning mot Kanada",
+    "Sverige besegrar Kanada efter en dramatisk sista omgång och vinner damcurlingen.",
+    300_000,
+  ],
+  [
+    "Curling vid olympiska vinterspelen 2022",
+    "Lag Edin vinner OS-guld",
+    2022,
+    "Efterlängtad svensk curlingseger",
+    "Niklas Edins lag besegrar Storbritannien i herrarnas OS-final.",
+    300_000,
+  ],
+  [
+    "Mikael Ljungberg",
+    "Mikael Ljungberg vinner OS-guld",
+    2000,
+    "Svensk brottningsseger i Sydney",
+    "Mikael Ljungberg vinner den tyngsta klassen i grekisk-romersk brottning.",
+    300_000,
+  ],
+  [
+    "Frank Andersson",
+    "Frank Andersson blir världsmästare",
+    1977,
+    "Genombrottet på brottarmattan",
+    "Frank Andersson vinner sitt första VM-guld i grekisk-romersk brottning.",
+    300_000,
+  ],
+  [
+    "Agneta Andersson",
+    "Agneta Andersson tar två OS-guld",
+    1984,
+    "Svensk kanotsuccé",
+    "Agneta Andersson vinner både K1 och K2 över 500 meter.",
+    300_000,
+  ],
+  [
+    "Susanne Gunnarsson",
+    "Gunnarsson och Andersson vinner OS-guld",
+    1996,
+    "Svensk seger i tvåmanskajak",
+    "Susanne Gunnarsson och Agneta Andersson vinner K2 över 500 meter.",
+    220_000,
+  ],
+  [
+    "Peder Fredricson",
+    "Peder Fredricson tar OS-silver",
+    2016,
+    "Felfri ritt i hoppfinalen",
+    "Peder Fredricson och hästen All In tar silver i den individuella hoppningen.",
+    300_000,
+  ],
+  [
+    "Kenny Bräck",
+    "Kenny Bräck vinner Indy 500",
+    1999,
+    "Svensk seger på Indianapolis",
+    "Kenny Bräck vinner klassiska Indianapolis 500.",
+    300_000,
+  ],
+  [
+    "Stig Blomqvist",
+    "Stig Blomqvist blir rallyvärldsmästare",
+    1984,
+    "Svensk mästare bakom ratten",
+    "Stig Blomqvist säkrar världsmästartiteln i rally.",
+    300_000,
+  ],
+  [
+    "Jan Boklöv",
+    "Boklöv slår igenom med V-stilen",
+    1988,
+    "Backhoppningen förändras",
+    "Jan Boklöv vinner världscuptävlingar med skidorna formade som ett V i luften.",
+    300_000,
+  ],
+];
+
+function sportCard(input: ClassicTuple): HandpickedCard {
+  return {
+    ...classicCard(input),
+    deckIds: [
+      SPORT_MOMENTS_DECK_ID,
+      "all-sweden",
+      "all-sweden-allt",
+      "all-sport-svensk-sport",
+    ],
+  };
+}
+
+const SPORT_IMAGE_RECHECK_TITLES = new Set(
+  CURATED_SPORT_BATCH.map(([pageTitle]) => pageTitle),
+);
+
 const SPORT_CARDS: HandpickedCard[] = [
+  ...CURATED_SPORT_BATCH.map(sportCard),
   {
     deckIds: [
       SPORT_MOMENTS_DECK_ID,
@@ -7716,20 +8146,6 @@ const SPORT_CARDS: HandpickedCard[] = [
     subtitle: "Svenskt friidrottsminne",
     title: "Duplantis sätter världsrekord",
     year: 2020,
-  },
-  {
-    deckIds: [
-      SPORT_MOMENTS_DECK_ID,
-      "all-sweden",
-      "all-sweden-allt",
-      "all-sport-svensk-sport",
-    ],
-    fact: "Nils van der Poel vinner OS-guld och blir ett av Sveriges stora vinterspelsnamn.",
-    pageTitle: "Nils van der Poel",
-    pageViews: 280_000,
-    subtitle: "Svenskt OS-minne",
-    title: "Nils van der Poel vinner OS-guld",
-    year: 2022,
   },
   {
     deckIds: [
@@ -8691,9 +9107,44 @@ function slugFromTitle(title: string): string {
 
 type PageMetadata = {
   image: string;
+  imageChecked?: boolean;
   qid: string;
   title: string;
 };
+
+async function getWikidataImage(qid: string): Promise<string> {
+  const params = new URLSearchParams({
+    action: "wbgetentities",
+    format: "json",
+    ids: qid,
+    props: "claims",
+  });
+  const response = await fetch(`https://www.wikidata.org/w/api.php?${params}`, {
+    headers: {
+      "User-Agent":
+        "VilketAr/0.1 (https://xn--vilketr-jxa.se; Wikimedia metadata for open-source timeline game)",
+    },
+  });
+  if (!response.ok) {
+    return "";
+  }
+
+  const data = (await response.json()) as {
+    entities?: Record<
+      string,
+      {
+        claims?: {
+          P18?: Array<{
+            mainsnak?: { datavalue?: { value?: unknown } };
+          }>;
+        };
+      }
+    >;
+  };
+  const value =
+    data.entities?.[qid]?.claims?.P18?.[0]?.mainsnak?.datavalue?.value;
+  return typeof value === "string" ? value : "";
+}
 
 async function getPageMetadata(pageTitle: string) {
   const params = new URLSearchParams({
@@ -8731,9 +9182,15 @@ async function getPageMetadata(pageTitle: string) {
   };
   const page = Object.values(data.query?.pages ?? {})[0];
 
+  const qid =
+    page?.pageprops?.wikibase_item ?? `manual-${slugFromTitle(pageTitle)}`;
+  const image =
+    page?.pageimage ?? (qid.startsWith("Q") ? await getWikidataImage(qid) : "");
+
   return {
-    image: page?.pageimage ?? "",
-    qid: page?.pageprops?.wikibase_item ?? `manual-${slugFromTitle(pageTitle)}`,
+    image,
+    imageChecked: true,
+    qid,
     title: page?.title ?? pageTitle,
   };
 }
@@ -8855,7 +9312,12 @@ async function main() {
   for (const card of [...CLASSIC_CARDS, ...SPORT_CARDS, ...VIDEO_GAME_CARDS]) {
     let metadata = metadataByTitle.get(card.pageTitle);
 
-    if (!metadata) {
+    if (
+      !metadata ||
+      (!metadata.image &&
+        !metadata.imageChecked &&
+        SPORT_IMAGE_RECHECK_TITLES.has(card.pageTitle))
+    ) {
       metadata = await getPageMetadataWithRetry(card.pageTitle);
       metadataByTitle.set(card.pageTitle, metadata);
       metadataCache[card.pageTitle] = metadata;
