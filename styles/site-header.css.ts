@@ -9,6 +9,9 @@ export const header = style({
     [media.compact]: {
       padding: `${vars.space.md} ${vars.space.xl}`,
     },
+    "screen and (max-width: 48rem) and (max-height: 46rem)": {
+      padding: `${vars.space.sm} ${vars.space.xl}`,
+    },
   },
 });
 
@@ -22,6 +25,11 @@ export const inner = style({
   minHeight: vars.size.controlHeight,
   position: "relative",
   width: "100%",
+  "@media": {
+    "screen and (max-width: 48rem) and (max-height: 46rem)": {
+      minHeight: "2.75rem",
+    },
+  },
 });
 
 export const wordmark = style({

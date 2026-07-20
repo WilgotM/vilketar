@@ -178,6 +178,14 @@ export const datePillAnchor = style({
   transformStyle: "preserve-3d",
   WebkitBackfaceVisibility: "hidden",
   zIndex: 4,
+  "@media": {
+    "screen and (max-width: 48rem) and (max-height: 46rem)": {
+      bottom: "-2.25rem",
+    },
+    "screen and (max-width: 48rem) and (max-height: 38rem)": {
+      bottom: "-2.125rem",
+    },
+  },
 });
 
 export const datePill = style({
