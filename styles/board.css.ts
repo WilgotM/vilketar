@@ -47,6 +47,19 @@ export const top = style({
     [media.compact]: {
       gap: vars.space.md,
     },
+    "screen and (max-width: 48rem) and (max-height: 46rem)": {
+      gap: vars.space.sm,
+      paddingTop: vars.space.sm,
+      vars: {
+        [vars.size.cardHeight]: "10rem",
+        [vars.size.cardWidth]: "7.5rem",
+        [vars.size.deckStackWidth]: "8.5rem",
+        [vars.size.deckWidth]: "10.5rem",
+        [vars.size.datePillHeight]: "1.75rem",
+        [vars.size.datePillWidth]: "4.5rem",
+        [vars.size.timelineBottomPadding]: "1.75rem",
+      },
+    },
     [media.shortWide]: {
       gap: vars.space.sm,
       paddingTop: vars.space.sm,
@@ -68,6 +81,17 @@ export const top = style({
       },
     },
     "screen and (max-height: 36rem)": {
+      vars: {
+        [vars.size.cardHeight]: "8.75rem",
+        [vars.size.cardWidth]: "6.5625rem",
+        [vars.size.deckStackWidth]: "7.25rem",
+        [vars.size.deckWidth]: "9rem",
+        [vars.size.datePillHeight]: "1.625rem",
+        [vars.size.datePillWidth]: "4.25rem",
+        [vars.size.timelineBottomPadding]: "1.625rem",
+      },
+    },
+    "screen and (max-width: 48rem) and (max-height: 38rem)": {
       vars: {
         [vars.size.cardHeight]: "8.75rem",
         [vars.size.cardWidth]: "6.5625rem",
@@ -140,6 +164,9 @@ export const scoreValue = style({
     [media.compact]: {
       fontSize: "3rem",
     },
+    "screen and (max-width: 48rem) and (max-height: 46rem)": {
+      fontSize: "2.5rem",
+    },
     [media.shortWide]: {
       fontSize: "3rem",
     },
@@ -158,6 +185,9 @@ export const scoreLabel = style({
   "@media": {
     [media.compact]: {
       fontSize: vars.fontSize.xs,
+    },
+    "screen and (max-width: 48rem) and (max-height: 46rem)": {
+      fontSize: "0.625rem",
     },
   },
 });
@@ -178,6 +208,9 @@ export const bottom = style({
     },
     "screen and (max-height: 43rem)": {
       paddingTop: vars.space.sm,
+    },
+    "screen and (max-width: 48rem) and (max-height: 46rem)": {
+      paddingTop: vars.space.xs,
     },
   },
 });

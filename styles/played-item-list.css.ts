@@ -45,6 +45,11 @@ export const items = style({
   gap: vars.space.xl,
   paddingBottom: vars.space["3xl"],
   width: "max-content",
+  "@media": {
+    "screen and (max-width: 48rem) and (max-height: 46rem)": {
+      paddingBottom: vars.space.xl,
+    },
+  },
 });
 
 export const itemSlot = style({

@@ -29,6 +29,9 @@ export const list = style({
     "screen and (max-height: 36rem)": {
       padding: `${vars.space.xxs} ${vars.space.md} ${vars.space.md}`,
     },
+    "screen and (max-width: 48rem) and (max-height: 46rem)": {
+      padding: `${vars.space.xs} ${vars.space.md} ${vars.space.sm}`,
+    },
   },
 });
 
