@@ -1,5 +1,35 @@
 [
   {
+    "fact": "Anja Pärson vinner störtlopp, super-G och superkombination i Åre.",
+    "image": "Åresjön_Dcastor_2003.jpg",
+    "pageViews": 400000,
+    "qid": "Q668148",
+    "subtitle": "Storslam på hemmaplan",
+    "title": "Anja Pärson tar tre VM-guld",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapen_i_alpin_skidsport_2007",
+    "year": 2007
+  },
+  {
+    "fact": "Charlotte Kalla hämtar in täten på sista sträckan och säkrar stafettguldet.",
+    "image": "Laura Biathlon & Ski Complex during 2014 Winter Olympics (ski stadium).JPG",
+    "pageViews": 400000,
+    "qid": "Q3486262",
+    "subtitle": "Den stora svenska upphämtningen",
+    "title": "Kalla spurtar hem stafettguldet",
+    "wikipediaSlug": "L%C3%A4ngdskid%C3%A5kning_vid_olympiska_vinterspelen_2014",
+    "year": 2014
+  },
+  {
+    "fact": "Armand Duplantis vinner sitt andra raka OS-guld och sätter världsrekord.",
+    "image": "Départ du 400m haies hommes (repêchages) - Paris 2024.jpg",
+    "pageViews": 400000,
+    "qid": "Q109311608",
+    "subtitle": "Ny triumf i stavhopp",
+    "title": "Duplantis försvarar OS-guldet",
+    "wikipediaSlug": "Friidrott_vid_olympiska_sommarspelen_2024",
+    "year": 2024
+  },
+  {
     "fact": "Sverige spelar VM-final i fotboll på Råsunda mot Brasilien.",
     "image": "Pele_con_brasil_(cropped).jpg",
     "pageViews": 360000,
@@ -40,6 +70,16 @@
     "year": 1922
   },
   {
+    "fact": "Gunnar Larsson vinner både 200 och 400 meter medley.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q535497",
+    "subtitle": "Svensk dominans i medley",
+    "title": "Gunnar Larsson tar dubbla OS-guld",
+    "wikipediaSlug": "Gunnar_Larsson",
+    "year": 1972
+  },
+  {
     "fact": "Björn Borg vinner Wimbledon för första gången.",
     "image": "Björn_Borg_2013-11-06_001_(cropped).jpg",
     "pageViews": 300000,
@@ -48,6 +88,106 @@
     "title": "Björn Borg vinner Wimbledon",
     "wikipediaSlug": "Bj%C3%B6rn_Borg",
     "year": 1976
+  },
+  {
+    "fact": "Anders Gärderud vinner 3 000 meter hinder.",
+    "image": "Bundesarchiv Bild 183-R0731-0135, Montreal, XXI. Olympiade, Waldemar Cierpinski.jpg",
+    "pageViews": 300000,
+    "qid": "Q733316",
+    "subtitle": "Hinderloppet i Montréal",
+    "title": "Gärderud vinner OS-guld",
+    "wikipediaSlug": "Friidrott_vid_olympiska_sommarspelen_1976",
+    "year": 1976
+  },
+  {
+    "fact": "Frank Andersson vinner sitt första VM-guld i grekisk-romersk brottning.",
+    "image": "Frank_Andersson_in_January_2014.jpg",
+    "pageViews": 300000,
+    "qid": "Q1442881",
+    "subtitle": "Genombrottet på brottarmattan",
+    "title": "Frank Andersson blir världsmästare",
+    "wikipediaSlug": "Frank_Andersson",
+    "year": 1977
+  },
+  {
+    "fact": "Mats Wilander vinner Franska öppna som 17-åring.",
+    "image": "Eurosport_Studio_Australian_Open_2014_007.jpg",
+    "pageViews": 300000,
+    "qid": "Q16475",
+    "subtitle": "Genombrottet som 17-åring",
+    "title": "Wilander vinner Franska öppna",
+    "wikipediaSlug": "Mats_Wilander",
+    "year": 1982
+  },
+  {
+    "fact": "Sverige besegrar USA och vinner tennisens lagtävling Davis Cup.",
+    "image": "Flag_of_Sweden.svg",
+    "pageViews": 300000,
+    "qid": "Q1511589",
+    "subtitle": "Finalseger mot USA",
+    "title": "Sverige vinner Davis Cup",
+    "wikipediaSlug": "Sveriges_Davis_Cup-lag",
+    "year": 1984
+  },
+  {
+    "fact": "Stig Blomqvist säkrar världsmästartiteln i rally.",
+    "image": "Stig_Blomqvist_2012_001.jpg",
+    "pageViews": 300000,
+    "qid": "Q343652",
+    "subtitle": "Svensk mästare bakom ratten",
+    "title": "Stig Blomqvist blir rallyvärldsmästare",
+    "wikipediaSlug": "Stig_Blomqvist",
+    "year": 1984
+  },
+  {
+    "fact": "Sverige säkrar VM-guldet när Sovjetunionen besegrar Tjeckoslovakien i turneringens sista match.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q698503",
+    "subtitle": "Guldet avgörs från läktaren",
+    "title": "Tre Kronor blir världsmästare i kavaj",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_ishockey_f%C3%B6r_herrar_1987",
+    "year": 1987
+  },
+  {
+    "fact": "Patrik Sjöberg klarar 2,42 meter och sätter världsrekord i höjdhopp.",
+    "image": "Patrik_Sjöberg_in_August_2013.jpg",
+    "pageViews": 300000,
+    "qid": "Q362389",
+    "subtitle": "Rekordhopp på Stockholms stadion",
+    "title": "Sjöberg sätter världsrekord",
+    "wikipediaSlug": "Patrik_Sj%C3%B6berg",
+    "year": 1987
+  },
+  {
+    "fact": "Stefan Edberg besegrar Boris Becker i finalen och vinner Wimbledon.",
+    "image": "Stefan_Edberg_2012-04-25_001.jpg",
+    "pageViews": 300000,
+    "qid": "Q189542",
+    "subtitle": "Svensk seger på gräset",
+    "title": "Edberg vinner Wimbledon",
+    "wikipediaSlug": "Stefan_Edberg",
+    "year": 1988
+  },
+  {
+    "fact": "Jan Boklöv vinner världscuptävlingar med skidorna formade som ett V i luften.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q472559",
+    "subtitle": "Backhoppningen förändras",
+    "title": "Boklöv slår igenom med V-stilen",
+    "wikipediaSlug": "Jan_Bokl%C3%B6v",
+    "year": 1988
+  },
+  {
+    "fact": "Sverige besegrar Sovjetunionen i finalen och blir världsmästare.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q844830",
+    "subtitle": "Sverige tillbaka på handbollstronen",
+    "title": "Bengan Boys vinner VM-guld",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_handboll_f%C3%B6r_herrar_1990",
+    "year": 1990
   },
   {
     "fact": "Sverige arrangerar fotbolls-EM och når semifinal på hemmaplan.",
@@ -60,6 +200,16 @@
     "year": 1992
   },
   {
+    "fact": "Torgny Mogren vinner femmilen vid skid-VM inför svensk publik.",
+    "image": "Torgny_Mogren_(crop).jpg",
+    "pageViews": 300000,
+    "qid": "Q740601",
+    "subtitle": "Sololoppet i Falun",
+    "title": "Mogren vinner femmilen",
+    "wikipediaSlug": "Torgny_Mogren",
+    "year": 1993
+  },
+  {
     "fact": "Peter Forsberg gör den klassiska straffen i OS-finalen.",
     "image": "Peter_Forsberg_2016-03-17_001_(cropped).jpg",
     "pageViews": 300000,
@@ -68,6 +218,146 @@
     "title": "Peter Forsberg avgör OS-finalen",
     "wikipediaSlug": "Peter_Forsberg",
     "year": 1994
+  },
+  {
+    "fact": "Magdalena Forsberg vinner både sprinten och jaktstarten vid skidskytte-VM.",
+    "image": "Magdalena_Forsberg_in_Jan_2014.jpg",
+    "pageViews": 300000,
+    "qid": "Q240731",
+    "subtitle": "Genombrottet som skidskytt",
+    "title": "Forsberg tar dubbla VM-guld",
+    "wikipediaSlug": "Magdalena_Forsberg",
+    "year": 1997
+  },
+  {
+    "fact": "Sverige besegrar Ryssland i finalen och blir världsmästare.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q604410",
+    "subtitle": "Finalseger mot Ryssland",
+    "title": "Sverige vinner handbolls-VM",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_handboll_f%C3%B6r_herrar_1999",
+    "year": 1999
+  },
+  {
+    "fact": "Kenny Bräck vinner klassiska Indianapolis 500.",
+    "image": "Kenny_Bräck_at_the_2011_Goodwood_Festival.jpg",
+    "pageViews": 300000,
+    "qid": "Q715605",
+    "subtitle": "Svensk seger på Indianapolis",
+    "title": "Kenny Bräck vinner Indy 500",
+    "wikipediaSlug": "Kenny_Br%C3%A4ck",
+    "year": 1999
+  },
+  {
+    "fact": "Mikael Ljungberg vinner den tyngsta klassen i grekisk-romersk brottning.",
+    "image": "Wrestling (1487304815).jpg",
+    "pageViews": 300000,
+    "qid": "Q1933004",
+    "subtitle": "Svensk brottningsseger i Sydney",
+    "title": "Mikael Ljungberg vinner OS-guld",
+    "wikipediaSlug": "Mikael_Ljungberg",
+    "year": 2000
+  },
+  {
+    "fact": "Sverige förlorar OS-kvartsfinalen efter ett långskott som går in bakom Tommy Salo.",
+    "image": "Steve_Yzerman.jpg",
+    "pageViews": 300000,
+    "qid": "Q255213",
+    "subtitle": "Den osannolika OS-kvartsfinalen",
+    "title": "Sverige faller mot Belarus",
+    "wikipediaSlug": "Ishockey_vid_olympiska_vinterspelen_2002",
+    "year": 2002
+  },
+  {
+    "fact": "Sverige besegrar Tyskland i finalen och vinner EM på hemmaplan.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q558889",
+    "subtitle": "Finalseger inför svensk publik",
+    "title": "Bengan Boys vinner hemma-EM",
+    "wikipediaSlug": "Europam%C3%A4sterskapet_i_handboll_f%C3%B6r_herrar_2002",
+    "year": 2002
+  },
+  {
+    "fact": "Anette Norbergs lag besegrar Schweiz i OS-finalen.",
+    "image": "GB_Men's_curling_team_Torino_2006.jpg",
+    "pageViews": 300000,
+    "qid": "Q733007",
+    "subtitle": "Svenskt guld i damcurling",
+    "title": "Lag Norberg vinner OS-guld",
+    "wikipediaSlug": "Curling_vid_olympiska_vinterspelen_2006",
+    "year": 2006
+  },
+  {
+    "fact": "Susanna Kallur vinner 100 meter häck på Ullevi.",
+    "image": "2006_European_Championships_in_Athletics_-_Ullevi_august_11th.jpg",
+    "pageViews": 300000,
+    "qid": "Q623563",
+    "subtitle": "Guld inför hemmapubliken",
+    "title": "Kallur vinner EM på Ullevi",
+    "wikipediaSlug": "Europam%C3%A4sterskapen_i_friidrott_2006",
+    "year": 2006
+  },
+  {
+    "fact": "Sverige slår USA i OS-semifinalen och tar silver.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q1038485",
+    "subtitle": "Skrällseger i semifinalen",
+    "title": "Damkronorna tar OS-silver",
+    "wikipediaSlug": "Damernas_turnering_i_ishockey_vid_olympiska_vinterspelen_2006",
+    "year": 2006
+  },
+  {
+    "fact": "Ara Abrahamian lägger bronsmedaljen på mattan och lämnar prisutdelningen.",
+    "image": "2008 Summer Olympics. Freestyle Wrestling. Men -60kg 02.jpg",
+    "pageViews": 300000,
+    "qid": "Q220654",
+    "subtitle": "Protesten efter semifinalen",
+    "title": "Ara lämnar medaljen på mattan",
+    "wikipediaSlug": "Brottning_vid_olympiska_sommarspelen_2008",
+    "year": 2008
+  },
+  {
+    "fact": "Robin Söderling blir den förste som besegrar Rafael Nadal i Franska öppna.",
+    "image": "Roger_Federer_at_the_2009_French_Open_10_cropped.jpg",
+    "pageViews": 300000,
+    "qid": "Q381118",
+    "subtitle": "Sensationen på Roland Garros",
+    "title": "Söderling slår Nadal i Paris",
+    "wikipediaSlug": "Franska_%C3%B6ppna_2009",
+    "year": 2009
+  },
+  {
+    "fact": "Sverige besegrar Kanada efter en dramatisk sista omgång och vinner damcurlingen.",
+    "image": "Anna_Le_Moine-1.png",
+    "pageViews": 300000,
+    "qid": "Q212916",
+    "subtitle": "Finalvändning mot Kanada",
+    "title": "Lag Norberg försvarar OS-guldet",
+    "wikipediaSlug": "Curling_vid_olympiska_vinterspelen_2010",
+    "year": 2010
+  },
+  {
+    "fact": "Lisa Nordén tar OS-silver när målfoto avgör damernas triathlon.",
+    "image": "Hyde Park from the air.jpg",
+    "pageViews": 300000,
+    "qid": "Q330735",
+    "subtitle": "Centimeter från OS-guldet",
+    "title": "Lisa Nordén tar silver i målfoto",
+    "wikipediaSlug": "Triathlon_vid_olympiska_sommarspelen_2012",
+    "year": 2012
+  },
+  {
+    "fact": "Peder Fredricson och hästen All In tar silver i den individuella hoppningen.",
+    "image": "Peder_Fredricson_2024_SIHS.jpg",
+    "pageViews": 300000,
+    "qid": "Q5741679",
+    "subtitle": "Felfri ritt i hoppfinalen",
+    "title": "Peder Fredricson tar OS-silver",
+    "wikipediaSlug": "Peder_Fredricson",
+    "year": 2016
   },
   {
     "fact": "Sveriges damlandslag tar OS-silver i fotboll i Rio de Janeiro.",
@@ -80,6 +370,36 @@
     "year": 2016
   },
   {
+    "fact": "Sverige besegrar Kanada efter straffläggning och blir världsmästare.",
+    "image": "Tre_Kronor_firas_på_Sergels_torg_(190_av_618).jpg",
+    "pageViews": 300000,
+    "qid": "Q22971481",
+    "subtitle": "Finaldrama mot Kanada",
+    "title": "Tre Kronor vinner VM efter straffar",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_ishockey_f%C3%B6r_herrar_2017",
+    "year": 2017
+  },
+  {
+    "fact": "Hanna Öberg skjuter fullt och vinner OS-guld i distansloppet.",
+    "image": "2018 PyeongChang Biathlon Mass Start medalists.jpg",
+    "pageViews": 300000,
+    "qid": "Q27897165",
+    "subtitle": "Fullträff på distansloppet",
+    "title": "Hanna Öberg tar OS-guld",
+    "wikipediaSlug": "Skidskytte_vid_olympiska_vinterspelen_2018",
+    "year": 2018
+  },
+  {
+    "fact": "Sverige vinner sin grupp och tar sig till kvartsfinal mot England.",
+    "image": "Luzhniki_Stadium2.jpg",
+    "pageViews": 300000,
+    "qid": "Q170645",
+    "subtitle": "Längsta VM-resan på många år",
+    "title": "Sverige når VM-kvartsfinal",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_2018",
+    "year": 2018
+  },
+  {
     "fact": "Armand Duplantis sätter världsrekord i stavhopp.",
     "image": "Armand_Duplantis_after_his_6.0_m_jump-1.jpg",
     "pageViews": 300000,
@@ -88,6 +408,96 @@
     "title": "Duplantis sätter världsrekord",
     "wikipediaSlug": "Armand_Duplantis",
     "year": 2020
+  },
+  {
+    "fact": "Daniel Ståhl vinner OS-guld före Simon Pettersson i diskus.",
+    "image": "Athletics pictogram.svg",
+    "pageViews": 300000,
+    "qid": "Q39080746",
+    "subtitle": "Ståhl före Pettersson",
+    "title": "Sverige tar dubbelt i diskus",
+    "wikipediaSlug": "Friidrott_vid_olympiska_sommarspelen_2020",
+    "year": 2021
+  },
+  {
+    "fact": "Sverige vinner OS-guld i laghoppning efter omhoppning.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q31895443",
+    "subtitle": "Dramatisk final i Tokyo",
+    "title": "Sverige vinner lagguldet i hoppning",
+    "wikipediaSlug": "Ridsport_vid_olympiska_sommarspelen_2020",
+    "year": 2021
+  },
+  {
+    "fact": "Marcus Ericsson vinner klassiska Indianapolis 500.",
+    "image": "Marcus_Ericsson_2014-08-18_002.jpg",
+    "pageViews": 300000,
+    "qid": "Q975207",
+    "subtitle": "Svensk seger i racingklassikern",
+    "title": "Ericsson vinner Indy 500",
+    "wikipediaSlug": "Marcus_Ericsson",
+    "year": 2022
+  },
+  {
+    "fact": "Jonna Sundling vinner OS-finalen i sprint med klar marginal.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q60823590",
+    "subtitle": "Svenskt guld i fristil",
+    "title": "Jonna Sundling vinner OS-sprinten",
+    "wikipediaSlug": "L%C3%A4ngdskid%C3%A5kning_vid_olympiska_vinterspelen_2022",
+    "year": 2022
+  },
+  {
+    "fact": "Sara Hector vinner storslalomen och tar sitt första OS-guld.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q60823588",
+    "subtitle": "Fullträff i storslalom",
+    "title": "Sara Hector vinner OS-guld",
+    "wikipediaSlug": "Alpin_skid%C3%A5kning_vid_olympiska_vinterspelen_2022",
+    "year": 2022
+  },
+  {
+    "fact": "Nils van der Poel vinner både 5 000 och 10 000 meter.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q60823592",
+    "subtitle": "Seger på båda långdistanserna",
+    "title": "Nils van der Poel tar dubbla OS-guld",
+    "wikipediaSlug": "Hastighets%C3%A5kning_p%C3%A5_skridskor_vid_olympiska_vinterspelen_2022",
+    "year": 2022
+  },
+  {
+    "fact": "Niclas Ekberg sätter den avgörande straffen mot Spanien när Sverige vinner EM-guld.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q33009195",
+    "subtitle": "Straff avgör finalen",
+    "title": "Sverige vinner EM efter rysare",
+    "wikipediaSlug": "Europam%C3%A4sterskapet_i_handboll_f%C3%B6r_herrar_2022",
+    "year": 2022
+  },
+  {
+    "fact": "Niklas Edins lag besegrar Storbritannien i herrarnas OS-final.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q60823582",
+    "subtitle": "Efterlängtad svensk curlingseger",
+    "title": "Lag Edin vinner OS-guld",
+    "wikipediaSlug": "Curling_vid_olympiska_vinterspelen_2022",
+    "year": 2022
+  },
+  {
+    "fact": "Truls Möregårdh går till OS-final och tar silver i herrsingel.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q109317237",
+    "subtitle": "Svensk succé i herrsingel",
+    "title": "Truls Möregårdh tar OS-silver",
+    "wikipediaSlug": "Bordtennis_vid_olympiska_sommarspelen_2024",
+    "year": 2024
   },
   {
     "fact": "Sverige vinner EM i fotboll för damer efter final mot England.",
@@ -118,16 +528,6 @@
     "title": "Damlandslaget tar OS-silver igen",
     "wikipediaSlug": "Fotboll_vid_olympiska_sommarspelen_2020",
     "year": 2021
-  },
-  {
-    "fact": "Nils van der Poel vinner OS-guld och blir ett av Sveriges stora vinterspelsnamn.",
-    "image": "Nils_van_der_Poel_in_2022.jpg",
-    "pageViews": 280000,
-    "qid": "Q15615329",
-    "subtitle": "Svenskt OS-minne",
-    "title": "Nils van der Poel vinner OS-guld",
-    "wikipediaSlug": "Nils_van_der_Poel",
-    "year": 2022
   },
   {
     "fact": "Ingemar Johansson blir världsmästare i tungvikt.",
@@ -260,6 +660,16 @@
     "year": 2016
   },
   {
+    "fact": "Nils van der Poel vinner OS-guld.",
+    "image": "Nils_van_der_Poel_in_2022.jpg",
+    "pageViews": 260000,
+    "qid": "Q15615329",
+    "subtitle": "Svensk skridskoåkare",
+    "title": "Nils van der Poel vinner OS-guld",
+    "wikipediaSlug": "Nils_van_der_Poel",
+    "year": 2022
+  },
+  {
     "fact": "Sverige tar OS-guld i ishockey i Turin med flera NHL-stjärnor i laget.",
     "image": "Henrik_Lundqvist_awarded_as_the_best_goalie_of_all_time_in_Swedish_hockey-2.jpg",
     "pageViews": 250000,
@@ -350,6 +760,16 @@
     "year": 1958
   },
   {
+    "fact": "Sven-Åke Lundbäck vinner det olympiska loppet över 15 kilometer.",
+    "image": "Holmenkollen_Ski_Festival_1972_DEX_PR_014035.jpg",
+    "pageViews": 220000,
+    "qid": "Q945846",
+    "subtitle": "Svensk seger på 15 kilometer",
+    "title": "Lundbäck vinner OS-guld",
+    "wikipediaSlug": "Sven-%C3%85ke_Lundb%C3%A4ck",
+    "year": 1972
+  },
+  {
     "fact": "Thomas Wassberg vinner femmilen vid OS i Lake Placid.",
     "image": "Thomas_Wassberg_2013-12-11_001.jpg",
     "pageViews": 220000,
@@ -358,6 +778,26 @@
     "title": "Thomas Wassberg vinner OS-guld",
     "wikipediaSlug": "Thomas_Wassberg",
     "year": 1980
+  },
+  {
+    "fact": "Bengt Baron vinner finalen på 100 meter ryggsim.",
+    "image": "Bengt_Baron.jpg",
+    "pageViews": 220000,
+    "qid": "Q817213",
+    "subtitle": "Överraskningen i ryggsim",
+    "title": "Bengt Baron vinner OS-guld",
+    "wikipediaSlug": "Bengt_Baron",
+    "year": 1980
+  },
+  {
+    "fact": "Sverige besegrar Ryssland i finalen och vinner det första europamästerskapet.",
+    "image": "1994_European_Men's_Handball_Championship.svg",
+    "pageViews": 220000,
+    "qid": "Q290673",
+    "subtitle": "Premiärguldet i Portugal",
+    "title": "Sverige vinner sitt första handbolls-EM",
+    "wikipediaSlug": "Europam%C3%A4sterskapet_i_handboll_f%C3%B6r_herrar_1994",
+    "year": 1994
   },
   {
     "fact": "Ludmila Engquist tar OS-guld på 100 meter häck.",
@@ -390,6 +830,26 @@
     "year": 2005
   },
   {
+    "fact": "Sverige når final och tar sin första mästerskapsmedalj i damhandboll.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q482592",
+    "subtitle": "Damlandslagets första mästerskapsmedalj",
+    "title": "Sverige tar historiskt EM-silver",
+    "wikipediaSlug": "Europam%C3%A4sterskapet_i_handboll_f%C3%B6r_damer_2010",
+    "year": 2010
+  },
+  {
+    "fact": "Sverige besegrar Frankrike och tar brons i damernas fotbolls-VM.",
+    "image": "Women's world cup 2011 North Korea - Colombia.jpg",
+    "pageViews": 220000,
+    "qid": "Q108183",
+    "subtitle": "Seger i bronsmatchen",
+    "title": "Sverige tar VM-brons",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2011",
+    "year": 2011
+  },
+  {
     "fact": "Friends Arena invigs i Solna.",
     "image": "Strawberry_Arena.jpg",
     "pageViews": 220000,
@@ -407,6 +867,16 @@
     "subtitle": "Svensk golfspelare",
     "title": "Henrik Stenson vinner The Open",
     "wikipediaSlug": "Henrik_Stenson",
+    "year": 2016
+  },
+  {
+    "fact": "Jenny Rissveds vinner terrängloppet i mountainbike och tar OS-guld.",
+    "image": "",
+    "pageViews": 220000,
+    "qid": "Q11889336",
+    "subtitle": "Seger på mountainbikebanan",
+    "title": "Jenny Rissveds vinner OS-guld",
+    "wikipediaSlug": "Cykling_vid_olympiska_sommarspelen_2016",
     "year": 2016
   },
   {
