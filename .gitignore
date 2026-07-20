@@ -41,6 +41,9 @@ yarn-error.log*
 /tmp/
 tsconfig.tsbuildinfo
 
+# Freebuff local agent workspace
+/.freebuff/
+
 # Supabase local project metadata
 /supabase/.temp/
 .playwright-mcp/
