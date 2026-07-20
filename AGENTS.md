@@ -4,7 +4,10 @@ Svenskt tidslinjespel byggt med Next.js, Bun och Wikimedia-data.
 
 - Använd Bun. Kör inte npm eller yarn.
 - Viktiga kontroller: `bun test`, `bun run lint`, `bun run format:check`.
-- Bygg/deploy: `bun run build`, `bun run deploy`.
+- Bygg/deploy: `bun run build`, `bun run deploy`. Cloudflare Pages deployar
+  automatiskt produktionsmiljön när `master` pushas; behandla inte en saknad
+  lokal `CLOUDFLARE_API_TOKEN` som ett deploy-stopp utan kontrollera Pages
+  Deployments.
 - Supabase CLI finns lokalt på `/opt/homebrew/bin/supabase` och kan användas
   direkt för t.ex. `supabase link` och `supabase db push`.
 - Codex får själv köra `/opt/homebrew/bin/supabase db push` när en migration
@@ -107,6 +110,9 @@ ska fungera bra för pensionärer.
 - `bun run daily:lock` kan köras manuellt för dagens UTC-datum och skriver inte
   över befintlig låsning utan `--force`. Scriptet kräver
   `SUPABASE_SERVICE_ROLE_KEY`.
+- Använd `--force` endast för en uttryckligt godkänd engångskorrigering av en
+  redan låst dag. Vanliga kort- och deployändringar får inte ändra dagens
+  snapshot eller tidigare dagars spel.
 
 När dagens spel behöver fler frågor, lös det helst genom fler igenkännbara,
 spelbara kort i relevanta deck, inte genom att göra urvalet svårare eller mer
