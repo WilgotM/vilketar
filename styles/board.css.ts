@@ -30,6 +30,31 @@ export const wrapper = style({
         [vars.size.deckWidth]: "11.25rem",
       },
     },
+    "screen and (max-height: 43rem)": {
+      vars: {
+        [vars.size.cardHeight]: "10rem",
+        [vars.size.cardWidth]: "7.5rem",
+        [vars.size.datePillHeight]: "1.75rem",
+        [vars.size.datePillWidth]: "4.5rem",
+        [vars.size.deckStackWidth]: "8.5rem",
+        [vars.size.deckWidth]: "10.5rem",
+        [vars.size.timelineBottomPadding]: "1.75rem",
+      },
+    },
+    "screen and (max-height: 36rem)": {
+      vars: {
+        [vars.size.cardHeight]: "8.75rem",
+        [vars.size.cardWidth]: "6.5625rem",
+        [vars.size.datePillHeight]: "1.625rem",
+        [vars.size.datePillWidth]: "4.25rem",
+        [vars.size.deckStackWidth]: "7.25rem",
+        [vars.size.deckWidth]: "9rem",
+        [vars.size.timelineBottomPadding]: "1.625rem",
+      },
+    },
+    [media.shortLandscape]: {
+      flexDirection: "row",
+    },
   },
 });
 
@@ -50,54 +75,19 @@ export const top = style({
     "screen and (max-width: 48rem) and (max-height: 46rem)": {
       gap: vars.space.sm,
       paddingTop: vars.space.sm,
-      vars: {
-        [vars.size.cardHeight]: "10rem",
-        [vars.size.cardWidth]: "7.5rem",
-        [vars.size.deckStackWidth]: "8.5rem",
-        [vars.size.deckWidth]: "10.5rem",
-        [vars.size.datePillHeight]: "1.75rem",
-        [vars.size.datePillWidth]: "4.5rem",
-        [vars.size.timelineBottomPadding]: "1.75rem",
-      },
     },
     [media.shortWide]: {
       gap: vars.space.sm,
       paddingTop: vars.space.sm,
-      vars: {
-        [vars.size.cardHeight]: "10rem",
-        [vars.size.cardWidth]: "7.5rem",
-        [vars.size.deckStackWidth]: "8.5rem",
-        [vars.size.deckWidth]: "10.5rem",
-      },
     },
     "screen and (max-height: 43rem)": {
       gap: vars.space.sm,
       paddingTop: vars.space.sm,
-      vars: {
-        [vars.size.cardHeight]: "10rem",
-        [vars.size.cardWidth]: "7.5rem",
-        [vars.size.deckStackWidth]: "8.5rem",
-        [vars.size.deckWidth]: "10.5rem",
-      },
     },
-    "screen and (max-height: 36rem)": {
-      vars: {
-        [vars.size.cardHeight]: "8.75rem",
-        [vars.size.cardWidth]: "6.5625rem",
-        [vars.size.deckStackWidth]: "7.25rem",
-        [vars.size.deckWidth]: "9rem",
-        [vars.size.datePillHeight]: "1.625rem",
-        [vars.size.datePillWidth]: "4.25rem",
-        [vars.size.timelineBottomPadding]: "1.625rem",
-      },
-    },
-    "screen and (max-width: 48rem) and (max-height: 38rem)": {
-      vars: {
-        [vars.size.cardHeight]: "8.75rem",
-        [vars.size.cardWidth]: "6.5625rem",
-        [vars.size.deckStackWidth]: "7.25rem",
-        [vars.size.deckWidth]: "9rem",
-      },
+    [media.shortLandscape]: {
+      flex: "0 0 38%",
+      justifyContent: "center",
+      paddingTop: 0,
     },
   },
 });
@@ -170,6 +160,9 @@ export const scoreValue = style({
     [media.shortWide]: {
       fontSize: "3rem",
     },
+    "screen and (max-height: 43rem)": {
+      fontSize: "2.5rem",
+    },
   },
 });
 
@@ -193,7 +186,7 @@ export const scoreLabel = style({
 });
 
 export const bottom = style({
-  alignItems: "flex-start",
+  alignItems: "safe center",
   display: "flex",
   flex: "1 1 0",
   minHeight: 0,
@@ -211,6 +204,9 @@ export const bottom = style({
     },
     "screen and (max-width: 48rem) and (max-height: 46rem)": {
       paddingTop: vars.space.xs,
+    },
+    [media.shortLandscape]: {
+      paddingTop: 0,
     },
   },
 });
