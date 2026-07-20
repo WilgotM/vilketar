@@ -2,6 +2,7 @@ import { animate, motion, PanInfo, useMotionValue } from "motion/react";
 import React from "react";
 import { PreparedCard } from "../types/game";
 import CardVisual from "./card-visual";
+import { vars } from "../styles/theme.css";
 
 interface DraggableDeckCardProps {
   anchorRef?: React.MutableRefObject<HTMLDivElement | null>;
@@ -24,8 +25,8 @@ export default function DraggableDeckCard(props: DraggableDeckCardProps) {
     onDragMove,
     onDragStart,
     onDrop,
-    width = 150,
-    height = 200,
+    width = vars.size.cardWidth,
+    height = vars.size.cardHeight,
   } = props;
   const x = useMotionValue(0);
   const y = useMotionValue(0);

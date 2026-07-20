@@ -3,6 +3,7 @@ export const media = {
   narrow: "screen and (max-width: 36rem)",
   wide: "screen and (min-width: 48.0625rem)",
   shortWide: "screen and (min-width: 48.0625rem) and (max-height: 52rem)",
+  shortLandscape: "screen and (min-width: 48.0625rem) and (max-height: 36rem)",
   dark: "(prefers-color-scheme: dark)",
   coarsePointer: "(pointer: coarse)",
   reduceMotion: "(prefers-reduced-motion: reduce)",

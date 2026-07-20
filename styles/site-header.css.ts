@@ -12,6 +12,9 @@ export const header = style({
     "screen and (max-width: 48rem) and (max-height: 46rem)": {
       padding: `${vars.space.sm} ${vars.space.xl}`,
     },
+    [media.shortLandscape]: {
+      padding: `${vars.space.sm} ${vars.space.xl}`,
+    },
   },
 });
 
@@ -27,6 +30,9 @@ export const inner = style({
   width: "100%",
   "@media": {
     "screen and (max-width: 48rem) and (max-height: 46rem)": {
+      minHeight: "2.75rem",
+    },
+    [media.shortLandscape]: {
       minHeight: "2.75rem",
     },
   },
