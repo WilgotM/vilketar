@@ -9,6 +9,11 @@ on:
         description: "UTC date to lock, YYYY-MM-DD. Defaults to today."
         required: false
         type: string
+      force:
+        description: "Replace an existing locked queue. Use only for corrections."
+        required: false
+        default: false
+        type: boolean
 
 concurrency:
   group: lock-daily-${{ github.event.inputs.date || github.run_id }}
@@ -34,8 +39,13 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: |
+          force_flag=""
+          if [ "${{ inputs.force }}" = "true" ]; then
+            force_flag="--force"
+          fi
+
           if [ -n "${{ github.event.inputs.date }}" ]; then
-            bun run daily:lock --date=${{ github.event.inputs.date }}
+            bun run daily:lock --date=${{ github.event.inputs.date }} $force_flag
           else
-            bun run daily:lock
+            bun run daily:lock $force_flag
           fi
