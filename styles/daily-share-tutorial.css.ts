@@ -253,7 +253,9 @@ export const copiedToast = style({
   padding: `${vars.space.md} ${vars.space.xl}`,
   position: "fixed",
   top: `max(${vars.space.xl}, env(safe-area-inset-top))`,
-  transform: "translateX(-50%)",
+  // Motion controls `transform` while the toast is entering and leaving. Use
+  // the individual transform property so it remains centred throughout.
+  translate: "-50% 0",
   width: "calc(100% - 2rem)",
   WebkitBackdropFilter: "blur(1.25rem)",
   zIndex: 90,
