@@ -7883,6 +7883,172 @@ const SPORT_IMAGE_OVERRIDES: Readonly<Record<string, string>> = {
   "Världsmästerskapet i fotboll för damer 2011": "",
 };
 
+// International shared memories belong in Sportögonblick, but never in the
+// Swedish-only decks. The title and subtitle must stand on their own on the
+// card front, without relying on a nickname, image or fact text for context.
+const INTERNATIONAL_SPORT_MOMENTS: ClassicTuple[] = [
+  [
+    "Världsmästerskapet i fotboll 1950",
+    "Uruguay besegrar Brasilien i herrarnas fotbolls-VM",
+    1950,
+    "Den avgörande VM-matchen på Maracanã i Rio de Janeiro",
+    "Uruguay vänder underläge och vinner med 2–1 inför en rekordstor hemmapublik.",
+    300_000,
+  ],
+  [
+    "Världsmästerskapet i fotboll 1954",
+    "Västtyskland skräller mot Ungern i herrarnas fotbolls-VM",
+    1954,
+    "VM-finalen i Bern",
+    "Västtyskland vänder ett tidigt tvåmålsunderläge och vinner finalen med 3–2.",
+    300_000,
+  ],
+  [
+    "Världsmästerskapet i fotboll 1966",
+    "England vinner herrarnas fotbolls-VM efter omdiskuterat mål",
+    1966,
+    "VM-final mot Västtyskland på Wembley",
+    "Geoff Hurst gör ett hattrick när England vinner med 4–2 efter förlängning.",
+    300_000,
+  ],
+  [
+    "Världsmästerskapet i fotboll 1970",
+    "Pelés Brasilien vinner herrarnas fotbolls-VM",
+    1970,
+    "VM-final mot Italien i Mexiko",
+    "Brasilien vinner finalen med 4–1 och Pelé blir den första spelaren med tre VM-titlar.",
+    300_000,
+  ],
+  [
+    "Världsmästerskapet i fotboll 1986",
+    "Maradona gör Handen av Gud i herrarnas fotbolls-VM",
+    1986,
+    "VM-kvartsfinal mellan Argentina och England",
+    "Maradona gör både ett mål med handen och ett berömt solomål i Argentinas seger.",
+    300_000,
+  ],
+  [
+    "Världsmästerskapet i fotboll 1998",
+    "Frankrike vinner herrarnas fotbolls-VM för första gången",
+    1998,
+    "VM-final mot Brasilien i Paris",
+    "Zinédine Zidane gör två mål när värdnationen vinner finalen med 3–0.",
+    300_000,
+  ],
+  [
+    "Världsmästerskapet i fotboll 2006",
+    "Zidane skallar Materazzi i herrarnas fotbolls-VM",
+    2006,
+    "VM-final mellan Frankrike och Italien",
+    "Frankrikes lagkapten blir utvisad innan Italien vinner finalen på straffar.",
+    300_000,
+  ],
+  [
+    "Världsmästerskapet i fotboll 2010",
+    "Spanien vinner herrarnas fotbolls-VM för första gången",
+    2010,
+    "VM-final mot Nederländerna i Johannesburg",
+    "Andrés Iniesta gör matchens enda mål sent i förlängningen.",
+    300_000,
+  ],
+  [
+    "Världsmästerskapet i fotboll 2014",
+    "Tyskland besegrar Brasilien med 7–1 i herrarnas fotbolls-VM",
+    2014,
+    "VM-semifinal i Belo Horizonte",
+    "Tyskland gör fem mål under matchens första halvtimme och tillfogar Brasilien en historisk förlust.",
+    300_000,
+  ],
+  [
+    "Världsmästerskapet i fotboll 2022",
+    "Messi leder Argentina till seger i herrarnas fotbolls-VM",
+    2022,
+    "VM-final mot Frankrike i Qatar",
+    "Argentina vinner en målrik final på straffar efter att Lionel Messi gjort två mål.",
+    300_000,
+  ],
+  [
+    "Världsmästerskapet i fotboll för damer 1999",
+    "USA vinner damernas fotbolls-VM på straffar",
+    1999,
+    "VM-final mot Kina inför fullsatta läktare",
+    "Brandi Chastain slår den avgörande straffen efter en mållös final.",
+    300_000,
+  ],
+  [
+    "Europamästerskapet i fotboll 1976",
+    "Panenka avgör herrarnas fotbolls-EM med en chippad straff",
+    1976,
+    "EM-final mellan Tjeckoslovakien och Västtyskland",
+    "Antonín Panenka slår den avgörande straffen löst mitt i målet.",
+    300_000,
+  ],
+  [
+    "Europamästerskapet i fotboll 2004",
+    "Grekland skräller och vinner herrarnas fotbolls-EM",
+    2004,
+    "EM-final mot värdnationen Portugal",
+    "Grekland vinner finalen med 1–0 efter mål av Angelos Charisteas.",
+    300_000,
+  ],
+  [
+    "Uefa Champions League 1998/1999",
+    "Manchester United vänder Champions League-finalen på stopptid",
+    1999,
+    "Herrfotbollens final mot Bayern München",
+    "Manchester United gör två sena mål och går från förlust till seger inom några minuter.",
+    300_000,
+  ],
+  [
+    "Uefa Champions League 2004/2005",
+    "Liverpool vänder 0–3 och vinner Champions League-finalen",
+    2005,
+    "Herrfotbollens final mot Milan i Istanbul",
+    "Liverpool kvitterar med tre snabba mål och vinner därefter på straffar.",
+    300_000,
+  ],
+  [
+    "Olympiska sommarspelen 1936",
+    "Jesse Owens vinner fyra OS-guld i friidrott",
+    1936,
+    "Herrarnas sprint, längdhopp och stafett vid Berlin-OS",
+    "Den amerikanske friidrottaren vinner fyra grenar inför den nazistiska regimens ledning.",
+    300_000,
+  ],
+  [
+    "Friidrott vid olympiska sommarspelen 1968",
+    "Bob Beamon slår sensationellt världsrekord i OS-längdhopp",
+    1968,
+    "Herrarnas längdhoppsfinal vid Mexico City-OS",
+    "Beamon hoppar 8,90 meter och förbättrar det tidigare världsrekordet med 55 centimeter.",
+    300_000,
+  ],
+  [
+    "Gymnastik vid olympiska sommarspelen 1976",
+    "Nadia Comăneci får första perfekta OS-tian",
+    1976,
+    "Damernas artistiska gymnastik vid Montréal-OS",
+    "Hennes barrprogram belönas med den första fullpoängaren i den olympiska gymnastikens historia.",
+    300_000,
+  ],
+  [
+    "Friidrott vid olympiska sommarspelen 1988",
+    "Ben Johnson fråntas OS-guldet på 100 meter för dopning",
+    1988,
+    "Herrarnas sprint vid Seoul-OS",
+    "Kanadensaren diskvalificeras efter ett positivt dopningsprov och Carl Lewis tilldelas guldet.",
+    300_000,
+  ],
+  [
+    "Friidrott vid olympiska sommarspelen 2008",
+    "Usain Bolt slår världsrekord i OS-finalen på 100 meter",
+    2008,
+    "Herrarnas sprint vid Peking-OS",
+    "Bolt vinner överlägset på 9,69 sekunder trots att han firar före mållinjen.",
+    300_000,
+  ],
+];
+
 function sportCard(input: ClassicTuple): HandpickedCard {
   const card = classicCard(input);
 
@@ -7898,12 +8064,22 @@ function sportCard(input: ClassicTuple): HandpickedCard {
   };
 }
 
+function internationalSportCard(input: ClassicTuple): HandpickedCard {
+  const card = classicCard(input);
+
+  return {
+    ...card,
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+  };
+}
+
 const SPORT_IMAGE_RECHECK_TITLES = new Set(
   CURATED_SPORT_BATCH.map(([pageTitle]) => pageTitle),
 );
 
 const SPORT_CARDS: HandpickedCard[] = [
   ...CURATED_SPORT_BATCH.map(sportCard),
+  ...INTERNATIONAL_SPORT_MOMENTS.map(internationalSportCard),
   {
     deckIds: [
       SPORT_MOMENTS_DECK_ID,
