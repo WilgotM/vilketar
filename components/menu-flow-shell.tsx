@@ -423,7 +423,15 @@ export default function MenuFlowShell() {
       }
 
       if (deckNodes && !isSelectionRouteVisible(deckNodes, route)) {
-        return [];
+        return deck.key === "featured-music"
+          ? {
+              disabled: true,
+              href: getRootFreePlayPath("landing"),
+              key: deck.key,
+              kind: "play" as const,
+              text: "Musik – byggs om",
+            }
+          : [];
       }
 
       return {

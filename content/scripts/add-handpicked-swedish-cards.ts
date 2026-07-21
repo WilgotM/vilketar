@@ -1,4 +1,4 @@
-import { readFile, readdir, writeFile } from "fs/promises";
+import { readFile, readdir, rm, writeFile } from "fs/promises";
 import path from "path";
 import { Card } from "../../types/cards";
 
@@ -13,6 +13,7 @@ const CLASSICS_DECK_ID = "all-swedish-classics-all";
 const CLASSICS_GROUP_ID = "all-swedish-classics";
 const SPORT_MOMENTS_DECK_ID = "all-sport-sportogonblick";
 const VIDEO_GAMES_DECK_ID = "all-technology-video-games";
+const MUSIC_DECK_ID = "all-entertainment-music";
 
 type DifficultyCounts = {
   easy: number;
@@ -9389,6 +9390,22 @@ async function main() {
 
   await writeDeck(CLASSICS_DECK_ID, classicsCards);
   await writeDeck(SPORT_MOMENTS_DECK_ID, sportMomentCards);
+  await writeDeck(MUSIC_DECK_ID, []);
+
+  const publishedDeckIds = new Set([
+    CLASSICS_DECK_ID,
+    MUSIC_DECK_ID,
+    SPORT_MOMENTS_DECK_ID,
+  ]);
+  const staleDeckFiles = (await readdir(PUBLIC_DECKS_DIR)).filter(
+    (fileName) =>
+      fileName.endsWith(".json") &&
+      fileName !== "index.json" &&
+      !publishedDeckIds.has(fileName.replace(/\.json$/u, "")),
+  );
+  await Promise.all(
+    staleDeckFiles.map((fileName) => rm(path.join(PUBLIC_DECKS_DIR, fileName))),
+  );
 
   const index = JSON.parse(await readFile(INDEX_FILE, "utf8")) as {
     children: Array<Record<string, unknown>>;
@@ -9476,6 +9493,64 @@ async function main() {
   }
 
   await writeFile(INDEX_FILE, `${JSON.stringify(index, null, 2)}\n`);
+
+  const emptyCounts = { easy: 0, normal: 0, hard: 0 };
+  const publishedSportCounts = countDifficulty(sportMomentCards);
+  const publishedIndex = {
+    id: "all",
+    slug: "all",
+    title: "All",
+    themeHue: 0,
+    minScore: 1000,
+    difficultyCounts: addDifficultyCounts(
+      addDifficultyCounts(difficultyCounts, publishedSportCounts),
+      emptyCounts,
+    ),
+    children: [
+      classicsNode,
+      {
+        id: "all-entertainment",
+        slug: "entertainment",
+        title: "Entertainment",
+        themeHue: 216,
+        frequency: 1,
+        minScore: 1000,
+        difficultyCounts: emptyCounts,
+        children: [
+          {
+            id: MUSIC_DECK_ID,
+            slug: "music",
+            title: "Music",
+            themeHue: 216,
+            frequency: 1,
+            minScore: 1000,
+            difficultyCounts: emptyCounts,
+          },
+        ],
+      },
+      {
+        id: "all-sport",
+        slug: "sport",
+        title: "Sport",
+        themeHue: 144,
+        frequency: 0.1,
+        minScore: 1000,
+        difficultyCounts: publishedSportCounts,
+        children: [
+          {
+            id: SPORT_MOMENTS_DECK_ID,
+            slug: "sportogonblick",
+            title: "Sportögonblick",
+            themeHue: 144,
+            frequency: 2.6,
+            minScore: 1000,
+            difficultyCounts: publishedSportCounts,
+          },
+        ],
+      },
+    ],
+  };
+  await writeFile(INDEX_FILE, `${JSON.stringify(publishedIndex, null, 2)}\n`);
 
   console.log(
     `Added ${CLASSIC_CARDS.length} handpicked Swedish classic cards.`,

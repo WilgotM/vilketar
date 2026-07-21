@@ -3,6 +3,7 @@ import ButtonLink from "./button-link";
 import * as styles from "../styles/free-play-selector.css";
 
 export interface SelectorOption {
+  disabled?: boolean;
   href: string;
   kind: "drilldown" | "play";
   key: string;
@@ -30,25 +31,31 @@ export default function SelectorOptionGrid(props: Props) {
           className={`${styles.gridItem} ${styles.optionCard}`}
           key={item.key}
         >
-          <ButtonLink
-            href={item.href}
-            minimal
-            onClick={
-              item.kind === "play" && item.selectionRoute && onSelectPlayRoute
-                ? (event) => {
-                    event.preventDefault();
-                    onSelectPlayRoute(item.selectionRoute!, item.href);
-                  }
-                : item.kind === "drilldown" && item.onClick
+          {item.disabled ? (
+            <span aria-disabled className={styles.disabledOption}>
+              {item.text}
+            </span>
+          ) : (
+            <ButtonLink
+              href={item.href}
+              minimal
+              onClick={
+                item.kind === "play" && item.selectionRoute && onSelectPlayRoute
                   ? (event) => {
                       event.preventDefault();
-                      item.onClick?.();
+                      onSelectPlayRoute(item.selectionRoute!, item.href);
                     }
-                  : undefined
-            }
-            text={item.text}
-            trailingIcon={item.kind === "drilldown" ? "chevron" : undefined}
-          />
+                  : item.kind === "drilldown" && item.onClick
+                    ? (event) => {
+                        event.preventDefault();
+                        item.onClick?.();
+                      }
+                    : undefined
+              }
+              text={item.text}
+              trailingIcon={item.kind === "drilldown" ? "chevron" : undefined}
+            />
+          )}
         </div>
       ))}
       {hasOddItemCount ? (

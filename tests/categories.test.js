@@ -14,39 +14,27 @@ import {
 test("top-level categories stay in the intended order", () => {
   assert.deepEqual(
     getCategoryDefinitions().map((category) => category.slug),
-    [
-      "svenska-klassiker",
-      "history",
-      "entertainment",
-      "leaders",
-      "people",
-      "art",
-      "architecture",
-      "business",
-      "technology",
-      "engineering",
-      "sport",
-    ],
+    ["svenska-klassiker", "entertainment", "sport"],
   );
 });
 
-test("history all route resolves to descendant free-play decks", () => {
-  const route = getGroupAllSelectionRoute(["history"]);
+test("sport all route resolves to the remaining sport deck", () => {
+  const route = getGroupAllSelectionRoute(["sport"]);
 
   assert.ok(route);
-  assert.equal(getSelectionRoutePath(route), "/play/history/all");
-  assert.equal(route.nodeId, "all-history");
-  assert.equal(getSelectionRouteShareLabel(route), "History");
+  assert.equal(getSelectionRoutePath(route), "/play/sport/all");
+  assert.equal(route.nodeId, "all-sport");
+  assert.equal(getSelectionRouteShareLabel(route), "Sport");
 });
 
-test("leaf routes keep clean share labels and parent paths", () => {
-  const route = getLeafSelectionRoute(["engineering", "space"]);
+test("remaining leaf routes keep clean share labels and parent paths", () => {
+  const route = getLeafSelectionRoute(["sport", "sportogonblick"]);
 
   assert.ok(route);
-  assert.equal(getSelectionRoutePath(route), "/play/engineering/space");
-  assert.equal(getSelectionRouteParentPath(route), "/play/engineering");
-  assert.equal(getSelectionRouteShareLabel(route), "Engineering / Space");
-  assert.equal(route.nodeId, "all-engineering-space");
+  assert.equal(getSelectionRoutePath(route), "/play/sport/sportogonblick");
+  assert.equal(getSelectionRouteParentPath(route), "/play/sport");
+  assert.equal(getSelectionRouteShareLabel(route), "Sport / Sportögonblick");
+  assert.equal(route.nodeId, "all-sport-sportogonblick");
 });
 
 test("static paths include deep selectors and leaf routes", () => {
@@ -63,12 +51,11 @@ test("static paths include deep selectors and leaf routes", () => {
   assert.ok(paths.includes("svenska-klassiker"));
   assert.ok(paths.includes("svenska-klassiker/allt"));
   assert.ok(paths.includes("browse/svenska-klassiker"));
-  assert.ok(paths.includes("leaders"));
-  assert.ok(paths.includes("browse/history"));
-  assert.ok(paths.includes("leaders/rulers"));
-  assert.ok(paths.includes("leaders/rulers/europe/england"));
-  assert.ok(paths.includes("leaders/rulers/all"));
-  assert.ok(paths.includes("technology/websites"));
+  assert.ok(paths.includes("sport"));
+  assert.ok(paths.includes("sport/sportogonblick"));
+  assert.ok(!paths.includes("leaders"));
+  assert.ok(!paths.includes("browse/history"));
+  assert.ok(!paths.includes("technology/websites"));
 });
 
 test("all route stays anchored at /play/all", () => {

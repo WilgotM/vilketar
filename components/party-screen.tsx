@@ -92,7 +92,15 @@ function PartyCategorySelector(props: {
         }
 
         if (deckNodes && !isSelectionRouteVisible(deckNodes, selectionRoute)) {
-          return [];
+          return deck.key === "featured-music"
+            ? {
+                disabled: true,
+                href: "/party",
+                key: deck.key,
+                kind: "play" as const,
+                text: "Musik – byggs om",
+              }
+            : [];
         }
 
         return {

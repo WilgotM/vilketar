@@ -1346,7 +1346,6 @@ const rootDeckDefinition: DeckDefinition = {
           slug: "sportogonblick",
           title: "Sportögonblick",
           frequency: 2.6,
-          hidden: true,
         },
         {
           slug: "svensk-sport",
@@ -1420,7 +1419,60 @@ const rootDeckDefinition: DeckDefinition = {
   ],
 };
 
-export const rootDeck: Deck = deckDefinitionToDeck(rootDeckDefinition, []);
+function findRootChild(slug: string): DeckDefinition {
+  const child = rootDeckDefinition.children?.find((deck) => deck.slug === slug);
+  if (!child) {
+    throw new Error(`Missing ${slug} in the legacy deck tree`);
+  }
+
+  return child;
+}
+
+function findChild(deck: DeckDefinition, slug: string): DeckDefinition {
+  const child = deck.children?.find((candidate) => candidate.slug === slug);
+  if (!child) {
+    throw new Error(`Missing ${slug} in ${deck.slug}`);
+  }
+
+  return child;
+}
+
+const entertainmentDeck = findRootChild("entertainment");
+
+// The legacy tree remains above as a source catalogue, but only these decks
+// are published while the general and music content are rebuilt by hand.
+const activeRootDeckDefinition: DeckDefinition = {
+  slug: "all",
+  title: "All",
+  frequency: 1,
+  children: [
+    {
+      ...entertainmentDeck,
+      children: [
+        {
+          ...findChild(entertainmentDeck, "music"),
+          sources: [],
+        },
+      ],
+    },
+    {
+      ...findRootChild("sport"),
+      children: [
+        {
+          slug: "sportogonblick",
+          title: "Sportögonblick",
+          frequency: 2.6,
+          hidden: true,
+        },
+      ],
+    },
+  ],
+};
+
+export const rootDeck: Deck = deckDefinitionToDeck(
+  activeRootDeckDefinition,
+  [],
+);
 
 export const topLevelDecks: readonly Deck[] = rootDeck.children ?? [];
 

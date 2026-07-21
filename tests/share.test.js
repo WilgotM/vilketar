@@ -31,28 +31,28 @@ test("free play share text includes category, difficulty, score, and best", () =
     difficulty: "normal",
     highscore: 25,
     mode: "free-play",
-    path: "/play/history/wars",
+    path: "/play/sport/sportogonblick",
     results: [true, false, true, true, true, false, true, true],
     score: 6,
     selectionRoute: {
       kind: "leaf",
       maxYear: null,
       minYear: null,
-      nodeId: "all-history-wars",
+      nodeId: "all-sport-sportogonblick",
     },
   });
 
   assert.equal(
     shareText,
     [
-      "#VilketÅr / History / Wars / Normal",
+      "#VilketÅr / Sport / Sportögonblick / Normal",
       "",
       "🟩🟥🟩🟩🟩🟥🟩🟩",
       "",
       "Poäng / 6 / Brons",
       "Bäst / 25 / Guld",
       "",
-      "https://xn--vilketr-jxa.se/play/history/wars",
+      "https://xn--vilketr-jxa.se/play/sport/sportogonblick",
     ].join("\n"),
   );
 });

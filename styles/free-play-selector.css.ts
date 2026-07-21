@@ -224,4 +224,17 @@ export const gridFiller = style({
   visibility: "hidden",
 });
 
+export const disabledOption = style({
+  alignItems: "center",
+  color: vars.color.textMuted,
+  cursor: "not-allowed",
+  display: "flex",
+  fontWeight: vars.fontWeight.semibold,
+  justifyContent: "center",
+  minHeight: "4.5rem",
+  padding: vars.space.md,
+  textAlign: "center",
+  width: "100%",
+});
+
 export const sectionTitle = sectionLabel;

@@ -957,22 +957,31 @@ async function main() {
 
   const args = parseArgs(process.argv.slice(2));
   const allQueries = await loadQueryDefinitions();
+  const activeDecks = getAllDeckDefinitions();
+  const activeQueryIds = new Set(
+    activeDecks.flatMap((deck) =>
+      (deck.sources ?? []).map((source) => source.id),
+    ),
+  );
+  const activeQueries = allQueries.filter((query) =>
+    activeQueryIds.has(query.id),
+  );
 
   if (args.queryIds.length > 0) {
     const selectedQueries = pickQueries(allQueries, args.queryIds);
     console.log(
-      `Ignoring --query and rebuilding all ${allQueries.length} queries so built decks stay complete. Requested: ${selectedQueries.map((query) => query.id).join(", ")}`,
+      `Ignoring --query and rebuilding all ${activeQueries.length} active queries so built decks stay complete. Requested: ${selectedQueries.map((query) => query.id).join(", ")}`,
     );
   }
   const sourceCardsById = new Map<string, BuiltCard[]>();
 
-  for (const query of allQueries) {
+  for (const query of activeQueries) {
     sourceCardsById.set(query.id, await buildCardsForQuery(query));
   }
 
   const candidateCardsByDeckId = new Map<string, BuiltCard[]>();
 
-  for (const deck of getAllDeckDefinitions()) {
+  for (const deck of activeDecks) {
     candidateCardsByDeckId.set(
       deck.id,
       buildDeckCards(
@@ -986,7 +995,7 @@ async function main() {
 
   const builtDecksById = new Map<string, BuiltDeck>();
 
-  for (const deck of getAllDeckDefinitions()) {
+  for (const deck of activeDecks) {
     const { builtDeck } = buildDeck(
       deck,
       candidateCardsByDeckId.get(deck.id) ?? [],
@@ -996,7 +1005,9 @@ async function main() {
   }
 
   populateDeckDifficultyCountsForTree(builtDecksById);
-  validateVisibleDeckTree(builtDecksById);
+  if (activeQueryIds.size > 0) {
+    validateVisibleDeckTree(builtDecksById);
+  }
 
   await writeDeckArtifacts(
     Array.from(builtDecksById.values()).sort((a, b) =>
