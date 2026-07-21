@@ -1,24 +1,28 @@
 import React from "react";
-import { resolveMusicPreview } from "../lib/itunes-preview";
+import {
+  getCachedMusicPreview,
+  resolveMusicPreview,
+} from "../lib/itunes-preview";
 import { Card } from "../types/cards";
 import * as styles from "../styles/music-preview-player.css";
 
 type Props = {
+  artist: string;
   music: NonNullable<Card["music"]>;
   title: string;
 };
 
 let activeAudio: HTMLAudioElement | null = null;
 
-function formatSeconds(value: number): string {
-  return `0:${Math.max(0, Math.floor(value)).toString().padStart(2, "0")}`;
-}
-
 export default function MusicPreviewPlayer(props: Props) {
-  const { music, title } = props;
+  const { artist, music, title } = props;
+  const initialPreview = getCachedMusicPreview(music, title);
   const audioRef = React.useRef<HTMLAudioElement | null>(null);
   const [previewUrl, setPreviewUrl] = React.useState<string | null>(
-    music.previewUrl,
+    initialPreview?.previewUrl ?? music.previewUrl,
+  );
+  const [artworkUrl, setArtworkUrl] = React.useState<string | null>(
+    initialPreview?.artworkUrl ?? music.artworkUrl,
   );
   const [status, setStatus] = React.useState<
     "error" | "loading" | "paused" | "playing" | "ready"
@@ -30,8 +34,12 @@ export default function MusicPreviewPlayer(props: Props) {
     let cancelled = false;
     const audio = audioRef.current;
     setCurrentTime(0);
-    setPreviewUrl(music.previewUrl);
-    setStatus(music.previewUrl ? "ready" : "loading");
+    const cachedPreview = getCachedMusicPreview(music, title);
+    setPreviewUrl(cachedPreview?.previewUrl ?? music.previewUrl);
+    setArtworkUrl(cachedPreview?.artworkUrl ?? music.artworkUrl);
+    setStatus(
+      cachedPreview?.previewUrl || music.previewUrl ? "ready" : "loading",
+    );
 
     void resolveMusicPreview(music, title).then((preview) => {
       if (cancelled) return;
@@ -40,6 +48,7 @@ export default function MusicPreviewPlayer(props: Props) {
         return;
       }
       setPreviewUrl(preview.previewUrl);
+      setArtworkUrl(preview.artworkUrl ?? music.artworkUrl);
       setStatus("ready");
     });
 
@@ -107,30 +116,49 @@ export default function MusicPreviewPlayer(props: Props) {
         preload="metadata"
         src={previewUrl ?? undefined}
       />
-      <button
-        aria-label={label}
-        className={styles.playButton}
-        disabled={!previewUrl || status === "loading" || status === "error"}
-        onClick={() => void togglePlayback()}
-        type="button"
-      >
-        <span aria-hidden="true" className={styles.playIcon}>
-          {status === "playing" ? "Ⅱ" : "▶"}
-        </span>
-      </button>
-      <div className={styles.copy}>
-        <strong className={styles.label}>{label}</strong>
-        <div aria-hidden="true" className={styles.progressTrack}>
-          <span
-            className={styles.progressFill}
-            style={{ transform: `scaleX(${progress})` }}
+      <div className={styles.artworkFrame}>
+        {artworkUrl ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            alt={`Omslag till ${title} av ${artist}`}
+            className={styles.artwork}
+            draggable={false}
+            src={artworkUrl}
           />
-        </div>
-        <span className={styles.time}>
-          {formatSeconds(currentTime)} / {formatSeconds(duration)}
-        </span>
+        ) : (
+          <div aria-hidden="true" className={styles.artworkFallback}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              alt=""
+              className={styles.fallbackLogo}
+              src="/logo-with-bg.svg"
+            />
+          </div>
+        )}
+        <div aria-hidden="true" className={styles.artworkShade} />
       </div>
-      <span className={styles.attribution}>30 sek · Apple Music</span>
+      <div className={styles.trackRow}>
+        <button
+          aria-label={label}
+          className={styles.listenButton}
+          disabled={!previewUrl || status === "loading" || status === "error"}
+          onClick={() => void togglePlayback()}
+          style={{
+            background: `conic-gradient(rgba(17, 17, 17, 0.2) ${progress * 360}deg, #111111 0)`,
+          }}
+          type="button"
+        >
+          <span className={styles.playButtonInner}>
+            <span aria-hidden="true" className={styles.playIcon}>
+              {status === "playing" ? "Ⅱ" : "▶"}
+            </span>
+          </span>
+        </button>
+        <div className={styles.trackCopy}>
+          <strong className={styles.trackTitle}>{title}</strong>
+          <span className={styles.artist}>{artist}</span>
+        </div>
+      </div>
     </div>
   );
 }

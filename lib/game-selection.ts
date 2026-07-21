@@ -9,6 +9,7 @@ import {
 import { createDeckNodeMap, getDeckNodeChildren } from "./deck-tree";
 import { DIFFICULTY_MIN_PAGE_VIEWS } from "./free-play-difficulty-rules";
 import { createWikimediaImageCandidates } from "./image";
+import { resolveMusicPreview } from "./itunes-preview";
 import { preloadCardImageCandidates } from "./use-card-image";
 
 const YEAR_BUCKET_COUNT = 5;
@@ -577,6 +578,25 @@ export function preloadImage(image: string): HTMLImageElement | null {
   return preloadCardImageCandidates(createWikimediaImageCandidates(image));
 }
 
+/**
+ * Starts loading every visual asset a card can need while it is still queued.
+ * Music artwork is resolved separately from the deck data, so it needs its
+ * own early request to be ready when the card reaches the deck.
+ */
+export function preloadCard(
+  card: Pick<Card, "image" | "music" | "title">,
+): HTMLImageElement | null {
+  if (card.music) {
+    void resolveMusicPreview(card.music, card.title).then((preview) => {
+      if (preview?.artworkUrl) {
+        preloadCardImageCandidates([preview.artworkUrl]);
+      }
+    });
+  }
+
+  return preloadImage(card.image);
+}
+
 export function checkCorrect(
   played: PlayedCard[],
   card: PreparedCard,
@@ -727,10 +747,7 @@ export function createGameState(
       ...initialUsedQids,
     ]);
     state.usedYears = new Set([firstCard.year, secondCard.year]);
-    state.imageCache = [
-      preloadImage(firstCard.image),
-      preloadImage(secondCard.image),
-    ];
+    state.imageCache = [preloadCard(firstCard), preloadCard(secondCard)];
 
     return state;
   }
@@ -746,10 +763,7 @@ export function createGameState(
   state.played = [];
   state.next = firstCard;
   state.nextButOne = secondCard;
-  state.imageCache = [
-    preloadImage(firstCard.image),
-    preloadImage(secondCard.image),
-  ];
+  state.imageCache = [preloadCard(firstCard), preloadCard(secondCard)];
 
   return state;
 }

@@ -3,7 +3,7 @@ import { DeckNode } from "../types/decks";
 import { GameDifficulty, GameState, PreparedCard } from "../types/game";
 import { filterCardsByDifficulty, hasDeckForDifficulty } from "./create-state";
 import { DIFFICULTY_MIN_PAGE_VIEWS } from "./free-play-difficulty-rules";
-import { preloadImage, prepareDecks } from "./game-selection";
+import { preloadCard, prepareDecks } from "./game-selection";
 import { createSeededRandom } from "./seeded-random";
 
 export const DAILY_CARD_COUNT = 100;
@@ -253,7 +253,7 @@ export async function createDailyGameState(
     decks: prepareDecks(selectedRootDeck, filteredCardsByDeckId, random),
     difficulty,
     dailyQueue: remainingCards,
-    imageCache: [preloadImage(firstCard.image), preloadImage(secondCard.image)],
+    imageCache: [preloadCard(firstCard), preloadCard(secondCard)],
     lives: 3,
     next: firstCard,
     nextButOne: secondCard,

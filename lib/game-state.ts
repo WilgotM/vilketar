@@ -8,7 +8,7 @@ import createState, {
 } from "./create-state";
 import { DAILY_DIFFICULTY } from "./daily";
 import { createDeckNodeListMap, resolveDeckSelection } from "./deck-tree";
-import { preloadImage, prepareDecks } from "./game-selection";
+import { preloadCard, prepareDecks } from "./game-selection";
 import { createSeededRandom } from "./seeded-random";
 
 function createEphemeralRandom(): RandomSource {
@@ -206,8 +206,8 @@ export function createDailyGameStateFromSnapshot(
     badlyPlaced: null,
     difficulty,
     imageCache: [
-      snapshot.next ? preloadImage(snapshot.next.image) : null,
-      snapshot.nextButOne ? preloadImage(snapshot.nextButOne.image) : null,
+      snapshot.next ? preloadCard(snapshot.next) : null,
+      snapshot.nextButOne ? preloadCard(snapshot.nextButOne) : null,
     ].filter((image): image is HTMLImageElement => image !== null),
     lives: snapshot.lives,
     next: snapshot.next,

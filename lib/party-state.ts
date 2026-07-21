@@ -1,7 +1,7 @@
 import { PlayedCard } from "../types/cards";
 import { GameState, PreparedCard } from "../types/game";
 import { PartyGameState, PartyTeam } from "../types/party";
-import { checkCorrect, drawNextCard, preloadImage } from "./game-selection";
+import { checkCorrect, drawNextCard, preloadCard } from "./game-selection";
 
 const MAX_MISTAKES = 3;
 
@@ -88,8 +88,8 @@ function drawUpcomingCards(game: GameState): {
     game: {
       ...nextGame,
       imageCache: [
-        next ? preloadImage(next.image) : null,
-        nextButOne ? preloadImage(nextButOne.image) : null,
+        next ? preloadCard(next) : null,
+        nextButOne ? preloadCard(nextButOne) : null,
       ].filter((image): image is HTMLImageElement => image !== null),
       nextButOne,
     },

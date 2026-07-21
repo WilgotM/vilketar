@@ -121,35 +121,41 @@ export default function CardVisual(props: Props) {
             className={styles.front}
             style={{ pointerEvents: flipped ? "none" : "auto" }}
           >
-            <div className={styles.cardContent}>
-              <div className={styles.top}>
-                <div className={styles.label}>{frontTitle}</div>
-                <div className={styles.description}>{frontSubtitle}</div>
-              </div>
-              <div className={styles.image}>
-                {isHiddenMusicCard && item.music && !flipped ? (
-                  <MusicPreviewPlayer music={item.music} title={item.title} />
-                ) : imageSrc ? (
-                  <div className={styles.imageFrame}>
-                    <div className={styles.imageInner}>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        alt=""
-                        className={styles.imageForeground}
-                        decoding="sync"
-                        draggable={false}
-                        loading="eager"
-                        onContextMenu={(event) => {
-                          event.preventDefault();
-                        }}
-                        src={imageSrc}
-                      />
-                      <div aria-hidden="true" className={styles.imageTint} />
+            {isHiddenMusicCard && item.music ? (
+              <MusicPreviewPlayer
+                artist={item.music.artist}
+                music={item.music}
+                title={item.title}
+              />
+            ) : (
+              <div className={styles.cardContent}>
+                <div className={styles.top}>
+                  <div className={styles.label}>{frontTitle}</div>
+                  <div className={styles.description}>{frontSubtitle}</div>
+                </div>
+                <div className={styles.image}>
+                  {imageSrc ? (
+                    <div className={styles.imageFrame}>
+                      <div className={styles.imageInner}>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          alt=""
+                          className={styles.imageForeground}
+                          decoding="sync"
+                          draggable={false}
+                          loading="eager"
+                          onContextMenu={(event) => {
+                            event.preventDefault();
+                          }}
+                          src={imageSrc}
+                        />
+                        <div aria-hidden="true" className={styles.imageTint} />
+                      </div>
                     </div>
-                  </div>
-                ) : null}
+                  ) : null}
+                </div>
               </div>
-            </div>
+            )}
           </div>
           <div
             className={classNames(styles.back, {
