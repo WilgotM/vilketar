@@ -14,6 +14,10 @@ const CLASSICS_GROUP_ID = "all-swedish-classics";
 const SPORT_MOMENTS_DECK_ID = "all-sport-sportogonblick";
 const VIDEO_GAMES_DECK_ID = "all-technology-video-games";
 const MUSIC_DECK_ID = "all-entertainment-music";
+// Keep music at 10% in the ordinary all-deck. The other published root
+// weights are 2.45 for Svenska klassiker and 0.1 for sport, so 2.55 / 9
+// makes music one tenth of the combined total.
+const MUSIC_ROOT_FREQUENCY = 2.55 / 9;
 
 type DifficultyCounts = {
   easy: number;
@@ -9513,7 +9517,7 @@ async function main() {
         slug: "entertainment",
         title: "Entertainment",
         themeHue: 216,
-        frequency: 1,
+        frequency: MUSIC_ROOT_FREQUENCY,
         minScore: 1000,
         difficultyCounts: emptyCounts,
         children: [

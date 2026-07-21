@@ -43,7 +43,7 @@
       "slug": "entertainment",
       "title": "Entertainment",
       "themeHue": 216,
-      "frequency": 1,
+      "frequency": 0.2833333333333333,
       "minScore": 1000,
       "difficultyCounts": {
         "easy": 572,
