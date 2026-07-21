@@ -12,7 +12,7 @@ export const FEATURED_FREE_PLAY_DECKS: readonly FeaturedFreePlayDeck[] = [
     key: "featured-sport-moments",
     routeSlug: "sportogonblick",
     slugPath: ["sport", "sportogonblick"],
-    text: "Sportögonblick",
+    text: "Sport",
   },
   {
     key: "featured-swedish-classics",
@@ -21,40 +21,10 @@ export const FEATURED_FREE_PLAY_DECKS: readonly FeaturedFreePlayDeck[] = [
     text: "Svenska klassiker",
   },
   {
-    key: "featured-us-presidents",
-    routeSlug: "usas-presidenter",
-    slugPath: ["leaders", "politicians", "americas", "us"],
-    text: "USA:s presidenter",
-  },
-  {
-    key: "featured-english-monarchs",
-    routeSlug: "engelska-regenter",
-    slugPath: ["leaders", "rulers", "europe", "england"],
-    text: "Engelska regenter",
-  },
-  {
-    key: "featured-wars",
-    routeSlug: "krig",
-    slugPath: ["history", "wars"],
-    text: "Krig",
-  },
-  {
     key: "featured-music",
     routeSlug: "musik",
     slugPath: ["entertainment", "music"],
     text: "Musik",
-  },
-  {
-    key: "featured-books",
-    routeSlug: "bocker",
-    slugPath: ["entertainment", "books"],
-    text: "Böcker",
-  },
-  {
-    key: "featured-video-games",
-    routeSlug: "tv-spel",
-    slugPath: ["technology", "video-games"],
-    text: "TV-spel",
   },
 ] as const;
 
