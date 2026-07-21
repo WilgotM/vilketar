@@ -312,6 +312,13 @@ export function getSelectionRouteShareLabel(
   }
 
   const slugPath = getDeckSlugPath(selectionRoute.nodeId);
+  const featuredDeck = FEATURED_FREE_PLAY_DECKS.find(
+    (deck) =>
+      deck.slugPath.length === slugPath.length &&
+      deck.slugPath.every((slug, index) => slug === slugPath[index]),
+  );
+  if (featuredDeck) return featuredDeck.text;
+
   return buildBreadcrumbs(slugPath, { includeCurrent: true })
     .map((breadcrumb) => breadcrumb.label)
     .join(" / ");

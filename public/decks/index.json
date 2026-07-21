@@ -5,9 +5,9 @@
   "themeHue": 0,
   "minScore": 1000,
   "difficultyCounts": {
-    "easy": 275,
-    "normal": 827,
-    "hard": 827
+    "easy": 847,
+    "normal": 1399,
+    "hard": 1399
   },
   "children": [
     {
@@ -46,9 +46,9 @@
       "frequency": 1,
       "minScore": 1000,
       "difficultyCounts": {
-        "easy": 0,
-        "normal": 0,
-        "hard": 0
+        "easy": 572,
+        "normal": 572,
+        "hard": 572
       },
       "children": [
         {
@@ -59,9 +59,9 @@
           "frequency": 1,
           "minScore": 1000,
           "difficultyCounts": {
-            "easy": 0,
-            "normal": 0,
-            "hard": 0
+            "easy": 572,
+            "normal": 572,
+            "hard": 572
           }
         }
       ]

@@ -33,7 +33,7 @@ test("remaining leaf routes keep clean share labels and parent paths", () => {
   assert.ok(route);
   assert.equal(getSelectionRoutePath(route), "/play/sport/sportogonblick");
   assert.equal(getSelectionRouteParentPath(route), "/play/sport");
-  assert.equal(getSelectionRouteShareLabel(route), "Sport / Sportögonblick");
+  assert.equal(getSelectionRouteShareLabel(route), "Sport");
   assert.equal(route.nodeId, "all-sport-sportogonblick");
 });
 

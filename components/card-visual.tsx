@@ -3,10 +3,12 @@ import { motion, Transition } from "motion/react";
 import React, { Fragment } from "react";
 import { hideYearsOnCardFront } from "../lib/card-front-text";
 import { createWikimediaImageCandidates } from "../lib/image";
+import { getCachedMusicPreview } from "../lib/itunes-preview";
 import { useCardImage } from "../lib/use-card-image";
 import { useCardTheme } from "../lib/use-card-theme";
 import { PlayedCard } from "../types/cards";
 import { PreparedCard } from "../types/game";
+import MusicPreviewPlayer from "./music-preview-player";
 import * as styles from "../styles/item-card.css";
 
 type TransformValues = {
@@ -57,17 +59,37 @@ export default function CardVisual(props: Props) {
     style,
     transition = DEFAULT_TRANSITION,
   } = props;
+  const isPlayed = "played" in item;
+  const isHiddenMusicCard = !!item.music && !isPlayed;
+  const cachedMusicPreview = item.music
+    ? getCachedMusicPreview(item.music, item.title)
+    : null;
+  const musicArtwork =
+    cachedMusicPreview?.artworkUrl ?? item.music?.artworkUrl ?? item.image;
+  const appleTrackViewUrl =
+    item.music?.appleTrackViewUrl ?? cachedMusicPreview?.appleTrackViewUrl;
 
   const imageCandidates = React.useMemo(
-    () => (loadImage ? createWikimediaImageCandidates(item.image) : []),
-    [item.image, loadImage],
+    () =>
+      loadImage && !isHiddenMusicCard
+        ? item.music
+          ? musicArtwork
+            ? [musicArtwork]
+            : []
+          : createWikimediaImageCandidates(item.image)
+        : [],
+    [isHiddenMusicCard, item.image, item.music, loadImage, musicArtwork],
   );
   const { imageSrc } = useCardImage(imageCandidates);
   const cardThemeStyle = useCardTheme(item.deckThemeHue);
   const yearLabel =
     item.year < 0 ? `${Math.abs(item.year)} f.Kr.` : String(item.year);
-  const frontTitle = hideYearsOnCardFront(item.title);
-  const frontSubtitle = hideYearsOnCardFront(item.subtitle);
+  const frontTitle = isHiddenMusicCard
+    ? "Vilket år släpptes låten?"
+    : hideYearsOnCardFront(item.title);
+  const frontSubtitle = isHiddenMusicCard
+    ? "Lyssna och placera den på tidslinjen"
+    : hideYearsOnCardFront(item.subtitle);
   const effectiveAnimateTransform = animateTransform ?? {
     rotateY: flipped ? 180 : 0,
   };
@@ -105,7 +127,9 @@ export default function CardVisual(props: Props) {
                 <div className={styles.description}>{frontSubtitle}</div>
               </div>
               <div className={styles.image}>
-                {imageSrc ? (
+                {isHiddenMusicCard && item.music && !flipped ? (
+                  <MusicPreviewPlayer music={item.music} title={item.title} />
+                ) : imageSrc ? (
                   <div className={styles.imageFrame}>
                     <div className={styles.imageInner}>
                       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -147,16 +171,18 @@ export default function CardVisual(props: Props) {
               <div className={styles.cardContent}>
                 <span className={styles.fact}>{item.fact}</span>
                 <div className={styles.links}>
-                  <a
-                    href={`https://www.wikidata.org/wiki/${item.qid}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={(event) => {
-                      event.stopPropagation();
-                    }}
-                  >
-                    Wikidata
-                  </a>
+                  {/^Q\d+$/u.test(item.qid) ? (
+                    <a
+                      href={`https://www.wikidata.org/wiki/${item.qid}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(event) => {
+                        event.stopPropagation();
+                      }}
+                    >
+                      Wikidata
+                    </a>
+                  ) : null}
                   {item.wikipediaSlug ? (
                     <Fragment>
                       <span className={styles.linkSeparator}>/</span>
@@ -169,6 +195,21 @@ export default function CardVisual(props: Props) {
                         }}
                       >
                         Wikipedia
+                      </a>
+                    </Fragment>
+                  ) : null}
+                  {appleTrackViewUrl ? (
+                    <Fragment>
+                      {/^Q\d+$/u.test(item.qid) || item.wikipediaSlug ? (
+                        <span className={styles.linkSeparator}>/</span>
+                      ) : null}
+                      <a
+                        href={appleTrackViewUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(event) => event.stopPropagation()}
+                      >
+                        Apple Music
                       </a>
                     </Fragment>
                   ) : null}

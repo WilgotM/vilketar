@@ -45,7 +45,7 @@ test("free play share text includes category, difficulty, score, and best", () =
   assert.equal(
     shareText,
     [
-      "#VilketÅr / Sport / Sportögonblick / Normal",
+      "#VilketÅr / Sport / Normal",
       "",
       "🟩🟥🟩🟩🟩🟥🟩🟩",
       "",
