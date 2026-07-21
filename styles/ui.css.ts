@@ -246,6 +246,17 @@ export const heroStack = style([
   },
 ]);
 
+export const heroStackCompactLandscape = style({
+  "@media": {
+    [media.shortCompactLandscape]: {
+      flex: "1 1 0",
+      gap: vars.space.sm,
+      maxWidth: "17rem",
+      width: "auto",
+    },
+  },
+});
+
 export const heroLogoWrapper = style({
   display: "flex",
   justifyContent: "center",
@@ -260,6 +271,15 @@ export const heroLogo = style({
   selectors: {
     "&:hover": {
       transform: "scale(1.06) rotate(5deg)",
+    },
+  },
+});
+
+export const heroLogoCompactLandscape = style({
+  "@media": {
+    [media.shortCompactLandscape]: {
+      height: "4.5rem",
+      width: "4.5rem",
     },
   },
 });
@@ -283,6 +303,23 @@ export const heroTagline = style([
     },
   },
 ]);
+
+export const heroTaglineCompactLandscape = style({
+  "@media": {
+    [media.shortCompactLandscape]: {
+      fontSize: vars.fontSize.sm,
+      maxWidth: "16rem",
+    },
+  },
+});
+
+export const heroWordmarkCompactLandscape = style({
+  "@media": {
+    [media.shortCompactLandscape]: {
+      fontSize: vars.fontSize.heroLandscape,
+    },
+  },
+});
 
 export const heroTaglineBold = style({
   color: vars.color.accent,

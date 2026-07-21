@@ -1,40 +1,138 @@
+const CACHE_VERSION =
+  new URL(self.location.href).searchParams.get("v") || "legacy";
+const SHELL_CACHE = `vilketar-shell-${CACHE_VERSION}`;
+const PAGE_CACHE = `vilketar-pages-${CACHE_VERSION}`;
+const DATA_CACHE = `vilketar-data-${CACHE_VERSION}`;
+const IMAGE_CACHE = `vilketar-images-${CACHE_VERSION}`;
+const IMAGE_CACHE_LIMIT = 60;
+
+const APP_SHELL = [
+  "/",
+  "/offline.html",
+  "/manifest.webmanifest",
+  "/apple-touch-icon.png",
+  "/pwa-icon-192.png",
+  "/pwa-icon-512.png",
+  "/pwa-maskable-icon-192.png",
+  "/pwa-maskable-icon-512.png",
+  "/fonts/inter-latin.woff2",
+  "/fonts/fraunces-latin.woff2",
+];
+
+function canCache(response) {
+  return response && (response.ok || response.type === "opaque");
+}
+
+async function saveResponse(cacheName, request, response) {
+  if (!canCache(response)) {
+    return;
+  }
+
+  const cache = await caches.open(cacheName);
+  await cache.put(request, response.clone());
+}
+
+async function cacheAppShell() {
+  const cache = await caches.open(SHELL_CACHE);
+
+  await Promise.all(
+    APP_SHELL.map(async (path) => {
+      try {
+        const response = await fetch(path);
+        if (canCache(response)) {
+          await cache.put(path, response);
+        }
+      } catch {
+        // Individual assets can be fetched again on the next app launch.
+      }
+    }),
+  );
+}
+
+async function trimImageCache() {
+  const cache = await caches.open(IMAGE_CACHE);
+  const keys = await cache.keys();
+  const excess = keys.length - IMAGE_CACHE_LIMIT;
+
+  if (excess > 0) {
+    await Promise.all(keys.slice(0, excess).map((key) => cache.delete(key)));
+  }
+}
+
+async function getNetworkFirst(request, cacheName, ignoreSearch = false) {
+  try {
+    const response = await fetch(request);
+    await saveResponse(cacheName, request, response).catch(() => undefined);
+    return response;
+  } catch {
+    const cachedResponse = await caches.match(request, { ignoreSearch });
+    if (cachedResponse) {
+      return cachedResponse;
+    }
+
+    throw new Error("Network unavailable");
+  }
+}
+
+async function getCacheFirst(request, cacheName, ignoreSearch = false) {
+  const cachedResponse = await caches.match(request, { ignoreSearch });
+  if (cachedResponse) {
+    return cachedResponse;
+  }
+
+  const response = await fetch(request);
+  await saveResponse(cacheName, request, response).catch(() => undefined);
+  return response;
+}
+
 self.addEventListener("message", (event) => {
   if (event.data?.type === "SKIP_WAITING") {
     self.skipWaiting();
   }
 });
 
-self.addEventListener("install", () => {
-  self.skipWaiting();
+self.addEventListener("install", (event) => {
+  event.waitUntil(cacheAppShell().then(() => self.skipWaiting()));
 });
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     (async () => {
-      if ("caches" in self) {
-        const keys = await caches.keys();
-        await Promise.all(keys.map((key) => caches.delete(key)));
-      }
-
+      const activeCaches = new Set([
+        SHELL_CACHE,
+        PAGE_CACHE,
+        DATA_CACHE,
+        IMAGE_CACHE,
+      ]);
+      const cacheNames = await caches.keys();
+      await Promise.all(
+        cacheNames
+          .filter((cacheName) => cacheName.startsWith("vilketar-"))
+          .filter((cacheName) => !activeCaches.has(cacheName))
+          .map((cacheName) => caches.delete(cacheName)),
+      );
       await self.clients.claim();
     })(),
   );
 });
 
 self.addEventListener("fetch", (event) => {
-  if (event.request.method !== "GET") {
+  const { request } = event;
+  const url = new URL(request.url);
+
+  if (request.method !== "GET") {
     return;
   }
 
-  if (event.request.mode === "navigate") {
+  if (request.mode === "navigate") {
     event.respondWith(
-      fetch(event.request).catch(
-        () =>
-          new Response(offlineHtml, {
-            headers: {
-              "Cache-Control": "no-store",
-              "Content-Type": "text/html; charset=utf-8",
-            },
+      getNetworkFirst(request, PAGE_CACHE, true).catch(
+        async () =>
+          (await caches.match(request, { ignoreSearch: true })) ||
+          (await caches.match("/")) ||
+          (await caches.match("/offline.html")) ||
+          new Response("VilketÅr är offline", {
+            headers: { "Content-Type": "text/plain; charset=utf-8" },
             status: 503,
           }),
       ),
@@ -42,44 +140,28 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  event.respondWith(fetch(event.request));
-});
+  if (
+    url.origin === self.location.origin &&
+    url.pathname.startsWith("/_next/static/")
+  ) {
+    event.respondWith(getCacheFirst(request, SHELL_CACHE));
+    return;
+  }
 
-const offlineHtml = `<!doctype html>
-<html lang="sv">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#f7efe3" />
-    <title>VilketÅr är offline</title>
-    <style>
-      :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-      body { align-items: center; background: linear-gradient(180deg, #fffdfa, #f5f5f0); color: #1c1917; display: flex; margin: 0; min-height: 100dvh; padding: 2rem; }
-      main { margin: 0 auto; max-width: 24rem; text-align: center; }
-      .icon { align-items: center; background: #fffdfa; border: 1px solid rgba(120, 113, 108, 0.18); border-radius: 1.125rem; box-shadow: 0 8px 32px rgba(120, 113, 108, 0.16); color: #d97706; display: inline-flex; height: 4rem; justify-content: center; margin-bottom: 1.25rem; width: 4rem; }
-      h1 { font-size: 1.875rem; line-height: 1.1; margin: 0 0 0.75rem; }
-      p { color: #78716c; font-size: 1rem; line-height: 1.5; margin: 0 0 1.25rem; }
-      button { appearance: none; background: #1c1917; border: 0; border-radius: 0.875rem; color: #fffdfa; cursor: pointer; font: inherit; font-weight: 700; min-height: 3.25rem; padding: 0 1.25rem; }
-      @media (prefers-color-scheme: dark) {
-        body { background: linear-gradient(180deg, #0c0a09, #171412); color: #fffdfa; }
-        .icon { background: #231f1c; border-color: rgba(250, 250, 245, 0.12); color: #fbbf24; }
-        p { color: #a8a29e; }
-        button { background: #fffdfa; color: #0c0a09; }
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <div class="icon" aria-hidden="true">
-        <svg height="40" viewBox="0 0 32 32" width="40">
-          <circle cx="16" cy="16" fill="currentColor" opacity="0.18" r="15" />
-          <circle cx="16" cy="16" fill="currentColor" r="12" />
-          <text dominant-baseline="middle" fill="white" font-family="Georgia, serif" font-size="19" font-weight="900" text-anchor="middle" x="16.5" y="17">?</text>
-        </svg>
-      </div>
-      <h1>Du är offline</h1>
-      <p>VilketÅr hämtar färska filer från nätet för att du alltid ska få senaste versionen. Anslut igen och försök på nytt.</p>
-      <button onclick="window.location.reload()">Försök igen</button>
-    </main>
-  </body>
-</html>`;
+  if (
+    url.origin === self.location.origin &&
+    url.pathname.startsWith("/decks/")
+  ) {
+    event.respondWith(getNetworkFirst(request, DATA_CACHE));
+    return;
+  }
+
+  if (request.destination === "image") {
+    event.respondWith(
+      getCacheFirst(request, IMAGE_CACHE).then(async (response) => {
+        await trimImageCache();
+        return response;
+      }),
+    );
+  }
+});
