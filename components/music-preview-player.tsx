@@ -13,6 +13,35 @@ type Props = {
 };
 
 let activeAudio: HTMLAudioElement | null = null;
+const AUDIO_FADE_DURATION_MS = 260;
+
+function fadeOutAndPause(audio: HTMLAudioElement) {
+  if (audio.paused || audio.volume === 0) {
+    audio.pause();
+    return;
+  }
+
+  const initialVolume = audio.volume;
+  const startedAt = performance.now();
+
+  const fade = (timestamp: number) => {
+    const progress = Math.min(
+      (timestamp - startedAt) / AUDIO_FADE_DURATION_MS,
+      1,
+    );
+    audio.volume = initialVolume * (1 - progress);
+
+    if (progress < 1) {
+      requestAnimationFrame(fade);
+      return;
+    }
+
+    audio.pause();
+    audio.volume = initialVolume;
+  };
+
+  requestAnimationFrame(fade);
+}
 
 export default function MusicPreviewPlayer(props: Props) {
   const { artist, music, title } = props;
@@ -54,7 +83,7 @@ export default function MusicPreviewPlayer(props: Props) {
 
     return () => {
       cancelled = true;
-      audio?.pause();
+      if (audio) fadeOutAndPause(audio);
       if (activeAudio === audio) activeAudio = null;
     };
   }, [music, title]);
@@ -71,6 +100,7 @@ export default function MusicPreviewPlayer(props: Props) {
 
     if (activeAudio && activeAudio !== audio) activeAudio.pause();
     activeAudio = audio;
+    audio.volume = 1;
     try {
       await audio.play();
       setStatus("playing");

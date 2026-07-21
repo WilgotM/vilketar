@@ -13,6 +13,7 @@ import {
   PlacementAnimationState,
   PlacementRequest,
 } from "../lib/placement-animation";
+import { PlayedCard } from "../types/cards";
 import { GameDifficulty, GameState } from "../types/game";
 import { PreparedCard } from "../types/game";
 import { GameMode, SelectionRoute } from "../types/routes";
@@ -377,7 +378,7 @@ export default function Board(props: Props) {
     const { correct, delta } = checkCorrect(newPlayed, card, droppedIndex);
     const finalIndex = correct ? droppedIndex : droppedIndex + delta;
 
-    newPlayed.splice(finalIndex, 0, {
+    const landingCard: PlayedCard = {
       ...card,
       played: {
         correct,
@@ -385,7 +386,9 @@ export default function Board(props: Props) {
         placementIndex: nextPlacementIndex,
         showDate: false,
       },
-    });
+    };
+
+    newPlayed.splice(finalIndex, 0, landingCard);
 
     const newNext = state.nextButOne;
     const nextState: GameState = {
@@ -413,6 +416,7 @@ export default function Board(props: Props) {
         x: rect.left,
         y: rect.top,
       },
+      landingCard,
     });
     setPendingResolvedState({
       ...nextState,

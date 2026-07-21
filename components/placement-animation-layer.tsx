@@ -1,4 +1,4 @@
-import { motion, useMotionValue } from "motion/react";
+import { motion, useMotionValue, useReducedMotion } from "motion/react";
 import React from "react";
 import {
   getLandingTargetScrollLeft,
@@ -22,8 +22,20 @@ export default function PlacementAnimationLayer(
 ) {
   const { boardRef, flight, onComplete, scrollContainerRef } = props;
   const { card, containerX, from, sourceOffsetX, startScrollLeft } = flight;
+  const reduceMotion = useReducedMotion();
   const x = useMotionValue(from.x);
   const y = useMotionValue(from.y);
+  const durationSeconds =
+    getPlacementDurationMs(
+      flight.targetOffsetX - sourceOffsetX,
+      flight.targetScrollLeft - startScrollLeft,
+      flight.toY - from.y,
+    ) / 1000;
+  const transition = {
+    duration: durationSeconds,
+    ease: LANDING_EASE_CURVE,
+    times: [0, 0.68, 1] as number[],
+  };
 
   React.useEffect(() => {
     let cancelled = false;
@@ -206,20 +218,28 @@ export default function PlacementAnimationLayer(
         zIndex: 12,
       }}
     >
-      <CardVisual
-        item={card}
-        surface="timeline"
-        transition={{
-          duration:
-            getPlacementDurationMs(
-              flight.targetOffsetX - sourceOffsetX,
-              flight.targetScrollLeft - startScrollLeft,
-              flight.toY - from.y,
-            ) / 1000,
-          ease: LANDING_EASE_CURVE,
-          times: [0, 0.86, 1],
-        }}
-      />
+      <motion.div
+        animate={
+          card.music && !reduceMotion ? { opacity: [1, 1, 0] } : undefined
+        }
+        transition={transition}
+      >
+        <CardVisual item={card} surface="timeline" transition={transition} />
+      </motion.div>
+      {card.music && !reduceMotion ? (
+        <motion.div
+          animate={{ opacity: [0, 0, 1], scale: [0.985, 0.985, 1] }}
+          initial={{ opacity: 0, scale: 0.985 }}
+          style={{ inset: 0, position: "absolute" }}
+          transition={transition}
+        >
+          <CardVisual
+            item={flight.landingCard}
+            surface="timeline"
+            transition={transition}
+          />
+        </motion.div>
+      ) : null}
     </motion.div>
   );
 }

@@ -1,3 +1,4 @@
+import { PlayedCard } from "../types/cards";
 import { PreparedCard } from "../types/game";
 
 export interface PlacementRequest {
@@ -7,6 +8,7 @@ export interface PlacementRequest {
     x: number;
     y: number;
   };
+  landingCard: PlayedCard;
 }
 
 export interface PlacementAnimationState {
@@ -17,6 +19,7 @@ export interface PlacementAnimationState {
     x: number;
     y: number;
   };
+  landingCard: PlayedCard;
   sourceOffsetX: number;
   startScrollLeft: number;
   targetOffsetX: number;
@@ -170,6 +173,7 @@ export function createPlacementAnimationState(options: {
       x: request.fromViewport.x - boardRect.left,
       y: request.fromViewport.y - boardRect.top,
     },
+    landingCard: request.landingCard,
     sourceOffsetX,
     startScrollLeft,
     targetOffsetX,
