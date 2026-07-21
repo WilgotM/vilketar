@@ -4,6 +4,7 @@ import {
   resolveMusicPreview,
 } from "../lib/itunes-preview";
 import { Card } from "../types/cards";
+import { MUSIC_AUTOPLAY_START_EVENT, useMusicAutoplay } from "./music-autoplay";
 import * as styles from "../styles/music-preview-player.css";
 
 type Props = {
@@ -13,38 +14,16 @@ type Props = {
 };
 
 let activeAudio: HTMLAudioElement | null = null;
-const AUDIO_FADE_DURATION_MS = 260;
 
-function fadeOutAndPause(audio: HTMLAudioElement) {
-  if (audio.paused || audio.volume === 0) {
-    audio.pause();
-    return;
-  }
-
-  const initialVolume = audio.volume;
-  const startedAt = performance.now();
-
-  const fade = (timestamp: number) => {
-    const progress = Math.min(
-      (timestamp - startedAt) / AUDIO_FADE_DURATION_MS,
-      1,
-    );
-    audio.volume = initialVolume * (1 - progress);
-
-    if (progress < 1) {
-      requestAnimationFrame(fade);
-      return;
-    }
-
-    audio.pause();
-    audio.volume = initialVolume;
-  };
-
-  requestAnimationFrame(fade);
+function stopAudio(audio: HTMLAudioElement) {
+  audio.pause();
+  audio.currentTime = 0;
+  audio.volume = 1;
 }
 
 export default function MusicPreviewPlayer(props: Props) {
   const { artist, music, title } = props;
+  const autoPlay = useMusicAutoplay();
   const initialPreview = getCachedMusicPreview(music, title);
   const audioRef = React.useRef<HTMLAudioElement | null>(null);
   const [previewUrl, setPreviewUrl] = React.useState<string | null>(
@@ -78,12 +57,12 @@ export default function MusicPreviewPlayer(props: Props) {
       }
       setPreviewUrl(preview.previewUrl);
       setArtworkUrl(preview.artworkUrl ?? music.artworkUrl);
-      setStatus("ready");
+      setStatus(audioRef.current?.paused === false ? "playing" : "ready");
     });
 
     return () => {
       cancelled = true;
-      if (audio) fadeOutAndPause(audio);
+      if (audio) stopAudio(audio);
       if (activeAudio === audio) activeAudio = null;
     };
   }, [music, title]);
@@ -98,7 +77,7 @@ export default function MusicPreviewPlayer(props: Props) {
       return;
     }
 
-    if (activeAudio && activeAudio !== audio) activeAudio.pause();
+    if (activeAudio && activeAudio !== audio) stopAudio(activeAudio);
     activeAudio = audio;
     audio.volume = 1;
     try {
@@ -107,6 +86,39 @@ export default function MusicPreviewPlayer(props: Props) {
     } catch {
       setStatus("error");
     }
+  }, [previewUrl]);
+
+  React.useEffect(() => {
+    const audio = audioRef.current;
+    if (!autoPlay || !audio || !previewUrl || !audio.paused) return;
+
+    if (activeAudio && activeAudio !== audio) stopAudio(activeAudio);
+    activeAudio = audio;
+    audio.volume = 1;
+    void audio
+      .play()
+      .then(() => setStatus("playing"))
+      .catch(() => setStatus("paused"));
+  }, [autoPlay, previewUrl, title]);
+
+  React.useEffect(() => {
+    const startFromToggle = () => {
+      const audio = audioRef.current;
+      if (!audio || !previewUrl || !audio.paused) return;
+
+      if (activeAudio && activeAudio !== audio) stopAudio(activeAudio);
+      activeAudio = audio;
+      audio.volume = 1;
+      void audio
+        .play()
+        .then(() => setStatus("playing"))
+        .catch(() => setStatus("paused"));
+    };
+
+    window.addEventListener(MUSIC_AUTOPLAY_START_EVENT, startFromToggle);
+    return () => {
+      window.removeEventListener(MUSIC_AUTOPLAY_START_EVENT, startFromToggle);
+    };
   }, [previewUrl]);
 
   const progress = duration > 0 ? Math.min(1, currentTime / duration) : 0;
@@ -140,6 +152,7 @@ export default function MusicPreviewPlayer(props: Props) {
         onPause={() => {
           setStatus((current) => (current === "playing" ? "paused" : current));
         }}
+        onPlay={() => setStatus("playing")}
         onTimeUpdate={(event) =>
           setCurrentTime(event.currentTarget.currentTime)
         }

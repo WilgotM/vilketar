@@ -31,6 +31,7 @@ type Props = {
   onAnimationComplete?: () => void;
   onClick?: () => void;
   revealDatePill?: boolean;
+  showMusicPreview?: boolean;
   surface?: "deck" | "timeline";
   style?: React.CSSProperties;
   transition?: Transition;
@@ -55,12 +56,13 @@ export default function CardVisual(props: Props) {
     onAnimationComplete,
     onClick,
     revealDatePill = true,
+    showMusicPreview = true,
     surface = "timeline",
     style,
     transition = DEFAULT_TRANSITION,
   } = props;
   const isPlayed = "played" in item;
-  const isHiddenMusicCard = !!item.music && !isPlayed;
+  const showMusicPlayer = !!item.music && !isPlayed && showMusicPreview;
   const cachedMusicPreview = item.music
     ? getCachedMusicPreview(item.music, item.title)
     : null;
@@ -71,23 +73,23 @@ export default function CardVisual(props: Props) {
 
   const imageCandidates = React.useMemo(
     () =>
-      loadImage && !isHiddenMusicCard
+      loadImage && !showMusicPlayer
         ? item.music
           ? musicArtwork
             ? [musicArtwork]
             : []
           : createWikimediaImageCandidates(item.image)
         : [],
-    [isHiddenMusicCard, item.image, item.music, loadImage, musicArtwork],
+    [item.image, item.music, loadImage, musicArtwork, showMusicPlayer],
   );
   const { imageSrc } = useCardImage(imageCandidates);
   const cardThemeStyle = useCardTheme(item.deckThemeHue);
   const yearLabel =
     item.year < 0 ? `${Math.abs(item.year)} f.Kr.` : String(item.year);
-  const frontTitle = isHiddenMusicCard
+  const frontTitle = showMusicPlayer
     ? "Vilket år släpptes låten?"
     : hideYearsOnCardFront(item.title);
-  const frontSubtitle = isHiddenMusicCard
+  const frontSubtitle = showMusicPlayer
     ? "Lyssna och placera den på tidslinjen"
     : hideYearsOnCardFront(item.subtitle);
   const effectiveAnimateTransform = animateTransform ?? {
@@ -121,7 +123,7 @@ export default function CardVisual(props: Props) {
             className={styles.front}
             style={{ pointerEvents: flipped ? "none" : "auto" }}
           >
-            {isHiddenMusicCard && item.music ? (
+            {showMusicPlayer && item.music ? (
               <MusicPreviewPlayer
                 artist={item.music.artist}
                 music={item.music}

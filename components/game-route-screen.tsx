@@ -156,6 +156,10 @@ export default function GameRouteScreen(props: Props) {
   const difficulty =
     mode === "daily" ? DAILY_DIFFICULTY : freePlayDifficulty.difficulty;
   const difficultyReady = mode === "daily" ? true : freePlayDifficulty.ready;
+  const showMusicAutoplay =
+    mode === "daily"
+      ? dailyScheduleTheme.deckId === "all-entertainment-music"
+      : selectionRoute?.nodeId === "all-entertainment-music";
 
   React.useEffect(() => {
     document.body.classList.add("gamePageNoSelect");
@@ -526,6 +530,7 @@ export default function GameRouteScreen(props: Props) {
             onDailyRemoteCompleted={onDailyRemoteCompleted}
             resetGame={mode === "free-play" ? resetGame : undefined}
             restoredFromSnapshot={restoredFromSnapshot}
+            showMusicAutoplay={showMusicAutoplay}
             routePath={routePath}
             selectionRoute={selectionRoute}
             state={state}
@@ -556,6 +561,7 @@ export default function GameRouteScreen(props: Props) {
           onDailyRemoteCompleted={onDailyRemoteCompleted}
           resetGame={mode === "free-play" ? resetGame : undefined}
           restoredFromSnapshot={restoredFromSnapshot}
+          showMusicAutoplay={showMusicAutoplay}
           routePath={routePath}
           selectionRoute={selectionRoute}
           state={state}

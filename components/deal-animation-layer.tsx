@@ -72,6 +72,7 @@ export default function DealAnimationLayer(props: DealAnimationLayerProps) {
         flipped={false}
         initialTransform={false}
         item={card}
+        showMusicPreview={false}
         surface="deck"
         transition={{
           duration: 0.8,

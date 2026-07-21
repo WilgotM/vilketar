@@ -23,6 +23,7 @@ import DailyGameTutorial, {
 import DealAnimationLayer from "./deal-animation-layer";
 import GameOver from "./game-over";
 import Lives from "./lives";
+import { MusicAutoplayProvider, MusicAutoplayToggle } from "./music-autoplay";
 import NextItemList from "./next-item-list";
 import PlacementAnimationLayer from "./placement-animation-layer";
 import PlayedItemList from "./played-item-list";
@@ -49,6 +50,7 @@ interface Props {
   onDailyRemoteCompleted?: (result: StoredDailyResult) => void;
   resetGame?: () => void;
   restoredFromSnapshot?: boolean;
+  showMusicAutoplay?: boolean;
   routePath: string;
   selectionRoute?: SelectionRoute;
   state: GameState;
@@ -71,6 +73,7 @@ export default function Board(props: Props) {
     onDailyRemoteCompleted,
     resetGame,
     restoredFromSnapshot = false,
+    showMusicAutoplay = false,
     routePath,
     selectionRoute,
     state,
@@ -110,6 +113,7 @@ export default function Board(props: Props) {
     null | string
   >(null);
   const [dailyTutorialActive, setDailyTutorialActive] = React.useState(false);
+  const [musicAutoplayEnabled, setMusicAutoplayEnabled] = React.useState(false);
   const boardRef = React.useRef<HTMLDivElement | null>(null);
   const bottomRef = React.useRef<HTMLDivElement | null>(null);
   const deckAnchorRef = React.useRef<HTMLDivElement | null>(null);
@@ -693,168 +697,176 @@ export default function Board(props: Props) {
   }, [score, highscore, updateHighscore]);
 
   return (
-    <div ref={boardRef} className={styles.wrapper}>
-      <div
-        className={classNames(styles.top, {
-          [styles.topGameOver]: showGameOverSummary,
-        })}
-      >
-        <motion.div
-          animate={{
-            opacity:
-              gameOverPhase === "hud-exit" || showGameOverSummary ? 0 : 1,
-            y: gameOverPhase === "hud-exit" || showGameOverSummary ? -10 : 0,
-          }}
-          aria-label={`${score} poäng`}
-          aria-live="polite"
-          className={styles.scoreBadge}
-          initial={false}
-          transition={{ duration: 0.28, ease: "easeOut" }}
+    <MusicAutoplayProvider enabled={musicAutoplayEnabled}>
+      <div ref={boardRef} className={styles.wrapper}>
+        {showMusicAutoplay && !showGameOverSummary ? (
+          <MusicAutoplayToggle
+            enabled={musicAutoplayEnabled}
+            onChange={setMusicAutoplayEnabled}
+          />
+        ) : null}
+        <div
+          className={classNames(styles.top, {
+            [styles.topGameOver]: showGameOverSummary,
+          })}
         >
-          <span aria-hidden="true" className={styles.scoreValue}>
-            {score}
-          </span>
-          <span className={styles.scoreLabel}>poäng</span>
-        </motion.div>
-        <div className={styles.statusArea}>
-          <AnimatePresence mode="wait">
-            {statusScene === "lives" ? (
-              <motion.div
-                key="lives"
-                animate={{ opacity: gameOverPhase === "hud-exit" ? 0 : 1 }}
-                className={styles.statusLayer}
-                exit={{ opacity: 0 }}
-                initial={false}
-                transition={{ duration: 0.28, ease: "easeOut" }}
-              >
-                <Lives lives={state.lives} />
-              </motion.div>
-            ) : (
-              <motion.div
-                key="game-over"
-                animate={{ opacity: 1 }}
-                className={styles.statusLayer}
-                exit={{ opacity: 0 }}
-                initial={{ opacity: 0 }}
-                transition={{ duration: 0.28, ease: "easeOut" }}
-              >
-                <GameOver
-                  completedAllCards={state.lives > 0 && state.next === null}
-                  dailyDateKey={dailyDateKey}
-                  difficulty={difficulty}
-                  gameMode={gameMode}
-                  highscore={highscore}
-                  onDailyRemoteCompleted={onDailyRemoteCompleted}
-                  played={state.played}
-                  resetGame={resetGame}
-                  routePath={routePath}
-                  score={score}
-                  selectionRoute={selectionRoute}
-                />
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
-        {deckVisible && renderedDeckState ? (
-          <NextItemList
-            deckAnchorRef={deckAnchorRef}
-            deckState={renderedDeckState.deckState}
-            next={openingDealInFlight ? null : renderedDeckState.next}
-            onDeckAnchorChange={handleDeckAnchorChange}
-            onCardDragMove={(point, rect) => {
-              if (rect) {
-                const nextDragCentreX = rect.left + rect.width / 2;
-                const lastDragCentreX = lastDragCentreXRef.current;
+          <motion.div
+            animate={{
+              opacity:
+                gameOverPhase === "hud-exit" || showGameOverSummary ? 0 : 1,
+              y: gameOverPhase === "hud-exit" || showGameOverSummary ? -10 : 0,
+            }}
+            aria-label={`${score} poäng`}
+            aria-live="polite"
+            className={styles.scoreBadge}
+            initial={false}
+            transition={{ duration: 0.28, ease: "easeOut" }}
+          >
+            <span aria-hidden="true" className={styles.scoreValue}>
+              {score}
+            </span>
+            <span className={styles.scoreLabel}>poäng</span>
+          </motion.div>
+          <div className={styles.statusArea}>
+            <AnimatePresence mode="wait">
+              {statusScene === "lives" ? (
+                <motion.div
+                  key="lives"
+                  animate={{ opacity: gameOverPhase === "hud-exit" ? 0 : 1 }}
+                  className={styles.statusLayer}
+                  exit={{ opacity: 0 }}
+                  initial={false}
+                  transition={{ duration: 0.28, ease: "easeOut" }}
+                >
+                  <Lives lives={state.lives} />
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="game-over"
+                  animate={{ opacity: 1 }}
+                  className={styles.statusLayer}
+                  exit={{ opacity: 0 }}
+                  initial={{ opacity: 0 }}
+                  transition={{ duration: 0.28, ease: "easeOut" }}
+                >
+                  <GameOver
+                    completedAllCards={state.lives > 0 && state.next === null}
+                    dailyDateKey={dailyDateKey}
+                    difficulty={difficulty}
+                    gameMode={gameMode}
+                    highscore={highscore}
+                    onDailyRemoteCompleted={onDailyRemoteCompleted}
+                    played={state.played}
+                    resetGame={resetGame}
+                    routePath={routePath}
+                    score={score}
+                    selectionRoute={selectionRoute}
+                  />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+          {deckVisible && renderedDeckState ? (
+            <NextItemList
+              deckAnchorRef={deckAnchorRef}
+              deckState={renderedDeckState.deckState}
+              next={openingDealInFlight ? null : renderedDeckState.next}
+              onDeckAnchorChange={handleDeckAnchorChange}
+              onCardDragMove={(point, rect) => {
+                if (rect) {
+                  const nextDragCentreX = rect.left + rect.width / 2;
+                  const lastDragCentreX = lastDragCentreXRef.current;
 
-                if (lastDragCentreX !== null) {
-                  const deltaX = nextDragCentreX - lastDragCentreX;
+                  if (lastDragCentreX !== null) {
+                    const deltaX = nextDragCentreX - lastDragCentreX;
 
-                  if (deltaX > 0.5) {
-                    dragDirectionRef.current = 1;
-                  } else if (deltaX < -0.5) {
-                    dragDirectionRef.current = -1;
+                    if (deltaX > 0.5) {
+                      dragDirectionRef.current = 1;
+                    } else if (deltaX < -0.5) {
+                      dragDirectionRef.current = -1;
+                    }
                   }
+
+                  lastDragCentreXRef.current = nextDragCentreX;
                 }
 
-                lastDragCentreXRef.current = nextDragCentreX;
+                maybeAutoScrollDuringDrag(point, rect);
+                updatePreviewIndex(getProjectedDropIndex(point, rect));
+              }}
+              onCardDragStart={onCardDragStart}
+              onCardDrop={onCardDrop}
+              reserve={renderedDeckState.reserve}
+              visible={deckShown}
+            />
+          ) : null}
+        </div>
+        <motion.div
+          id="bottom"
+          ref={bottomRef}
+          layoutScroll={timelineLayoutAnimationsEnabled}
+          className={classNames(styles.bottom, {
+            [styles.bottomGameOver]: showGameOverSummary,
+          })}
+        >
+          <PlayedItemList
+            hiddenCardId={hiddenPlayedCardId}
+            isDragging={isDragging}
+            items={state.played}
+            layoutAnimationsEnabled={timelineLayoutAnimationsEnabled}
+            onOpeningAnchorChange={handleOpeningAnchorChange}
+            openingAnchorRef={openingAnchorRef}
+            previewIndex={previewIndex}
+          />
+        </motion.div>
+        {openingDeal?.card ? (
+          <DealAnimationLayer
+            card={openingDeal.card}
+            from={openingDeal.from}
+            to={openingDeal.to}
+          />
+        ) : null}
+        {placementAnimation ? (
+          <PlacementAnimationLayer
+            boardRef={boardRef}
+            flight={placementAnimation}
+            onComplete={() => {
+              if (pendingResolvedState) {
+                if (pendingResolvedState.lives <= 0) {
+                  setFrozenDeckState({
+                    deckState,
+                    next: pendingResolvedState.next,
+                    reserve: pendingResolvedState.nextButOne,
+                  });
+                  setGameOverPhase("linger");
+                }
+                setState(pendingResolvedState);
+                setPendingResolvedState(null);
               }
-
-              maybeAutoScrollDuringDrag(point, rect);
-              updatePreviewIndex(getProjectedDropIndex(point, rect));
+              setHiddenPlayedCardId(null);
+              setPlacementAnimation(null);
+              tutorialRef.current?.handlePlacementComplete();
             }}
-            onCardDragStart={onCardDragStart}
-            onCardDrop={onCardDrop}
-            reserve={renderedDeckState.reserve}
-            visible={deckShown}
+            scrollContainerRef={bottomRef}
+          />
+        ) : null}
+        {dailyTutorialActive ? (
+          <DailyGameTutorial
+            ref={tutorialRef}
+            boardRef={boardRef}
+            bottomRef={bottomRef}
+            deckAnchorRef={deckAnchorRef}
+            layoutKey={`${deckState}:${state.played.map((item) => item.id).join(":")}`}
+            onFinished={() => setDailyTutorialActive(false)}
+            ready={
+              showLives &&
+              deckState === "ready" &&
+              state.next !== null &&
+              state.played.length > 0 &&
+              !isPlacementSettling
+            }
           />
         ) : null}
       </div>
-      <motion.div
-        id="bottom"
-        ref={bottomRef}
-        layoutScroll={timelineLayoutAnimationsEnabled}
-        className={classNames(styles.bottom, {
-          [styles.bottomGameOver]: showGameOverSummary,
-        })}
-      >
-        <PlayedItemList
-          hiddenCardId={hiddenPlayedCardId}
-          isDragging={isDragging}
-          items={state.played}
-          layoutAnimationsEnabled={timelineLayoutAnimationsEnabled}
-          onOpeningAnchorChange={handleOpeningAnchorChange}
-          openingAnchorRef={openingAnchorRef}
-          previewIndex={previewIndex}
-        />
-      </motion.div>
-      {openingDeal?.card ? (
-        <DealAnimationLayer
-          card={openingDeal.card}
-          from={openingDeal.from}
-          to={openingDeal.to}
-        />
-      ) : null}
-      {placementAnimation ? (
-        <PlacementAnimationLayer
-          boardRef={boardRef}
-          flight={placementAnimation}
-          onComplete={() => {
-            if (pendingResolvedState) {
-              if (pendingResolvedState.lives <= 0) {
-                setFrozenDeckState({
-                  deckState,
-                  next: pendingResolvedState.next,
-                  reserve: pendingResolvedState.nextButOne,
-                });
-                setGameOverPhase("linger");
-              }
-              setState(pendingResolvedState);
-              setPendingResolvedState(null);
-            }
-            setHiddenPlayedCardId(null);
-            setPlacementAnimation(null);
-            tutorialRef.current?.handlePlacementComplete();
-          }}
-          scrollContainerRef={bottomRef}
-        />
-      ) : null}
-      {dailyTutorialActive ? (
-        <DailyGameTutorial
-          ref={tutorialRef}
-          boardRef={boardRef}
-          bottomRef={bottomRef}
-          deckAnchorRef={deckAnchorRef}
-          layoutKey={`${deckState}:${state.played.map((item) => item.id).join(":")}`}
-          onFinished={() => setDailyTutorialActive(false)}
-          ready={
-            showLives &&
-            deckState === "ready" &&
-            state.next !== null &&
-            state.played.length > 0 &&
-            !isPlacementSettling
-          }
-        />
-      ) : null}
-    </div>
+    </MusicAutoplayProvider>
   );
 }

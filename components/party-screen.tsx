@@ -35,6 +35,7 @@ import CardVisual from "./card-visual";
 import { useDecks } from "./deck-provider";
 import DraggableDeckCard from "./draggable-deck-card";
 import Loading from "./loading";
+import { MusicAutoplayProvider, MusicAutoplayToggle } from "./music-autoplay";
 import PageShell from "./page-shell";
 import SelectorOptionGrid, { SelectorOption } from "./selector-option-grid";
 import SiteHeader from "./site-header";
@@ -351,6 +352,7 @@ function PartyBoard(props: {
   state: PartyGameState;
   title: string;
   tvMode?: boolean;
+  showMusicAutoplay?: boolean;
 }) {
   const {
     canPlace,
@@ -360,12 +362,14 @@ function PartyBoard(props: {
     state,
     title,
     tvMode = false,
+    showMusicAutoplay = false,
   } = props;
   const timelineRef = React.useRef<HTMLDivElement | null>(null);
   const tvFrameRef = React.useRef<HTMLDivElement | null>(null);
   const [isFullscreen, setIsFullscreen] = React.useState(false);
   const [feedbackFlash, setFeedbackFlash] =
     React.useState<PartyFeedbackFlash | null>(null);
+  const [musicAutoplayEnabled, setMusicAutoplayEnabled] = React.useState(false);
 
   React.useEffect(() => {
     if (!state.lastResult) {
@@ -518,209 +522,225 @@ function PartyBoard(props: {
   }
 
   return (
-    <div
-      className={classNames(styles.gameShell, {
-        [styles.gameShellTv]: tvMode,
-      })}
-    >
-      <div className={styles.gameTopBar}>
-        <div className={styles.gameTitle}>{title}</div>
-        <div className={styles.gameActions}>
-          {tvMode ? (
-            <button
-              className={classNames(buttonStyles.button, buttonStyles.minimal)}
-              onClick={toggleFullscreen}
-              type="button"
-            >
-              {isFullscreen ? "Avsluta helskärm" : "Helskärm"}
-            </button>
-          ) : null}
-        </div>
-      </div>
+    <MusicAutoplayProvider enabled={musicAutoplayEnabled}>
       <div
-        ref={tvFrameRef}
-        className={classNames(styles.board, {
-          [styles.receiverBoard]: receiver,
-          [styles.tvBoard]: tvMode,
+        className={classNames(styles.gameShell, {
+          [styles.gameShellTv]: tvMode,
         })}
       >
+        <div className={styles.gameTopBar}>
+          <div className={styles.gameTitle}>{title}</div>
+          <div className={styles.gameActions}>
+            {tvMode ? (
+              <button
+                className={classNames(
+                  buttonStyles.button,
+                  buttonStyles.minimal,
+                )}
+                onClick={toggleFullscreen}
+                type="button"
+              >
+                {isFullscreen ? "Avsluta helskärm" : "Helskärm"}
+              </button>
+            ) : null}
+          </div>
+        </div>
         <div
-          className={classNames(styles.timelinePanel, {
-            [styles.timelinePanelDense]: dense,
+          ref={tvFrameRef}
+          className={classNames(styles.board, {
+            [styles.receiverBoard]: receiver,
+            [styles.tvBoard]: tvMode,
           })}
         >
-          <LayoutGroup id="party-timeline-layout">
-            <motion.div
-              layout="position"
-              ref={timelineRef}
-              className={classNames(styles.timeline, {
-                [styles.timelineDense]: dense,
-              })}
-            >
-              {Array.from({ length: state.game.played.length + 1 }).map(
-                (_, index) => (
-                  <React.Fragment key={`slot-${index}`}>
-                    <motion.button
-                      layout
-                      key={`slot-btn-${index}`}
-                      aria-label={`Placera på plats ${index + 1}`}
-                      className={classNames(
-                        styles.placement,
-                        styles.placementButton,
-                      )}
-                      data-party-placement-index={index}
-                      disabled={!canPlace}
-                      onClick={() => {
-                        onPlace(index);
-                      }}
-                      type="button"
-                      transition={{
-                        type: "spring",
-                        stiffness: 300,
-                        damping: 30,
-                      }}
-                    >
-                      <span className={styles.placementLine}>{index + 1}</span>
-                    </motion.button>
-                    {state.game.played[index] ? (
-                      <motion.div
+          <div
+            className={classNames(styles.timelinePanel, {
+              [styles.timelinePanelDense]: dense,
+            })}
+          >
+            <LayoutGroup id="party-timeline-layout">
+              <motion.div
+                layout="position"
+                ref={timelineRef}
+                className={classNames(styles.timeline, {
+                  [styles.timelineDense]: dense,
+                })}
+              >
+                {Array.from({ length: state.game.played.length + 1 }).map(
+                  (_, index) => (
+                    <React.Fragment key={`slot-${index}`}>
+                      <motion.button
                         layout
-                        key={`card-slot-${state.game.played[index].id}`}
-                        initial={{ scale: 0.3, opacity: 0, y: 50 }}
-                        animate={{ scale: 1, opacity: 1, y: 0 }}
+                        key={`slot-btn-${index}`}
+                        aria-label={`Placera på plats ${index + 1}`}
+                        className={classNames(
+                          styles.placement,
+                          styles.placementButton,
+                        )}
+                        data-party-placement-index={index}
+                        disabled={!canPlace}
+                        onClick={() => {
+                          onPlace(index);
+                        }}
+                        type="button"
                         transition={{
                           type: "spring",
-                          stiffness: 260,
-                          damping: 20,
+                          stiffness: 300,
+                          damping: 30,
                         }}
-                        className={styles.cardSlot}
-                        data-card-id={state.game.played[index].id}
                       >
-                        <CardVisual
-                          className={styles.compactCard}
-                          item={state.game.played[index]}
-                          revealDatePill
-                        />
-                      </motion.div>
-                    ) : null}
-                  </React.Fragment>
-                ),
-              )}
-            </motion.div>
-          </LayoutGroup>
-        </div>
-        <aside className={styles.sidePanel}>
-          <div className={styles.currentMeta}>
-            <div className={styles.sectionTitle}>Tur</div>
-            <h2 className={styles.activeTeam}>{activeTeam.name}</h2>
-            <p className={styles.result}>{resultText}</p>
+                        <span className={styles.placementLine}>
+                          {index + 1}
+                        </span>
+                      </motion.button>
+                      {state.game.played[index] ? (
+                        <motion.div
+                          layout
+                          key={`card-slot-${state.game.played[index].id}`}
+                          initial={{ scale: 0.3, opacity: 0, y: 50 }}
+                          animate={{ scale: 1, opacity: 1, y: 0 }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 260,
+                            damping: 20,
+                          }}
+                          className={styles.cardSlot}
+                          data-card-id={state.game.played[index].id}
+                        >
+                          <CardVisual
+                            className={styles.compactCard}
+                            item={state.game.played[index]}
+                            revealDatePill
+                          />
+                        </motion.div>
+                      ) : null}
+                    </React.Fragment>
+                  ),
+                )}
+              </motion.div>
+            </LayoutGroup>
           </div>
-          <div className={styles.currentCardWrap}>
-            <AnimatePresence mode="popLayout">
-              {state.game.next ? (
-                <motion.div
-                  key={state.game.next.id}
-                  initial={{ scale: 0.8, opacity: 0, y: 30 }}
-                  animate={{ scale: 1, opacity: 1, y: 0 }}
-                  exit={{ scale: 0.8, opacity: 0, y: -30 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 25 }}
-                  style={{
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "center",
-                  }}
-                >
-                  {canPlace && !receiver ? (
-                    <DraggableDeckCard
-                      item={state.game.next}
-                      width="var(--sidebar-card-width, 13.5rem)"
-                      height="var(--sidebar-card-height, 18rem)"
-                      onDragMove={() => undefined}
-                      onDragStart={() => undefined}
-                      onDrop={(point, rect) => {
-                        const dropIndex = getDropIndex(point, rect);
-                        if (dropIndex === null) {
-                          return false;
-                        }
+          <aside className={styles.sidePanel}>
+            {showMusicAutoplay ? (
+              <div className={styles.musicAutoplayAction}>
+                <MusicAutoplayToggle
+                  enabled={musicAutoplayEnabled}
+                  onChange={setMusicAutoplayEnabled}
+                  placement="party"
+                />
+              </div>
+            ) : null}
+            <div className={styles.currentMeta}>
+              <div className={styles.sectionTitle}>Tur</div>
+              <h2 className={styles.activeTeam}>{activeTeam.name}</h2>
+              <p className={styles.result}>{resultText}</p>
+            </div>
+            <div className={styles.currentCardWrap}>
+              <AnimatePresence mode="popLayout">
+                {state.game.next ? (
+                  <motion.div
+                    key={state.game.next.id}
+                    initial={{ scale: 0.8, opacity: 0, y: 30 }}
+                    animate={{ scale: 1, opacity: 1, y: 0 }}
+                    exit={{ scale: 0.8, opacity: 0, y: -30 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 25 }}
+                    style={{
+                      width: "100%",
+                      display: "flex",
+                      justifyContent: "center",
+                    }}
+                  >
+                    {canPlace && !receiver ? (
+                      <DraggableDeckCard
+                        item={state.game.next}
+                        width="var(--sidebar-card-width, 13.5rem)"
+                        height="var(--sidebar-card-height, 18rem)"
+                        onDragMove={() => undefined}
+                        onDragStart={() => undefined}
+                        onDrop={(point, rect) => {
+                          const dropIndex = getDropIndex(point, rect);
+                          if (dropIndex === null) {
+                            return false;
+                          }
 
-                        onPlace(dropIndex);
-                        return true;
-                      }}
-                    />
-                  ) : (
-                    <CardVisual
-                      item={state.game.next}
-                      style={{
-                        width: "var(--sidebar-card-width, 13.5rem)",
-                        height: "var(--sidebar-card-height, 18rem)",
-                      }}
-                      surface="deck"
-                    />
-                  )}
-                </motion.div>
-              ) : (
-                <motion.p
-                  key="empty"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  className={styles.muted}
+                          onPlace(dropIndex);
+                          return true;
+                        }}
+                      />
+                    ) : (
+                      <CardVisual
+                        item={state.game.next}
+                        style={{
+                          width: "var(--sidebar-card-width, 13.5rem)",
+                          height: "var(--sidebar-card-height, 18rem)",
+                        }}
+                        surface="deck"
+                      />
+                    )}
+                  </motion.div>
+                ) : (
+                  <motion.p
+                    key="empty"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className={styles.muted}
+                  >
+                    Inga fler kort i kategorin.
+                  </motion.p>
+                )}
+              </AnimatePresence>
+            </div>
+            <div className={styles.teams}>
+              {state.teams.map((team, index) => (
+                <div
+                  className={classNames(styles.teamRow, {
+                    [styles.teamRowActive]: index === state.activeTeamIndex,
+                    [styles.teamRowEliminated]: team.eliminated,
+                  })}
+                  key={team.id}
                 >
-                  Inga fler kort i kategorin.
-                </motion.p>
-              )}
-            </AnimatePresence>
-          </div>
-          <div className={styles.teams}>
-            {state.teams.map((team, index) => (
-              <div
-                className={classNames(styles.teamRow, {
-                  [styles.teamRowActive]: index === state.activeTeamIndex,
-                  [styles.teamRowEliminated]: team.eliminated,
-                })}
-                key={team.id}
+                  <span>{team.name}</span>
+                  <MistakeDots mistakes={team.mistakes} />
+                </div>
+              ))}
+            </div>
+          </aside>
+          <AnimatePresence>
+            {feedbackFlash && !feedbackFlash.correct ? (
+              <motion.div
+                key={feedbackFlash.expiresAt}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className={styles.errorOverlay}
               >
-                <span>{team.name}</span>
-                <MistakeDots mistakes={team.mistakes} />
-              </div>
-            ))}
-          </div>
-        </aside>
-        <AnimatePresence>
-          {feedbackFlash && !feedbackFlash.correct ? (
-            <motion.div
-              key={feedbackFlash.expiresAt}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className={styles.errorOverlay}
-            >
-              <div className={styles.errorBadge}>
-                <span className={styles.errorIcon}>✕</span>
-                <h3 className={styles.errorText}>FEL ÅR!</h3>
-                <p className={styles.errorTeam}>{feedbackFlash.teamName}</p>
-              </div>
-            </motion.div>
-          ) : null}
-        </AnimatePresence>
-        <AnimatePresence>
-          {feedbackFlash?.correct ? (
-            <motion.div
-              key={feedbackFlash.expiresAt}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className={styles.correctOverlay}
-            >
-              <div className={styles.correctBadge}>
-                <span className={styles.correctIcon}>✓</span>
-                <h3 className={styles.correctText}>RÄTT!</h3>
-                <p className={styles.correctTeam}>{feedbackFlash.teamName}</p>
-              </div>
-            </motion.div>
-          ) : null}
-        </AnimatePresence>
+                <div className={styles.errorBadge}>
+                  <span className={styles.errorIcon}>✕</span>
+                  <h3 className={styles.errorText}>FEL ÅR!</h3>
+                  <p className={styles.errorTeam}>{feedbackFlash.teamName}</p>
+                </div>
+              </motion.div>
+            ) : null}
+          </AnimatePresence>
+          <AnimatePresence>
+            {feedbackFlash?.correct ? (
+              <motion.div
+                key={feedbackFlash.expiresAt}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className={styles.correctOverlay}
+              >
+                <div className={styles.correctBadge}>
+                  <span className={styles.correctIcon}>✓</span>
+                  <h3 className={styles.correctText}>RÄTT!</h3>
+                  <p className={styles.correctTeam}>{feedbackFlash.teamName}</p>
+                </div>
+              </motion.div>
+            ) : null}
+          </AnimatePresence>
+        </div>
       </div>
-    </div>
+    </MusicAutoplayProvider>
   );
 }
 
@@ -841,6 +861,9 @@ export function PartyGameLoader(props: {
       }}
       receiver={receiver}
       state={state}
+      showMusicAutoplay={
+        setup.selectionRoute.nodeId === "all-entertainment-music"
+      }
       title={getSelectionRouteShareLabel(setup.selectionRoute)}
       tvMode={true}
     />

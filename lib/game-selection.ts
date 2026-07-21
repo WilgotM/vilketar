@@ -587,11 +587,15 @@ export function preloadCard(
   card: Pick<Card, "image" | "music" | "title">,
 ): HTMLImageElement | null {
   if (card.music) {
+    const artworkUrl = card.music.artworkUrl ?? card.image;
+
     void resolveMusicPreview(card.music, card.title).then((preview) => {
       if (preview?.artworkUrl) {
         preloadCardImageCandidates([preview.artworkUrl]);
       }
     });
+
+    return artworkUrl ? preloadCardImageCandidates([artworkUrl]) : null;
   }
 
   return preloadImage(card.image);

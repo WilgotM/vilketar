@@ -479,6 +479,14 @@ export const sidePanel = style([
   },
 ]);
 
+export const musicAutoplayAction = style({
+  alignSelf: "flex-end",
+  display: "flex",
+  flex: "0 0 auto",
+  justifyContent: "flex-end",
+  width: "100%",
+});
+
 export const currentCardWrap = style({
   display: "flex",
   justifyContent: "center",
