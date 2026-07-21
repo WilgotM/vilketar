@@ -194,20 +194,18 @@ export function createDailyCardQueue(
   const shuffledFallbackCards = shuffle(allCards, random);
   const selectedCards: PreparedCard[] = [];
   const usedQids = new Set<string>();
-  const usedYears = new Set<number>();
 
   for (const card of [
     ...overrideCards,
     ...shuffledPreferredCards,
     ...shuffledFallbackCards,
   ]) {
-    if (usedQids.has(card.qid) || usedYears.has(card.year)) {
+    if (usedQids.has(card.qid)) {
       continue;
     }
 
     selectedCards.push(card);
     usedQids.add(card.qid);
-    usedYears.add(card.year);
 
     if (selectedCards.length >= DAILY_CARD_COUNT) {
       break;

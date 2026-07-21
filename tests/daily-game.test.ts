@@ -76,6 +76,19 @@ test("daily queue avoids repeated visible titles", () => {
   assert.equal(titles.filter((title) => title === "Kort A").length, 1);
 });
 
+test("daily queue allows different cards from the same year", () => {
+  const queue = createDailyCardQueue(
+    deck,
+    new Map([
+      [deck.id, [card("Q1", "Kort A", 1958), card("Q2", "Kort B", 1958)]],
+    ]),
+    "hard",
+    "2026-05-23",
+  );
+
+  assert.deepEqual(queue.map((entry) => entry.qid).sort(), ["Q1", "Q2"]);
+});
+
 test("daily override places chosen cards first", () => {
   const queue = createDailyCardQueue(
     deck,

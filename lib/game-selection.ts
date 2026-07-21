@@ -123,7 +123,7 @@ function isCardUsed(
   card: PreparedCard,
   state: Pick<GameState, "usedQids" | "usedYears">,
 ): boolean {
-  return state.usedQids.has(card.qid) || state.usedYears.has(card.year);
+  return state.usedQids.has(card.qid);
 }
 
 function meetsDifficultyPageViews(
@@ -585,9 +585,15 @@ export function checkCorrect(
   const sorted = [...played, card].sort(
     (left, right) => left.year - right.year,
   );
-  const correctIndex = sorted.findIndex((item) => item.id === card.id);
 
-  if (index !== correctIndex) {
+  const firstEqualIndex = sorted.findIndex((item) => item.year === card.year);
+  const lastEqualIndex = sorted.findLastIndex(
+    (item) => item.year === card.year,
+  );
+  const correct = index >= firstEqualIndex && index <= lastEqualIndex;
+
+  if (!correct) {
+    const correctIndex = sorted.findIndex((item) => item.id === card.id);
     return { correct: false, delta: correctIndex - index };
   }
 
