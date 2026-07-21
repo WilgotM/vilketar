@@ -130,6 +130,66 @@
     "year": 1922
   },
   {
+    "fact": "Den amerikanske friidrottaren vinner fyra grenar inför den nazistiska regimens ledning.",
+    "image": "Berlin36-2.jpg",
+    "pageViews": 300000,
+    "qid": "Q8150",
+    "subtitle": "Herrarnas sprint, längdhopp och stafett vid Berlin-OS",
+    "title": "Jesse Owens vinner fyra OS-guld i friidrott",
+    "wikipediaSlug": "Olympiska_sommarspelen_1936",
+    "year": 1936
+  },
+  {
+    "fact": "Uruguay vänder underläge och vinner med 2–1 inför en rekordstor hemmapublik.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q132515",
+    "subtitle": "Den avgörande VM-matchen på Maracanã i Rio de Janeiro",
+    "title": "Uruguay besegrar Brasilien i herrarnas fotbolls-VM",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1950",
+    "year": 1950
+  },
+  {
+    "fact": "Västtyskland vänder ett tidigt tvåmålsunderläge och vinner finalen med 3–2.",
+    "image": "DielautrerheldenvonBern.JPG",
+    "pageViews": 300000,
+    "qid": "Q131075",
+    "subtitle": "VM-finalen i Bern",
+    "title": "Västtyskland skräller mot Ungern i herrarnas fotbolls-VM",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1954",
+    "year": 1954
+  },
+  {
+    "fact": "Geoff Hurst gör ett hattrick när England vinner med 4–2 efter förlängning.",
+    "image": "World_Cup_Ball_1966.jpg",
+    "pageViews": 300000,
+    "qid": "Q134202",
+    "subtitle": "VM-final mot Västtyskland på Wembley",
+    "title": "England vinner herrarnas fotbolls-VM efter omdiskuterat mål",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1966",
+    "year": 1966
+  },
+  {
+    "fact": "Beamon hoppar 8,90 meter och förbättrar det tidigare världsrekordet med 55 centimeter.",
+    "image": "Gammoudi victory.JPG",
+    "pageViews": 300000,
+    "qid": "Q766357",
+    "subtitle": "Herrarnas längdhoppsfinal vid Mexico City-OS",
+    "title": "Bob Beamon slår sensationellt världsrekord i OS-längdhopp",
+    "wikipediaSlug": "Friidrott_vid_olympiska_sommarspelen_1968",
+    "year": 1968
+  },
+  {
+    "fact": "Brasilien vinner finalen med 4–1 och Pelé blir den första spelaren med tre VM-titlar.",
+    "image": "Pele celebrating 1970.jpg",
+    "pageViews": 300000,
+    "qid": "Q132664",
+    "subtitle": "VM-final mot Italien i Mexiko",
+    "title": "Pelés Brasilien vinner herrarnas fotbolls-VM",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1970",
+    "year": 1970
+  },
+  {
     "fact": "Gunnar Larsson vinner både 200 och 400 meter medley.",
     "image": "",
     "pageViews": 300000,
@@ -157,6 +217,26 @@
     "subtitle": "Hinderloppet i Montréal",
     "title": "Gärderud vinner OS-guld",
     "wikipediaSlug": "Friidrott_vid_olympiska_sommarspelen_1976",
+    "year": 1976
+  },
+  {
+    "fact": "Antonín Panenka slår den avgörande straffen löst mitt i målet.",
+    "image": "Fk Red Star stadium.jpg",
+    "pageViews": 300000,
+    "qid": "Q188548",
+    "subtitle": "EM-final mellan Tjeckoslovakien och Västtyskland",
+    "title": "Panenka avgör herrarnas fotbolls-EM med en chippad straff",
+    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_1976",
+    "year": 1976
+  },
+  {
+    "fact": "Hennes barrprogram belönas med den första fullpoängaren i den olympiska gymnastikens historia.",
+    "image": "Olympic rings with white rims.svg",
+    "pageViews": 300000,
+    "qid": "Q611098",
+    "subtitle": "Damernas artistiska gymnastik vid Montréal-OS",
+    "title": "Nadia Comăneci får första perfekta OS-tian",
+    "wikipediaSlug": "Gymnastik_vid_olympiska_sommarspelen_1976",
     "year": 1976
   },
   {
@@ -200,6 +280,16 @@
     "year": 1984
   },
   {
+    "fact": "Maradona gör både ett mål med handen och ett berömt solomål i Argentinas seger.",
+    "image": "Maradona_cup_azteca.jpg",
+    "pageViews": 300000,
+    "qid": "Q46938",
+    "subtitle": "VM-kvartsfinal mellan Argentina och England",
+    "title": "Maradona gör Handen av Gud i herrarnas fotbolls-VM",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1986",
+    "year": 1986
+  },
+  {
     "fact": "Sverige säkrar VM-guldet när Sovjetunionen besegrar Tjeckoslovakien i turneringens sista match.",
     "image": "",
     "pageViews": 300000,
@@ -237,6 +327,16 @@
     "subtitle": "Backhoppningen förändras",
     "title": "Boklöv slår igenom med V-stilen",
     "wikipediaSlug": "Jan_Bokl%C3%B6v",
+    "year": 1988
+  },
+  {
+    "fact": "Kanadensaren diskvalificeras efter ett positivt dopningsprov och Carl Lewis tilldelas guldet.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q224454",
+    "subtitle": "Herrarnas sprint vid Seoul-OS",
+    "title": "Ben Johnson fråntas OS-guldet på 100 meter för dopning",
+    "wikipediaSlug": "Friidrott_vid_olympiska_sommarspelen_1988",
     "year": 1988
   },
   {
@@ -290,6 +390,16 @@
     "year": 1997
   },
   {
+    "fact": "Zinédine Zidane gör två mål när värdnationen vinner finalen med 3–0.",
+    "image": "Réception de l'équipe de France de football à l'Elysée 1998.jpg",
+    "pageViews": 300000,
+    "qid": "Q101730",
+    "subtitle": "VM-final mot Brasilien i Paris",
+    "title": "Frankrike vinner herrarnas fotbolls-VM för första gången",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1998",
+    "year": 1998
+  },
+  {
     "fact": "Sverige besegrar Ryssland i finalen och blir världsmästare.",
     "image": "",
     "pageViews": 300000,
@@ -307,6 +417,26 @@
     "subtitle": "Svensk seger på Indianapolis",
     "title": "Kenny Bräck vinner Indy 500",
     "wikipediaSlug": "Kenny_Br%C3%A4ck",
+    "year": 1999
+  },
+  {
+    "fact": "Brandi Chastain slår den avgörande straffen efter en mållös final.",
+    "image": "Logo_1999_FIFA_Women's_World_Cup.svg",
+    "pageViews": 300000,
+    "qid": "Q568445",
+    "subtitle": "VM-final mot Kina inför fullsatta läktare",
+    "title": "USA vinner damernas fotbolls-VM på straffar",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_1999",
+    "year": 1999
+  },
+  {
+    "fact": "Manchester United gör två sena mål och går från förlust till seger inom några minuter.",
+    "image": "PalmaresManU.jpg",
+    "pageViews": 300000,
+    "qid": "Q279736",
+    "subtitle": "Herrfotbollens final mot Bayern München",
+    "title": "Manchester United vänder Champions League-finalen på stopptid",
+    "wikipediaSlug": "Uefa_Champions_League_1998%2F1999",
     "year": 1999
   },
   {
@@ -340,6 +470,26 @@
     "year": 2002
   },
   {
+    "fact": "Grekland vinner finalen med 1–0 efter mål av Angelos Charisteas.",
+    "image": "Euro2004OpeningCeremony.jpg",
+    "pageViews": 300000,
+    "qid": "Q102920",
+    "subtitle": "EM-final mot värdnationen Portugal",
+    "title": "Grekland skräller och vinner herrarnas fotbolls-EM",
+    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_2004",
+    "year": 2004
+  },
+  {
+    "fact": "Liverpool kvitterar med tre snabba mål och vinner därefter på straffar.",
+    "image": "2005 European Champion Clubs' Cup (cropped).jpg",
+    "pageViews": 300000,
+    "qid": "Q308996",
+    "subtitle": "Herrfotbollens final mot Milan i Istanbul",
+    "title": "Liverpool vänder 0–3 och vinner Champions League-finalen",
+    "wikipediaSlug": "Uefa_Champions_League_2004%2F2005",
+    "year": 2005
+  },
+  {
     "fact": "Anette Norbergs lag besegrar Schweiz i OS-finalen.",
     "image": "GB_Men's_curling_team_Torino_2006.jpg",
     "pageViews": 300000,
@@ -370,6 +520,16 @@
     "year": 2006
   },
   {
+    "fact": "Frankrikes lagkapten blir utvisad innan Italien vinner finalen på straffar.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q37285",
+    "subtitle": "VM-final mellan Frankrike och Italien",
+    "title": "Zidane skallar Materazzi i herrarnas fotbolls-VM",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_2006",
+    "year": 2006
+  },
+  {
     "fact": "Ara Abrahamian lägger bronsmedaljen på mattan och lämnar prisutdelningen.",
     "image": "2008 Summer Olympics. Freestyle Wrestling. Men -60kg 02.jpg",
     "pageViews": 300000,
@@ -377,6 +537,16 @@
     "subtitle": "Protesten efter semifinalen",
     "title": "Ara lämnar medaljen på mattan",
     "wikipediaSlug": "Brottning_vid_olympiska_sommarspelen_2008",
+    "year": 2008
+  },
+  {
+    "fact": "Bolt vinner överlägset på 9,69 sekunder trots att han firar före mållinjen.",
+    "image": "Beijing 2008, Beijing National Stadium.jpg",
+    "pageViews": 300000,
+    "qid": "Q189941",
+    "subtitle": "Herrarnas sprint vid Peking-OS",
+    "title": "Usain Bolt slår världsrekord i OS-finalen på 100 meter",
+    "wikipediaSlug": "Friidrott_vid_olympiska_sommarspelen_2008",
     "year": 2008
   },
   {
@@ -400,6 +570,16 @@
     "year": 2010
   },
   {
+    "fact": "Andrés Iniesta gör matchens enda mål sent i förlängningen.",
+    "image": "FIFA_World_Cup_2010_Argentina_South_Korea.jpg",
+    "pageViews": 300000,
+    "qid": "Q176883",
+    "subtitle": "VM-final mot Nederländerna i Johannesburg",
+    "title": "Spanien vinner herrarnas fotbolls-VM för första gången",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_2010",
+    "year": 2010
+  },
+  {
     "fact": "Lisa Nordén tar OS-silver när målfoto avgör damernas triathlon.",
     "image": "Hyde Park from the air.jpg",
     "pageViews": 300000,
@@ -408,6 +588,16 @@
     "title": "Lisa Nordén tar silver i målfoto",
     "wikipediaSlug": "Triathlon_vid_olympiska_sommarspelen_2012",
     "year": 2012
+  },
+  {
+    "fact": "Tyskland gör fem mål under matchens första halvtimme och tillfogar Brasilien en historisk förlust.",
+    "image": "Alemanha-campea20140713 0007.jpg",
+    "pageViews": 300000,
+    "qid": "Q79859",
+    "subtitle": "VM-semifinal i Belo Horizonte",
+    "title": "Tyskland besegrar Brasilien med 7–1 i herrarnas fotbolls-VM",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_2014",
+    "year": 2014
   },
   {
     "fact": "Peder Fredricson och hästen All In tar silver i den individuella hoppningen.",
@@ -547,6 +737,16 @@
     "subtitle": "Efterlängtad svensk curlingseger",
     "title": "Lag Edin vinner OS-guld",
     "wikipediaSlug": "Curling_vid_olympiska_vinterspelen_2022",
+    "year": 2022
+  },
+  {
+    "fact": "Argentina vinner en målrik final på straffar efter att Lionel Messi gjort två mål.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "Q284163",
+    "subtitle": "VM-final mot Frankrike i Qatar",
+    "title": "Messi leder Argentina till seger i herrarnas fotbolls-VM",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_2022",
     "year": 2022
   },
   {
