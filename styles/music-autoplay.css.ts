@@ -7,19 +7,22 @@ export const toggle = style({
   appearance: "none",
   background: `color-mix(in srgb, ${vars.color.surfaceStrong} 88%, transparent)`,
   border: `${vars.size.borderWidth} solid ${vars.color.border}`,
-  borderRadius: vars.radius.pill,
-  boxShadow: vars.shadow.card,
+  borderRadius: vars.radius.md,
+  boxShadow:
+    "inset 0 1px 0 color-mix(in srgb, currentColor 8%, transparent), 0 6px 18px rgba(0, 0, 0, 0.18)",
   color: vars.color.text,
   cursor: "pointer",
   display: "flex",
   gap: vars.space.sm,
-  minHeight: "2.75rem",
+  height: "2.75rem",
   padding: `${vars.space.xs} ${vars.space.sm} ${vars.space.xs} ${vars.space.md}`,
-  transition: `background ${vars.duration.fast} ${vars.easing.standard}, border-color ${vars.duration.fast} ${vars.easing.standard}, transform ${vars.duration.fast} ${vars.easing.standard}`,
+  transition: `background ${vars.duration.normal} ${vars.easing.ios}, border-color ${vars.duration.normal} ${vars.easing.ios}, box-shadow ${vars.duration.normal} ${vars.easing.ios}, transform ${vars.duration.fast} ${vars.easing.ios}`,
   zIndex: 8,
   selectors: {
     "&:hover": {
       borderColor: `color-mix(in srgb, ${vars.color.accent} 48%, ${vars.color.border})`,
+      boxShadow:
+        "inset 0 1px 0 color-mix(in srgb, currentColor 12%, transparent), 0 8px 22px rgba(0, 0, 0, 0.22)",
       transform: "translateY(-1px)",
     },
     "&:focus-visible": {
@@ -29,6 +32,14 @@ export const toggle = style({
     "&:active": { transform: "translateY(0) scale(0.98)" },
   },
   "@media": {
+    [media.narrow]: {
+      gap: vars.space.xs,
+      padding: `${vars.space.xs} ${vars.space.sm}`,
+    },
+    "screen and (max-width: 22.5rem)": {
+      gap: vars.space.xxs,
+      padding: vars.space.xs,
+    },
     "(prefers-reduced-motion: reduce)": { transition: "none" },
   },
 });
@@ -47,6 +58,13 @@ export const boardPlacement = style({
       right: vars.space.xl,
       top: `calc(${vars.space.md} + (${vars.size.controlHeight} - 2.75rem) / 2)`,
     },
+    [media.narrow]: {
+      right: vars.space.xl,
+      top: `calc(${vars.space.md} + (${vars.size.controlHeight} - 2.75rem) / 2)`,
+    },
+    "screen and (max-width: 48rem) and (max-height: 46rem)": {
+      top: vars.space.sm,
+    },
     [media.shortLandscape]: {
       right: vars.space.xl,
       top: `calc(${vars.space.sm} + (${vars.size.controlHeight} - 2.75rem) / 2)`,
@@ -61,6 +79,11 @@ export const iconWrap = style({
   justifyContent: "center",
   position: "relative",
   width: "1.5rem",
+  "@media": {
+    [media.narrow]: {
+      display: "none",
+    },
+  },
 });
 
 export const icon = style({
@@ -93,9 +116,6 @@ export const copy = style({
   flexDirection: "column",
   lineHeight: 1,
   textAlign: "left",
-  "@media": {
-    [media.compact]: { display: "none" },
-  },
 });
 
 export const label = style({
@@ -109,6 +129,9 @@ export const state = style({
   fontSize: "0.625rem",
   fontWeight: vars.fontWeight.semibold,
   marginTop: vars.space.xxs,
+  "@media": {
+    [media.compact]: { display: "none" },
+  },
 });
 
 export const switchTrack = style({

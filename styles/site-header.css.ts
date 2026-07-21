@@ -48,6 +48,14 @@ export const wordmark = style({
   letterSpacing: "-0.04em",
   lineHeight: "0.96",
   textDecoration: "none",
+  "@media": {
+    [media.narrow]: {
+      fontSize: "1.625rem",
+    },
+    "screen and (max-width: 22.5rem)": {
+      fontSize: "1.25rem",
+    },
+  },
 });
 
 export const backLink = style({
@@ -57,49 +65,48 @@ export const backLink = style({
   backdropFilter: "blur(20px)",
   WebkitBackdropFilter: "blur(20px)",
   border: `1px solid color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
-  borderRadius: vars.radius.pill,
-  boxShadow: "0 4px 16px rgba(0, 0, 0, 0.15)",
+  borderRadius: vars.radius.md,
+  boxShadow:
+    "inset 0 1px 0 color-mix(in srgb, currentColor 10%, transparent), 0 6px 18px rgba(0, 0, 0, 0.18)",
   color: vars.color.text,
   display: "inline-flex",
   fontFamily: vars.font.body,
   fontSize: vars.fontSize.control,
   fontWeight: vars.fontWeight.semibold,
-  gap: vars.space.sm,
+  justifyContent: "center",
   left: 0,
   lineHeight: 1,
-  height: "2.5rem",
-  paddingLeft: vars.space.md,
-  paddingRight: vars.space.lg,
+  height: "2.75rem",
+  padding: 0,
   position: "absolute",
   textDecoration: "none",
   top: "50%",
   transform: "translateY(-50%)",
-  transition: `all ${vars.duration.fast} ${vars.easing.standard}`,
+  transition: `background ${vars.duration.normal} ${vars.easing.ios}, border-color ${vars.duration.normal} ${vars.easing.ios}, box-shadow ${vars.duration.normal} ${vars.easing.ios}, transform ${vars.duration.fast} ${vars.easing.ios}`,
+  width: "2.75rem",
   selectors: {
     "&:hover": {
       background: `color-mix(in srgb, ${vars.color.text} 12%, transparent)`,
       borderColor: `color-mix(in srgb, ${vars.color.text} 20%, transparent)`,
-      boxShadow: "0 6px 20px rgba(0, 0, 0, 0.2)",
-      transform: "translateY(-50%) scale(1.03)",
+      boxShadow:
+        "inset 0 1px 0 color-mix(in srgb, currentColor 14%, transparent), 0 8px 22px rgba(0, 0, 0, 0.22)",
+      transform: "translateY(calc(-50% - 1px))",
+    },
+    "&:focus-visible": {
+      boxShadow: vars.shadow.focus,
+      outline: "none",
     },
     "&:active": {
-      transform: "translateY(-50%) scale(0.97)",
+      boxShadow:
+        "inset 0 1px 4px rgba(0, 0, 0, 0.2), 0 3px 10px rgba(0, 0, 0, 0.16)",
+      transform: "translateY(-50%) scale(0.96)",
     },
   },
   "@media": {
-    [media.narrow]: {
-      paddingLeft: 0,
-      paddingRight: 0,
-      justifyContent: "center",
-      width: "2.5rem",
-    },
+    "(prefers-reduced-motion: reduce)": { transition: "none" },
   },
 });
 
 export const backText = style({
-  "@media": {
-    [media.narrow]: {
-      display: "none",
-    },
-  },
+  display: "none",
 });

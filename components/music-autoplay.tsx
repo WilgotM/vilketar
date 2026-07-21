@@ -57,7 +57,7 @@ export function MusicAutoplayToggle(props: {
         <span className={styles.playMark}>▶</span>
       </span>
       <span className={styles.copy}>
-        <span className={styles.label}>Autospela</span>
+        <span className={styles.label}>Autoplay</span>
         <span className={styles.state}>{enabled ? "På" : "Av"}</span>
       </span>
       <span aria-hidden="true" className={styles.switchTrack}>
