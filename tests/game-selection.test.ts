@@ -1,7 +1,11 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import createInitialState from "../lib/create-state";
-import { drawNextCard, prepareDecks } from "../lib/game-selection";
+import {
+  checkCorrect,
+  drawNextCard,
+  prepareDecks,
+} from "../lib/game-selection";
 import { Card } from "../types/cards";
 import { DeckNode } from "../types/decks";
 import { GameState } from "../types/game";
@@ -84,7 +88,7 @@ test("drawNextCard never repeats a qid within the same game", () => {
   assert.equal(third, null);
 });
 
-test("drawNextCard never repeats a year within the same game", () => {
+test("drawNextCard allows different cards from the same year", () => {
   const duplicateYearsDeck = createDeckNode({
     difficultyCounts: {
       easy: 3,
@@ -141,8 +145,32 @@ test("drawNextCard never repeats a year within the same game", () => {
   const third = drawNextCard(state);
 
   assert.equal(first?.year, 1900);
-  assert.equal(second?.year, 1910);
-  assert.equal(third, null);
+  assert.equal(second?.year, 1900);
+  assert.equal(third?.year, 1910);
+});
+
+test("same-year cards are correct on either side of the existing card", () => {
+  const played = [
+    {
+      ...createSelectionState().decks[0]!.cards[0]!,
+      played: { correct: true, placementIndex: 0, showDate: true },
+      year: 1900,
+    },
+    {
+      ...createSelectionState().decks[0]!.cards[1]!,
+      played: { correct: true, placementIndex: 1, showDate: true },
+      year: 1930,
+    },
+  ];
+  const card = {
+    ...createSelectionState().decks[0]!.cards[1]!,
+    id: "same-year-card",
+    year: 1930,
+  };
+
+  assert.equal(checkCorrect(played, card, 1).correct, true);
+  assert.equal(checkCorrect(played, card, 2).correct, true);
+  assert.equal(checkCorrect(played, card, 0).correct, false);
 });
 
 test("createState excludes decks with no valid cards for the chosen difficulty", async () => {
