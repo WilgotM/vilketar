@@ -7668,9 +7668,9 @@ const CURATED_SPORT_BATCH: ClassicTuple[] = [
   ],
   [
     "Världsmästerskapet i fotboll för damer 2011",
-    "Sverige tar VM-brons",
+    "Sverige tar VM-brons i dam-VM",
     2011,
-    "Seger i bronsmatchen",
+    "Dam-VM i Tyskland",
     "Sverige besegrar Frankrike och tar brons i damernas fotbolls-VM.",
     220_000,
   ],
@@ -7876,15 +7876,25 @@ const CURATED_SPORT_BATCH: ClassicTuple[] = [
   ],
 ];
 
+// A generic tournament photo can be misleading when it does not show the
+// named team or moment. Leave these cards image-free until a fitting Wikimedia
+// image is explicitly chosen.
+const SPORT_IMAGE_OVERRIDES: Readonly<Record<string, string>> = {
+  "Världsmästerskapet i fotboll för damer 2011": "",
+};
+
 function sportCard(input: ClassicTuple): HandpickedCard {
+  const card = classicCard(input);
+
   return {
-    ...classicCard(input),
+    ...card,
     deckIds: [
       SPORT_MOMENTS_DECK_ID,
       "all-sweden",
       "all-sweden-allt",
       "all-sport-svensk-sport",
     ],
+    image: SPORT_IMAGE_OVERRIDES[card.pageTitle] ?? card.image,
   };
 }
 
