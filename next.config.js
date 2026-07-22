@@ -4,7 +4,8 @@ const { createVanillaExtractPlugin } = require("@vanilla-extract/next-plugin");
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  allowedDevOrigins: ["127.0.0.1"],
+  // Phone testing handled by dev script (binds to 0.0.0.0 + prints QR)
+  // allowedDevOrigins only affects HMR WebSocket – page loads work fine without it
   images: {
     unoptimized: true,
   },
