@@ -224,7 +224,12 @@ export default function PlacementAnimationLayer(
         }
         transition={transition}
       >
-        <CardVisual item={card} surface="timeline" transition={transition} />
+        <CardVisual
+          item={card}
+          showMusicPreview={false}
+          surface="timeline"
+          transition={transition}
+        />
       </motion.div>
       {card.music && !reduceMotion ? (
         <motion.div

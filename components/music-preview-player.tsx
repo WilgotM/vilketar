@@ -9,6 +9,7 @@ import * as styles from "../styles/music-preview-player.css";
 
 type Props = {
   artist: string;
+  inactive?: boolean;
   music: NonNullable<Card["music"]>;
   title: string;
 };
@@ -22,10 +23,9 @@ function stopAudio(audio: HTMLAudioElement) {
 }
 
 export default function MusicPreviewPlayer(props: Props) {
-  const { artist, music, title } = props;
-  const autoPlay = useMusicAutoplay();
+  const { artist, inactive = false, music, title } = props;
+  const { audioRef, enabled: autoPlay } = useMusicAutoplay();
   const initialPreview = getCachedMusicPreview(music, title);
-  const audioRef = React.useRef<HTMLAudioElement | null>(null);
   const [previewUrl, setPreviewUrl] = React.useState<string | null>(
     initialPreview?.previewUrl ?? music.previewUrl,
   );
@@ -39,8 +39,45 @@ export default function MusicPreviewPlayer(props: Props) {
   const [duration, setDuration] = React.useState(30);
 
   React.useEffect(() => {
+    if (inactive) return;
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    const onDurationChange = () => {
+      if (Number.isFinite(audio.duration)) setDuration(audio.duration);
+    };
+    const onEnded = () => {
+      setCurrentTime(0);
+      setStatus("ready");
+    };
+    const onPause = () => {
+      setStatus((current) => (current === "playing" ? "paused" : current));
+    };
+    const onPlay = () => setStatus("playing");
+    const onTimeUpdate = () => setCurrentTime(audio.currentTime);
+
+    audio.addEventListener("durationchange", onDurationChange);
+    audio.addEventListener("ended", onEnded);
+    audio.addEventListener("pause", onPause);
+    audio.addEventListener("play", onPlay);
+    audio.addEventListener("timeupdate", onTimeUpdate);
+    return () => {
+      audio.removeEventListener("durationchange", onDurationChange);
+      audio.removeEventListener("ended", onEnded);
+      audio.removeEventListener("pause", onPause);
+      audio.removeEventListener("play", onPlay);
+      audio.removeEventListener("timeupdate", onTimeUpdate);
+    };
+  }, [audioRef, inactive]);
+
+  React.useEffect(() => {
     let cancelled = false;
     const audio = audioRef.current;
+    if (audio && !inactive) {
+      stopAudio(audio);
+      audio.removeAttribute("src");
+      audio.load();
+    }
     setCurrentTime(0);
     const cachedPreview = getCachedMusicPreview(music, title);
     setPreviewUrl(cachedPreview?.previewUrl ?? music.previewUrl);
@@ -57,17 +94,27 @@ export default function MusicPreviewPlayer(props: Props) {
       }
       setPreviewUrl(preview.previewUrl);
       setArtworkUrl(preview.artworkUrl ?? music.artworkUrl);
-      setStatus(audioRef.current?.paused === false ? "playing" : "ready");
+      setStatus(
+        !inactive && audioRef.current?.paused === false ? "playing" : "ready",
+      );
     });
 
     return () => {
       cancelled = true;
-      if (audio) stopAudio(audio);
-      if (activeAudio === audio) activeAudio = null;
+      if (audio && !inactive) stopAudio(audio);
     };
-  }, [music, title]);
+  }, [audioRef, inactive, music, title]);
+
+  React.useEffect(() => {
+    const audio = audioRef.current;
+    if (inactive || !audio || !previewUrl || audio.src === previewUrl) return;
+
+    audio.src = previewUrl;
+    audio.load();
+  }, [audioRef, inactive, previewUrl]);
 
   const togglePlayback = React.useCallback(async () => {
+    if (inactive) return;
     const audio = audioRef.current;
     if (!audio || !previewUrl) return;
 
@@ -86,11 +133,11 @@ export default function MusicPreviewPlayer(props: Props) {
     } catch {
       setStatus("error");
     }
-  }, [previewUrl]);
+  }, [audioRef, inactive, previewUrl]);
 
   React.useEffect(() => {
     const audio = audioRef.current;
-    if (!autoPlay || !audio || !previewUrl || !audio.paused) return;
+    if (inactive || !autoPlay || !audio || !previewUrl || !audio.paused) return;
 
     if (activeAudio && activeAudio !== audio) stopAudio(activeAudio);
     activeAudio = audio;
@@ -99,10 +146,11 @@ export default function MusicPreviewPlayer(props: Props) {
       .play()
       .then(() => setStatus("playing"))
       .catch(() => setStatus("paused"));
-  }, [autoPlay, previewUrl, title]);
+  }, [audioRef, autoPlay, inactive, previewUrl, title]);
 
   React.useEffect(() => {
     const startFromToggle = () => {
+      if (inactive) return;
       const audio = audioRef.current;
       if (!audio || !previewUrl || !audio.paused) return;
 
@@ -119,7 +167,7 @@ export default function MusicPreviewPlayer(props: Props) {
     return () => {
       window.removeEventListener(MUSIC_AUTOPLAY_START_EVENT, startFromToggle);
     };
-  }, [previewUrl]);
+  }, [audioRef, inactive, previewUrl]);
 
   const progress = duration > 0 ? Math.min(1, currentTime / duration) : 0;
   const label =
@@ -139,26 +187,6 @@ export default function MusicPreviewPlayer(props: Props) {
       onClick={(event) => event.stopPropagation()}
       onPointerDown={(event) => event.stopPropagation()}
     >
-      <audio
-        ref={audioRef}
-        onDurationChange={(event) => {
-          const nextDuration = event.currentTarget.duration;
-          if (Number.isFinite(nextDuration)) setDuration(nextDuration);
-        }}
-        onEnded={() => {
-          setCurrentTime(0);
-          setStatus("ready");
-        }}
-        onPause={() => {
-          setStatus((current) => (current === "playing" ? "paused" : current));
-        }}
-        onPlay={() => setStatus("playing")}
-        onTimeUpdate={(event) =>
-          setCurrentTime(event.currentTarget.currentTime)
-        }
-        preload="metadata"
-        src={previewUrl ?? undefined}
-      />
       <div className={styles.artworkFrame}>
         {artworkUrl ? (
           // eslint-disable-next-line @next/next/no-img-element
@@ -184,7 +212,12 @@ export default function MusicPreviewPlayer(props: Props) {
         <button
           aria-label={label}
           className={styles.listenButton}
-          disabled={!previewUrl || status === "loading" || status === "error"}
+          disabled={
+            inactive ||
+            !previewUrl ||
+            status === "loading" ||
+            status === "error"
+          }
           onClick={() => void togglePlayback()}
           style={{
             background: `conic-gradient(rgba(17, 17, 17, 0.2) ${progress * 360}deg, #111111 0)`,

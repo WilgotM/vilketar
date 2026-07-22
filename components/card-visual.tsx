@@ -31,6 +31,7 @@ type Props = {
   onAnimationComplete?: () => void;
   onClick?: () => void;
   revealDatePill?: boolean;
+  musicPreviewInactive?: boolean;
   showMusicPreview?: boolean;
   surface?: "deck" | "timeline";
   style?: React.CSSProperties;
@@ -56,6 +57,7 @@ export default function CardVisual(props: Props) {
     onAnimationComplete,
     onClick,
     revealDatePill = true,
+    musicPreviewInactive = false,
     showMusicPreview = true,
     surface = "timeline",
     style,
@@ -126,6 +128,7 @@ export default function CardVisual(props: Props) {
             {showMusicPlayer && item.music ? (
               <MusicPreviewPlayer
                 artist={item.music.artist}
+                inactive={musicPreviewInactive}
                 music={item.music}
                 title={item.title}
               />

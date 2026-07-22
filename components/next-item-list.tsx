@@ -76,6 +76,7 @@ function RevealingDeckCard(props: {
         flipped={false}
         initialTransform={false}
         item={item}
+        musicPreviewInactive
         surface="deck"
         style={topCardStyle}
         transition={{
@@ -132,6 +133,7 @@ export default function NextItemList(props: NextItemListProps) {
                   flipped
                   item={stackCard}
                   loadImage={false}
+                  showMusicPreview={false}
                   surface="deck"
                   style={STACK_BASE_CARD_STYLE}
                 />
@@ -149,6 +151,7 @@ export default function NextItemList(props: NextItemListProps) {
                     flipped
                     item={renderedNext}
                     loadImage={false}
+                    showMusicPreview={false}
                     surface="deck"
                     style={topCardStyle}
                   />

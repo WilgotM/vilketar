@@ -2,22 +2,40 @@ import classNames from "classnames";
 import React from "react";
 import * as styles from "../styles/music-autoplay.css";
 
-const MusicAutoplayContext = React.createContext(false);
+type MusicAutoplayState = {
+  audioRef: React.MutableRefObject<HTMLAudioElement | null>;
+  enabled: boolean;
+};
+
+const MusicAutoplayContext = React.createContext<MusicAutoplayState | null>(
+  null,
+);
 export const MUSIC_AUTOPLAY_START_EVENT = "vilketar:music-autoplay-start";
 
 export function MusicAutoplayProvider(props: {
   children: React.ReactNode;
   enabled: boolean;
 }) {
+  const audioRef = React.useRef<HTMLAudioElement | null>(null);
+  const value = React.useMemo(
+    () => ({ audioRef, enabled: props.enabled }),
+    [props.enabled],
+  );
+
   return (
-    <MusicAutoplayContext.Provider value={props.enabled}>
+    <MusicAutoplayContext.Provider value={value}>
+      <audio ref={audioRef} preload="metadata" />
       {props.children}
     </MusicAutoplayContext.Provider>
   );
 }
 
 export function useMusicAutoplay() {
-  return React.useContext(MusicAutoplayContext);
+  const state = React.useContext(MusicAutoplayContext);
+  if (!state) {
+    throw new Error("MusicPreviewPlayer must be inside MusicAutoplayProvider");
+  }
+  return state;
 }
 
 export function MusicAutoplayToggle(props: {
