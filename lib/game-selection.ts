@@ -453,20 +453,18 @@ export function prepareDecks(
       }
 
       return {
-        cards: cards
-          .map((card, index) => ({
+        cards: shuffle(
+          cards.map((card, index) => ({
             ...card,
             deckId,
             deckThemeHue: deckNode.themeHue,
             id: `${deckId}:${card.qid}:${index}`,
             rank: index + 1,
-          }))
-          .sort((a, b) => a.year - b.year)
-          .map((card) => ({
-            ...card,
             spacingBucket: getSpacingBucket(card.year),
             yearBucket: getYearBucket(card.year, boundaries),
           })),
+          random,
+        ),
         drawCursor: Math.floor(random() * Math.max(1, cards.length)),
         id: deckId,
         minScore: deckNode.minScore,

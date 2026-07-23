@@ -83,8 +83,8 @@ test("drawNextCard never repeats a qid within the same game", () => {
   const second = drawNextCard(state);
   const third = drawNextCard(state);
 
-  assert.equal(first?.qid, "Q1");
-  assert.equal(second?.qid, "Q2");
+  assert.notEqual(first?.qid, second?.qid);
+  assert.deepEqual(new Set([first?.qid, second?.qid]), new Set(["Q1", "Q2"]));
   assert.equal(third, null);
 });
 
@@ -144,9 +144,47 @@ test("drawNextCard allows different cards from the same year", () => {
   const second = drawNextCard(state);
   const third = drawNextCard(state);
 
-  assert.equal(first?.year, 1900);
-  assert.equal(second?.year, 1900);
-  assert.equal(third?.year, 1910);
+  assert.deepEqual(
+    [first?.year, second?.year, third?.year].sort(
+      (a, b) => (a ?? 0) - (b ?? 0),
+    ),
+    [1900, 1900, 1910],
+  );
+});
+
+test("prepareDecks shuffles draw order instead of sorting by year", () => {
+  const deckNode = createDeckNode({
+    difficultyCounts: {
+      easy: 5,
+      hard: 5,
+      normal: 5,
+    },
+  });
+  const cards = Array.from({ length: 5 }, (_, index) => ({
+    fact: `Fact ${index}`,
+    image: `${index}.jpg`,
+    pageViews: 100_000,
+    qid: `Q${index}`,
+    subtitle: null,
+    title: `Card ${index}`,
+    wikipediaSlug: `Card_${index}`,
+    year: 2000 + index,
+  }));
+  const randomValues = [0.2, 0.8, 0.1, 0.6, 0.4];
+  let randomIndex = 0;
+  const random = () => randomValues[randomIndex++ % randomValues.length]!;
+
+  const [deck] = prepareDecks(
+    deckNode,
+    new Map([[deckNode.id, cards]]),
+    random,
+  );
+
+  assert.ok(deck);
+  assert.notDeepEqual(
+    deck.cards.map((card) => card.year),
+    [2000, 2001, 2002, 2003, 2004],
+  );
 });
 
 test("same-year cards are correct on either side of the existing card", () => {
