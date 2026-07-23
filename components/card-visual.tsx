@@ -4,6 +4,7 @@ import React, { Fragment } from "react";
 import { hideYearsOnCardFront } from "../lib/card-front-text";
 import { createWikimediaImageCandidates } from "../lib/image";
 import { getCachedMusicPreview } from "../lib/itunes-preview";
+import { getCanonicalMusicCard } from "../lib/music-card-details";
 import { useCardImage } from "../lib/use-card-image";
 import { useCardTheme } from "../lib/use-card-theme";
 import { PlayedCard } from "../types/cards";
@@ -62,30 +63,12 @@ export default function CardVisual(props: Props) {
     transition = DEFAULT_TRANSITION,
   } = props;
   const isPlayed = "played" in item;
-  const spotifyTrackId = item.qid.startsWith("spotify:")
-    ? item.qid.slice("spotify:".length)
-    : null;
-  const playableMusic = React.useMemo(() => {
-    if (item.music) {
-      return item.music;
-    }
-
-    if (!spotifyTrackId) {
-      return null;
-    }
-
-    return {
-      appleTrackId: null,
-      appleTrackViewUrl: null,
-      artist: item.subtitle ?? "Okänd artist",
-      artworkUrl: null,
-      previewUrl: null,
-      spotifyTrackId,
-    };
-  }, [item.music, item.subtitle, spotifyTrackId]);
+  const canonicalMusicCard = getCanonicalMusicCard(item);
+  const playableMusic = canonicalMusicCard?.music ?? null;
   const showMusicPlayer = !!playableMusic && !isPlayed && showMusicPreview;
+  const musicTitle = canonicalMusicCard?.title ?? item.title;
   const cachedMusicPreview = playableMusic
-    ? getCachedMusicPreview(playableMusic, item.title)
+    ? getCachedMusicPreview(playableMusic, musicTitle)
     : null;
   const musicArtwork =
     cachedMusicPreview?.artworkUrl ?? playableMusic?.artworkUrl ?? item.image;
@@ -148,7 +131,7 @@ export default function CardVisual(props: Props) {
               <MusicPreviewPlayer
                 artist={playableMusic.artist}
                 music={playableMusic}
-                title={item.title}
+                title={musicTitle}
               />
             ) : (
               <div className={styles.cardContent}>
