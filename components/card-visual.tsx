@@ -62,25 +62,46 @@ export default function CardVisual(props: Props) {
     transition = DEFAULT_TRANSITION,
   } = props;
   const isPlayed = "played" in item;
-  const showMusicPlayer = !!item.music && !isPlayed && showMusicPreview;
-  const cachedMusicPreview = item.music
-    ? getCachedMusicPreview(item.music, item.title)
+  const spotifyTrackId = item.qid.startsWith("spotify:")
+    ? item.qid.slice("spotify:".length)
+    : null;
+  const playableMusic = React.useMemo(() => {
+    if (item.music) {
+      return item.music;
+    }
+
+    if (!spotifyTrackId) {
+      return null;
+    }
+
+    return {
+      appleTrackId: null,
+      appleTrackViewUrl: null,
+      artist: item.subtitle ?? "Okänd artist",
+      artworkUrl: null,
+      previewUrl: null,
+      spotifyTrackId,
+    };
+  }, [item.music, item.subtitle, spotifyTrackId]);
+  const showMusicPlayer = !!playableMusic && !isPlayed && showMusicPreview;
+  const cachedMusicPreview = playableMusic
+    ? getCachedMusicPreview(playableMusic, item.title)
     : null;
   const musicArtwork =
-    cachedMusicPreview?.artworkUrl ?? item.music?.artworkUrl ?? item.image;
+    cachedMusicPreview?.artworkUrl ?? playableMusic?.artworkUrl ?? item.image;
   const appleTrackViewUrl =
-    item.music?.appleTrackViewUrl ?? cachedMusicPreview?.appleTrackViewUrl;
+    playableMusic?.appleTrackViewUrl ?? cachedMusicPreview?.appleTrackViewUrl;
 
   const imageCandidates = React.useMemo(
     () =>
       loadImage && !showMusicPlayer
-        ? item.music
+        ? playableMusic
           ? musicArtwork
             ? [musicArtwork]
             : []
           : createWikimediaImageCandidates(item.image)
         : [],
-    [item.image, item.music, loadImage, musicArtwork, showMusicPlayer],
+    [item.image, loadImage, musicArtwork, playableMusic, showMusicPlayer],
   );
   const { imageSrc } = useCardImage(imageCandidates);
   const cardThemeStyle = useCardTheme(item.deckThemeHue);
@@ -123,10 +144,10 @@ export default function CardVisual(props: Props) {
             className={styles.front}
             style={{ pointerEvents: flipped ? "none" : "auto" }}
           >
-            {showMusicPlayer && item.music ? (
+            {showMusicPlayer && playableMusic ? (
               <MusicPreviewPlayer
-                artist={item.music.artist}
-                music={item.music}
+                artist={playableMusic.artist}
+                music={playableMusic}
                 title={item.title}
               />
             ) : (
