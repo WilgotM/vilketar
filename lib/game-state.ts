@@ -9,6 +9,7 @@ import createState, {
 import { DAILY_DIFFICULTY } from "./daily";
 import { createDeckNodeListMap, resolveDeckSelection } from "./deck-tree";
 import { preloadCard, prepareDecks } from "./game-selection";
+import { hydrateCanonicalMusicFields } from "./music-card-details";
 import { createSeededRandom } from "./seeded-random";
 
 function createEphemeralRandom(): RandomSource {
@@ -166,9 +167,13 @@ export function createDailyGameSnapshot(
     dailyQueue: state.dailyQueue ? [...state.dailyQueue] : undefined,
     dateKey,
     lives: state.lives,
-    next: state.next,
-    nextButOne: state.nextButOne,
-    played: normalizePlayedCardsForSnapshot(state.played),
+    next: state.next ? hydrateCanonicalMusicFields(state.next) : null,
+    nextButOne: state.nextButOne
+      ? hydrateCanonicalMusicFields(state.nextButOne)
+      : null,
+    played: normalizePlayedCardsForSnapshot(state.played).map(
+      hydrateCanonicalMusicFields,
+    ),
     randomState: state.random.getState?.() ?? null,
     recentDeckIds: [...state.recentDeckIds],
   };
@@ -206,19 +211,29 @@ export function createDailyGameStateFromSnapshot(
     badlyPlaced: null,
     difficulty,
     imageCache: [
-      snapshot.next ? preloadCard(snapshot.next) : null,
-      snapshot.nextButOne ? preloadCard(snapshot.nextButOne) : null,
+      snapshot.next
+        ? preloadCard(hydrateCanonicalMusicFields(snapshot.next))
+        : null,
+      snapshot.nextButOne
+        ? preloadCard(hydrateCanonicalMusicFields(snapshot.nextButOne))
+        : null,
     ].filter((image): image is HTMLImageElement => image !== null),
     lives: snapshot.lives,
-    next: snapshot.next,
-    nextButOne: snapshot.nextButOne,
+    next: snapshot.next ? hydrateCanonicalMusicFields(snapshot.next) : null,
+    nextButOne: snapshot.nextButOne
+      ? hydrateCanonicalMusicFields(snapshot.nextButOne)
+      : null,
     decks: preparedDecks.map((deck) => ({
       ...deck,
       cards: [...deck.cards],
       drawCursor: deckCursorMap.get(deck.id) ?? deck.drawCursor,
     })),
-    dailyQueue: snapshot.dailyQueue ? [...snapshot.dailyQueue] : undefined,
-    played: normalizePlayedCardsForSnapshot(snapshot.played),
+    dailyQueue: snapshot.dailyQueue
+      ? snapshot.dailyQueue.map(hydrateCanonicalMusicFields)
+      : undefined,
+    played: normalizePlayedCardsForSnapshot(snapshot.played).map(
+      hydrateCanonicalMusicFields,
+    ),
     random,
     recentDeckIds: [...snapshot.recentDeckIds],
     selectedRootDeck,

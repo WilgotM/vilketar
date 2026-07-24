@@ -4,6 +4,7 @@ import React, { Fragment } from "react";
 import { hideYearsOnCardFront } from "../lib/card-front-text";
 import { createWikimediaImageCandidates } from "../lib/image";
 import { getCachedMusicPreview } from "../lib/itunes-preview";
+import { getCanonicalMusicCard } from "../lib/music-card-details";
 import { useCardImage } from "../lib/use-card-image";
 import { useCardTheme } from "../lib/use-card-theme";
 import { PlayedCard } from "../types/cards";
@@ -62,25 +63,28 @@ export default function CardVisual(props: Props) {
     transition = DEFAULT_TRANSITION,
   } = props;
   const isPlayed = "played" in item;
-  const showMusicPlayer = !!item.music && !isPlayed && showMusicPreview;
-  const cachedMusicPreview = item.music
-    ? getCachedMusicPreview(item.music, item.title)
+  const canonicalMusicCard = getCanonicalMusicCard(item);
+  const playableMusic = canonicalMusicCard?.music ?? null;
+  const showMusicPlayer = !!playableMusic && !isPlayed && showMusicPreview;
+  const musicTitle = canonicalMusicCard?.title ?? item.title;
+  const cachedMusicPreview = playableMusic
+    ? getCachedMusicPreview(playableMusic, musicTitle)
     : null;
   const musicArtwork =
-    cachedMusicPreview?.artworkUrl ?? item.music?.artworkUrl ?? item.image;
+    cachedMusicPreview?.artworkUrl ?? playableMusic?.artworkUrl ?? item.image;
   const appleTrackViewUrl =
-    item.music?.appleTrackViewUrl ?? cachedMusicPreview?.appleTrackViewUrl;
+    playableMusic?.appleTrackViewUrl ?? cachedMusicPreview?.appleTrackViewUrl;
 
   const imageCandidates = React.useMemo(
     () =>
       loadImage && !showMusicPlayer
-        ? item.music
+        ? playableMusic
           ? musicArtwork
             ? [musicArtwork]
             : []
           : createWikimediaImageCandidates(item.image)
         : [],
-    [item.image, item.music, loadImage, musicArtwork, showMusicPlayer],
+    [item.image, loadImage, musicArtwork, playableMusic, showMusicPlayer],
   );
   const { imageSrc } = useCardImage(imageCandidates);
   const cardThemeStyle = useCardTheme(item.deckThemeHue);
@@ -123,11 +127,11 @@ export default function CardVisual(props: Props) {
             className={styles.front}
             style={{ pointerEvents: flipped ? "none" : "auto" }}
           >
-            {showMusicPlayer && item.music ? (
+            {showMusicPlayer && playableMusic ? (
               <MusicPreviewPlayer
-                artist={item.music.artist}
-                music={item.music}
-                title={item.title}
+                artist={playableMusic.artist}
+                music={playableMusic}
+                title={musicTitle}
               />
             ) : (
               <div className={styles.cardContent}>
