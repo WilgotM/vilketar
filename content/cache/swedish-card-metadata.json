@@ -4749,5 +4749,59 @@
     "imageChecked": true,
     "qid": "Q472559",
     "title": "Jan Boklöv"
+  },
+  "Olympiska sommarspelen 1936": {
+    "image": "",
+    "imageChecked": true,
+    "qid": "manual-olympiska-sommarspelen-1936",
+    "title": "Olympiska sommarspelen 1936"
+  },
+  "Olympiska sommarspelen 1968": {
+    "image": "",
+    "imageChecked": true,
+    "qid": "manual-olympiska-sommarspelen-1968",
+    "title": "Olympiska sommarspelen 1968"
+  },
+  "The Rumble in the Jungle": {
+    "image": "",
+    "imageChecked": true,
+    "qid": "manual-the-rumble-in-the-jungle",
+    "title": "The Rumble in the Jungle"
+  },
+  "Nadia Comăneci": {
+    "image": "",
+    "imageChecked": true,
+    "qid": "manual-nadia-comăneci",
+    "title": "Nadia Comăneci"
+  },
+  "Miracle on Ice": {
+    "image": "",
+    "imageChecked": true,
+    "qid": "manual-miracle-on-ice",
+    "title": "Miracle on Ice"
+  },
+  "Guds hand": {
+    "image": "",
+    "imageChecked": true,
+    "qid": "manual-guds-hand",
+    "title": "Guds hand"
+  },
+  "Europamästerskapet i fotboll 2004": {
+    "image": "",
+    "imageChecked": true,
+    "qid": "manual-europamästerskapet-i-fotboll-2004",
+    "title": "Europamästerskapet i fotboll 2004"
+  },
+  "Wimbledonmästerskapen 2008": {
+    "image": "",
+    "imageChecked": true,
+    "qid": "manual-wimbledonmästerskapen-2008",
+    "title": "Wimbledonmästerskapen 2008"
+  },
+  "Leicester City FC": {
+    "image": "",
+    "imageChecked": true,
+    "qid": "manual-leicester-city-fc",
+    "title": "Leicester City FC"
   }
 }

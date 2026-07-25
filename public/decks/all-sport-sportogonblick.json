@@ -1,5 +1,35 @@
 [
   {
+    "fact": "Diego Maradona gör både det omtalade Guds hand-målet och Århundradets mål.",
+    "image": "",
+    "pageViews": 500000,
+    "qid": "manual-guds-hand",
+    "subtitle": "VM-kvartsfinalen mot England",
+    "title": "Maradona gör Guds hand-målet",
+    "wikipediaSlug": "Guds_hand",
+    "year": 1986
+  },
+  {
+    "fact": "Usain Bolt springer 100 meter på 9,58 sekunder.",
+    "image": "Usain_Bolt_Rio_100m_final_2016k.jpg",
+    "pageViews": 500000,
+    "qid": "Q1189",
+    "subtitle": "Rekordloppet i Berlin",
+    "title": "Bolt sätter världsrekord på 100 meter",
+    "wikipediaSlug": "Usain_Bolt",
+    "year": 2009
+  },
+  {
+    "fact": "Leicester City blir engelska mästare efter att ha varit nederlagstippat inför säsongen.",
+    "image": "",
+    "pageViews": 450000,
+    "qid": "manual-leicester-city-fc",
+    "subtitle": "Fotbollssagan mot alla odds",
+    "title": "Leicester vinner Premier League",
+    "wikipediaSlug": "Leicester_City_FC",
+    "year": 2016
+  },
+  {
     "fact": "Zlatan Ibrahimović debuterar i Sveriges landslag.",
     "image": "Zlatan_Ibrahimović_June_2018.jpg",
     "pageViews": 420000,
@@ -30,6 +60,46 @@
     "year": 2012
   },
   {
+    "fact": "Jesse Owens vinner fyra guldmedaljer vid OS i Berlin.",
+    "image": "",
+    "pageViews": 400000,
+    "qid": "manual-olympiska-sommarspelen-1936",
+    "subtitle": "Friidrott i Berlin",
+    "title": "Jesse Owens vinner fyra OS-guld",
+    "wikipediaSlug": "Olympiska_sommarspelen_1936",
+    "year": 1936
+  },
+  {
+    "fact": "Muhammad Ali besegrar George Foreman i den klassiska titelmatchen i Kinshasa.",
+    "image": "",
+    "pageViews": 400000,
+    "qid": "manual-the-rumble-in-the-jungle",
+    "subtitle": "Rumble in the Jungle",
+    "title": "Ali återtar världsmästartiteln",
+    "wikipediaSlug": "The_Rumble_in_the_Jungle",
+    "year": 1974
+  },
+  {
+    "fact": "USA:s unga ishockeylag besegrar storfavoriten Sovjetunionen vid vinter-OS.",
+    "image": "",
+    "pageViews": 400000,
+    "qid": "manual-miracle-on-ice",
+    "subtitle": "Miracle on Ice",
+    "title": "USA skräller mot Sovjet",
+    "wikipediaSlug": "Miracle_on_Ice",
+    "year": 1980
+  },
+  {
+    "fact": "Grekland besegrar värdnationen Portugal i finalen och blir europamästare.",
+    "image": "",
+    "pageViews": 400000,
+    "qid": "manual-europamästerskapet-i-fotboll-2004",
+    "subtitle": "En av fotbollens största skrällar",
+    "title": "Grekland vinner fotbolls-EM",
+    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_2004",
+    "year": 2004
+  },
+  {
     "fact": "Anja Pärson vinner störtlopp, super-G och superkombination i Åre.",
     "image": "Åresjön_Dcastor_2003.jpg",
     "pageViews": 400000,
@@ -38,6 +108,16 @@
     "title": "Anja Pärson tar tre VM-guld",
     "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapen_i_alpin_skidsport_2007",
     "year": 2007
+  },
+  {
+    "fact": "Rafael Nadal besegrar Roger Federer i en fem set lång final som slutar i skymningen.",
+    "image": "",
+    "pageViews": 400000,
+    "qid": "manual-wimbledonmästerskapen-2008",
+    "subtitle": "Finalklassikern mot Federer",
+    "title": "Nadal vinner Wimbledonrysaren",
+    "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2008",
+    "year": 2008
   },
   {
     "fact": "Charlotte Kalla hämtar in täten på sista sträckan och säkrar stafettguldet.",
@@ -88,6 +168,16 @@
     "title": "Zlatan får Guldbollen",
     "wikipediaSlug": "Zlatan_Ibrahimovi%C4%87",
     "year": 2005
+  },
+  {
+    "fact": "Nadia Comăneci blir den första gymnasten som får 10,0 i ett olympiskt moment.",
+    "image": "",
+    "pageViews": 350000,
+    "qid": "manual-nadia-comăneci",
+    "subtitle": "Gymnastikhistoria i Montréal",
+    "title": "Comăneci får en perfekt tia",
+    "wikipediaSlug": "Nadia_Com%C4%83neci",
+    "year": 1976
   },
   {
     "fact": "Sverige slår Italien i playoff och går till fotbolls-VM.",
@@ -188,6 +278,16 @@
     "title": "Sverige vinner OS-guld i fotboll",
     "wikipediaSlug": "Fotboll_vid_olympiska_sommarspelen_1948",
     "year": 1948
+  },
+  {
+    "fact": "Dick Fosbury vinner OS-guld med den ryggvända hoppstil som får hans namn.",
+    "image": "",
+    "pageViews": 300000,
+    "qid": "manual-olympiska-sommarspelen-1968",
+    "subtitle": "Höjdhoppet förändras",
+    "title": "Fosbury floppar över ribban",
+    "wikipediaSlug": "Olympiska_sommarspelen_1968",
+    "year": 1968
   },
   {
     "fact": "Gunnar Larsson vinner både 200 och 400 meter medley.",
