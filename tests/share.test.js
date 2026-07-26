@@ -1,13 +1,18 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { buildShareText, getShareResults } from "../lib/share";
+import {
+  buildDailyChallengePath,
+  buildShareText,
+  getDailyChallengeScore,
+  getShareResults,
+} from "../lib/share";
 
 test("daily share text matches the new compact format", () => {
   const shareText = buildShareText({
     dateKey: "2026-03-23",
     difficulty: "easy",
     mode: "daily",
-    path: "/daily",
+    path: buildDailyChallengePath(6, "2026-03-23"),
     results: [true, false, true, true, true, false, true, true],
     score: 6,
   });
@@ -21,8 +26,23 @@ test("daily share text matches the new compact format", () => {
       "",
       "Poäng / 6 / Brons",
       "",
-      "https://xn--vilketr-jxa.se/daily",
+      "https://xn--vilketr-jxa.se/daily?utmana=6&dag=2026-03-23",
     ].join("\n"),
+  );
+});
+
+test("daily challenge links carry a score that is only valid that day", () => {
+  const path = buildDailyChallengePath(14, "2026-03-23");
+
+  assert.equal(path, "/daily?utmana=14&dag=2026-03-23");
+  assert.equal(getDailyChallengeScore(path, "2026-03-23"), 14);
+  assert.equal(getDailyChallengeScore(path, "2026-03-24"), null);
+  assert.equal(
+    getDailyChallengeScore(
+      "/daily?utmana=hemligt&dag=2026-03-23",
+      "2026-03-23",
+    ),
+    null,
   );
 });
 

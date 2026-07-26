@@ -121,6 +121,33 @@ export const statusLayer = style({
   width: "100%",
 });
 
+export const dailyChallenge = style({
+  color: `color-mix(in srgb, ${vars.color.text} 68%, transparent)`,
+  fontSize: vars.fontSize.sm,
+  fontWeight: vars.fontWeight.medium,
+  lineHeight: vars.lineHeight.tight,
+  marginTop: vars.space.sm,
+  textAlign: "center",
+  "@media": {
+    [media.compact]: {
+      fontSize: vars.fontSize.xs,
+      marginTop: vars.space.xs,
+    },
+    [media.shortLandscape]: {
+      marginTop: vars.space.xs,
+    },
+    "screen and (max-height: 36rem)": {
+      fontSize: "0.6875rem",
+      marginTop: vars.space.xxs,
+    },
+  },
+});
+
+export const dailyChallengeScore = style({
+  color: vars.color.text,
+  fontWeight: vars.fontWeight.bold,
+});
+
 export const scoreBadge = style({
   alignItems: "center",
   display: "flex",

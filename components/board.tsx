@@ -43,6 +43,7 @@ function clampEdgeScrollProgress(progress: number) {
 }
 
 interface Props {
+  dailyChallengeScore?: number | null;
   dailyDateKey?: string;
   difficulty: GameDifficulty;
   gameMode: GameMode;
@@ -66,6 +67,7 @@ interface FrozenDeckState {
 
 export default function Board(props: Props) {
   const {
+    dailyChallengeScore = null,
     dailyDateKey,
     difficulty,
     gameMode,
@@ -765,6 +767,14 @@ export default function Board(props: Props) {
                 </motion.div>
               )}
             </AnimatePresence>
+            {dailyChallengeScore !== null && statusScene === "lives" ? (
+              <div className={styles.dailyChallenge}>
+                Din vän fick{" "}
+                <strong className={styles.dailyChallengeScore}>
+                  {dailyChallengeScore} poäng
+                </strong>
+              </div>
+            ) : null}
           </div>
           {deckVisible && renderedDeckState ? (
             <NextItemList

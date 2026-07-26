@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import React from "react";
 import { DAILY_DIFFICULTY, formatTimeUntilNextDaily } from "../lib/daily";
 import { getDailyScheduleTheme } from "../lib/daily-schedule";
-import { buildShareText } from "../lib/share";
+import { buildDailyChallengePath, buildShareText } from "../lib/share";
 import DailyCompletedSummary from "./daily-completed-summary";
 import { DAILY_DATE_LOCALE, formatDailyDate } from "./daily-meta-chips";
 import DailyWeekSchedule from "./daily-week-schedule";
@@ -171,7 +171,7 @@ export default function DailyEntryScreen(props: Props) {
         dateKey: dailyDateKey,
         difficulty: DAILY_DIFFICULTY,
         mode: "daily",
-        path: "/daily",
+        path: buildDailyChallengePath(completedScore, dailyDateKey),
         results: completedResults ?? undefined,
         score: completedScore,
       }),

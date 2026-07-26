@@ -40,6 +40,38 @@ export function buildShareUrl(path: string): string {
   return `${getShareOrigin()}${path}`;
 }
 
+const DAILY_CHALLENGE_SCORE_PARAM = "utmana";
+const DAILY_CHALLENGE_DATE_PARAM = "dag";
+
+export function buildDailyChallengePath(
+  score: number,
+  dateKey: string,
+): string {
+  const params = new URLSearchParams({
+    [DAILY_CHALLENGE_SCORE_PARAM]: String(score),
+    [DAILY_CHALLENGE_DATE_PARAM]: dateKey,
+  });
+
+  return `/daily?${params.toString()}`;
+}
+
+export function getDailyChallengeScore(
+  asPath: string,
+  currentDateKey: string,
+): number | null {
+  const query = asPath.split("?")[1]?.split("#")[0];
+  if (!query) return null;
+
+  const params = new URLSearchParams(query);
+  if (params.get(DAILY_CHALLENGE_DATE_PARAM) !== currentDateKey) return null;
+
+  const rawScore = params.get(DAILY_CHALLENGE_SCORE_PARAM);
+  if (!rawScore || !/^\d{1,2}$/.test(rawScore)) return null;
+
+  const score = Number(rawScore);
+  return score <= 99 ? score : null;
+}
+
 export function getShareResults(played: PlayedCard[]): boolean[] {
   return played
     .map((item, index) => ({
