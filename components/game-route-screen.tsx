@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React from "react";
 import { getSelectionRoutePath } from "../lib/categories";
 import { DAILY_DIFFICULTY, getCurrentUtcDateKey } from "../lib/daily";
@@ -26,6 +27,7 @@ import {
   getActiveDailySession,
   saveActiveDailySession,
 } from "../lib/leagues";
+import { getDailyChallengeScore } from "../lib/share";
 import { useBackConfirmation } from "../lib/use-back-confirmation";
 import { useFreePlayDifficulty } from "../lib/use-free-play-difficulty";
 import { GameState } from "../types/game";
@@ -123,6 +125,7 @@ function RouteLoadingFrame(props: { hideHeader: boolean }) {
 }
 
 export default function GameRouteScreen(props: Props) {
+  const router = useRouter();
   const {
     hideHeader = false,
     mode,
@@ -149,6 +152,11 @@ export default function GameRouteScreen(props: Props) {
     [mode, selectionRoute],
   );
   const dateKey = React.useMemo(() => getCurrentUtcDateKey(), []);
+  const dailyChallengeScore = React.useMemo(
+    () =>
+      mode === "daily" ? getDailyChallengeScore(router.asPath, dateKey) : null,
+    [dateKey, mode, router.asPath],
+  );
   const dailyScheduleTheme = React.useMemo(
     () => getDailyScheduleTheme(dateKey),
     [dateKey],
@@ -524,6 +532,7 @@ export default function GameRouteScreen(props: Props) {
           <Board
             key={`${routePath}:${runNonce}`}
             dailyDateKey={mode === "daily" ? dateKey : undefined}
+            dailyChallengeScore={dailyChallengeScore}
             difficulty={difficulty}
             gameMode={mode}
             highscore={highscore}
@@ -555,6 +564,7 @@ export default function GameRouteScreen(props: Props) {
         <Board
           key={`${routePath}:${runNonce}`}
           dailyDateKey={mode === "daily" ? dateKey : undefined}
+          dailyChallengeScore={dailyChallengeScore}
           difficulty={difficulty}
           gameMode={mode}
           highscore={highscore}
