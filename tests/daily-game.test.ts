@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { createDailyCardQueue } from "../lib/daily-game";
+import { createDailyCardQueue, DAILY_CARD_COUNT } from "../lib/daily-game";
 import { Card } from "../types/cards";
 import { DeckNode } from "../types/decks";
 
@@ -107,15 +107,54 @@ test("daily override places chosen cards first", () => {
   );
 });
 
-test("daily queue prefers cards that were not used recently", () => {
+test("daily queue keeps recent opening cards out of the opening", () => {
   const queue = createDailyCardQueue(
     deck,
     cardsByDeckId,
     "hard",
     "2026-05-23",
     null,
-    { excludedQids: new Set(["Q1", "Q2", "Q3"]) },
+    { openingExcludedQids: new Set(["Q1", "Q2", "Q3"]) },
   );
 
   assert.ok(!["Q1", "Q2", "Q3"].includes(queue[0]?.qid ?? ""));
+});
+
+test("daily queue keeps recent cards out of the opening when fresh cards exist", () => {
+  const cards = Array.from({ length: DAILY_CARD_COUNT + 20 }, (_, index) => {
+    const number = index + 1;
+    return card(`Q${number}`, `Kort ${number}`, 1900 + number);
+  });
+  const recentQids = new Set(cards.slice(0, 10).map((entry) => entry.qid));
+
+  const queue = createDailyCardQueue(
+    deck,
+    new Map([[deck.id, cards]]),
+    "hard",
+    "2026-05-23",
+    null,
+    { openingExcludedQids: recentQids },
+  );
+
+  assert.ok(queue.slice(0, 20).every((entry) => !recentQids.has(entry.qid)));
+  assert.ok(queue.slice(20).some((entry) => recentQids.has(entry.qid)));
+});
+
+test("daily queue protects a repeated visible title in the opening", () => {
+  const cards = Array.from({ length: 25 }, (_, index) => {
+    const number = index + 1;
+    return card(`Q${number}`, `Kort ${number}`, 1900 + number);
+  });
+
+  const queue = createDailyCardQueue(
+    deck,
+    new Map([[deck.id, cards]]),
+    "hard",
+    "2026-05-23",
+    null,
+    { openingExcludedTitles: new Set(["  kOrT   1 "]) },
+  );
+
+  assert.ok(queue.slice(0, 20).every((entry) => entry.title !== "Kort 1"));
+  assert.ok(queue.slice(20).some((entry) => entry.title === "Kort 1"));
 });
