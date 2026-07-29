@@ -149,7 +149,14 @@ export function buildShareText(args: {
     score,
     selectionRoute,
   } = args;
-  const url = buildShareUrl(path);
+  // The game-over view passes its current route (`/daily`) here.  Build the
+  // challenge route centrally so every daily-result share includes the score
+  // and date that the recipient's page needs to display the challenge.
+  const sharePath =
+    mode === "daily" && dateKey
+      ? buildDailyChallengePath(score, dateKey)
+      : path;
+  const url = buildShareUrl(sharePath);
   const resultRow = buildResultRow(results);
 
   if (mode === "daily") {

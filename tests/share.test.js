@@ -31,6 +31,21 @@ test("daily share text matches the new compact format", () => {
   );
 });
 
+test("daily game-over sharing adds its challenge data to the current daily route", () => {
+  const shareText = buildShareText({
+    dateKey: "2026-03-23",
+    difficulty: "easy",
+    mode: "daily",
+    path: "/daily",
+    score: 6,
+  });
+
+  assert.match(
+    shareText,
+    /https:\/\/xn--vilketr-jxa\.se\/daily\?utmana=6&dag=2026-03-23$/,
+  );
+});
+
 test("daily challenge links carry a score that is only valid that day", () => {
   const path = buildDailyChallengePath(14, "2026-03-23");
 
