@@ -12,7 +12,9 @@ test("daily share text matches the new compact format", () => {
     dateKey: "2026-03-23",
     difficulty: "easy",
     mode: "daily",
-    path: buildDailyChallengePath(6, "2026-03-23"),
+    // GameOver supplies the canonical route; buildShareText must add the
+    // challenge parameters for every daily share entry point.
+    path: "/daily",
     results: [true, false, true, true, true, false, true, true],
     score: 6,
   });
