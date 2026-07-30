@@ -1,5 +1,1025 @@
 [
   {
+    "fact": "Colosseum invigs i Rom under kejsar Titus.",
+    "image": "Colosseo_2020.jpg",
+    "pageViews": 700000,
+    "qid": "Q10285",
+    "subtitle": "Romersk amfiteater",
+    "title": "Colosseum invigs",
+    "wikipediaSlug": "Colosseum",
+    "year": 80
+  },
+  {
+    "fact": "Inkariket bygger Machu Picchu högt uppe i Anderna.",
+    "image": "Machu_Picchu,_Peru_(2018).jpg",
+    "pageViews": 700000,
+    "qid": "Q676203",
+    "subtitle": "Inkarike",
+    "title": "Machu Picchu byggs",
+    "wikipediaSlug": "Machu_Picchu",
+    "year": 1450
+  },
+  {
+    "fact": "Taj Mahal står färdigt efter flera decenniers byggarbete.",
+    "image": "Taj_Mahal_(Edited).jpeg",
+    "pageViews": 700000,
+    "qid": "Q9141",
+    "subtitle": "Mausoleum i Agra",
+    "title": "Taj Mahal står färdigt",
+    "wikipediaSlug": "Taj_Mahal",
+    "year": 1653
+  },
+  {
+    "fact": "Coca-Cola säljs för första gången på ett apotek i Atlanta.",
+    "image": "15-09-26-RalfR-WLC-0098 - Coca-Cola glass bottle (Germany).jpg",
+    "pageViews": 700000,
+    "qid": "Q2813",
+    "subtitle": "Amerikansk läskklassiker",
+    "title": "Coca-Cola börjar säljas",
+    "wikipediaSlug": "Coca-Cola",
+    "year": 1886
+  },
+  {
+    "fact": "Frankrike överlämnar Frihetsgudinnan till USA.",
+    "image": "Usa_edcp_(+HI_+AK)_relief_location_map.svg",
+    "pageViews": 700000,
+    "qid": "Q9202",
+    "subtitle": "Landmärke i New York",
+    "title": "Frihetsgudinnan invigs",
+    "wikipediaSlug": "Frihetsgudinnan",
+    "year": 1886
+  },
+  {
+    "fact": "Eiffeltornet invigs som entré till världsutställningen i Paris.",
+    "image": "Tour_Eiffel_Wikimedia_Commons.jpg",
+    "pageViews": 700000,
+    "qid": "Q243",
+    "subtitle": "Landmärke i Paris",
+    "title": "Eiffeltornet invigs",
+    "wikipediaSlug": "Eiffeltornet",
+    "year": 1889
+  },
+  {
+    "fact": "RMS Titanic sjunker efter att ha kolliderat med ett isberg.",
+    "image": "RMS_Titanic_3.jpg",
+    "pageViews": 700000,
+    "qid": "Q25173",
+    "subtitle": "Passagerarfartyg i Atlanten",
+    "title": "Titanic sjunker",
+    "wikipediaSlug": "RMS_Titanic",
+    "year": 1912
+  },
+  {
+    "fact": "Skotten i Sarajevo följs av en allianskris som utvecklas till världskrig.",
+    "image": "WWImontage.jpg",
+    "pageViews": 700000,
+    "qid": "Q361",
+    "subtitle": "Världshistoria",
+    "title": "Första världskriget bryter ut",
+    "wikipediaSlug": "F%C3%B6rsta_v%C3%A4rldskriget",
+    "year": 1914
+  },
+  {
+    "fact": "Bröderna Walt och Roy Disney startar sitt animationsföretag.",
+    "image": "Walt Disney Studios Alameda Entrance.jpg",
+    "pageViews": 700000,
+    "qid": "Q7414",
+    "subtitle": "Amerikanskt underhållningsföretag",
+    "title": "Disney grundas",
+    "wikipediaSlug": "Walt_Disney_Company",
+    "year": 1923
+  },
+  {
+    "fact": "Den stora Kristusstatyn invigs ovanför Rio de Janeiro.",
+    "image": "Christ the Redeemer - Cristo Redentor.jpg",
+    "pageViews": 700000,
+    "qid": "Q79961",
+    "subtitle": "Landmärke i Rio de Janeiro",
+    "title": "Kristus Frälsaren invigs",
+    "wikipediaSlug": "Cristo_Redentor",
+    "year": 1931
+  },
+  {
+    "fact": "Empire State Building invigs på Manhattan.",
+    "image": "Empire_State_Building_(aerial_view).jpg",
+    "pageViews": 700000,
+    "qid": "Q9188",
+    "subtitle": "Skyskrapa i New York",
+    "title": "Empire State Building invigs",
+    "wikipediaSlug": "Empire_State_Building",
+    "year": 1931
+  },
+  {
+    "fact": "Parker Brothers börjar sälja brädspelet Monopol.",
+    "image": "Monopoly_game_tokens_01.JPG",
+    "pageViews": 700000,
+    "qid": "Q17243",
+    "subtitle": "Sällskapsspel",
+    "title": "Monopol lanseras",
+    "wikipediaSlug": "Monopol_(spel)",
+    "year": 1935
+  },
+  {
+    "fact": "Jesse Owens vinner fyra guldmedaljer vid OS i Berlin.",
+    "image": "Jesse_Owens_1936.jpg",
+    "pageViews": 700000,
+    "qid": "Q52651",
+    "subtitle": "Friidrott i Berlin",
+    "title": "Jesse Owens vinner fyra OS-guld",
+    "wikipediaSlug": "Jesse_Owens",
+    "year": 1936
+  },
+  {
+    "fact": "Bröderna McDonald öppnar sin första restaurang i San Bernardino.",
+    "image": "McDonald's_Golden_Arches.svg",
+    "pageViews": 700000,
+    "qid": "Q38076",
+    "subtitle": "Snabbmatskedja",
+    "title": "McDonald's öppnar sin första restaurang",
+    "wikipediaSlug": "McDonald%E2%80%99s",
+    "year": 1940
+  },
+  {
+    "fact": "Antoine de Saint-Exupérys berättelse om den lille prinsen ges ut.",
+    "image": "The Litte Prince Book Museum in Turkey 09, 2024-04-11.jpg",
+    "pageViews": 700000,
+    "qid": "Q16386722",
+    "subtitle": "Fransk klassiker",
+    "title": "Den lille prinsen ges ut",
+    "wikipediaSlug": "Den_lille_prinsen",
+    "year": 1943
+  },
+  {
+    "fact": "De allierade öppnar en ny front i Västeuropa genom landstigningen i Normandie.",
+    "image": "1944_NormandyLST.jpg",
+    "pageViews": 700000,
+    "qid": "Q16470",
+    "subtitle": "Andra världskriget",
+    "title": "De allierade landstiger i Normandie",
+    "wikipediaSlug": "Landstigningen_i_Normandie",
+    "year": 1944
+  },
+  {
+    "fact": "Tyskland kapitulerar och kriget i Europa tar slut.",
+    "image": "Changde_battle.jpg",
+    "pageViews": 700000,
+    "qid": "Q362",
+    "subtitle": "Världshistoria",
+    "title": "Andra världskriget tar slut i Europa",
+    "wikipediaSlug": "Andra_v%C3%A4rldskriget",
+    "year": 1945
+  },
+  {
+    "fact": "Förenta nationerna grundas för att främja fred och samarbete mellan länder.",
+    "image": "UN_emblem_blue.svg",
+    "pageViews": 700000,
+    "qid": "Q1065",
+    "subtitle": "Internationell organisation",
+    "title": "Förenta nationerna bildas",
+    "wikipediaSlug": "F%C3%B6renta_nationerna",
+    "year": 1945
+  },
+  {
+    "fact": "George Orwells dystopiska roman om övervakningssamhället ges ut.",
+    "image": "1984JLH1.jpg",
+    "pageViews": 700000,
+    "qid": "Q208460",
+    "subtitle": "Dystopisk roman",
+    "title": "Orwells dystopi ges ut",
+    "wikipediaSlug": "1984_(roman)",
+    "year": 1949
+  },
+  {
+    "fact": "Edmund Hillary och Tenzing Norgay når Mount Everests topp först av alla.",
+    "image": "Everest_kalapatthar_crop.jpg",
+    "pageViews": 700000,
+    "qid": "Q513",
+    "subtitle": "Högsta berget på jorden",
+    "title": "Mount Everest bestigs för första gången",
+    "wikipediaSlug": "Mount_Everest",
+    "year": 1953
+  },
+  {
+    "fact": "J. R. R. Tolkiens Sagan om ringen börjar ges ut i tre delar.",
+    "image": "One_Ring_Blender_Render.png",
+    "pageViews": 700000,
+    "qid": "Q15228",
+    "subtitle": "Fantasyroman",
+    "title": "Sagan om ringen ges ut",
+    "wikipediaSlug": "Sagan_om_ringen",
+    "year": 1954
+  },
+  {
+    "fact": "Mattel presenterar dockan Barbie på leksaksmässan i New York.",
+    "image": "Barbie_Logo.svg",
+    "pageViews": 700000,
+    "qid": "Q167447",
+    "subtitle": "Leksaksklassiker",
+    "title": "Barbie lanseras",
+    "wikipediaSlug": "Barbiedocka",
+    "year": 1959
+  },
+  {
+    "fact": "Företaget som senare blir Nike startas som Blue Ribbon Sports.",
+    "image": "Nike_thymiaterion_Met_13.227.16.jpg",
+    "pageViews": 700000,
+    "qid": "Q165023",
+    "subtitle": "Sportvarumärke",
+    "title": "Nike grundas",
+    "wikipediaSlug": "Nike",
+    "year": 1964
+  },
+  {
+    "fact": "Neil Armstrong och Buzz Aldrin blir de första människorna på månen.",
+    "image": "Apollo_11_insignia.png",
+    "pageViews": 700000,
+    "qid": "Q43653",
+    "subtitle": "Historisk rymdfärd",
+    "title": "Människan landar på månen",
+    "wikipediaSlug": "Apollo_11",
+    "year": 1969
+  },
+  {
+    "fact": "Det första moderna bordsrollspelet Dungeons & Dragons ges ut.",
+    "image": "Dungeons and Dragons game.jpg",
+    "pageViews": 700000,
+    "qid": "Q1375",
+    "subtitle": "Bordsrollspel",
+    "title": "Dungeons & Dragons lanseras",
+    "wikipediaSlug": "Dungeons_%26_Dragons",
+    "year": 1974
+  },
+  {
+    "fact": "Muhammad Ali besegrar George Foreman i den klassiska titelmatchen i Kinshasa.",
+    "image": "Muhammad_Ali_NYWTS.jpg",
+    "pageViews": 700000,
+    "qid": "Q36107",
+    "subtitle": "Boxningsklassiker",
+    "title": "Ali vinner Rumble in the Jungle",
+    "wikipediaSlug": "Muhammad_Ali",
+    "year": 1974
+  },
+  {
+    "fact": "Bill Gates och Paul Allen grundar Microsoft.",
+    "image": "Aerial_Microsoft_West_Campus_August_2009.jpg",
+    "pageViews": 700000,
+    "qid": "Q2283",
+    "subtitle": "Teknikföretag",
+    "title": "Microsoft grundas",
+    "wikipediaSlug": "Microsoft",
+    "year": 1975
+  },
+  {
+    "fact": "Steve Jobs, Steve Wozniak och Ronald Wayne grundar Apple.",
+    "image": "Apple_logo_black.svg",
+    "pageViews": 700000,
+    "qid": "Q312",
+    "subtitle": "Teknikföretag",
+    "title": "Apple grundas",
+    "wikipediaSlug": "Apple_Inc.",
+    "year": 1976
+  },
+  {
+    "fact": "Aleksej Pazjitnov skapar Tetris i Sovjetunionen.",
+    "image": "Emacs_Tetris_vector_based_detail.svg",
+    "pageViews": 700000,
+    "qid": "Q71910",
+    "subtitle": "Datorspelsklassiker",
+    "title": "Tetris släpps",
+    "wikipediaSlug": "Tetris",
+    "year": 1984
+  },
+  {
+    "fact": "Nintendo släpper Super Mario Bros. till Nintendo Entertainment System.",
+    "image": "Game & Watch Super Mario Bros 2020.jpg",
+    "pageViews": 700000,
+    "qid": "Q11168",
+    "subtitle": "Nintendo-spel",
+    "title": "Super Mario Bros. släpps",
+    "wikipediaSlug": "Super_Mario_Bros.",
+    "year": 1985
+  },
+  {
+    "fact": "Diego Maradona gör både Guds hand-målet och Århundradets mål.",
+    "image": "Maradona 1986 vs italy.jpg",
+    "pageViews": 700000,
+    "qid": "Q17515",
+    "subtitle": "Fotbolls-VM",
+    "title": "Maradona gör Guds hand-målet",
+    "wikipediaSlug": "Diego_Maradona",
+    "year": 1986
+  },
+  {
+    "fact": "Nelson Mandela blir Sydafrikas första svarta president efter landets demokratiska val.",
+    "image": "Nelson_Mandela-2008.jpg",
+    "pageViews": 700000,
+    "qid": "Q8023",
+    "subtitle": "Sydafrikansk statsman",
+    "title": "Nelson Mandela blir president",
+    "wikipediaSlug": "Nelson_Mandela",
+    "year": 1994
+  },
+  {
+    "fact": "De första Pokémon-spelen släpps i Japan.",
+    "image": "Pokémon_RB_logo_2.png",
+    "pageViews": 700000,
+    "qid": "Q637137",
+    "subtitle": "Japanskt rollspel",
+    "title": "Pokémon släpps",
+    "wikipediaSlug": "Pok%C3%A9mon_R%C3%B6d_och_Bl%C3%A5",
+    "year": 1996
+  },
+  {
+    "fact": "J. K. Rowlings första bok om Harry Potter ges ut.",
+    "image": "Harry Potter Book 1, 1st American ed. without dust jacket.JPG",
+    "pageViews": 700000,
+    "qid": "Q43361",
+    "subtitle": "Barn- och ungdomsroman",
+    "title": "Harry Potter debuterar",
+    "wikipediaSlug": "Harry_Potter_och_de_vises_sten",
+    "year": 1997
+  },
+  {
+    "fact": "Tiger Woods vinner Masters med rekordstor segermarginal.",
+    "image": "President_Donald_Trump_hosts_a_reception_honoring_Black_History_Month_(54341713089)_(cropped).jpg",
+    "pageViews": 700000,
+    "qid": "Q10993",
+    "subtitle": "Amerikansk golf",
+    "title": "Tiger Woods vinner Masters",
+    "wikipediaSlug": "Tiger_Woods",
+    "year": 1997
+  },
+  {
+    "fact": "Larry Page och Sergey Brin grundar Google.",
+    "image": "Googleplexsouthside.jpg",
+    "pageViews": 700000,
+    "qid": "Q95",
+    "subtitle": "Sökmotor på internet",
+    "title": "Google grundas",
+    "wikipediaSlug": "Google",
+    "year": 1998
+  },
+  {
+    "fact": "Serena Williams vinner US Open och tar sin första Grand Slam-titel.",
+    "image": "Judd_Ehrlich_Serena_Williams_Tribeca_Film_Festival_(cropped).jpg",
+    "pageViews": 700000,
+    "qid": "Q11459",
+    "subtitle": "Amerikansk tennis",
+    "title": "Serena Williams vinner sin första Grand Slam",
+    "wikipediaSlug": "Serena_Williams",
+    "year": 1999
+  },
+  {
+    "fact": "Wikipedia öppnar som ett fritt uppslagsverk som alla kan redigera.",
+    "image": "Wikipedia-logo-v2-sv.svg",
+    "pageViews": 700000,
+    "qid": "Q52",
+    "subtitle": "Fritt uppslagsverk",
+    "title": "Wikipedia lanseras",
+    "wikipediaSlug": "Wikipedia",
+    "year": 2001
+  },
+  {
+    "fact": "Facebook startar som ett socialt nätverk för studenter på Harvard.",
+    "image": "2023_Facebook_icon.svg",
+    "pageViews": 700000,
+    "qid": "Q355",
+    "subtitle": "Socialt nätverk",
+    "title": "Facebook lanseras",
+    "wikipediaSlug": "Facebook",
+    "year": 2004
+  },
+  {
+    "fact": "Blizzard lanserar det stora onlinerollspelet World of Warcraft.",
+    "image": "World_of_Warcraft_subscriptions_over_time.png",
+    "pageViews": 700000,
+    "qid": "Q131007",
+    "subtitle": "Onlinerollspel",
+    "title": "World of Warcraft släpps",
+    "wikipediaSlug": "World_of_Warcraft",
+    "year": 2004
+  },
+  {
+    "fact": "Apple presenterar en telefon som kombinerar pekskärm, kamera och internet.",
+    "image": "IPhone 1st Gen.svg",
+    "pageViews": 700000,
+    "qid": "Q2766",
+    "subtitle": "Smarttelefonens genombrott",
+    "title": "Den första Iphone släpps",
+    "wikipediaSlug": "Iphone",
+    "year": 2007
+  },
+  {
+    "fact": "Rafael Nadal besegrar Roger Federer i en klassisk femsetsfinal.",
+    "image": "Wimbledon Men's final 2008, Federer serves for 3rd set.jpg",
+    "pageViews": 700000,
+    "qid": "Q368797",
+    "subtitle": "Tennisfinal mellan Nadal och Federer",
+    "title": "Nadal vinner Wimbledonrysaren",
+    "wikipediaSlug": "Herrsingel_vid_Wimbledonm%C3%A4sterskapen_2008",
+    "year": 2008
+  },
+  {
+    "fact": "Burj Khalifa invigs som världens högsta byggnad.",
+    "image": "Burj_Khalifa_Night_View_04.jpg",
+    "pageViews": 700000,
+    "qid": "Q12495",
+    "subtitle": "Skyskrapa i Dubai",
+    "title": "Burj Khalifa invigs",
+    "wikipediaSlug": "Burj_Khalifa",
+    "year": 2010
+  },
+  {
+    "fact": "Kejsar Justinianus inviger den stora Hagia Sofia-kyrkan.",
+    "image": "Hagia_Sophia_(228968325).jpeg",
+    "pageViews": 650000,
+    "qid": "Q12506",
+    "subtitle": "Historisk byggnad i Istanbul",
+    "title": "Hagia Sofia invigs",
+    "wikipediaSlug": "Hagia_Sofia",
+    "year": 537
+  },
+  {
+    "fact": "De tretton kolonierna förklarar sig självständiga från Storbritannien.",
+    "image": "United_States_Declaration_of_Independence.jpg",
+    "pageViews": 650000,
+    "qid": "Q127912",
+    "subtitle": "Amerikansk historia",
+    "title": "USA:s självständighetsförklaring antas",
+    "wikipediaSlug": "USA%3As_sj%C3%A4lvst%C3%A4ndighetsf%C3%B6rklaring",
+    "year": 1776
+  },
+  {
+    "fact": "Alexander Graham Bell får patent på en praktiskt användbar telefon.",
+    "image": "Alexander_Graham_Bell_by_E._J._Holmes,_1892,_albumen_silver_print,_from_the_National_Portrait_Gallery_-_NPG-NPG_2010_28GrahamBell-000001_(cropped).jpg",
+    "pageViews": 650000,
+    "qid": "Q11035",
+    "subtitle": "Kommunikationsteknik",
+    "title": "Telefonen patenteras",
+    "wikipediaSlug": "Telefon",
+    "year": 1876
+  },
+  {
+    "fact": "Nintendo grundas i Kyoto som tillverkare av hanafudakort.",
+    "image": "Headquarters_of_Nintendo_Co.,_Ltd.jpg",
+    "pageViews": 650000,
+    "qid": "Q8093",
+    "subtitle": "Japanskt spelföretag",
+    "title": "Nintendo grundas",
+    "wikipediaSlug": "Nintendo",
+    "year": 1889
+  },
+  {
+    "fact": "Bröderna Wright genomför den första kontrollerade flygningen med ett motordrivet flygplan.",
+    "image": "First flight2.jpg",
+    "pageViews": 650000,
+    "qid": "Q688605",
+    "subtitle": "Flyghistoria",
+    "title": "Bröderna Wright flyger först",
+    "wikipediaSlug": "Wright_Flyer_I",
+    "year": 1903
+  },
+  {
+    "fact": "Ford Model T börjar massproduceras och gör bilen mer tillgänglig.",
+    "image": "1925_Ford_Model_T_touring.jpg",
+    "pageViews": 650000,
+    "qid": "Q182323",
+    "subtitle": "Bilindustrins genombrott",
+    "title": "Ford Model T börjar tillverkas",
+    "wikipediaSlug": "T-Ford",
+    "year": 1908
+  },
+  {
+    "fact": "Revolutionerna 1917 störtar tsardömet och förändrar Rysslands historia.",
+    "image": "19170704_Riot_on_Nevsky_prosp_Petrograd.jpg",
+    "pageViews": 650000,
+    "qid": "Q8729",
+    "subtitle": "Revolution i Ryssland",
+    "title": "Ryska revolutionen bryter ut",
+    "wikipediaSlug": "Ryska_revolutionen",
+    "year": 1917
+  },
+  {
+    "fact": "F. Scott Fitzgeralds roman om Jay Gatsby ges ut.",
+    "image": "En_man_utan_skrupler_(Den_store_Gatsby)_svenskt_originalomslag.jpg",
+    "pageViews": 650000,
+    "qid": "Q214371",
+    "subtitle": "Amerikansk roman",
+    "title": "Den store Gatsby ges ut",
+    "wikipediaSlug": "Den_store_Gatsby",
+    "year": 1925
+  },
+  {
+    "fact": "A. A. Milnes första bok om Nalle Puh ges ut i Storbritannien.",
+    "image": "Winnie-the-Pooh_088.png",
+    "pageViews": 650000,
+    "qid": "Q188574",
+    "subtitle": "Barnboksklassiker",
+    "title": "Nalle Puh-boken ges ut",
+    "wikipediaSlug": "Nalle_Puh",
+    "year": 1926
+  },
+  {
+    "fact": "Tintin syns för första gången i den belgiska barntidningen Le Petit Vingtième.",
+    "image": "Tintin_et_Milou_billboard_2.jpg",
+    "pageViews": 650000,
+    "qid": "Q52986",
+    "subtitle": "Europeisk seriefigur",
+    "title": "Tintin debuterar",
+    "wikipediaSlug": "Tintin",
+    "year": 1929
+  },
+  {
+    "fact": "Golden Gate-bron öppnar för trafik över San Francisco-bukten.",
+    "image": "Golden_Gate_Bridge_as_seen_from_Fort_Point.jpg",
+    "pageViews": 650000,
+    "qid": "Q44440",
+    "subtitle": "Bro i San Francisco",
+    "title": "Golden Gate-bron invigs",
+    "wikipediaSlug": "Golden_Gate-bron",
+    "year": 1937
+  },
+  {
+    "fact": "J. R. R. Tolkiens första bok om Bilbo ges ut.",
+    "image": "BilboEnHobbitsAventyr.png",
+    "pageViews": 650000,
+    "qid": "Q74287",
+    "subtitle": "Fantasyroman",
+    "title": "Hobbiten ges ut",
+    "wikipediaSlug": "Bilbo_%E2%80%93_En_hobbits_%C3%A4ventyr",
+    "year": 1937
+  },
+  {
+    "fact": "Alfred Butts ordspel lanseras under namnet Scrabble.",
+    "image": "Swedish_scrabble_tiles.jpg",
+    "pageViews": 650000,
+    "qid": "Q170436",
+    "subtitle": "Ordspel",
+    "title": "Scrabble lanseras",
+    "wikipediaSlug": "Scrabble",
+    "year": 1948
+  },
+  {
+    "fact": "Godtfred Kirk Christiansen patenterar LEGO-klossens kopplingssystem.",
+    "image": "LEGO_logo.svg",
+    "pageViews": 650000,
+    "qid": "Q170484",
+    "subtitle": "Dansk leksaksklassiker",
+    "title": "Den moderna LEGO-klossen patenteras",
+    "wikipediaSlug": "Lego",
+    "year": 1958
+  },
+  {
+    "fact": "Ferrero lanserar hasselnötskrämen Nutella.",
+    "image": "Nutella_ak.jpg",
+    "pageViews": 650000,
+    "qid": "Q212193",
+    "subtitle": "Italienskt pålägg",
+    "title": "Nutella lanseras",
+    "wikipediaSlug": "Nutella",
+    "year": 1964
+  },
+  {
+    "fact": "Toyota lanserar Corolla, som blir en av världens mest sålda bilmodeller.",
+    "image": "Toyota_Corolla_(E210)_sedan_IMG_4190.jpg",
+    "pageViews": 650000,
+    "qid": "Q243543",
+    "subtitle": "Bilmodell",
+    "title": "Toyota Corolla lanseras",
+    "wikipediaSlug": "Toyota_Corolla",
+    "year": 1966
+  },
+  {
+    "fact": "Starbucks öppnar sitt första kafé i Seattle.",
+    "image": "Starbucks_leeds.jpg",
+    "pageViews": 650000,
+    "qid": "Q37158",
+    "subtitle": "Kafékedja",
+    "title": "Starbucks grundas",
+    "wikipediaSlug": "Starbucks",
+    "year": 1971
+  },
+  {
+    "fact": "Operahuset i Sydney invigs efter ett långvarigt och omdebatterat bygge.",
+    "image": "Sydney_Opera_House_-_Dec_2008.jpg",
+    "pageViews": 650000,
+    "qid": "Q45178",
+    "subtitle": "Australiskt landmärke",
+    "title": "Operahuset i Sydney invigs",
+    "wikipediaSlug": "Operahuset_i_Sydney",
+    "year": 1973
+  },
+  {
+    "fact": "USA:s unga ishockeylag besegrar storfavoriten Sovjetunionen.",
+    "image": "Lake Placid - New York - Herb Brooks Arena - Historic Building - Miracle on Ice (51108081704).jpg",
+    "pageViews": 650000,
+    "qid": "Q736827",
+    "subtitle": "Ishockey vid vinter-OS",
+    "title": "USA skräller mot Sovjet",
+    "wikipediaSlug": "Ishockey_vid_olympiska_vinterspelen_1980",
+    "year": 1980
+  },
+  {
+    "fact": "Nintendo lanserar Game Boy och gör handhållet spelande till en massmarknad.",
+    "image": "GameBoy_pocket.jpg",
+    "pageViews": 650000,
+    "qid": "Q2916338",
+    "subtitle": "Bärbar spelkonsol",
+    "title": "Nintendo Game Boy släpps",
+    "wikipediaSlug": "Game_Boy",
+    "year": 1989
+  },
+  {
+    "fact": "Sony lanserar sin första PlayStation i Japan.",
+    "image": "PlayStationConsole_bkg-transparent.png",
+    "pageViews": 650000,
+    "qid": "Q10677",
+    "subtitle": "Spelkonsol",
+    "title": "PlayStation släpps",
+    "wikipediaSlug": "Playstation",
+    "year": 1994
+  },
+  {
+    "fact": "Jeff Bezos startar Amazon som en nätbokhandel.",
+    "image": "Amazon_Tower_I_topped_out,_June_2015.jpg",
+    "pageViews": 650000,
+    "qid": "Q3884",
+    "subtitle": "Näthandel",
+    "title": "Amazon grundas",
+    "wikipediaSlug": "Amazon_(f%C3%B6retag)",
+    "year": 1994
+  },
+  {
+    "fact": "Netflix startar som en tjänst för att hyra videor på nätet och med post.",
+    "image": "Netflix headquarters.jpg",
+    "pageViews": 650000,
+    "qid": "Q907311",
+    "subtitle": "Digital videotjänst",
+    "title": "Netflix grundas",
+    "wikipediaSlug": "Netflix",
+    "year": 1997
+  },
+  {
+    "fact": "PayPal börjar utveckla en tjänst för elektroniska betalningar.",
+    "image": "PayPal_San_Jose_Headquarters.jpg",
+    "pageViews": 650000,
+    "qid": "Q483959",
+    "subtitle": "Digital betaltjänst",
+    "title": "PayPal grundas",
+    "wikipediaSlug": "Paypal",
+    "year": 1998
+  },
+  {
+    "fact": "The Sims låter spelaren styra virtuella människors vardag.",
+    "image": "The Sims series logo.webp",
+    "pageViews": 650000,
+    "qid": "Q184816",
+    "subtitle": "Livssimuleringsspel",
+    "title": "The Sims släpps",
+    "wikipediaSlug": "The_Sims",
+    "year": 2000
+  },
+  {
+    "fact": "Grekland besegrar Portugal i finalen och blir europamästare.",
+    "image": "Euro 2004 Final.jpg",
+    "pageViews": 650000,
+    "qid": "Q260858",
+    "subtitle": "Europeisk fotbollsskräll",
+    "title": "Grekland vinner fotbolls-EM",
+    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll",
+    "year": 2004
+  },
+  {
+    "fact": "YouTube startar som en webbplats för att dela videoklipp.",
+    "image": "YouTube results screenshot.jpg",
+    "pageViews": 650000,
+    "qid": "Q866",
+    "subtitle": "Videotjänst på internet",
+    "title": "YouTube lanseras",
+    "wikipediaSlug": "Youtube",
+    "year": 2005
+  },
+  {
+    "fact": "Usain Bolt vinner 100 meter vid OS i Peking och sätter världsrekord.",
+    "image": "Usain_Bolt_Rio_100m_final_2016k.jpg",
+    "pageViews": 650000,
+    "qid": "Q1189",
+    "subtitle": "Jamaicansk sprinter",
+    "title": "Usain Bolt vinner OS-guld",
+    "wikipediaSlug": "Usain_Bolt",
+    "year": 2008
+  },
+  {
+    "fact": "Michael Phelps vinner åtta guldmedaljer i bassängen vid OS i Peking.",
+    "image": "Michael_Phelps_Rio_Olympics_2016.jpg",
+    "pageViews": 650000,
+    "qid": "Q39562",
+    "subtitle": "Amerikansk simmare",
+    "title": "Michael Phelps vinner åtta OS-guld",
+    "wikipediaSlug": "Michael_Phelps",
+    "year": 2008
+  },
+  {
+    "fact": "Google lanserar den första kommersiella Android-telefonen.",
+    "image": "Actroid-DER_01.jpg",
+    "pageViews": 650000,
+    "qid": "Q181787",
+    "subtitle": "Mobilt operativsystem",
+    "title": "Android lanseras",
+    "wikipediaSlug": "Android",
+    "year": 2008
+  },
+  {
+    "fact": "WhatsApp lanseras som en mobil tjänst för meddelanden.",
+    "image": "WhatsApp_chatting.jpg",
+    "pageViews": 650000,
+    "qid": "Q1049511",
+    "subtitle": "Meddelandetjänst",
+    "title": "WhatsApp lanseras",
+    "wikipediaSlug": "Whatsapp",
+    "year": 2009
+  },
+  {
+    "fact": "Rovio lanserar mobilspelsserien Angry Birds.",
+    "image": "Recórcholis, Gran Plaza Mazatlán, 8 de julio de 2023.jpg",
+    "pageViews": 650000,
+    "qid": "Q165094",
+    "subtitle": "Mobilspelsfenomen",
+    "title": "Angry Birds släpps",
+    "wikipediaSlug": "Angry_Birds",
+    "year": 2009
+  },
+  {
+    "fact": "Instagram lanseras som en mobil app för att dela bilder.",
+    "image": "Instagram_logo_2022.svg",
+    "pageViews": 650000,
+    "qid": "Q209330",
+    "subtitle": "Bilddelningstjänst",
+    "title": "Instagram lanseras",
+    "wikipediaSlug": "Instagram",
+    "year": 2010
+  },
+  {
+    "fact": "Apple presenterar Ipad som en ny typ av pekskärmsdator.",
+    "image": "IPad_os.jpeg",
+    "pageViews": 650000,
+    "qid": "Q2796",
+    "subtitle": "Surfplattans genombrott",
+    "title": "Ipad lanseras",
+    "wikipediaSlug": "Ipad",
+    "year": 2010
+  },
+  {
+    "fact": "Tesla Model S börjar säljas som en elbil för längre resor.",
+    "image": "Tesla_Model_S_(Facelift_ab_04-2016)_trimmed.jpg",
+    "pageViews": 650000,
+    "qid": "Q1463050",
+    "subtitle": "Elektrisk bilmodell",
+    "title": "Tesla Model S lanseras",
+    "wikipediaSlug": "Tesla_Model_S",
+    "year": 2012
+  },
+  {
+    "fact": "En majoritet röstar för att Storbritannien ska lämna Europeiska unionen.",
+    "image": "Location_map_of_the_United_Kingdom_and_the_European_Union.svg",
+    "pageViews": 650000,
+    "qid": "Q7888194",
+    "subtitle": "Europeisk samtidshistoria",
+    "title": "Storbritannien röstar för Brexit",
+    "wikipediaSlug": "Brexit",
+    "year": 2016
+  },
+  {
+    "fact": "Event Horizon Telescope visar den första bilden av ett svart håls omgivning.",
+    "image": "EHT_Sagittarius_A*.jpg",
+    "pageViews": 650000,
+    "qid": "Q3944788",
+    "subtitle": "Astronomiskt genombrott",
+    "title": "Det första svarta hålet fotograferas",
+    "wikipediaSlug": "Event_Horizon_Telescope",
+    "year": 2019
+  },
+  {
+    "fact": "Armand Duplantis vinner stavhoppet vid OS i Tokyo.",
+    "image": "Armand Duplantis in 2019.jpg",
+    "pageViews": 650000,
+    "qid": "Q20740797",
+    "subtitle": "Svensk friidrott",
+    "title": "Duplantis vinner OS-guld",
+    "wikipediaSlug": "Armand_Duplantis",
+    "year": 2021
+  },
+  {
+    "fact": "Armand Duplantis vinner stavhoppsguldet vid friidrotts-VM.",
+    "image": "Armand Duplantis in 2019.jpg",
+    "pageViews": 650000,
+    "qid": "Q20740797",
+    "subtitle": "Svensk stavhoppare",
+    "title": "Duplantis vinner VM-guld",
+    "wikipediaSlug": "Armand_Duplantis",
+    "year": 2022
+  },
+  {
+    "fact": "Stormningen av Bastiljen blir en symbol för den franska revolutionens början.",
+    "image": "Anonymous_-_Prise_de_la_Bastille.jpg",
+    "pageViews": 600000,
+    "qid": "Q6534",
+    "subtitle": "Europeisk historia",
+    "title": "Franska revolutionen bryter ut",
+    "wikipediaSlug": "Franska_revolutionen",
+    "year": 1789
+  },
+  {
+    "fact": "Napoleon Bonaparte kröner sig själv till kejsare i Notre-Dame i Paris.",
+    "image": "Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
+    "pageViews": 600000,
+    "qid": "Q517",
+    "subtitle": "Fransk kejsare",
+    "title": "Napoleon kröns till kejsare",
+    "wikipediaSlug": "Napoleon_I",
+    "year": 1804
+  },
+  {
+    "fact": "Levi Strauss startar företaget som senare blir känt för sina jeans.",
+    "image": "Levi_Plaza.jpg",
+    "pageViews": 600000,
+    "qid": "Q127962",
+    "subtitle": "Klädföretag",
+    "title": "Levi Strauss & Co. grundas",
+    "wikipediaSlug": "Levi_Strauss_%26_Co.",
+    "year": 1853
+  },
+  {
+    "fact": "Dmitrij Mendelejev ordnar grundämnena i det periodiska systemet.",
+    "image": "Simple_Periodic_Table_Chart-en.svg",
+    "pageViews": 600000,
+    "qid": "Q10693",
+    "subtitle": "Kemins grundverktyg",
+    "title": "Det periodiska systemet presenteras",
+    "wikipediaSlug": "Periodiska_systemet",
+    "year": 1869
+  },
+  {
+    "fact": "Bygget av Antoni Gaudís basilika Sagrada Família inleds i Barcelona.",
+    "image": "SF_maig_2026.jpg",
+    "pageViews": 600000,
+    "qid": "Q48435",
+    "subtitle": "Basilika i Barcelona",
+    "title": "Sagrada Família börjar byggas",
+    "wikipediaSlug": "Sagrada_Fam%C3%ADlia",
+    "year": 1882
+  },
+  {
+    "fact": "Alfred Nobels testamente lägger grunden för Nobelprisen.",
+    "image": "NobelP2.png",
+    "pageViews": 600000,
+    "qid": "Q7191",
+    "subtitle": "Svenskt pris i Alfred Nobels anda",
+    "title": "Nobelpriset instiftas",
+    "wikipediaSlug": "Nobelpriset",
+    "year": 1895
+  },
+  {
+    "fact": "Wilhelm Röntgen upptäcker en ny strålning som kan avbilda skelettet.",
+    "image": "Spectre.svg",
+    "pageViews": 600000,
+    "qid": "Q34777",
+    "subtitle": "Medicinsk vetenskap",
+    "title": "Röntgenstrålningen upptäcks",
+    "wikipediaSlug": "R%C3%B6ntgenstr%C3%A5lning",
+    "year": 1895
+  },
+  {
+    "fact": "Albert Einstein publicerar den speciella relativitetsteorin.",
+    "image": "Albert_Einstein_Head_cleaned.jpg",
+    "pageViews": 600000,
+    "qid": "Q937",
+    "subtitle": "Modern fysik",
+    "title": "Einstein publicerar relativitetsteorin",
+    "wikipediaSlug": "Albert_Einstein",
+    "year": 1905
+  },
+  {
+    "fact": "Det brittiska sällskapsspelet Cluedo lanseras.",
+    "image": "Cluedo_Clue_pack_logo.png",
+    "pageViews": 600000,
+    "qid": "Q17245",
+    "subtitle": "Mordmysteriespel",
+    "title": "Cluedo lanseras",
+    "wikipediaSlug": "Cluedo",
+    "year": 1949
+  },
+  {
+    "fact": "Ernő Rubik skapar den vridbara kub som blir ett globalt pussel.",
+    "image": "Rubik's_cube.svg",
+    "pageViews": 600000,
+    "qid": "Q47043",
+    "subtitle": "Pusselklassiker",
+    "title": "Rubiks kub lanseras",
+    "wikipediaSlug": "Rubiks_kub",
+    "year": 1974
+  },
+  {
+    "fact": "IBM lanserar sin persondator och bidrar till en ny standard för PC-marknaden.",
+    "image": "IBM_PC_5150.jpg",
+    "pageViews": 600000,
+    "qid": "Q202712",
+    "subtitle": "Persondatorns genombrott",
+    "title": "IBM PC lanseras",
+    "wikipediaSlug": "IBM_PC",
+    "year": 1981
+  },
+  {
+    "fact": "Nintendo lanserar konsolen som blir en stor succé världen över.",
+    "image": "NES-Console-Set.png",
+    "pageViews": 600000,
+    "qid": "Q172742",
+    "subtitle": "Spelkonsol",
+    "title": "Nintendo Entertainment System släpps",
+    "wikipediaSlug": "Nintendo_Entertainment_System",
+    "year": 1983
+  },
+  {
+    "fact": "Red Bull börjar säljas i Österrike.",
+    "image": "Redbull Dose.jpg",
+    "pageViews": 600000,
+    "qid": "Q51482",
+    "subtitle": "Energidryck",
+    "title": "Red Bull lanseras",
+    "wikipediaSlug": "Red_Bull",
+    "year": 1987
+  },
+  {
+    "fact": "Gränsövergångarna öppnas och Berlinmuren faller efter fredliga protester.",
+    "image": "West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg",
+    "pageViews": 600000,
+    "qid": "Q69163529",
+    "subtitle": "Europas moderna historia",
+    "title": "Berlinmuren faller",
+    "wikipediaSlug": "Berlinmurens_fall",
+    "year": 1989
+  },
+  {
+    "fact": "Ebay startar som en nätbaserad auktionsplats.",
+    "image": "Ebayheadquarters.jpg",
+    "pageViews": 600000,
+    "qid": "Q58024",
+    "subtitle": "Nätauktionsplats",
+    "title": "Ebay lanseras",
+    "wikipediaSlug": "Ebay",
+    "year": 1995
+  },
+  {
+    "fact": "Kapade passagerarflygplan träffar World Trade Center och Pentagon.",
+    "image": "September_11_Photo_Montage.jpg",
+    "pageViews": 600000,
+    "qid": "Q10806",
+    "subtitle": "Terrorattacker i USA",
+    "title": "Terrorattackerna den 11 september sker",
+    "wikipediaSlug": "11_september-attackerna",
+    "year": 2001
+  },
+  {
+    "fact": "Apple lanserar Ipod och förändrar hur människor bär med sig digitala medier.",
+    "image": "IPod_Line.png",
+    "pageViews": 600000,
+    "qid": "Q9479",
+    "subtitle": "Bärbar teknik",
+    "title": "Ipod lanseras",
+    "wikipediaSlug": "Ipod",
+    "year": 2001
+  },
+  {
+    "fact": "LinkedIn lanseras som ett socialt nätverk för yrkesliv och karriär.",
+    "image": "Linkedin screenshot.png",
+    "pageViews": 600000,
+    "qid": "Q213660",
+    "subtitle": "Professionellt nätverk",
+    "title": "LinkedIn lanseras",
+    "wikipediaSlug": "Linkedin",
+    "year": 2003
+  },
+  {
+    "fact": "Nintendo lanserar Wii med rörelsekänsliga handkontroller.",
+    "image": "Wii-Console.png",
+    "pageViews": 600000,
+    "qid": "Q8079",
+    "subtitle": "Spelkonsol",
+    "title": "Nintendo Wii släpps",
+    "wikipediaSlug": "Wii",
+    "year": 2006
+  },
+  {
+    "fact": "Tesla börjar sälja Roadster, företagets första serietillverkade bil.",
+    "image": "Tesla_Roadster_--_02-11-2011.jpg",
+    "pageViews": 600000,
+    "qid": "Q210893",
+    "subtitle": "Elektrisk sportbil",
+    "title": "Tesla Roadster lanseras",
+    "wikipediaSlug": "Tesla_Roadster",
+    "year": 2008
+  },
+  {
     "fact": "Minecraft släpps.",
     "image": "Minecraft_cube.svg",
     "pageViews": 600000,
@@ -8,6 +1028,416 @@
     "title": "”Minecraft” släpps",
     "wikipediaSlug": "Minecraft",
     "year": 2011
+  },
+  {
+    "fact": "Snapchat lanseras som en app för bilder och korta meddelanden.",
+    "image": "Snap on smartphone.jpg",
+    "pageViews": 600000,
+    "qid": "Q333618",
+    "subtitle": "Bilddelningstjänst",
+    "title": "Snapchat lanseras",
+    "wikipediaSlug": "Snapchat",
+    "year": 2011
+  },
+  {
+    "fact": "Det nya coronaviruset sprids över världen och påverkar vardagen globalt.",
+    "image": "SARS-CoV-2_without_background.png",
+    "pageViews": 600000,
+    "qid": "Q81068910",
+    "subtitle": "Global pandemi",
+    "title": "Covid-19-pandemin bryter ut",
+    "wikipediaSlug": "Covid-19-pandemin",
+    "year": 2020
+  },
+  {
+    "fact": "OpenAI gör ChatGPT tillgängligt för allmänheten som en samtalande AI-tjänst.",
+    "image": "ChatGPT 5.2 Thinking Wikipedia historia PDF screenshot.png",
+    "pageViews": 600000,
+    "qid": "Q115564437",
+    "subtitle": "AI-tjänst",
+    "title": "ChatGPT lanseras",
+    "wikipediaSlug": "ChatGPT",
+    "year": 2022
+  },
+  {
+    "fact": "USA:s trettonde grundlagstillägg förbjuder slaveri.",
+    "image": "13th Amendment Pg1of1 AC.jpg",
+    "pageViews": 550000,
+    "qid": "Q26824229",
+    "subtitle": "Amerikansk historia",
+    "title": "Slaveriet avskaffas i USA",
+    "wikipediaSlug": "Det_13%3Ae_till%C3%A4gget",
+    "year": 1865
+  },
+  {
+    "fact": "De första moderna olympiska spelen hålls i Aten.",
+    "image": "Commemorative_album_of_1896_Olympic_Games_-_cover_by_E._Gilliéron.jpg",
+    "pageViews": 550000,
+    "qid": "Q8080",
+    "subtitle": "Idrottshistoria",
+    "title": "De moderna olympiska spelen återuppstår",
+    "wikipediaSlug": "Olympiska_sommarspelen_1896",
+    "year": 1896
+  },
+  {
+    "fact": "Marie Curie delar Nobelpriset för forskning om radioaktivitet.",
+    "image": "Marie_Curie_c._1920s.jpg",
+    "pageViews": 550000,
+    "qid": "Q7186",
+    "subtitle": "Banbrytande fysiker",
+    "title": "Marie Curie får Nobelpriset i fysik",
+    "wikipediaSlug": "Marie_Curie",
+    "year": 1903
+  },
+  {
+    "fact": "Det första Tour de France startar och går i sex etapper runt Frankrike.",
+    "image": "Tour_de_France_logo.svg",
+    "pageViews": 550000,
+    "qid": "Q33881",
+    "subtitle": "Cykelklassiker",
+    "title": "Det första Tour de France körs",
+    "wikipediaSlug": "Tour_de_France",
+    "year": 1903
+  },
+  {
+    "fact": "William Boeing grundar företaget som senare blir Boeing.",
+    "image": "Boeing_Virginia_Headquarters_(cropped_and_brighter).jpg",
+    "pageViews": 550000,
+    "qid": "Q66",
+    "subtitle": "Flygindustriföretag",
+    "title": "Boeing grundas",
+    "wikipediaSlug": "Boeing",
+    "year": 1916
+  },
+  {
+    "fact": "Insulin ges till en människa för första gången som behandling mot diabetes.",
+    "image": "2014-365-307_Eight_Bottles_(22753934382).jpg",
+    "pageViews": 550000,
+    "qid": "Q50265665",
+    "subtitle": "Medicinskt genombrott",
+    "title": "Insulin används för första gången",
+    "wikipediaSlug": "Insulin",
+    "year": 1922
+  },
+  {
+    "fact": "Charles Lindbergh genomför den första soloflygningen nonstop över Atlanten.",
+    "image": "Charles_Lindbergh_(Harris_&_Ewing_photo,_cropped).jpg",
+    "pageViews": 550000,
+    "qid": "Q1618",
+    "subtitle": "Flyghistoria",
+    "title": "Lindbergh korsar Atlanten ensam",
+    "wikipediaSlug": "Charles_Lindbergh",
+    "year": 1927
+  },
+  {
+    "fact": "Alexander Fleming upptäcker att en mögelsvamp hämmar bakterier.",
+    "image": "Penicillin_Core_v2.svg",
+    "pageViews": 550000,
+    "qid": "Q12190",
+    "subtitle": "Medicinsk upptäckt",
+    "title": "Penicillin upptäcks",
+    "wikipediaSlug": "Penicillin",
+    "year": 1928
+  },
+  {
+    "fact": "USA fäller atombomber över Hiroshima och Nagasaki i augusti 1945.",
+    "image": "Atomic_bomb_1945_mission_map.svg",
+    "pageViews": 550000,
+    "qid": "Q488",
+    "subtitle": "Andra världskrigets slutskede",
+    "title": "Atombomberna fälls över Japan",
+    "wikipediaSlug": "Atombomberna_%C3%B6ver_Hiroshima_och_Nagasaki",
+    "year": 1945
+  },
+  {
+    "fact": "Den första fungerande transistorn demonstreras vid Bell Labs.",
+    "image": "Transistorer_(cropped).jpg",
+    "pageViews": 550000,
+    "qid": "Q5339",
+    "subtitle": "Elektronikens genombrott",
+    "title": "Transistorn uppfinns",
+    "wikipediaSlug": "Transistor",
+    "year": 1947
+  },
+  {
+    "fact": "Israel utropas som självständig stat i samband med mandatets slut.",
+    "image": "Israel Declaration of Independence.jpg",
+    "pageViews": 550000,
+    "qid": "Q10538002",
+    "subtitle": "Mellanösterns moderna historia",
+    "title": "Israel utropas som stat",
+    "wikipediaSlug": "Israels_grundande",
+    "year": 1948
+  },
+  {
+    "fact": "Adolf Dassler grundar Adidas i Herzogenaurach.",
+    "image": "Adidas_2022_logo.svg",
+    "pageViews": 550000,
+    "qid": "Q3895",
+    "subtitle": "Sportvarumärke",
+    "title": "Adidas grundas",
+    "wikipediaSlug": "Adidas",
+    "year": 1949
+  },
+  {
+    "fact": "Nordkorea invaderar Sydkorea och Koreakriget inleds.",
+    "image": "Korean_War_Montage_2.png",
+    "pageViews": 550000,
+    "qid": "Q8663",
+    "subtitle": "Koreahalvöns historia",
+    "title": "Koreakriget bryter ut",
+    "wikipediaSlug": "Koreakriget",
+    "year": 1950
+  },
+  {
+    "fact": "James Watson och Francis Crick beskriver DNA:s dubbelhelix.",
+    "image": "Hybridogenesis_in_water_frogs_gametes.svg",
+    "pageViews": 550000,
+    "qid": "Q7430",
+    "subtitle": "Genetikens genombrott",
+    "title": "DNA:s struktur beskrivs",
+    "wikipediaSlug": "DNA",
+    "year": 1953
+  },
+  {
+    "fact": "Det första p-pillret godkänns för preventivmedelsbruk i USA.",
+    "image": "Pillpacketopen.jpg",
+    "pageViews": 550000,
+    "qid": "Q817281",
+    "subtitle": "Medicinsk innovation",
+    "title": "P-pillret godkänns",
+    "wikipediaSlug": "P-piller",
+    "year": 1960
+  },
+  {
+    "fact": "Det första meddelandet skickas mellan två datorer i ARPANET.",
+    "image": "Arpanet logical map, march 1977.png",
+    "pageViews": 550000,
+    "qid": "Q177524",
+    "subtitle": "Internetets föregångare",
+    "title": "ARPANET skickar sitt första meddelande",
+    "wikipediaSlug": "Arpanet",
+    "year": 1969
+  },
+  {
+    "fact": "Ray Tomlinson skickar det första nätverksbaserade e-postmeddelandet.",
+    "image": "@_symbol.svg",
+    "pageViews": 550000,
+    "qid": "Q9158",
+    "subtitle": "Digital kommunikation",
+    "title": "Det första e-postmeddelandet skickas",
+    "wikipediaSlug": "E-post",
+    "year": 1971
+  },
+  {
+    "fact": "Björn Borg besegrar Ilie Năstase i sin första Wimbledonfinal.",
+    "image": "Björn_Borg_2013-11-06_001_(cropped).jpg",
+    "pageViews": 550000,
+    "qid": "Q104506",
+    "subtitle": "Svensk tennis",
+    "title": "Borg vinner Wimbledon för första gången",
+    "wikipediaSlug": "Bj%C3%B6rn_Borg",
+    "year": 1976
+  },
+  {
+    "fact": "Nadia Comăneci blir den första gymnasten som får 10,0 i ett olympiskt moment.",
+    "image": "Nadia_Comăneci_Montreal1976c.jpg",
+    "pageViews": 550000,
+    "qid": "Q33228",
+    "subtitle": "Gymnastikhistoria",
+    "title": "Comăneci får en perfekt tia",
+    "wikipediaSlug": "Nadia_Com%C4%83neci",
+    "year": 1976
+  },
+  {
+    "fact": "Ben Cohen och Jerry Greenfield öppnar sin första glassbutik.",
+    "image": "BenJerry-UnitedSquare.jpg",
+    "pageViews": 550000,
+    "qid": "Q816412",
+    "subtitle": "Glassföretag",
+    "title": "Ben & Jerry's grundas",
+    "wikipediaSlug": "Ben_%26_Jerry's",
+    "year": 1978
+  },
+  {
+    "fact": "Det kanadensiska frågespelet Trivial Pursuit lanseras och blir en internationell succé.",
+    "image": "US_Navy_030305-N-0923G-035_Airman_Eric_Micolichek_and_Machinist's_Mate_3rd_Class_Walter_Blackburn_play_Trivial_Pursuit_during_game_night_aboard_the_aircraft_carrier_USS_Harry_S._Truman_(CVN_75).jpg",
+    "pageViews": 550000,
+    "qid": "Q17250",
+    "subtitle": "Frågespel",
+    "title": "Trivial Pursuit lanseras",
+    "wikipediaSlug": "Trivial_Pursuit",
+    "year": 1981
+  },
+  {
+    "fact": "Columbia genomför den första rymdfärjefärden.",
+    "image": "STS-109_launch.jpg",
+    "pageViews": 550000,
+    "qid": "Q54383",
+    "subtitle": "Bemannad rymdfärd",
+    "title": "Rymdfärjan Columbia skjuts upp",
+    "wikipediaSlug": "Columbia_(rymdf%C3%A4rja)",
+    "year": 1981
+  },
+  {
+    "fact": "De första kommersiella CD-skivorna börjar säljas.",
+    "image": "Interference-colors.jpg",
+    "pageViews": 550000,
+    "qid": "Q34467",
+    "subtitle": "Digital lagring",
+    "title": "CD-skivan lanseras",
+    "wikipediaSlug": "CD",
+    "year": 1982
+  },
+  {
+    "fact": "Michael Dell startar ett datorföretag som säljer direkt till kunder.",
+    "image": "Dell_Logo.svg",
+    "pageViews": 550000,
+    "qid": "Q30873",
+    "subtitle": "Datorföretag",
+    "title": "Dell grundas",
+    "wikipediaSlug": "Dell",
+    "year": 1984
+  },
+  {
+    "fact": "I. M. Peis glaspyramid invigs på Louvrens borggård.",
+    "image": "Facade_of_the_Pavillon_Sully_in_2007.jpg",
+    "pageViews": 550000,
+    "qid": "Q19675",
+    "subtitle": "Museum i Paris",
+    "title": "Glaspyramiden vid Louvren invigs",
+    "wikipediaSlug": "Louvren",
+    "year": 1989
+  },
+  {
+    "fact": "Kinesiska myndigheter slår ned de stora demokratiprotesterna i Peking.",
+    "image": "Tiananmen_Square,_Beijing,_China_1988_(1).jpg",
+    "pageViews": 550000,
+    "qid": "Q99717",
+    "subtitle": "Kinesisk samtidshistoria",
+    "title": "Protesterna på Himmelska fridens torg slås ned",
+    "wikipediaSlug": "Protesterna_och_massakern_p%C3%A5_Himmelska_fridens_torg",
+    "year": 1989
+  },
+  {
+    "fact": "Rymdfärjan Discovery placerar Hubbleteleskopet i omloppsbana.",
+    "image": "Hubble_Space_Telescope_(27946391011).jpg",
+    "pageViews": 550000,
+    "qid": "Q2513",
+    "subtitle": "Rymdobservatorium",
+    "title": "Hubbleteleskopet skjuts upp",
+    "wikipediaSlug": "Hubbleteleskopet",
+    "year": 1990
+  },
+  {
+    "fact": "Tim Berners-Lee gör webben tillgänglig utanför forskningsvärlden.",
+    "image": "WWW_logo_by_Robert_Cailliau.svg",
+    "pageViews": 550000,
+    "qid": "Q466",
+    "subtitle": "Internetets genombrott",
+    "title": "World Wide Web öppnas för allmänheten",
+    "wikipediaSlug": "Webben",
+    "year": 1991
+  },
+  {
+    "fact": "Fördraget lägger grunden för Europeiska unionen och den gemensamma valutan.",
+    "image": "GER — BY — Regensburg - Donaumarkt 1 (Museum der Bayerischen Geschichte; Vertrag von Maastricht) (cropped).JPG",
+    "pageViews": 550000,
+    "qid": "Q11146",
+    "subtitle": "Europeiskt samarbete",
+    "title": "Maastrichtfördraget undertecknas",
+    "wikipediaSlug": "Maastrichtf%C3%B6rdraget",
+    "year": 1992
+  },
+  {
+    "fact": "USB lanseras som en enkel standard för att ansluta kringutrustning till datorer.",
+    "image": "Minne.jpg",
+    "pageViews": 550000,
+    "qid": "Q42378",
+    "subtitle": "Anslutningsteknik",
+    "title": "USB-standarden lanseras",
+    "wikipediaSlug": "USB",
+    "year": 1996
+  },
+  {
+    "fact": "Airbnb börjar förmedla korttidsboenden mellan privatpersoner.",
+    "image": "888 Brannan, San Francisco, 2016.jpg",
+    "pageViews": 550000,
+    "qid": "Q63327",
+    "subtitle": "Delningstjänst på internet",
+    "title": "Airbnb grundas",
+    "wikipediaSlug": "Airbnb",
+    "year": 2008
+  },
+  {
+    "fact": "Uber börjar förmedla bilresor via en mobil app.",
+    "image": "Uber_logo_2018.svg",
+    "pageViews": 550000,
+    "qid": "Q780442",
+    "subtitle": "Digital transporttjänst",
+    "title": "Uber grundas",
+    "wikipediaSlug": "Uber",
+    "year": 2009
+  },
+  {
+    "fact": "En jordbävning och tsunami leder till en allvarlig kärnkraftsolycka i Fukushima.",
+    "image": "Fukushima_accidents_overview_map.svg",
+    "pageViews": 550000,
+    "qid": "Q171178",
+    "subtitle": "Japansk naturkatastrof",
+    "title": "Kärnkraftsolyckan i Fukushima inträffar",
+    "wikipediaSlug": "Fukushima-olyckan",
+    "year": 2011
+  },
+  {
+    "fact": "Världens länder enas om ett avtal för att begränsa den globala uppvärmningen.",
+    "image": "Treaty_of_Paris_by_Benjamin_West_1783.jpg",
+    "pageViews": 550000,
+    "qid": "Q217450",
+    "subtitle": "Internationellt klimatavtal",
+    "title": "Parisavtalet antas",
+    "wikipediaSlug": "Parisavtalet",
+    "year": 2015
+  },
+  {
+    "fact": "mRNA-vaccin tas i bruk i stor skala under covid-19-pandemin.",
+    "image": "Solo-mrna-vaccine-3.jpg",
+    "pageViews": 550000,
+    "qid": "Q87719492",
+    "subtitle": "Modern vaccin­teknik",
+    "title": "mRNA-vaccin börjar användas",
+    "wikipediaSlug": "Covid-19-vaccin",
+    "year": 2020
+  },
+  {
+    "fact": "Englands kung Johan utan land bekräftar Magna Carta inför upproriska baroner.",
+    "image": "Magna_Carta_(British_Library_Cotton_MS_Augustus_II.106).jpg",
+    "pageViews": 500000,
+    "qid": "Q12519",
+    "subtitle": "Medeltida rättighetshistoria",
+    "title": "Magna Carta undertecknas",
+    "wikipediaSlug": "Magna_Charta",
+    "year": 1215
+  },
+  {
+    "fact": "Rosettastenen hittas av Napoleons soldater i Egypten.",
+    "image": "Rosetta_Stone.jpg",
+    "pageViews": 500000,
+    "qid": "Q48584",
+    "subtitle": "Nyckel till hieroglyferna",
+    "title": "Rosettastenen upptäcks",
+    "wikipediaSlug": "Rosettestenen",
+    "year": 1799
+  },
+  {
+    "fact": "George Eastman grundar Kodak och gör fotografering enklare för allmänheten.",
+    "image": "Eastman_Kodak_Company_logo_(2016).svg",
+    "pageViews": 500000,
+    "qid": "Q486269",
+    "subtitle": "Fotografiföretag",
+    "title": "Kodak grundas",
+    "wikipediaSlug": "Eastman_Kodak",
+    "year": 1888
   },
   {
     "fact": "Nobelpriset delas ut första gången.",
@@ -20,6 +1450,16 @@
     "year": 1901
   },
   {
+    "fact": "Det första Vasaloppet går från Berga by till Mora.",
+    "image": "Jørgen_Aukland_Vasaloppet_2013_001.jpg",
+    "pageViews": 500000,
+    "qid": "Q615072",
+    "subtitle": "Svenskt skidlopp",
+    "title": "Det första Vasaloppet körs",
+    "wikipediaSlug": "Vasaloppet",
+    "year": 1922
+  },
+  {
     "fact": "Ikea grundas av Ingvar Kamprad.",
     "image": "IKEA_Shopping_centre_Sweden.jpg",
     "pageViews": 500000,
@@ -28,6 +1468,36 @@
     "title": "Ikea grundas",
     "wikipediaSlug": "Ikea",
     "year": 1943
+  },
+  {
+    "fact": "ENIAC blir en av de första stora elektroniska datorerna för allmänna beräkningar.",
+    "image": "Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg",
+    "pageViews": 500000,
+    "qid": "Q169399",
+    "subtitle": "Tidig elektronisk dator",
+    "title": "ENIAC startar",
+    "wikipediaSlug": "ENIAC",
+    "year": 1946
+  },
+  {
+    "fact": "Fidel Castros revolutionära styrkor tar makten på Kuba.",
+    "image": "CheyFidel.jpg",
+    "pageViews": 500000,
+    "qid": "Q11264",
+    "subtitle": "Kubansk historia",
+    "title": "Kubanska revolutionen segrar",
+    "wikipediaSlug": "Kubanska_revolutionen",
+    "year": 1959
+  },
+  {
+    "fact": "Theodore Maiman demonstrerar den första fungerande lasern.",
+    "image": "Light_Amplification_by_Stimulated_Emission_of_Radiation.jpg",
+    "pageViews": 500000,
+    "qid": "Q38867",
+    "subtitle": "Optisk teknik",
+    "title": "Den första lasern byggs",
+    "wikipediaSlug": "Laser",
+    "year": 1960
   },
   {
     "fact": "ABBA bildas i Stockholm.",
@@ -40,6 +1510,26 @@
     "year": 1972
   },
   {
+    "fact": "En förpackning med Juicy Fruit blir den första varan som skannas med streckkod.",
+    "image": "Wikipedia_barcode_128.svg",
+    "pageViews": 500000,
+    "qid": "Q856",
+    "subtitle": "Handelsteknik",
+    "title": "Streckkoden används för första gången i butik",
+    "wikipediaSlug": "Streckkod",
+    "year": 1974
+  },
+  {
+    "fact": "3M börjar sälja de självhäftande lapparna som går att fästa och ta bort.",
+    "image": "Post-It.jpg",
+    "pageViews": 500000,
+    "qid": "Q181331",
+    "subtitle": "Vardagsuppfinning",
+    "title": "Post-it-lappen lanseras",
+    "wikipediaSlug": "Post-It",
+    "year": 1980
+  },
+  {
     "fact": "Olof Palme mördas i Stockholm.",
     "image": "Palme_Trauer_1986.jpg",
     "pageViews": 500000,
@@ -50,6 +1540,246 @@
     "year": 1986
   },
   {
+    "fact": "En reaktor exploderar i Tjernobyl och sprider radioaktivitet över Europa.",
+    "image": "IAEA_02790015_(5613115146).jpg",
+    "pageViews": 500000,
+    "qid": "Q486",
+    "subtitle": "Kärnkraftsolycka i Ukraina",
+    "title": "Tjernobylolyckan inträffar",
+    "wikipediaSlug": "Tjernobylolyckan",
+    "year": 1986
+  },
+  {
+    "fact": "Linus Torvalds publicerar den första versionen av Linux-kärnan.",
+    "image": "Tux.svg",
+    "pageViews": 500000,
+    "qid": "Q388",
+    "subtitle": "Öppet operativsystem",
+    "title": "Linux släpps",
+    "wikipediaSlug": "Linux",
+    "year": 1991
+  },
+  {
+    "fact": "Peter Forsberg sätter den avgörande straffen i OS-finalens straffläggning.",
+    "image": "Peter_Forsberg_2016-03-17_001_(cropped).jpg",
+    "pageViews": 500000,
+    "qid": "Q348416",
+    "subtitle": "Svensk ishockey",
+    "title": "Forsberg avgör OS-finalen",
+    "wikipediaSlug": "Peter_Forsberg",
+    "year": 1994
+  },
+  {
+    "fact": "Hundratusentals människor mördas under folkmordet i Rwanda.",
+    "image": "Nyamata_Memorial_Site_13.jpg",
+    "pageViews": 500000,
+    "qid": "Q131297",
+    "subtitle": "Afrikansk samtidshistoria",
+    "title": "Folkmordet i Rwanda börjar",
+    "wikipediaSlug": "Folkmordet_i_Rwanda",
+    "year": 1994
+  },
+  {
+    "fact": "Fåret Dolly blir det första däggdjuret som klonas från en vuxen cell.",
+    "image": "Dollyscotland.JPG",
+    "pageViews": 500000,
+    "qid": "Q171433",
+    "subtitle": "Biologiskt genombrott",
+    "title": "Dolly blir det första klonade däggdjuret",
+    "wikipediaSlug": "Dolly_(f%C3%A5r)",
+    "year": 1996
+  },
+  {
+    "fact": "Bandai lanserar det lilla digitala husdjuret som behöver ständig omsorg.",
+    "image": "Tamagotchi_0124_ubt.jpeg",
+    "pageViews": 500000,
+    "qid": "Q207786",
+    "subtitle": "Digital leksak",
+    "title": "Tamagotchi lanseras",
+    "wikipediaSlug": "Tamagotchi",
+    "year": 1996
+  },
+  {
+    "fact": "Human Genome Project offentliggör en första komplett sekvens av människans genom.",
+    "image": "Human Genome Project Timeline (26964377742).jpg",
+    "pageViews": 500000,
+    "qid": "Q192446",
+    "subtitle": "Genetikens milstolpe",
+    "title": "Människans genom kartläggs",
+    "wikipediaSlug": "Human_Genome_Project",
+    "year": 2003
+  },
+  {
+    "fact": "Zoom lanseras som en tjänst för videomöten över internet.",
+    "image": "Zoomheadquarters.jpg",
+    "pageViews": 500000,
+    "qid": "Q17460900",
+    "subtitle": "Videomöten på internet",
+    "title": "Zoom lanseras",
+    "wikipediaSlug": "Zoom_Video_Communications",
+    "year": 2011
+  },
+  {
+    "fact": "CRISPR-Cas9 blir ett kraftfullt verktyg för att förändra DNA.",
+    "image": "4QYZ.png",
+    "pageViews": 500000,
+    "qid": "Q17310682",
+    "subtitle": "Bioteknik",
+    "title": "CRISPR-genredigering utvecklas",
+    "wikipediaSlug": "CRISPR%2FCas9",
+    "year": 2012
+  },
+  {
+    "fact": "Louis Pasteur visar hur upphettning kan minska skadliga mikroorganismer i drycker.",
+    "image": "Louis Pasteur, foto av Paul Nadar, Crisco edit.jpg",
+    "pageViews": 450000,
+    "qid": "Q58148",
+    "subtitle": "Livsmedelsteknik",
+    "title": "Pasteurisering införs",
+    "wikipediaSlug": "Past%C3%B6risering",
+    "year": 1864
+  },
+  {
+    "fact": "Nationernas förbund bildas efter första världskriget.",
+    "image": "Palais_des_nations.jpg",
+    "pageViews": 450000,
+    "qid": "Q38130",
+    "subtitle": "Internationellt samarbete",
+    "title": "Nationernas förbund bildas",
+    "wikipediaSlug": "Nationernas_f%C3%B6rbund",
+    "year": 1920
+  },
+  {
+    "fact": "Robert Watson-Watt demonstrerar ett fungerande radarsystem.",
+    "image": "Sonar_Principle-sv.svg",
+    "pageViews": 450000,
+    "qid": "Q47528",
+    "subtitle": "Teknik för att upptäcka avstånd",
+    "title": "Radar utvecklas",
+    "wikipediaSlug": "Radar",
+    "year": 1935
+  },
+  {
+    "fact": "Indien blir självständigt och Jawaharlal Nehru håller sitt berömda tal.",
+    "image": "Gandhi_smiling_1942.jpg",
+    "pageViews": 450000,
+    "qid": "Q668",
+    "subtitle": "Självständighet från Storbritannien",
+    "title": "Indien blir självständigt",
+    "wikipediaSlug": "Indien",
+    "year": 1947
+  },
+  {
+    "fact": "Edwin Land presenterar den första kommersiella direktbildskameran.",
+    "image": "Polaroid,_land_camera_model_180,_02.jpg",
+    "pageViews": 450000,
+    "qid": "Q494389",
+    "subtitle": "Fotografisk teknik",
+    "title": "Polaroidkameran lanseras",
+    "wikipediaSlug": "Polaroid",
+    "year": 1948
+  },
+  {
+    "fact": "Jurij Gagarin genomför den första bemannade rymdfärden runt jorden.",
+    "image": "Vostok_spacecraft.jpg",
+    "pageViews": 450000,
+    "qid": "Q182524",
+    "subtitle": "Rymdhistoria",
+    "title": "Jurij Gagarin blir först i rymden",
+    "wikipediaSlug": "Vostok_1",
+    "year": 1961
+  },
+  {
+    "fact": "IBM lanserar disketten som ett smidigt sätt att lagra och flytta data.",
+    "image": "Floppy_disk_2009_G1.jpg",
+    "pageViews": 450000,
+    "qid": "Q5293",
+    "subtitle": "Datalagring",
+    "title": "Disketten lanseras",
+    "wikipediaSlug": "Diskett",
+    "year": 1971
+  },
+  {
+    "fact": "Ingemar Stenmark vinner sin första världscuptävling i slalom.",
+    "image": "Ingemar_Stenmark,_June_2014-P6170012-1.jpg",
+    "pageViews": 450000,
+    "qid": "Q530",
+    "subtitle": "Svensk alpin skidåkning",
+    "title": "Stenmark tar sin första världscupseger",
+    "wikipediaSlug": "Ingemar_Stenmark",
+    "year": 1974
+  },
+  {
+    "fact": "Louise Brown blir det första barnet som föds efter IVF-behandling.",
+    "image": "In Vitro Fertilization (IVF) - English.png",
+    "pageViews": 450000,
+    "qid": "Q234027",
+    "subtitle": "Medicinsk milstolpe",
+    "title": "Världens första provrörsbarn föds",
+    "wikipediaSlug": "Louise_Brown",
+    "year": 1978
+  },
+  {
+    "fact": "Neil Papworth skickar världens första SMS, med texten Merry Christmas.",
+    "image": "Party_SMS.jpg",
+    "pageViews": 450000,
+    "qid": "Q43024",
+    "subtitle": "Mobil kommunikation",
+    "title": "Det första SMS-meddelandet skickas",
+    "wikipediaSlug": "Sms",
+    "year": 1992
+  },
+  {
+    "fact": "Jan-Ove Waldner vinner herrsingeln i bordtennis vid OS i Barcelona.",
+    "image": "Jan-Ove_Waldner.JPG",
+    "pageViews": 450000,
+    "qid": "Q345360",
+    "subtitle": "Svensk bordtennis",
+    "title": "Waldner vinner OS-guld",
+    "wikipediaSlug": "Jan-Ove_Waldner",
+    "year": 1992
+  },
+  {
+    "fact": "Mosaic blir en tidig webbläsare som gör webben mer lättillgänglig.",
+    "image": "NCSA_Mosaic_Browser_Screenshot.png",
+    "pageViews": 450000,
+    "qid": "Q381047",
+    "subtitle": "Webbens genombrott",
+    "title": "Mosaic-webbläsaren lanseras",
+    "wikipediaSlug": "Mosaic",
+    "year": 1993
+  },
+  {
+    "fact": "Sydafrika håller sitt första demokratiska val med allmän rösträtt.",
+    "image": "DurbanSign1989.jpg",
+    "pageViews": 450000,
+    "qid": "Q11409",
+    "subtitle": "Sydafrikansk historia",
+    "title": "Apartheid avskaffas i Sydafrika",
+    "wikipediaSlug": "Apartheid",
+    "year": 1994
+  },
+  {
+    "fact": "Millennium Bridge öppnar över Themsen i London.",
+    "image": "Mill.bridge.from.tate.modern.arp.jpg",
+    "pageViews": 450000,
+    "qid": "Q44057",
+    "subtitle": "Modern gångbro",
+    "title": "Millenniumbron i London öppnar",
+    "wikipediaSlug": "London_Millennium_Bridge",
+    "year": 2000
+  },
+  {
+    "fact": "En jordbävning utanför Sumatra utlöser en tsunami som drabbar flera länder.",
+    "image": "2004-tsunami.jpg",
+    "pageViews": 450000,
+    "qid": "Q130754",
+    "subtitle": "Naturkatastrof i Asien",
+    "title": "Tsunamin i Indiska oceanen inträffar",
+    "wikipediaSlug": "Jordb%C3%A4vningen_i_Indiska_oceanen_2004",
+    "year": 2004
+  },
+  {
     "fact": "Spotify grundas i Stockholm.",
     "image": "",
     "pageViews": 450000,
@@ -58,6 +1788,26 @@
     "title": "Spotify grundas",
     "wikipediaSlug": "Spotify",
     "year": 2006
+  },
+  {
+    "fact": "Sarah Sjöström vinner 100 meter fjärilsim vid OS i Rio de Janeiro.",
+    "image": "Sarah_Sjöström_2013.jpg",
+    "pageViews": 450000,
+    "qid": "Q235315",
+    "subtitle": "Svensk simning",
+    "title": "Sjöström vinner OS-guld",
+    "wikipediaSlug": "Sarah_Sj%C3%B6str%C3%B6m",
+    "year": 2016
+  },
+  {
+    "fact": "James Webb-teleskopet skickas upp för att studera universums tidiga historia.",
+    "image": "James_Webb_Space_Telescope.jpg",
+    "pageViews": 450000,
+    "qid": "Q186447",
+    "subtitle": "Rymdteleskop",
+    "title": "James Webb-teleskopet skjuts upp",
+    "wikipediaSlug": "James_Webb-teleskopet",
+    "year": 2021
   },
   {
     "fact": "Stockholm nämns i skrift och växer fram som svensk huvudstad.",
@@ -90,6 +1840,16 @@
     "year": 1974
   },
   {
+    "fact": "USA tar bort den avsiktliga störningen som begränsat civil GPS-noggrannhet.",
+    "image": "ConstellationGPS.gif",
+    "pageViews": 420000,
+    "qid": "Q18822",
+    "subtitle": "Satellitnavigering",
+    "title": "GPS öppnas för civila",
+    "wikipediaSlug": "Global_Positioning_System",
+    "year": 2000
+  },
+  {
     "fact": "Zlatan Ibrahimović debuterar i Sveriges landslag.",
     "image": "Zlatan_Ibrahimović_June_2018.jpg",
     "pageViews": 420000,
@@ -120,6 +1880,66 @@
     "year": 2018
   },
   {
+    "fact": "Systembolaget bildas som Sveriges statliga butikskedja för alkoholförsäljning.",
+    "image": "Systembolaget_logo_(new).svg",
+    "pageViews": 400000,
+    "qid": "Q1476113",
+    "subtitle": "Svensk alkoholpolitik",
+    "title": "Systembolaget öppnar",
+    "wikipediaSlug": "Systembolaget",
+    "year": 1955
+  },
+  {
+    "fact": "Nils Bohlin utvecklar Volvos trepunktsbälte.",
+    "image": "Seat_belt_BX.jpg",
+    "pageViews": 400000,
+    "qid": "Q200403",
+    "subtitle": "Svensk trafiksäkerhet",
+    "title": "Trepunktsbältet uppfinns",
+    "wikipediaSlug": "S%C3%A4kerhetsb%C3%A4lte",
+    "year": 1959
+  },
+  {
+    "fact": "Fredliga protester leder till kommunistregimens fall i Tjeckoslovakien.",
+    "image": "Prague_November_1989_-_Old_Town_Square.jpg",
+    "pageViews": 400000,
+    "qid": "Q182817",
+    "subtitle": "Tjeckoslovakisk historia",
+    "title": "Sammetsrevolutionen börjar",
+    "wikipediaSlug": "Sammetsrevolutionen",
+    "year": 1989
+  },
+  {
+    "fact": "Annika Sörenstam tar sin första majorseger i US Women's Open.",
+    "image": "AnnikaStAndrews.JPG",
+    "pageViews": 400000,
+    "qid": "Q232711",
+    "subtitle": "Svensk golf",
+    "title": "Sörenstam vinner US Open",
+    "wikipediaSlug": "Annika_S%C3%B6renstam",
+    "year": 1995
+  },
+  {
+    "fact": "Eurosedlar och euromynt börjar användas i flera europeiska länder.",
+    "image": "Flag_of_Europe.svg",
+    "pageViews": 400000,
+    "qid": "Q458",
+    "subtitle": "Europeiskt samarbete",
+    "title": "Euron införs som valuta",
+    "wikipediaSlug": "Europeiska_unionen",
+    "year": 2002
+  },
+  {
+    "fact": "Henrik Lundqvist vaktar målet när Tre Kronor vinner OS-finalen.",
+    "image": "Henrik_Lundqvist_awarded_as_the_best_goalie_of_all_time_in_Swedish_hockey-2.jpg",
+    "pageViews": 400000,
+    "qid": "Q362157",
+    "subtitle": "Svensk ishockey",
+    "title": "Henrik Lundqvist vinner OS-guld",
+    "wikipediaSlug": "Henrik_Lundqvist",
+    "year": 2006
+  },
+  {
     "fact": "Göteborg grundas av Gustav II Adolf.",
     "image": "Göteborg_2503_stitch_(28573994096).jpg",
     "pageViews": 360000,
@@ -128,6 +1948,26 @@
     "title": "Göteborg grundas",
     "wikipediaSlug": "G%C3%B6teborg",
     "year": 1621
+  },
+  {
+    "fact": "Freden i Roskilde gör Skåne, Blekinge, Halland och Bohuslän svenska.",
+    "image": "Zoomed_in_Map_of_the_Treaty_of_Roskilde.svg",
+    "pageViews": 360000,
+    "qid": "Q212234",
+    "subtitle": "Svensk-dansk historia",
+    "title": "Sverige vinner Skånelandskapen",
+    "wikipediaSlug": "Freden_i_Roskilde",
+    "year": 1658
+  },
+  {
+    "fact": "Sverige tvingas avträda Finland till Ryssland efter kriget.",
+    "image": "Finnish_War_Collage_5.png",
+    "pageViews": 360000,
+    "qid": "Q736268",
+    "subtitle": "Svensk historia",
+    "title": "Sverige förlorar Finland",
+    "wikipediaSlug": "Finska_kriget",
+    "year": 1809
   },
   {
     "fact": "Alfred Nobel patenterar dynamiten.",
@@ -140,6 +1980,16 @@
     "year": 1867
   },
   {
+    "fact": "Raoul Wallenberg delar ut svenska skyddspass och skyddar judar undan förföljelse.",
+    "image": "Raoul_Wallenberg,_a_Swedish_diplomat_responsible_for_saving_up_to_tens_of_thousands_of_jews_in_nazi-occupied_Hungary._(31872389277).jpg",
+    "pageViews": 360000,
+    "qid": "Q152850",
+    "subtitle": "Svensk humanitär insats",
+    "title": "Wallenberg räddar judar i Budapest",
+    "wikipediaSlug": "Raoul_Wallenberg",
+    "year": 1944
+  },
+  {
     "fact": "Dancing Queen släpps och blir en av ABBAs största låtar.",
     "image": "",
     "pageViews": 360000,
@@ -150,6 +2000,16 @@
     "year": 1976
   },
   {
+    "fact": "Gustav Vasa tar kontroll över Stockholm efter befrielsekriget.",
+    "image": "GustavVasasintåg.jpg",
+    "pageViews": 350000,
+    "qid": "Q1800916",
+    "subtitle": "Svensk historia",
+    "title": "Gustav Vasa tågar in i Stockholm",
+    "wikipediaSlug": "Gustav_Vasas_int%C3%A5g_i_Stockholm_1523",
+    "year": 1523
+  },
+  {
     "fact": "Volvo grundas i Göteborg.",
     "image": "",
     "pageViews": 350000,
@@ -158,6 +2018,86 @@
     "title": "Volvo grundas",
     "wikipediaSlug": "Volvo",
     "year": 1927
+  },
+  {
+    "fact": "Mats Wilander vinner sin första Grand Slam-titel på Roland-Garros.",
+    "image": "Eurosport_Studio_Australian_Open_2014_007.jpg",
+    "pageViews": 350000,
+    "qid": "Q16475",
+    "subtitle": "Svensk tennis",
+    "title": "Mats Wilander vinner Franska öppna",
+    "wikipediaSlug": "Mats_Wilander",
+    "year": 1983
+  },
+  {
+    "fact": "Mats Sundin blir den första svensk som väljs först i NHL-draften.",
+    "image": "Mats_Sundin_in_feb_2015.jpg",
+    "pageViews": 350000,
+    "qid": "Q368528",
+    "subtitle": "Svensk ishockey",
+    "title": "Mats Sundin blir först draftad",
+    "wikipediaSlug": "Mats_Sundin",
+    "year": 1989
+  },
+  {
+    "fact": "Sverige besegrar Ryssland i finalen och tar sitt första herr-EM-guld.",
+    "image": "1994_European_Men's_Handball_Championship.svg",
+    "pageViews": 350000,
+    "qid": "Q290673",
+    "subtitle": "Svensk handboll",
+    "title": "Sverige vinner handbolls-EM",
+    "wikipediaSlug": "Europam%C3%A4sterskapet_i_handboll_f%C3%B6r_herrar_1994",
+    "year": 1994
+  },
+  {
+    "fact": "Nobelmuseet öppnar i Börshuset på Stortorget i Gamla stan.",
+    "image": "Nobelmuseet_2009.jpg",
+    "pageViews": 350000,
+    "qid": "Q1968711",
+    "subtitle": "Museum i Stockholm",
+    "title": "Nobelmuseet öppnar",
+    "wikipediaSlug": "Nobelprismuseet",
+    "year": 2001
+  },
+  {
+    "fact": "Carolina Klüft tar sitt första VM-guld i sjukamp.",
+    "image": "Carolina_Klüft_in_2025-4-2.jpg",
+    "pageViews": 350000,
+    "qid": "Q223672",
+    "subtitle": "Svensk friidrott",
+    "title": "Carolina Klüft vinner VM-guld i sjukamp",
+    "wikipediaSlug": "Carolina_Kl%C3%BCft",
+    "year": 2003
+  },
+  {
+    "fact": "Sarah Sjöström slår världsrekord på 50 meter fjärilsim.",
+    "image": "Sarah_Sjöström_2013.jpg",
+    "pageViews": 350000,
+    "qid": "Q235315",
+    "subtitle": "Svensk simning",
+    "title": "Sarah Sjöström sätter världsrekord",
+    "wikipediaSlug": "Sarah_Sj%C3%B6str%C3%B6m",
+    "year": 2014
+  },
+  {
+    "fact": "Sverige besegrar Brasilien i semifinalen och tar silver i OS-turneringen.",
+    "image": "Victoria Sandell Svensson in Jan 2014.jpg",
+    "pageViews": 350000,
+    "qid": "Q726066",
+    "subtitle": "Svenskt damlandslag",
+    "title": "Sverige tar OS-silver i fotboll",
+    "wikipediaSlug": "Sveriges_damlandslag_i_fotboll",
+    "year": 2016
+  },
+  {
+    "fact": "Unionen mellan Sverige och Norge upplöses fredligt.",
+    "image": "Norge_sverge_slit.jpg",
+    "pageViews": 330000,
+    "qid": "Q2264910",
+    "subtitle": "Nordisk historia",
+    "title": "Sverige och Norge skiljs åt",
+    "wikipediaSlug": "Unionsuppl%C3%B6sningen",
+    "year": 1905
   },
   {
     "fact": "Gotland blir svenskt genom freden i Brömsebro.",
@@ -178,6 +2118,16 @@
     "title": "Malmö blir svensk stad",
     "wikipediaSlug": "Malm%C3%B6",
     "year": 1658
+  },
+  {
+    "fact": "Anders Celsius beskriver temperaturskalan som senare får hans namn.",
+    "image": "Anders-Celsius-Head.jpg",
+    "pageViews": 320000,
+    "qid": "Q81130",
+    "subtitle": "Svensk vetenskapshistoria",
+    "title": "Celsiusskalan presenteras",
+    "wikipediaSlug": "Anders_Celsius",
+    "year": 1742
   },
   {
     "fact": "Ingrid Bergman får sitt svenska filmgenombrott.",
@@ -248,6 +2198,16 @@
     "title": "Dynamiten patenteras",
     "wikipediaSlug": "Dynamit",
     "year": 1867
+  },
+  {
+    "fact": "Husqvarna börjar tillverka symaskiner efter sin tidigare vapenproduktion.",
+    "image": "Hochgurgl-Top Mountain Motorcycle Museum-Husqvarna Typ 180-1928-546ccm-01ESD.jpg",
+    "pageViews": 300000,
+    "qid": "Q899356",
+    "subtitle": "Svenskt industriföretag",
+    "title": "Husqvarna börjar tillverka symaskiner",
+    "wikipediaSlug": "Husqvarna",
+    "year": 1872
   },
   {
     "fact": "Ericsson grundas.",
@@ -338,6 +2298,16 @@
     "title": "Systembolaget bildas",
     "wikipediaSlug": "Systembolaget",
     "year": 1955
+  },
+  {
+    "fact": "Egyptens nationalisering av Suezkanalen leder till en internationell militär kris.",
+    "image": "Tanks_Destroyed_Sinai.jpg",
+    "pageViews": 300000,
+    "qid": "Q49101",
+    "subtitle": "Internationell kris",
+    "title": "Suezkanalen stängs under Suezkrisen",
+    "wikipediaSlug": "Suezkrisen",
+    "year": 1956
   },
   {
     "fact": "Max von Sydow får sitt stora genombrott i Det sjunde inseglet.",
@@ -480,6 +2450,26 @@
     "year": 1994
   },
   {
+    "fact": "Oatly börjar sälja havrebaserade drycker som alternativ till mjölk.",
+    "image": "Oatly.jpg",
+    "pageViews": 300000,
+    "qid": "Q10605824",
+    "subtitle": "Svenskt livsmedelsföretag",
+    "title": "Oatly lanserar havredryck",
+    "wikipediaSlug": "Oatly",
+    "year": 1994
+  },
+  {
+    "fact": "Sverige vinner den första VM-finalen i innebandy.",
+    "image": "Floorball_ball_cropped.jpg",
+    "pageViews": 300000,
+    "qid": "Q206763",
+    "subtitle": "Svensk innebandy",
+    "title": "Sverige vinner det första innebandy-VM",
+    "wikipediaSlug": "Innebandy",
+    "year": 1996
+  },
+  {
     "fact": "Max Martin får ett internationellt genombrott som låtskrivare.",
     "image": "MaxMartin.jpg",
     "pageViews": 300000,
@@ -618,6 +2608,16 @@
     "title": "Loreen vinner Eurovision igen",
     "wikipediaSlug": "Loreen",
     "year": 2023
+  },
+  {
+    "fact": "Militär skjuter mot demonstrerande arbetare i Lunde i Ådalen.",
+    "image": "1led0513adalen.jpg",
+    "pageViews": 280000,
+    "qid": "Q1104917",
+    "subtitle": "Svensk arbetshistoria",
+    "title": "Ådalshändelserna skakar Sverige",
+    "wikipediaSlug": "%C3%85dalsh%C3%A4ndelserna",
+    "year": 1931
   },
   {
     "fact": "H&M grundas i Västerås.",

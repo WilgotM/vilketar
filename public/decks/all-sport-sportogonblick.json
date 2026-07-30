@@ -1,13 +1,83 @@
 [
   {
+    "fact": "Usain Bolt vinner 100 meter vid OS i Peking och sätter världsrekord.",
+    "image": "Usain_Bolt_Rio_100m_final_2016k.jpg",
+    "pageViews": 650000,
+    "qid": "Q1189",
+    "subtitle": "Jamaicansk sprinter",
+    "title": "Usain Bolt vinner OS-guld",
+    "wikipediaSlug": "Usain_Bolt",
+    "year": 2008
+  },
+  {
+    "fact": "Michael Phelps vinner åtta guldmedaljer i bassängen vid OS i Peking.",
+    "image": "Michael_Phelps_Rio_Olympics_2016.jpg",
+    "pageViews": 650000,
+    "qid": "Q39562",
+    "subtitle": "Amerikansk simmare",
+    "title": "Michael Phelps vinner åtta OS-guld",
+    "wikipediaSlug": "Michael_Phelps",
+    "year": 2008
+  },
+  {
+    "fact": "Armand Duplantis vinner stavhoppet vid OS i Tokyo.",
+    "image": "Armand Duplantis in 2019.jpg",
+    "pageViews": 650000,
+    "qid": "Q20740797",
+    "subtitle": "Svensk friidrott",
+    "title": "Duplantis vinner OS-guld",
+    "wikipediaSlug": "Armand_Duplantis",
+    "year": 2021
+  },
+  {
+    "fact": "Armand Duplantis vinner stavhoppsguldet vid friidrotts-VM.",
+    "image": "Armand Duplantis in 2019.jpg",
+    "pageViews": 650000,
+    "qid": "Q20740797",
+    "subtitle": "Svensk stavhoppare",
+    "title": "Duplantis vinner VM-guld",
+    "wikipediaSlug": "Armand_Duplantis",
+    "year": 2022
+  },
+  {
+    "fact": "Björn Borg besegrar Ilie Năstase i sin första Wimbledonfinal.",
+    "image": "Björn_Borg_2013-11-06_001_(cropped).jpg",
+    "pageViews": 550000,
+    "qid": "Q104506",
+    "subtitle": "Svensk tennis",
+    "title": "Borg vinner Wimbledon för första gången",
+    "wikipediaSlug": "Bj%C3%B6rn_Borg",
+    "year": 1976
+  },
+  {
+    "fact": "Det första Vasaloppet går från Berga by till Mora.",
+    "image": "Jørgen_Aukland_Vasaloppet_2013_001.jpg",
+    "pageViews": 500000,
+    "qid": "Q615072",
+    "subtitle": "Svenskt skidlopp",
+    "title": "Det första Vasaloppet körs",
+    "wikipediaSlug": "Vasaloppet",
+    "year": 1922
+  },
+  {
     "fact": "Diego Maradona gör både det omtalade Guds hand-målet och Århundradets mål.",
     "image": "",
     "pageViews": 500000,
-    "qid": "manual-guds-hand",
+    "qid": "Q1272783",
     "subtitle": "VM-kvartsfinalen mot England",
     "title": "Maradona gör Guds hand-målet",
     "wikipediaSlug": "Guds_hand",
     "year": 1986
+  },
+  {
+    "fact": "Peter Forsberg sätter den avgörande straffen i OS-finalens straffläggning.",
+    "image": "Peter_Forsberg_2016-03-17_001_(cropped).jpg",
+    "pageViews": 500000,
+    "qid": "Q348416",
+    "subtitle": "Svensk ishockey",
+    "title": "Forsberg avgör OS-finalen",
+    "wikipediaSlug": "Peter_Forsberg",
+    "year": 1994
   },
   {
     "fact": "Usain Bolt springer 100 meter på 9,58 sekunder.",
@@ -20,10 +90,30 @@
     "year": 2009
   },
   {
-    "fact": "Leicester City blir engelska mästare efter att ha varit nederlagstippat inför säsongen.",
-    "image": "",
+    "fact": "Jan-Ove Waldner vinner herrsingeln i bordtennis vid OS i Barcelona.",
+    "image": "Jan-Ove_Waldner.JPG",
     "pageViews": 450000,
-    "qid": "manual-leicester-city-fc",
+    "qid": "Q345360",
+    "subtitle": "Svensk bordtennis",
+    "title": "Waldner vinner OS-guld",
+    "wikipediaSlug": "Jan-Ove_Waldner",
+    "year": 1992
+  },
+  {
+    "fact": "Sarah Sjöström vinner 100 meter fjärilsim vid OS i Rio de Janeiro.",
+    "image": "Sarah_Sjöström_2013.jpg",
+    "pageViews": 450000,
+    "qid": "Q235315",
+    "subtitle": "Svensk simning",
+    "title": "Sjöström vinner OS-guld",
+    "wikipediaSlug": "Sarah_Sj%C3%B6str%C3%B6m",
+    "year": 2016
+  },
+  {
+    "fact": "Leicester City blir engelska mästare efter att ha varit nederlagstippat inför säsongen.",
+    "image": "Walkers_Stadium.JPG",
+    "pageViews": 450000,
+    "qid": "Q19481",
     "subtitle": "Fotbollssagan mot alla odds",
     "title": "Leicester vinner Premier League",
     "wikipediaSlug": "Leicester_City_FC",
@@ -61,9 +151,9 @@
   },
   {
     "fact": "Jesse Owens vinner fyra guldmedaljer vid OS i Berlin.",
-    "image": "",
+    "image": "Berlin36-2.jpg",
     "pageViews": 400000,
-    "qid": "manual-olympiska-sommarspelen-1936",
+    "qid": "Q8150",
     "subtitle": "Friidrott i Berlin",
     "title": "Jesse Owens vinner fyra OS-guld",
     "wikipediaSlug": "Olympiska_sommarspelen_1936",
@@ -71,9 +161,9 @@
   },
   {
     "fact": "Muhammad Ali besegrar George Foreman i den klassiska titelmatchen i Kinshasa.",
-    "image": "",
+    "image": "Anderson_ali.jpg",
     "pageViews": 400000,
-    "qid": "manual-the-rumble-in-the-jungle",
+    "qid": "Q939560",
     "subtitle": "Rumble in the Jungle",
     "title": "Ali återtar världsmästartiteln",
     "wikipediaSlug": "The_Rumble_in_the_Jungle",
@@ -81,9 +171,9 @@
   },
   {
     "fact": "USA:s unga ishockeylag besegrar storfavoriten Sovjetunionen vid vinter-OS.",
-    "image": "",
+    "image": "DaveChristian.jpg",
     "pageViews": 400000,
-    "qid": "manual-miracle-on-ice",
+    "qid": "Q287405",
     "subtitle": "Miracle on Ice",
     "title": "USA skräller mot Sovjet",
     "wikipediaSlug": "Miracle_on_Ice",
@@ -91,13 +181,23 @@
   },
   {
     "fact": "Grekland besegrar värdnationen Portugal i finalen och blir europamästare.",
-    "image": "",
+    "image": "Euro2004OpeningCeremony.jpg",
     "pageViews": 400000,
-    "qid": "manual-europamästerskapet-i-fotboll-2004",
+    "qid": "Q102920",
     "subtitle": "En av fotbollens största skrällar",
     "title": "Grekland vinner fotbolls-EM",
     "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_2004",
     "year": 2004
+  },
+  {
+    "fact": "Henrik Lundqvist vaktar målet när Tre Kronor vinner OS-finalen.",
+    "image": "Henrik_Lundqvist_awarded_as_the_best_goalie_of_all_time_in_Swedish_hockey-2.jpg",
+    "pageViews": 400000,
+    "qid": "Q362157",
+    "subtitle": "Svensk ishockey",
+    "title": "Henrik Lundqvist vinner OS-guld",
+    "wikipediaSlug": "Henrik_Lundqvist",
+    "year": 2006
   },
   {
     "fact": "Anja Pärson vinner störtlopp, super-G och superkombination i Åre.",
@@ -111,9 +211,9 @@
   },
   {
     "fact": "Rafael Nadal besegrar Roger Federer i en fem set lång final som slutar i skymningen.",
-    "image": "",
+    "image": "VenusWilliams.jpg",
     "pageViews": 400000,
-    "qid": "manual-wimbledonmästerskapen-2008",
+    "qid": "Q388312",
     "subtitle": "Finalklassikern mot Federer",
     "title": "Nadal vinner Wimbledonrysaren",
     "wikipediaSlug": "Wimbledonm%C3%A4sterskapen_2008",
@@ -171,13 +271,43 @@
   },
   {
     "fact": "Nadia Comăneci blir den första gymnasten som får 10,0 i ett olympiskt moment.",
-    "image": "",
+    "image": "Nadia_Comăneci_Montreal1976c.jpg",
     "pageViews": 350000,
-    "qid": "manual-nadia-comăneci",
+    "qid": "Q33228",
     "subtitle": "Gymnastikhistoria i Montréal",
     "title": "Comăneci får en perfekt tia",
     "wikipediaSlug": "Nadia_Com%C4%83neci",
     "year": 1976
+  },
+  {
+    "fact": "Mats Sundin blir den första svensk som väljs först i NHL-draften.",
+    "image": "Mats_Sundin_in_feb_2015.jpg",
+    "pageViews": 350000,
+    "qid": "Q368528",
+    "subtitle": "Svensk ishockey",
+    "title": "Mats Sundin blir först draftad",
+    "wikipediaSlug": "Mats_Sundin",
+    "year": 1989
+  },
+  {
+    "fact": "Carolina Klüft tar sitt första VM-guld i sjukamp.",
+    "image": "Carolina_Klüft_in_2025-4-2.jpg",
+    "pageViews": 350000,
+    "qid": "Q223672",
+    "subtitle": "Svensk friidrott",
+    "title": "Carolina Klüft vinner VM-guld i sjukamp",
+    "wikipediaSlug": "Carolina_Kl%C3%BCft",
+    "year": 2003
+  },
+  {
+    "fact": "Sverige besegrar Brasilien i semifinalen och tar silver i OS-turneringen.",
+    "image": "Victoria Sandell Svensson in Jan 2014.jpg",
+    "pageViews": 350000,
+    "qid": "Q726066",
+    "subtitle": "Svenskt damlandslag",
+    "title": "Sverige tar OS-silver i fotboll",
+    "wikipediaSlug": "Sveriges_damlandslag_i_fotboll",
+    "year": 2016
   },
   {
     "fact": "Sverige slår Italien i playoff och går till fotbolls-VM.",
@@ -283,7 +413,7 @@
     "fact": "Dick Fosbury vinner OS-guld med den ryggvända hoppstil som får hans namn.",
     "image": "",
     "pageViews": 300000,
-    "qid": "manual-olympiska-sommarspelen-1968",
+    "qid": "Q8429",
     "subtitle": "Höjdhoppet förändras",
     "title": "Fosbury floppar över ribban",
     "wikipediaSlug": "Olympiska_sommarspelen_1968",

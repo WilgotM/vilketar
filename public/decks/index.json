@@ -5,9 +5,9 @@
   "themeHue": 0,
   "minScore": 1000,
   "difficultyCounts": {
-    "easy": 857,
-    "normal": 1409,
-    "hard": 1409
+    "easy": 1044,
+    "normal": 1593,
+    "hard": 1593
   },
   "children": [
     {
@@ -17,9 +17,9 @@
       "themeHue": 15,
       "frequency": 2.45,
       "difficultyCounts": {
-        "easy": 190,
-        "normal": 705,
-        "hard": 705
+        "easy": 371,
+        "normal": 883,
+        "hard": 883
       },
       "minScore": 1000,
       "children": [
@@ -30,9 +30,9 @@
           "themeHue": 15,
           "frequency": 1,
           "difficultyCounts": {
-            "easy": 190,
-            "normal": 705,
-            "hard": 705
+            "easy": 371,
+            "normal": 883,
+            "hard": 883
           },
           "minScore": 1000
         }
@@ -74,9 +74,9 @@
       "frequency": 0.1,
       "minScore": 1000,
       "difficultyCounts": {
-        "easy": 95,
-        "normal": 132,
-        "hard": 132
+        "easy": 101,
+        "normal": 138,
+        "hard": 138
       },
       "children": [
         {
@@ -87,9 +87,9 @@
           "frequency": 2.6,
           "minScore": 1000,
           "difficultyCounts": {
-            "easy": 95,
-            "normal": 132,
-            "hard": 132
+            "easy": 101,
+            "normal": 138,
+            "hard": 138
           }
         }
       ]
