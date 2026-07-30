@@ -100,6 +100,13 @@ export default function MusicPreviewPlayer(props: Props) {
       setStatus("ready");
     }
 
+    // The shared element can already be playing when this card mounts. In
+    // that case there is no new play event for this component to observe.
+    if (!sourceChanged && !audio.paused) {
+      setStatus("playing");
+      return;
+    }
+
     if (!autoPlay || (!sourceChanged && !audio.paused)) return;
 
     if (activeAudio && activeAudio !== audio) stopAudio(activeAudio);
@@ -127,12 +134,14 @@ export default function MusicPreviewPlayer(props: Props) {
       }
     };
     const handlePlay = () => setStatus("playing");
+    const handlePlaying = () => setStatus("playing");
     const handleTimeUpdate = () => setCurrentTime(audio.currentTime);
 
     audio.addEventListener("durationchange", handleDurationChange);
     audio.addEventListener("ended", handleEnded);
     audio.addEventListener("pause", handlePause);
     audio.addEventListener("play", handlePlay);
+    audio.addEventListener("playing", handlePlaying);
     audio.addEventListener("timeupdate", handleTimeUpdate);
 
     return () => {
@@ -140,6 +149,7 @@ export default function MusicPreviewPlayer(props: Props) {
       audio.removeEventListener("ended", handleEnded);
       audio.removeEventListener("pause", handlePause);
       audio.removeEventListener("play", handlePlay);
+      audio.removeEventListener("playing", handlePlaying);
       audio.removeEventListener("timeupdate", handleTimeUpdate);
     };
   }, [audio]);

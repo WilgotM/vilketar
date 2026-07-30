@@ -17,9 +17,15 @@ interface DealAnimationLayerProps {
 
 export default function DealAnimationLayer(props: DealAnimationLayerProps) {
   const { card, from, to } = props;
+  const [imageReady, setImageReady] = React.useState(false);
   const [animationStarted, setAnimationStarted] = React.useState(false);
+  const handleImageReady = React.useCallback(() => {
+    setImageReady(true);
+  }, []);
 
   React.useEffect(() => {
+    if (!imageReady) return;
+
     const frameId = window.requestAnimationFrame(() => {
       setAnimationStarted(true);
     });
@@ -27,7 +33,7 @@ export default function DealAnimationLayer(props: DealAnimationLayerProps) {
     return () => {
       window.cancelAnimationFrame(frameId);
     };
-  }, [card.id, from.x, from.y, to.x, to.y]);
+  }, [imageReady]);
 
   return (
     <motion.div
@@ -72,6 +78,7 @@ export default function DealAnimationLayer(props: DealAnimationLayerProps) {
         flipped={false}
         initialTransform={false}
         item={card}
+        onImageReady={handleImageReady}
         showMusicPreview={false}
         surface="deck"
         transition={{

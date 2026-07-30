@@ -31,6 +31,7 @@ type Props = {
   loadImage?: boolean;
   onAnimationComplete?: () => void;
   onClick?: () => void;
+  onImageReady?: () => void;
   revealDatePill?: boolean;
   showMusicPreview?: boolean;
   surface?: "deck" | "timeline";
@@ -56,6 +57,7 @@ export default function CardVisual(props: Props) {
     loadImage = true,
     onAnimationComplete,
     onClick,
+    onImageReady,
     revealDatePill = true,
     showMusicPreview = true,
     surface = "timeline",
@@ -88,6 +90,20 @@ export default function CardVisual(props: Props) {
     [item.image, loadImage, musicArtwork, playableMusic, showMusicPlayer],
   );
   const { imageSrc } = useCardImage(imageCandidates);
+  const imageRef = React.useRef<HTMLImageElement | null>(null);
+
+  React.useEffect(() => {
+    if (!onImageReady) return;
+    if (!imageSrc) {
+      onImageReady();
+      return;
+    }
+
+    const image = imageRef.current;
+    if (image?.complete && image.naturalWidth > 0) {
+      onImageReady();
+    }
+  }, [imageSrc, onImageReady]);
   const cardThemeStyle = useCardTheme(item.deckThemeHue);
   const yearLabel =
     item.year < 0 ? `${Math.abs(item.year)} f.Kr.` : String(item.year);
@@ -150,10 +166,13 @@ export default function CardVisual(props: Props) {
                           className={styles.imageForeground}
                           decoding="sync"
                           draggable={false}
+                          onError={onImageReady}
+                          onLoad={onImageReady}
                           loading="eager"
                           onContextMenu={(event) => {
                             event.preventDefault();
                           }}
+                          ref={imageRef}
                           src={imageSrc}
                         />
                         <div aria-hidden="true" className={styles.imageTint} />
