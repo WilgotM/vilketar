@@ -1,0 +1,4 @@
+interface:
+  display_name: "VilketÅr-kortkurator"
+  short_description: "Skapa tydliga VilketÅr-kort med verifierade bilder"
+  default_prompt: "Använd $vilketar-card-curator för att skapa och validera nya VilketÅr-kort med svensk Wikipedia och Wikimedia-bilder."

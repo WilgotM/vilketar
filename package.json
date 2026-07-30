@@ -20,6 +20,7 @@
     "decks:enrich-music-years": "bun run content/scripts/enrich-music-years.ts",
     "decks:music": "bun run content/scripts/build-music-deck.ts",
     "decks:curate": "bun run content/scripts/curate-public-decks.ts",
+    "cards:validate": "bun run content/scripts/validate-handpicked-cards.ts",
     "daily:lock": "bun run content/scripts/lock-daily-game.ts",
     "deploy": "bun run build && wrangler pages deploy out --project-name vilketar",
     "sparql:list": "bun run content/scripts/run-sparql.ts --list",
