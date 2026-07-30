@@ -14,7 +14,7 @@ Use this skill for every new VilketÅr card batch. Treat quality as a hard gate:
 3. Reject candidates that are niche, administrative, repetitive, dependent on specialist knowledge, hard to date to one year, or likely to be confused with another event.
 4. Write every accepted card as a `ClassicTuple` in `content/scripts/add-handpicked-swedish-cards.ts` (or as an explicit `HandpickedCard` when a fixed deck assignment or image override is necessary).
 5. Use the exact Swedish Wikipedia page title in `pageTitle`. Keep `title` short and natural without a year. Keep `subtitle` as a quick Swedish clue. Keep `fact` to one concrete sentence that helps recognition without revealing the year.
-6. Build with `bun run decks:add-swedish-cards`.
+6. Build with `bun run decks:add-swedish-cards`, then run `bun run decks:curate` when the deck index or curation rules need refreshing.
 7. Run `bun run cards:validate -- --expected <new-count>` before considering the batch finished. The validator checks the generated deck, real Wikipedia pages, Commons files, duplicates, front text, and music isolation.
 8. Run `bun run format:check`, `bun run lint`, and `bun test`.
 
@@ -47,6 +47,7 @@ From the repository root:
 
 ```bash
 bun run decks:add-swedish-cards
+bun run decks:curate
 bun run cards:validate -- --expected 100
 bun run format:check
 bun run lint
