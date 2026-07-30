@@ -65,7 +65,8 @@ export default function CardVisual(props: Props) {
   const isPlayed = "played" in item;
   const canonicalMusicCard = getCanonicalMusicCard(item);
   const playableMusic = canonicalMusicCard?.music ?? null;
-  const showMusicPlayer = !!playableMusic && !isPlayed && showMusicPreview;
+  const showMusicPlayer =
+    !!playableMusic && !isPlayed && showMusicPreview && !flipped;
   const musicTitle = canonicalMusicCard?.title ?? item.title;
   const cachedMusicPreview = playableMusic
     ? getCachedMusicPreview(playableMusic, musicTitle)

@@ -6,7 +6,7 @@ const canonicalMusicCards = musicCards as Card[];
 function normalize(value: string | null | undefined): string {
   return (value ?? "")
     .trim()
-    .replace(/[“”\"']/g, "")
+    .replace(/[“”"']/g, "")
     .replace(/[,&]/g, " ")
     .replace(/\s+/g, " ")
     .toLocaleLowerCase("sv-SE");
