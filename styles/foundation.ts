@@ -4,6 +4,8 @@ export const media = {
   wide: "screen and (min-width: 48.0625rem)",
   shortWide: "screen and (min-width: 48.0625rem) and (max-height: 52rem)",
   shortLandscape: "screen and (min-width: 48.0625rem) and (max-height: 36rem)",
+  shortCompactLandscape:
+    "screen and (orientation: landscape) and (max-height: 36rem)",
   dark: "(prefers-color-scheme: dark)",
   coarsePointer: "(pointer: coarse)",
   reduceMotion: "(prefers-reduced-motion: reduce)",
@@ -50,6 +52,7 @@ export const fontSizeScale = {
   "2xl": "1.875rem",
   hero: "6.25rem",
   heroCompact: "4rem",
+  heroLandscape: "3.5rem",
   display: "clamp(3.5rem, 9vw, 5.75rem)",
 } as const;
 

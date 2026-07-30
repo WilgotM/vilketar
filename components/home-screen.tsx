@@ -331,7 +331,10 @@ export default function HomeScreen() {
         <div className={styles.wrapper}>
           <HeroDecorations />
           <div className={styles.stage}>
-            <SiteHero subtitle="Placera svenska och historiska händelser i rätt år." />
+            <SiteHero
+              compactLandscape
+              subtitle="Placera svenska och historiska händelser i rätt år."
+            />
             <div className={styles.actions}>
               <div className={styles.dailyActionRow}>
                 <div className={styles.dailyActionSlot}>

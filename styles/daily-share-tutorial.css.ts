@@ -240,8 +240,8 @@ export const coachArrow = style({
 
 export const copiedToast = style({
   alignItems: "center",
-  background: vars.color.surfaceChrome,
-  backdropFilter: "blur(1.25rem)",
+  background: `color-mix(in srgb, ${vars.color.surfaceStrong} 92%, transparent)`,
+  backdropFilter: "blur(2rem) saturate(1.1)",
   border: `${vars.size.borderWidth} solid color-mix(in srgb, ${vars.color.success} 42%, ${vars.color.borderStrong})`,
   borderRadius: vars.radius.pill,
   boxShadow: vars.shadow.panel,
@@ -257,7 +257,7 @@ export const copiedToast = style({
   // the individual transform property so it remains centred throughout.
   translate: "-50% 0",
   width: "calc(100% - 2rem)",
-  WebkitBackdropFilter: "blur(1.25rem)",
+  WebkitBackdropFilter: "blur(2rem) saturate(1.1)",
   zIndex: 90,
 });
 

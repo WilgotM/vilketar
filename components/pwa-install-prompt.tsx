@@ -129,6 +129,22 @@ function safeGetItem(key: string) {
   }
 }
 
+function getServiceWorkerUrl() {
+  try {
+    const nextData = document.getElementById("__NEXT_DATA__")?.textContent;
+    if (!nextData) {
+      return "/service-worker.js";
+    }
+
+    const parsed = JSON.parse(nextData) as { buildId?: unknown };
+    return typeof parsed.buildId === "string"
+      ? `/service-worker.js?v=${encodeURIComponent(parsed.buildId)}`
+      : "/service-worker.js";
+  } catch {
+    return "/service-worker.js";
+  }
+}
+
 function AppGlyph() {
   return (
     // eslint-disable-next-line @next/next/no-img-element
@@ -215,7 +231,7 @@ export default function PwaInstallPrompt() {
     }
 
     navigator.serviceWorker
-      .register("/service-worker.js", { updateViaCache: "none" })
+      .register(getServiceWorkerUrl(), { updateViaCache: "none" })
       .then((registration) => {
         registration.update().catch(() => null);
 

@@ -91,6 +91,10 @@ export const wrapper = style({
       justifyContent: "flex-start",
       padding: `${vars.space["4xl"]} ${vars.space.lg} ${vars.space.xl}`,
     },
+    [media.shortCompactLandscape]: {
+      justifyContent: "center",
+      padding: `${vars.space.lg} ${vars.space["2xl"]}`,
+    },
   },
 });
 
@@ -108,6 +112,12 @@ export const stage = style({
       gap: vars.space.xl,
       width: `min(100%, ${vars.size.contentWidth})`,
     },
+    [media.shortCompactLandscape]: {
+      alignItems: "center",
+      flexDirection: "row",
+      gap: vars.space["3xl"],
+      width: "min(100%, 46rem)",
+    },
     [media.reduceMotion]: {
       animation: "none",
     },
@@ -119,6 +129,16 @@ export const actions = style({
   flexDirection: "column",
   gap: vars.space.lg,
   width: "100%",
+  "@media": {
+    [media.shortCompactLandscape]: {
+      flex: "1 1 0",
+      gap: vars.space.sm,
+      maxWidth: "20rem",
+      vars: {
+        [vars.size.controlHeight]: "2.5rem",
+      },
+    },
+  },
 });
 
 export const dailyActionRow = style({
@@ -391,6 +411,11 @@ export const heroDecorations = style({
   pointerEvents: "none",
   position: "absolute",
   zIndex: 1,
+  "@media": {
+    [media.shortCompactLandscape]: {
+      display: "none",
+    },
+  },
 });
 
 const heroItemBase = style({
