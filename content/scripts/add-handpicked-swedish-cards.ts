@@ -7881,6 +7881,92 @@ const CURATED_SPORT_BATCH: ClassicTuple[] = [
   ],
 ];
 
+// International moments that are familiar well beyond their individual
+// sports. Keep these out of the Sweden-specific decks while making Tuesday's
+// sport game less dependent on Swedish medal memories.
+const INTERNATIONAL_SPORT_MOMENTS: ClassicTuple[] = [
+  [
+    "Olympiska sommarspelen 1936",
+    "Jesse Owens vinner fyra OS-guld",
+    1936,
+    "Friidrott i Berlin",
+    "Jesse Owens vinner fyra guldmedaljer vid OS i Berlin.",
+    400_000,
+  ],
+  [
+    "Olympiska sommarspelen 1968",
+    "Fosbury floppar över ribban",
+    1968,
+    "Höjdhoppet förändras",
+    "Dick Fosbury vinner OS-guld med den ryggvända hoppstil som får hans namn.",
+    300_000,
+  ],
+  [
+    "The Rumble in the Jungle",
+    "Ali återtar världsmästartiteln",
+    1974,
+    "Rumble in the Jungle",
+    "Muhammad Ali besegrar George Foreman i den klassiska titelmatchen i Kinshasa.",
+    400_000,
+  ],
+  [
+    "Nadia Comăneci",
+    "Comăneci får en perfekt tia",
+    1976,
+    "Gymnastikhistoria i Montréal",
+    "Nadia Comăneci blir den första gymnasten som får 10,0 i ett olympiskt moment.",
+    350_000,
+  ],
+  [
+    "Miracle on Ice",
+    "USA skräller mot Sovjet",
+    1980,
+    "Miracle on Ice",
+    "USA:s unga ishockeylag besegrar storfavoriten Sovjetunionen vid vinter-OS.",
+    400_000,
+  ],
+  [
+    "Guds hand",
+    "Maradona gör Guds hand-målet",
+    1986,
+    "VM-kvartsfinalen mot England",
+    "Diego Maradona gör både det omtalade Guds hand-målet och Århundradets mål.",
+    500_000,
+  ],
+  [
+    "Europamästerskapet i fotboll 2004",
+    "Grekland vinner fotbolls-EM",
+    2004,
+    "En av fotbollens största skrällar",
+    "Grekland besegrar värdnationen Portugal i finalen och blir europamästare.",
+    400_000,
+  ],
+  [
+    "Wimbledonmästerskapen 2008",
+    "Nadal vinner Wimbledonrysaren",
+    2008,
+    "Finalklassikern mot Federer",
+    "Rafael Nadal besegrar Roger Federer i en fem set lång final som slutar i skymningen.",
+    400_000,
+  ],
+  [
+    "Usain Bolt",
+    "Bolt sätter världsrekord på 100 meter",
+    2009,
+    "Rekordloppet i Berlin",
+    "Usain Bolt springer 100 meter på 9,58 sekunder.",
+    500_000,
+  ],
+  [
+    "Leicester City FC",
+    "Leicester vinner Premier League",
+    2016,
+    "Fotbollssagan mot alla odds",
+    "Leicester City blir engelska mästare efter att ha varit nederlagstippat inför säsongen.",
+    450_000,
+  ],
+];
+
 // A generic tournament photo can be misleading when it does not show the
 // named team or moment. Leave these cards image-free until a fitting Wikimedia
 // image is explicitly chosen.
@@ -7909,6 +7995,10 @@ const SPORT_IMAGE_RECHECK_TITLES = new Set(
 
 const SPORT_CARDS: HandpickedCard[] = [
   ...CURATED_SPORT_BATCH.map(sportCard),
+  ...INTERNATIONAL_SPORT_MOMENTS.map((input) => ({
+    ...classicCard(input),
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+  })),
   {
     deckIds: [
       SPORT_MOMENTS_DECK_ID,
