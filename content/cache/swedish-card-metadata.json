@@ -2630,7 +2630,8 @@
     "title": "Gummi-Tarzan"
   },
   "Världsmästerskapet i fotboll 1958": {
-    "image": "",
+    "image": "Winning brazilian National team 1958.jpg",
+    "imageChecked": true,
     "qid": "Q132533",
     "title": "Världsmästerskapet i fotboll 1958"
   },
@@ -2661,6 +2662,7 @@
   },
   "Världsmästerskapet i fotboll för damer 2003": {
     "image": "",
+    "imageChecked": true,
     "qid": "Q500308",
     "title": "Världsmästerskapet i fotboll för damer 2003"
   },
@@ -4769,9 +4771,9 @@
     "title": "The Rumble in the Jungle"
   },
   "Nadia Comăneci": {
-    "image": "",
+    "image": "Nadia_Comăneci_Montreal1976c.jpg",
     "imageChecked": true,
-    "qid": "manual-nadia-comăneci",
+    "qid": "Q33228",
     "title": "Nadia Comăneci"
   },
   "Miracle on Ice": {
@@ -4799,9 +4801,567 @@
     "title": "Wimbledonmästerskapen 2008"
   },
   "Leicester City FC": {
-    "image": "",
+    "image": "Walkers_Stadium.JPG",
     "imageChecked": true,
-    "qid": "manual-leicester-city-fc",
+    "qid": "Q19481",
     "title": "Leicester City FC"
+  },
+  "Thomas Ravelli": {
+    "image": "Thomas_Ravelli_in_January_2014.jpg",
+    "imageChecked": true,
+    "qid": "Q313710",
+    "title": "Thomas Ravelli"
+  },
+  "RMS Titanic": {
+    "image": "RMS_Titanic_3.jpg",
+    "imageChecked": true,
+    "qid": "Q25173",
+    "title": "RMS Titanic"
+  },
+  "Apollo 11": {
+    "image": "Apollo_11_insignia.png",
+    "imageChecked": true,
+    "qid": "Q43653",
+    "title": "Apollo 11"
+  },
+  "Berlinmurens fall": {
+    "image": "West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg",
+    "imageChecked": true,
+    "qid": "Q69163529",
+    "title": "Berlinmurens fall"
+  },
+  "Tjernobylolyckan": {
+    "image": "IAEA_02790015_(5613115146).jpg",
+    "imageChecked": true,
+    "qid": "Q486",
+    "title": "Tjernobylolyckan"
+  },
+  "Nelson Mandela": {
+    "image": "Nelson_Mandela-2008.jpg",
+    "imageChecked": true,
+    "qid": "Q8023",
+    "title": "Nelson Mandela"
+  },
+  "Diana, prinsessa av Wales": {
+    "image": "Diana,_Princess_of_Wales_1997_(2).jpg",
+    "imageChecked": true,
+    "qid": "Q9685",
+    "title": "Diana, prinsessa av Wales"
+  },
+  "11 september-attackerna": {
+    "image": "September_11_Photo_Montage.jpg",
+    "imageChecked": true,
+    "qid": "Q10806",
+    "title": "11 september-attackerna"
+  },
+  "Barbiedocka": {
+    "image": "Barbie_Logo.svg",
+    "imageChecked": true,
+    "qid": "Q167447",
+    "title": "Barbiedocka"
+  },
+  "Star Wars": {
+    "image": "Star_wars2.svg",
+    "imageChecked": true,
+    "qid": "Q462",
+    "title": "Star Wars"
+  },
+  "Google": {
+    "image": "Googleplexsouthside.jpg",
+    "imageChecked": true,
+    "qid": "Q95",
+    "title": "Google"
+  },
+  "Wikipedia": {
+    "image": "Wikipedia-logo-v2-sv.svg",
+    "imageChecked": true,
+    "qid": "Q52",
+    "title": "Wikipedia"
+  },
+  "Iphone": {
+    "image": "IPhone_series.jpg",
+    "imageChecked": true,
+    "qid": "Q2766",
+    "title": "Iphone"
+  },
+  "Brexit": {
+    "image": "Location_map_of_the_United_Kingdom_and_the_European_Union.svg",
+    "imageChecked": true,
+    "qid": "Q7888194",
+    "title": "Brexit"
+  },
+  "Euro": {
+    "image": "Euro_banknotes.png",
+    "imageChecked": true,
+    "qid": "Q4916",
+    "title": "Euro"
+  },
+  "Disneyland": {
+    "image": "Sleeping_Beauty_Castle_DLR.jpg",
+    "imageChecked": true,
+    "qid": "Q181185",
+    "title": "Disneyland"
+  },
+  "Bröderna Wright": {
+    "image": "WrightBrothers.jpg",
+    "imageChecked": true,
+    "qid": "Q35820",
+    "title": "Bröderna Wright"
+  },
+  "T-Ford": {
+    "image": "1925_Ford_Model_T_touring.jpg",
+    "imageChecked": true,
+    "qid": "Q182323",
+    "title": "T-Ford"
+  },
+  "Musse Pigg som Ångbåtskalle": {
+    "image": "Steamboat_Willie_1928_Poster.png",
+    "imageChecked": true,
+    "qid": "Q816038",
+    "title": "Musse Pigg som Ångbåtskalle"
+  },
+  "Wall Street-kraschen": {
+    "image": "Crowd_outside_nyse.jpg",
+    "imageChecked": true,
+    "qid": "Q201684",
+    "title": "Wall Street-kraschen"
+  },
+  "Elizabeth II av Storbritannien": {
+    "image": "Queen_Elizabeth_II_official_portrait_for_1959_tour_(retouched)_(cropped)_(3-to-4_aspect_ratio).jpg",
+    "imageChecked": true,
+    "qid": "Q9682",
+    "title": "Elizabeth II av Storbritannien"
+  },
+  "Star Trek": {
+    "image": "Free_Star_Trek.png",
+    "imageChecked": true,
+    "qid": "Q1092",
+    "title": "Star Trek"
+  },
+  "Mordet på John F. Kennedy": {
+    "image": "JFK_limousine.png",
+    "imageChecked": true,
+    "qid": "Q193484",
+    "title": "Mordet på John F. Kennedy"
+  },
+  "Martin Luther King": {
+    "image": "Martin_Luther_King,_Jr._and_Lyndon_Johnson_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q8027",
+    "title": "Martin Luther King"
+  },
+  "Macintosh": {
+    "image": "Macintosh_128k_transparency.png",
+    "imageChecked": true,
+    "qid": "Q75687",
+    "title": "Macintosh"
+  },
+  "E.T. the Extra-Terrestrial": {
+    "image": "E.T._figure_at_Madame_Tussauds_London.jpg",
+    "imageChecked": true,
+    "qid": "Q11621",
+    "title": "E.T. the Extra-Terrestrial"
+  },
+  "Simpsons": {
+    "image": "Logo_The_Simpsons.svg",
+    "imageChecked": true,
+    "qid": "Q886",
+    "title": "Simpsons"
+  },
+  "Webben": {
+    "image": "WWW_logo_by_Robert_Cailliau.svg",
+    "imageChecked": true,
+    "qid": "Q466",
+    "title": "Webben"
+  },
+  "Sovjetunionens upplösning": {
+    "image": "1991_coup_attempt1.jpg",
+    "imageChecked": true,
+    "qid": "Q5167679",
+    "title": "Sovjetunionens upplösning"
+  },
+  "Toy Story": {
+    "image": "Toy_Story_logo.svg",
+    "imageChecked": true,
+    "qid": "Q171048",
+    "title": "Toy Story"
+  },
+  "Windows 95": {
+    "image": "Windows_Logo_(1992-2001).svg",
+    "imageChecked": true,
+    "qid": "Q83370",
+    "title": "Windows 95"
+  },
+  "Matrix": {
+    "image": "The.Matrix.glmatrix.1.png",
+    "imageChecked": true,
+    "qid": "Q83495",
+    "title": "Matrix"
+  },
+  "Facebook": {
+    "image": "2023_Facebook_icon.svg",
+    "imageChecked": true,
+    "qid": "Q355",
+    "title": "Facebook"
+  },
+  "Pluto": {
+    "image": "Pluto_in_True_Color_-_High-Res.jpg",
+    "imageChecked": true,
+    "qid": "Q339",
+    "title": "Pluto"
+  },
+  "Barack Obama": {
+    "image": "President_Barack_Obama.jpg",
+    "imageChecked": true,
+    "qid": "Q76",
+    "title": "Barack Obama"
+  },
+  "Avatar (film)": {
+    "image": "Avatar-Logo-avatar.svg",
+    "imageChecked": true,
+    "qid": "Q24871",
+    "title": "Avatar (film)"
+  },
+  "Ipad": {
+    "image": "IPad_os.jpeg",
+    "imageChecked": true,
+    "qid": "Q2796",
+    "title": "Ipad"
+  },
+  "Instagram": {
+    "image": "Instagram_logo_2022.svg",
+    "imageChecked": true,
+    "qid": "Q209330",
+    "title": "Instagram"
+  },
+  "Notre-Dame de Paris": {
+    "image": "Notre-Dame_de_Paris,_4_October_2017.jpg",
+    "imageChecked": true,
+    "qid": "Q2981",
+    "title": "Notre-Dame de Paris"
+  },
+  "Barbie (film)": {
+    "image": "Barbie_(2023_movie_logo).png",
+    "imageChecked": true,
+    "qid": "Q55436290",
+    "title": "Barbie (film)"
+  },
+  "Jesse Owens": {
+    "image": "Jesse_Owens_1936.jpg",
+    "imageChecked": true,
+    "qid": "Q52651",
+    "title": "Jesse Owens"
+  },
+  "Muhammad Ali": {
+    "image": "Muhammad_Ali_NYWTS.jpg",
+    "imageChecked": true,
+    "qid": "Q36107",
+    "title": "Muhammad Ali"
+  },
+  "Mike Eruzione": {
+    "image": "Mike_Eruzione_1984.jpg",
+    "imageChecked": true,
+    "qid": "Q166106",
+    "title": "Mike Eruzione"
+  },
+  "Boris Becker": {
+    "image": "Boris_Becker_-_2019102190927_2019-04-12_Radio_Regenbogen_Award_2019_-_Sven_-_1D_X_MK_II_-_0283_-_B70I6481-2.jpg",
+    "imageChecked": true,
+    "qid": "Q76334",
+    "title": "Boris Becker"
+  },
+  "Diego Maradona": {
+    "image": "Maradona-Mundial_86_con_la_copa.JPG",
+    "imageChecked": true,
+    "qid": "Q17515",
+    "title": "Diego Maradona"
+  },
+  "Ben Johnson": {
+    "image": "Ben_Johnson_2017_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q52614",
+    "title": "Ben Johnson"
+  },
+  "Steffi Graf": {
+    "image": "Steffi_Graf_in_Hamburg_2010_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q11662",
+    "title": "Steffi Graf"
+  },
+  "Michael Jordan": {
+    "image": "Michael_Jordan_in_2014.jpg",
+    "imageChecked": true,
+    "qid": "Q41421",
+    "title": "Michael Jordan"
+  },
+  "Tiger Woods": {
+    "image": "President_Donald_Trump_hosts_a_reception_honoring_Black_History_Month_(54341713089)_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q10993",
+    "title": "Tiger Woods"
+  },
+  "Zinedine Zidane": {
+    "image": "Zinedine_Zidane_by_Tasnim_03.jpg",
+    "imageChecked": true,
+    "qid": "Q1835",
+    "title": "Zinedine Zidane"
+  },
+  "Mia Hamm": {
+    "image": "Mia_Hamm_signing_an_autograph.jpg",
+    "imageChecked": true,
+    "qid": "Q222086",
+    "title": "Mia Hamm"
+  },
+  "Steven Gerrard": {
+    "image": "Steven_Gerrard_2018.jpg",
+    "imageChecked": true,
+    "qid": "Q459830",
+    "title": "Steven Gerrard"
+  },
+  "Rafael Nadal": {
+    "image": "Rafael_Nadal_en_2024_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q10132",
+    "title": "Rafael Nadal"
+  },
+  "Michael Phelps": {
+    "image": "Michael_Phelps_Rio_Olympics_2016.jpg",
+    "imageChecked": true,
+    "qid": "Q39562",
+    "title": "Michael Phelps"
+  },
+  "Andrés Iniesta": {
+    "image": "Andrés_Iniesta_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q43729",
+    "title": "Andrés Iniesta"
+  },
+  "Simone Biles": {
+    "image": "Simone_Biles_Rio_2016e.jpg",
+    "imageChecked": true,
+    "qid": "Q7520267",
+    "title": "Simone Biles"
+  },
+  "Tom Brady": {
+    "image": "25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Tom_Brady_-_240422_191334_(cropped)_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q313381",
+    "title": "Tom Brady"
+  },
+  "Eliud Kipchoge": {
+    "image": "Eliud_Kipchoge_in_Berlin_-_2015_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q9124",
+    "title": "Eliud Kipchoge"
+  },
+  "Christian Eriksen": {
+    "image": "EriksenTottenham2016(cropped)_2.jpg",
+    "imageChecked": true,
+    "qid": "Q294951",
+    "title": "Christian Eriksen"
+  },
+  "Walt Disney": {
+    "image": "Walt_Disney_1946.JPG",
+    "imageChecked": true,
+    "qid": "Q8704",
+    "title": "Walt Disney"
+  },
+  "Sean Connery": {
+    "image": "Sean_Connery_as_James_Bond_at_Switzerland_1964_(two_thirds_crop).jpg",
+    "imageChecked": true,
+    "qid": "Q4573",
+    "title": "Sean Connery"
+  },
+  "Stanley Kubrick": {
+    "image": "Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q2001",
+    "title": "Stanley Kubrick"
+  },
+  "Marlon Brando": {
+    "image": "Marlon-Brando-in-Finland-1967_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q34012",
+    "title": "Marlon Brando"
+  },
+  "Steven Spielberg": {
+    "image": "MKr25425_Steven_Spielberg_(Berlinale_2023).jpg",
+    "imageChecked": true,
+    "qid": "Q8877",
+    "title": "Steven Spielberg"
+  },
+  "Bill Murray": {
+    "image": "Bill_Murray_at_the_2024_Toronto_International_Film_Festival_(Riff_Raff)_2_(3x4_cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q29250",
+    "title": "Bill Murray"
+  },
+  "Michael J. Fox": {
+    "image": "Michael_J_Fox_2020.jpg",
+    "imageChecked": true,
+    "qid": "Q395274",
+    "title": "Michael J. Fox"
+  },
+  "Macaulay Culkin": {
+    "image": "Macaulay_Culkin_-_Home_Alone_35th.jpg",
+    "imageChecked": true,
+    "qid": "Q103578",
+    "title": "Macaulay Culkin"
+  },
+  "Arnold Schwarzenegger": {
+    "image": "11162022_-_SMC_-_California_-_Day_1-25-2_(52505143390)_(4x5_cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q2685",
+    "title": "Arnold Schwarzenegger"
+  },
+  "Tom Hanks": {
+    "image": "TomHanksPrincEdw031223_(11_of_41)_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q2263",
+    "title": "Tom Hanks"
+  },
+  "Quentin Tarantino": {
+    "image": "Quentin_Tarantino_by_Gage_Skidmore.jpg",
+    "imageChecked": true,
+    "qid": "Q3772",
+    "title": "Quentin Tarantino"
+  },
+  "Leonardo DiCaprio": {
+    "image": "Leonardo_DiCaprio_-_BFI_Southbank.jpg",
+    "imageChecked": true,
+    "qid": "Q38111",
+    "title": "Leonardo DiCaprio"
+  },
+  "Daniel Radcliffe": {
+    "image": "DanielRadcliffe.jpg",
+    "imageChecked": true,
+    "qid": "Q38119",
+    "title": "Daniel Radcliffe"
+  },
+  "Elijah Wood": {
+    "image": "Elijah_Wood_(47955397556)_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q483771",
+    "title": "Elijah Wood"
+  },
+  "Heath Ledger": {
+    "image": "Heath_Ledger.jpg",
+    "imageChecked": true,
+    "qid": "Q40572",
+    "title": "Heath Ledger"
+  },
+  "Emilia Clarke": {
+    "image": "Emilia_Clarke_by_Gage_Skidmore_2_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q235132",
+    "title": "Emilia Clarke"
+  },
+  "Kristen Bell": {
+    "image": "Kristen_Bell_Paris_Fashion_Week_Spring_Summer_2020_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q178882",
+    "title": "Kristen Bell"
+  },
+  "Millie Bobby Brown": {
+    "image": "Millie_Bobby_Brown_2025_(1).png",
+    "imageChecked": true,
+    "qid": "Q25936414",
+    "title": "Millie Bobby Brown"
+  },
+  "Eiffeltornet": {
+    "image": "Tour_Eiffel_Wikimedia_Commons.jpg",
+    "imageChecked": true,
+    "qid": "Q243",
+    "title": "Eiffeltornet"
+  },
+  "Panamakanalen": {
+    "image": "Panama_Canal_Gatun_Locks.jpg",
+    "imageChecked": true,
+    "qid": "Q7350",
+    "title": "Panamakanalen"
+  },
+  "Förenta nationerna": {
+    "image": "UN_emblem_blue.svg",
+    "imageChecked": true,
+    "qid": "Q1065",
+    "title": "Förenta nationerna"
+  },
+  "Nato": {
+    "image": "Flag_of_NATO.svg",
+    "imageChecked": true,
+    "qid": "Q7184",
+    "title": "Nato"
+  },
+  "Jurij Gagarin": {
+    "image": "Yuri_Gagarin_(1961)_-_Restoration.jpg",
+    "imageChecked": true,
+    "qid": "Q7327",
+    "title": "Jurij Gagarin"
+  },
+  "Valentina Teresjkova": {
+    "image": "Valentina_Tereshkova_in_Moscow_06-2015_img1.jpg",
+    "imageChecked": true,
+    "qid": "Q44371",
+    "title": "Valentina Teresjkova"
+  },
+  "Christiaan Barnard": {
+    "image": "Christiaan_Barnard_(1968).jpg",
+    "imageChecked": true,
+    "qid": "Q188803",
+    "title": "Christiaan Barnard"
+  },
+  "Concorde": {
+    "image": "Concorde_g-boab_heathrow.jpg",
+    "imageChecked": true,
+    "qid": "Q6505",
+    "title": "Concorde"
+  },
+  "Apollo 13": {
+    "image": "Apollo_13-insignia.png",
+    "imageChecked": true,
+    "qid": "Q182252",
+    "title": "Apollo 13"
+  },
+  "Voyager 1": {
+    "image": "Voyager.jpg",
+    "imageChecked": true,
+    "qid": "Q48469",
+    "title": "Voyager 1"
+  },
+  "Challenger (rymdfärja)": {
+    "image": "Space_Shuttle_Challenger_(04-04-1983).JPEG",
+    "imageChecked": true,
+    "qid": "Q54382",
+    "title": "Challenger (rymdfärja)"
+  },
+  "Hubbleteleskopet": {
+    "image": "Hubble_Space_Telescope_(27946391011).jpg",
+    "imageChecked": true,
+    "qid": "Q2513",
+    "title": "Hubbleteleskopet"
+  },
+  "Kanaltunneln": {
+    "image": "Course_Channeltunnel_sv.svg",
+    "imageChecked": true,
+    "qid": "Q10257",
+    "title": "Kanaltunneln"
+  },
+  "Jordbävningen i Indiska oceanen 2004": {
+    "image": "2004-tsunami.jpg",
+    "imageChecked": true,
+    "qid": "Q130754",
+    "title": "Jordbävningen i Indiska oceanen 2004"
+  },
+  "Fukushima-olyckan": {
+    "image": "Fukushima_accidents_overview_map.svg",
+    "imageChecked": true,
+    "qid": "Q171178",
+    "title": "Fukushima-olyckan"
+  },
+  "Anders Gärderud": {
+    "image": "Anders_Garderud_1976.jpg",
+    "imageChecked": true,
+    "qid": "Q491023",
+    "title": "Anders Gärderud"
   }
 }

@@ -1,5 +1,75 @@
 [
   {
+    "fact": "Jesse Owens vinner fyra guldmedaljer i friidrott vid OS i Berlin.",
+    "image": "Jesse_Owens_1936.jpg",
+    "pageViews": 500000,
+    "qid": "Q52651",
+    "subtitle": "Fyra guld vid OS i Berlin",
+    "title": "Jesse Owens tar fyra guld i Berlin",
+    "wikipediaSlug": "Jesse_Owens",
+    "year": 1936
+  },
+  {
+    "fact": "Sverige möter Brasilien i VM-finalen på Råsunda inför hemmapubliken.",
+    "image": "Pele_con_brasil_(cropped).jpg",
+    "pageViews": 500000,
+    "qid": "Q132533",
+    "subtitle": "VM-finalen på Råsunda",
+    "title": "Sverige möter Brasilien i VM-final på Råsunda",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_1958",
+    "year": 1958
+  },
+  {
+    "fact": "Ingemar Johansson slår Floyd Patterson på Yankee Stadium och blir världsmästare i tungvikt.",
+    "image": "Ingemar_Johansson_1960.jpg",
+    "pageViews": 500000,
+    "qid": "Q335872",
+    "subtitle": "Titelmatchen mot Floyd Patterson",
+    "title": "Ingemar Johansson slår Floyd Patterson",
+    "wikipediaSlug": "Ingemar_Johansson",
+    "year": 1959
+  },
+  {
+    "fact": "Muhammad Ali besegrar George Foreman i titelmatchen Rumble in the Jungle i Kinshasa.",
+    "image": "Muhammad_Ali_NYWTS.jpg",
+    "pageViews": 500000,
+    "qid": "Q36107",
+    "subtitle": "Rumble in the Jungle",
+    "title": "Ali slår Foreman i Rumble in the Jungle",
+    "wikipediaSlug": "Muhammad_Ali",
+    "year": 1974
+  },
+  {
+    "fact": "Ingemar Stenmark vinner både storslalom och slalom vid vinter-OS i Lake Placid.",
+    "image": "Ingemar_Stenmark,_June_2014-P6170012-1.jpg",
+    "pageViews": 500000,
+    "qid": "Q530",
+    "subtitle": "Dubbla OS-guld i Lake Placid",
+    "title": "Stenmark tar dubbla OS-guld",
+    "wikipediaSlug": "Ingemar_Stenmark",
+    "year": 1980
+  },
+  {
+    "fact": "Björn Borg besegrar John McEnroe i en femsetare och tar sin femte raka Wimbledon-titel.",
+    "image": "Björn_Borg_2013-11-06_001_(cropped).jpg",
+    "pageViews": 500000,
+    "qid": "Q104506",
+    "subtitle": "Wimbledonfinalen mot McEnroe",
+    "title": "Borg vinner sin femte raka Wimbledonfinal",
+    "wikipediaSlug": "Bj%C3%B6rn_Borg",
+    "year": 1980
+  },
+  {
+    "fact": "Gunde Svan vinner både 15 kilometer och stafetten vid OS i Sarajevo.",
+    "image": "20190225_Seefeld_3347_Gunde_Svan.jpg",
+    "pageViews": 500000,
+    "qid": "Q357142",
+    "subtitle": "Dubbla OS-guld i Sarajevo",
+    "title": "Gunde Svan tar dubbla OS-guld",
+    "wikipediaSlug": "Gunde_Svan",
+    "year": 1984
+  },
+  {
     "fact": "Diego Maradona gör både det omtalade Guds hand-målet och Århundradets mål.",
     "image": "",
     "pageViews": 500000,
@@ -10,6 +80,136 @@
     "year": 1986
   },
   {
+    "fact": "Diego Maradona gör det omtalade Guds hand-målet i VM-kvartsfinalen mot England.",
+    "image": "Maradona-Mundial_86_con_la_copa.JPG",
+    "pageViews": 500000,
+    "qid": "Q17515",
+    "subtitle": "VM-kvartsfinalen mot England",
+    "title": "Maradona gör Guds hand mot England",
+    "wikipediaSlug": "Diego_Maradona",
+    "year": 1986
+  },
+  {
+    "fact": "USA:s basketlandslag med Michael Jordan och Magic Johnson vinner OS-guld i Barcelona.",
+    "image": "Michael_Jordan_in_2014.jpg",
+    "pageViews": 500000,
+    "qid": "Q41421",
+    "subtitle": "Dream Team i Barcelona",
+    "title": "Dream Team vinner OS-guld i basket",
+    "wikipediaSlug": "Michael_Jordan",
+    "year": 1992
+  },
+  {
+    "fact": "Jan-Ove Waldner vinner OS-finalen i bordtennis mot Jean-Michel Saive.",
+    "image": "Jan-Ove_Waldner.JPG",
+    "pageViews": 500000,
+    "qid": "Q345360",
+    "subtitle": "OS-finalen i bordtennis",
+    "title": "Waldner vinner OS-guld i bordtennis",
+    "wikipediaSlug": "Jan-Ove_Waldner",
+    "year": 1992
+  },
+  {
+    "fact": "Peter Forsberg sätter den avgörande straffen mot Kanada när Tre Kronor vinner OS-finalen i Lillehammer.",
+    "image": "Peter_Forsberg_2016-03-17_001_(cropped).jpg",
+    "pageViews": 500000,
+    "qid": "Q348416",
+    "subtitle": "OS-finalen i Lillehammer",
+    "title": "Forsberg avgör OS-finalen med Zorrostraffen",
+    "wikipediaSlug": "Peter_Forsberg",
+    "year": 1994
+  },
+  {
+    "fact": "Tomas Ravelli räddar den avgörande straffen mot Rumänien och skickar Sverige till VM-semifinal.",
+    "image": "Thomas_Ravelli_in_January_2014.jpg",
+    "pageViews": 500000,
+    "qid": "Q313710",
+    "subtitle": "VM-kvartsfinalen i USA",
+    "title": "Ravelli räddar straffen mot Rumänien",
+    "wikipediaSlug": "Thomas_Ravelli",
+    "year": 1994
+  },
+  {
+    "fact": "Tiger Woods vinner Masters Tournament med rekordstor segermarginal och tar sin första majorseger.",
+    "image": "President_Donald_Trump_hosts_a_reception_honoring_Black_History_Month_(54341713089)_(cropped).jpg",
+    "pageViews": 500000,
+    "qid": "Q10993",
+    "subtitle": "Genombrottet på Augusta",
+    "title": "Tiger Woods vinner sin första Masters",
+    "wikipediaSlug": "Tiger_Woods",
+    "year": 1997
+  },
+  {
+    "fact": "Zinedine Zidane gör två nickmål när Frankrike besegrar Brasilien i VM-finalen på hemmaplan.",
+    "image": "Zinedine_Zidane_by_Tasnim_03.jpg",
+    "pageViews": 500000,
+    "qid": "Q1835",
+    "subtitle": "VM-finalen mot Brasilien",
+    "title": "Zidane nickar Frankrike till VM-guld",
+    "wikipediaSlug": "Zinedine_Zidane",
+    "year": 1998
+  },
+  {
+    "fact": "Zlatan Ibrahimović klackar in 1–1 mot Italien i Sveriges EM-premiär.",
+    "image": "Zlatan_Ibrahimović_June_2018.jpg",
+    "pageViews": 500000,
+    "qid": "Q46896",
+    "subtitle": "EM-målet mot Italien",
+    "title": "Zlatan klackar in mot Italien",
+    "wikipediaSlug": "Zlatan_Ibrahimovi%C4%87",
+    "year": 2004
+  },
+  {
+    "fact": "Carolina Klüft vinner sjukampen vid OS i Aten med stor marginal.",
+    "image": "Carolina_Klüft_in_2025-4-2.jpg",
+    "pageViews": 500000,
+    "qid": "Q223672",
+    "subtitle": "Sjukampen i Aten",
+    "title": "Carolina Klüft tar OS-guld i sjukamp",
+    "wikipediaSlug": "Carolina_Kl%C3%BCft",
+    "year": 2004
+  },
+  {
+    "fact": "Tre Kronor besegrar Finland med 3–2 och vinner OS-finalen i Turin.",
+    "image": "Henrik_Lundqvist_awarded_as_the_best_goalie_of_all_time_in_Swedish_hockey-2.jpg",
+    "pageViews": 500000,
+    "qid": "Q645868",
+    "subtitle": "OS-finalen mot Finland i Turin",
+    "title": "Tre Kronor slår Finland i OS-finalen i Turin",
+    "wikipediaSlug": "Ishockey_vid_olympiska_vinterspelen_2006",
+    "year": 2006
+  },
+  {
+    "fact": "Zinedine Zidane blir utvisad efter att ha skallat Marco Materazzi i VM-finalen mot Italien.",
+    "image": "Zinedine_Zidane_by_Tasnim_03.jpg",
+    "pageViews": 500000,
+    "qid": "Q1835",
+    "subtitle": "VM-finalen mot Italien",
+    "title": "Zidane skallar Materazzi i VM-finalen",
+    "wikipediaSlug": "Zinedine_Zidane",
+    "year": 2006
+  },
+  {
+    "fact": "Rafael Nadal besegrar Roger Federer i den fem set långa Wimbledonfinalen som ofta kallas en av de bästa någonsin.",
+    "image": "Rafael_Nadal_en_2024_(cropped).jpg",
+    "pageViews": 500000,
+    "qid": "Q10132",
+    "subtitle": "Wimbledonfinalen mot Federer",
+    "title": "Nadal slår Federer i Wimbledonfinalen",
+    "wikipediaSlug": "Rafael_Nadal",
+    "year": 2008
+  },
+  {
+    "fact": "Michael Phelps vinner åtta guldmedaljer vid OS i Peking.",
+    "image": "Michael_Phelps_Rio_Olympics_2016.jpg",
+    "pageViews": 500000,
+    "qid": "Q39562",
+    "subtitle": "Åtta guld vid OS i Peking",
+    "title": "Michael Phelps vinner åtta OS-guld",
+    "wikipediaSlug": "Michael_Phelps",
+    "year": 2008
+  },
+  {
     "fact": "Usain Bolt springer 100 meter på 9,58 sekunder.",
     "image": "Usain_Bolt_Rio_100m_final_2016k.jpg",
     "pageViews": 500000,
@@ -18,6 +218,96 @@
     "title": "Bolt sätter världsrekord på 100 meter",
     "wikipediaSlug": "Usain_Bolt",
     "year": 2009
+  },
+  {
+    "fact": "Charlotte Kalla vinner 10 kilometer fristil och tar Sveriges första guld vid OS i Vancouver.",
+    "image": "20190228_FIS_NWSC_Seefeld_Medal_Ceremony_Team_Sweden_850_5868_Charlotte_Kalla.jpg",
+    "pageViews": 500000,
+    "qid": "Q233270",
+    "subtitle": "10 kilometer fristil i Vancouver",
+    "title": "Kalla vinner OS-guld på 10 kilometer",
+    "wikipediaSlug": "Charlotte_Kalla",
+    "year": 2010
+  },
+  {
+    "fact": "Andrés Iniesta gör finalens enda mål mot Nederländerna och ger Spanien sitt första VM-guld.",
+    "image": "Andrés_Iniesta_(cropped).jpg",
+    "pageViews": 500000,
+    "qid": "Q43729",
+    "subtitle": "VM-finalen mot Nederländerna",
+    "title": "Iniesta avgör VM-finalen för Spanien",
+    "wikipediaSlug": "Andr%C3%A9s_Iniesta",
+    "year": 2010
+  },
+  {
+    "fact": "Usain Bolt försvarar OS-guldet på 100 meter vid OS i London.",
+    "image": "Usain_Bolt_Rio_100m_final_2016k.jpg",
+    "pageViews": 500000,
+    "qid": "Q1189",
+    "subtitle": "100 meter vid OS i London",
+    "title": "Bolt försvarar OS-guldet på 100 meter",
+    "wikipediaSlug": "Usain_Bolt",
+    "year": 2012
+  },
+  {
+    "fact": "Zlatan Ibrahimović gör ett cykelsparksmål från långt håll mot England på Friends Arena.",
+    "image": "Zlatan_Ibrahimović_June_2018.jpg",
+    "pageViews": 500000,
+    "qid": "Q46896",
+    "subtitle": "Cykelsparken mot England",
+    "title": "Zlatan gör cykelsparksmålet mot England",
+    "wikipediaSlug": "Zlatan_Ibrahimovi%C4%87",
+    "year": 2012
+  },
+  {
+    "fact": "Leicester City vinner Premier League efter att ha varit kraftigt nederlagstippat före säsongen.",
+    "image": "Walkers_Stadium.JPG",
+    "pageViews": 500000,
+    "qid": "Q19481",
+    "subtitle": "Fotbollssagan mot alla odds",
+    "title": "Leicester blir engelska mästare",
+    "wikipediaSlug": "Leicester_City_FC",
+    "year": 2016
+  },
+  {
+    "fact": "Cristiano Ronaldo och Portugal besegrar Frankrike i EM-finalen i Paris.",
+    "image": "2025_Cristiano_Ronaldo_(cropped).jpg",
+    "pageViews": 500000,
+    "qid": "Q11571",
+    "subtitle": "EM-finalen i Paris",
+    "title": "Portugal vinner fotbolls-EM",
+    "wikipediaSlug": "Cristiano_Ronaldo",
+    "year": 2016
+  },
+  {
+    "fact": "Sarah Sjöström vinner 100 meter fjärilsim och sätter världsrekord vid OS i Rio.",
+    "image": "Sarah_Sjöström_2013.jpg",
+    "pageViews": 500000,
+    "qid": "Q235315",
+    "subtitle": "Världsrekordet i Rio",
+    "title": "Sarah Sjöström tar OS-guld med världsrekord",
+    "wikipediaSlug": "Sarah_Sj%C3%B6str%C3%B6m",
+    "year": 2016
+  },
+  {
+    "fact": "Nils van der Poel vinner både 5 000 och 10 000 meter vid OS i Peking.",
+    "image": "Nils_van_der_Poel_in_2022.jpg",
+    "pageViews": 500000,
+    "qid": "Q15615329",
+    "subtitle": "Dubbla OS-guld i Peking",
+    "title": "Nils van der Poel tar dubbla OS-guld i Peking",
+    "wikipediaSlug": "Nils_van_der_Poel",
+    "year": 2022
+  },
+  {
+    "fact": "Lionel Messi leder Argentina till VM-guld efter straffar mot Frankrike i en dramatisk final.",
+    "image": "Lionel_Messi_White_House_2026_(3x4_cropped).jpg",
+    "pageViews": 500000,
+    "qid": "Q615",
+    "subtitle": "VM-finalen mot Frankrike",
+    "title": "Messi vinner VM-finalen med Argentina",
+    "wikipediaSlug": "Lionel_Messi",
+    "year": 2022
   },
   {
     "fact": "Leicester City blir engelska mästare efter att ha varit nederlagstippat inför säsongen.",
@@ -70,6 +360,26 @@
     "year": 1936
   },
   {
+    "fact": "Sixten Jernberg vinner 50 kilometer vid OS i Cortina d'Ampezzo.",
+    "image": "Sixten_Jernberg,_Innsbruck_1964.jpg",
+    "pageViews": 400000,
+    "qid": "Q314683",
+    "subtitle": "Femmilen i Cortina d'Ampezzo",
+    "title": "Sixten Jernberg vinner OS-femmilen",
+    "wikipediaSlug": "Sixten_Jernberg",
+    "year": 1956
+  },
+  {
+    "fact": "Sven-Åke Lundbäck vinner 15 kilometer vid OS i Sapporo.",
+    "image": "Holmenkollen_Ski_Festival_1972_DEX_PR_014035.jpg",
+    "pageViews": 400000,
+    "qid": "Q945846",
+    "subtitle": "15 kilometer i Sapporo",
+    "title": "Lundbäck vinner OS-guld på 15 kilometer",
+    "wikipediaSlug": "Sven-%C3%85ke_Lundb%C3%A4ck",
+    "year": 1972
+  },
+  {
     "fact": "Muhammad Ali besegrar George Foreman i den klassiska titelmatchen i Kinshasa.",
     "image": "",
     "pageViews": 400000,
@@ -78,6 +388,36 @@
     "title": "Ali återtar världsmästartiteln",
     "wikipediaSlug": "The_Rumble_in_the_Jungle",
     "year": 1974
+  },
+  {
+    "fact": "Anders Gärderud vinner 3 000 meter hinder vid OS i Montréal på världsrekordtid.",
+    "image": "Anders_Garderud_1976.jpg",
+    "pageViews": 400000,
+    "qid": "Q491023",
+    "subtitle": "3 000 meter hinder i Montréal",
+    "title": "Gärderud vinner OS-guld med världsrekord",
+    "wikipediaSlug": "Anders_G%C3%A4rderud",
+    "year": 1976
+  },
+  {
+    "fact": "Nadia Comăneci blir den första gymnasten som får högsta möjliga poäng, 10,0, vid OS.",
+    "image": "Nadia_Comăneci_Montreal1976c.jpg",
+    "pageViews": 400000,
+    "qid": "Q33228",
+    "subtitle": "Den första perfekta tian i OS",
+    "title": "Comăneci får en perfekt tia vid OS",
+    "wikipediaSlug": "Nadia_Com%C4%83neci",
+    "year": 1976
+  },
+  {
+    "fact": "Frank Andersson vinner sitt första VM-guld i grekisk-romersk brottning.",
+    "image": "Frank_Andersson_in_January_2014.jpg",
+    "pageViews": 400000,
+    "qid": "Q1442881",
+    "subtitle": "Första VM-guldet i brottning",
+    "title": "Frank Andersson tar sitt första VM-guld",
+    "wikipediaSlug": "Frank_Andersson",
+    "year": 1977
   },
   {
     "fact": "USA:s unga ishockeylag besegrar storfavoriten Sovjetunionen vid vinter-OS.",
@@ -90,6 +430,136 @@
     "year": 1980
   },
   {
+    "fact": "Bengt Baron vinner 100 meter ryggsim vid OS i Moskva.",
+    "image": "Bengt_Baron.jpg",
+    "pageViews": 400000,
+    "qid": "Q817213",
+    "subtitle": "100 meter ryggsim i Moskva",
+    "title": "Bengt Baron vinner OS-guld på 100 meter ryggsim",
+    "wikipediaSlug": "Bengt_Baron",
+    "year": 1980
+  },
+  {
+    "fact": "Thomas Wassberg vinner femmilen vid OS i Lake Placid med en hundradels sekund före Juha Mieto.",
+    "image": "Thomas_Wassberg_2013-12-11_001.jpg",
+    "pageViews": 400000,
+    "qid": "Q195578",
+    "subtitle": "Femmilen i Lake Placid",
+    "title": "Wassberg vinner OS-femmilen med en hundradel",
+    "wikipediaSlug": "Thomas_Wassberg",
+    "year": 1980
+  },
+  {
+    "fact": "USA besegrar Sovjetunionen i ishockeyturneringen vid vinter-OS i Lake Placid.",
+    "image": "Mike_Eruzione_1984.jpg",
+    "pageViews": 400000,
+    "qid": "Q166106",
+    "subtitle": "Miracle on Ice i Lake Placid",
+    "title": "USA skräller mot Sovjet i Miracle on Ice",
+    "wikipediaSlug": "Mike_Eruzione",
+    "year": 1980
+  },
+  {
+    "fact": "Sverige besegrar England efter straffar och vinner det första dam-EM i fotboll.",
+    "image": "European_Competition_for_Women's_Football_1984_map.svg",
+    "pageViews": 400000,
+    "qid": "Q847626",
+    "subtitle": "Finalen mot England",
+    "title": "Sverige vinner dam-EM efter straffar mot England",
+    "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_1984",
+    "year": 1984
+  },
+  {
+    "fact": "Boris Becker vinner Wimbledon som 17-åring och blir den yngste herrmästaren i turneringens historia.",
+    "image": "Boris_Becker_-_2019102190927_2019-04-12_Radio_Regenbogen_Award_2019_-_Sven_-_1D_X_MK_II_-_0283_-_B70I6481-2.jpg",
+    "pageViews": 400000,
+    "qid": "Q76334",
+    "subtitle": "Wimbledon som 17-åring",
+    "title": "Boris Becker vinner Wimbledon som 17-åring",
+    "wikipediaSlug": "Boris_Becker",
+    "year": 1985
+  },
+  {
+    "fact": "Stefan Edberg besegrar Boris Becker i Wimbledonfinalen.",
+    "image": "Stefan_Edberg_2012-04-25_001.jpg",
+    "pageViews": 400000,
+    "qid": "Q189542",
+    "subtitle": "Wimbledonfinalen mot Becker",
+    "title": "Edberg slår Becker i Wimbledonfinalen",
+    "wikipediaSlug": "Stefan_Edberg",
+    "year": 1988
+  },
+  {
+    "fact": "Ben Johnson vinner 100 meter vid OS i Seoul men fråntas guldet efter ett positivt dopningstest.",
+    "image": "Ben_Johnson_2017_(cropped).jpg",
+    "pageViews": 400000,
+    "qid": "Q52614",
+    "subtitle": "Dopningsskandalen i Seoul",
+    "title": "Ben Johnson fråntas OS-guldet",
+    "wikipediaSlug": "Ben_Johnson",
+    "year": 1988
+  },
+  {
+    "fact": "Steffi Graf vinner alla fyra Grand Slam-turneringar och OS-guld under samma år.",
+    "image": "Steffi_Graf_in_Hamburg_2010_(cropped).jpg",
+    "pageViews": 400000,
+    "qid": "Q11662",
+    "subtitle": "Tennisens Golden Slam",
+    "title": "Steffi Graf tar Golden Slam",
+    "wikipediaSlug": "Steffi_Graf",
+    "year": 1988
+  },
+  {
+    "fact": "Mats Sundin väljs som förste spelare i NHL-draften av Quebec Nordiques.",
+    "image": "Mats_Sundin_in_feb_2015.jpg",
+    "pageViews": 400000,
+    "qid": "Q368528",
+    "subtitle": "Förstavalet i NHL-draften",
+    "title": "Mats Sundin väljs först i NHL-draften",
+    "wikipediaSlug": "Mats_Sundin",
+    "year": 1989
+  },
+  {
+    "fact": "Pernilla Wiberg vinner storslalomen vid OS i Albertville.",
+    "image": "Pernilla_Wiberg_2011-12-06_001.jpg",
+    "pageViews": 400000,
+    "qid": "Q234886",
+    "subtitle": "Storslalomen i Albertville",
+    "title": "Pernilla Wiberg vinner OS-guld i storslalom",
+    "wikipediaSlug": "Pernilla_Wiberg",
+    "year": 1992
+  },
+  {
+    "fact": "Mia Hamm och USA vinner damernas fotbolls-VM efter straffar mot Kina inför rekordpublik i Pasadena.",
+    "image": "Mia_Hamm_signing_an_autograph.jpg",
+    "pageViews": 400000,
+    "qid": "Q222086",
+    "subtitle": "VM-finalen mot Kina",
+    "title": "USA vinner dam-VM efter straffar",
+    "wikipediaSlug": "Mia_Hamm",
+    "year": 1999
+  },
+  {
+    "fact": "Mikael Ljungberg vinner den tyngsta klassen i grekisk-romersk brottning vid OS i Sydney.",
+    "image": "Wrestling (1487304815).jpg",
+    "pageViews": 400000,
+    "qid": "Q1933004",
+    "subtitle": "Tungvikten i Sydney",
+    "title": "Mikael Ljungberg vinner OS-guld i tungvikt",
+    "wikipediaSlug": "Mikael_Ljungberg",
+    "year": 2000
+  },
+  {
+    "fact": "Sverige tar silver i damernas fotbolls-VM efter finalen mot Tyskland i Carson.",
+    "image": "Victoria_Svensson.jpg",
+    "pageViews": 400000,
+    "qid": "Q500308",
+    "subtitle": "VM-finalen mot Tyskland",
+    "title": "Sverige tar VM-silver efter final mot Tyskland",
+    "wikipediaSlug": "V%C3%A4rldsm%C3%A4sterskapet_i_fotboll_f%C3%B6r_damer_2003",
+    "year": 2003
+  },
+  {
     "fact": "Grekland besegrar värdnationen Portugal i finalen och blir europamästare.",
     "image": "",
     "pageViews": 400000,
@@ -98,6 +568,46 @@
     "title": "Grekland vinner fotbolls-EM",
     "wikipediaSlug": "Europam%C3%A4sterskapet_i_fotboll_2004",
     "year": 2004
+  },
+  {
+    "fact": "Stefan Holm vinner höjdhoppet vid OS i Aten efter att ha klarat 2,36 meter.",
+    "image": "Stefan_Holm_2013.jpg",
+    "pageViews": 400000,
+    "qid": "Q311360",
+    "subtitle": "Höjdhoppsfinalen i Aten",
+    "title": "Stefan Holm tar OS-guld i höjdhopp",
+    "wikipediaSlug": "Stefan_Holm",
+    "year": 2004
+  },
+  {
+    "fact": "Kajsa Bergqvist vinner höjdhoppet vid VM i Helsingfors.",
+    "image": "Kajsa_Bergqvist,_Unicef-ambassadörer..jpg",
+    "pageViews": 400000,
+    "qid": "Q231965",
+    "subtitle": "Höjdhoppsfinalen i Helsingfors",
+    "title": "Kajsa Bergqvist vinner VM-guld i Helsingfors",
+    "wikipediaSlug": "Kajsa_Bergqvist",
+    "year": 2005
+  },
+  {
+    "fact": "Steven Gerrards Liverpool hämtar upp 0–3 mot Milan och vinner Champions League-finalen efter straffar.",
+    "image": "Steven_Gerrard_2018.jpg",
+    "pageViews": 400000,
+    "qid": "Q459830",
+    "subtitle": "Finalvändningen i Istanbul",
+    "title": "Liverpool vänder Champions League-finalen i Istanbul",
+    "wikipediaSlug": "Steven_Gerrard",
+    "year": 2005
+  },
+  {
+    "fact": "Anja Pärson vinner slalom och tar sitt första OS-guld i Turin.",
+    "image": "Anja_Pärson_Semmering_2008.jpg",
+    "pageViews": 400000,
+    "qid": "Q1933",
+    "subtitle": "Slalomen i Turin",
+    "title": "Anja Pärson tar OS-guld i slalom",
+    "wikipediaSlug": "Anja_P%C3%A4rson",
+    "year": 2006
   },
   {
     "fact": "Anja Pärson vinner störtlopp, super-G och superkombination i Åre.",
@@ -120,6 +630,16 @@
     "year": 2008
   },
   {
+    "fact": "Sarah Sjöström vinner 100 meter fjärilsim vid VM i Rom som 15-åring.",
+    "image": "Sarah_Sjöström_2013.jpg",
+    "pageViews": 400000,
+    "qid": "Q235315",
+    "subtitle": "100 meter fjärilsim i Rom",
+    "title": "Sarah Sjöström blir världsmästare som 15-åring",
+    "wikipediaSlug": "Sarah_Sj%C3%B6str%C3%B6m",
+    "year": 2009
+  },
+  {
     "fact": "Charlotte Kalla hämtar in täten på sista sträckan och säkrar stafettguldet.",
     "image": "Laura Biathlon & Ski Complex during 2014 Winter Olympics (ski stadium).JPG",
     "pageViews": 400000,
@@ -128,6 +648,66 @@
     "title": "Kalla spurtar hem stafettguldet",
     "wikipediaSlug": "L%C3%A4ngdskid%C3%A5kning_vid_olympiska_vinterspelen_2014",
     "year": 2014
+  },
+  {
+    "fact": "Simone Biles vinner fyra guldmedaljer i gymnastik vid OS i Rio.",
+    "image": "Simone_Biles_Rio_2016e.jpg",
+    "pageViews": 400000,
+    "qid": "Q7520267",
+    "subtitle": "Fyra guld vid OS i Rio",
+    "title": "Simone Biles vinner fyra OS-guld",
+    "wikipediaSlug": "Simone_Biles",
+    "year": 2016
+  },
+  {
+    "fact": "Tom Brady leder New England Patriots från 3–28 till seger mot Atlanta Falcons i Super Bowl-finalen.",
+    "image": "25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Tom_Brady_-_240422_191334_(cropped)_(cropped).jpg",
+    "pageViews": 400000,
+    "qid": "Q313381",
+    "subtitle": "Super Bowl-vändningen mot Atlanta",
+    "title": "Patriots vänder Super Bowl från 3–28",
+    "wikipediaSlug": "Tom_Brady",
+    "year": 2017
+  },
+  {
+    "fact": "André Myhrer vinner slalomen vid OS i Pyeongchang.",
+    "image": "FIS_Alpine_Skiing_World_Cup_in_Stockholm_2019_Andre_Myhrer_17.jpg",
+    "pageViews": 400000,
+    "qid": "Q142993",
+    "subtitle": "Slalomen i Pyeongchang",
+    "title": "André Myhrer vinner OS-slalomen",
+    "wikipediaSlug": "Andr%C3%A9_Myhrer",
+    "year": 2018
+  },
+  {
+    "fact": "Stina Nilsson vinner sprinten vid OS i Pyeongchang.",
+    "image": "Nilsson_S._–_Biathlon_2023_Nove_Mesto_444X.jpg",
+    "pageViews": 400000,
+    "qid": "Q2977362",
+    "subtitle": "Sprinten i Pyeongchang",
+    "title": "Stina Nilsson vinner OS-sprinten",
+    "wikipediaSlug": "Stina_Nilsson",
+    "year": 2018
+  },
+  {
+    "fact": "Christian Eriksen kollapsar på planen i Danmarks EM-match mot Finland och räddas av sjukvårdare.",
+    "image": "EriksenTottenham2016(cropped)_2.jpg",
+    "pageViews": 400000,
+    "qid": "Q294951",
+    "subtitle": "EM-matchen mot Finland",
+    "title": "Eriksen kollapsar i EM-matchen mot Finland",
+    "wikipediaSlug": "Christian_Eriksen",
+    "year": 2021
+  },
+  {
+    "fact": "Ebba Andersson vinner skiathlon vid skid-VM i Planica.",
+    "image": "20190228_FIS_NWSC_Seefeld_Medal_Ceremony_Team_Sweden_850_5895_Ebba_Andersson.jpg",
+    "pageViews": 400000,
+    "qid": "Q19516340",
+    "subtitle": "Skiathlon vid skid-VM i Planica",
+    "title": "Ebba Andersson vinner VM-guld i skiathlon",
+    "wikipediaSlug": "Ebba_Andersson",
+    "year": 2023
   },
   {
     "fact": "Armand Duplantis vinner sitt andra raka OS-guld och sätter världsrekord.",
