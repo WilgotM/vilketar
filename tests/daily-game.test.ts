@@ -158,3 +158,51 @@ test("daily queue protects a repeated visible title in the opening", () => {
   assert.ok(queue.slice(0, 20).every((entry) => entry.title !== "Kort 1"));
   assert.ok(queue.slice(20).some((entry) => entry.title === "Kort 1"));
 });
+
+test("ordinary daily games give music an approximate ten percent chance", () => {
+  const musicDeck = {
+    ...deck,
+    id: "all-entertainment-music",
+    slug: "music",
+  };
+  const otherDeck = {
+    ...deck,
+    id: "all-swedish-classics-all",
+    slug: "all",
+  };
+  const allDeck = {
+    ...deck,
+    children: [musicDeck, otherDeck],
+    id: "all",
+    slug: "all",
+  };
+  const musicCards = Array.from({ length: 20 }, (_, index) =>
+    card(`M${index}`, `Musikkort ${index}`, 1900 + index),
+  );
+  const otherCards = Array.from({ length: 120 }, (_, index) =>
+    card(`O${index}`, `Vanligt kort ${index}`, 1950 + index),
+  );
+
+  const dailyCardsByDeckId = new Map([
+    [musicDeck.id, musicCards],
+    [otherDeck.id, otherCards],
+  ]);
+  const musicCounts = Array.from({ length: 40 }, (_, index) => {
+    const dateKey = `2026-06-${String(index + 1).padStart(2, "0")}`;
+    const queue = createDailyCardQueue(
+      allDeck,
+      dailyCardsByDeckId,
+      "hard",
+      dateKey,
+    );
+
+    assert.equal(queue.length, DAILY_CARD_COUNT);
+    return queue.filter((entry) => entry.deckId === musicDeck.id).length;
+  });
+  const average =
+    musicCounts.reduce((sum, count) => sum + count, 0) / musicCounts.length;
+
+  assert.ok(musicCounts.some((count) => count > 10));
+  assert.ok(musicCounts.some((count) => count < 10));
+  assert.ok(average > 7 && average < 13);
+});

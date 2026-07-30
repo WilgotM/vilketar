@@ -67,6 +67,34 @@
       ]
     },
     {
+      "id": "all-world-events",
+      "slug": "varldshandelser",
+      "title": "Världshändelser",
+      "themeHue": 36,
+      "frequency": 1.4,
+      "difficultyCounts": {
+        "easy": 71,
+        "normal": 71,
+        "hard": 71
+      },
+      "minScore": 1000,
+      "children": [
+        {
+          "id": "all-world-events-all",
+          "slug": "allt",
+          "title": "Allt",
+          "themeHue": 36,
+          "frequency": 1,
+          "difficultyCounts": {
+            "easy": 71,
+            "normal": 71,
+            "hard": 71
+          },
+          "minScore": 1000
+        }
+      ]
+    },
+    {
       "id": "all-sport",
       "slug": "sport",
       "title": "Sport",
@@ -74,9 +102,9 @@
       "frequency": 0.1,
       "minScore": 1000,
       "difficultyCounts": {
-        "easy": 95,
-        "normal": 132,
-        "hard": 132
+        "easy": 143,
+        "normal": 186,
+        "hard": 186
       },
       "children": [
         {
@@ -85,12 +113,25 @@
           "title": "Sportögonblick",
           "themeHue": 144,
           "frequency": 2.6,
-          "minScore": 1000,
           "difficultyCounts": {
-            "easy": 95,
-            "normal": 132,
-            "hard": 132
-          }
+            "easy": 111,
+            "normal": 154,
+            "hard": 154
+          },
+          "minScore": 1000
+        },
+        {
+          "id": "all-sport-svensk-sport",
+          "slug": "svensk-sport",
+          "title": "Svensk sport",
+          "themeHue": 120,
+          "frequency": 2,
+          "difficultyCounts": {
+            "easy": 32,
+            "normal": 32,
+            "hard": 32
+          },
+          "minScore": 1000
         }
       ]
     }
