@@ -96,7 +96,6 @@
   },
   "Sverige och Europeiska unionen": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Sverige_och_Europeiska_unionen",
     "title": "Sverige och Europeiska unionen"
   },
@@ -147,7 +146,6 @@
   },
   "Wake Me Up (Avicii-låt)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Wake_Me_Up_(Avicii-l%C3%A5t)",
     "title": "Wake Me Up (Avicii-låt)"
   },
@@ -173,7 +171,6 @@
   },
   "Europe (musikgrupp)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Europe_(musikgrupp)",
     "title": "Europe (musikgrupp)"
   },
@@ -304,7 +301,6 @@
   },
   "First Aid Kit (musikgrupp)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-First_Aid_Kit_(musikgrupp)",
     "title": "First Aid Kit (musikgrupp)"
   },
@@ -600,13 +596,11 @@
   },
   "Sune (bokserie)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Sune_(bokserie)",
     "title": "Sune (bokserie)"
   },
   "Bert (bokserie)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Bert_(bokserie)",
     "title": "Bert (bokserie)"
   },
@@ -682,7 +676,6 @@
   },
   "Kånken": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-K%C3%A5nken",
     "title": "Kånken"
   },
@@ -1068,7 +1061,6 @@
   },
   "Vasa (regalskepp)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Vasa_(regalskepp)",
     "title": "Vasa (regalskepp)"
   },
@@ -1229,7 +1221,6 @@
   },
   "Sagan om den lilla farbrorn": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Sagan_om_den_lilla_farbrorn",
     "title": "Sagan om den lilla farbrorn"
   },
@@ -1430,7 +1421,6 @@
   },
   "Mordpodden": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Mordpodden",
     "title": "Mordpodden"
   },
@@ -1656,13 +1646,11 @@
   },
   "Chess (musikal)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Chess_(musikal)",
     "title": "Chess (musikal)"
   },
   "Mamma Mia! (musikal)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Mamma_Mia!_(musikal)",
     "title": "Mamma Mia! (musikal)"
   },
@@ -1678,13 +1666,11 @@
   },
   "Polly (godis)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Polly_(godis)",
     "title": "Polly (godis)"
   },
   "Bilar (godis)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Bilar_(godis)",
     "title": "Bilar (godis)"
   },
@@ -1720,7 +1706,6 @@
   },
   "Felix (livsmedelsföretag)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Felix_(livsmedelsf%C3%B6retag)",
     "title": "Felix (livsmedelsföretag)"
   },
@@ -1736,7 +1721,6 @@
   },
   "Estrella (varumärke)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Estrella_(varum%C3%A4rke)",
     "title": "Estrella (varumärke)"
   },
@@ -1752,7 +1736,6 @@
   },
   "Wasa (knäckebröd)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Wasa_(kn%C3%A4ckebr%C3%B6d)",
     "title": "Wasa (knäckebröd)"
   },
@@ -1768,7 +1751,6 @@
   },
   "Falcon (öl)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Falcon_(%C3%B6l)",
     "title": "Falcon (öl)"
   },
@@ -1779,7 +1761,6 @@
   },
   "Loka (mineralvatten)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Loka_(mineralvatten)",
     "title": "Loka (mineralvatten)"
   },
@@ -1870,7 +1851,6 @@
   },
   "Kry (företag)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Kry_(f%C3%B6retag)",
     "title": "Kry (företag)"
   },
@@ -1911,7 +1891,6 @@
   },
   "Cirkus (byggnad)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Cirkus_(byggnad)",
     "title": "Cirkus (byggnad)"
   },
@@ -2317,7 +2296,6 @@
   },
   "Ecco (skor)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Ecco_(skor)",
     "title": "Ecco (skor)"
   },
@@ -2378,7 +2356,6 @@
   },
   "BRIO-tåg": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-BRIO-t%C3%A5g",
     "title": "BRIO-tåg"
   },
@@ -2509,13 +2486,11 @@
   },
   "Nickelodeon (Sverige)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Nickelodeon_(Sverige)",
     "title": "Nickelodeon (Sverige)"
   },
   "Disney Channel (Skandinavien)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Disney_Channel_(Skandinavien)",
     "title": "Disney Channel (Skandinavien)"
   },
@@ -2611,7 +2586,6 @@
   },
   "Hedvig och ugglan": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Hedvig_och_ugglan",
     "title": "Hedvig och ugglan"
   },
@@ -2647,18 +2621,17 @@
   },
   "Häxorna (bok)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-H%C3%A4xorna_(bok)",
     "title": "Häxorna (bok)"
   },
   "Gummi-Tarzan": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Gummi-Tarzan",
     "title": "Gummi-Tarzan"
   },
   "Världsmästerskapet i fotboll 1958": {
-    "image": "",
+    "image": "Winning brazilian National team 1958.jpg",
+    "imageChecked": true,
     "qid": "Q132533",
     "title": "Världsmästerskapet i fotboll 1958"
   },
@@ -2689,6 +2662,7 @@
   },
   "Världsmästerskapet i fotboll för damer 2003": {
     "image": "",
+    "imageChecked": true,
     "qid": "Q500308",
     "title": "Världsmästerskapet i fotboll för damer 2003"
   },
@@ -2854,7 +2828,6 @@
   },
   "Sarek nationalpark": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Sarek_nationalpark",
     "title": "Sarek nationalpark"
   },
@@ -3015,7 +2988,6 @@
   },
   "Jeopardy! (Sverige)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Jeopardy!_(Sverige)",
     "title": "Jeopardy! (Sverige)"
   },
@@ -4001,7 +3973,6 @@
   },
   "Polismyndigheten (Sverige)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Polismyndigheten_(Sverige)",
     "title": "Polismyndigheten (Sverige)"
   },
@@ -4012,7 +3983,6 @@
   },
   "Allmän rösträtt i Sverige": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Allm%C3%A4n_r%C3%B6str%C3%A4tt_i_Sverige",
     "title": "Allmän rösträtt i Sverige"
   },
@@ -4068,7 +4038,6 @@
   },
   "Samkönade äktenskap i Sverige": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Samk%C3%B6nade_%C3%A4ktenskap_i_Sverige",
     "title": "Samkönade äktenskap i Sverige"
   },
@@ -4094,7 +4063,6 @@
   },
   "Mobilt Bank-id": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-Mobilt_Bank-id",
     "title": "Mobilt Bank-id"
   },
@@ -4480,7 +4448,6 @@
   },
   "It Takes Two (datorspel)": {
     "image": "",
-    "imageChecked": true,
     "qid": "manual-It_Takes_Two_(datorspel)",
     "title": "It Takes Two (datorspel)"
   },
@@ -4786,21 +4753,21 @@
     "title": "Jan Boklöv"
   },
   "Olympiska sommarspelen 1936": {
-    "image": "Berlin36-2.jpg",
+    "image": "",
     "imageChecked": true,
-    "qid": "Q8150",
+    "qid": "manual-olympiska-sommarspelen-1936",
     "title": "Olympiska sommarspelen 1936"
   },
   "Olympiska sommarspelen 1968": {
     "image": "",
     "imageChecked": true,
-    "qid": "Q8429",
+    "qid": "manual-olympiska-sommarspelen-1968",
     "title": "Olympiska sommarspelen 1968"
   },
   "The Rumble in the Jungle": {
-    "image": "Anderson_ali.jpg",
+    "image": "",
     "imageChecked": true,
-    "qid": "Q939560",
+    "qid": "manual-the-rumble-in-the-jungle",
     "title": "The Rumble in the Jungle"
   },
   "Nadia Comăneci": {
@@ -4810,27 +4777,27 @@
     "title": "Nadia Comăneci"
   },
   "Miracle on Ice": {
-    "image": "DaveChristian.jpg",
+    "image": "",
     "imageChecked": true,
-    "qid": "Q287405",
+    "qid": "manual-miracle-on-ice",
     "title": "Miracle on Ice"
   },
   "Guds hand": {
     "image": "",
     "imageChecked": true,
-    "qid": "Q1272783",
+    "qid": "manual-guds-hand",
     "title": "Guds hand"
   },
   "Europamästerskapet i fotboll 2004": {
-    "image": "Euro2004OpeningCeremony.jpg",
+    "image": "",
     "imageChecked": true,
-    "qid": "Q102920",
+    "qid": "manual-europamästerskapet-i-fotboll-2004",
     "title": "Europamästerskapet i fotboll 2004"
   },
   "Wimbledonmästerskapen 2008": {
-    "image": "VenusWilliams.jpg",
+    "image": "",
     "imageChecked": true,
-    "qid": "Q388312",
+    "qid": "manual-wimbledonmästerskapen-2008",
     "title": "Wimbledonmästerskapen 2008"
   },
   "Leicester City FC": {
@@ -4839,53 +4806,17 @@
     "qid": "Q19481",
     "title": "Leicester City FC"
   },
-  "Gustav Vasas intåg i Stockholm": {
-    "image": "GustavVasasintåg.jpg",
+  "Thomas Ravelli": {
+    "image": "Thomas_Ravelli_in_January_2014.jpg",
     "imageChecked": true,
-    "qid": "Q1800916",
-    "title": "Gustav Vasas intåg i Stockholm 1523"
+    "qid": "Q313710",
+    "title": "Thomas Ravelli"
   },
-  "Freden i Roskilde": {
-    "image": "Zoomed_in_Map_of_the_Treaty_of_Roskilde.svg",
+  "RMS Titanic": {
+    "image": "RMS_Titanic_3.jpg",
     "imageChecked": true,
-    "qid": "Q212234",
-    "title": "Freden i Roskilde"
-  },
-  "Finska kriget": {
-    "image": "Finnish_War_Collage_5.png",
-    "imageChecked": true,
-    "qid": "Q736268",
-    "title": "Finska kriget"
-  },
-  "Ådalshändelserna": {
-    "image": "1led0513adalen.jpg",
-    "imageChecked": true,
-    "qid": "Q1104917",
-    "title": "Ådalshändelserna"
-  },
-  "Tjernobylolyckan": {
-    "image": "IAEA_02790015_(5613115146).jpg",
-    "imageChecked": true,
-    "qid": "Q486",
-    "title": "Tjernobylolyckan"
-  },
-  "Berlinmurens fall": {
-    "image": "West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg",
-    "imageChecked": true,
-    "qid": "Q69163529",
-    "title": "Berlinmurens fall"
-  },
-  "Tsunamikatastrofen i Indiska oceanen": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "manual-Tsunamikatastrofen_i_Indiska_oceanen",
-    "title": "Tsunamikatastrofen i Indiska oceanen"
-  },
-  "11 september-attackerna": {
-    "image": "September_11_Photo_Montage.jpg",
-    "imageChecked": true,
-    "qid": "Q10806",
-    "title": "11 september-attackerna"
+    "qid": "Q25173",
+    "title": "RMS Titanic"
   },
   "Apollo 11": {
     "image": "Apollo_11_insignia.png",
@@ -4893,113 +4824,47 @@
     "qid": "Q43653",
     "title": "Apollo 11"
   },
-  "Vostok 1": {
-    "image": "Vostok_spacecraft.jpg",
+  "Berlinmurens fall": {
+    "image": "West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg",
     "imageChecked": true,
-    "qid": "Q182524",
-    "title": "Vostok 1"
+    "qid": "Q69163529",
+    "title": "Berlinmurens fall"
   },
-  "Titanic": {
-    "image": "RMS_Titanic_3.jpg",
+  "Tjernobylolyckan": {
+    "image": "IAEA_02790015_(5613115146).jpg",
     "imageChecked": true,
-    "qid": "Q25173",
-    "title": "RMS Titanic"
+    "qid": "Q486",
+    "title": "Tjernobylolyckan"
   },
-  "Covid-19-pandemin": {
-    "image": "SARS-CoV-2_without_background.png",
+  "Nelson Mandela": {
+    "image": "Nelson_Mandela-2008.jpg",
     "imageChecked": true,
-    "qid": "Q81068910",
-    "title": "Covid-19-pandemin"
+    "qid": "Q8023",
+    "title": "Nelson Mandela"
   },
-  "Suezkrisen": {
-    "image": "Tanks_Destroyed_Sinai.jpg",
+  "Diana, prinsessa av Wales": {
+    "image": "Diana,_Princess_of_Wales_1997_(2).jpg",
     "imageChecked": true,
-    "qid": "Q49101",
-    "title": "Suezkrisen"
+    "qid": "Q9685",
+    "title": "Diana, prinsessa av Wales"
   },
-  "Indiens självständighet": {
-    "image": "",
+  "11 september-attackerna": {
+    "image": "September_11_Photo_Montage.jpg",
     "imageChecked": true,
-    "qid": "manual-Indiens_sj%C3%A4lvst%C3%A4ndighet",
-    "title": "Indiens självständighet"
+    "qid": "Q10806",
+    "title": "11 september-attackerna"
   },
-  "Apartheid": {
-    "image": "DurbanSign1989.jpg",
+  "Barbiedocka": {
+    "image": "Barbie_Logo.svg",
     "imageChecked": true,
-    "qid": "Q11409",
-    "title": "Apartheid"
+    "qid": "Q167447",
+    "title": "Barbiedocka"
   },
-  "Europeiska unionen": {
-    "image": "Flag_of_Europe.svg",
+  "Star Wars": {
+    "image": "Star_wars2.svg",
     "imageChecked": true,
-    "qid": "Q458",
-    "title": "Europeiska unionen"
-  },
-  "Trepunktsbälte": {
-    "image": "Seat_belt_BX.jpg",
-    "imageChecked": true,
-    "qid": "Q200403",
-    "title": "Säkerhetsbälte"
-  },
-  "Anders Celsius": {
-    "image": "Anders-Celsius-Head.jpg",
-    "imageChecked": true,
-    "qid": "Q81130",
-    "title": "Anders Celsius"
-  },
-  "Marie Curie": {
-    "image": "Marie_Curie_c._1920s.jpg",
-    "imageChecked": true,
-    "qid": "Q7186",
-    "title": "Marie Curie"
-  },
-  "Albert Einstein": {
-    "image": "Albert_Einstein_Head_cleaned.jpg",
-    "imageChecked": true,
-    "qid": "Q937",
-    "title": "Albert Einstein"
-  },
-  "Penicillin": {
-    "image": "Penicillin_Core_v2.svg",
-    "imageChecked": true,
-    "qid": "Q12190",
-    "title": "Penicillin"
-  },
-  "DNA": {
-    "image": "Hybridogenesis_in_water_frogs_gametes.svg",
-    "imageChecked": true,
-    "qid": "Q7430",
-    "title": "DNA"
-  },
-  "Louise Brown": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "Q234027",
-    "title": "Louise Brown"
-  },
-  "Dolly (får)": {
-    "image": "Dollyscotland.JPG",
-    "imageChecked": true,
-    "qid": "Q171433",
-    "title": "Dolly (får)"
-  },
-  "World Wide Web": {
-    "image": "WWW_logo_by_Robert_Cailliau.svg",
-    "imageChecked": true,
-    "qid": "Q466",
-    "title": "Webben"
-  },
-  "IPhone (första generationen)": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "manual-IPhone_(f%C3%B6rsta_generationen)",
-    "title": "IPhone (första generationen)"
-  },
-  "YouTube": {
-    "image": "YouTube results screenshot.jpg",
-    "imageChecked": true,
-    "qid": "Q866",
-    "title": "Youtube"
+    "qid": "Q462",
+    "title": "Star Wars"
   },
   "Google": {
     "image": "Googleplexsouthside.jpg",
@@ -5013,437 +4878,11 @@
     "qid": "Q52",
     "title": "Wikipedia"
   },
-  "Linux": {
-    "image": "Tux.svg",
-    "imageChecked": true,
-    "qid": "Q388",
-    "title": "Linux"
-  },
-  "SMS": {
-    "image": "Party_SMS.jpg",
-    "imageChecked": true,
-    "qid": "Q43024",
-    "title": "Sms"
-  },
-  "Global Positioning System": {
-    "image": "ConstellationGPS.gif",
-    "imageChecked": true,
-    "qid": "Q18822",
-    "title": "Global Positioning System"
-  },
-  "James Webb-teleskopet": {
-    "image": "James_Webb_Space_Telescope.jpg",
-    "imageChecked": true,
-    "qid": "Q186447",
-    "title": "James Webb-teleskopet"
-  },
-  "ChatGPT": {
-    "image": "ChatGPT 5.2 Thinking Wikipedia historia PDF screenshot.png",
-    "imageChecked": true,
-    "qid": "Q115564437",
-    "title": "ChatGPT"
-  },
-  "LEGO": {
-    "image": "LEGO_logo.svg",
-    "imageChecked": true,
-    "qid": "Q170484",
-    "title": "Lego"
-  },
-  "Rubiks kub": {
-    "image": "Rubik's_cube.svg",
-    "imageChecked": true,
-    "qid": "Q47043",
-    "title": "Rubiks kub"
-  },
-  "Saab": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "Q212291",
-    "title": "Saab"
-  },
-  "Post-it": {
-    "image": "Post-It.jpg",
-    "imageChecked": true,
-    "qid": "Q181331",
-    "title": "Post-It"
-  },
-  "Barbie": {
-    "image": "Barbie_Logo.svg",
-    "imageChecked": true,
-    "qid": "Q167447",
-    "title": "Barbiedocka"
-  },
-  "Tamagotchi": {
-    "image": "Tamagotchi_0124_ubt.jpeg",
-    "imageChecked": true,
-    "qid": "Q207786",
-    "title": "Tamagotchi"
-  },
-  "Game Boy": {
-    "image": "GameBoy_pocket.jpg",
-    "imageChecked": true,
-    "qid": "Q2916338",
-    "title": "Game Boy"
-  },
-  "PlayStation": {
-    "image": "PlayStationConsole_bkg-transparent.png",
-    "imageChecked": true,
-    "qid": "Q10677",
-    "title": "Playstation"
-  },
-  "Wii": {
-    "image": "Wii-Console.png",
-    "imageChecked": true,
-    "qid": "Q8079",
-    "title": "Wii"
-  },
-  "Netflix": {
-    "image": "Netflix headquarters.jpg",
-    "imageChecked": true,
-    "qid": "Q907311",
-    "title": "Netflix"
-  },
-  "Airbnb": {
-    "image": "888 Brannan, San Francisco, 2016.jpg",
-    "imageChecked": true,
-    "qid": "Q63327",
-    "title": "Airbnb"
-  },
-  "Facebook": {
-    "image": "2023_Facebook_icon.svg",
-    "imageChecked": true,
-    "qid": "Q355",
-    "title": "Facebook"
-  },
-  "Instagram": {
-    "image": "Instagram_logo_2022.svg",
-    "imageChecked": true,
-    "qid": "Q209330",
-    "title": "Instagram"
-  },
-  "Globen": {
-    "image": "Globen_från_Hammarbybacken,_2016a.jpg",
-    "imageChecked": true,
-    "qid": "Q32926",
-    "title": "Globen"
-  },
-  "Moderna Museet": {
-    "image": "Moderna_museet,_2009.jpg",
-    "imageChecked": true,
-    "qid": "Q1274511",
-    "title": "Moderna Museet"
-  },
-  "Sagrada Família": {
-    "image": "SF_maig_2026.jpg",
-    "imageChecked": true,
-    "qid": "Q48435",
-    "title": "Sagrada Família"
-  },
-  "Eiffeltornet": {
-    "image": "Tour_Eiffel_Wikimedia_Commons.jpg",
-    "imageChecked": true,
-    "qid": "Q243",
-    "title": "Eiffeltornet"
-  },
-  "Operahuset i Sydney": {
-    "image": "Sydney_Opera_House_-_Dec_2008.jpg",
-    "imageChecked": true,
-    "qid": "Q45178",
-    "title": "Operahuset i Sydney"
-  },
-  "Louvren": {
-    "image": "Facade_of_the_Pavillon_Sully_in_2007.jpg",
-    "imageChecked": true,
-    "qid": "Q19675",
-    "title": "Louvren"
-  },
-  "Nalle Puh": {
-    "image": "Winnie-the-Pooh_088.png",
-    "imageChecked": true,
-    "qid": "Q188574",
-    "title": "Nalle Puh"
-  },
-  "Sagan om ringen": {
-    "image": "One_Ring_Blender_Render.png",
-    "imageChecked": true,
-    "qid": "Q15228",
-    "title": "Sagan om ringen"
-  },
-  "Harry Potter och de vises sten": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "Q43361",
-    "title": "Harry Potter och de vises sten"
-  },
-  "Tintin": {
-    "image": "Tintin_et_Milou_billboard_2.jpg",
-    "imageChecked": true,
-    "qid": "Q52986",
-    "title": "Tintin"
-  },
-  "Handbolls-EM 1994": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "manual-Handbolls-EM_1994",
-    "title": "Handbolls-EM 1994"
-  },
-  "Innebandy-VM 1996": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "manual-Innebandy-VM_1996",
-    "title": "Innebandy-VM 1996"
-  },
-  "Sverige–Kanada i curling 2018": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "manual-Sverige%E2%80%93Kanada_i_curling_2018",
-    "title": "Sverige–Kanada i curling 2018"
-  },
-  "Sarah Sjöström vid olympiska sommarspelen 2016": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "manual-Sarah_Sj%C3%B6str%C3%B6m_vid_olympiska_sommarspelen_2016",
-    "title": "Sarah Sjöström vid olympiska sommarspelen 2016"
-  },
-  "Franska öppna 1983": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "manual-Franska_%C3%B6ppna_1983",
-    "title": "Franska öppna 1983"
-  },
-  "Magna Carta": {
-    "image": "Magna_Carta_(British_Library_Cotton_MS_Augustus_II.106).jpg",
-    "imageChecked": true,
-    "qid": "Q12519",
-    "title": "Magna Charta"
-  },
-  "Franska revolutionen": {
-    "image": "Anonymous_-_Prise_de_la_Bastille.jpg",
-    "imageChecked": true,
-    "qid": "Q6534",
-    "title": "Franska revolutionen"
-  },
-  "Amerikanska självständighetsförklaringen": {
-    "image": "United_States_Declaration_of_Independence.jpg",
-    "imageChecked": true,
-    "qid": "Q127912",
-    "title": "USA:s självständighetsförklaring"
-  },
-  "Första världskriget": {
-    "image": "WWImontage.jpg",
-    "imageChecked": true,
-    "qid": "Q361",
-    "title": "Första världskriget"
-  },
-  "Andra världskriget": {
-    "image": "Changde_battle.jpg",
-    "imageChecked": true,
-    "qid": "Q362",
-    "title": "Andra världskriget"
-  },
-  "Atombombningarna av Hiroshima och Nagasaki": {
-    "image": "Atomic_bomb_1945_mission_map.svg",
-    "imageChecked": true,
-    "qid": "Q488",
-    "title": "Atombomberna över Hiroshima och Nagasaki"
-  },
-  "Hubbleteleskopet": {
-    "image": "Hubble_Space_Telescope_(27946391011).jpg",
-    "imageChecked": true,
-    "qid": "Q2513",
-    "title": "Hubbleteleskopet"
-  },
-  "Telefonen": {
-    "image": "Alexander_Graham_Bell_by_E._J._Holmes,_1892,_albumen_silver_print,_from_the_National_Portrait_Gallery_-_NPG-NPG_2010_28GrahamBell-000001_(cropped).jpg",
-    "imageChecked": true,
-    "qid": "Q11035",
-    "title": "Telefon"
-  },
-  "Charles Lindbergh": {
-    "image": "Charles_Lindbergh_(Harris_&_Ewing_photo,_cropped).jpg",
-    "imageChecked": true,
-    "qid": "Q1618",
-    "title": "Charles Lindbergh"
-  },
-  "Polaroid": {
-    "image": "Polaroid,_land_camera_model_180,_02.jpg",
-    "imageChecked": true,
-    "qid": "Q494389",
-    "title": "Polaroid"
-  },
-  "Ipod": {
-    "image": "IPod_Line.png",
-    "imageChecked": true,
-    "qid": "Q9479",
-    "title": "Ipod"
-  },
-  "Amazon.com": {
-    "image": "Amazon_Tower_I_topped_out,_June_2015.jpg",
-    "imageChecked": true,
-    "qid": "Q3884",
-    "title": "Amazon (företag)"
-  },
-  "Zoom Video Communications": {
-    "image": "Zoomheadquarters.jpg",
-    "imageChecked": true,
-    "qid": "Q17460900",
-    "title": "Zoom Video Communications"
-  },
-  "Uber": {
-    "image": "Uber_logo_2018.svg",
-    "imageChecked": true,
-    "qid": "Q780442",
-    "title": "Uber"
-  },
-  "Burj Khalifa": {
-    "image": "Burj_Khalifa_Night_View_04.jpg",
-    "imageChecked": true,
-    "qid": "Q12495",
-    "title": "Burj Khalifa"
-  },
-  "Golden Gate-bron": {
-    "image": "Golden_Gate_Bridge_as_seen_from_Fort_Point.jpg",
-    "imageChecked": true,
-    "qid": "Q44440",
-    "title": "Golden Gate-bron"
-  },
-  "Millennium Bridge": {
-    "image": "Mill.bridge.from.tate.modern.arp.jpg",
-    "imageChecked": true,
-    "qid": "Q44057",
-    "title": "London Millennium Bridge"
-  },
-  "Trivial Pursuit": {
-    "image": "US_Navy_030305-N-0923G-035_Airman_Eric_Micolichek_and_Machinist's_Mate_3rd_Class_Walter_Blackburn_play_Trivial_Pursuit_during_game_night_aboard_the_aircraft_carrier_USS_Harry_S._Truman_(CVN_75).jpg",
-    "imageChecked": true,
-    "qid": "Q17250",
-    "title": "Trivial Pursuit"
-  },
-  "Michael Phelps": {
-    "image": "Michael_Phelps_Rio_Olympics_2016.jpg",
-    "imageChecked": true,
-    "qid": "Q39562",
-    "title": "Michael Phelps"
-  },
-  "Nintendo Entertainment System": {
-    "image": "NES-Console-Set.png",
-    "imageChecked": true,
-    "qid": "Q172742",
-    "title": "Nintendo Entertainment System"
-  },
-  "Tour de France": {
-    "image": "Tour_de_France_logo.svg",
-    "imageChecked": true,
-    "qid": "Q33881",
-    "title": "Tour de France"
-  },
-  "Nobelmuseet": {
-    "image": "Nobelmuseet_2009.jpg",
-    "imageChecked": true,
-    "qid": "Q1968711",
-    "title": "Nobelprismuseet"
-  },
-  "Rosettastenen": {
-    "image": "Rosetta_Stone.jpg",
-    "imageChecked": true,
-    "qid": "Q48584",
-    "title": "Rosettestenen"
-  },
-  "Napoleon I": {
-    "image": "Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
-    "imageChecked": true,
-    "qid": "Q517",
-    "title": "Napoleon I"
-  },
-  "Trettonde tillägget": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "manual-Trettonde_till%C3%A4gget",
-    "title": "Trettonde tillägget"
-  },
-  "Ryska revolutionen": {
-    "image": "19170704_Riot_on_Nevsky_prosp_Petrograd.jpg",
-    "imageChecked": true,
-    "qid": "Q8729",
-    "title": "Ryska revolutionen"
-  },
-  "Nationernas förbund": {
-    "image": "Palais_des_nations.jpg",
-    "imageChecked": true,
-    "qid": "Q38130",
-    "title": "Nationernas förbund"
-  },
-  "D-dagen": {
-    "image": "1944_NormandyLST.jpg",
-    "imageChecked": true,
-    "qid": "Q16470",
-    "title": "Landstigningen i Normandie"
-  },
-  "Förenta nationerna": {
-    "image": "UN_emblem_blue.svg",
-    "imageChecked": true,
-    "qid": "Q1065",
-    "title": "Förenta nationerna"
-  },
-  "Israels självständighetsförklaring": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "manual-Israels_sj%C3%A4lvst%C3%A4ndighetsf%C3%B6rklaring",
-    "title": "Israels självständighetsförklaring"
-  },
-  "Koreakriget": {
-    "image": "Korean_War_Montage_2.png",
-    "imageChecked": true,
-    "qid": "Q8663",
-    "title": "Koreakriget"
-  },
-  "Kubanska revolutionen": {
-    "image": "CheyFidel.jpg",
-    "imageChecked": true,
-    "qid": "Q11264",
-    "title": "Kubanska revolutionen"
-  },
-  "Massakern på Himmelska fridens torg": {
-    "image": "Tiananmen_Square,_Beijing,_China_1988_(1).jpg",
-    "imageChecked": true,
-    "qid": "Q99717",
-    "title": "Protesterna och massakern på Himmelska fridens torg"
-  },
-  "Sammetsrevolutionen": {
-    "image": "Prague_November_1989_-_Old_Town_Square.jpg",
-    "imageChecked": true,
-    "qid": "Q182817",
-    "title": "Sammetsrevolutionen"
-  },
-  "Maastrichtfördraget": {
-    "image": "GER — BY — Regensburg - Donaumarkt 1 (Museum der Bayerischen Geschichte; Vertrag von Maastricht) (cropped).JPG",
-    "imageChecked": true,
-    "qid": "Q11146",
-    "title": "Maastrichtfördraget"
-  },
-  "Folkmordet i Rwanda": {
-    "image": "Nyamata_Memorial_Site_13.jpg",
-    "imageChecked": true,
-    "qid": "Q131297",
-    "title": "Folkmordet i Rwanda"
-  },
-  "Nelson Mandela": {
-    "image": "Nelson_Mandela-2008.jpg",
-    "imageChecked": true,
-    "qid": "Q8023",
-    "title": "Nelson Mandela"
-  },
-  "Fukushima-olyckan": {
-    "image": "Fukushima_accidents_overview_map.svg",
-    "imageChecked": true,
-    "qid": "Q171178",
-    "title": "Fukushima-olyckan"
-  },
-  "Parisavtalet": {
-    "image": "Treaty_of_Paris_by_Benjamin_West_1783.jpg",
-    "imageChecked": true,
-    "qid": "Q217450",
-    "title": "Parisavtalet"
+  "Iphone": {
+    "image": "IPhone_series.jpg",
+    "imageChecked": true,
+    "qid": "Q2766",
+    "title": "Iphone"
   },
   "Brexit": {
     "image": "Location_map_of_the_United_Kingdom_and_the_European_Union.svg",
@@ -5451,131 +4890,137 @@
     "qid": "Q7888194",
     "title": "Brexit"
   },
-  "Olympiska sommarspelen 1896": {
-    "image": "Commemorative_album_of_1896_Olympic_Games_-_cover_by_E._Gilliéron.jpg",
+  "Euro": {
+    "image": "Euro_banknotes.png",
     "imageChecked": true,
-    "qid": "Q8080",
-    "title": "Olympiska sommarspelen 1896"
+    "qid": "Q4916",
+    "title": "Euro"
   },
-  "Pasteurisering": {
-    "image": "",
+  "Disneyland": {
+    "image": "Sleeping_Beauty_Castle_DLR.jpg",
     "imageChecked": true,
-    "qid": "manual-Pasteurisering",
-    "title": "Pasteurisering"
+    "qid": "Q181185",
+    "title": "Disneyland"
   },
-  "Periodiska systemet": {
-    "image": "Simple_Periodic_Table_Chart-en.svg",
+  "Bröderna Wright": {
+    "image": "WrightBrothers.jpg",
     "imageChecked": true,
-    "qid": "Q10693",
-    "title": "Periodiska systemet"
+    "qid": "Q35820",
+    "title": "Bröderna Wright"
   },
-  "Röntgenstrålning": {
-    "image": "Spectre.svg",
+  "T-Ford": {
+    "image": "1925_Ford_Model_T_touring.jpg",
     "imageChecked": true,
-    "qid": "Q34777",
-    "title": "Röntgenstrålning"
+    "qid": "Q182323",
+    "title": "T-Ford"
   },
-  "Wright Flyer": {
-    "image": "",
+  "Musse Pigg som Ångbåtskalle": {
+    "image": "Steamboat_Willie_1928_Poster.png",
     "imageChecked": true,
-    "qid": "manual-Wright_Flyer",
-    "title": "Wright Flyer"
+    "qid": "Q816038",
+    "title": "Musse Pigg som Ångbåtskalle"
   },
-  "Insulin": {
-    "image": "2014-365-307_Eight_Bottles_(22753934382).jpg",
+  "Wall Street-kraschen": {
+    "image": "Crowd_outside_nyse.jpg",
     "imageChecked": true,
-    "qid": "Q50265665",
-    "title": "Insulin"
+    "qid": "Q201684",
+    "title": "Wall Street-kraschen"
   },
-  "Radar": {
-    "image": "Sonar_Principle-sv.svg",
+  "Elizabeth II av Storbritannien": {
+    "image": "Queen_Elizabeth_II_official_portrait_for_1959_tour_(retouched)_(cropped)_(3-to-4_aspect_ratio).jpg",
     "imageChecked": true,
-    "qid": "Q47528",
-    "title": "Radar"
+    "qid": "Q9682",
+    "title": "Elizabeth II av Storbritannien"
   },
-  "ENIAC": {
-    "image": "Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg",
+  "Star Trek": {
+    "image": "Free_Star_Trek.png",
     "imageChecked": true,
-    "qid": "Q169399",
-    "title": "ENIAC"
+    "qid": "Q1092",
+    "title": "Star Trek"
   },
-  "Transistor": {
-    "image": "Transistorer_(cropped).jpg",
+  "Mordet på John F. Kennedy": {
+    "image": "JFK_limousine.png",
     "imageChecked": true,
-    "qid": "Q5339",
-    "title": "Transistor"
+    "qid": "Q193484",
+    "title": "Mordet på John F. Kennedy"
   },
-  "Laser": {
-    "image": "Light_Amplification_by_Stimulated_Emission_of_Radiation.jpg",
+  "Martin Luther King": {
+    "image": "Martin_Luther_King,_Jr._and_Lyndon_Johnson_(cropped).jpg",
     "imageChecked": true,
-    "qid": "Q38867",
-    "title": "Laser"
+    "qid": "Q8027",
+    "title": "Martin Luther King"
   },
-  "P-piller": {
-    "image": "Pillpacketopen.jpg",
+  "Macintosh": {
+    "image": "Macintosh_128k_transparency.png",
     "imageChecked": true,
-    "qid": "Q817281",
-    "title": "P-piller"
+    "qid": "Q75687",
+    "title": "Macintosh"
   },
-  "ARPANET": {
-    "image": "Arpanet logical map, march 1977.png",
+  "E.T. the Extra-Terrestrial": {
+    "image": "E.T._figure_at_Madame_Tussauds_London.jpg",
     "imageChecked": true,
-    "qid": "Q177524",
-    "title": "Arpanet"
+    "qid": "Q11621",
+    "title": "E.T. the Extra-Terrestrial"
   },
-  "Diskett": {
-    "image": "Floppy_disk_2009_G1.jpg",
+  "Simpsons": {
+    "image": "Logo_The_Simpsons.svg",
     "imageChecked": true,
-    "qid": "Q5293",
-    "title": "Diskett"
+    "qid": "Q886",
+    "title": "Simpsons"
   },
-  "E-post": {
-    "image": "@_symbol.svg",
+  "Webben": {
+    "image": "WWW_logo_by_Robert_Cailliau.svg",
     "imageChecked": true,
-    "qid": "Q9158",
-    "title": "E-post"
+    "qid": "Q466",
+    "title": "Webben"
   },
-  "Streckkod": {
-    "image": "Wikipedia_barcode_128.svg",
+  "Sovjetunionens upplösning": {
+    "image": "1991_coup_attempt1.jpg",
     "imageChecked": true,
-    "qid": "Q856",
-    "title": "Streckkod"
+    "qid": "Q5167679",
+    "title": "Sovjetunionens upplösning"
   },
-  "Rymdfärjan Columbia": {
-    "image": "STS-109_launch.jpg",
+  "Toy Story": {
+    "image": "Toy_Story_logo.svg",
     "imageChecked": true,
-    "qid": "Q54383",
-    "title": "Columbia (rymdfärja)"
+    "qid": "Q171048",
+    "title": "Toy Story"
   },
-  "IBM PC": {
-    "image": "IBM_PC_5150.jpg",
+  "Windows 95": {
+    "image": "Windows_Logo_(1992-2001).svg",
     "imageChecked": true,
-    "qid": "Q202712",
-    "title": "IBM PC"
+    "qid": "Q83370",
+    "title": "Windows 95"
   },
-  "CD-skiva": {
-    "image": "Interference-colors.jpg",
+  "Matrix": {
+    "image": "The.Matrix.glmatrix.1.png",
     "imageChecked": true,
-    "qid": "Q34467",
-    "title": "CD"
+    "qid": "Q83495",
+    "title": "Matrix"
   },
-  "Mosaic": {
-    "image": "NCSA_Mosaic_Browser_Screenshot.png",
+  "Facebook": {
+    "image": "2023_Facebook_icon.svg",
     "imageChecked": true,
-    "qid": "Q381047",
-    "title": "Mosaic"
+    "qid": "Q355",
+    "title": "Facebook"
   },
-  "USB": {
-    "image": "Minne.jpg",
+  "Pluto": {
+    "image": "Pluto_in_True_Color_-_High-Res.jpg",
     "imageChecked": true,
-    "qid": "Q42378",
-    "title": "USB"
+    "qid": "Q339",
+    "title": "Pluto"
   },
-  "Android": {
-    "image": "Actroid-DER_01.jpg",
+  "Barack Obama": {
+    "image": "President_Barack_Obama.jpg",
     "imageChecked": true,
-    "qid": "Q181787",
-    "title": "Android"
+    "qid": "Q76",
+    "title": "Barack Obama"
+  },
+  "Avatar (film)": {
+    "image": "Avatar-Logo-avatar.svg",
+    "imageChecked": true,
+    "qid": "Q24871",
+    "title": "Avatar (film)"
   },
   "Ipad": {
     "image": "IPad_os.jpeg",
@@ -5583,275 +5028,23 @@
     "qid": "Q2796",
     "title": "Ipad"
   },
-  "CRISPR": {
-    "image": "4QYZ.png",
+  "Instagram": {
+    "image": "Instagram_logo_2022.svg",
     "imageChecked": true,
-    "qid": "Q17310682",
-    "title": "CRISPR/Cas9"
+    "qid": "Q209330",
+    "title": "Instagram"
   },
-  "Human Genome Project": {
-    "image": "",
+  "Notre-Dame de Paris": {
+    "image": "Notre-Dame_de_Paris,_4_October_2017.jpg",
     "imageChecked": true,
-    "qid": "Q192446",
-    "title": "Human Genome Project"
+    "qid": "Q2981",
+    "title": "Notre-Dame de Paris"
   },
-  "Event Horizon Telescope": {
-    "image": "EHT_Sagittarius_A*.jpg",
+  "Barbie (film)": {
+    "image": "Barbie_(2023_movie_logo).png",
     "imageChecked": true,
-    "qid": "Q3944788",
-    "title": "Event Horizon Telescope"
-  },
-  "mRNA-vaccin": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "manual-mRNA-vaccin",
-    "title": "MRNA-vaccin"
-  },
-  "Coca-Cola": {
-    "image": "15-09-26-RalfR-WLC-0098 - Coca-Cola glass bottle (Germany).jpg",
-    "imageChecked": true,
-    "qid": "Q2813",
-    "title": "Coca-Cola"
-  },
-  "Kodak": {
-    "image": "Eastman_Kodak_Company_logo_(2016).svg",
-    "imageChecked": true,
-    "qid": "Q486269",
-    "title": "Eastman Kodak"
-  },
-  "Ford Model T": {
-    "image": "1925_Ford_Model_T_touring.jpg",
-    "imageChecked": true,
-    "qid": "Q182323",
-    "title": "T-Ford"
-  },
-  "Boeing": {
-    "image": "Boeing_Virginia_Headquarters_(cropped_and_brighter).jpg",
-    "imageChecked": true,
-    "qid": "Q66",
-    "title": "Boeing"
-  },
-  "The Walt Disney Company": {
-    "image": "Walt Disney Studios Alameda Entrance.jpg",
-    "imageChecked": true,
-    "qid": "Q7414",
-    "title": "Walt Disney Company"
-  },
-  "McDonald's": {
-    "image": "McDonald's_Golden_Arches.svg",
-    "imageChecked": true,
-    "qid": "Q38076",
-    "title": "McDonald’s"
-  },
-  "Adidas": {
-    "image": "Adidas_2022_logo.svg",
-    "imageChecked": true,
-    "qid": "Q3895",
-    "title": "Adidas"
-  },
-  "Nike": {
-    "image": "Nike_thymiaterion_Met_13.227.16.jpg",
-    "imageChecked": true,
-    "qid": "Q165023",
-    "title": "Nike"
-  },
-  "Toyota Corolla": {
-    "image": "Toyota_Corolla_(E210)_sedan_IMG_4190.jpg",
-    "imageChecked": true,
-    "qid": "Q243543",
-    "title": "Toyota Corolla"
-  },
-  "Microsoft": {
-    "image": "Aerial_Microsoft_West_Campus_August_2009.jpg",
-    "imageChecked": true,
-    "qid": "Q2283",
-    "title": "Microsoft"
-  },
-  "Apple": {
-    "image": "Apple_logo_black.svg",
-    "imageChecked": true,
-    "qid": "Q312",
-    "title": "Apple Inc."
-  },
-  "Nintendo": {
-    "image": "Headquarters_of_Nintendo_Co.,_Ltd.jpg",
-    "imageChecked": true,
-    "qid": "Q8093",
-    "title": "Nintendo"
-  },
-  "Dell": {
-    "image": "Dell_Logo.svg",
-    "imageChecked": true,
-    "qid": "Q30873",
-    "title": "Dell"
-  },
-  "Ebay": {
-    "image": "Ebayheadquarters.jpg",
-    "imageChecked": true,
-    "qid": "Q58024",
-    "title": "Ebay"
-  },
-  "PayPal": {
-    "image": "PayPal_San_Jose_Headquarters.jpg",
-    "imageChecked": true,
-    "qid": "Q483959",
-    "title": "Paypal"
-  },
-  "LinkedIn": {
-    "image": "Linkedin screenshot.png",
-    "imageChecked": true,
-    "qid": "Q213660",
-    "title": "Linkedin"
-  },
-  "Tesla Roadster": {
-    "image": "Tesla_Roadster_--_02-11-2011.jpg",
-    "imageChecked": true,
-    "qid": "Q210893",
-    "title": "Tesla Roadster"
-  },
-  "WhatsApp": {
-    "image": "WhatsApp_chatting.jpg",
-    "imageChecked": true,
-    "qid": "Q1049511",
-    "title": "Whatsapp"
-  },
-  "Snapchat": {
-    "image": "Snap on smartphone.jpg",
-    "imageChecked": true,
-    "qid": "Q333618",
-    "title": "Snapchat"
-  },
-  "Tesla Model S": {
-    "image": "Tesla_Model_S_(Facelift_ab_04-2016)_trimmed.jpg",
-    "imageChecked": true,
-    "qid": "Q1463050",
-    "title": "Tesla Model S"
-  },
-  "Nutella": {
-    "image": "Nutella_ak.jpg",
-    "imageChecked": true,
-    "qid": "Q212193",
-    "title": "Nutella"
-  },
-  "Red Bull": {
-    "image": "Redbull Dose.jpg",
-    "imageChecked": true,
-    "qid": "Q51482",
-    "title": "Red Bull"
-  },
-  "Starbucks": {
-    "image": "Starbucks_leeds.jpg",
-    "imageChecked": true,
-    "qid": "Q37158",
-    "title": "Starbucks"
-  },
-  "Ben & Jerry's": {
-    "image": "BenJerry-UnitedSquare.jpg",
-    "imageChecked": true,
-    "qid": "Q816412",
-    "title": "Ben & Jerry's"
-  },
-  "Levi Strauss & Co.": {
-    "image": "Levi_Plaza.jpg",
-    "imageChecked": true,
-    "qid": "Q127962",
-    "title": "Levi Strauss & Co."
-  },
-  "Bilbo – En hobbits äventyr": {
-    "image": "BilboEnHobbitsAventyr.png",
-    "imageChecked": true,
-    "qid": "Q74287",
-    "title": "Bilbo – En hobbits äventyr"
-  },
-  "Den lille prinsen": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "Q16386722",
-    "title": "Den lille prinsen"
-  },
-  "Den store Gatsby": {
-    "image": "En_man_utan_skrupler_(Den_store_Gatsby)_svenskt_originalomslag.jpg",
-    "imageChecked": true,
-    "qid": "Q214371",
-    "title": "Den store Gatsby"
-  },
-  "1984 (roman)": {
-    "image": "1984JLH1.jpg",
-    "imageChecked": true,
-    "qid": "Q208460",
-    "title": "1984 (roman)"
-  },
-  "Cluedo": {
-    "image": "Cluedo_Clue_pack_logo.png",
-    "imageChecked": true,
-    "qid": "Q17245",
-    "title": "Cluedo"
-  },
-  "Scrabble": {
-    "image": "Swedish_scrabble_tiles.jpg",
-    "imageChecked": true,
-    "qid": "Q170436",
-    "title": "Scrabble"
-  },
-  "Dungeons & Dragons": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "Q1375",
-    "title": "Dungeons & Dragons"
-  },
-  "Pokémon Röd och Blå": {
-    "image": "Pokémon_RB_logo_2.png",
-    "imageChecked": true,
-    "qid": "Q637137",
-    "title": "Pokémon Röd och Blå"
-  },
-  "Angry Birds": {
-    "image": "Recórcholis, Gran Plaza Mazatlán, 8 de julio de 2023.jpg",
-    "imageChecked": true,
-    "qid": "Q165094",
-    "title": "Angry Birds"
-  },
-  "Kristus Frälsaren": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "manual-Kristus_Fr%C3%A4lsaren",
-    "title": "Kristus Frälsaren"
-  },
-  "Empire State Building": {
-    "image": "Empire_State_Building_(aerial_view).jpg",
-    "imageChecked": true,
-    "qid": "Q9188",
-    "title": "Empire State Building"
-  },
-  "Taj Mahal": {
-    "image": "Taj_Mahal_(Edited).jpeg",
-    "imageChecked": true,
-    "qid": "Q9141",
-    "title": "Taj Mahal"
-  },
-  "Colosseum": {
-    "image": "Colosseo_2020.jpg",
-    "imageChecked": true,
-    "qid": "Q10285",
-    "title": "Colosseum"
-  },
-  "Machu Picchu": {
-    "image": "Machu_Picchu,_Peru_(2018).jpg",
-    "imageChecked": true,
-    "qid": "Q676203",
-    "title": "Machu Picchu"
-  },
-  "Hagia Sofia": {
-    "image": "Hagia_Sophia_(228968325).jpeg",
-    "imageChecked": true,
-    "qid": "Q12506",
-    "title": "Hagia Sofia"
-  },
-  "Frihetsgudinnan": {
-    "image": "Usa_edcp_(+HI_+AK)_relief_location_map.svg",
-    "imageChecked": true,
-    "qid": "Q9202",
-    "title": "Frihetsgudinnan"
+    "qid": "Q55436290",
+    "title": "Barbie (film)"
   },
   "Jesse Owens": {
     "image": "Jesse_Owens_1936.jpg",
@@ -5859,77 +5052,23 @@
     "qid": "Q52651",
     "title": "Jesse Owens"
   },
-  "Serena Williams": {
-    "image": "Judd_Ehrlich_Serena_Williams_Tribeca_Film_Festival_(cropped).jpg",
-    "imageChecked": true,
-    "qid": "Q11459",
-    "title": "Serena Williams"
-  },
-  "Tiger Woods": {
-    "image": "President_Donald_Trump_hosts_a_reception_honoring_Black_History_Month_(54341713089)_(cropped).jpg",
-    "imageChecked": true,
-    "qid": "Q10993",
-    "title": "Tiger Woods"
-  },
-  "Armand Duplantis vid olympiska sommarspelen 2020": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "manual-Armand_Duplantis_vid_olympiska_sommarspelen_2020",
-    "title": "Armand Duplantis vid olympiska sommarspelen 2020"
-  },
   "Muhammad Ali": {
     "image": "Muhammad_Ali_NYWTS.jpg",
     "imageChecked": true,
     "qid": "Q36107",
     "title": "Muhammad Ali"
   },
-  "Mount Everest": {
-    "image": "Everest_kalapatthar_crop.jpg",
+  "Mike Eruzione": {
+    "image": "Mike_Eruzione_1984.jpg",
     "imageChecked": true,
-    "qid": "Q513",
-    "title": "Mount Everest"
+    "qid": "Q166106",
+    "title": "Mike Eruzione"
   },
-  "Det 13:e tillägget": {
-    "image": "",
+  "Boris Becker": {
+    "image": "Boris_Becker_-_2019102190927_2019-04-12_Radio_Regenbogen_Award_2019_-_Sven_-_1D_X_MK_II_-_0283_-_B70I6481-2.jpg",
     "imageChecked": true,
-    "qid": "Q26824229",
-    "title": "Det 13:e tillägget"
-  },
-  "Israels grundande": {
-    "image": "",
-    "imageChecked": true,
-    "qid": "Q10538002",
-    "title": "Israels grundande"
-  },
-  "Pastörisering": {
-    "image": "60s Pama pasteurizer.jpg",
-    "imageChecked": true,
-    "qid": "Q58148",
-    "title": "Pastörisering"
-  },
-  "Wright Flyer I": {
-    "image": "Wrightflyer.jpg",
-    "imageChecked": true,
-    "qid": "Q688605",
-    "title": "Wright Flyer I"
-  },
-  "Covid-19-vaccin": {
-    "image": "Вакцинация_медицинских_работников_Москвы_от_COVID-19_(20).jpg",
-    "imageChecked": true,
-    "qid": "Q87719492",
-    "title": "Covid-19-vaccin"
-  },
-  "Cristo Redentor": {
-    "image": "Christ_the_Redeemer_-_Cristo_Redentor.jpg",
-    "imageChecked": true,
-    "qid": "Q79961",
-    "title": "Cristo Redentor"
-  },
-  "Ishockey vid olympiska vinterspelen 1980": {
-    "image": "Ice_Hockey_Match,_Lake_Placid_1980.jpg",
-    "imageChecked": true,
-    "qid": "Q736827",
-    "title": "Ishockey vid olympiska vinterspelen 1980"
+    "qid": "Q76334",
+    "title": "Boris Becker"
   },
   "Diego Maradona": {
     "image": "Maradona-Mundial_86_con_la_copa.JPG",
@@ -5937,17 +5076,275 @@
     "qid": "Q17515",
     "title": "Diego Maradona"
   },
-  "Europamästerskapet i fotboll": {
-    "image": "Coupe_Henri_Delaunay_2017.jpg",
+  "Ben Johnson": {
+    "image": "Ben_Johnson_2017_(cropped).jpg",
     "imageChecked": true,
-    "qid": "Q260858",
-    "title": "Europamästerskapet i fotboll"
+    "qid": "Q52614",
+    "title": "Ben Johnson"
   },
-  "Herrsingel vid Wimbledonmästerskapen 2008": {
-    "image": "",
+  "Steffi Graf": {
+    "image": "Steffi_Graf_in_Hamburg_2010_(cropped).jpg",
     "imageChecked": true,
-    "qid": "Q368797",
-    "title": "Herrsingel vid Wimbledonmästerskapen 2008"
+    "qid": "Q11662",
+    "title": "Steffi Graf"
+  },
+  "Michael Jordan": {
+    "image": "Michael_Jordan_in_2014.jpg",
+    "imageChecked": true,
+    "qid": "Q41421",
+    "title": "Michael Jordan"
+  },
+  "Tiger Woods": {
+    "image": "President_Donald_Trump_hosts_a_reception_honoring_Black_History_Month_(54341713089)_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q10993",
+    "title": "Tiger Woods"
+  },
+  "Zinedine Zidane": {
+    "image": "Zinedine_Zidane_by_Tasnim_03.jpg",
+    "imageChecked": true,
+    "qid": "Q1835",
+    "title": "Zinedine Zidane"
+  },
+  "Mia Hamm": {
+    "image": "Mia_Hamm_signing_an_autograph.jpg",
+    "imageChecked": true,
+    "qid": "Q222086",
+    "title": "Mia Hamm"
+  },
+  "Steven Gerrard": {
+    "image": "Steven_Gerrard_2018.jpg",
+    "imageChecked": true,
+    "qid": "Q459830",
+    "title": "Steven Gerrard"
+  },
+  "Rafael Nadal": {
+    "image": "Rafael_Nadal_en_2024_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q10132",
+    "title": "Rafael Nadal"
+  },
+  "Michael Phelps": {
+    "image": "Michael_Phelps_Rio_Olympics_2016.jpg",
+    "imageChecked": true,
+    "qid": "Q39562",
+    "title": "Michael Phelps"
+  },
+  "Andrés Iniesta": {
+    "image": "Andrés_Iniesta_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q43729",
+    "title": "Andrés Iniesta"
+  },
+  "Simone Biles": {
+    "image": "Simone_Biles_Rio_2016e.jpg",
+    "imageChecked": true,
+    "qid": "Q7520267",
+    "title": "Simone Biles"
+  },
+  "Tom Brady": {
+    "image": "25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Tom_Brady_-_240422_191334_(cropped)_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q313381",
+    "title": "Tom Brady"
+  },
+  "Eliud Kipchoge": {
+    "image": "Eliud_Kipchoge_in_Berlin_-_2015_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q9124",
+    "title": "Eliud Kipchoge"
+  },
+  "Christian Eriksen": {
+    "image": "EriksenTottenham2016(cropped)_2.jpg",
+    "imageChecked": true,
+    "qid": "Q294951",
+    "title": "Christian Eriksen"
+  },
+  "Walt Disney": {
+    "image": "Walt_Disney_1946.JPG",
+    "imageChecked": true,
+    "qid": "Q8704",
+    "title": "Walt Disney"
+  },
+  "Sean Connery": {
+    "image": "Sean_Connery_as_James_Bond_at_Switzerland_1964_(two_thirds_crop).jpg",
+    "imageChecked": true,
+    "qid": "Q4573",
+    "title": "Sean Connery"
+  },
+  "Stanley Kubrick": {
+    "image": "Stanley_Kubrick_(1949_portrait_by_Phillip_Harrington_-_cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q2001",
+    "title": "Stanley Kubrick"
+  },
+  "Marlon Brando": {
+    "image": "Marlon-Brando-in-Finland-1967_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q34012",
+    "title": "Marlon Brando"
+  },
+  "Steven Spielberg": {
+    "image": "MKr25425_Steven_Spielberg_(Berlinale_2023).jpg",
+    "imageChecked": true,
+    "qid": "Q8877",
+    "title": "Steven Spielberg"
+  },
+  "Bill Murray": {
+    "image": "Bill_Murray_at_the_2024_Toronto_International_Film_Festival_(Riff_Raff)_2_(3x4_cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q29250",
+    "title": "Bill Murray"
+  },
+  "Michael J. Fox": {
+    "image": "Michael_J_Fox_2020.jpg",
+    "imageChecked": true,
+    "qid": "Q395274",
+    "title": "Michael J. Fox"
+  },
+  "Macaulay Culkin": {
+    "image": "Macaulay_Culkin_-_Home_Alone_35th.jpg",
+    "imageChecked": true,
+    "qid": "Q103578",
+    "title": "Macaulay Culkin"
+  },
+  "Arnold Schwarzenegger": {
+    "image": "11162022_-_SMC_-_California_-_Day_1-25-2_(52505143390)_(4x5_cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q2685",
+    "title": "Arnold Schwarzenegger"
+  },
+  "Tom Hanks": {
+    "image": "TomHanksPrincEdw031223_(11_of_41)_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q2263",
+    "title": "Tom Hanks"
+  },
+  "Quentin Tarantino": {
+    "image": "Quentin_Tarantino_by_Gage_Skidmore.jpg",
+    "imageChecked": true,
+    "qid": "Q3772",
+    "title": "Quentin Tarantino"
+  },
+  "Leonardo DiCaprio": {
+    "image": "Leonardo_DiCaprio_-_BFI_Southbank.jpg",
+    "imageChecked": true,
+    "qid": "Q38111",
+    "title": "Leonardo DiCaprio"
+  },
+  "Daniel Radcliffe": {
+    "image": "DanielRadcliffe.jpg",
+    "imageChecked": true,
+    "qid": "Q38119",
+    "title": "Daniel Radcliffe"
+  },
+  "Elijah Wood": {
+    "image": "Elijah_Wood_(47955397556)_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q483771",
+    "title": "Elijah Wood"
+  },
+  "Heath Ledger": {
+    "image": "Heath_Ledger.jpg",
+    "imageChecked": true,
+    "qid": "Q40572",
+    "title": "Heath Ledger"
+  },
+  "Emilia Clarke": {
+    "image": "Emilia_Clarke_by_Gage_Skidmore_2_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q235132",
+    "title": "Emilia Clarke"
+  },
+  "Kristen Bell": {
+    "image": "Kristen_Bell_Paris_Fashion_Week_Spring_Summer_2020_(cropped).jpg",
+    "imageChecked": true,
+    "qid": "Q178882",
+    "title": "Kristen Bell"
+  },
+  "Millie Bobby Brown": {
+    "image": "Millie_Bobby_Brown_2025_(1).png",
+    "imageChecked": true,
+    "qid": "Q25936414",
+    "title": "Millie Bobby Brown"
+  },
+  "Eiffeltornet": {
+    "image": "Tour_Eiffel_Wikimedia_Commons.jpg",
+    "imageChecked": true,
+    "qid": "Q243",
+    "title": "Eiffeltornet"
+  },
+  "Panamakanalen": {
+    "image": "Panama_Canal_Gatun_Locks.jpg",
+    "imageChecked": true,
+    "qid": "Q7350",
+    "title": "Panamakanalen"
+  },
+  "Förenta nationerna": {
+    "image": "UN_emblem_blue.svg",
+    "imageChecked": true,
+    "qid": "Q1065",
+    "title": "Förenta nationerna"
+  },
+  "Nato": {
+    "image": "Flag_of_NATO.svg",
+    "imageChecked": true,
+    "qid": "Q7184",
+    "title": "Nato"
+  },
+  "Jurij Gagarin": {
+    "image": "Yuri_Gagarin_(1961)_-_Restoration.jpg",
+    "imageChecked": true,
+    "qid": "Q7327",
+    "title": "Jurij Gagarin"
+  },
+  "Valentina Teresjkova": {
+    "image": "Valentina_Tereshkova_in_Moscow_06-2015_img1.jpg",
+    "imageChecked": true,
+    "qid": "Q44371",
+    "title": "Valentina Teresjkova"
+  },
+  "Christiaan Barnard": {
+    "image": "Christiaan_Barnard_(1968).jpg",
+    "imageChecked": true,
+    "qid": "Q188803",
+    "title": "Christiaan Barnard"
+  },
+  "Concorde": {
+    "image": "Concorde_g-boab_heathrow.jpg",
+    "imageChecked": true,
+    "qid": "Q6505",
+    "title": "Concorde"
+  },
+  "Apollo 13": {
+    "image": "Apollo_13-insignia.png",
+    "imageChecked": true,
+    "qid": "Q182252",
+    "title": "Apollo 13"
+  },
+  "Voyager 1": {
+    "image": "Voyager.jpg",
+    "imageChecked": true,
+    "qid": "Q48469",
+    "title": "Voyager 1"
+  },
+  "Challenger (rymdfärja)": {
+    "image": "Space_Shuttle_Challenger_(04-04-1983).JPEG",
+    "imageChecked": true,
+    "qid": "Q54382",
+    "title": "Challenger (rymdfärja)"
+  },
+  "Hubbleteleskopet": {
+    "image": "Hubble_Space_Telescope_(27946391011).jpg",
+    "imageChecked": true,
+    "qid": "Q2513",
+    "title": "Hubbleteleskopet"
+  },
+  "Kanaltunneln": {
+    "image": "Course_Channeltunnel_sv.svg",
+    "imageChecked": true,
+    "qid": "Q10257",
+    "title": "Kanaltunneln"
   },
   "Jordbävningen i Indiska oceanen 2004": {
     "image": "2004-tsunami.jpg",
@@ -5955,22 +5352,16 @@
     "qid": "Q130754",
     "title": "Jordbävningen i Indiska oceanen 2004"
   },
-  "Indien": {
-    "image": "Flag_of_India.svg",
+  "Fukushima-olyckan": {
+    "image": "Fukushima_accidents_overview_map.svg",
     "imageChecked": true,
-    "qid": "Q668",
-    "title": "Indien"
+    "qid": "Q171178",
+    "title": "Fukushima-olyckan"
   },
-  "Iphone": {
-    "image": "IPhone_series.jpg",
+  "Anders Gärderud": {
+    "image": "Anders_Garderud_1976.jpg",
     "imageChecked": true,
-    "qid": "Q2766",
-    "title": "Iphone"
-  },
-  "Innebandy": {
-    "image": "Floorball_ball_cropped.jpg",
-    "imageChecked": true,
-    "qid": "Q206763",
-    "title": "Innebandy"
+    "qid": "Q491023",
+    "title": "Anders Gärderud"
   }
 }

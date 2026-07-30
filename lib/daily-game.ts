@@ -11,6 +11,8 @@ import { preloadCard, prepareDecks } from "./game-selection";
 import { createSeededRandom } from "./seeded-random";
 
 export const DAILY_CARD_COUNT = 100;
+const DAILY_MUSIC_SHARE = 0.1;
+const MUSIC_DECK_ID = "all-entertainment-music";
 
 export interface DailyOverride {
   cardQids: string[];
@@ -98,6 +100,42 @@ function uniqueDailyCandidates(cards: PreparedCard[]): PreparedCard[] {
   });
 }
 
+function mixDefaultDailyCandidates(
+  cards: PreparedCard[],
+  selectedRootDeck: DeckNode,
+  random: () => number,
+): PreparedCard[] {
+  if (selectedRootDeck.id !== "all") {
+    return shuffle(cards, random);
+  }
+
+  const musicCards = cards.filter((card) => card.deckId === MUSIC_DECK_ID);
+  const otherCards = cards.filter((card) => card.deckId !== MUSIC_DECK_ID);
+  const remainingMusicCards = shuffle(musicCards, random);
+  const remainingOtherCards = shuffle(otherCards, random);
+  const selectedCards: PreparedCard[] = [];
+
+  while (
+    selectedCards.length < DAILY_CARD_COUNT &&
+    (remainingMusicCards.length > 0 || remainingOtherCards.length > 0)
+  ) {
+    const preferMusic = random() < DAILY_MUSIC_SHARE;
+    const preferredCards = preferMusic
+      ? remainingMusicCards
+      : remainingOtherCards;
+    const fallbackCards = preferMusic
+      ? remainingOtherCards
+      : remainingMusicCards;
+    const card = preferredCards.pop() ?? fallbackCards.pop();
+
+    if (card) {
+      selectedCards.push(card);
+    }
+  }
+
+  return shuffle(selectedCards, random);
+}
+
 function isDailyEditorialCard(
   card: PreparedCard,
   selectedRootDeck: DeckNode,
@@ -179,6 +217,11 @@ export function createDailyCardQueue(
   const allCards = uniqueDailyCandidates(
     getAllEligibleCards(selectedRootDeck, cardsByDeckId, difficulty, random),
   ).filter((card) => isDailyEditorialCard(card, selectedRootDeck));
+  const dailyCandidates = mixDefaultDailyCandidates(
+    allCards,
+    selectedRootDeck,
+    random,
+  );
   const cardsByQid = new Map(allCards.map((card) => [card.qid, card]));
   const snapshotOverrideCards = override?.cards
     ? prepareOverrideCards(selectedRootDeck, override.cards, difficulty)
@@ -223,7 +266,7 @@ export function createDailyCardQueue(
     );
   };
   const openingCandidates = shuffle(
-    allCards.filter(
+    dailyCandidates.filter(
       (card) => !usedQids.has(card.qid) && !isExcludedFromOpening(card),
     ),
     random,
@@ -236,7 +279,7 @@ export function createDailyCardQueue(
   // This should only be needed if a deck becomes unusually small. It keeps a
   // playable queue instead of failing the daily game.
   if (selectedCards.length < DAILY_OPENING_CARD_COUNT) {
-    for (const card of shuffle(allCards, random)) {
+    for (const card of shuffle(dailyCandidates, random)) {
       addCard(card);
       if (selectedCards.length >= DAILY_OPENING_CARD_COUNT) {
         break;
@@ -245,7 +288,7 @@ export function createDailyCardQueue(
   }
 
   // Recent opening cards are deliberately allowed back from position 21.
-  for (const card of shuffle(allCards, random)) {
+  for (const card of shuffle(dailyCandidates, random)) {
     addCard(card);
   }
 

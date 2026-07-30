@@ -1,4 +1,4 @@
-import { readFile, readdir, rm, writeFile } from "fs/promises";
+import { readFile, writeFile } from "fs/promises";
 import path from "path";
 import { Card } from "../../types/cards";
 
@@ -12,12 +12,22 @@ const METADATA_CACHE_FILE = path.join(
 const CLASSICS_DECK_ID = "all-swedish-classics-all";
 const CLASSICS_GROUP_ID = "all-swedish-classics";
 const SPORT_MOMENTS_DECK_ID = "all-sport-sportogonblick";
+const WORLD_EVENTS_GROUP_ID = "all-world-events";
+const WORLD_EVENTS_DECK_ID = "all-world-events-all";
 const VIDEO_GAMES_DECK_ID = "all-technology-video-games";
 const MUSIC_DECK_ID = "all-entertainment-music";
 // Keep music at 10% in the ordinary all-deck. The other published root
 // weights are 2.45 for Svenska klassiker and 0.1 for sport, so 2.55 / 9
 // makes music one tenth of the combined total.
 const MUSIC_ROOT_FREQUENCY = 2.55 / 9;
+
+// These older source collections are deliberately retained so a future
+// editorial pass can reuse them. This additive script must not republish or
+// replace their existing decks.
+void CLASSICS_DECK_ID;
+void CLASSICS_GROUP_ID;
+void MUSIC_DECK_ID;
+void MUSIC_ROOT_FREQUENCY;
 
 type DifficultyCounts = {
   easy: number;
@@ -9643,6 +9653,1227 @@ const INTERNATIONAL_SPORT_MOMENTS: ClassicTuple[] = [
   ],
 ];
 
+// These are shared international memories, selected for a Swedish audience.
+// They deliberately live outside Svenska klassiker: being well known in Sweden
+// is not the same thing as being a Swedish classic.
+const WORLD_EVENT_CARDS: HandpickedCard[] = [
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Eiffeltornet invigs i Paris till världsutställningen.",
+    pageTitle: "Eiffeltornet",
+    pageViews: 500_000,
+    subtitle: "Världsutställningen i Paris",
+    title: "Eiffeltornet invigs",
+    year: 1889,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Panamakanalen öppnar och gör det möjligt att segla mellan Atlanten och Stilla havet utan att runda Sydamerika.",
+    pageTitle: "Panamakanalen",
+    pageViews: 400_000,
+    subtitle: "Kanalen mellan två världshav",
+    title: "Panamakanalen öppnar",
+    year: 1914,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Förenta nationerna bildas efter andra världskriget för att arbeta för fred och samarbete mellan länder.",
+    pageTitle: "Förenta nationerna",
+    pageViews: 500_000,
+    subtitle: "Världsorganisationen efter kriget",
+    title: "Förenta nationerna bildas",
+    year: 1945,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Nato bildas av USA, Kanada och tio europeiska länder som en försvarsallians.",
+    pageTitle: "Nato",
+    pageViews: 400_000,
+    subtitle: "Försvarsalliansen bildas",
+    title: "Nato bildas",
+    year: 1949,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Jurij Gagarin blir den första människan i rymden ombord på Vostok 1.",
+    pageTitle: "Jurij Gagarin",
+    pageViews: 500_000,
+    subtitle: "Vostok 1 runt jorden",
+    title: "Jurij Gagarin blir först i rymden",
+    year: 1961,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Valentina Teresjkova blir den första kvinnan i rymden ombord på Vostok 6.",
+    pageTitle: "Valentina Teresjkova",
+    pageViews: 400_000,
+    subtitle: "Vostok 6 runt jorden",
+    title: "Valentina Teresjkova blir första kvinnan i rymden",
+    year: 1963,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Kirurgen Christiaan Barnard genomför världens första hjärttransplantation på en människa i Kapstaden.",
+    pageTitle: "Christiaan Barnard",
+    pageViews: 400_000,
+    subtitle: "Operationen i Kapstaden",
+    title: "Världens första hjärttransplantation genomförs",
+    year: 1967,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Överljudsplanet Concorde genomför sin premiärflygning i Frankrike.",
+    pageTitle: "Concorde",
+    pageViews: 400_000,
+    subtitle: "Det överljudssnabba passagerarplanet",
+    title: "Concorde genomför sin premiärflygning",
+    year: 1969,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Besättningen på Apollo 13 avbryter sin månlandning efter en explosion ombord och återvänder säkert till jorden.",
+    pageTitle: "Apollo 13",
+    pageViews: 400_000,
+    subtitle: "Rymdresan som nästan slutar i katastrof",
+    title: "Apollo 13 tvingas avbryta månlandningen",
+    year: 1970,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Rymdsonden Voyager 1 skjuts upp för att utforska de yttre planeterna.",
+    pageTitle: "Voyager 1",
+    pageViews: 400_000,
+    subtitle: "Rymdsonden på väg ut ur solsystemet",
+    title: "Voyager 1 skjuts upp",
+    year: 1977,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Rymdfärjan Challenger exploderar kort efter uppskjutningen inför direktsänd tv.",
+    pageTitle: "Challenger (rymdfärja)",
+    pageViews: 500_000,
+    subtitle: "Katastrofen efter uppskjutningen",
+    title: "Rymdfärjan Challenger exploderar",
+    year: 1986,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Rymdteleskopet Hubble skjuts upp och börjar senare ge detaljerade bilder från universum.",
+    pageTitle: "Hubbleteleskopet",
+    pageViews: 400_000,
+    subtitle: "Teleskopet som ser djupt ut i rymden",
+    title: "Rymdteleskopet Hubble skjuts upp",
+    year: 1990,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Kanaltunneln öppnar mellan Storbritannien och Frankrike under Engelska kanalen.",
+    pageTitle: "Kanaltunneln",
+    pageViews: 400_000,
+    subtitle: "Tunneln under Engelska kanalen",
+    title: "Kanaltunneln öppnar",
+    year: 1994,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "En kraftig jordbävning i Indiska oceanen orsakar en tsunami som drabbar flera länder, däribland Thailand.",
+    pageTitle: "Jordbävningen i Indiska oceanen 2004",
+    pageViews: 500_000,
+    subtitle: "Tsunamin som drabbar Thailand",
+    title: "Tsunamin i Indiska oceanen sker",
+    year: 2004,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "En jordbävning och tsunami leder till härdsmältor i kärnkraftverket Fukushima Daiichi i Japan.",
+    pageTitle: "Fukushima-olyckan",
+    pageViews: 400_000,
+    subtitle: "Kärnkraftsolyckan i Japan",
+    title: "Kärnkraftsolyckan i Fukushima sker",
+    year: 2011,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Snövit och de sju dvärgarna har premiär som Walt Disneys första tecknade långfilm.",
+    pageTitle: "Walt Disney",
+    pageViews: 400_000,
+    subtitle: "Disneys första tecknade långfilm",
+    title: "Snövit och de sju dvärgarna har biopremiär",
+    year: 1937,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "James Bond syns på bio för första gången i Agent 007 med rätt att döda med Sean Connery i huvudrollen.",
+    pageTitle: "Sean Connery",
+    pageViews: 500_000,
+    subtitle: "James Bonds första film",
+    title: "James Bond har biopremiär",
+    year: 1962,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Gudfadern har premiär med Marlon Brando som familjeöverhuvudet Vito Corleone.",
+    pageTitle: "Marlon Brando",
+    pageViews: 500_000,
+    subtitle: "Maffiaklassikern med familjen Corleone",
+    title: "Gudfadern har biopremiär",
+    year: 1972,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Hajen har premiär och blir Steven Spielbergs genombrott som regissör.",
+    pageTitle: "Steven Spielberg",
+    pageViews: 400_000,
+    subtitle: "Spielbergs hajskräck på bio",
+    title: "Hajen har biopremiär",
+    year: 1975,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "The Shining har premiär med Jack Nicholson i en av filmhistoriens mest kända skräckroller.",
+    pageTitle: "Stanley Kubrick",
+    pageViews: 400_000,
+    subtitle: "Kubricks hotellskräck",
+    title: "The Shining har biopremiär",
+    year: 1980,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Ghostbusters har premiär med Bill Murray och spökjägarna i New York.",
+    pageTitle: "Bill Murray",
+    pageViews: 400_000,
+    subtitle: "Spökjägarna i New York",
+    title: "Ghostbusters har biopremiär",
+    year: 1984,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Tillbaka till framtiden har premiär med Michael J. Fox som Marty McFly.",
+    pageTitle: "Michael J. Fox",
+    pageViews: 400_000,
+    subtitle: "Tidsresan med Marty McFly",
+    title: "Tillbaka till framtiden har biopremiär",
+    year: 1985,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Ensam hemma har premiär med Macaulay Culkin som Kevin som blir kvar hemma över julen.",
+    pageTitle: "Macaulay Culkin",
+    pageViews: 500_000,
+    subtitle: "Julfilmen med Kevin hemma",
+    title: "Ensam hemma har biopremiär",
+    year: 1990,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Terminator 2: Domedagen har premiär med Arnold Schwarzenegger som roboten från framtiden.",
+    pageTitle: "Arnold Schwarzenegger",
+    pageViews: 400_000,
+    subtitle: "Arnold Schwarzenegger som Terminator",
+    title: "Terminator 2 har biopremiär",
+    year: 1991,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Jurassic Park har premiär med dinosaurier skapade med banbrytande digitala effekter.",
+    pageTitle: "Steven Spielberg",
+    pageViews: 500_000,
+    subtitle: "Dinosaurierna på Isla Nublar",
+    title: "Jurassic Park har biopremiär",
+    year: 1993,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Forrest Gump har premiär med Tom Hanks som mannen som hamnar mitt i flera stora amerikanska händelser.",
+    pageTitle: "Tom Hanks",
+    pageViews: 500_000,
+    subtitle: "Tom Hanks som Forrest Gump",
+    title: "Forrest Gump har biopremiär",
+    year: 1994,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Pulp Fiction har premiär och gör Quentin Tarantino till ett internationellt känt regissörsnamn.",
+    pageTitle: "Quentin Tarantino",
+    pageViews: 400_000,
+    subtitle: "Tarantinos genombrott på bio",
+    title: "Pulp Fiction har biopremiär",
+    year: 1994,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Titanic har premiär med Leonardo DiCaprio och blir en av filmhistoriens största biosuccéer.",
+    pageTitle: "Leonardo DiCaprio",
+    pageViews: 500_000,
+    subtitle: "Kärlekshistorien om passagerarfartyget",
+    title: "Titanic har biopremiär",
+    year: 1997,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Harry Potter och De vises sten har biopremiär och inleder filmserien om trollkarlen från Hogwarts.",
+    pageTitle: "Daniel Radcliffe",
+    pageViews: 500_000,
+    subtitle: "Den första filmen om Harry Potter",
+    title: "Harry Potter har biopremiär",
+    year: 2001,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Sagan om ringen: Härskarringen har premiär och inleder Peter Jacksons filmtrilogi.",
+    pageTitle: "Elijah Wood",
+    pageViews: 500_000,
+    subtitle: "Frodo börjar sin resa till Domedagsberget",
+    title: "Sagan om ringen har biopremiär",
+    year: 2001,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Hitta Nemo har premiär och blir en av Pixars mest älskade animerade filmer.",
+    pageTitle: "Walt Disney",
+    pageViews: 400_000,
+    subtitle: "Pixars fiskäventyr",
+    title: "Hitta Nemo har biopremiär",
+    year: 2003,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "The Dark Knight har premiär med Heath Ledger som Jokern.",
+    pageTitle: "Heath Ledger",
+    pageViews: 400_000,
+    subtitle: "Batman möter Jokern",
+    title: "The Dark Knight har biopremiär",
+    year: 2008,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Inception har premiär med Leonardo DiCaprio i berättelsen om drömmar inuti drömmar.",
+    pageTitle: "Leonardo DiCaprio",
+    pageViews: 400_000,
+    subtitle: "Drömmar inuti drömmar",
+    title: "Inception har biopremiär",
+    year: 2010,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Game of Thrones börjar sändas och blir en av världens största tv-serier.",
+    pageTitle: "Emilia Clarke",
+    pageViews: 500_000,
+    subtitle: "Drakarna och kampen om järntronen",
+    title: "Game of Thrones börjar sändas",
+    year: 2011,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Frost har premiär och berättelsen om systrarna Elsa och Anna blir en stor världssuccé.",
+    pageTitle: "Kristen Bell",
+    pageViews: 400_000,
+    subtitle: "Elsa och Anna i Arendal",
+    title: "Frost har biopremiär",
+    year: 2013,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Stranger Things börjar sändas med barnen i Hawkins och den mystiska världen Upp och ner.",
+    pageTitle: "Millie Bobby Brown",
+    pageViews: 400_000,
+    subtitle: "Serien från Hawkins",
+    title: "Stranger Things börjar sändas",
+    year: 2016,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Ford börjar sälja T-Ford, bilen som gör bilägandet möjligt för en bredare publik.",
+    pageTitle: "T-Ford",
+    pageViews: 400_000,
+    subtitle: "Bilen som förändrar vardagen",
+    title: "T-Ford börjar säljas",
+    year: 1908,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Musse Pigg syns på bio för första gången i den tecknade filmen Ångbåtskalle.",
+    pageTitle: "Musse Pigg som Ångbåtskalle",
+    pageViews: 400_000,
+    subtitle: "Musse Piggs biodebut",
+    title: "Musse Pigg har biopremiär",
+    year: 1928,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Börsen på Wall Street kraschar och den stora depressionen fördjupas.",
+    pageTitle: "Wall Street-kraschen",
+    pageViews: 400_000,
+    subtitle: "Börskraschen i New York",
+    title: "Wall Street-kraschen sker",
+    year: 1929,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Elizabeth II kröns till drottning av Storbritannien i Westminster Abbey.",
+    pageTitle: "Elizabeth II av Storbritannien",
+    pageViews: 500_000,
+    subtitle: "Kröningen i Westminster Abbey",
+    title: "Elizabeth II kröns till drottning",
+    year: 1953,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "James T. Kirk och besättningen på Enterprise syns för första gången i tv-serien Star Trek.",
+    pageTitle: "Star Trek",
+    pageViews: 400_000,
+    subtitle: "Rymdserien börjar sändas",
+    title: "Star Trek börjar sändas",
+    year: 1966,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "USA:s president John F. Kennedy mördas i Dallas.",
+    pageTitle: "Mordet på John F. Kennedy",
+    pageViews: 500_000,
+    subtitle: "Mordet i Dallas",
+    title: "John F. Kennedy mördas",
+    year: 1963,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Martin Luther King håller talet I Have a Dream under marschen till Washington.",
+    pageTitle: "Martin Luther King",
+    pageViews: 500_000,
+    subtitle: "Talet i Washington",
+    title: "Martin Luther King håller I Have a Dream-talet",
+    year: 1963,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Apple släpper Macintosh, en av de första persondatorerna med grafiskt användargränssnitt för bred publik.",
+    pageTitle: "Macintosh",
+    pageViews: 400_000,
+    subtitle: "Apples klassiska persondator",
+    title: "Den första Macintosh lanseras",
+    year: 1984,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Filmen E.T. the Extra-Terrestrial har premiär och blir en av 1980-talets största biosuccéer.",
+    pageTitle: "E.T. the Extra-Terrestrial",
+    pageViews: 400_000,
+    subtitle: "Spielbergs rymdvarelse på bio",
+    title: "E.T. har biopremiär",
+    year: 1982,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Den animerade serien Simpsons börjar sändas i USA.",
+    pageTitle: "Simpsons",
+    pageViews: 500_000,
+    subtitle: "Familjen från Springfield",
+    title: "Simpsons börjar sändas",
+    year: 1989,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Tim Berners-Lee publicerar den första webbplatsen och gör webben tillgänglig för allmänheten.",
+    pageTitle: "Webben",
+    pageViews: 500_000,
+    subtitle: "Det moderna internet tar form",
+    title: "World Wide Web öppnas för allmänheten",
+    year: 1991,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Sovjetunionen upplöses och de tidigare sovjetrepublikerna blir självständiga stater.",
+    pageTitle: "Sovjetunionens upplösning",
+    pageViews: 500_000,
+    subtitle: "Supermakten upphör",
+    title: "Sovjetunionen upplöses",
+    year: 1991,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Toy Story har premiär som världens första helt datoranimerade långfilm.",
+    pageTitle: "Toy Story",
+    pageViews: 400_000,
+    subtitle: "Pixars första långfilm",
+    title: "Toy Story har biopremiär",
+    year: 1995,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Microsoft lanserar Windows 95 med den nya Start-knappen.",
+    pageTitle: "Windows 95",
+    pageViews: 500_000,
+    subtitle: "Datorernas Start-knapp kommer",
+    title: "Windows 95 lanseras",
+    year: 1995,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Filmen Matrix har premiär och populariserar idén om en simulerad verklighet.",
+    pageTitle: "Matrix",
+    pageViews: 500_000,
+    subtitle: "Science fiction-filmen med den gröna koden",
+    title: "Matrix har biopremiär",
+    year: 1999,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Facebook startar som en nätgemenskap för studenter vid Harvard.",
+    pageTitle: "Facebook",
+    pageViews: 500_000,
+    subtitle: "Det sociala nätverket börjar på Harvard",
+    title: "Facebook startar",
+    year: 2004,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Internationella astronomiska unionen klassar Pluto som dvärgplanet.",
+    pageTitle: "Pluto",
+    pageViews: 400_000,
+    subtitle: "Pluto förlorar planetstatusen",
+    title: "Pluto klassas som dvärgplanet",
+    year: 2006,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Barack Obama väljs till USA:s första svarta president.",
+    pageTitle: "Barack Obama",
+    pageViews: 500_000,
+    subtitle: "Presidentvalet i USA",
+    title: "Barack Obama väljs till president",
+    year: 2008,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Filmen Avatar har premiär och blir en världsomspännande biosuccé.",
+    pageTitle: "Avatar (film)",
+    pageViews: 400_000,
+    subtitle: "Science fiction-världen Pandora",
+    title: "Avatar har biopremiär",
+    year: 2009,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Apple visar den första Ipad och skapar en ny stor marknad för surfplattor.",
+    pageTitle: "Ipad",
+    pageViews: 400_000,
+    subtitle: "Apples första surfplatta",
+    title: "Den första Ipad visas",
+    year: 2010,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Instagram lanseras som en app för att dela bilder från mobilen.",
+    pageTitle: "Instagram",
+    pageViews: 400_000,
+    subtitle: "Bildappen för mobilen",
+    title: "Instagram lanseras",
+    year: 2010,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Katedralen Notre-Dame i Paris skadas svårt i en stor brand.",
+    pageTitle: "Notre-Dame de Paris",
+    pageViews: 400_000,
+    subtitle: "Den stora branden i Paris",
+    title: "Notre-Dame brinner",
+    year: 2019,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Elizabeth II dör efter 70 år som Storbritanniens drottning.",
+    pageTitle: "Elizabeth II av Storbritannien",
+    pageViews: 500_000,
+    subtitle: "Drottningen dör efter 70 år på tronen",
+    title: "Elizabeth II dör",
+    year: 2022,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Filmen Barbie har premiär och blir en av årets största biosuccéer.",
+    pageTitle: "Barbie (film)",
+    pageViews: 400_000,
+    subtitle: "Filmen om dockan Barbie",
+    title: "Barbie har biopremiär",
+    year: 2023,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Passagerarfartyget Titanic kolliderar med ett isberg och sjunker i Nordatlanten.",
+    pageTitle: "RMS Titanic",
+    pageViews: 500_000,
+    subtitle: "Den legendariska fartygskatastrofen",
+    title: "Titanic går under",
+    year: 1912,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Apollo 11 landar på månen och Neil Armstrong blir den första människan på månen.",
+    pageTitle: "Apollo 11",
+    pageViews: 500_000,
+    subtitle: "Månlandningen",
+    title: "Människan landar på månen",
+    year: 1969,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Berlinmuren öppnas och människor från öst och väst firar tillsammans vid Brandenburger Tor.",
+    pageTitle: "Berlinmurens fall",
+    pageViews: 500_000,
+    subtitle: "Kalla krigets symbol faller",
+    title: "Berlinmuren faller",
+    year: 1989,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Reaktor 4 i kärnkraftverket i Tjernobyl exploderar och orsakar en omfattande kärnkraftsolycka.",
+    pageTitle: "Tjernobylolyckan",
+    pageViews: 500_000,
+    subtitle: "Kärnkraftsolyckan i Ukraina",
+    title: "Reaktorn i Tjernobyl exploderar",
+    year: 1986,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Nelson Mandela släpps fri efter 27 år i fängelse.",
+    pageTitle: "Nelson Mandela",
+    pageViews: 500_000,
+    subtitle: "Apartheidmotståndaren friges",
+    title: "Nelson Mandela friges",
+    year: 1990,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Diana, prinsessa av Wales, omkommer i en bilolycka i Paris.",
+    pageTitle: "Diana, prinsessa av Wales",
+    pageViews: 500_000,
+    subtitle: "Bilolyckan i Paris",
+    title: "Prinsessan Diana dör",
+    year: 1997,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Terrorister kapar fyra flygplan och två av dem flygs in i World Trade Center i New York.",
+    pageTitle: "11 september-attackerna",
+    pageViews: 500_000,
+    subtitle: "Attackerna i USA",
+    title: "Terrorattackerna den 11 september sker",
+    year: 2001,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Den första Barbiedockan visas på en leksaksmässa i New York.",
+    pageTitle: "Barbiedocka",
+    pageViews: 400_000,
+    subtitle: "Den klassiska modedockan",
+    title: "Barbiedockan lanseras",
+    year: 1959,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Den första Star Wars-filmen har premiär på bio och blir ett världsomspännande fenomen.",
+    pageTitle: "Star Wars",
+    pageViews: 500_000,
+    subtitle: "Rymdsagan börjar på bio",
+    title: "Star Wars har biopremiär",
+    year: 1977,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Google grundas av Larry Page och Sergey Brin.",
+    pageTitle: "Google",
+    pageViews: 500_000,
+    subtitle: "Sökmotorn som förändrar nätet",
+    title: "Google grundas",
+    year: 1998,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Wikipedia startar som ett fritt uppslagsverk på nätet.",
+    pageTitle: "Wikipedia",
+    pageViews: 500_000,
+    subtitle: "Det fria uppslagsverket på nätet",
+    title: "Wikipedia startar",
+    year: 2001,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Steve Jobs visar den första Iphone och förändrar marknaden för smarta mobiltelefoner.",
+    pageTitle: "Iphone",
+    pageViews: 500_000,
+    subtitle: "Apples första smarta mobil",
+    title: "Den första Iphone visas",
+    year: 2007,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Storbritannien röstar i en folkomröstning för att lämna Europeiska unionen.",
+    pageTitle: "Brexit",
+    pageViews: 400_000,
+    subtitle: "Storbritannien röstar om EU",
+    title: "Storbritannien röstar för Brexit",
+    year: 2016,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Eurosedlar och euromynt börjar användas i tolv europeiska länder.",
+    pageTitle: "Euro",
+    pageViews: 400_000,
+    subtitle: "Europas gemensamma valuta",
+    title: "Eurosedlar och euromynt tas i bruk",
+    year: 2002,
+  },
+  {
+    deckIds: [WORLD_EVENTS_DECK_ID],
+    fact: "Disneyland öppnar i Kalifornien som Walt Disneys första nöjespark.",
+    pageTitle: "Disneyland",
+    pageViews: 400_000,
+    subtitle: "Walt Disneys första nöjespark",
+    title: "Disneyland öppnar",
+    year: 1955,
+  },
+];
+
+// Every entry identifies one distinct moment. A medal alone is never enough:
+// the title must make it clear which final, discipline, or iconic action it is.
+const ADDITIONAL_SPORT_CARDS: HandpickedCard[] = [
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Sixten Jernberg vinner 50 kilometer vid OS i Cortina d'Ampezzo.",
+    pageTitle: "Sixten Jernberg",
+    pageViews: 400_000,
+    subtitle: "Femmilen i Cortina d'Ampezzo",
+    title: "Sixten Jernberg vinner OS-femmilen",
+    year: 1956,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Ingemar Johansson slår Floyd Patterson på Yankee Stadium och blir världsmästare i tungvikt.",
+    pageTitle: "Ingemar Johansson",
+    pageViews: 500_000,
+    subtitle: "Titelmatchen mot Floyd Patterson",
+    title: "Ingemar Johansson slår Floyd Patterson",
+    year: 1959,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Sven-Åke Lundbäck vinner 15 kilometer vid OS i Sapporo.",
+    pageTitle: "Sven-Åke Lundbäck",
+    pageViews: 400_000,
+    subtitle: "15 kilometer i Sapporo",
+    title: "Lundbäck vinner OS-guld på 15 kilometer",
+    year: 1972,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Anders Gärderud vinner 3 000 meter hinder vid OS i Montréal på världsrekordtid.",
+    pageTitle: "Anders Gärderud",
+    pageViews: 400_000,
+    subtitle: "3 000 meter hinder i Montréal",
+    title: "Gärderud vinner OS-guld med världsrekord",
+    year: 1976,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Frank Andersson vinner sitt första VM-guld i grekisk-romersk brottning.",
+    pageTitle: "Frank Andersson",
+    pageViews: 400_000,
+    subtitle: "Första VM-guldet i brottning",
+    title: "Frank Andersson tar sitt första VM-guld",
+    year: 1977,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Bengt Baron vinner 100 meter ryggsim vid OS i Moskva.",
+    pageTitle: "Bengt Baron",
+    pageViews: 400_000,
+    subtitle: "100 meter ryggsim i Moskva",
+    title: "Bengt Baron vinner OS-guld på 100 meter ryggsim",
+    year: 1980,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Sverige besegrar England efter straffar och vinner det första dam-EM i fotboll.",
+    pageTitle: "Europamästerskapet i fotboll för damer 1984",
+    pageViews: 400_000,
+    subtitle: "Finalen mot England",
+    title: "Sverige vinner dam-EM efter straffar mot England",
+    year: 1984,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Stefan Edberg besegrar Boris Becker i Wimbledonfinalen.",
+    pageTitle: "Stefan Edberg",
+    pageViews: 400_000,
+    subtitle: "Wimbledonfinalen mot Becker",
+    title: "Edberg slår Becker i Wimbledonfinalen",
+    year: 1988,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Mikael Ljungberg vinner den tyngsta klassen i grekisk-romersk brottning vid OS i Sydney.",
+    pageTitle: "Mikael Ljungberg",
+    pageViews: 400_000,
+    subtitle: "Tungvikten i Sydney",
+    title: "Mikael Ljungberg vinner OS-guld i tungvikt",
+    year: 2000,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Kajsa Bergqvist vinner höjdhoppet vid VM i Helsingfors.",
+    pageTitle: "Kajsa Bergqvist",
+    pageViews: 400_000,
+    subtitle: "Höjdhoppsfinalen i Helsingfors",
+    title: "Kajsa Bergqvist vinner VM-guld i Helsingfors",
+    year: 2005,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Charlotte Kalla vinner 10 kilometer fristil och tar Sveriges första guld vid OS i Vancouver.",
+    pageTitle: "Charlotte Kalla",
+    pageViews: 500_000,
+    subtitle: "10 kilometer fristil i Vancouver",
+    title: "Kalla vinner OS-guld på 10 kilometer",
+    year: 2010,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "André Myhrer vinner slalomen vid OS i Pyeongchang.",
+    pageTitle: "André Myhrer",
+    pageViews: 400_000,
+    subtitle: "Slalomen i Pyeongchang",
+    title: "André Myhrer vinner OS-slalomen",
+    year: 2018,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Stina Nilsson vinner sprinten vid OS i Pyeongchang.",
+    pageTitle: "Stina Nilsson",
+    pageViews: 400_000,
+    subtitle: "Sprinten i Pyeongchang",
+    title: "Stina Nilsson vinner OS-sprinten",
+    year: 2018,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Ebba Andersson vinner skiathlon vid skid-VM i Planica.",
+    pageTitle: "Ebba Andersson",
+    pageViews: 400_000,
+    subtitle: "Skiathlon vid skid-VM i Planica",
+    title: "Ebba Andersson vinner VM-guld i skiathlon",
+    year: 2023,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Sverige möter Brasilien i VM-finalen på Råsunda inför hemmapubliken.",
+    image: "Pele_con_brasil_(cropped).jpg",
+    pageTitle: "Världsmästerskapet i fotboll 1958",
+    pageViews: 500_000,
+    subtitle: "VM-finalen på Råsunda",
+    title: "Sverige möter Brasilien i VM-final på Råsunda",
+    year: 1958,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Thomas Wassberg vinner femmilen vid OS i Lake Placid med en hundradels sekund före Juha Mieto.",
+    pageTitle: "Thomas Wassberg",
+    pageViews: 400_000,
+    subtitle: "Femmilen i Lake Placid",
+    title: "Wassberg vinner OS-femmilen med en hundradel",
+    year: 1980,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Mats Sundin väljs som förste spelare i NHL-draften av Quebec Nordiques.",
+    pageTitle: "Mats Sundin",
+    pageViews: 400_000,
+    subtitle: "Förstavalet i NHL-draften",
+    title: "Mats Sundin väljs först i NHL-draften",
+    year: 1989,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Pernilla Wiberg vinner storslalomen vid OS i Albertville.",
+    pageTitle: "Pernilla Wiberg",
+    pageViews: 400_000,
+    subtitle: "Storslalomen i Albertville",
+    title: "Pernilla Wiberg vinner OS-guld i storslalom",
+    year: 1992,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Sverige tar silver i damernas fotbolls-VM efter finalen mot Tyskland i Carson.",
+    image: "Victoria_Svensson.jpg",
+    pageTitle: "Världsmästerskapet i fotboll för damer 2003",
+    pageViews: 400_000,
+    subtitle: "VM-finalen mot Tyskland",
+    title: "Sverige tar VM-silver efter final mot Tyskland",
+    year: 2003,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Tre Kronor besegrar Finland med 3–2 och vinner OS-finalen i Turin.",
+    image:
+      "Henrik_Lundqvist_awarded_as_the_best_goalie_of_all_time_in_Swedish_hockey-2.jpg",
+    pageTitle: "Ishockey vid olympiska vinterspelen 2006",
+    pageViews: 500_000,
+    subtitle: "OS-finalen mot Finland i Turin",
+    title: "Tre Kronor slår Finland i OS-finalen i Turin",
+    year: 2006,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Sarah Sjöström vinner 100 meter fjärilsim vid VM i Rom som 15-åring.",
+    pageTitle: "Sarah Sjöström",
+    pageViews: 400_000,
+    subtitle: "100 meter fjärilsim i Rom",
+    title: "Sarah Sjöström blir världsmästare som 15-åring",
+    year: 2009,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Nils van der Poel vinner både 5 000 och 10 000 meter vid OS i Peking.",
+    pageTitle: "Nils van der Poel",
+    pageViews: 500_000,
+    subtitle: "Dubbla OS-guld i Peking",
+    title: "Nils van der Poel tar dubbla OS-guld i Peking",
+    year: 2022,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Jesse Owens vinner fyra guldmedaljer i friidrott vid OS i Berlin.",
+    pageTitle: "Jesse Owens",
+    pageViews: 500_000,
+    subtitle: "Fyra guld vid OS i Berlin",
+    title: "Jesse Owens tar fyra guld i Berlin",
+    year: 1936,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Muhammad Ali besegrar George Foreman i titelmatchen Rumble in the Jungle i Kinshasa.",
+    pageTitle: "Muhammad Ali",
+    pageViews: 500_000,
+    subtitle: "Rumble in the Jungle",
+    title: "Ali slår Foreman i Rumble in the Jungle",
+    year: 1974,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Nadia Comăneci blir den första gymnasten som får högsta möjliga poäng, 10,0, vid OS.",
+    pageTitle: "Nadia Comăneci",
+    pageViews: 400_000,
+    subtitle: "Den första perfekta tian i OS",
+    title: "Comăneci får en perfekt tia vid OS",
+    year: 1976,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "USA besegrar Sovjetunionen i ishockeyturneringen vid vinter-OS i Lake Placid.",
+    pageTitle: "Mike Eruzione",
+    pageViews: 400_000,
+    subtitle: "Miracle on Ice i Lake Placid",
+    title: "USA skräller mot Sovjet i Miracle on Ice",
+    year: 1980,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Boris Becker vinner Wimbledon som 17-åring och blir den yngste herrmästaren i turneringens historia.",
+    pageTitle: "Boris Becker",
+    pageViews: 400_000,
+    subtitle: "Wimbledon som 17-åring",
+    title: "Boris Becker vinner Wimbledon som 17-åring",
+    year: 1985,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Diego Maradona gör det omtalade Guds hand-målet i VM-kvartsfinalen mot England.",
+    pageTitle: "Diego Maradona",
+    pageViews: 500_000,
+    subtitle: "VM-kvartsfinalen mot England",
+    title: "Maradona gör Guds hand mot England",
+    year: 1986,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Ben Johnson vinner 100 meter vid OS i Seoul men fråntas guldet efter ett positivt dopningstest.",
+    pageTitle: "Ben Johnson",
+    pageViews: 400_000,
+    subtitle: "Dopningsskandalen i Seoul",
+    title: "Ben Johnson fråntas OS-guldet",
+    year: 1988,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Steffi Graf vinner alla fyra Grand Slam-turneringar och OS-guld under samma år.",
+    pageTitle: "Steffi Graf",
+    pageViews: 400_000,
+    subtitle: "Tennisens Golden Slam",
+    title: "Steffi Graf tar Golden Slam",
+    year: 1988,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "USA:s basketlandslag med Michael Jordan och Magic Johnson vinner OS-guld i Barcelona.",
+    pageTitle: "Michael Jordan",
+    pageViews: 500_000,
+    subtitle: "Dream Team i Barcelona",
+    title: "Dream Team vinner OS-guld i basket",
+    year: 1992,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Tiger Woods vinner Masters Tournament med rekordstor segermarginal och tar sin första majorseger.",
+    pageTitle: "Tiger Woods",
+    pageViews: 500_000,
+    subtitle: "Genombrottet på Augusta",
+    title: "Tiger Woods vinner sin första Masters",
+    year: 1997,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Zinedine Zidane gör två nickmål när Frankrike besegrar Brasilien i VM-finalen på hemmaplan.",
+    pageTitle: "Zinedine Zidane",
+    pageViews: 500_000,
+    subtitle: "VM-finalen mot Brasilien",
+    title: "Zidane nickar Frankrike till VM-guld",
+    year: 1998,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Mia Hamm och USA vinner damernas fotbolls-VM efter straffar mot Kina inför rekordpublik i Pasadena.",
+    pageTitle: "Mia Hamm",
+    pageViews: 400_000,
+    subtitle: "VM-finalen mot Kina",
+    title: "USA vinner dam-VM efter straffar",
+    year: 1999,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Steven Gerrards Liverpool hämtar upp 0–3 mot Milan och vinner Champions League-finalen efter straffar.",
+    pageTitle: "Steven Gerrard",
+    pageViews: 400_000,
+    subtitle: "Finalvändningen i Istanbul",
+    title: "Liverpool vänder Champions League-finalen i Istanbul",
+    year: 2005,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Zinedine Zidane blir utvisad efter att ha skallat Marco Materazzi i VM-finalen mot Italien.",
+    pageTitle: "Zinedine Zidane",
+    pageViews: 500_000,
+    subtitle: "VM-finalen mot Italien",
+    title: "Zidane skallar Materazzi i VM-finalen",
+    year: 2006,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Rafael Nadal besegrar Roger Federer i den fem set långa Wimbledonfinalen som ofta kallas en av de bästa någonsin.",
+    pageTitle: "Rafael Nadal",
+    pageViews: 500_000,
+    subtitle: "Wimbledonfinalen mot Federer",
+    title: "Nadal slår Federer i Wimbledonfinalen",
+    year: 2008,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Michael Phelps vinner åtta guldmedaljer vid OS i Peking.",
+    pageTitle: "Michael Phelps",
+    pageViews: 500_000,
+    subtitle: "Åtta guld vid OS i Peking",
+    title: "Michael Phelps vinner åtta OS-guld",
+    year: 2008,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Andrés Iniesta gör finalens enda mål mot Nederländerna och ger Spanien sitt första VM-guld.",
+    pageTitle: "Andrés Iniesta",
+    pageViews: 500_000,
+    subtitle: "VM-finalen mot Nederländerna",
+    title: "Iniesta avgör VM-finalen för Spanien",
+    year: 2010,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Usain Bolt försvarar OS-guldet på 100 meter vid OS i London.",
+    pageTitle: "Usain Bolt",
+    pageViews: 500_000,
+    subtitle: "100 meter vid OS i London",
+    title: "Bolt försvarar OS-guldet på 100 meter",
+    year: 2012,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Simone Biles vinner fyra guldmedaljer i gymnastik vid OS i Rio.",
+    pageTitle: "Simone Biles",
+    pageViews: 400_000,
+    subtitle: "Fyra guld vid OS i Rio",
+    title: "Simone Biles vinner fyra OS-guld",
+    year: 2016,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Leicester City vinner Premier League efter att ha varit kraftigt nederlagstippat före säsongen.",
+    pageTitle: "Leicester City FC",
+    pageViews: 500_000,
+    subtitle: "Fotbollssagan mot alla odds",
+    title: "Leicester blir engelska mästare",
+    year: 2016,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Cristiano Ronaldo och Portugal besegrar Frankrike i EM-finalen i Paris.",
+    pageTitle: "Cristiano Ronaldo",
+    pageViews: 500_000,
+    subtitle: "EM-finalen i Paris",
+    title: "Portugal vinner fotbolls-EM",
+    year: 2016,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Tom Brady leder New England Patriots från 3–28 till seger mot Atlanta Falcons i Super Bowl-finalen.",
+    pageTitle: "Tom Brady",
+    pageViews: 400_000,
+    subtitle: "Super Bowl-vändningen mot Atlanta",
+    title: "Patriots vänder Super Bowl från 3–28",
+    year: 2017,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Eliud Kipchoge springer maraton på under två timmar i ett särskilt arrangerat lopp i Wien.",
+    pageTitle: "Eliud Kipchoge",
+    pageViews: 400_000,
+    subtitle: "Maratonloppet i Wien",
+    title: "Kipchoge springer maraton under två timmar",
+    year: 2019,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Christian Eriksen kollapsar på planen i Danmarks EM-match mot Finland och räddas av sjukvårdare.",
+    pageTitle: "Christian Eriksen",
+    pageViews: 400_000,
+    subtitle: "EM-matchen mot Finland",
+    title: "Eriksen kollapsar i EM-matchen mot Finland",
+    year: 2021,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID],
+    fact: "Lionel Messi leder Argentina till VM-guld efter straffar mot Frankrike i en dramatisk final.",
+    pageTitle: "Lionel Messi",
+    pageViews: 500_000,
+    subtitle: "VM-finalen mot Frankrike",
+    title: "Messi vinner VM-finalen med Argentina",
+    year: 2022,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Peter Forsberg sätter den avgörande straffen mot Kanada när Tre Kronor vinner OS-finalen i Lillehammer.",
+    pageTitle: "Peter Forsberg",
+    pageViews: 500_000,
+    subtitle: "OS-finalen i Lillehammer",
+    title: "Forsberg avgör OS-finalen med Zorrostraffen",
+    year: 1994,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Tomas Ravelli räddar den avgörande straffen mot Rumänien och skickar Sverige till VM-semifinal.",
+    pageTitle: "Thomas Ravelli",
+    pageViews: 500_000,
+    subtitle: "VM-kvartsfinalen i USA",
+    title: "Ravelli räddar straffen mot Rumänien",
+    year: 1994,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Zlatan Ibrahimović klackar in 1–1 mot Italien i Sveriges EM-premiär.",
+    pageTitle: "Zlatan Ibrahimović",
+    pageViews: 500_000,
+    subtitle: "EM-målet mot Italien",
+    title: "Zlatan klackar in mot Italien",
+    year: 2004,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Zlatan Ibrahimović gör ett cykelsparksmål från långt håll mot England på Friends Arena.",
+    pageTitle: "Zlatan Ibrahimović",
+    pageViews: 500_000,
+    subtitle: "Cykelsparken mot England",
+    title: "Zlatan gör cykelsparksmålet mot England",
+    year: 2012,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Ingemar Stenmark vinner både storslalom och slalom vid vinter-OS i Lake Placid.",
+    pageTitle: "Ingemar Stenmark",
+    pageViews: 500_000,
+    subtitle: "Dubbla OS-guld i Lake Placid",
+    title: "Stenmark tar dubbla OS-guld",
+    year: 1980,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Björn Borg besegrar John McEnroe i en femsetare och tar sin femte raka Wimbledon-titel.",
+    pageTitle: "Björn Borg",
+    pageViews: 500_000,
+    subtitle: "Wimbledonfinalen mot McEnroe",
+    title: "Borg vinner sin femte raka Wimbledonfinal",
+    year: 1980,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Jan-Ove Waldner vinner OS-finalen i bordtennis mot Jean-Michel Saive.",
+    pageTitle: "Jan-Ove Waldner",
+    pageViews: 500_000,
+    subtitle: "OS-finalen i bordtennis",
+    title: "Waldner vinner OS-guld i bordtennis",
+    year: 1992,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Carolina Klüft vinner sjukampen vid OS i Aten med stor marginal.",
+    pageTitle: "Carolina Klüft",
+    pageViews: 500_000,
+    subtitle: "Sjukampen i Aten",
+    title: "Carolina Klüft tar OS-guld i sjukamp",
+    year: 2004,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Stefan Holm vinner höjdhoppet vid OS i Aten efter att ha klarat 2,36 meter.",
+    pageTitle: "Stefan Holm",
+    pageViews: 400_000,
+    subtitle: "Höjdhoppsfinalen i Aten",
+    title: "Stefan Holm tar OS-guld i höjdhopp",
+    year: 2004,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Anja Pärson vinner slalom och tar sitt första OS-guld i Turin.",
+    pageTitle: "Anja Pärson",
+    pageViews: 400_000,
+    subtitle: "Slalomen i Turin",
+    title: "Anja Pärson tar OS-guld i slalom",
+    year: 2006,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Sarah Sjöström vinner 100 meter fjärilsim och sätter världsrekord vid OS i Rio.",
+    pageTitle: "Sarah Sjöström",
+    pageViews: 500_000,
+    subtitle: "Världsrekordet i Rio",
+    title: "Sarah Sjöström tar OS-guld med världsrekord",
+    year: 2016,
+  },
+  {
+    deckIds: [SPORT_MOMENTS_DECK_ID, "all-sport-svensk-sport"],
+    fact: "Gunde Svan vinner både 15 kilometer och stafetten vid OS i Sarajevo.",
+    pageTitle: "Gunde Svan",
+    pageViews: 500_000,
+    subtitle: "Dubbla OS-guld i Sarajevo",
+    title: "Gunde Svan tar dubbla OS-guld",
+    year: 1984,
+  },
+];
+
 // A generic tournament photo can be misleading when it does not show the
 // named team or moment. Leave these cards image-free until a fitting Wikimedia
 // image is explicitly chosen.
@@ -10504,6 +11735,12 @@ const SPORT_CARDS: HandpickedCard[] = [
   },
 ];
 
+void SPORT_CARDS;
+
+const REQUIRED_IMAGE_CARD_TITLES = new Set(
+  [...WORLD_EVENT_CARDS, ...ADDITIONAL_SPORT_CARDS].map((card) => card.title),
+);
+
 const VIDEO_GAME_CARDS: HandpickedCard[] = [
   {
     deckIds: [VIDEO_GAMES_DECK_ID],
@@ -10837,6 +12074,7 @@ const CLASSIC_CARDS = [
   ...ADDITIONAL_NON_MUSIC_CARDS,
   ...ADDITIONAL_NON_MUSIC_CARDS_2,
 ].filter((card) => !isFilmOrTvCard(card));
+void VIDEO_GAME_CARDS;
 
 function shouldKeepVideoGameCard(card: Card): boolean {
   if (!/Resident Evil/i.test(`${card.title}\n${card.wikipediaSlug}`)) {
@@ -11046,37 +12284,6 @@ async function writeDeck(deckId: string, cards: Card[]) {
   await writeFile(filePath, `${JSON.stringify(sortedCards, null, 2)}\n`);
 }
 
-async function removeCardsFromExistingDecks(
-  cardsByDeckId: Map<string, Card[]>,
-  cardsToRemove: Card[],
-) {
-  const removeQids = new Set(cardsToRemove.map((card) => card.qid));
-  const removeTitles = new Set(cardsToRemove.map((card) => card.title));
-  const deckIds = (await readdir(PUBLIC_DECKS_DIR))
-    .filter(
-      (fileName) => fileName.endsWith(".json") && fileName !== "index.json",
-    )
-    .map((fileName) => fileName.replace(/\.json$/, ""));
-
-  for (const deckId of deckIds) {
-    const existingCards = cardsByDeckId.get(deckId) ?? (await readDeck(deckId));
-    const filteredCards = existingCards.filter((card) => {
-      const wikipediaSlug = card.wikipediaSlug ?? "";
-      const isFilmOrTvWork = isFilmOrTvRuntimeCard({ ...card, wikipediaSlug });
-
-      return (
-        !removeQids.has(card.qid) &&
-        !removeTitles.has(card.title) &&
-        !isFilmOrTvWork
-      );
-    });
-
-    if (filteredCards.length !== existingCards.length) {
-      cardsByDeckId.set(deckId, filteredCards);
-    }
-  }
-}
-
 async function main() {
   const cardsByDeckId = new Map<string, Card[]>();
   const metadataCache = await readMetadataCache();
@@ -11084,21 +12291,22 @@ async function main() {
     Object.entries(metadataCache),
   );
   let metadataCacheChanged = false;
-  const classicsCards: Card[] = [];
   const sportMomentCards: Card[] = [];
+  const worldEventCards: Card[] = [];
   const preparedCards: Array<{
     card: HandpickedCard;
     runtimeCard: Card;
   }> = [];
 
-  const classicCardSet = new Set<HandpickedCard>(CLASSIC_CARDS);
+  const cardsToPublish = [...ADDITIONAL_SPORT_CARDS, ...WORLD_EVENT_CARDS];
 
-  for (const card of [...CLASSIC_CARDS, ...SPORT_CARDS, ...VIDEO_GAME_CARDS]) {
+  for (const card of cardsToPublish) {
     let metadata = metadataByTitle.get(card.pageTitle);
 
     if (
       !metadata ||
       metadata.qid.startsWith("manual-") ||
+      (REQUIRED_IMAGE_CARD_TITLES.has(card.title) && !metadata.image) ||
       (!metadata.image &&
         !metadata.imageChecked &&
         SPORT_IMAGE_RECHECK_TITLES.has(card.pageTitle))
@@ -11120,37 +12328,38 @@ async function main() {
       wikipediaSlug: slugFromTitle(metadata.title),
       year: card.year,
     };
-    if (isFilmOrTvRuntimeCard(runtimeCard)) {
+    if (REQUIRED_IMAGE_CARD_TITLES.has(card.title) && !runtimeCard.image) {
+      throw new Error(
+        `Required Wikimedia image is missing for curated card: ${card.title}`,
+      );
+    }
+    if (
+      isFilmOrTvRuntimeCard(runtimeCard) &&
+      !card.deckIds.includes(WORLD_EVENTS_DECK_ID)
+    ) {
       continue;
     }
 
     preparedCards.push({ card, runtimeCard });
   }
 
-  const classicRuntimeCards = preparedCards
-    .filter(({ card }) => classicCardSet.has(card))
-    .map(({ runtimeCard }) => runtimeCard);
-  await removeCardsFromExistingDecks(cardsByDeckId, classicRuntimeCards);
-
   for (const { card, runtimeCard } of preparedCards) {
-    if (classicCardSet.has(card)) {
-      classicsCards.push(runtimeCard);
-    }
-
     if (card.deckIds.includes(SPORT_MOMENTS_DECK_ID)) {
       sportMomentCards.push(runtimeCard);
     }
 
+    if (card.deckIds.includes(WORLD_EVENTS_DECK_ID)) {
+      worldEventCards.push(runtimeCard);
+    }
+
     for (const deckId of card.deckIds) {
       const cards = cardsByDeckId.get(deckId) ?? (await readDeck(deckId));
-      const withoutDuplicate = cards.filter((existingCard) => {
-        return (
-          existingCard.qid !== runtimeCard.qid &&
-          existingCard.title !== runtimeCard.title
-        );
-      });
-      withoutDuplicate.push(runtimeCard);
-      cardsByDeckId.set(deckId, withoutDuplicate);
+      if (
+        !cards.some((existingCard) => existingCard.title === runtimeCard.title)
+      ) {
+        cards.push(runtimeCard);
+      }
+      cardsByDeckId.set(deckId, cards);
     }
   }
 
@@ -11158,74 +12367,30 @@ async function main() {
     await writeMetadataCache(metadataCache);
   }
 
-  for (const [deckId, cards] of cardsByDeckId) {
-    await writeDeck(deckId, cards);
+  const sportCards =
+    cardsByDeckId.get(SPORT_MOMENTS_DECK_ID) ??
+    (await readDeck(SPORT_MOMENTS_DECK_ID));
+  if (cardsByDeckId.has(SPORT_MOMENTS_DECK_ID)) {
+    await writeDeck(SPORT_MOMENTS_DECK_ID, sportCards);
   }
 
-  await writeDeck(CLASSICS_DECK_ID, classicsCards);
-  await writeDeck(SPORT_MOMENTS_DECK_ID, sportMomentCards);
-  await writeDeck(MUSIC_DECK_ID, []);
+  const svenskSportCards =
+    cardsByDeckId.get("all-sport-svensk-sport") ??
+    (await readDeck("all-sport-svensk-sport"));
+  if (cardsByDeckId.has("all-sport-svensk-sport")) {
+    await writeDeck("all-sport-svensk-sport", svenskSportCards);
+  }
 
-  const publishedDeckIds = new Set([
-    CLASSICS_DECK_ID,
-    MUSIC_DECK_ID,
-    SPORT_MOMENTS_DECK_ID,
-  ]);
-  const staleDeckFiles = (await readdir(PUBLIC_DECKS_DIR)).filter(
-    (fileName) =>
-      fileName.endsWith(".json") &&
-      fileName !== "index.json" &&
-      !publishedDeckIds.has(fileName.replace(/\.json$/u, "")),
-  );
-  await Promise.all(
-    staleDeckFiles.map((fileName) => rm(path.join(PUBLIC_DECKS_DIR, fileName))),
-  );
+  await writeDeck(WORLD_EVENTS_DECK_ID, worldEventCards);
 
   const index = JSON.parse(await readFile(INDEX_FILE, "utf8")) as {
     children: Array<Record<string, unknown>>;
   };
-  const difficultyCounts = countDifficulty(classicsCards);
-  const classicsNode = {
-    id: CLASSICS_GROUP_ID,
-    slug: "svenska-klassiker",
-    title: "Svenska klassiker",
-    themeHue: 15,
-    frequency: 2.45,
-    difficultyCounts,
-    minScore: 1000,
-    children: [
-      {
-        id: CLASSICS_DECK_ID,
-        slug: "allt",
-        title: "Allt",
-        themeHue: 15,
-        frequency: 1,
-        difficultyCounts,
-        minScore: 1000,
-      },
-    ],
-  };
-  const existingIndex = index.children.findIndex((child) => {
-    return child.id === CLASSICS_GROUP_ID;
-  });
-
-  if (existingIndex >= 0) {
-    index.children[existingIndex] = classicsNode;
-  } else {
-    const swedenIndex = index.children.findIndex((child) => {
-      return child.id === "all-sweden";
-    });
-    index.children.splice(Math.max(swedenIndex + 1, 0), 0, classicsNode);
-  }
-
   const sportNode = index.children.find((child) => child.id === "all-sport") as
     | { children?: Array<Record<string, unknown>>; difficultyCounts?: unknown }
     | undefined;
   if (sportNode) {
-    const sportMomentCounts = countDifficulty(sportMomentCards);
-    const svenskSportCards =
-      cardsByDeckId.get("all-sport-svensk-sport") ??
-      (await readDeck("all-sport-svensk-sport"));
+    const sportMomentCounts = countDifficulty(sportCards);
     const svenskSportCounts = countDifficulty(svenskSportCards);
     const sportMomentNode = {
       id: SPORT_MOMENTS_DECK_ID,
@@ -11266,65 +12431,40 @@ async function main() {
     );
   }
 
-  await writeFile(INDEX_FILE, `${JSON.stringify(index, null, 2)}\n`);
-
-  const emptyCounts = { easy: 0, normal: 0, hard: 0 };
-  const publishedSportCounts = countDifficulty(sportMomentCards);
-  const publishedIndex = {
-    id: "all",
-    slug: "all",
-    title: "All",
-    themeHue: 0,
+  const worldEventCounts = countDifficulty(worldEventCards);
+  const worldEventsNode = {
+    id: WORLD_EVENTS_GROUP_ID,
+    slug: "varldshandelser",
+    title: "Världshändelser",
+    themeHue: 36,
+    frequency: 1.4,
+    difficultyCounts: worldEventCounts,
     minScore: 1000,
-    difficultyCounts: addDifficultyCounts(
-      addDifficultyCounts(difficultyCounts, publishedSportCounts),
-      emptyCounts,
-    ),
     children: [
-      classicsNode,
       {
-        id: "all-entertainment",
-        slug: "entertainment",
-        title: "Entertainment",
-        themeHue: 216,
-        frequency: MUSIC_ROOT_FREQUENCY,
+        id: WORLD_EVENTS_DECK_ID,
+        slug: "allt",
+        title: "Allt",
+        themeHue: 36,
+        frequency: 1,
+        difficultyCounts: worldEventCounts,
         minScore: 1000,
-        difficultyCounts: emptyCounts,
-        children: [
-          {
-            id: MUSIC_DECK_ID,
-            slug: "music",
-            title: "Music",
-            themeHue: 216,
-            frequency: 1,
-            minScore: 1000,
-            difficultyCounts: emptyCounts,
-          },
-        ],
-      },
-      {
-        id: "all-sport",
-        slug: "sport",
-        title: "Sport",
-        themeHue: 144,
-        frequency: 0.1,
-        minScore: 1000,
-        difficultyCounts: publishedSportCounts,
-        children: [
-          {
-            id: SPORT_MOMENTS_DECK_ID,
-            slug: "sportogonblick",
-            title: "Sportögonblick",
-            themeHue: 144,
-            frequency: 2.6,
-            minScore: 1000,
-            difficultyCounts: publishedSportCounts,
-          },
-        ],
       },
     ],
   };
-  await writeFile(INDEX_FILE, `${JSON.stringify(publishedIndex, null, 2)}\n`);
+  const worldEventsIndex = index.children.findIndex(
+    (child) => child.id === WORLD_EVENTS_GROUP_ID,
+  );
+  if (worldEventsIndex >= 0) {
+    index.children[worldEventsIndex] = worldEventsNode;
+  } else {
+    const sportIndex = index.children.findIndex(
+      (child) => child.id === "all-sport",
+    );
+    index.children.splice(Math.max(sportIndex, 0), 0, worldEventsNode);
+  }
+
+  await writeFile(INDEX_FILE, `${JSON.stringify(index, null, 2)}\n`);
 
   console.log(
     `Added ${CLASSIC_CARDS.length} handpicked Swedish classic cards.`,

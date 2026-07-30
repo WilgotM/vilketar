@@ -14,7 +14,7 @@ import {
 test("top-level categories stay in the intended order", () => {
   assert.deepEqual(
     getCategoryDefinitions().map((category) => category.slug),
-    ["svenska-klassiker", "entertainment", "sport"],
+    ["svenska-klassiker", "varldshandelser", "entertainment", "sport"],
   );
 });
 
@@ -51,6 +51,9 @@ test("static paths include deep selectors and leaf routes", () => {
   assert.ok(paths.includes("svenska-klassiker"));
   assert.ok(paths.includes("svenska-klassiker/allt"));
   assert.ok(paths.includes("browse/svenska-klassiker"));
+  assert.ok(paths.includes("varldshandelser"));
+  assert.ok(paths.includes("varldshandelser/allt"));
+  assert.ok(paths.includes("browse/varldshandelser"));
   assert.ok(paths.includes("sport"));
   assert.ok(paths.includes("sport/sportogonblick"));
   assert.ok(!paths.includes("leaders"));
