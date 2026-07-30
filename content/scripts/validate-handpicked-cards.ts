@@ -139,14 +139,12 @@ async function validateWikipedia(cards: Card[], errors: string[]) {
       redirects: "1",
       titles: chunk.join("|"),
     });
-    const response = await fetch(
+    const response = await fetchWithRetry(
       `https://sv.wikipedia.org/w/api.php?${params}`,
-      {
-        headers: { "User-Agent": "VilketAr/0.1 (card validation)" },
-      },
+      errors,
+      "Wikipedia",
     );
-    if (!response.ok) {
-      errors.push(`Wikipedia API failed: ${response.status}`);
+    if (!response) {
       continue;
     }
     const data = (await response.json()) as {
@@ -170,14 +168,12 @@ async function validateCommons(cards: Card[], errors: string[]) {
       prop: "imageinfo",
       titles: chunk.map((image) => `File:${image}`).join("|"),
     });
-    const response = await fetch(
+    const response = await fetchWithRetry(
       `https://commons.wikimedia.org/w/api.php?${params}`,
-      {
-        headers: { "User-Agent": "VilketAr/0.1 (card validation)" },
-      },
+      errors,
+      "Wikimedia Commons",
     );
-    if (!response.ok) {
-      errors.push(`Wikimedia Commons API failed: ${response.status}`);
+    if (!response) {
       continue;
     }
     const data = (await response.json()) as {
@@ -185,6 +181,32 @@ async function validateCommons(cards: Card[], errors: string[]) {
     };
     addMissingPageErrors(data.query?.pages ?? {}, chunk, errors, "Commons");
   }
+}
+
+async function fetchWithRetry(
+  url: string,
+  errors: string[],
+  source: string,
+): Promise<Response | null> {
+  for (let attempt = 0; attempt < 4; attempt += 1) {
+    const response = await fetch(url, {
+      headers: { "User-Agent": "VilketAr/0.1 (card validation)" },
+    });
+    if (response.ok) return response;
+
+    if (response.status !== 429 && response.status < 500) {
+      errors.push(`${source} API failed: ${response.status}`);
+      return null;
+    }
+
+    if (attempt < 3) {
+      await new Promise((resolve) => setTimeout(resolve, 1_000 * 2 ** attempt));
+    } else {
+      errors.push(`${source} API failed after retries: ${response.status}`);
+    }
+  }
+
+  return null;
 }
 
 async function main() {
