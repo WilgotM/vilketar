@@ -2,16 +2,36 @@ import classNames from "classnames";
 import React from "react";
 import * as styles from "../styles/music-autoplay.css";
 
-const MusicAutoplayContext = React.createContext(false);
-export const MUSIC_AUTOPLAY_START_EVENT = "vilketar:music-autoplay-start";
+type MusicAutoplayContextValue = {
+  audio: HTMLAudioElement | null;
+  enabled: boolean;
+};
+
+const MusicAutoplayContext = React.createContext<MusicAutoplayContextValue>({
+  audio: null,
+  enabled: false,
+});
 
 export function MusicAutoplayProvider(props: {
   children: React.ReactNode;
   enabled: boolean;
 }) {
+  const [audio, setAudio] = React.useState<HTMLAudioElement | null>(null);
+  const contextValue = React.useMemo(
+    () => ({ audio, enabled: props.enabled }),
+    [audio, props.enabled],
+  );
+
+  React.useEffect(() => {
+    return () => {
+      audio?.pause();
+    };
+  }, [audio]);
+
   return (
-    <MusicAutoplayContext.Provider value={props.enabled}>
+    <MusicAutoplayContext.Provider value={contextValue}>
       {props.children}
+      <audio ref={setAudio} preload="auto" />
     </MusicAutoplayContext.Provider>
   );
 }
@@ -26,6 +46,7 @@ export function MusicAutoplayToggle(props: {
   placement?: "board" | "party";
 }) {
   const { enabled, onChange, placement = "board" } = props;
+  const { audio } = useMusicAutoplay();
 
   return (
     <button
@@ -41,8 +62,10 @@ export function MusicAutoplayToggle(props: {
       })}
       onClick={() => {
         const nextEnabled = !enabled;
-        if (nextEnabled) {
-          window.dispatchEvent(new Event(MUSIC_AUTOPLAY_START_EVENT));
+        if (nextEnabled && audio) {
+          // Keep this play call inside the user's click. iOS grants future
+          // autoplay permission to this specific, persistent media element.
+          void audio.play().catch(() => undefined);
         }
         onChange(nextEnabled);
       }}
