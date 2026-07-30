@@ -2,7 +2,10 @@ name: Lock daily game
 
 on:
   schedule:
-    - cron: "5 0 * * *"
+    # A second invocation is safe: the lock script leaves an existing queue
+    # untouched. It recovers the day if the first hosted runner has a
+    # transient failure.
+    - cron: "5,35 0 * * *"
   workflow_dispatch:
     inputs:
       date:
@@ -31,7 +34,19 @@ jobs:
         uses: oven-sh/setup-bun@v2
 
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: |
+          # GitHub-hosted runners occasionally fail while unpacking a package.
+          # A retry keeps a transient registry/cache error from leaving the
+          # current day's game unlocked.
+          for attempt in 1 2 3; do
+            bun install --frozen-lockfile && exit 0
+            if [ "$attempt" -lt 3 ]; then
+              echo "Install failed (attempt $attempt/3); retrying in 10 seconds..."
+              sleep 10
+            fi
+          done
+
+          exit 1
 
       - name: Lock daily game
         env:

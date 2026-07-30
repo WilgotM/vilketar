@@ -3,7 +3,10 @@ import React from "react";
 import { getSelectionRoutePath } from "../lib/categories";
 import { DAILY_DIFFICULTY, getCurrentUtcDateKey } from "../lib/daily";
 import { createDailyGameState } from "../lib/daily-game";
-import { loadDailyOverride } from "../lib/daily-overrides";
+import {
+  loadDailyOverride,
+  loadRecentDailyOpeningProtection,
+} from "../lib/daily-overrides";
 import { getDailyScheduleTheme } from "../lib/daily-schedule";
 import {
   clearDailyGameSnapshot,
@@ -384,12 +387,19 @@ export default function GameRouteScreen(props: Props) {
         }
 
         const dailyOverride = await loadDailyOverride(dateKey);
+        const openingProtection = dailyOverride
+          ? undefined
+          : await loadRecentDailyOpeningProtection(dateKey);
         const nextState = await createDailyGameState(
           selectedRootDeck,
           filteredCards,
           DAILY_DIFFICULTY,
           dateKey,
           dailyOverride,
+          {
+            openingExcludedQids: openingProtection?.qids,
+            openingExcludedTitles: openingProtection?.titles,
+          },
         );
 
         if (!cancelled) {

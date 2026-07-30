@@ -2,6 +2,15 @@ import { GameDifficulty } from "../types/game";
 
 export const DAILY_DIFFICULTY: GameDifficulty = "normal";
 
+export function getUtcDateKeyDaysBefore(
+  dateKey: string,
+  dayCount: number,
+): string {
+  const date = new Date(`${dateKey}T00:00:00.000Z`);
+  date.setUTCDate(date.getUTCDate() - dayCount);
+  return date.toISOString().slice(0, 10);
+}
+
 export function getCurrentUtcDateKey(now: Date = new Date()): string {
   return now.toISOString().slice(0, 10);
 }

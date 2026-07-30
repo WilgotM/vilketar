@@ -1,12 +1,17 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
-import { getCurrentUtcDateKey, DAILY_DIFFICULTY } from "../../lib/daily";
+import {
+  getCurrentUtcDateKey,
+  getUtcDateKeyDaysBefore,
+  DAILY_DIFFICULTY,
+} from "../../lib/daily";
 import { createDailyCardQueue } from "../../lib/daily-game";
 import {
-  getDailyHistoryWindow,
-  getDailyScheduleTheme,
-} from "../../lib/daily-schedule";
+  createDailyOpeningProtection,
+  DailyOpeningHistoryRow,
+} from "../../lib/daily-opening-protection";
+import { getDailyScheduleTheme } from "../../lib/daily-schedule";
 import { collectLeafDeckIds, createDeckNodeMap } from "../../lib/deck-tree";
 import { Card } from "../../types/cards";
 import { DeckNode } from "../../types/decks";
@@ -44,39 +49,24 @@ async function loadCardsByDeckId(
   return new Map(entries);
 }
 
-type DailyGameHistoryRow = {
-  card_qids: string[];
-  date_key: string;
-};
-
-async function loadRecentCardQids(
+async function loadRecentDailyOpeningProtection(
   supabase: SupabaseClient<any, "public">,
   dateKey: string,
-  scheduledDeckId: string,
-): Promise<Set<string>> {
+): Promise<ReturnType<typeof createDailyOpeningProtection>> {
+  const startDateKey = getUtcDateKeyDaysBefore(dateKey, 7);
   const response = await supabase
     .from("daily_games")
-    .select("date_key, card_qids")
+    .select("date_key, card_qids, card_snapshots")
+    .gte("date_key", startDateKey)
     .lt("date_key", dateKey)
     .order("date_key", { ascending: false })
-    .limit(90)
-    .returns<DailyGameHistoryRow[]>();
+    .returns<DailyOpeningHistoryRow[]>();
 
   if (response.error) {
     throw response.error;
   }
 
-  const recentRows = (response.data ?? [])
-    .filter((row) => {
-      const themeDeckId = getDailyScheduleTheme(row.date_key).deckId ?? "all";
-      return themeDeckId === scheduledDeckId;
-    })
-    .slice(
-      0,
-      getDailyHistoryWindow(scheduledDeckId === "all" ? null : scheduledDeckId),
-    );
-
-  return new Set(recentRows.flatMap((row) => row.card_qids));
+  return createDailyOpeningProtection(response.data ?? []);
 }
 
 async function main(): Promise<void> {
@@ -113,7 +103,7 @@ async function main(): Promise<void> {
       .from("daily_games")
       .select("date_key, card_qids")
       .eq("date_key", dateKey)
-      .maybeSingle<DailyGameHistoryRow>();
+      .maybeSingle<Pick<DailyOpeningHistoryRow, "card_qids">>();
 
     if (existing.error) {
       throw existing.error;
@@ -127,10 +117,9 @@ async function main(): Promise<void> {
     }
   }
 
-  const recentCardQids = await loadRecentCardQids(
+  const openingProtection = await loadRecentDailyOpeningProtection(
     supabase,
     dateKey,
-    scheduledDeckId,
   );
   const cards = createDailyCardQueue(
     selectedRootDeck,
@@ -138,7 +127,10 @@ async function main(): Promise<void> {
     DAILY_DIFFICULTY,
     dateKey,
     null,
-    { excludedQids: recentCardQids },
+    {
+      openingExcludedQids: openingProtection.qids,
+      openingExcludedTitles: openingProtection.titles,
+    },
   );
   const cardQids = cards.map((card) => card.qid);
   const cardSnapshots = cards.map((card) => toCardSnapshot(card));

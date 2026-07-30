@@ -2,6 +2,10 @@ import { Card } from "../types/cards";
 import { DeckNode } from "../types/decks";
 import { GameDifficulty, GameState, PreparedCard } from "../types/game";
 import { filterCardsByDifficulty, hasDeckForDifficulty } from "./create-state";
+import {
+  DAILY_OPENING_CARD_COUNT,
+  normalizeDailyCardTitle,
+} from "./daily-opening-protection";
 import { DIFFICULTY_MIN_PAGE_VIEWS } from "./free-play-difficulty-rules";
 import { preloadCard, prepareDecks } from "./game-selection";
 import { createSeededRandom } from "./seeded-random";
@@ -15,8 +19,10 @@ export interface DailyOverride {
 }
 
 export interface DailyQueueOptions {
-  /** Cards used in recent daily games for the same theme. */
-  excludedQids?: ReadonlySet<string>;
+  /** Cards that may not appear in the opening of today's daily queue. */
+  openingExcludedQids?: ReadonlySet<string>;
+  /** Visible question titles that may not appear in the opening. */
+  openingExcludedTitles?: ReadonlySet<string>;
 }
 
 function shuffle<T>(entries: T[], random: () => number): T[] {
@@ -78,15 +84,11 @@ export function createDailySearchCards(
     });
 }
 
-function normalizeVisibleTitle(title: string): string {
-  return title.trim().replace(/\s+/g, " ").toLocaleLowerCase("sv-SE");
-}
-
 function uniqueDailyCandidates(cards: PreparedCard[]): PreparedCard[] {
   const usedQids = new Set<string>();
   const usedTitles = new Set<string>();
   return cards.filter((card) => {
-    const titleKey = normalizeVisibleTitle(card.title);
+    const titleKey = normalizeDailyCardTitle(card.title);
     if (usedQids.has(card.qid) || usedTitles.has(titleKey)) {
       return false;
     }
@@ -187,29 +189,64 @@ export function createDailyCardQueue(
       .filter((card): card is PreparedCard => card !== null) ?? [];
   const overrideCards =
     snapshotOverrideCards.length > 0 ? snapshotOverrideCards : qidOverrideCards;
-  const preferredCards = allCards.filter(
-    (card) => !options.excludedQids?.has(card.qid),
-  );
-  const shuffledPreferredCards = shuffle(preferredCards, random);
-  const shuffledFallbackCards = shuffle(allCards, random);
   const selectedCards: PreparedCard[] = [];
   const usedQids = new Set<string>();
 
-  for (const card of [
-    ...overrideCards,
-    ...shuffledPreferredCards,
-    ...shuffledFallbackCards,
-  ]) {
-    if (usedQids.has(card.qid)) {
-      continue;
+  const addCard = (card: PreparedCard): void => {
+    if (usedQids.has(card.qid) || selectedCards.length >= DAILY_CARD_COUNT) {
+      return;
     }
 
     selectedCards.push(card);
     usedQids.add(card.qid);
+  };
 
-    if (selectedCards.length >= DAILY_CARD_COUNT) {
-      break;
+  // A deliberate admin override is authoritative and stays at the front.
+  for (const card of overrideCards) {
+    addCard(card);
+  }
+
+  const openingSlots = Math.max(
+    0,
+    DAILY_OPENING_CARD_COUNT - selectedCards.length,
+  );
+  const openingExcludedTitles = options.openingExcludedTitles
+    ? new Set(
+        Array.from(options.openingExcludedTitles, normalizeDailyCardTitle),
+      )
+    : undefined;
+  const isExcludedFromOpening = (card: PreparedCard): boolean => {
+    return (
+      options.openingExcludedQids?.has(card.qid) ||
+      openingExcludedTitles?.has(normalizeDailyCardTitle(card.title)) ||
+      false
+    );
+  };
+  const openingCandidates = shuffle(
+    allCards.filter(
+      (card) => !usedQids.has(card.qid) && !isExcludedFromOpening(card),
+    ),
+    random,
+  );
+
+  for (const card of openingCandidates.slice(0, openingSlots)) {
+    addCard(card);
+  }
+
+  // This should only be needed if a deck becomes unusually small. It keeps a
+  // playable queue instead of failing the daily game.
+  if (selectedCards.length < DAILY_OPENING_CARD_COUNT) {
+    for (const card of shuffle(allCards, random)) {
+      addCard(card);
+      if (selectedCards.length >= DAILY_OPENING_CARD_COUNT) {
+        break;
+      }
     }
+  }
+
+  // Recent opening cards are deliberately allowed back from position 21.
+  for (const card of shuffle(allCards, random)) {
+    addCard(card);
   }
 
   return selectedCards;
