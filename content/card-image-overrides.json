@@ -1,0 +1,62 @@
+{
+  "cards": {
+    "Q1027830:1645": {
+      "image": "Topographic_map_of_Gotland.svg",
+      "previousImages": {
+        "all-swedish-classics-all": ""
+      },
+      "savedAt": "2026-07-31T15:06:41.036Z",
+      "sourceTitle": "Gotland",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Topographic_map_of_Gotland.svg"
+    },
+    "Q211661:1645": {
+      "image": "Åre_gondolen.JPG",
+      "previousImages": {
+        "all-swedish-classics-all": ""
+      },
+      "savedAt": "2026-07-31T15:07:59.564Z",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C3%85re_gondolen.JPG"
+    },
+    "Q209523:1658": {
+      "image": "Gullholmen.JPG",
+      "previousImages": {
+        "all-swedish-classics-all": ""
+      },
+      "savedAt": "2026-07-31T15:08:29.230Z",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gullholmen.JPG"
+    },
+    "Q899356:1689": {
+      "image": "Husqvarna_Automower_105_Lawn_Robot_Vestfold,_Norway_2017-10-06.jpg",
+      "previousImages": {
+        "all-swedish-classics-all": ""
+      },
+      "savedAt": "2026-07-31T15:08:49.674Z",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Husqvarna_Automower_105_Lawn_Robot_Vestfold,_Norway_2017-10-06.jpg"
+    },
+    "Q10649085:1707": {
+      "image": "Ramlösa_water.jpg",
+      "previousImages": {
+        "all-swedish-classics-all": ""
+      },
+      "savedAt": "2026-07-31T15:09:21.109Z",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raml%C3%B6sa_water.jpg"
+    },
+    "Q28340313:1726": {
+      "image": "Rörstrands_porslinsfabrik_logotyp_ut_katalog_1897.jpg",
+      "previousImages": {
+        "all-swedish-classics-all": "Disambig_grey.svg"
+      },
+      "savedAt": "2026-07-31T15:11:15.026Z",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:R%C3%B6rstrands_porslinsfabrik_logotyp_ut_katalog_1897.jpg"
+    },
+    "Q10607870:1766": {
+      "image": "Röda_Bergen_stadsplan.jpg",
+      "previousImages": {
+        "all-swedish-classics-all": ""
+      },
+      "savedAt": "2026-07-31T15:13:13.195Z",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:R%C3%B6da_Bergen_stadsplan.jpg"
+    }
+  },
+  "version": 1
+}

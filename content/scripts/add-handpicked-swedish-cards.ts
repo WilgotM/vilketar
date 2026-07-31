@@ -1,6 +1,10 @@
 import { readFile, writeFile } from "fs/promises";
 import path from "path";
 import { Card } from "../../types/cards";
+import {
+  applyCardImageOverride,
+  readCardImageOverrides,
+} from "../card-image-overrides";
 
 const PUBLIC_DECKS_DIR = path.join(process.cwd(), "public/decks");
 const INDEX_FILE = path.join(PUBLIC_DECKS_DIR, "index.json");
@@ -12286,6 +12290,7 @@ async function writeDeck(deckId: string, cards: Card[]) {
 
 async function main() {
   const cardsByDeckId = new Map<string, Card[]>();
+  const imageOverrides = await readCardImageOverrides();
   const metadataCache = await readMetadataCache();
   const metadataByTitle = new Map<string, PageMetadata>(
     Object.entries(metadataCache),
@@ -12318,7 +12323,7 @@ async function main() {
       await sleep(150);
     }
 
-    const runtimeCard: Card = {
+    const baseRuntimeCard: Card = {
       fact: card.fact,
       image: card.image ?? metadata.image,
       pageViews: card.pageViews,
@@ -12328,6 +12333,7 @@ async function main() {
       wikipediaSlug: slugFromTitle(metadata.title),
       year: card.year,
     };
+    const runtimeCard = applyCardImageOverride(baseRuntimeCard, imageOverrides);
     if (REQUIRED_IMAGE_CARD_TITLES.has(card.title) && !runtimeCard.image) {
       throw new Error(
         `Required Wikimedia image is missing for curated card: ${card.title}`,

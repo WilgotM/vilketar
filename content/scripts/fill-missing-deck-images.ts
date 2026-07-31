@@ -2,6 +2,10 @@ import { readdir, readFile, writeFile } from "fs/promises";
 import path from "path";
 import { Card } from "../../types/cards";
 import { getWikimediaUserAgent } from "../api-env";
+import {
+  getCardImageOverride,
+  readCardImageOverrides,
+} from "../card-image-overrides";
 import { fetchJson } from "../fetch";
 
 const PUBLIC_DECKS_DIR = path.join("public", "decks");
@@ -273,9 +277,13 @@ async function fetchWikipediaImages(titles: readonly string[]) {
 
 async function main() {
   const decks = await readDecks();
+  const imageOverrides = await readCardImageOverrides();
   const missingCards = decks.flatMap((deck) => {
     return deck.cards
       .filter((card) => {
+        if (getCardImageOverride(imageOverrides, card)) {
+          return false;
+        }
         return (
           !isSupportedImage(card.image) ||
           (REPAIR_FALLBACK_IMAGES.has(card.image) &&

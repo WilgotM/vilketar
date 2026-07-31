@@ -2,6 +2,10 @@ import { readFile, writeFile } from "fs/promises";
 import path from "path";
 import { Card } from "../../types/cards";
 import { DeckDifficultyCounts, DeckNode } from "../../types/decks";
+import {
+  applyCardImageOverride,
+  readCardImageOverrides,
+} from "../card-image-overrides";
 
 type MusicCandidate = {
   appleArtworkUrl?: string | null;
@@ -114,6 +118,7 @@ async function main() {
   const candidates = JSON.parse(
     await readFile(CANDIDATES_FILE, "utf8"),
   ) as MusicCandidate[];
+  const imageOverrides = await readCardImageOverrides();
   const seen = new Set<string>();
   const cards = candidates.flatMap((candidate) => {
     const key = `${cleanTitle(candidate.title).toLocaleLowerCase("sv-SE")}::${candidate.artist.toLocaleLowerCase("sv-SE")}`;
@@ -126,7 +131,7 @@ async function main() {
       return [];
     }
     seen.add(key);
-    return [toCard(candidate)];
+    return [applyCardImageOverride(toCard(candidate), imageOverrides)];
   });
 
   await writeFile(MUSIC_DECK_FILE, `${JSON.stringify(cards, null, 2)}\n`);

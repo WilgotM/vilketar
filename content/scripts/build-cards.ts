@@ -6,6 +6,10 @@ import {
 } from "../../lib/free-play-difficulty-rules";
 import { Card } from "../../types/cards";
 import { DeckDifficultyCounts, DeckNode } from "../../types/decks";
+import {
+  applyCardImageOverride,
+  readCardImageOverrides,
+} from "../card-image-overrides";
 import { Deck, getAllDeckDefinitions, rootDeck } from "../deck-tree";
 import { QueryDefinition, SourceRow } from "../query-definition";
 import { loadQueryDefinitions } from "../query-definitions";
@@ -685,7 +689,11 @@ async function buildCardsForQuery(
   console.log(
     `[query:${query.id}] pageviews hydrated in ${formatDurationMs(pageViewsDurationMs)} for ${pageViewsStats.targetMonth}; cache hits=${pageViewsStats.cacheHits}, fetched=${pageViewsStats.cacheMisses}, resolved=${pageViewsStats.resolved}, missing=${pageViewsStats.resolvedAsNull}`,
   );
-  const safeForWorkCards = builtCardsWithPopularity.filter((card) => {
+  const imageOverrides = await readCardImageOverrides();
+  const cardsWithOverrides = builtCardsWithPopularity.map((card) =>
+    applyCardImageOverride(card, imageOverrides),
+  );
+  const safeForWorkCards = cardsWithOverrides.filter((card) => {
     if (shouldRejectForNsfw(card)) {
       addReject(rejectionReasons, "nsfw-content");
       return false;
