@@ -13,6 +13,8 @@ type MusicCandidate = {
   appleTrackId: number | null;
   appleTrackViewUrl?: string | null;
   artist: string;
+  spotifyArtworkUrl?: string | null;
+  spotifyPreviewUrl?: string | null;
   spotifyTrackId: string;
   title: string;
   year: number;
@@ -76,15 +78,18 @@ function addCounts(
 function toCard(candidate: MusicCandidate): Card {
   const title = cleanTitle(candidate.title);
   const artist = cleanArtist(candidate.artist);
+  const artworkUrl =
+    candidate.appleArtworkUrl ?? candidate.spotifyArtworkUrl ?? null;
   return {
     fact: `”${title}” framförs av ${artist}.`,
-    image: candidate.appleArtworkUrl ?? "",
+    image: artworkUrl ?? "",
     music: {
       appleTrackId: candidate.appleTrackId,
       appleTrackViewUrl: candidate.appleTrackViewUrl ?? null,
       artist,
-      artworkUrl: candidate.appleArtworkUrl ?? null,
-      previewUrl: candidate.applePreviewUrl ?? null,
+      artworkUrl,
+      previewUrl:
+        candidate.applePreviewUrl ?? candidate.spotifyPreviewUrl ?? null,
       spotifyTrackId: candidate.spotifyTrackId,
     },
     pageViews: 300_000,

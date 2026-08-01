@@ -13,7 +13,9 @@ type MusicCandidate = {
   reviewReason: string | null;
   spotifyReleaseDate: string;
   spotifyTrackId: string;
+  spotifyPreviewUrl?: string | null;
   spotifyUri: string;
+  spotifyArtworkUrl?: string | null;
   title: string;
   wikidataQid: string | null;
   wikipediaTitle: string | null;
@@ -35,14 +37,23 @@ type ItunesTrack = {
   trackViewUrl?: string;
 };
 
+type SpotifyOEmbed = {
+  thumbnail_url?: string;
+};
+
+type SpotifyMetadata = {
+  artworkUrl: string | null;
+  previewUrl: string | null;
+};
+
 const CANDIDATES_FILE = path.join(
   process.cwd(),
   "content/music/vilketar-music-candidates.json",
 );
 const CONCURRENCY = 1;
 const SEARCH_LIMIT = 25;
-const REQUEST_INTERVAL_MS = 3_200;
-const RETRY_DELAYS_MS = [3_200, 6_400, 12_800];
+const REQUEST_INTERVAL_MS = 500;
+const RETRY_DELAYS_MS = [4_000, 10_000, 20_000, 40_000];
 const VERSION_WORDS =
   /\b(remaster(?:ed)?|deluxe|radio edit|single version|edit|album version|original version|mono|stereo|bonus track|feat(?:uring)?\.?\s+[^)\]]+|from .+ soundtrack)\b/giu;
 const REISSUE_WORDS =
@@ -126,7 +137,7 @@ function chooseTrack(
 ): ItunesTrack | null {
   const ranked = tracks
     .map((track) => ({ score: matchScore(candidate, track), track }))
-    .filter(({ score, track }) => score >= 15 && !!track.previewUrl)
+    .filter(({ score, track }) => score >= 15 && !!track.trackId)
     .sort((left, right) => {
       if (right.score !== left.score) return right.score - left.score;
       return (
@@ -183,6 +194,49 @@ function artworkUrl(track: ItunesTrack): string | null {
   );
 }
 
+async function fetchSpotifyMetadata(
+  candidate: MusicCandidate,
+): Promise<SpotifyMetadata> {
+  if (candidate.spotifyArtworkUrl && candidate.spotifyPreviewUrl) {
+    return {
+      artworkUrl: candidate.spotifyArtworkUrl ?? null,
+      previewUrl: candidate.spotifyPreviewUrl ?? null,
+    };
+  }
+
+  try {
+    const [oembedResult, embedResult] = await Promise.allSettled([
+      fetch(
+        `https://open.spotify.com/oembed?url=${encodeURIComponent(candidate.spotifyUri)}`,
+        {
+          signal: AbortSignal.timeout(12_000),
+        },
+      ),
+      fetch(
+        `https://open.spotify.com/embed/track/${candidate.spotifyTrackId}`,
+        {
+          signal: AbortSignal.timeout(12_000),
+        },
+      ),
+    ]);
+    const oembedResponse =
+      oembedResult.status === "fulfilled" ? oembedResult.value : null;
+    const embedResponse =
+      embedResult.status === "fulfilled" ? embedResult.value : null;
+    const oembed = oembedResponse?.ok
+      ? ((await oembedResponse.json()) as SpotifyOEmbed)
+      : {};
+    const embedHtml = embedResponse?.ok ? await embedResponse.text() : "";
+    const previewMatch = embedHtml.match(/"audioPreview":\{"url":"([^"]+)"/u);
+    return {
+      artworkUrl: oembed.thumbnail_url ?? null,
+      previewUrl: previewMatch?.[1]?.replaceAll("\\u0026", "&") ?? null,
+    };
+  } catch {
+    return { artworkUrl: null, previewUrl: null };
+  }
+}
+
 async function enrich(candidate: MusicCandidate): Promise<MusicCandidate> {
   if (
     candidate.appleTrackId &&
@@ -192,12 +246,40 @@ async function enrich(candidate: MusicCandidate): Promise<MusicCandidate> {
     return candidate;
   }
 
+  const spotifyMetadata = await fetchSpotifyMetadata(candidate);
+  if (spotifyMetadata.artworkUrl && spotifyMetadata.previewUrl) {
+    return {
+      ...candidate,
+      spotifyArtworkUrl:
+        candidate.spotifyArtworkUrl ?? spotifyMetadata.artworkUrl,
+      spotifyPreviewUrl:
+        candidate.spotifyPreviewUrl ?? spotifyMetadata.previewUrl,
+      needsReview: false,
+      reviewReason: null,
+    };
+  }
+  if (
+    !spotifyMetadata.artworkUrl &&
+    !spotifyMetadata.previewUrl &&
+    !candidate.appleTrackId
+  ) {
+    return {
+      ...candidate,
+      needsReview: true,
+      reviewReason:
+        "Spotify-uppslag misslyckades; kör musikberikningen igen senare.",
+    };
+  }
   try {
     const tracks = await searchItunes(candidate);
     const match = chooseTrack(candidate, tracks);
-    if (!match?.trackId || !match.previewUrl) {
+    if (!match?.trackId) {
       return {
         ...candidate,
+        spotifyArtworkUrl:
+          candidate.spotifyArtworkUrl ?? spotifyMetadata.artworkUrl,
+        spotifyPreviewUrl:
+          candidate.spotifyPreviewUrl ?? spotifyMetadata.previewUrl,
         appleTrackId: null,
         appleMatchTitle: null,
         appleMatchArtist: null,
@@ -205,7 +287,7 @@ async function enrich(candidate: MusicCandidate): Promise<MusicCandidate> {
         appleArtworkUrl: null,
         appleTrackViewUrl: null,
         needsReview: true,
-        reviewReason: "Ingen säker spelbar träff i svenska Apple-katalogen.",
+        reviewReason: "Ingen säker träff i svenska Apple-katalogen.",
       };
     }
 
@@ -218,21 +300,32 @@ async function enrich(candidate: MusicCandidate): Promise<MusicCandidate> {
 
     return {
       ...candidate,
+      spotifyArtworkUrl:
+        candidate.spotifyArtworkUrl ?? spotifyMetadata.artworkUrl,
+      spotifyPreviewUrl:
+        candidate.spotifyPreviewUrl ?? spotifyMetadata.previewUrl,
       appleTrackId: match.trackId,
       appleMatchTitle: match.trackName ?? candidate.title,
       appleMatchArtist: match.artistName ?? candidate.artist,
-      applePreviewUrl: match.previewUrl,
+      applePreviewUrl: match.previewUrl ?? null,
       appleArtworkUrl: artworkUrl(match),
       appleTrackViewUrl: match.trackViewUrl ?? null,
       year: resolvedYear,
       yearSource: match.trackViewUrl ?? candidate.yearSource,
       yearConfidence: useAppleYear ? "apple-catalog" : candidate.yearConfidence,
-      needsReview: false,
-      reviewReason: null,
+      needsReview: !match.previewUrl && !spotifyMetadata.previewUrl,
+      reviewReason:
+        match.previewUrl || spotifyMetadata.previewUrl
+          ? null
+          : "Albumgrafik hittad, men ingen spelbar preview kunde hittas.",
     };
   } catch (error) {
     return {
       ...candidate,
+      spotifyArtworkUrl:
+        candidate.spotifyArtworkUrl ?? spotifyMetadata.artworkUrl,
+      spotifyPreviewUrl:
+        candidate.spotifyPreviewUrl ?? spotifyMetadata.previewUrl,
       needsReview: true,
       reviewReason: `Apple-uppslag misslyckades: ${error instanceof Error ? error.message : String(error)}`,
     };
@@ -243,9 +336,17 @@ async function main() {
   const candidates = JSON.parse(
     await readFile(CANDIDATES_FILE, "utf8"),
   ) as MusicCandidate[];
-  const enriched = new Array<MusicCandidate>(candidates.length);
+  const enriched = [...candidates];
   let cursor = 0;
   let completed = 0;
+  let writeQueue = Promise.resolve();
+
+  function persistProgress(): Promise<void> {
+    writeQueue = writeQueue.then(() =>
+      writeFile(CANDIDATES_FILE, `${JSON.stringify(enriched, null, 2)}\n`),
+    );
+    return writeQueue;
+  }
 
   async function worker() {
     while (cursor < candidates.length) {
@@ -255,13 +356,14 @@ async function main() {
       completed += 1;
       if (completed % 25 === 0 || completed === candidates.length) {
         console.log(`Matched ${completed}/${candidates.length} songs`);
+        await persistProgress();
       }
       await sleep(REQUEST_INTERVAL_MS);
     }
   }
 
   await Promise.all(Array.from({ length: CONCURRENCY }, () => worker()));
-  await writeFile(CANDIDATES_FILE, `${JSON.stringify(enriched, null, 2)}\n`);
+  await persistProgress();
 
   const matched = enriched.filter((candidate) => candidate.appleTrackId).length;
   console.log(
