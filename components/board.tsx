@@ -23,7 +23,11 @@ import DailyGameTutorial, {
 import DealAnimationLayer from "./deal-animation-layer";
 import GameOver from "./game-over";
 import Lives from "./lives";
-import { MusicAutoplayProvider, MusicAutoplayToggle } from "./music-autoplay";
+import {
+  MusicAutoplayProvider,
+  MusicAutoplayToggle,
+  requestMusicStop,
+} from "./music-autoplay";
 import NextItemList from "./next-item-list";
 import PlacementAnimationLayer from "./placement-animation-layer";
 import PlayedItemList from "./played-item-list";
@@ -452,6 +456,7 @@ export default function Board(props: Props) {
       return false;
     }
 
+    requestMusicStop();
     commitDeckDrop(state.next, droppedIndex, rect);
     tutorialRef.current?.handleDropAccepted();
     return true;

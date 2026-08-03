@@ -32,6 +32,8 @@ function selectAudioSource(audio: HTMLAudioElement, previewUrl: string) {
 export default function MusicPreviewPlayer(props: Props) {
   const { artist, music, title } = props;
   const { audio, enabled: autoPlay } = useMusicAutoplay();
+  const autoPlayRef = React.useRef(autoPlay);
+  autoPlayRef.current = autoPlay;
   const initialPreview = getCachedMusicPreview(music, title);
   const [previewUrl, setPreviewUrl] = React.useState<string | null>(
     initialPreview?.previewUrl ?? music.previewUrl,
@@ -68,8 +70,12 @@ export default function MusicPreviewPlayer(props: Props) {
 
     return () => {
       cancelled = true;
+      if (!autoPlayRef.current && audio) {
+        stopAudio(audio);
+        if (activeAudio === audio) activeAudio = null;
+      }
     };
-  }, [music, title]);
+  }, [audio, music, title]);
 
   const togglePlayback = React.useCallback(async () => {
     if (!audio || !previewUrl) return;

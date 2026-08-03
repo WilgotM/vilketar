@@ -35,7 +35,11 @@ import CardVisual from "./card-visual";
 import { useDecks } from "./deck-provider";
 import DraggableDeckCard from "./draggable-deck-card";
 import Loading from "./loading";
-import { MusicAutoplayProvider, MusicAutoplayToggle } from "./music-autoplay";
+import {
+  MusicAutoplayProvider,
+  MusicAutoplayToggle,
+  requestMusicStop,
+} from "./music-autoplay";
 import PageShell from "./page-shell";
 import SelectorOptionGrid, { SelectorOption } from "./selector-option-grid";
 import SiteHeader from "./site-header";
@@ -52,6 +56,36 @@ type PartyFeedbackFlash = {
   expiresAt: number;
   teamName: string;
 };
+
+function PartyPlacementButton(props: {
+  disabled: boolean;
+  index: number;
+  onPlace: (index: number) => void;
+}) {
+  const { disabled, index, onPlace } = props;
+
+  return (
+    <motion.button
+      layout
+      aria-label={"Placera på plats " + (index + 1)}
+      className={classNames(styles.placement, styles.placementButton)}
+      data-party-placement-index={index}
+      disabled={disabled}
+      onClick={() => {
+        requestMusicStop();
+        onPlace(index);
+      }}
+      type="button"
+      transition={{
+        type: "spring",
+        stiffness: 300,
+        damping: 30,
+      }}
+    >
+      <span className={styles.placementLine}>{index + 1}</span>
+    </motion.button>
+  );
+}
 
 function createPartySeed(): string {
   return `party:${Date.now()}:${Math.random().toString(36).slice(2)}`;
@@ -568,30 +602,11 @@ function PartyBoard(props: {
                 {Array.from({ length: state.game.played.length + 1 }).map(
                   (_, index) => (
                     <React.Fragment key={`slot-${index}`}>
-                      <motion.button
-                        layout
-                        key={`slot-btn-${index}`}
-                        aria-label={`Placera på plats ${index + 1}`}
-                        className={classNames(
-                          styles.placement,
-                          styles.placementButton,
-                        )}
-                        data-party-placement-index={index}
+                      <PartyPlacementButton
                         disabled={!canPlace}
-                        onClick={() => {
-                          onPlace(index);
-                        }}
-                        type="button"
-                        transition={{
-                          type: "spring",
-                          stiffness: 300,
-                          damping: 30,
-                        }}
-                      >
-                        <span className={styles.placementLine}>
-                          {index + 1}
-                        </span>
-                      </motion.button>
+                        index={index}
+                        onPlace={onPlace}
+                      />
                       {state.game.played[index] ? (
                         <motion.div
                           layout
@@ -662,6 +677,7 @@ function PartyBoard(props: {
                             return false;
                           }
 
+                          requestMusicStop();
                           onPlace(dropIndex);
                           return true;
                         }}

@@ -2,14 +2,18 @@ import classNames from "classnames";
 import React from "react";
 import * as styles from "../styles/music-autoplay.css";
 
+export const MUSIC_AUTOPLAY_STOP_EVENT = "vilketar:music-autoplay-stop";
+
 type MusicAutoplayContextValue = {
   audio: HTMLAudioElement | null;
   enabled: boolean;
+  stop: () => void;
 };
 
 const MusicAutoplayContext = React.createContext<MusicAutoplayContextValue>({
   audio: null,
   enabled: false,
+  stop: () => undefined,
 });
 
 export function MusicAutoplayProvider(props: {
@@ -17,9 +21,15 @@ export function MusicAutoplayProvider(props: {
   enabled: boolean;
 }) {
   const [audio, setAudio] = React.useState<HTMLAudioElement | null>(null);
+  const stop = React.useCallback(() => {
+    if (!audio) return;
+
+    audio.pause();
+    audio.volume = 1;
+  }, [audio]);
   const contextValue = React.useMemo(
-    () => ({ audio, enabled: props.enabled }),
-    [audio, props.enabled],
+    () => ({ audio, enabled: props.enabled, stop }),
+    [audio, props.enabled, stop],
   );
 
   React.useEffect(() => {
@@ -27,6 +37,13 @@ export function MusicAutoplayProvider(props: {
       audio?.pause();
     };
   }, [audio]);
+
+  React.useEffect(() => {
+    window.addEventListener(MUSIC_AUTOPLAY_STOP_EVENT, stop);
+    return () => {
+      window.removeEventListener(MUSIC_AUTOPLAY_STOP_EVENT, stop);
+    };
+  }, [stop]);
 
   return (
     <MusicAutoplayContext.Provider value={contextValue}>
@@ -38,6 +55,10 @@ export function MusicAutoplayProvider(props: {
 
 export function useMusicAutoplay() {
   return React.useContext(MusicAutoplayContext);
+}
+
+export function requestMusicStop() {
+  window.dispatchEvent(new Event(MUSIC_AUTOPLAY_STOP_EVENT));
 }
 
 export function MusicAutoplayToggle(props: {
