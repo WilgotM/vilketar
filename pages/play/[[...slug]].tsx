@@ -261,6 +261,13 @@ export default function FreePlayPage(props: Props) {
                   }
                   difficulty={difficulty}
                   embedded
+                  heading={
+                    activeSelectionRoute
+                      ? `Spela ${getSelectionRouteShareLabel(activeSelectionRoute)}`
+                      : group
+                        ? group.title
+                        : "Välj ett tema och spela"
+                  }
                   introRoute={selectorIntroRoute}
                   items={items}
                   onStartIntro={startPendingRoute}

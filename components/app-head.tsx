@@ -13,6 +13,7 @@ interface Props {
   description?: string;
   imagePath?: string;
   noindex?: boolean;
+  structuredData?: Record<string, unknown>[];
   title?: string;
 }
 
@@ -22,34 +23,57 @@ export default function AppHead(props: Props) {
     description = DEFAULT_SEO_DESCRIPTION,
     imagePath = DEFAULT_OG_IMAGE,
     noindex = false,
+    structuredData = [],
     title = DEFAULT_SEO_TITLE,
   } = props;
   const canonicalUrl = getCanonicalUrl(canonicalPath);
   const imageUrl = getAbsoluteUrl(imagePath);
-  const structuredData = {
+  const baseStructuredData = {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    name: SITE_NAME,
-    url: getCanonicalUrl("/"),
-    inLanguage: "sv-SE",
-    applicationCategory: "GameApplication",
-    operatingSystem: "Any",
-    description,
-    image: imageUrl,
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "SEK",
-    },
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${getCanonicalUrl("/")}#website`,
+        name: SITE_NAME,
+        url: getCanonicalUrl("/"),
+        inLanguage: "sv-SE",
+      },
+      {
+        "@type": "WebApplication",
+        "@id": `${canonicalUrl}#application`,
+        name: SITE_NAME,
+        url: canonicalUrl,
+        inLanguage: "sv-SE",
+        applicationCategory: "GameApplication",
+        operatingSystem: "Any",
+        description,
+        image: imageUrl,
+        isAccessibleForFree: true,
+        genre: "Tidslinjespel",
+        isPartOf: {
+          "@id": `${getCanonicalUrl("/")}#website`,
+        },
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "SEK",
+        },
+      },
+    ],
   };
+  const serializedStructuredData = JSON.stringify([
+    baseStructuredData,
+    ...structuredData,
+  ]);
+
+  const robotsContent = noindex
+    ? "noindex,nofollow"
+    : "index,follow,max-image-preview:large";
 
   return (
     <Head>
       <title>{title}</title>
-      <meta
-        name="robots"
-        content={noindex ? "noindex,nofollow" : "index,follow"}
-      />
+      <meta name="robots" content={robotsContent} />
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, viewport-fit=cover"
@@ -73,7 +97,7 @@ export default function AppHead(props: Props) {
       <meta property="og:image" content={imageUrl} />
       <meta
         property="og:image:alt"
-        content="VilketÅr - svenskt tidslinjespel"
+        content="VilketÅr – svenskt tidslinjespel"
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
@@ -154,7 +178,7 @@ export default function AppHead(props: Props) {
       <script
         key="structured-data"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        dangerouslySetInnerHTML={{ __html: serializedStructuredData }}
       />
     </Head>
   );

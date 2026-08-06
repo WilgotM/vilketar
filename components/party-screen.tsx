@@ -189,7 +189,7 @@ function PartyCategorySelector(props: {
 
   return (
     <div className={styles.setupStage}>
-      <div className={styles.sectionTitle}>Sällskapsspel</div>
+      <h1 className={styles.sectionTitle}>Sällskapsspel</h1>
       <div className={styles.setupPanel}>
         {group ? (
           <div className={styles.sectionTitle}>{group.title}</div>

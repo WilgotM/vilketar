@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VilketAr – Mobilt Bank-id</title>
+    <style>
+      :root {
+        --bg: #050403;
+        --surface: #171412;
+        --surface-strong: #231f1c;
+        --text: #fffdfa;
+        --muted: #b8b1aa;
+        --gold: #fbbf24;
+        --gold-soft: rgba(251, 191, 36, 0.18);
+        --green: #22c55e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        margin: 0;
+        overflow: hidden;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body::before {
+        position: absolute;
+        inset: 0;
+        content: "";
+        background:
+          radial-gradient(
+            circle at 50% 21%,
+            rgba(251, 191, 36, 0.13),
+            transparent 31%
+          ),
+          radial-gradient(
+            circle at 17% 62%,
+            rgba(255, 255, 255, 0.055),
+            transparent 28%
+          ),
+          radial-gradient(
+            circle at 86% 71%,
+            rgba(251, 191, 36, 0.07),
+            transparent 30%
+          ),
+          linear-gradient(180deg, #0a0806 0%, #030303 66%, #090704 100%);
+      }
+
+      body::after {
+        position: absolute;
+        inset: 0;
+        content: "";
+        opacity: 0.24;
+        pointer-events: none;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.88' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.2'/%3E%3C/svg%3E");
+        mix-blend-mode: soft-light;
+      }
+
+      .scene {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        isolation: isolate;
+      }
+
+      .brand {
+        position: absolute;
+        top: 82px;
+        left: 50%;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        transform: translateX(-50%);
+        opacity: 0;
+      }
+
+      .brand img {
+        width: 66px;
+        height: 66px;
+        object-fit: contain;
+      }
+      .brand-name {
+        font-size: 36px;
+        font-weight: 850;
+        letter-spacing: -0.035em;
+      }
+      .brand-name span {
+        color: var(--gold);
+      }
+
+      .copy {
+        position: absolute;
+        top: 198px;
+        left: 90px;
+        width: 900px;
+        text-align: center;
+      }
+
+      .headline {
+        position: absolute;
+        inset: 0;
+        margin: 0;
+        font-size: 84px;
+        font-weight: 880;
+        letter-spacing: -0.055em;
+        line-height: 0.98;
+        text-wrap: balance;
+        opacity: 0;
+        transform: translateY(26px) scale(0.98);
+      }
+
+      .headline em {
+        color: var(--gold);
+        font-style: normal;
+      }
+      .headline-question {
+        font-size: 78px;
+      }
+
+      .answer {
+        position: absolute;
+        top: 192px;
+        left: 90px;
+        width: 900px;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(28px) scale(0.92);
+      }
+
+      .answer-kicker {
+        color: #d1fae5;
+        font-size: 27px;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .answer-year {
+        margin-top: 4px;
+        color: var(--text);
+        font-size: 166px;
+        font-weight: 920;
+        letter-spacing: -0.075em;
+        line-height: 0.95;
+        text-shadow: 0 0 42px rgba(34, 197, 94, 0.23);
+      }
+
+      .board {
+        position: absolute;
+        top: 796px;
+        left: 0;
+        width: 1080px;
+        height: 650px;
+        transform-origin: 50% 48%;
+      }
+
+      .board-glow {
+        position: absolute;
+        top: 208px;
+        left: 72px;
+        width: 936px;
+        height: 306px;
+        border-radius: 50%;
+        background: radial-gradient(
+          ellipse,
+          rgba(251, 191, 36, 0.11),
+          transparent 66%
+        );
+        filter: blur(16px);
+      }
+
+      .timeline-line {
+        position: absolute;
+        top: 332px;
+        left: 38px;
+        width: 1004px;
+        height: 5px;
+        border-radius: 999px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 253, 250, 0.22) 8%,
+          rgba(255, 253, 250, 0.22) 92%,
+          transparent
+        );
+        box-shadow: 0 0 24px rgba(251, 191, 36, 0.12);
+      }
+
+      .timeline-line::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 24px;
+        height: 24px;
+        border: 3px solid rgba(251, 191, 36, 0.82);
+        border-radius: 50%;
+        content: "";
+        background: #17120b;
+        box-shadow: 0 0 30px rgba(251, 191, 36, 0.34);
+        transform: translate(-50%, -50%);
+      }
+
+      .card-wrap {
+        position: absolute;
+        top: 152px;
+        left: 0;
+        width: 176px;
+        height: 284px;
+        transform-origin: center center;
+        will-change: transform, opacity;
+      }
+
+      .card {
+        position: relative;
+        width: 176px;
+        height: 235px;
+        overflow: hidden;
+        border: 2px solid rgba(251, 191, 36, 0.28);
+        border-radius: 20px;
+        background: linear-gradient(
+          145deg,
+          rgba(251, 191, 36, 0.12),
+          rgba(35, 31, 28, 0.98) 44%
+        );
+        box-shadow:
+          0 18px 42px rgba(0, 0, 0, 0.5),
+          inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      }
+
+      .card-title {
+        padding: 16px 15px 4px;
+        font-size: 18px;
+        font-weight: 820;
+        letter-spacing: -0.025em;
+        line-height: 1.05;
+      }
+
+      .card-subtitle {
+        padding: 0 15px 10px;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 620;
+        line-height: 1.15;
+      }
+
+      .card-image {
+        position: absolute;
+        right: 13px;
+        bottom: 13px;
+        left: 13px;
+        height: 124px;
+        overflow: hidden;
+        border: 1px solid rgba(251, 191, 36, 0.28);
+        border-radius: 12px;
+        background: #2b2622;
+      }
+
+      .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(0.9) contrast(1.04);
+      }
+
+      .year-pill {
+        position: absolute;
+        top: 248px;
+        left: 50%;
+        min-width: 100px;
+        padding: 9px 20px 10px;
+        border: 2px solid rgba(251, 191, 36, 0.42);
+        border-radius: 13px;
+        background: #231f1c;
+        color: var(--text);
+        font-size: 20px;
+        font-weight: 900;
+        letter-spacing: 0.05em;
+        line-height: 1;
+        text-align: center;
+        box-shadow: 0 9px 24px rgba(0, 0, 0, 0.38);
+        transform: translateX(-50%);
+      }
+
+      .bank-wrap {
+        position: absolute;
+        top: 415px;
+        left: 415px;
+        width: 250px;
+        height: 390px;
+        opacity: 0;
+        transform-origin: center top;
+        will-change: transform, opacity;
+        z-index: 20;
+      }
+
+      .bank-card {
+        position: relative;
+        width: 250px;
+        height: 333px;
+        overflow: hidden;
+        border: 3px solid rgba(251, 191, 36, 0.5);
+        border-radius: 28px;
+        background:
+          radial-gradient(
+            circle at 75% 24%,
+            rgba(251, 191, 36, 0.18),
+            transparent 35%
+          ),
+          linear-gradient(
+            145deg,
+            rgba(251, 191, 36, 0.16),
+            rgba(35, 31, 28, 0.99) 48%
+          );
+        box-shadow:
+          0 30px 70px rgba(0, 0, 0, 0.66),
+          0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+      }
+
+      .bank-card .card-title {
+        padding: 24px 22px 7px;
+        font-size: 29px;
+      }
+      .bank-card .card-subtitle {
+        padding: 0 22px 14px;
+        font-size: 17px;
+      }
+
+      .bank-illustration {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        left: 20px;
+        height: 184px;
+        overflow: hidden;
+        border: 2px solid rgba(251, 191, 36, 0.42);
+        border-radius: 18px;
+        background:
+          radial-gradient(
+            circle at 50% 48%,
+            rgba(251, 191, 36, 0.24),
+            transparent 48%
+          ),
+          linear-gradient(145deg, #282117, #12100e);
+      }
+
+      .phone {
+        position: absolute;
+        top: 24px;
+        left: 50%;
+        width: 82px;
+        height: 138px;
+        border: 5px solid #f7d779;
+        border-radius: 20px;
+        background: #171412;
+        box-shadow: 0 0 38px rgba(251, 191, 36, 0.25);
+        transform: translateX(-50%) rotate(-4deg);
+      }
+
+      .phone::before {
+        position: absolute;
+        top: 9px;
+        left: 50%;
+        width: 27px;
+        height: 4px;
+        border-radius: 999px;
+        content: "";
+        background: rgba(247, 215, 121, 0.7);
+        transform: translateX(-50%);
+      }
+
+      .phone-check {
+        position: absolute;
+        top: 44px;
+        left: 50%;
+        width: 38px;
+        height: 22px;
+        border-bottom: 6px solid var(--gold);
+        border-left: 6px solid var(--gold);
+        transform: translateX(-50%) rotate(-45deg);
+      }
+
+      .bank-year {
+        position: absolute;
+        top: 347px;
+        left: 50%;
+        min-width: 138px;
+        padding: 13px 24px 14px;
+        border: 3px solid var(--green);
+        border-radius: 17px;
+        background: #065f46;
+        color: #d1fae5;
+        font-size: 29px;
+        font-weight: 920;
+        letter-spacing: 0.065em;
+        line-height: 1;
+        text-align: center;
+        box-shadow:
+          0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+          0 14px 34px rgba(0, 0, 0, 0.5),
+          0 0 36px rgba(34, 197, 94, 0.22);
+        opacity: 0;
+        transform: translateX(-50%) translateY(18px) scale(0.75);
+      }
+
+      .drop-hint {
+        position: absolute;
+        top: 742px;
+        left: 50%;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 13px 22px;
+        border: 1px solid rgba(251, 191, 36, 0.28);
+        border-radius: 999px;
+        background: rgba(23, 20, 18, 0.83);
+        color: #fef3c7;
+        font-size: 21px;
+        font-weight: 760;
+        letter-spacing: 0.01em;
+        opacity: 0;
+        transform: translateX(-50%) translateY(12px);
+        backdrop-filter: blur(12px);
+      }
+
+      .drop-hint::before {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        content: "";
+        background: var(--gold);
+        box-shadow: 0 0 17px rgba(251, 191, 36, 0.7);
+      }
+
+      .success-ring {
+        position: absolute;
+        top: 934px;
+        left: 50%;
+        width: 250px;
+        height: 360px;
+        border: 4px solid rgba(34, 197, 94, 0.8);
+        border-radius: 30px;
+        opacity: 0;
+        transform: translateX(-50%) scale(0.72);
+        box-shadow:
+          0 0 70px rgba(34, 197, 94, 0.28),
+          inset 0 0 44px rgba(34, 197, 94, 0.08);
+        pointer-events: none;
+      }
+
+      .cta {
+        position: absolute;
+        top: 1532px;
+        left: 90px;
+        width: 900px;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      .cta-question {
+        margin: 0 0 24px;
+        font-size: 49px;
+        font-weight: 870;
+        letter-spacing: -0.035em;
+      }
+
+      .cta-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 530px;
+        padding: 23px 40px 25px;
+        border-radius: 23px;
+        background: var(--gold);
+        color: #0c0a09;
+        font-size: 30px;
+        font-weight: 900;
+        letter-spacing: -0.02em;
+        box-shadow: 0 18px 58px rgba(251, 191, 36, 0.24);
+      }
+
+      .cta-url {
+        margin-top: 19px;
+        color: var(--muted);
+        font-size: 22px;
+        font-weight: 660;
+        letter-spacing: 0.025em;
+      }
+
+      .vignette {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        box-shadow:
+          inset 0 0 160px rgba(0, 0, 0, 0.48),
+          inset 0 -160px 180px rgba(0, 0, 0, 0.26);
+        z-index: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="scene">
+      <div class="brand" id="brand">
+        <img src="../../../public/logo-emblem.svg" alt="" />
+        <div class="brand-name">Vilket<span>År</span></div>
+      </div>
+
+      <div class="copy">
+        <h1 class="headline" id="headline-a">
+          Du använder det<br /><em>nästan varje dag.</em>
+        </h1>
+        <h1 class="headline headline-question" id="headline-b">
+          Men minns du när<br /><em>Mobilt Bank-id</em><br />lanserades?
+        </h1>
+      </div>
+
+      <section class="answer" id="answer">
+        <div class="answer-kicker">Rätt placering</div>
+        <div class="answer-year">2011</div>
+      </section>
+
+      <section class="board" id="board">
+        <div class="board-glow"></div>
+        <div class="timeline-line"></div>
+
+        <div class="card-wrap" id="card-iphone">
+          <article class="card">
+            <div class="card-title">Första Iphone släpps</div>
+            <div class="card-subtitle">Smarttelefonens genombrott</div>
+            <div class="card-image">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone%201st%20Gen.svg?width=500"
+                alt=""
+              />
+            </div>
+          </article>
+          <div class="year-pill">2007</div>
+        </div>
+
+        <div class="card-wrap" id="card-sarah">
+          <article class="card">
+            <div class="card-title">Sarah Sjöström blir världsmästare</div>
+            <div class="card-subtitle">Svensk simmare</div>
+            <div class="card-image">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Sarah%20Sj%C3%B6str%C3%B6m%202013.jpg?width=500"
+                alt=""
+              />
+            </div>
+          </article>
+          <div class="year-pill">2009</div>
+        </div>
+
+        <div class="card-wrap" id="card-swish">
+          <article class="card">
+            <div class="card-title">Swish lanseras</div>
+            <div class="card-subtitle">Svensk betaltjänst</div>
+            <div class="card-image">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Psalmtavla%20med%20swishtavla%2012%20maj%202024.jpg?width=500"
+                alt=""
+              />
+            </div>
+          </article>
+          <div class="year-pill">2012</div>
+        </div>
+
+        <div class="card-wrap" id="card-mans">
+          <article class="card">
+            <div class="card-title">Måns vinner Eurovision</div>
+            <div class="card-subtitle">Svensk artist</div>
+            <div class="card-image">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Melodifestivalen%202025%20delt%C3%A4vling%204%20Malm%C3%B6%20M%C3%A5ns%20Zelmerl%C3%B6w%20presentation%2003.jpg?width=500"
+                alt=""
+              />
+            </div>
+          </article>
+          <div class="year-pill">2015</div>
+        </div>
+      </section>
+
+      <div class="bank-wrap" id="bank-wrap">
+        <article class="bank-card" id="bank-card">
+          <div class="card-title">Mobilt Bank-id lanseras</div>
+          <div class="card-subtitle">Svensk e-legitimation</div>
+          <div class="bank-illustration">
+            <div class="phone"><div class="phone-check"></div></div>
+          </div>
+        </article>
+        <div class="bank-year" id="bank-year">2011</div>
+      </div>
+
+      <div class="drop-hint" id="drop-hint">Var på tidslinjen?</div>
+      <div class="success-ring" id="success-ring"></div>
+
+      <section class="cta" id="cta">
+        <p class="cta-question">Hade du rätt?</p>
+        <div class="cta-button">Spela dagens tidslinje →</div>
+        <div class="cta-url">vilketår.se</div>
+      </section>
+
+      <div class="vignette"></div>
+    </main>
+
+    <script>
+      const $ = (id) => document.getElementById(id);
+      const clamp = (v, min = 0, max = 1) => Math.min(max, Math.max(min, v));
+      const range = (t, start, end) => clamp((t - start) / (end - start));
+      const smooth = (v) => v * v * (3 - 2 * v);
+      const out = (v) => 1 - Math.pow(1 - v, 3);
+      const backOut = (v) => {
+        const c1 = 1.70158;
+        const c3 = c1 + 1;
+        return 1 + c3 * Math.pow(v - 1, 3) + c1 * Math.pow(v - 1, 2);
+      };
+      const lerp = (a, b, v) => a + (b - a) * v;
+
+      function fadeWindow(t, enterStart, enterEnd, exitStart, exitEnd) {
+        return Math.min(
+          smooth(range(t, enterStart, enterEnd)),
+          1 - smooth(range(t, exitStart, exitEnd)),
+        );
+      }
+
+      function setOpacityTransform(el, opacity, transform) {
+        el.style.opacity = opacity.toFixed(4);
+        el.style.transform = transform;
+      }
+
+      window.__setPromoTime = (t) => {
+        const brandIn = out(range(t, 0.0, 0.55));
+        setOpacityTransform(
+          $("brand"),
+          brandIn,
+          `translateX(-50%) translateY(${lerp(14, 0, brandIn)}px)`,
+        );
+
+        const firstOpacity = fadeWindow(t, 0.1, 0.55, 2.55, 2.95);
+        const firstIn = out(range(t, 0.1, 0.72));
+        setOpacityTransform(
+          $("headline-a"),
+          firstOpacity,
+          `translateY(${lerp(26, 0, firstIn)}px) scale(${lerp(0.98, 1, firstIn)})`,
+        );
+
+        const questionOpacity = fadeWindow(t, 2.72, 3.14, 6.14, 6.5);
+        const questionIn = out(range(t, 2.72, 3.28));
+        setOpacityTransform(
+          $("headline-b"),
+          questionOpacity,
+          `translateY(${lerp(26, 0, questionIn)}px) scale(${lerp(0.98, 1, questionIn)})`,
+        );
+
+        const boardIn = out(range(t, 0.25, 1.15));
+        const boardEnd = smooth(range(t, 8.75, 9.45));
+        $("board").style.opacity = String(
+          Math.min(boardIn, 1 - boardEnd * 0.18),
+        );
+        $("board").style.transform =
+          `translateY(${lerp(70, boardEnd ? 60 : 0, boardIn)}px) scale(${lerp(0.94, 0.88, boardEnd)})`;
+
+        const placement = smooth(range(t, 5.48, 6.34));
+        const cardFade = out(range(t, 0.45, 1.25));
+        const existing = [
+          ["card-iphone", 155, 100],
+          ["card-sarah", 411, 320],
+          ["card-swish", 669, 760],
+          ["card-mans", 925, 980],
+        ];
+        existing.forEach(([id, beforeCenter, afterCenter], index) => {
+          const x = lerp(beforeCenter, afterCenter, placement) - 88;
+          const localIn = out(
+            range(t, 0.36 + index * 0.08, 1.08 + index * 0.08),
+          );
+          const y = lerp(38, 0, localIn);
+          const scale = lerp(0.93, 1, localIn);
+          setOpacityTransform(
+            $(id),
+            cardFade * localIn,
+            `translate(${x}px, ${y}px) scale(${scale})`,
+          );
+        });
+
+        const bankIn = out(range(t, 2.85, 3.4));
+        const hover = Math.sin(t * 3.4) * 8 * (1 - placement);
+        const searchShift =
+          Math.sin(clamp(range(t, 3.55, 5.25)) * Math.PI * 2) *
+          54 *
+          (1 - placement);
+        const dropX = lerp(searchShift, 0, placement);
+        const dropY = lerp(0, 565, placement);
+        const bankScale = lerp(1, 0.704, placement);
+        const bankRotation = lerp(-2.5 + Math.sin(t * 2.2) * 1.2, 0, placement);
+        const bankOpacity = bankIn;
+        setOpacityTransform(
+          $("bank-wrap"),
+          bankOpacity,
+          `translate(${dropX}px, ${lerp(34, hover, bankIn) + dropY}px) scale(${bankScale}) rotate(${bankRotation}deg)`,
+        );
+
+        const hintOpacity = fadeWindow(t, 3.55, 3.95, 5.18, 5.52);
+        const hintIn = out(range(t, 3.55, 4.05));
+        setOpacityTransform(
+          $("drop-hint"),
+          hintOpacity,
+          `translateX(-50%) translateY(${lerp(12, 0, hintIn)}px)`,
+        );
+
+        const reveal = backOut(range(t, 6.28, 6.72));
+        $("bank-year").style.opacity = String(clamp(range(t, 6.28, 6.48)));
+        $("bank-year").style.transform =
+          `translateX(-50%) translateY(${lerp(18, 0, reveal)}px) scale(${lerp(0.75, 1, reveal)})`;
+
+        const correct = range(t, 6.22, 6.52);
+        $("bank-card").style.borderColor =
+          `rgba(${lerp(251, 34, correct)}, ${lerp(191, 197, correct)}, ${lerp(36, 94, correct)}, ${lerp(0.5, 0.92, correct)})`;
+        $("bank-card").style.boxShadow =
+          `0 30px 70px rgba(0,0,0,.66), 0 0 ${lerp(0, 54, correct)}px rgba(34,197,94,${lerp(0, 0.26, correct)})`;
+
+        const ring = range(t, 6.3, 7.18);
+        const ringActive = t >= 6.3 && t <= 7.18 ? 1 : 0;
+        $("success-ring").style.opacity = String(
+          (1 - ring) * 0.84 * ringActive,
+        );
+        $("success-ring").style.transform =
+          `translateX(-50%) scale(${lerp(0.7, 1.23, out(ring))})`;
+
+        const answerOpacity = fadeWindow(t, 6.25, 6.68, 8.62, 9.08);
+        const answerIn = backOut(range(t, 6.25, 6.86));
+        setOpacityTransform(
+          $("answer"),
+          answerOpacity,
+          `translateY(${lerp(28, 0, answerIn)}px) scale(${lerp(0.92, 1, answerIn)})`,
+        );
+
+        const ctaOpacity = out(range(t, 8.65, 9.25));
+        const ctaIn = backOut(range(t, 8.65, 9.38));
+        setOpacityTransform(
+          $("cta"),
+          ctaOpacity,
+          `translateY(${lerp(30, 0, ctaIn)}px)`,
+        );
+      };
+
+      window.__setPromoTime(0);
+    </script>
+  </body>
+</html>

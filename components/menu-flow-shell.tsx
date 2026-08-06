@@ -42,6 +42,7 @@ import FreePlaySelectorScreen from "./free-play-selector-screen";
 import GameRouteScreen from "./game-route-screen";
 import HomeScreen from "./home-screen";
 import PageShell from "./page-shell";
+import { getHomeFaqStructuredData, HomeSeoContent } from "./seo-content";
 import SiteHeader from "./site-header";
 import * as dailyStyles from "../styles/daily-entry-screen.css";
 import * as styles from "../styles/menu-flow-shell.css";
@@ -557,6 +558,7 @@ export default function MenuFlowShell() {
       <AppHead
         canonicalPath={path.split(/[?#]/)[0] || "/"}
         description={pageDescription}
+        structuredData={path === "/" ? [getHomeFaqStructuredData()] : undefined}
         title={pageTitle}
       />
       <AnimatePresence mode="wait">
@@ -575,6 +577,7 @@ export default function MenuFlowShell() {
             }}
           >
             <HomeScreen />
+            <HomeSeoContent />
           </motion.div>
         ) : showGameScreen ? (
           <motion.div
@@ -687,6 +690,17 @@ export default function MenuFlowShell() {
                       onSelectRootView={openRootFreePlayView}
                       onStartIntro={startPendingRoute}
                       availableDifficulties={introAvailableDifficulties}
+                      heading={
+                        activeSelectionRoute
+                          ? `Spela ${getSelectionRouteShareLabel(activeSelectionRoute)}`
+                          : group
+                            ? group.title
+                            : currentPlayView === "featured"
+                              ? "Utvalt – välj ett tema"
+                              : currentPlayView === "browse"
+                                ? "Bläddra bland tidslinjespel"
+                                : "Välj ett tema och spela"
+                      }
                       rootView={rootFreePlayView}
                       showAllButton={
                         !(

@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VilketAr TikTok v2</title>
+    <style>
+      :root {
+        --bg: #030303;
+        --surface: #1b1714;
+        --surface-strong: #29231e;
+        --text: #fffdfa;
+        --muted: #b8b1aa;
+        --gold: #fbbf24;
+        --green: #22c55e;
+        --red: #ef4444;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        margin: 0;
+        overflow: hidden;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body::before {
+        position: absolute;
+        inset: 0;
+        content: "";
+        background:
+          radial-gradient(
+            circle at 50% 19%,
+            rgba(251, 191, 36, 0.16),
+            transparent 34%
+          ),
+          radial-gradient(
+            circle at 18% 65%,
+            rgba(255, 255, 255, 0.06),
+            transparent 30%
+          ),
+          radial-gradient(
+            circle at 86% 74%,
+            rgba(251, 191, 36, 0.08),
+            transparent 32%
+          ),
+          linear-gradient(180deg, #0b0805 0%, #030303 64%, #080603 100%);
+      }
+
+      body::after {
+        position: absolute;
+        inset: 0;
+        content: "";
+        opacity: 0.23;
+        pointer-events: none;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.86' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.2'/%3E%3C/svg%3E");
+        mix-blend-mode: soft-light;
+      }
+
+      .scene {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        isolation: isolate;
+      }
+
+      .brand {
+        position: absolute;
+        top: 74px;
+        left: 50%;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        transform: translateX(-50%);
+        z-index: 50;
+      }
+
+      .brand img {
+        width: 58px;
+        height: 58px;
+        object-fit: contain;
+      }
+      .brand-name {
+        font-size: 34px;
+        font-weight: 900;
+        letter-spacing: -0.04em;
+      }
+      .brand-name span {
+        color: var(--gold);
+      }
+
+      .daily-intro {
+        position: absolute;
+        inset: 0;
+        text-align: center;
+        opacity: 0;
+      }
+
+      .daily-chip {
+        position: absolute;
+        top: 256px;
+        left: 50%;
+        padding: 13px 26px;
+        border: 2px solid rgba(251, 191, 36, 0.42);
+        border-radius: 999px;
+        background: rgba(251, 191, 36, 0.1);
+        color: #fde68a;
+        font-size: 25px;
+        font-weight: 850;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        transform: translateX(-50%);
+      }
+
+      .daily-title {
+        position: absolute;
+        top: 342px;
+        left: 70px;
+        width: 940px;
+        margin: 0;
+        font-size: 118px;
+        font-weight: 930;
+        letter-spacing: -0.065em;
+        line-height: 0.91;
+      }
+
+      .daily-title em {
+        color: var(--gold);
+        font-style: normal;
+      }
+
+      .result-row {
+        position: absolute;
+        top: 640px;
+        left: 50%;
+        display: flex;
+        gap: 20px;
+        transform: translateX(-50%);
+      }
+
+      .result-square {
+        width: 112px;
+        height: 112px;
+        border: 3px solid rgba(255, 255, 255, 0.18);
+        border-radius: 23px;
+        background: #29231e;
+        box-shadow:
+          0 18px 38px rgba(0, 0, 0, 0.38),
+          inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      }
+
+      .result-square.correct {
+        border-color: #34d399;
+        background: #086548;
+      }
+      .result-square.wrong {
+        border-color: #f87171;
+        background: #8a2020;
+      }
+
+      .intro-message {
+        position: absolute;
+        top: 846px;
+        left: 85px;
+        width: 910px;
+        margin: 0;
+        font-size: 66px;
+        font-weight: 860;
+        letter-spacing: -0.045em;
+        line-height: 1.03;
+      }
+
+      .intro-message em {
+        color: var(--gold);
+        font-style: normal;
+      }
+
+      .intro-note {
+        position: absolute;
+        top: 1048px;
+        left: 130px;
+        width: 820px;
+        color: var(--muted);
+        font-size: 31px;
+        font-weight: 650;
+        line-height: 1.3;
+      }
+
+      .question-copy {
+        position: absolute;
+        top: 180px;
+        left: 65px;
+        width: 950px;
+        margin: 0;
+        text-align: center;
+        font-size: 78px;
+        font-weight: 920;
+        letter-spacing: -0.055em;
+        line-height: 0.98;
+        opacity: 0;
+      }
+
+      .question-copy em {
+        color: var(--gold);
+        font-style: normal;
+      }
+
+      .play-instruction {
+        position: absolute;
+        top: 300px;
+        left: 90px;
+        width: 900px;
+        margin: 0;
+        text-align: center;
+        font-size: 72px;
+        font-weight: 910;
+        letter-spacing: -0.045em;
+        line-height: 1;
+        opacity: 0;
+      }
+
+      .play-instruction em {
+        color: var(--gold);
+        font-style: normal;
+      }
+
+      .board {
+        position: absolute;
+        top: 720px;
+        left: 0;
+        width: 1080px;
+        height: 850px;
+        opacity: 0;
+        transform-origin: 50% 48%;
+      }
+
+      .board::before {
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        width: 1060px;
+        height: 600px;
+        border-radius: 50%;
+        content: "";
+        background: radial-gradient(
+          ellipse,
+          rgba(251, 191, 36, 0.12),
+          transparent 68%
+        );
+        filter: blur(18px);
+        transform: translateX(-50%);
+      }
+
+      .timeline-line {
+        position: absolute;
+        top: 430px;
+        left: 0;
+        width: 1080px;
+        height: 8px;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.08),
+          rgba(255, 253, 250, 0.28) 12%,
+          rgba(255, 253, 250, 0.28) 88%,
+          rgba(255, 255, 255, 0.08)
+        );
+        box-shadow: 0 0 30px rgba(251, 191, 36, 0.13);
+      }
+
+      .timeline-target {
+        position: absolute;
+        top: 408px;
+        left: 50%;
+        width: 52px;
+        height: 52px;
+        border: 5px solid var(--gold);
+        border-radius: 50%;
+        background: #17120b;
+        box-shadow: 0 0 42px rgba(251, 191, 36, 0.45);
+        transform: translateX(-50%);
+      }
+
+      .card-wrap {
+        position: absolute;
+        top: 164px;
+        left: 0;
+        width: 290px;
+        height: 500px;
+        transform-origin: center;
+        will-change: transform, opacity;
+      }
+
+      .card {
+        position: relative;
+        width: 290px;
+        height: 387px;
+        overflow: hidden;
+        border: 3px solid rgba(251, 191, 36, 0.34);
+        border-radius: 29px;
+        background: linear-gradient(
+          145deg,
+          rgba(251, 191, 36, 0.15),
+          rgba(35, 31, 28, 0.99) 45%
+        );
+        box-shadow:
+          0 28px 66px rgba(0, 0, 0, 0.58),
+          inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      }
+
+      .card-title {
+        padding: 27px 24px 7px;
+        font-size: 31px;
+        font-weight: 880;
+        letter-spacing: -0.035em;
+        line-height: 1;
+      }
+
+      .card-subtitle {
+        padding: 0 24px 15px;
+        color: var(--muted);
+        font-size: 19px;
+        font-weight: 650;
+        line-height: 1.15;
+      }
+
+      .card-image {
+        position: absolute;
+        right: 21px;
+        bottom: 21px;
+        left: 21px;
+        height: 215px;
+        overflow: hidden;
+        border: 2px solid rgba(251, 191, 36, 0.32);
+        border-radius: 18px;
+        background: #2b2622;
+      }
+
+      .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(0.95) contrast(1.04);
+      }
+
+      .card-image.logo-panel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 32px;
+        background: #fff;
+      }
+
+      .card-image.logo-panel img {
+        object-fit: contain;
+        filter: none;
+      }
+
+      .year-pill {
+        position: absolute;
+        top: 410px;
+        left: 50%;
+        min-width: 170px;
+        padding: 17px 28px 18px;
+        border: 3px solid rgba(251, 191, 36, 0.48);
+        border-radius: 18px;
+        background: #231f1c;
+        color: var(--text);
+        font-size: 34px;
+        font-weight: 930;
+        letter-spacing: 0.055em;
+        line-height: 1;
+        text-align: center;
+        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45);
+        transform: translateX(-50%);
+      }
+
+      .edge-card {
+        opacity: 0.5;
+        filter: brightness(0.68);
+      }
+
+      .bank-wrap {
+        position: absolute;
+        top: 480px;
+        left: 375px;
+        width: 330px;
+        height: 550px;
+        opacity: 0;
+        transform-origin: center top;
+        z-index: 30;
+        will-change: transform, opacity;
+      }
+
+      .bank-card {
+        position: relative;
+        width: 330px;
+        height: 440px;
+        overflow: hidden;
+        border: 4px solid rgba(251, 191, 36, 0.65);
+        border-radius: 35px;
+        background:
+          radial-gradient(
+            circle at 75% 20%,
+            rgba(251, 191, 36, 0.2),
+            transparent 36%
+          ),
+          linear-gradient(
+            145deg,
+            rgba(251, 191, 36, 0.18),
+            rgba(35, 31, 28, 1) 48%
+          );
+        box-shadow:
+          0 42px 90px rgba(0, 0, 0, 0.7),
+          0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+      }
+
+      .bank-card .card-title {
+        padding: 34px 30px 8px;
+        font-size: 39px;
+      }
+      .bank-card .card-subtitle {
+        padding: 0 30px 18px;
+        font-size: 23px;
+      }
+
+      .bank-art {
+        position: absolute;
+        right: 27px;
+        bottom: 27px;
+        left: 27px;
+        height: 245px;
+        overflow: hidden;
+        border: 3px solid rgba(251, 191, 36, 0.45);
+        border-radius: 23px;
+        background:
+          radial-gradient(
+            circle at 50% 48%,
+            rgba(251, 191, 36, 0.26),
+            transparent 52%
+          ),
+          linear-gradient(145deg, #2b2418, #12100e);
+      }
+
+      .phone {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        width: 110px;
+        height: 185px;
+        border: 7px solid #f7d779;
+        border-radius: 27px;
+        background: #171412;
+        box-shadow: 0 0 56px rgba(251, 191, 36, 0.3);
+        transform: translateX(-50%) rotate(-4deg);
+      }
+
+      .phone::before {
+        position: absolute;
+        top: 12px;
+        left: 50%;
+        width: 37px;
+        height: 5px;
+        border-radius: 999px;
+        content: "";
+        background: rgba(247, 215, 121, 0.75);
+        transform: translateX(-50%);
+      }
+
+      .phone::after {
+        position: absolute;
+        top: 62px;
+        left: 50%;
+        width: 52px;
+        height: 29px;
+        border-bottom: 8px solid var(--gold);
+        border-left: 8px solid var(--gold);
+        content: "";
+        transform: translateX(-50%) rotate(-45deg);
+      }
+
+      .bank-year {
+        position: absolute;
+        top: 463px;
+        left: 50%;
+        min-width: 190px;
+        padding: 17px 30px 19px;
+        border: 4px solid var(--green);
+        border-radius: 20px;
+        background: #065f46;
+        color: #d1fae5;
+        font-size: 39px;
+        font-weight: 940;
+        letter-spacing: 0.07em;
+        line-height: 1;
+        text-align: center;
+        opacity: 0;
+        box-shadow:
+          0 18px 44px rgba(0, 0, 0, 0.52),
+          0 0 45px rgba(34, 197, 94, 0.26);
+        transform: translateX(-50%) translateY(22px) scale(0.78);
+      }
+
+      .answer-banner {
+        position: absolute;
+        top: 184px;
+        left: 70px;
+        width: 940px;
+        text-align: center;
+        opacity: 0;
+      }
+
+      .answer-label {
+        color: #d1fae5;
+        font-size: 30px;
+        font-weight: 900;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+      }
+      .answer-number {
+        margin-top: 0;
+        font-size: 188px;
+        font-weight: 950;
+        letter-spacing: -0.08em;
+        line-height: 0.95;
+        text-shadow: 0 0 52px rgba(34, 197, 94, 0.28);
+      }
+
+      .final-screen {
+        position: absolute;
+        inset: 0;
+        text-align: center;
+        background:
+          radial-gradient(
+            circle at 50% 43%,
+            rgba(251, 191, 36, 0.19),
+            transparent 36%
+          ),
+          linear-gradient(180deg, rgba(8, 6, 4, 0.98), rgba(2, 2, 2, 0.995));
+        opacity: 0;
+        z-index: 80;
+      }
+
+      .final-daily {
+        position: absolute;
+        top: 205px;
+        left: 50%;
+        padding: 14px 27px;
+        border: 2px solid rgba(251, 191, 36, 0.46);
+        border-radius: 999px;
+        background: rgba(251, 191, 36, 0.11);
+        color: #fde68a;
+        font-size: 25px;
+        font-weight: 900;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        transform: translateX(-50%);
+      }
+
+      .final-question {
+        position: absolute;
+        top: 338px;
+        left: 55px;
+        width: 970px;
+        margin: 0;
+        font-size: 116px;
+        font-weight: 950;
+        letter-spacing: -0.065em;
+        line-height: 0.9;
+      }
+
+      .final-results {
+        position: absolute;
+        top: 625px;
+        left: 50%;
+        display: flex;
+        gap: 18px;
+        transform: translateX(-50%);
+      }
+
+      .final-results .result-square {
+        width: 102px;
+        height: 102px;
+        border-radius: 20px;
+      }
+
+      .final-play {
+        position: absolute;
+        top: 820px;
+        left: 110px;
+        width: 860px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 36px;
+        font-weight: 720;
+        line-height: 1.25;
+      }
+
+      .final-url {
+        position: absolute;
+        top: 980px;
+        left: 30px;
+        width: 1020px;
+        color: var(--gold);
+        font-size: 112px;
+        font-weight: 960;
+        letter-spacing: -0.07em;
+        line-height: 0.95;
+        text-shadow: 0 0 55px rgba(251, 191, 36, 0.25);
+      }
+
+      .final-rule {
+        position: absolute;
+        top: 1260px;
+        left: 150px;
+        width: 780px;
+        padding-top: 42px;
+        border-top: 2px solid rgba(255, 255, 255, 0.13);
+        color: var(--text);
+        font-size: 39px;
+        font-weight: 800;
+        line-height: 1.25;
+      }
+
+      .final-rule em {
+        color: var(--gold);
+        font-style: normal;
+      }
+
+      .vignette {
+        position: absolute;
+        inset: 0;
+        z-index: 100;
+        pointer-events: none;
+        box-shadow:
+          inset 0 0 170px rgba(0, 0, 0, 0.52),
+          inset 0 -170px 180px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="scene">
+      <div class="brand" id="brand">
+        <img src="../../../public/logo-emblem.svg" alt="" />
+        <div class="brand-name">Vilket<span>År</span></div>
+      </div>
+
+      <section class="daily-intro" id="daily-intro">
+        <div class="daily-chip">Dagens spel</div>
+        <h1 class="daily-title">Dagens<br /><em>VilketÅr</em></h1>
+        <div class="result-row">
+          <div class="result-square correct"></div>
+          <div class="result-square correct"></div>
+          <div class="result-square wrong"></div>
+          <div class="result-square correct"></div>
+          <div class="result-square correct"></div>
+        </div>
+        <p class="intro-message" id="intro-message">
+          Samma utmaning<br /><em>för alla.</em>
+        </p>
+        <p class="intro-note" id="intro-note">
+          En ny tidslinje varje dag.<br />Jämför resultatet med vänner.
+        </p>
+      </section>
+
+      <h1 class="question-copy" id="question-copy">
+        När lanserades<br /><em>Mobilt Bank-id?</em>
+      </h1>
+      <h2 class="play-instruction" id="play-instruction">
+        Placera kortet<br /><em>på tidslinjen.</em>
+      </h2>
+
+      <section class="board" id="board">
+        <div class="timeline-line"></div>
+        <div class="timeline-target"></div>
+
+        <div class="card-wrap edge-card" id="card-iphone">
+          <article class="card">
+            <div class="card-title">Första Iphone släpps</div>
+            <div class="card-subtitle">Smarttelefonens genombrott</div>
+            <div class="card-image">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IPhone%201st%20Gen.svg?width=650"
+                alt=""
+              />
+            </div>
+          </article>
+          <div class="year-pill">2007</div>
+        </div>
+
+        <div class="card-wrap" id="card-sarah">
+          <article class="card">
+            <div class="card-title">Sarah Sjöström blir världsmästare</div>
+            <div class="card-subtitle">Svensk simmare</div>
+            <div class="card-image">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Sarah%20Sj%C3%B6str%C3%B6m%202013.jpg?width=650"
+                alt=""
+              />
+            </div>
+          </article>
+          <div class="year-pill">2009</div>
+        </div>
+
+        <div class="card-wrap" id="card-swish">
+          <article class="card">
+            <div class="card-title">Swish lanseras</div>
+            <div class="card-subtitle">Svensk betaltjänst</div>
+            <div class="card-image logo-panel">
+              <img
+                src="https://www.swish.nu/assets/swish-logotype-C2_aqj3N.svg"
+                alt="Swish"
+              />
+            </div>
+          </article>
+          <div class="year-pill">2012</div>
+        </div>
+
+        <div class="card-wrap edge-card" id="card-mans">
+          <article class="card">
+            <div class="card-title">Måns vinner Eurovision</div>
+            <div class="card-subtitle">Svensk artist</div>
+            <div class="card-image">
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Melodifestivalen%202025%20delt%C3%A4vling%204%20Malm%C3%B6%20M%C3%A5ns%20Zelmerl%C3%B6w%20presentation%2003.jpg?width=650"
+                alt=""
+              />
+            </div>
+          </article>
+          <div class="year-pill">2015</div>
+        </div>
+      </section>
+
+      <div class="bank-wrap" id="bank-wrap">
+        <article class="bank-card" id="bank-card">
+          <div class="card-title">Mobilt Bank-id lanseras</div>
+          <div class="card-subtitle">Svensk e-legitimation</div>
+          <div class="bank-art"><div class="phone"></div></div>
+        </article>
+        <div class="bank-year" id="bank-year">2011</div>
+      </div>
+
+      <section class="answer-banner" id="answer-banner">
+        <div class="answer-label">Rätt placering</div>
+        <div class="answer-number">2011</div>
+      </section>
+
+      <section class="final-screen" id="final-screen">
+        <div class="final-daily">Dagens spel</div>
+        <h2 class="final-question">HADE DU<br />RÄTT?</h2>
+        <div class="final-results">
+          <div class="result-square correct"></div>
+          <div class="result-square correct"></div>
+          <div class="result-square wrong"></div>
+          <div class="result-square correct"></div>
+          <div class="result-square correct"></div>
+        </div>
+        <p class="final-play">
+          Spela dagens tidslinje och jämför med dina vänner:
+        </p>
+        <div class="final-url">VILKETÅR.SE</div>
+        <div class="final-rule">
+          <em>Samma utmaning för alla.</em><br />En ny tidslinje varje dag.
+        </div>
+      </section>
+
+      <div class="vignette"></div>
+    </main>
+
+    <script>
+      const $ = (id) => document.getElementById(id);
+      const clamp = (v, min = 0, max = 1) => Math.min(max, Math.max(min, v));
+      const range = (t, start, end) => clamp((t - start) / (end - start));
+      const smooth = (v) => v * v * (3 - 2 * v);
+      const out = (v) => 1 - Math.pow(1 - v, 3);
+      const backOut = (v) => {
+        const c1 = 1.70158;
+        const c3 = c1 + 1;
+        return 1 + c3 * Math.pow(v - 1, 3) + c1 * Math.pow(v - 1, 2);
+      };
+      const lerp = (a, b, v) => a + (b - a) * v;
+
+      function fadeWindow(t, enterStart, enterEnd, exitStart, exitEnd) {
+        return Math.min(
+          smooth(range(t, enterStart, enterEnd)),
+          1 - smooth(range(t, exitStart, exitEnd)),
+        );
+      }
+
+      function setFrame(el, opacity, transform) {
+        el.style.opacity = String(clamp(opacity));
+        el.style.transform = transform;
+      }
+
+      window.__setPromoTime = (t) => {
+        const finalIn = smooth(range(t, 17.05, 17.7));
+        $("brand").style.opacity = String(1 - finalIn);
+
+        const introOpacity = fadeWindow(t, 0.0, 0.55, 7.72, 8.28);
+        const introIn = out(range(t, 0.0, 0.8));
+        setFrame(
+          $("daily-intro"),
+          introOpacity,
+          `translateY(${lerp(30, 0, introIn)}px) scale(${lerp(0.97, 1, introIn)})`,
+        );
+
+        const firstMessage = fadeWindow(t, 2.42, 2.85, 5.12, 5.5);
+        $("intro-message").style.opacity = String(firstMessage);
+        $("intro-message").innerHTML =
+          t < 5.25 ? "Samma utmaning<br /><em>för alla.</em>" : "";
+
+        const noteIn = fadeWindow(t, 5.15, 5.58, 7.72, 8.18);
+        $("intro-note").style.opacity = String(noteIn);
+        $("intro-note").style.transform =
+          `translateY(${lerp(24, 0, out(range(t, 5.15, 5.75)))}px)`;
+
+        const questionOpacity = fadeWindow(t, 8.0, 8.55, 11.55, 12.05);
+        const questionIn = out(range(t, 8.0, 8.7));
+        setFrame(
+          $("question-copy"),
+          questionOpacity,
+          `translateY(${lerp(28, 0, questionIn)}px) scale(${lerp(0.97, 1, questionIn)})`,
+        );
+
+        const instructionOpacity = fadeWindow(t, 11.42, 11.9, 14.25, 14.72);
+        const instructionIn = out(range(t, 11.42, 12.1));
+        setFrame(
+          $("play-instruction"),
+          instructionOpacity,
+          `translateY(${lerp(24, 0, instructionIn)}px)`,
+        );
+
+        const boardIn = out(range(t, 7.95, 8.9));
+        const boardOpacity = boardIn * (1 - finalIn);
+        setFrame(
+          $("board"),
+          boardOpacity,
+          `translateY(${lerp(90, 0, boardIn)}px) scale(${lerp(0.96, 1, boardIn)})`,
+        );
+
+        const placement = smooth(range(t, 12.45, 14.45));
+        const positions = [
+          ["card-iphone", -70, -160],
+          ["card-sarah", 90, 35],
+          ["card-swish", 700, 755],
+          ["card-mans", 920, 1060],
+        ];
+        positions.forEach(([id, before, after], index) => {
+          const x = lerp(before, after, placement);
+          const localIn = out(
+            range(t, 8.05 + index * 0.08, 8.85 + index * 0.08),
+          );
+          setFrame(
+            $(id),
+            localIn * (1 - finalIn),
+            `translate(${x}px, ${lerp(44, 0, localIn)}px)`,
+          );
+        });
+
+        const bankIn = backOut(range(t, 8.3, 9.05));
+        const search =
+          Math.sin(range(t, 10.2, 12.3) * Math.PI * 1.8) *
+          115 *
+          (1 - placement);
+        const hover = Math.sin(t * 2.25) * 10 * (1 - placement);
+        const dropY = lerp(0, 404, placement);
+        const scale = lerp(1, 0.879, placement);
+        const rotate = lerp(-2 + Math.sin(t * 1.8) * 1.2, 0, placement);
+        setFrame(
+          $("bank-wrap"),
+          bankIn * (1 - finalIn),
+          `translate(${search}px, ${lerp(36, hover, bankIn) + dropY}px) scale(${scale}) rotate(${rotate}deg)`,
+        );
+
+        const reveal = backOut(range(t, 14.48, 15.15));
+        $("bank-year").style.opacity = String(
+          range(t, 14.48, 14.8) * (1 - finalIn),
+        );
+        $("bank-year").style.transform =
+          `translateX(-50%) translateY(${lerp(22, 0, reveal)}px) scale(${lerp(0.78, 1, reveal)})`;
+
+        const correct = range(t, 14.35, 14.85);
+        $("bank-card").style.borderColor =
+          `rgba(${lerp(251, 34, correct)}, ${lerp(191, 197, correct)}, ${lerp(36, 94, correct)}, ${lerp(0.65, 0.95, correct)})`;
+        $("bank-card").style.boxShadow =
+          `0 42px 90px rgba(0,0,0,.7), 0 0 ${lerp(0, 72, correct)}px rgba(34,197,94,${lerp(0, 0.3, correct)})`;
+
+        const answerOpacity = fadeWindow(t, 14.42, 14.92, 16.72, 17.16);
+        const answerIn = backOut(range(t, 14.42, 15.1));
+        setFrame(
+          $("answer-banner"),
+          answerOpacity * (1 - finalIn),
+          `translateY(${lerp(30, 0, answerIn)}px) scale(${lerp(0.92, 1, answerIn)})`,
+        );
+
+        const finalLift = backOut(range(t, 17.05, 17.9));
+        setFrame(
+          $("final-screen"),
+          finalIn,
+          `translateY(${lerp(45, 0, finalLift)}px)`,
+        );
+      };
+
+      window.__setPromoTime(0);
+    </script>
+  </body>
+</html>

@@ -1,8 +1,9 @@
 export const SITE_NAME = "VilketÅr";
 export const DEFAULT_SITE_URL = "https://xn--vilketr-jxa.se";
-export const DEFAULT_SEO_TITLE = "VilketÅr - svenskt tidslinjespel";
+export const DEFAULT_SEO_TITLE =
+  "VilketÅr – svenskt tidslinjespel | Gratis sällskapsspel";
 export const DEFAULT_SEO_DESCRIPTION =
-  "Spela VilketÅr, ett svenskt tidslinjespel där du placerar välkända händelser, personer, musik, sport och klassiker i rätt år.";
+  "Spela VilketÅr – ett gratis svenskt tidslinjespel och sällskapsspel där ni placerar välkända händelser, musik, sport och klassiker i rätt år.";
 export const DEFAULT_OG_IMAGE = "/og-image.png";
 
 export function getSiteUrl() {

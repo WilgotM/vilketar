@@ -32,6 +32,18 @@ export const content = style({
   width: "100%",
 });
 
+export const seoHeading = style({
+  color: vars.color.text,
+  fontFamily: vars.font.display,
+  fontSize: vars.fontSize["2xl"],
+  fontWeight: vars.fontWeight.bold,
+  letterSpacing: "-0.035em",
+  lineHeight: vars.lineHeight.tight,
+  margin: 0,
+  textAlign: "center",
+  textWrap: "balance",
+});
+
 export const embeddedContent = style({
   padding: 0,
 });

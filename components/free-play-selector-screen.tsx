@@ -19,6 +19,7 @@ interface Props {
   difficulty?: GameDifficulty;
   embedded?: boolean;
   featuredItems?: SelectorOption[];
+  heading?: string;
   insideCard?: boolean;
   introRoute?: SelectionRoute | null;
   items: SelectorOption[];
@@ -170,6 +171,7 @@ export default function FreePlaySelectorScreen(props: Props) {
     difficulty,
     embedded = false,
     featuredItems = [],
+    heading,
     insideCard = false,
     introRoute = null,
     items,
@@ -199,6 +201,7 @@ export default function FreePlaySelectorScreen(props: Props) {
 
   const panelContent = (
     <>
+      {heading ? <h1 className={styles.seoHeading}>{heading}</h1> : null}
       {breadcrumbs ? (
         <div className={styles.optionLabel}>{breadcrumbs}</div>
       ) : null}
