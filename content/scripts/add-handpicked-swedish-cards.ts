@@ -19,19 +19,14 @@ const SPORT_MOMENTS_DECK_ID = "all-sport-sportogonblick";
 const WORLD_EVENTS_GROUP_ID = "all-world-events";
 const WORLD_EVENTS_DECK_ID = "all-world-events-all";
 const VIDEO_GAMES_DECK_ID = "all-technology-video-games";
-const MUSIC_DECK_ID = "all-entertainment-music";
 // Keep music at 10% in the ordinary all-deck. The other published root
-// weights are 2.45 for Svenska klassiker and 0.1 for sport, so 2.55 / 9
-// makes music one tenth of the combined total.
+// weights are 2.45 for the hidden Swedish card pool and 0.1 for sport, so
+// 2.55 / 9 makes music one tenth of the combined total.
 const MUSIC_ROOT_FREQUENCY = 2.55 / 9;
 
 // These older source collections are deliberately retained so a future
 // editorial pass can reuse them. This additive script must not republish or
 // replace their existing decks.
-void CLASSICS_DECK_ID;
-void CLASSICS_GROUP_ID;
-void MUSIC_DECK_ID;
-void MUSIC_ROOT_FREQUENCY;
 
 type DifficultyCounts = {
   easy: number;
@@ -12078,6 +12073,7 @@ const CLASSIC_CARDS = [
   ...ADDITIONAL_NON_MUSIC_CARDS,
   ...ADDITIONAL_NON_MUSIC_CARDS_2,
 ].filter((card) => !isFilmOrTvCard(card));
+void CLASSIC_CARDS;
 void VIDEO_GAME_CARDS;
 
 function shouldKeepVideoGameCard(card: Card): boolean {
@@ -12392,6 +12388,43 @@ async function main() {
   const index = JSON.parse(await readFile(INDEX_FILE, "utf8")) as {
     children: Array<Record<string, unknown>>;
   };
+  const classicCards = await readDeck(CLASSICS_DECK_ID);
+  const classicCounts = countDifficulty(classicCards);
+  const classicsNode = {
+    id: CLASSICS_GROUP_ID,
+    slug: "svenska-klassiker",
+    title: "Svenska klassiker",
+    themeHue: 15,
+    frequency: 2.45,
+    hidden: true,
+    difficultyCounts: classicCounts,
+    minScore: 1000,
+    children: [
+      {
+        id: CLASSICS_DECK_ID,
+        slug: "allt",
+        title: "Allt",
+        themeHue: 15,
+        frequency: 1,
+        difficultyCounts: classicCounts,
+        minScore: 1000,
+      },
+    ],
+  };
+  const classicsIndex = index.children.findIndex(
+    (child) => child.id === CLASSICS_GROUP_ID,
+  );
+  if (classicsIndex >= 0) {
+    index.children[classicsIndex] = classicsNode;
+  } else {
+    index.children.unshift(classicsNode);
+  }
+  const entertainmentNode = index.children.find(
+    (child) => child.id === "all-entertainment",
+  );
+  if (entertainmentNode) {
+    entertainmentNode.frequency = MUSIC_ROOT_FREQUENCY;
+  }
   const sportNode = index.children.find((child) => child.id === "all-sport") as
     | { children?: Array<Record<string, unknown>>; difficultyCounts?: unknown }
     | undefined;
@@ -12473,7 +12506,7 @@ async function main() {
   await writeFile(INDEX_FILE, `${JSON.stringify(index, null, 2)}\n`);
 
   console.log(
-    `Added ${CLASSIC_CARDS.length} handpicked Swedish classic cards.`,
+    `Published ${preparedCards.length} handpicked sport and world-event cards.`,
   );
 }
 

@@ -49,24 +49,6 @@ function ThemeIcon({ deckId }: { deckId: string | null }) {
       </svg>
     );
   }
-  if (deckId?.includes("classic") || deckId?.includes("swedish")) {
-    return (
-      <svg
-        width="16"
-        height="11"
-        viewBox="0 0 16 10"
-        style={{
-          borderRadius: "1.5px",
-          border: "1px solid rgba(255, 255, 255, 0.15)",
-          display: "block",
-        }}
-      >
-        <rect width="16" height="10" fill="#006aa7" />
-        <rect x="5" width="2" height="10" fill="#fecc00" />
-        <rect y="4" width="16" height="2" fill="#fecc00" />
-      </svg>
-    );
-  }
   return (
     <svg
       width="14"
@@ -109,16 +91,6 @@ export default function DailyWeekSchedule(props: Props) {
             (day.deckId?.includes("music") ||
               day.deckId?.includes("entertainment")) ??
             false;
-          const isClassic =
-            (day.deckId?.includes("classic") ||
-              day.deckId?.includes("swedish")) ??
-            false;
-
-          let displayLabel = day.label;
-          if (day.shortLabel === "Klassiker") {
-            displayLabel = "Svenska klassiker";
-          }
-
           const isLast = index === week.length - 1;
 
           return (
@@ -129,7 +101,6 @@ export default function DailyWeekSchedule(props: Props) {
                 [styles.lastDay]: isLast,
                 [styles.sportDay]: isSport,
                 [styles.musicDay]: isMusic,
-                [styles.classicDay]: isClassic,
               })}
               key={day.weekday}
             >
@@ -139,7 +110,7 @@ export default function DailyWeekSchedule(props: Props) {
                 <div className={styles.iconContainer}>
                   <ThemeIcon deckId={day.deckId} />
                 </div>
-                <div className={styles.theme}>{displayLabel}</div>
+                <div className={styles.theme}>{day.label}</div>
                 {isToday ? <div className={styles.todayLabel}>Idag</div> : null}
               </div>
             </div>

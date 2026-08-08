@@ -15,12 +15,6 @@ export const FEATURED_FREE_PLAY_DECKS: readonly FeaturedFreePlayDeck[] = [
     text: "Sport",
   },
   {
-    key: "featured-swedish-classics",
-    routeSlug: "svenska-klassiker",
-    slugPath: ["svenska-klassiker", "allt"],
-    text: "Svenska klassiker",
-  },
-  {
     key: "featured-music",
     routeSlug: "musik",
     slugPath: ["entertainment", "music"],

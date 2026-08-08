@@ -26,11 +26,6 @@ const SCHEDULED_THEMES: Partial<Record<number, DailyScheduleTheme>> = {
     label: "Musik",
     shortLabel: "Musik",
   },
-  6: {
-    deckId: "all-swedish-classics-all",
-    label: "Svenska klassiker",
-    shortLabel: "Klassiker",
-  },
 };
 
 const WEEKDAY_LABELS = [

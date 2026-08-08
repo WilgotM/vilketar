@@ -167,7 +167,7 @@ test("ordinary daily games give music an approximate ten percent chance", () => 
   };
   const otherDeck = {
     ...deck,
-    id: "all-swedish-classics-all",
+    id: "all-world-events-all",
     slug: "all",
   };
   const allDeck = {

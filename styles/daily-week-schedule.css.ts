@@ -181,30 +181,3 @@ globalStyle(`${musicDay}.${today}`, {
   background: "rgba(250, 35, 59, 0.12)",
   borderLeft: "3px solid #fa233b",
 });
-
-export const classicDay = style({
-  background: "rgba(0, 110, 175, 0.04)",
-  selectors: {
-    "&:hover": {
-      background: "rgba(0, 110, 175, 0.08)",
-    },
-  },
-});
-
-globalStyle(`${classicDay} .${dayName}`, {
-  color: "#60a5fa",
-});
-
-globalStyle(`${classicDay} .${theme}`, {
-  color: "#eab308",
-  fontWeight: vars.fontWeight.semibold,
-});
-
-globalStyle(`${classicDay} .${iconContainer}`, {
-  color: "#fecc00",
-});
-
-globalStyle(`${classicDay}.${today}`, {
-  background: "rgba(0, 110, 175, 0.12)",
-  borderLeft: "3px solid #fecc00",
-});

@@ -119,23 +119,6 @@ export default function DailyEntryScreen(props: Props) {
       };
     }
 
-    if (
-      dailyTheme.deckId.includes("classic") ||
-      dailyTheme.deckId.includes("swedish")
-    ) {
-      return {
-        title: "Svenska Klassiker",
-        subtitle: (
-          <>
-            Idag spelas det med temat{" "}
-            <span className={styles.subtitleHighlight}>{dailyTheme.label}</span>
-            . Fylld med nostalgi, klassiska händelser och folkkära svenska
-            milstolpar!
-          </>
-        ),
-      };
-    }
-
     return {
       title: "Dagens spel",
       subtitle: (

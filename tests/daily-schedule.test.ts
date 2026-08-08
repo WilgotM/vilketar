@@ -17,15 +17,15 @@ test("daily schedule assigns recurring theme days", () => {
     label: "Musik",
     shortLabel: "Musik",
   });
-  assert.deepEqual(getDailyScheduleTheme("2026-05-30"), {
-    deckId: "all-swedish-classics-all",
-    label: "Svenska klassiker",
-    shortLabel: "Klassiker",
-  });
 });
 
 test("daily schedule keeps ordinary days on the full deck", () => {
   assert.deepEqual(getDailyScheduleTheme("2026-05-27"), {
+    deckId: null,
+    label: "Vanligt",
+    shortLabel: "Vanligt",
+  });
+  assert.deepEqual(getDailyScheduleTheme("2026-05-30"), {
     deckId: null,
     label: "Vanligt",
     shortLabel: "Vanligt",

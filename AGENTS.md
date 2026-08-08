@@ -95,8 +95,10 @@ ska fungera bra för pensionärer.
   uppdateras samtidigt när schema, urval eller dagliga deck-regler ändras.
 - Tisdag är sport: `all-sport-sportogonblick`.
 - Fredag är musik: `all-entertainment-music`.
-- Lördag är Svenska klassiker: `all-swedish-classics-all`.
-- Övriga dagar är vanligt dagens spel från hela roten.
+- Övriga dagar, inklusive lördag, är vanligt dagens spel från hela roten.
+- `all-swedish-classics` är en dold intern kortpool i roten. Korten ska ingå
+  bland vanliga frågor, men Svenska klassiker får inte visas som kategori
+  eller schemaläggas som eget dagens spel.
 - Dagens kortkö låses i Supabase-tabellen `daily_games`. Raden innehåller både
   `card_qids` och, efter migrationen `20260603172000_daily_game_card_snapshots`,
   `card_snapshots`. Appen använder snapshots om de finns, så dagens kort kan
@@ -120,7 +122,8 @@ obskyrt.
 
 ## Sport
 
-Sport ska kännas mer som Svenska klassiker än som nischad sportstatistik.
+Sport ska kännas folkligt och igenkännbart, inte som nischad
+sportstatistik.
 
 - Prioritera svenska eller mycket välkända sportögonblick som många i Sverige
   känner igen.
@@ -130,21 +133,3 @@ Sport ska kännas mer som Svenska klassiker än som nischad sportstatistik.
   klubbhändelser, små säsongsdetaljer, okända ligor och kort som kräver
   specialintresse.
 - Hellre färre roliga sportkort än många konstiga.
-
-## Svenska klassiker
-
-Nya handplockade kort till **Svenska klassiker** ska läggas i
-`content/scripts/add-handpicked-swedish-cards.ts`.
-
-- Lägg dem som `ClassicTuple` i `EXTRA_CLASSIC_CARDS`.
-- Använd svensk Wikipedia-titel i `pageTitle`.
-- Skriv kort titel utan årtal, t.ex. `ABBA bildas`.
-- Skriv kort, svensk undertitel, t.ex. `Svensk popgrupp`.
-- Skriv enkel fakta utan att göra kortet obskyrt.
-- Sätt ett ungefärligt `pageViews`-värde som speglar igenkänning.
-- Kortet ska vara något många i Sverige känner igen och blir glada av.
-- Kör sedan `bun run decks:add-swedish-cards` och `bun run decks:curate`.
-- Kontrollera att `public/decks/all-swedish-classics-all.json` ser bra ut.
-
-Var skeptisk mot tekniskt korrekta men obskyra kort. Hellre färre roliga kort
-än många tråkiga.

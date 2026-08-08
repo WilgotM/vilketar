@@ -882,7 +882,11 @@ async function writeDeckArtifacts(builtDecks: BuiltDeck[]): Promise<void> {
   const existingPublicFiles = await readdir(PUBLIC_DECKS_DIR);
   await Promise.all(
     existingPublicFiles
-      .filter((fileName) => fileName.endsWith(".json"))
+      .filter(
+        (fileName) =>
+          fileName.endsWith(".json") &&
+          fileName !== "all-swedish-classics-all.json",
+      )
       .map((fileName) => rm(path.join(PUBLIC_DECKS_DIR, fileName))),
   );
 

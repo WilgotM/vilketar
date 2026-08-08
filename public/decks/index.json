@@ -16,6 +16,7 @@
       "title": "Svenska klassiker",
       "themeHue": 15,
       "frequency": 2.45,
+      "hidden": true,
       "difficultyCounts": {
         "easy": 375,
         "normal": 883,
