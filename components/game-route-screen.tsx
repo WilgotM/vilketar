@@ -4,6 +4,10 @@ import { getSelectionRoutePath } from "../lib/categories";
 import { DAILY_DIFFICULTY, getCurrentUtcDateKey } from "../lib/daily";
 import { createDailyGameState } from "../lib/daily-game";
 import {
+  collectDailyLeagueScores,
+  DailyLeagueScore,
+} from "../lib/daily-league-scores";
+import {
   loadDailyOverride,
   loadRecentDailyOpeningProtection,
 } from "../lib/daily-overrides";
@@ -28,6 +32,8 @@ import {
   getStoredDailyResult,
   StoredDailyResult,
   getActiveDailySession,
+  getMyLeagues,
+  hasLeagueSession,
   saveActiveDailySession,
 } from "../lib/leagues";
 import { getDailyChallengeScore } from "../lib/share";
@@ -146,6 +152,9 @@ export default function GameRouteScreen(props: Props) {
   const [entryReady, setEntryReady] = React.useState(false);
   const [showRouteIntro, setShowRouteIntro] = React.useState(false);
   const [restoredFromSnapshot, setRestoredFromSnapshot] = React.useState(false);
+  const [dailyLeagueScores, setDailyLeagueScores] = React.useState<
+    DailyLeagueScore[]
+  >([]);
   const freePlayDifficulty = useFreePlayDifficulty();
   const navigationSource = useNavigationSource();
   const { deckNodes, loadDecks, rootDeckId } = useDecks();
@@ -179,6 +188,53 @@ export default function GameRouteScreen(props: Props) {
       document.body.classList.remove("gamePageNoSelect");
     };
   }, []);
+
+  React.useEffect(() => {
+    if (mode !== "daily") {
+      setDailyLeagueScores([]);
+      return;
+    }
+
+    if (!stateReady || showRouteIntro) {
+      return;
+    }
+
+    let cancelled = false;
+
+    const loadLeagueScores = async () => {
+      try {
+        if (!(await hasLeagueSession())) {
+          if (!cancelled) {
+            setDailyLeagueScores([]);
+          }
+          return;
+        }
+
+        const leagues = await getMyLeagues(dateKey);
+        if (!cancelled) {
+          setDailyLeagueScores(collectDailyLeagueScores(leagues));
+        }
+      } catch {
+        if (!cancelled) {
+          setDailyLeagueScores([]);
+        }
+      }
+    };
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "visible") {
+        void loadLeagueScores();
+      }
+    };
+
+    void loadLeagueScores();
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    return () => {
+      cancelled = true;
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, [dateKey, mode, showRouteIntro, stateReady]);
 
   React.useEffect(() => {
     if (!difficultyReady) {
@@ -543,6 +599,7 @@ export default function GameRouteScreen(props: Props) {
             key={`${routePath}:${runNonce}`}
             dailyDateKey={mode === "daily" ? dateKey : undefined}
             dailyChallengeScore={dailyChallengeScore}
+            dailyLeagueScores={dailyLeagueScores}
             difficulty={difficulty}
             gameMode={mode}
             highscore={highscore}
@@ -575,6 +632,7 @@ export default function GameRouteScreen(props: Props) {
           key={`${routePath}:${runNonce}`}
           dailyDateKey={mode === "daily" ? dateKey : undefined}
           dailyChallengeScore={dailyChallengeScore}
+          dailyLeagueScores={dailyLeagueScores}
           difficulty={difficulty}
           gameMode={mode}
           highscore={highscore}
