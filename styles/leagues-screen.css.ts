@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css";
+import { keyframes, style } from "@vanilla-extract/css";
 import { media } from "./foundation";
 import { vars } from "./theme.css";
 import { bodyTextMuted, screenTitle, sectionLabel } from "./ui.css";
@@ -181,74 +181,315 @@ export const profileDropdownAction = style({
   },
 });
 
-export const panel = style({
-  ...glassSurface,
-  borderRadius: vars.radius.xl,
+export const formPanel = style({
   alignSelf: "center",
+  alignItems: "center",
+  display: "grid",
+  gap: vars.space["6xl"],
+  gridTemplateColumns: "minmax(18rem, 0.9fr) minmax(22rem, 1.1fr)",
+  margin: `0 auto ${vars.space.xl}`,
+  maxWidth: "72rem",
+  minHeight: "calc(100dvh - 7rem)",
+  padding: `${vars.space["4xl"]} ${vars.space["2xl"]} ${vars.space["6xl"]}`,
+  width: "100%",
+  "@media": {
+    [media.compact]: {
+      alignContent: "start",
+      gap: vars.space["4xl"],
+      gridTemplateColumns: "minmax(0, 1fr)",
+      maxWidth: vars.size.contentWidthWide,
+      minHeight: 0,
+      paddingTop: vars.space["2xl"],
+    },
+    [media.narrow]: {
+      gap: vars.space["3xl"],
+      marginBottom: vars.space.lg,
+      padding: `${vars.space.xl} ${vars.space.lg} ${vars.space["5xl"]}`,
+    },
+    [media.shortLandscape]: {
+      gap: vars.space["3xl"],
+      gridTemplateColumns: "minmax(13rem, 0.72fr) minmax(20rem, 1.28fr)",
+      marginBottom: vars.space.md,
+      minHeight: 0,
+      padding: `${vars.space.lg} ${vars.space["2xl"]} ${vars.space.xl}`,
+    },
+  },
+});
+
+export const panel = style({
+  alignSelf: "center",
+  background: `linear-gradient(145deg, color-mix(in srgb, ${vars.color.surfaceStrong} 97%, ${vars.color.accentLogo}) 0%, ${vars.color.surfaceStrong} 54%, color-mix(in srgb, ${vars.color.backdropStrong} 72%, ${vars.color.surfaceStrong}) 100%)`,
+  border: `${vars.size.borderWidth} solid ${vars.color.borderStrong}`,
+  borderRadius: vars.radius.lg,
+  boxShadow: `${vars.shadow.panel}, inset 0 1px 0 color-mix(in srgb, ${vars.color.text} 6%, transparent)`,
   display: "grid",
   gap: vars.space.lg,
-  margin: `0 0 ${vars.space.xl}`,
-  padding: vars.space.xl,
-  maxWidth: vars.size.contentWidthWide,
-  width: `calc(100% - (${vars.space.xl} * 2))`,
+  margin: `0 ${vars.space["2xl"]} ${vars.space.xl}`,
+  maxWidth: "52rem",
+  padding: vars.space["2xl"],
+  width: `calc(100% - (${vars.space["2xl"]} * 2))`,
   "@media": {
     [media.narrow]: {
-      margin: `0 0 ${vars.space.lg}`,
+      margin: `0 ${vars.space.md} ${vars.space.lg}`,
       padding: vars.space.lg,
       width: `calc(100% - (${vars.space.md} * 2))`,
     },
   },
 });
 
-export const nameForm = style({
-  display: "grid",
-  gap: vars.space.lg,
+export const panelTitle = style({
+  color: vars.color.text,
+  fontSize: vars.fontSize["2xl"],
+  fontWeight: vars.fontWeight.black,
+  letterSpacing: "-0.04em",
+  lineHeight: vars.lineHeight.tight,
+  margin: 0,
+  overflowWrap: "anywhere",
+  "@media": {
+    [media.narrow]: { fontSize: vars.fontSize.xl },
+  },
 });
 
-export const formGrid = style({
+export const formLead = style({
+  alignContent: "center",
   display: "grid",
-  gap: vars.space.md,
-  gridTemplateColumns: "1fr auto",
+  justifySelf: "start",
+  minWidth: 0,
   "@media": {
-    [media.narrow]: {
-      gridTemplateColumns: "1fr",
+    [media.compact]: {
+      width: "100%",
     },
   },
 });
 
-export const input = style({
-  ...glassControl,
-  borderRadius: vars.radius.sm,
-  color: vars.color.text,
+export const formHeading = style({
+  display: "grid",
+  gap: vars.space.lg,
+  minWidth: 0,
+});
+
+export const formBody = style({
+  alignContent: "center",
+  display: "grid",
+  gap: vars.space.lg,
+  justifySelf: "end",
+  maxWidth: vars.size.contentWidthWide,
+  minWidth: 0,
+  width: "100%",
+  "@media": {
+    [media.compact]: {
+      justifySelf: "stretch",
+      maxWidth: "none",
+    },
+    [media.shortLandscape]: {
+      gap: vars.space.md,
+    },
+  },
+});
+
+export const field = style({
+  display: "grid",
+  gap: vars.space.sm,
+  minWidth: 0,
+});
+
+export const fieldLabel = style({
+  color: vars.color.textMuted,
   fontSize: vars.fontSize.base,
-  minHeight: vars.size.controlHeight,
+  fontWeight: vars.fontWeight.semibold,
+});
+
+export const input = style({
+  appearance: "none",
+  background: `color-mix(in srgb, ${vars.color.backdropStrong} 48%, ${vars.color.surfaceStrong})`,
+  border: `${vars.size.borderWidth} solid ${vars.color.borderStrong}`,
+  borderRadius: vars.radius.md,
+  color: vars.color.text,
+  fontSize: vars.fontSize.lg,
+  minHeight: "4rem",
   outline: "none",
   padding: `${vars.space.md} ${vars.space.lg}`,
   width: "100%",
+  transition: `background ${vars.duration.fast} ${vars.easing.standard}, border-color ${vars.duration.fast} ${vars.easing.standard}, box-shadow ${vars.duration.fast} ${vars.easing.standard}`,
   selectors: {
-    "&:focus": {
-      borderColor: `color-mix(in srgb, ${vars.color.accentLogo} 70%, ${vars.color.text})`,
-      boxShadow: `${vars.shadow.focus}, inset 0 1px 0 rgba(255, 255, 255, 0.14)`,
+    "&:hover": {
+      borderColor: `color-mix(in srgb, ${vars.color.text} 34%, transparent)`,
+    },
+    "&:focus-visible": {
+      background: vars.color.surfaceStrong,
+      borderColor: vars.color.accentLogo,
+      boxShadow: vars.shadow.focus,
+      outline: "none",
     },
     "&::placeholder": {
       color: vars.color.textSubtle,
     },
   },
+  "@media": {
+    [media.shortLandscape]: {
+      minHeight: "3.25rem",
+      paddingBlock: vars.space.sm,
+    },
+  },
 });
 
+export const codeInput = style([
+  input,
+  {
+    fontFamily:
+      "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+    fontSize: vars.fontSize.xl,
+    fontWeight: vars.fontWeight.bold,
+    letterSpacing: "0.18em",
+    textTransform: "uppercase",
+  },
+]);
+
 export const formTitle = style({
-  fontSize: vars.fontSize.lg,
-  fontWeight: vars.fontWeight.bold,
-  lineHeight: vars.lineHeight.snug,
+  color: vars.color.text,
+  fontFamily: vars.font.display,
+  fontSize: "clamp(4rem, 7vw, 5.75rem)",
+  fontWeight: vars.fontWeight.black,
+  letterSpacing: "-0.04em",
+  lineHeight: vars.lineHeight.tight,
   margin: 0,
+  maxWidth: "9ch",
+  textWrap: "balance",
+  "@media": {
+    [media.compact]: {
+      fontSize: "clamp(2.5rem, 10vw, 3.75rem)",
+      maxWidth: "none",
+    },
+    [media.shortLandscape]: {
+      fontSize: vars.fontSize["2xl"],
+    },
+  },
 });
 
 export const helperText = style([
   bodyTextMuted,
   {
-    fontSize: vars.fontSize.sm,
+    fontSize: vars.fontSize.lg,
+    lineHeight: vars.lineHeight.body,
+    textWrap: "pretty",
+    "@media": {
+      [media.narrow]: { fontSize: vars.fontSize.base },
+      [media.shortLandscape]: { fontSize: vars.fontSize.sm },
+    },
   },
 ]);
+
+const formAction = {
+  alignItems: "center",
+  appearance: "none" as const,
+  borderRadius: vars.radius.md,
+  cursor: "pointer",
+  display: "flex",
+  fontFamily: vars.font.body,
+  fontSize: vars.fontSize.base,
+  fontWeight: vars.fontWeight.bold,
+  justifyContent: "center",
+  minHeight: "4rem",
+  padding: `${vars.space.md} ${vars.space.lg}`,
+  transition: `transform ${vars.duration.fast} ${vars.easing.standard}, filter ${vars.duration.fast} ${vars.easing.standard}, border-color ${vars.duration.fast} ${vars.easing.standard}`,
+  width: "100%",
+  "@media": {
+    [media.shortLandscape]: {
+      minHeight: "3.25rem",
+      paddingBlock: vars.space.sm,
+    },
+  },
+};
+
+export const formPrimaryAction = style({
+  ...formAction,
+  background: `linear-gradient(135deg, color-mix(in srgb, ${vars.color.accentLogo} 82%, ${vars.color.backdropStrong}), ${vars.color.accentLogo})`,
+  border: `${vars.size.borderWidth} solid color-mix(in srgb, ${vars.color.accentLogo} 74%, ${vars.color.borderStrong})`,
+  boxShadow: `0 ${vars.space.sm} ${vars.space.xl} ${vars.color.accentGlow}`,
+  color: vars.color.accentText,
+  selectors: {
+    "&:hover": { filter: "brightness(1.06)", transform: "translateY(-1px)" },
+    "&:focus-visible": { boxShadow: vars.shadow.focus, outline: "none" },
+    "&:active": { transform: "translateY(0) scale(0.985)" },
+    "&:disabled": { cursor: "wait", filter: "none", opacity: 0.58 },
+  },
+});
+
+export const formSecondaryAction = style({
+  ...formAction,
+  background: vars.color.surfaceStrong,
+  border: `${vars.size.borderWidth} solid ${vars.color.borderStrong}`,
+  color: vars.color.text,
+  selectors: {
+    "&:hover": {
+      borderColor: vars.color.accentLogo,
+      transform: "translateY(-1px)",
+    },
+    "&:focus-visible": { boxShadow: vars.shadow.focus, outline: "none" },
+    "&:active": { transform: "translateY(0) scale(0.985)" },
+    "&:disabled": { cursor: "wait", opacity: 0.58 },
+  },
+});
+
+export const formFootnote = style({
+  color: vars.color.textMuted,
+  fontSize: vars.fontSize.sm,
+  lineHeight: vars.lineHeight.body,
+  margin: 0,
+  textAlign: "center",
+});
+
+export const formDivider = style({
+  alignItems: "center",
+  color: vars.color.textMuted,
+  display: "flex",
+  fontSize: vars.fontSize.xs,
+  fontWeight: vars.fontWeight.semibold,
+  justifyContent: "center",
+  margin: vars.space.xxs,
+  position: "relative",
+  selectors: {
+    "&::before": {
+      background: vars.color.border,
+      content: '""',
+      height: vars.size.borderWidth,
+      left: 0,
+      position: "absolute",
+      right: 0,
+    },
+  },
+});
+
+export const formDividerLabel = style({
+  background: vars.color.backdropStrong,
+  padding: `0 ${vars.space.md}`,
+  position: "relative",
+});
+
+const loadingSweep = keyframes({
+  from: { transform: "translateX(-110%)" },
+  to: { transform: "translateX(240%)" },
+});
+
+export const loadingTrack = style({
+  background: vars.color.border,
+  borderRadius: vars.radius.pill,
+  height: vars.space.xs,
+  overflow: "hidden",
+  width: "100%",
+});
+
+export const loadingIndicator = style({
+  animation: `${loadingSweep} 1.2s ${vars.easing.standard} infinite`,
+  background: vars.color.accentLogo,
+  borderRadius: vars.radius.pill,
+  display: "block",
+  height: "100%",
+  width: "42%",
+  "@media": {
+    [media.reduceMotion]: { animation: "none", transform: "translateX(70%)" },
+  },
+});
 
 export const profileCard = style({
   alignSelf: "center",
@@ -340,20 +581,76 @@ export const avatarImage = style({
   width: "100%",
 });
 
+export const profileIdentity = style({
+  alignItems: "center",
+  display: "grid",
+  gap: vars.space.lg,
+  justifyItems: "center",
+  marginBottom: vars.space.lg,
+  width: "100%",
+  "@media": {
+    [media.shortLandscape]: {
+      gap: vars.space.sm,
+      gridTemplateColumns: "6rem minmax(0, 1fr)",
+      justifyItems: "start",
+      marginBottom: 0,
+    },
+  },
+});
+
+export const avatarPreviewLarge = style({
+  alignItems: "center",
+  aspectRatio: "1",
+  background: vars.color.surfaceStrong,
+  border: `${vars.size.borderWidth} solid color-mix(in srgb, ${vars.color.accentLogo} 45%, ${vars.color.borderStrong})`,
+  borderRadius: vars.radius.pill,
+  boxShadow: `0 0 ${vars.space["4xl"]} color-mix(in srgb, ${vars.color.accentLogo} 10%, transparent), inset 0 1px 0 color-mix(in srgb, ${vars.color.text} 10%, transparent)`,
+  color: vars.color.textMuted,
+  display: "flex",
+  fontSize: "clamp(3rem, 8vw, 4.5rem)",
+  fontWeight: vars.fontWeight.bold,
+  justifyContent: "center",
+  overflow: "hidden",
+  width: vars.size.profileAvatarDesktop,
+  "@media": {
+    [media.compact]: { width: vars.size.profileAvatarMobile },
+    [media.shortLandscape]: {
+      fontSize: vars.fontSize["2xl"],
+      width: vars.size.profileAvatarLandscape,
+    },
+  },
+});
+
+export const profileImageActions = style({
+  alignItems: "center",
+  display: "flex",
+  flexWrap: "wrap",
+  gap: vars.space.sm,
+  justifyContent: "center",
+});
+
 export const avatarPicker = style({
   alignItems: "center",
   appearance: "none",
-  ...glassControl,
+  background: "transparent",
+  border: 0,
   borderRadius: vars.radius.sm,
-  color: vars.color.text,
+  color: vars.color.accentLogo,
   cursor: "pointer",
   display: "inline-flex",
   fontFamily: vars.font.body,
-  fontSize: vars.fontSize.sm,
-  fontWeight: vars.fontWeight.semibold,
+  fontSize: vars.fontSize.base,
+  fontWeight: vars.fontWeight.bold,
   justifyContent: "center",
-  minHeight: "2.5rem",
+  minHeight: "2.75rem",
   padding: `${vars.space.xs} ${vars.space.md}`,
+  transition: `background ${vars.duration.fast} ${vars.easing.standard}, border-color ${vars.duration.fast} ${vars.easing.standard}`,
+  selectors: {
+    "&:hover": {
+      background: vars.color.accentTint,
+    },
+    "&:focus-within": { boxShadow: vars.shadow.focus },
+  },
 });
 
 export const hiddenFileInput = style({
@@ -672,8 +969,8 @@ const leagueAction = {
 
 export const primaryLeagueAction = style({
   ...leagueAction,
-  background: `linear-gradient(135deg, ${vars.color.accentLogo}, color-mix(in srgb, ${vars.color.accentLogo} 82%, white))`,
-  border: `${vars.size.borderWidth} solid color-mix(in srgb, ${vars.color.accentLogo} 70%, white)`,
+  background: `linear-gradient(135deg, color-mix(in srgb, ${vars.color.accentLogo} 82%, ${vars.color.backdropStrong}), ${vars.color.accentLogo})`,
+  border: `${vars.size.borderWidth} solid color-mix(in srgb, ${vars.color.accentLogo} 74%, ${vars.color.borderStrong})`,
   boxShadow: `0 ${vars.space.sm} ${vars.space.xl} ${vars.color.accentGlow}`,
   color: vars.color.accentText,
   selectors: {
@@ -997,6 +1294,18 @@ export const textAction = style({
   fontSize: vars.fontSize.sm,
   fontWeight: vars.fontWeight.semibold,
   padding: `${vars.space.xs} ${vars.space.xs}`,
+  textDecoration: "underline",
+  textDecorationColor: "transparent",
+  textUnderlineOffset: vars.space.xxs,
+  transition: `color ${vars.duration.fast} ${vars.easing.standard}, text-decoration-color ${vars.duration.fast} ${vars.easing.standard}`,
+  selectors: {
+    "&:hover": {
+      color: vars.color.text,
+      textDecorationColor: "currentColor",
+    },
+    "&:focus-visible": { boxShadow: vars.shadow.focus, outline: "none" },
+    "&:disabled": { cursor: "wait", opacity: 0.58 },
+  },
 });
 
 export const textActionDanger = style([
@@ -1032,12 +1341,50 @@ export const savedAccountBox = style({
   overflowWrap: "anywhere",
 });
 
+export const accountIdentity = style({
+  background: `color-mix(in srgb, ${vars.color.backdropStrong} 34%, transparent)`,
+  border: `${vars.size.borderWidth} solid ${vars.color.border}`,
+  borderRadius: vars.radius.md,
+  display: "grid",
+  gap: vars.space.xxs,
+  padding: vars.space.lg,
+});
+
+export const accountIdentityLabel = style({
+  color: vars.color.textMuted,
+  fontSize: vars.fontSize.sm,
+  fontWeight: vars.fontWeight.semibold,
+});
+
+export const accountIdentityValue = style({
+  color: vars.color.text,
+  fontSize: vars.fontSize.base,
+  overflowWrap: "anywhere",
+});
+
+export const verifyAddress = style([
+  accountIdentity,
+  {
+    borderColor: `color-mix(in srgb, ${vars.color.accentLogo} 35%, ${vars.color.border})`,
+  },
+]);
+
+export const legalText = style({
+  color: vars.color.textMuted,
+  fontSize: vars.fontSize.xs,
+  lineHeight: vars.lineHeight.body,
+  margin: 0,
+  textAlign: "center",
+});
+
 export const dangerZone = style({
-  borderTop: `1px solid color-mix(in srgb, ${vars.color.text} 10%, transparent)`,
+  background: `color-mix(in srgb, ${vars.color.dangerSoft} 36%, transparent)`,
+  border: `${vars.size.borderWidth} solid color-mix(in srgb, ${vars.color.danger} 28%, transparent)`,
+  borderRadius: vars.radius.md,
   display: "grid",
   gap: vars.space.md,
   marginTop: vars.space.sm,
-  paddingTop: vars.space.lg,
+  padding: vars.space.lg,
 });
 
 export const dangerTitle = style({
@@ -1050,9 +1397,9 @@ export const dangerTitle = style({
 
 export const dangerButton = style({
   appearance: "none",
-  background: `linear-gradient(145deg, ${vars.color.dangerSoft}, color-mix(in srgb, ${vars.color.dangerSoft} 70%, transparent))`,
-  border: `1px solid ${vars.color.danger}`,
-  borderRadius: vars.radius.sm,
+  background: "transparent",
+  border: `${vars.size.borderWidth} solid color-mix(in srgb, ${vars.color.danger} 64%, transparent)`,
+  borderRadius: vars.radius.md,
   color: vars.color.danger,
   cursor: "pointer",
   fontFamily: vars.font.body,
@@ -1062,6 +1409,8 @@ export const dangerButton = style({
   padding: `${vars.space.md} ${vars.space.lg}`,
   width: "100%",
   selectors: {
+    "&:hover": { background: vars.color.dangerSoft },
+    "&:focus-visible": { boxShadow: vars.shadow.focus, outline: "none" },
     "&:disabled": {
       cursor: "wait",
       opacity: 0.62,
@@ -1073,6 +1422,16 @@ export const deviceList = style({
   display: "grid",
   gap: vars.space.sm,
 });
+
+export const deviceEmpty = style([
+  bodyTextMuted,
+  {
+    borderBlock: `${vars.size.borderWidth} solid ${vars.color.border}`,
+    fontSize: vars.fontSize.base,
+    padding: `${vars.space["2xl"]} 0`,
+    textAlign: "left",
+  },
+]);
 
 export const deviceRow = style({
   alignItems: "center",

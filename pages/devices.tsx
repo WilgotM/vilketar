@@ -84,61 +84,67 @@ export default function DevicesPage() {
       />
       <PageShell>
         <div className={styles.screen}>
-          <section className={styles.hero}>
-            <div className={styles.eyebrow}>Konto</div>
-            <h1 className={styles.title}>Mina enheter</h1>
-            <p className={styles.intro}>
-              Här ser du var ditt konto har använts för ligor.
-            </p>
-          </section>
-
           {error ? <div className={styles.error}>{error}</div> : null}
 
-          <section className={styles.panel}>
-            <div>
-              <h2 className={styles.formTitle}>
-                {email ? email : "Inte inloggad"}
-              </h2>
+          <section aria-busy={busy || undefined} className={styles.formPanel}>
+            <div className={styles.formLead}>
+              <div className={styles.formHeading}>
+                <h1 className={styles.formTitle}>Mina enheter</h1>
+                <p className={styles.helperText}>
+                  Här ser du var ditt konto har använts för ligor.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.formBody}>
+              <div className={styles.accountIdentity}>
+                <span className={styles.accountIdentityLabel}>
+                  Inloggad som
+                </span>
+                <h2 className={styles.panelTitle}>
+                  {email ? email : "Inte inloggad"}
+                </h2>
+              </div>
               <p className={styles.helperText}>
                 Om en gammal mobil inte används längre kan du ta bort den från
                 listan.
               </p>
-            </div>
 
-            {busy ? (
-              <div className={styles.empty}>Hämtar enheter...</div>
-            ) : null}
+              {busy ? (
+                <div className={styles.deviceEmpty}>Hämtar enheter...</div>
+              ) : null}
 
-            {!busy && devices.length === 0 ? (
-              <div className={styles.empty}>
-                Logga in på ligasidan för att se dina enheter.
+              {!busy && devices.length === 0 ? (
+                <div className={styles.deviceEmpty}>
+                  Logga in på ligasidan för att se dina enheter.
+                </div>
+              ) : null}
+
+              <div className={styles.deviceList}>
+                {devices.map((device) => (
+                  <article className={styles.deviceRow} key={device.deviceId}>
+                    <div>
+                      <div className={styles.deviceName}>
+                        {device.deviceName}
+                        {device.isCurrentDevice ? (
+                          <span className={styles.youBadge}>den här</span>
+                        ) : null}
+                      </div>
+                      <div className={styles.today}>
+                        Senast använd: {formatSeen(device.lastSeenAt)}
+                      </div>
+                    </div>
+                    <button
+                      className={styles.textActionDanger}
+                      disabled={busy}
+                      onClick={() => void forgetDevice(device.deviceId)}
+                      type="button"
+                    >
+                      Ta bort
+                    </button>
+                  </article>
+                ))}
               </div>
-            ) : null}
-
-            <div className={styles.deviceList}>
-              {devices.map((device) => (
-                <article className={styles.deviceRow} key={device.deviceId}>
-                  <div>
-                    <div className={styles.deviceName}>
-                      {device.deviceName}
-                      {device.isCurrentDevice ? (
-                        <span className={styles.youBadge}>den här</span>
-                      ) : null}
-                    </div>
-                    <div className={styles.today}>
-                      Senast använd: {formatSeen(device.lastSeenAt)}
-                    </div>
-                  </div>
-                  <button
-                    className={styles.textActionDanger}
-                    disabled={busy}
-                    onClick={() => void forgetDevice(device.deviceId)}
-                    type="button"
-                  >
-                    Ta bort
-                  </button>
-                </article>
-              ))}
             </div>
           </section>
         </div>

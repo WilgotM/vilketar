@@ -445,9 +445,10 @@ export const action = recipe({
     },
     tone: {
       primary: {
-        background: vars.color.text,
-        border: "none",
-        color: vars.color.backdropStrong,
+        background: `linear-gradient(135deg, color-mix(in srgb, ${vars.color.accent} 86%, ${vars.color.backdropStrong}), ${vars.color.accent})`,
+        border: `1px solid color-mix(in srgb, ${vars.color.accent} 76%, ${vars.color.borderStrong})`,
+        boxShadow: `0 ${vars.space.sm} ${vars.space.xl} ${vars.color.accentGlow}`,
+        color: vars.color.accentText,
       },
       secondary: {
         background: vars.color.surfaceChrome,
