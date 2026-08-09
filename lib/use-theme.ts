@@ -8,7 +8,12 @@ export function useThemeToggle() {
 
   useEffect(() => {
     setMounted(true);
-    const savedTheme = localStorage.getItem("theme") as ThemeState | null;
+    let savedTheme: ThemeState | null = null;
+    try {
+      savedTheme = localStorage.getItem("theme") as ThemeState | null;
+    } catch {
+      // The default theme remains usable when browser storage is unavailable.
+    }
 
     // Resolve current actual theme
     if (savedTheme === "dark" || savedTheme === "light") {
@@ -25,7 +30,11 @@ export function useThemeToggle() {
     const newTheme = isCurrentlyDark ? "light" : "dark";
 
     setResolvedTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
+    try {
+      localStorage.setItem("theme", newTheme);
+    } catch {
+      // Apply the theme for this session even if it cannot be persisted.
+    }
     root.setAttribute("data-theme", newTheme);
   }, []);
 

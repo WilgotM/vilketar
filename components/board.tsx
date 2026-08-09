@@ -200,6 +200,8 @@ export default function Board(props: Props) {
       const promotedCard = state.nextButOne;
       const nextState: GameState = {
         ...state,
+        dailyQueue: state.dailyQueue ? [...state.dailyQueue] : undefined,
+        decks: state.decks.map((deck) => ({ ...deck })),
         imageCache: [],
         next: null,
         nextButOne: null,
@@ -403,6 +405,8 @@ export default function Board(props: Props) {
     const newNext = state.nextButOne;
     const nextState: GameState = {
       ...state,
+      dailyQueue: state.dailyQueue ? [...state.dailyQueue] : undefined,
+      decks: state.decks.map((deck) => ({ ...deck })),
       imageCache: [],
       next: null,
       nextButOne: null,

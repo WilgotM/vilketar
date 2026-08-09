@@ -4,7 +4,12 @@ const FREE_PLAY_DIFFICULTY_STORAGE_KEY = "free-play:difficulty";
 const FREE_PLAY_INTRO_SHOWN_STORAGE_KEY = "free-play:intro-shown";
 
 export function loadFreePlayDifficulty(): GameDifficulty {
-  const storedValue = localStorage.getItem(FREE_PLAY_DIFFICULTY_STORAGE_KEY);
+  let storedValue: string | null = null;
+  try {
+    storedValue = localStorage.getItem(FREE_PLAY_DIFFICULTY_STORAGE_KEY);
+  } catch {
+    return "normal";
+  }
 
   if (
     storedValue === "easy" ||
@@ -18,7 +23,11 @@ export function loadFreePlayDifficulty(): GameDifficulty {
 }
 
 export function saveFreePlayDifficulty(difficulty: GameDifficulty) {
-  localStorage.setItem(FREE_PLAY_DIFFICULTY_STORAGE_KEY, difficulty);
+  try {
+    localStorage.setItem(FREE_PLAY_DIFFICULTY_STORAGE_KEY, difficulty);
+  } catch {
+    // The current in-memory selection still works without persistence.
+  }
 }
 
 function loadShownIntroPaths(): string[] {
@@ -40,10 +49,14 @@ function loadShownIntroPaths(): string[] {
 }
 
 function saveShownIntroPaths(paths: string[]) {
-  sessionStorage.setItem(
-    FREE_PLAY_INTRO_SHOWN_STORAGE_KEY,
-    JSON.stringify(paths),
-  );
+  try {
+    sessionStorage.setItem(
+      FREE_PLAY_INTRO_SHOWN_STORAGE_KEY,
+      JSON.stringify(paths),
+    );
+  } catch {
+    // Intro state is optional and may be unavailable in private browsing.
+  }
 }
 
 export function markFreePlayIntroShown(path: string) {

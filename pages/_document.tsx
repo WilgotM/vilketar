@@ -14,7 +14,7 @@ const themeInitScript = `
 
 export default function Document() {
   return (
-    <Html className={appThemeClass} lang="sv-SE">
+    <Html className={appThemeClass} data-scroll-behavior="smooth" lang="sv-SE">
       <Head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <script

@@ -68,4 +68,5 @@ test("all route stays anchored at /play/all", () => {
   assert.equal(getSelectionRouteParentPath(route), "/play");
   assert.equal(route.kind, "all");
   assert.equal(route.nodeId, "all");
+  assert.equal(getSelectionRouteShareLabel(route), "Alla frågor");
 });

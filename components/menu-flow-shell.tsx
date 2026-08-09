@@ -358,7 +358,7 @@ export default function MenuFlowShell() {
                 : "Fritt spel | VilketÅr";
   const pageDescription =
     path === "/daily"
-      ? "Spela dagens VilketÅr: fem nya tidslinjekort varje dag med svenska klassiker, sport, musik och historiska händelser."
+      ? "Spela dagens VilketÅr: en ny tidslinjeutmaning varje dag med svenska klassiker, sport, musik och historiska händelser."
       : activeSelectionRoute
         ? `Spela ${getSelectionRouteShareLabel(activeSelectionRoute).toLowerCase()} i VilketÅr och placera korten i rätt år på tidslinjen.`
         : group

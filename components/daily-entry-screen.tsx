@@ -82,8 +82,8 @@ export default function DailyEntryScreen(props: Props) {
         title: "Dagens spel",
         subtitle: (
           <>
-            Placera sju historiska händelser i rätt tidsföljd. En ny utmaning
-            väntar varje dag!
+            Placera historiska händelser i rätt tidsföljd och se hur långt du
+            kommer. En ny utmaning väntar varje dag!
           </>
         ),
       };

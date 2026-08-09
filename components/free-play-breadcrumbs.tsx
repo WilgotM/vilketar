@@ -75,14 +75,14 @@ function getBreadcrumbItems(props: Props): BreadcrumbItem[] {
     if (selectionRoute.kind === "all") {
       return [
         ...baseItems,
-        { key: getBreadcrumbKey("All", baseItems.length), label: "All" },
+        { key: getBreadcrumbKey("Alla", baseItems.length), label: "Alla" },
       ];
     }
 
     if (selectionRoute.kind === "group-all") {
       return [
         ...baseItems,
-        { key: getBreadcrumbKey("All", baseItems.length), label: "All" },
+        { key: getBreadcrumbKey("Alla", baseItems.length), label: "Alla" },
       ];
     }
 

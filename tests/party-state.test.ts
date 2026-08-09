@@ -90,6 +90,7 @@ test("correct placement gives no mistake and advances the turn", () => {
   assert.equal(nextState.lastResult?.correct, true);
   assert.equal(nextState.teams[0].mistakes, 0);
   assert.equal(getActivePartyTeam(nextState).name, "Lag 2");
+  assert.equal(nextState.deckExhausted, true);
 });
 
 test("incorrect placement adds one mistake and inserts card at the correct year", () => {
@@ -150,4 +151,22 @@ test("the game ends when only one team remains", () => {
 
   assert.equal(nextState.teams[0].eliminated, true);
   assert.equal(nextState.winnerTeamId, "team-2");
+});
+
+test("placing a card does not consume the previous state's draw queue", () => {
+  const reserveCard = createCard("Q1945", 1945);
+  const queuedCard = createCard("Q1950", 1950);
+  const state = createPartyState(createCard("Q1940", 1940));
+  state.game.nextButOne = reserveCard;
+  state.game.dailyQueue = [queuedCard];
+
+  const nextState = placePartyCard(state, 2);
+
+  assert.deepEqual(
+    state.game.dailyQueue?.map((card) => card.qid),
+    ["Q1950"],
+  );
+  assert.deepEqual(nextState.game.dailyQueue, []);
+  assert.equal(nextState.game.next?.qid, "Q1945");
+  assert.equal(nextState.game.nextButOne?.qid, "Q1950");
 });

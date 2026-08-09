@@ -555,6 +555,32 @@ function PartyBoard(props: {
     );
   }
 
+  if (state.deckExhausted) {
+    return (
+      <div className={styles.gameShell}>
+        <div className={styles.winnerPanel}>
+          <div className={styles.sectionTitle}>Korten är slut</div>
+          <h1 className={styles.activeTeam}>Tidslinjen är komplett</h1>
+          <p className={styles.setupText}>
+            Alla tillgängliga kort i kategorin är spelade.
+          </p>
+          {onBack ? (
+            <button
+              className={classNames(
+                buttonStyles.button,
+                buttonStyles.fullWidth,
+              )}
+              onClick={onBack}
+              type="button"
+            >
+              Nytt spel
+            </button>
+          ) : null}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <MusicAutoplayProvider enabled={musicAutoplayEnabled}>
       <div

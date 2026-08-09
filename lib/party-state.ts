@@ -8,6 +8,7 @@ const MAX_MISTAKES = 3;
 function cloneGameForUpdate(game: GameState): GameState {
   return {
     ...game,
+    dailyQueue: game.dailyQueue ? [...game.dailyQueue] : undefined,
     decks: game.decks.map((deck) => ({
       ...deck,
       cards: deck.cards,

@@ -34,7 +34,7 @@ export default function Lives(props: Props) {
 
   return (
     <div
-      aria-label={`${mistakes} mistakes out of ${MAX_LIVES}`}
+      aria-label={`${mistakes} misstag av ${MAX_LIVES}`}
       className={styles.lives}
     >
       <div className={styles.dots}>

@@ -5,6 +5,7 @@ import { supabase } from "./supabase";
 const DISPLAY_NAME_STORAGE_KEY = "leagues:display-name";
 const DEVICE_ID_STORAGE_KEY = "leagues:device-id";
 const AUTH_REQUEST_TIMEOUT_MS = 15000;
+let ephemeralDeviceId = "";
 
 export type LeagueMember = {
   avatarDataUrl: string | null;
@@ -70,11 +71,19 @@ export function loadStoredDisplayName(): string {
     return "";
   }
 
-  return localStorage.getItem(DISPLAY_NAME_STORAGE_KEY) ?? "";
+  try {
+    return localStorage.getItem(DISPLAY_NAME_STORAGE_KEY) ?? "";
+  } catch {
+    return "";
+  }
 }
 
 export function saveStoredDisplayName(displayName: string) {
-  localStorage.setItem(DISPLAY_NAME_STORAGE_KEY, displayName);
+  try {
+    localStorage.setItem(DISPLAY_NAME_STORAGE_KEY, displayName);
+  } catch {
+    // The profile still exists remotely when local storage is unavailable.
+  }
 }
 
 async function withAuthTimeout<T>(request: Promise<T>): Promise<T> {
@@ -170,13 +179,29 @@ function getStoredDeviceId(): string {
     return "";
   }
 
-  const existingDeviceId = localStorage.getItem(DEVICE_ID_STORAGE_KEY);
-  if (existingDeviceId) {
-    return existingDeviceId;
+  try {
+    const existingDeviceId = localStorage.getItem(DEVICE_ID_STORAGE_KEY);
+    if (existingDeviceId) {
+      return existingDeviceId;
+    }
+  } catch {
+    if (!ephemeralDeviceId) {
+      ephemeralDeviceId = createDeviceId();
+    }
+    return ephemeralDeviceId;
+  }
+
+  if (ephemeralDeviceId) {
+    return ephemeralDeviceId;
   }
 
   const nextDeviceId = createDeviceId();
-  localStorage.setItem(DEVICE_ID_STORAGE_KEY, nextDeviceId);
+  ephemeralDeviceId = nextDeviceId;
+  try {
+    localStorage.setItem(DEVICE_ID_STORAGE_KEY, nextDeviceId);
+  } catch {
+    // Keep a stable in-memory id for this tab when persistence is blocked.
+  }
   return nextDeviceId;
 }
 

@@ -284,11 +284,11 @@ export function getSelectionRouteParentPath(
 
 export function getSelectionRouteTitle(selectionRoute: SelectionRoute): string {
   if (selectionRoute.kind === "all" || selectionRoute.kind === "group-all") {
-    return "All";
+    return "Alla";
   }
 
   const deck = RUNTIME_DECK_MAP.get(selectionRoute.nodeId);
-  return deck?.title ?? "All";
+  return deck?.title ?? "Alla";
 }
 
 export function getSelectionRouteBreadcrumbs(
@@ -308,7 +308,7 @@ export function getSelectionRouteShareLabel(
   selectionRoute: SelectionRoute,
 ): string {
   if (selectionRoute.kind === "all") {
-    return "All";
+    return "Alla frågor";
   }
 
   const slugPath = getDeckSlugPath(selectionRoute.nodeId);

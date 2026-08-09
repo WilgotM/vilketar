@@ -230,6 +230,18 @@ export default function PwaInstallPrompt() {
       return;
     }
 
+    if (process.env.NODE_ENV !== "production") {
+      void navigator.serviceWorker
+        .getRegistrations()
+        .then((registrations) =>
+          Promise.all(
+            registrations.map((registration) => registration.unregister()),
+          ),
+        )
+        .catch(() => undefined);
+      return;
+    }
+
     navigator.serviceWorker
       .register(getServiceWorkerUrl(), { updateViaCache: "none" })
       .then((registration) => {

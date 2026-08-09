@@ -8,9 +8,17 @@ export function loadHighscore(
   path: string,
   difficulty: GameDifficulty,
 ): number {
-  return Number(
-    localStorage.getItem(getHighscoreStorageKey(path, difficulty)) ?? "0",
-  );
+  try {
+    const storedValue = Number(
+      localStorage.getItem(getHighscoreStorageKey(path, difficulty)) ?? "0",
+    );
+
+    return Number.isFinite(storedValue) && storedValue >= 0
+      ? Math.floor(storedValue)
+      : 0;
+  } catch {
+    return 0;
+  }
 }
 
 export function saveHighscore(
@@ -18,5 +26,12 @@ export function saveHighscore(
   difficulty: GameDifficulty,
   score: number,
 ) {
-  localStorage.setItem(getHighscoreStorageKey(path, difficulty), String(score));
+  try {
+    localStorage.setItem(
+      getHighscoreStorageKey(path, difficulty),
+      String(score),
+    );
+  } catch {
+    // High scores are optional and must not interrupt the game.
+  }
 }
