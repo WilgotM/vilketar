@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,6 +28,7 @@ import {
 } from "../lib/leagues";
 import { getShareResults } from "../lib/share";
 import Button from "./button";
+import LeagueWorkspace from "./league-workspace";
 import PageShell from "./page-shell";
 import * as styles from "../styles/leagues-screen.css";
 
@@ -100,12 +100,28 @@ function getFriendlyError(error: unknown): string {
   return "Något gick fel. Försök igen om en stund.";
 }
 
-function todayLabel(score: number | null): string {
-  if (score === null) {
-    return "Inte spelat idag";
-  }
+type IconProps = {
+  size?: number;
+};
 
-  return `${score} p idag`;
+function ChevronIcon({ size = 16 }: IconProps) {
+  return (
+    <svg
+      aria-hidden="true"
+      fill="none"
+      height={size}
+      viewBox="0 0 24 24"
+      width={size}
+    >
+      <path
+        d="m8 10 4 4 4-4"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.9"
+      />
+    </svg>
+  );
 }
 
 type Tab =
@@ -680,8 +696,51 @@ export default function LeaguesScreen() {
     <PageShell>
       <div className={styles.screen}>
         <section className={styles.hero}>
-          <div className={styles.eyebrow}>Vänligor</div>
-          <h1 className={styles.title}>Spela veckan tillsammans</h1>
+          <div className={styles.heroCopy}>
+            <h1 className={styles.title}>Vänligor</h1>
+            <p className={styles.intro}>Spela veckan tillsammans</p>
+          </div>
+          {profileReady ? (
+            <details className={styles.profileMenu}>
+              <summary
+                aria-label="Öppna profil och konto"
+                className={styles.profileTrigger}
+              >
+                <span className={styles.profileTriggerAvatar}>
+                  {avatarDataUrl ? (
+                    <Image
+                      alt=""
+                      className={styles.avatarImage}
+                      height={44}
+                      src={avatarDataUrl}
+                      unoptimized
+                      width={44}
+                    />
+                  ) : (
+                    displayName.trim().charAt(0).toUpperCase() || "?"
+                  )}
+                </span>
+                <ChevronIcon />
+              </summary>
+              <div className={styles.profileDropdown}>
+                <div className={styles.profileDropdownName}>{displayName}</div>
+                <button
+                  className={styles.profileDropdownAction}
+                  onClick={() => openTab("profile")}
+                  type="button"
+                >
+                  Profil
+                </button>
+                <button
+                  className={styles.profileDropdownAction}
+                  onClick={() => openTab("account")}
+                  type="button"
+                >
+                  Konto
+                </button>
+              </div>
+            </details>
+          ) : null}
         </section>
 
         {!configured ? (
@@ -859,307 +918,23 @@ export default function LeaguesScreen() {
           </section>
         ) : (
           <>
-            {activeTab === "list" && (
-              <>
-                <section className={styles.quickActions}>
-                  <button
-                    className={styles.actionCard}
-                    onClick={() => openTab("profile")}
-                  >
-                    <div className={styles.actionIcon}>
-                      {avatarDataUrl ? (
-                        <Image
-                          alt=""
-                          className={styles.actionAvatar}
-                          height={40}
-                          src={avatarDataUrl}
-                          unoptimized
-                          width={40}
-                        />
-                      ) : (
-                        <span>
-                          {displayName.trim().charAt(0).toUpperCase() || "?"}
-                        </span>
-                      )}
-                    </div>
-                    <span>Profil</span>
-                  </button>
-
-                  <button
-                    className={styles.actionCard}
-                    onClick={() => openTab("create")}
-                  >
-                    <div className={styles.actionIcon}>
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M5 12h14" />
-                        <path d="M12 5v14" />
-                      </svg>
-                    </div>
-                    <span>Skapa</span>
-                  </button>
-
-                  <button
-                    className={styles.actionCard}
-                    onClick={() => openTab("join")}
-                  >
-                    <div className={styles.actionIcon}>
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
-                        <polyline points="10 17 15 12 10 7" />
-                        <line x1="15" y1="12" x2="3" y2="12" />
-                      </svg>
-                    </div>
-                    <span>Gå med</span>
-                  </button>
-
-                  <button
-                    className={styles.actionCard}
-                    onClick={() => openTab("account")}
-                  >
-                    <div className={styles.actionIcon}>
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <circle cx="12" cy="12" r="3" />
-                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
-                      </svg>
-                    </div>
-                    <span>Konto</span>
-                  </button>
-                </section>
-
-                <section className={styles.leagueList}>
-                  {leagues.length === 0 ? (
-                    <div className={styles.empty}>
-                      Du är inte med i någon liga ännu. Skapa en liga eller
-                      skriv in en kod från en vän.
-                    </div>
-                  ) : null}
-
-                  {leagues.map((league) => {
-                    const sortedMembers = [...league.members].sort(
-                      (a, b) => b.weekScore - a.weekScore,
-                    );
-
-                    return (
-                      <motion.article
-                        animate={{ opacity: 1, y: 0 }}
-                        className={styles.leagueCard}
-                        initial={{ opacity: 0, y: 10 }}
-                        key={league.id}
-                        transition={{ duration: 0.22 }}
-                      >
-                        <div className={styles.leagueHeader}>
-                          <div className={styles.leagueTitleStack}>
-                            {editingLeagueId === league.id ? (
-                              <div className={styles.renameRow}>
-                                <input
-                                  aria-label="Nytt liganamn"
-                                  className={styles.compactInput}
-                                  maxLength={48}
-                                  onChange={(event) =>
-                                    setEditingLeagueName(event.target.value)
-                                  }
-                                  value={editingLeagueName}
-                                />
-                                <button
-                                  className={styles.smallAction}
-                                  disabled={busy}
-                                  onClick={() => void onRenameLeague(league)}
-                                  type="button"
-                                >
-                                  Spara
-                                </button>
-                              </div>
-                            ) : (
-                              <h2 className={styles.leagueTitle}>
-                                {league.name}
-                              </h2>
-                            )}
-                            <div className={styles.memberCount}>
-                              {league.members.length} spelare
-                            </div>
-                          </div>
-                          <div className={styles.codeActions}>
-                            <div className={styles.codeBox}>
-                              {league.joinCode}
-                            </div>
-                            <button
-                              className={classNames(
-                                styles.smallAction,
-                                styles.copyAction,
-                              )}
-                              onClick={() => void copyCode(league.joinCode)}
-                              type="button"
-                            >
-                              {copyText}
-                            </button>
-                          </div>
-                        </div>
-
-                        <div className={styles.manageBar}>
-                          {league.canManage ? (
-                            <>
-                              <button
-                                className={styles.textAction}
-                                disabled={busy}
-                                onClick={() => {
-                                  setEditingLeagueId(league.id);
-                                  setEditingLeagueName(league.name);
-                                }}
-                                type="button"
-                              >
-                                Byt namn
-                              </button>
-                              <button
-                                className={styles.textActionDanger}
-                                disabled={busy}
-                                onClick={() => void onDeleteLeague(league)}
-                                type="button"
-                              >
-                                Ta bort liga
-                              </button>
-                            </>
-                          ) : (
-                            <button
-                              className={styles.textActionDanger}
-                              disabled={busy}
-                              onClick={() => {
-                                const currentMember = league.members.find(
-                                  (member) => member.isCurrentUser,
-                                );
-                                if (currentMember) {
-                                  void onRemoveMember(
-                                    league,
-                                    currentMember.memberId,
-                                  );
-                                }
-                              }}
-                              type="button"
-                            >
-                              Lämna liga
-                            </button>
-                          )}
-                        </div>
-
-                        {league.firstWeekIsShort ? (
-                          <div className={styles.notice}>
-                            Den här ligan skapades mitt i veckan. Första
-                            omgången räknas därför från skapelsedagen till
-                            söndag.
-                          </div>
-                        ) : null}
-
-                        {league.previousWeekWinner ? (
-                          <div className={styles.winner}>
-                            <div className={styles.winnerLabel}>
-                              Förra veckans vinnare
-                            </div>
-                            <div className={styles.winnerName}>
-                              {league.previousWeekWinner.displayName}
-                            </div>
-                            <div className={styles.helperText}>
-                              {league.previousWeekWinner.totalScore} poäng
-                            </div>
-                          </div>
-                        ) : null}
-
-                        <div className={styles.memberList}>
-                          <div className={styles.memberListHeader}>
-                            <div>#</div>
-                            <div>Namn</div>
-                            <div style={{ textAlign: "right" }}>P</div>
-                          </div>
-                          {sortedMembers.map((member, index) => (
-                            <div
-                              className={styles.memberRow}
-                              key={member.memberId}
-                            >
-                              <div className={styles.memberRank}>
-                                {index + 1}
-                              </div>
-                              <div className={styles.memberInfo}>
-                                <div className={styles.memberName}>
-                                  <span className={styles.memberAvatar}>
-                                    {member.avatarDataUrl ? (
-                                      <Image
-                                        alt=""
-                                        className={styles.avatarImage}
-                                        height={32}
-                                        src={member.avatarDataUrl}
-                                        unoptimized
-                                        width={32}
-                                      />
-                                    ) : (
-                                      member.displayName
-                                        .trim()
-                                        .charAt(0)
-                                        .toUpperCase() || "?"
-                                    )}
-                                  </span>
-                                  {member.displayName}
-                                  {member.isCurrentUser ? (
-                                    <span className={styles.youBadge}>du</span>
-                                  ) : null}
-                                </div>
-                                <div className={styles.today}>
-                                  {todayLabel(member.todayScore)}
-                                </div>
-                              </div>
-                              <div className={styles.scoreCell}>
-                                <div className={styles.score}>
-                                  {member.weekScore}
-                                </div>
-                                {league.canManage && !member.isCurrentUser ? (
-                                  <button
-                                    className={styles.kickButton}
-                                    disabled={busy}
-                                    onClick={() =>
-                                      void onRemoveMember(
-                                        league,
-                                        member.memberId,
-                                      )
-                                    }
-                                    type="button"
-                                  >
-                                    Ta bort
-                                  </button>
-                                ) : null}
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      </motion.article>
-                    );
-                  })}
-                </section>
-              </>
-            )}
+            {activeTab === "list" ? (
+              <LeagueWorkspace
+                busy={busy}
+                copyText={copyText}
+                editingLeagueId={editingLeagueId}
+                editingLeagueName={editingLeagueName}
+                leagues={leagues}
+                onCopyCode={copyCode}
+                onCreate={() => openTab("create")}
+                onDeleteLeague={onDeleteLeague}
+                onEditingLeagueIdChange={setEditingLeagueId}
+                onEditingLeagueNameChange={setEditingLeagueName}
+                onJoin={() => openTab("join")}
+                onRemoveMember={onRemoveMember}
+                onRenameLeague={onRenameLeague}
+              />
+            ) : null}
 
             {activeTab === "profile" && (
               <>
