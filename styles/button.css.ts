@@ -61,6 +61,18 @@ const homeSecondaryBase = style({
 });
 
 export const homeTone = styleVariants({
+  leagues: [
+    homeSecondaryBase,
+    {
+      borderColor: `color-mix(in srgb, ${vars.color.accentLogo} 22%, ${vars.color.border})`,
+      selectors: {
+        "&:hover": {
+          background: vars.color.accentSoft,
+          borderColor: vars.color.accentLogo,
+        },
+      },
+    },
+  ],
   party: [
     homeSecondaryBase,
     {

@@ -371,6 +371,7 @@ export default function HomeScreen() {
                 className={styles.actionItem}
                 fullWidth
                 href="/leagues"
+                homeTone="leagues"
                 leadingIcon="group"
                 text="Vänligor"
               />

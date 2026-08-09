@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -27,7 +26,6 @@ import {
   updateLeagueName,
 } from "../lib/leagues";
 import { getShareResults } from "../lib/share";
-import Button from "./button";
 import LeagueWorkspace from "./league-workspace";
 import PageShell from "./page-shell";
 import * as styles from "../styles/leagues-screen.css";
@@ -121,6 +119,141 @@ function ChevronIcon({ size = 16 }: IconProps) {
         strokeWidth="1.9"
       />
     </svg>
+  );
+}
+
+type LeagueFormPanelProps = {
+  busy?: boolean;
+  children: React.ReactNode;
+  description: React.ReactNode;
+  title: React.ReactNode;
+};
+
+function LeagueFormPanel({
+  busy = false,
+  children,
+  description,
+  title,
+}: LeagueFormPanelProps) {
+  return (
+    <section aria-busy={busy || undefined} className={styles.formPanel}>
+      <div className={styles.formLead}>
+        <div className={styles.formHeading}>
+          <h1 className={styles.formTitle}>{title}</h1>
+          <p className={styles.helperText}>{description}</p>
+        </div>
+      </div>
+      <div className={styles.formBody}>{children}</div>
+    </section>
+  );
+}
+
+type LeagueFieldProps = React.InputHTMLAttributes<HTMLInputElement> & {
+  label: string;
+  monospaced?: boolean;
+};
+
+function LeagueField({
+  label,
+  monospaced = false,
+  ...inputProps
+}: LeagueFieldProps) {
+  return (
+    <label className={styles.field}>
+      <span className={styles.fieldLabel}>{label}</span>
+      <input
+        {...inputProps}
+        className={monospaced ? styles.codeInput : styles.input}
+      />
+    </label>
+  );
+}
+
+type LeagueFormActionProps = {
+  disabled?: boolean;
+  onClick: () => void;
+  text: string;
+  tone?: "primary" | "secondary";
+};
+
+function LeagueFormAction({
+  disabled = false,
+  onClick,
+  text,
+  tone = "primary",
+}: LeagueFormActionProps) {
+  return (
+    <button
+      className={
+        tone === "primary"
+          ? styles.formPrimaryAction
+          : styles.formSecondaryAction
+      }
+      disabled={disabled}
+      onClick={onClick}
+      type="button"
+    >
+      {text}
+    </button>
+  );
+}
+
+type ProfileIdentityEditorProps = {
+  avatarDataUrl: string | null;
+  busy: boolean;
+  displayName: string;
+  onAvatarChange: React.ChangeEventHandler<HTMLInputElement>;
+  onRemoveAvatar?: () => void;
+  pickerLabel: string;
+};
+
+function ProfileIdentityEditor({
+  avatarDataUrl,
+  busy,
+  displayName,
+  onAvatarChange,
+  onRemoveAvatar,
+  pickerLabel,
+}: ProfileIdentityEditorProps) {
+  return (
+    <div className={styles.profileIdentity}>
+      <div className={styles.avatarPreviewLarge}>
+        {avatarDataUrl ? (
+          <Image
+            alt=""
+            className={styles.avatarImage}
+            height={160}
+            src={avatarDataUrl}
+            unoptimized
+            width={160}
+          />
+        ) : (
+          <span>{displayName.trim().charAt(0).toUpperCase() || "?"}</span>
+        )}
+      </div>
+      <div className={styles.profileImageActions}>
+        <label className={styles.avatarPicker}>
+          <input
+            accept="image/*"
+            className={styles.hiddenFileInput}
+            disabled={busy}
+            onChange={onAvatarChange}
+            type="file"
+          />
+          {pickerLabel}
+        </label>
+        {avatarDataUrl && onRemoveAvatar ? (
+          <button
+            className={styles.smallAction}
+            disabled={busy}
+            onClick={onRemoveAvatar}
+            type="button"
+          >
+            Ta bort bild
+          </button>
+        ) : null}
+      </div>
+    </div>
   );
 }
 
@@ -242,12 +375,14 @@ export default function LeaguesScreen() {
   const [busyAction, setBusyAction] = React.useState<BusyAction | null>(null);
   const [copyText, setCopyText] = React.useState("Kopiera kod");
   const [error, setError] = React.useState<string | null>(null);
+  const profileMenuRef = React.useRef<HTMLDetailsElement>(null);
   const savedNameHandledRef = React.useRef(false);
   const busy = busyAction !== null;
 
   const [activeTab, setActiveTab] = React.useState<Tab>("list");
 
   const openTab = React.useCallback((nextTab: Tab) => {
+    profileMenuRef.current?.removeAttribute("open");
     setError(null);
     setActiveTab(nextTab);
     if (typeof window !== "undefined" && nextTab !== "list") {
@@ -695,13 +830,13 @@ export default function LeaguesScreen() {
   return (
     <PageShell>
       <div className={styles.screen}>
-        <section className={styles.hero}>
-          <div className={styles.heroCopy}>
-            <h1 className={styles.title}>Vänligor</h1>
-            <p className={styles.intro}>Spela veckan tillsammans</p>
-          </div>
-          {profileReady ? (
-            <details className={styles.profileMenu}>
+        {profileReady && activeTab === "list" ? (
+          <section className={styles.hero}>
+            <div className={styles.heroCopy}>
+              <h1 className={styles.title}>Vänligor</h1>
+              <p className={styles.intro}>Spela veckan tillsammans</p>
+            </div>
+            <details className={styles.profileMenu} ref={profileMenuRef}>
               <summary
                 aria-label="Öppna profil och konto"
                 className={styles.profileTrigger}
@@ -740,8 +875,8 @@ export default function LeaguesScreen() {
                 </button>
               </div>
             </details>
-          ) : null}
-        </section>
+          </section>
+        ) : null}
 
         {!configured ? (
           <div className={styles.error}>
@@ -755,31 +890,29 @@ export default function LeaguesScreen() {
         {statusText ? <div className={styles.status}>{statusText}</div> : null}
 
         {activeTab === "login" ? (
-          <section className={styles.panel}>
-            <div>
-              <h2 className={styles.formTitle}>Logga in</h2>
-              <p className={styles.helperText}>
-                Har du sparat ditt konto kan du hämta dina ligor här.
-              </p>
-            </div>
-            <input
-              className={styles.input}
+          <LeagueFormPanel
+            description="Hämta dina ligor och fortsätt där du slutade."
+            title="Välkommen tillbaka"
+          >
+            <LeagueField
+              autoComplete="email"
               inputMode="email"
+              label="E-postadress"
               onChange={(event) => setAccountEmail(event.target.value)}
-              placeholder="E-postadress"
+              placeholder="namn@exempel.se"
               type="email"
               value={accountEmail}
             />
-            <input
-              className={styles.input}
+            <LeagueField
+              autoComplete="current-password"
+              label="Lösenord"
               onChange={(event) => setAccountPassword(event.target.value)}
-              placeholder="Lösenord"
+              placeholder="Skriv ditt lösenord"
               type="password"
               value={accountPassword}
             />
-            <Button
+            <LeagueFormAction
               disabled={busy}
-              fullWidth
               onClick={onSignIn}
               text={busyAction === "login" ? "Loggar in..." : "Logga in"}
             />
@@ -792,45 +925,46 @@ export default function LeaguesScreen() {
             >
               Jag har glömt lösenordet
             </button>
-          </section>
+          </LeagueFormPanel>
         ) : activeTab === "forgot" ? (
-          <section className={styles.panel}>
-            <div>
-              <h2 className={styles.formTitle}>Glömt lösenord?</h2>
-              <p className={styles.helperText}>
-                Skriv din e-post så skickar vi en länk. Om du redan öppnat
-                länken kan du välja ett nytt lösenord här.
-              </p>
-            </div>
-            <input
-              className={styles.input}
+          <LeagueFormPanel
+            description="Vi skickar en säker länk så att du kan välja ett nytt lösenord."
+            title="Återställ lösenord"
+          >
+            <LeagueField
+              autoComplete="email"
               inputMode="email"
+              label="E-postadress"
               onChange={(event) => setAccountEmail(event.target.value)}
-              placeholder="E-postadress"
+              placeholder="namn@exempel.se"
               type="email"
               value={accountEmail}
             />
-            <Button
+            <LeagueFormAction
               disabled={busy}
-              fullWidth
-              minimal
               onClick={onSendPasswordReset}
               text={
                 busyAction === "password-reset"
                   ? "Skickar..."
                   : "Skicka återställningsmejl"
               }
+              tone="secondary"
             />
-            <input
-              className={styles.input}
+            <div className={styles.formDivider}>
+              <span className={styles.formDividerLabel}>
+                Har du redan öppnat länken?
+              </span>
+            </div>
+            <LeagueField
+              autoComplete="new-password"
+              label="Nytt lösenord"
               onChange={(event) => setAccountPassword(event.target.value)}
-              placeholder="Nytt lösenord"
+              placeholder="Välj ett nytt lösenord"
               type="password"
               value={accountPassword}
             />
-            <Button
+            <LeagueFormAction
               disabled={busy}
-              fullWidth
               onClick={onUpdatePassword}
               text={
                 busyAction === "password-update"
@@ -838,74 +972,49 @@ export default function LeaguesScreen() {
                   : "Spara nytt lösenord"
               }
             />
-          </section>
+          </LeagueFormPanel>
         ) : isBootstrapping ? (
-          <section className={styles.panel} aria-busy="true">
-            <div>
-              <h2 className={styles.formTitle}>Laddar vänligor...</h2>
-              <p className={styles.helperText}>
-                Hämtar din inloggning och profil.
-              </p>
+          <LeagueFormPanel
+            busy
+            description="Hämtar din inloggning och profil."
+            title="Laddar vänligor..."
+          >
+            <div className={styles.loadingTrack}>
+              <span className={styles.loadingIndicator} />
             </div>
-          </section>
+          </LeagueFormPanel>
         ) : !profileReady ? (
-          <section className={styles.panel}>
-            <div>
-              <h2 className={styles.formTitle}>Vad ska du heta?</h2>
-              <p className={styles.helperText}>
-                Det här är namnet dina vänner ser i ligan. Ingen e-post och
-                inget lösenord behövs.
-              </p>
-            </div>
-            <div className={styles.profileEditor}>
-              <div className={styles.avatarPreview}>
-                {avatarDataUrl ? (
-                  <Image
-                    alt=""
-                    className={styles.avatarImage}
-                    height={160}
-                    src={avatarDataUrl}
-                    unoptimized
-                    width={160}
-                  />
-                ) : (
-                  <span>
-                    {displayName.trim().charAt(0).toUpperCase() || "?"}
-                  </span>
-                )}
-              </div>
-              <label className={styles.avatarPicker}>
-                <input
-                  accept="image/*"
-                  className={styles.hiddenFileInput}
-                  disabled={busy}
-                  onChange={onAvatarChange}
-                  type="file"
-                />
-                Lägg till bild
-              </label>
-            </div>
+          <LeagueFormPanel
+            description="Välj namnet dina vänner ser i ligan. Du behöver ingen e-post för att börja."
+            title="Skapa din spelarprofil"
+          >
+            <ProfileIdentityEditor
+              avatarDataUrl={avatarDataUrl}
+              busy={busy}
+              displayName={displayName}
+              onAvatarChange={onAvatarChange}
+              pickerLabel="Lägg till bild"
+            />
             {profileStatusText ? (
               <div className={styles.inlineStatus}>{profileStatusText}</div>
             ) : null}
-            <div className={styles.formGrid}>
-              <input
-                className={styles.input}
-                maxLength={40}
-                onChange={(event) => setDisplayName(event.target.value)}
-                placeholder="Till exempel: Ingrid"
-                value={displayName}
-              />
-              <Button
-                disabled={busy}
-                onClick={saveName}
-                text={
-                  busyAction === "profile" || busyAction === "profile-bootstrap"
-                    ? "Sparar..."
-                    : "Fortsätt"
-                }
-              />
-            </div>
+            <LeagueField
+              autoComplete="nickname"
+              label="Ditt namn"
+              maxLength={40}
+              onChange={(event) => setDisplayName(event.target.value)}
+              placeholder="Till exempel Ingrid"
+              value={displayName}
+            />
+            <LeagueFormAction
+              disabled={busy}
+              onClick={saveName}
+              text={
+                busyAction === "profile" || busyAction === "profile-bootstrap"
+                  ? "Sparar..."
+                  : "Fortsätt"
+              }
+            />
             <button
               className={styles.textAction}
               onClick={() => {
@@ -915,7 +1024,7 @@ export default function LeaguesScreen() {
             >
               Jag har redan konto
             </button>
-          </section>
+          </LeagueFormPanel>
         ) : (
           <>
             {activeTab === "list" ? (
@@ -937,356 +1046,257 @@ export default function LeaguesScreen() {
             ) : null}
 
             {activeTab === "profile" && (
-              <>
-                <section className={styles.panel}>
-                  <div>
-                    <h2 className={styles.formTitle}>Din profil</h2>
-                    <p className={styles.helperText}>
-                      Det här namnet och bilden syns för alla i dina ligor.
-                    </p>
-                  </div>
-                  <div className={styles.profileEditor}>
-                    <div className={styles.avatarPreview}>
-                      {avatarDataUrl ? (
-                        <Image
-                          alt=""
-                          className={styles.avatarImage}
-                          height={160}
-                          src={avatarDataUrl}
-                          unoptimized
-                          width={160}
-                        />
-                      ) : (
-                        <span>
-                          {displayName.trim().charAt(0).toUpperCase() || "?"}
-                        </span>
-                      )}
-                    </div>
-                    <div
-                      style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "0.5rem",
-                        alignItems: "flex-start",
-                      }}
-                    >
-                      <label className={styles.avatarPicker}>
-                        <input
-                          accept="image/*"
-                          className={styles.hiddenFileInput}
-                          disabled={busy}
-                          onChange={onAvatarChange}
-                          type="file"
-                        />
-                        Byt bild
-                      </label>
-                      {avatarDataUrl ? (
-                        <button
-                          className={styles.smallAction}
-                          disabled={busy}
-                          onClick={() => {
-                            setAvatarDataUrl(null);
-                            setProfileStatusText(
-                              "Bilden tas bort när du sparar.",
-                            );
-                          }}
-                          type="button"
-                        >
-                          Ta bort bild
-                        </button>
-                      ) : null}
-                    </div>
-                  </div>
-                  <input
-                    className={styles.input}
-                    maxLength={40}
-                    onChange={(event) => setDisplayName(event.target.value)}
-                    placeholder="Ditt namn"
-                    value={displayName}
-                  />
-                  <Button
-                    disabled={busy}
-                    fullWidth
-                    onClick={saveName}
-                    text={
-                      busyAction === "profile" ? "Sparar..." : "Spara profil"
-                    }
-                  />
-                  {profileStatusText ? (
-                    <div className={styles.inlineStatus}>
-                      {profileStatusText}
-                    </div>
-                  ) : null}
-                </section>
-              </>
+              <LeagueFormPanel
+                description="Så här syns du för alla i dina ligor."
+                title="Din spelarprofil"
+              >
+                <ProfileIdentityEditor
+                  avatarDataUrl={avatarDataUrl}
+                  busy={busy}
+                  displayName={displayName}
+                  onAvatarChange={onAvatarChange}
+                  onRemoveAvatar={() => {
+                    setAvatarDataUrl(null);
+                    setProfileStatusText("Bilden tas bort när du sparar.");
+                  }}
+                  pickerLabel="Byt bild"
+                />
+                <LeagueField
+                  autoComplete="nickname"
+                  label="Ditt namn"
+                  maxLength={40}
+                  onChange={(event) => setDisplayName(event.target.value)}
+                  placeholder="Ditt namn"
+                  value={displayName}
+                />
+                <LeagueFormAction
+                  disabled={busy}
+                  onClick={saveName}
+                  text={busyAction === "profile" ? "Sparar..." : "Spara profil"}
+                />
+                {profileStatusText ? (
+                  <div className={styles.inlineStatus}>{profileStatusText}</div>
+                ) : null}
+              </LeagueFormPanel>
             )}
 
             {activeTab === "create" && (
-              <>
-                <section className={styles.panel}>
-                  <div>
-                    <h2 className={styles.formTitle}>Skapa ny liga</h2>
-                    <p className={styles.helperText}>
-                      Välj ett namn för ligan. Du får en kod som du kan dela med
-                      dina vänner.
-                    </p>
-                  </div>
-                  <input
-                    className={styles.input}
-                    maxLength={48}
-                    onChange={(event) => setLeagueName(event.target.value)}
-                    value={leagueName}
-                  />
-                  <Button
-                    disabled={busy}
-                    fullWidth
-                    onClick={onCreateLeague}
-                    text={busyAction === "create" ? "Skapar..." : "Skapa liga"}
-                  />
-                </section>
-              </>
+              <LeagueFormPanel
+                description="Du får en kod som är enkel att dela med vännerna."
+                title="Skapa en ny liga"
+              >
+                <LeagueField
+                  autoComplete="off"
+                  label="Ligans namn"
+                  maxLength={48}
+                  onChange={(event) => setLeagueName(event.target.value)}
+                  placeholder="Till exempel Familjen"
+                  value={leagueName}
+                />
+                <LeagueFormAction
+                  disabled={busy}
+                  onClick={onCreateLeague}
+                  text={busyAction === "create" ? "Skapar..." : "Skapa liga"}
+                />
+                <p className={styles.formFootnote}>
+                  Du blir automatiskt ligans administratör.
+                </p>
+              </LeagueFormPanel>
             )}
 
             {activeTab === "account" && (
-              <>
-                <section className={styles.panel}>
-                  <div>
-                    <h2 className={styles.formTitle}>
-                      {authState.isAnonymous ? "Spara kontot" : "Ditt konto"}
-                    </h2>
-                    <p className={styles.helperText}>
-                      {authState.isAnonymous
-                        ? "Det här är frivilligt. Det gör bara att ligorna inte försvinner om du byter telefon eller rensar webbläsaren."
-                        : "Du kan logga in med samma e-post på en annan enhet."}
-                    </p>
-                  </div>
-                  {authState.isAnonymous ? (
-                    <>
-                      <input
-                        className={styles.input}
-                        inputMode="email"
-                        onChange={(event) =>
-                          setAccountEmail(event.target.value)
-                        }
-                        placeholder="E-postadress"
-                        type="email"
-                        value={accountEmail}
-                      />
-                      <input
-                        className={styles.input}
-                        onChange={(event) =>
-                          setAccountPassword(event.target.value)
-                        }
-                        placeholder="Välj lösenord"
-                        type="password"
-                        value={accountPassword}
-                      />
-                      <Button
-                        disabled={busy}
-                        fullWidth
-                        onClick={onSaveAccount}
-                        text={
-                          busyAction === "account-save"
-                            ? "Sparar..."
-                            : "Spara konto"
-                        }
-                      />
-                      <p
-                        className={styles.helperText}
-                        style={{
-                          fontSize: "0.75rem",
-                          marginTop: "-4px",
-                          textAlign: "center",
-                        }}
-                      >
-                        Genom att spara kontot godkänner du våra{" "}
-                        <Link href="/villkor" target="_blank">
-                          användarvillkor
-                        </Link>{" "}
-                        och samtycker till att vi behandlar din e-post enligt
-                        vår{" "}
-                        <Link href="/integritet" target="_blank">
-                          integritetspolicy
-                        </Link>
-                        .
-                      </p>
-                      <button
-                        className={styles.textAction}
-                        disabled={busy}
-                        onClick={onSignOut}
-                        type="button"
-                      >
-                        Logga ut från anonymt konto
-                      </button>
-                    </>
-                  ) : (
-                    <>
-                      <div className={styles.savedAccountBox}>
-                        {authState.email || "Inloggat konto"}
-                      </div>
-                      <input
-                        className={styles.input}
-                        onChange={(event) =>
-                          setAccountPassword(event.target.value)
-                        }
-                        placeholder="Nytt lösenord"
-                        type="password"
-                        value={accountPassword}
-                      />
-                      <Button
-                        disabled={busy}
-                        fullWidth
-                        onClick={onSaveAccount}
-                        text={
-                          busyAction === "account-save"
-                            ? "Sparar..."
-                            : "Spara lösenord"
-                        }
-                      />
-                      <Button
-                        disabled={busy}
-                        fullWidth
-                        minimal
-                        onClick={onSignOut}
-                        text={
-                          busyAction === "sign-out"
-                            ? "Loggar ut..."
-                            : "Logga ut"
-                        }
-                      />
-                    </>
-                  )}
-                  <div className={styles.dangerZone}>
-                    <div>
-                      <h3 className={styles.dangerTitle}>Ta bort konto</h3>
-                      <p className={styles.helperText}>
-                        Tar permanent bort din profil, dina ligor, medlemskap,
-                        sparade enheter och dagliga resultat.
-                      </p>
-                    </div>
-                    <button
-                      className={styles.dangerButton}
+              <LeagueFormPanel
+                description={
+                  authState.isAnonymous
+                    ? "Frivilligt, men gör att ligorna följer med om du byter telefon."
+                    : "Använd samma e-post för att logga in på en annan enhet."
+                }
+                title={
+                  authState.isAnonymous ? "Spara ditt konto" : "Ditt konto"
+                }
+              >
+                {authState.isAnonymous ? (
+                  <>
+                    <LeagueField
+                      autoComplete="email"
+                      inputMode="email"
+                      label="E-postadress"
+                      onChange={(event) => setAccountEmail(event.target.value)}
+                      placeholder="namn@exempel.se"
+                      type="email"
+                      value={accountEmail}
+                    />
+                    <LeagueField
+                      autoComplete="new-password"
+                      label="Välj lösenord"
+                      onChange={(event) =>
+                        setAccountPassword(event.target.value)
+                      }
+                      placeholder="Minst sex tecken"
+                      type="password"
+                      value={accountPassword}
+                    />
+                    <LeagueFormAction
                       disabled={busy}
-                      onClick={onDeleteAccount}
+                      onClick={onSaveAccount}
+                      text={
+                        busyAction === "account-save"
+                          ? "Sparar..."
+                          : "Spara konto"
+                      }
+                    />
+                    <p className={styles.legalText}>
+                      Genom att spara kontot godkänner du våra{" "}
+                      <Link href="/villkor" target="_blank">
+                        användarvillkor
+                      </Link>{" "}
+                      och samtycker till att vi behandlar din e-post enligt vår{" "}
+                      <Link href="/integritet" target="_blank">
+                        integritetspolicy
+                      </Link>
+                      .
+                    </p>
+                    <button
+                      className={styles.textAction}
+                      disabled={busy}
+                      onClick={onSignOut}
                       type="button"
                     >
-                      {busyAction === "account-delete"
-                        ? "Tar bort..."
-                        : "Ta bort konto"}
+                      Logga ut från anonymt konto
                     </button>
+                  </>
+                ) : (
+                  <>
+                    <div className={styles.accountIdentity}>
+                      <span className={styles.accountIdentityLabel}>
+                        Inloggad som
+                      </span>
+                      <strong className={styles.accountIdentityValue}>
+                        {authState.email || "Inloggat konto"}
+                      </strong>
+                    </div>
+                    <LeagueField
+                      autoComplete="new-password"
+                      label="Nytt lösenord"
+                      onChange={(event) =>
+                        setAccountPassword(event.target.value)
+                      }
+                      placeholder="Välj ett nytt lösenord"
+                      type="password"
+                      value={accountPassword}
+                    />
+                    <LeagueFormAction
+                      disabled={busy}
+                      onClick={onSaveAccount}
+                      text={
+                        busyAction === "account-save"
+                          ? "Sparar..."
+                          : "Spara lösenord"
+                      }
+                    />
+                    <LeagueFormAction
+                      disabled={busy}
+                      onClick={onSignOut}
+                      text={
+                        busyAction === "sign-out" ? "Loggar ut..." : "Logga ut"
+                      }
+                      tone="secondary"
+                    />
+                  </>
+                )}
+                <div className={styles.dangerZone}>
+                  <div>
+                    <h3 className={styles.dangerTitle}>Ta bort konto</h3>
+                    <p className={styles.helperText}>
+                      Tar permanent bort din profil, dina ligor, medlemskap,
+                      sparade enheter och dagliga resultat.
+                    </p>
                   </div>
-                </section>
-              </>
+                  <button
+                    className={styles.dangerButton}
+                    disabled={busy}
+                    onClick={onDeleteAccount}
+                    type="button"
+                  >
+                    {busyAction === "account-delete"
+                      ? "Tar bort..."
+                      : "Ta bort konto"}
+                  </button>
+                </div>
+              </LeagueFormPanel>
             )}
 
             {activeTab === "join" && (
-              <>
-                <section className={styles.panel}>
-                  <div>
-                    <h2 className={styles.formTitle}>Gå med i liga</h2>
-                    <p className={styles.helperText}>
-                      Skriv in koden du fått av din vän. Du kan vara med i flera
-                      ligor samtidigt.
-                    </p>
-                  </div>
-                  <input
-                    className={styles.input}
-                    maxLength={6}
-                    onChange={(event) =>
-                      setJoinCode(event.target.value.toUpperCase())
-                    }
-                    placeholder="ABC123"
-                    value={joinCode}
-                  />
-                  <Button
-                    disabled={busy}
-                    fullWidth
-                    onClick={onJoinLeague}
-                    text={
-                      busyAction === "join" ? "Går med..." : "Gå med i liga"
-                    }
-                  />
-                </section>
-              </>
+              <LeagueFormPanel
+                description="Skriv in koden du fått av en vän. Du kan vara med i flera ligor samtidigt."
+                title="Gå med i en liga"
+              >
+                <LeagueField
+                  autoCapitalize="characters"
+                  autoComplete="off"
+                  label="Ligakod"
+                  maxLength={6}
+                  monospaced
+                  onChange={(event) =>
+                    setJoinCode(event.target.value.toUpperCase())
+                  }
+                  placeholder="ABC123"
+                  value={joinCode}
+                />
+                <LeagueFormAction
+                  disabled={busy}
+                  onClick={onJoinLeague}
+                  text={busyAction === "join" ? "Går med..." : "Gå med i liga"}
+                />
+                <p className={styles.formFootnote}>
+                  Koden består av sex bokstäver och siffror.
+                </p>
+              </LeagueFormPanel>
             )}
 
             {activeTab === "verify-email" && (
-              <motion.section
-                animate={{ opacity: 1, scale: 1 }}
-                className={styles.verifyPanel}
-                initial={{ opacity: 0, scale: 0.95 }}
-                transition={{ duration: 0.4, type: "spring" }}
+              <LeagueFormPanel
+                description="Öppna länken vi skickade för att säkra ditt konto."
+                title="Kolla din e-post"
               >
-                <motion.div
-                  animate={{ y: [0, -10, 0] }}
-                  className={styles.verifyIconBubble}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                >
-                  <svg
-                    width="64"
-                    height="64"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8" />
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                    <path d="M19 16v6" />
-                    <path d="M16 19h6" />
-                  </svg>
-                </motion.div>
-
-                <div className={styles.verifyTextStack}>
-                  <h2 className={styles.verifyTitle}>Kolla din e-post</h2>
-                  <p className={styles.verifyDescription}>
-                    Vi har skickat en länk till <strong>{accountEmail}</strong>.
-                    Klicka på länken för att bekräfta ditt konto.
-                  </p>
-                  <p className={styles.verifyMutedText}>
-                    Om du stänger appen under tiden är det ingen fara. Du kan
-                    bara öppna appen igen och logga in med din e-post och ditt
-                    nya lösenord.
-                  </p>
+                <div className={styles.verifyAddress}>
+                  <span className={styles.accountIdentityLabel}>
+                    Länken skickades till
+                  </span>
+                  <strong className={styles.accountIdentityValue}>
+                    {accountEmail}
+                  </strong>
                 </div>
-
-                <div className={styles.verifyButtonWrap}>
-                  <Button
-                    disabled={busy}
-                    fullWidth
-                    onClick={async () => {
-                      setBusyAction("login");
-                      setError(null);
-                      try {
-                        const state = await getLeagueAuthState();
-                        setAuthState(state);
-                        if (state.isAnonymous) {
-                          setError(
-                            "Vi väntar fortfarande på att du ska klicka på länken i mejlet. Om du stänger appen kan du bara logga in igen sedan.",
-                          );
-                        } else {
-                          returnToList();
-                        }
-                      } catch (err) {
-                        setError(getFriendlyError(err));
-                      } finally {
-                        setBusyAction(null);
+                <p className={styles.formFootnote}>
+                  Du kan stänga appen under tiden. När du kommer tillbaka loggar
+                  du bara in med din e-post och ditt nya lösenord.
+                </p>
+                <LeagueFormAction
+                  disabled={busy}
+                  onClick={async () => {
+                    setBusyAction("login");
+                    setError(null);
+                    try {
+                      const state = await getLeagueAuthState();
+                      setAuthState(state);
+                      if (state.isAnonymous) {
+                        setError(
+                          "Vi väntar fortfarande på att du ska klicka på länken i mejlet. Om du stänger appen kan du bara logga in igen sedan.",
+                        );
+                      } else {
+                        returnToList();
                       }
-                    }}
-                    text={
-                      busyAction === "login"
-                        ? "Kollar..."
-                        : "Jag har verifierat"
+                    } catch (err) {
+                      setError(getFriendlyError(err));
+                    } finally {
+                      setBusyAction(null);
                     }
-                  />
-                </div>
-              </motion.section>
+                  }}
+                  text={
+                    busyAction === "login" ? "Kollar..." : "Jag har verifierat"
+                  }
+                />
+              </LeagueFormPanel>
             )}
           </>
         )}
