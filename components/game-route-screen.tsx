@@ -347,7 +347,12 @@ export default function GameRouteScreen(props: Props) {
       );
 
       if (mode === "daily") {
-        const serverResult = await getStoredDailyResult(dateKey);
+        let serverResult: StoredDailyResult | null = null;
+        try {
+          serverResult = await getStoredDailyResult(dateKey);
+        } catch (e) {
+          console.error("Failed to load completed daily result", e);
+        }
         if (serverResult) {
           if (!cancelled) {
             onDailyRemoteCompleted?.(serverResult);

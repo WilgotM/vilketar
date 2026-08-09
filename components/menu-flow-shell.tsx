@@ -31,6 +31,7 @@ import {
   getRootFreePlayPath,
   prefixPlayPath,
 } from "../lib/free-play-navigation";
+import { getStoredDailyResult, type StoredDailyResult } from "../lib/leagues";
 import { getShareResults } from "../lib/share";
 import { useFreePlayDifficulty } from "../lib/use-free-play-difficulty";
 import { FreePlayGroupDefinition, SelectionRoute } from "../types/routes";
@@ -185,6 +186,18 @@ function readDailyCompletionState(dailyDateKey: string): {
   };
 }
 
+function getStoredDailyCompletionState(result: StoredDailyResult): {
+  completedResults: boolean[];
+  completedScore: number;
+} {
+  return {
+    completedResults: result.resultPattern
+      .split("")
+      .map((item) => item === "1"),
+    completedScore: result.score,
+  };
+}
+
 function DailyCardPlaceholder() {
   return (
     <div aria-hidden="true" className={styles.dailyCardPlaceholder}>
@@ -249,10 +262,37 @@ export default function MenuFlowShell() {
   });
   const { completedResults, completedScore } = completedState;
 
-  const syncDailyCompletionState = React.useCallback(() => {
-    setCompletedState(readDailyCompletionState(dailyDateKey));
+  const applyStoredDailyResult = React.useCallback(
+    (result: StoredDailyResult) => {
+      setCompletedState(getStoredDailyCompletionState(result));
+      setDailyStarted(false);
+      setDailyCompletionReady(true);
+    },
+    [],
+  );
+
+  const syncDailyCompletionState = React.useCallback(async () => {
+    const localCompletionState = readDailyCompletionState(dailyDateKey);
+    if (localCompletionState.completedScore !== null) {
+      setCompletedState(localCompletionState);
+      setDailyCompletionReady(true);
+      return;
+    }
+
+    setDailyCompletionReady(false);
+    try {
+      const storedResult = await getStoredDailyResult(dailyDateKey);
+      if (storedResult) {
+        applyStoredDailyResult(storedResult);
+        return;
+      }
+    } catch {
+      // Keep the locally playable state when the remote check is unavailable.
+    }
+
+    setCompletedState(localCompletionState);
     setDailyCompletionReady(true);
-  }, [dailyDateKey]);
+  }, [applyStoredDailyResult, dailyDateKey]);
 
   React.useEffect(() => {
     if (path !== "/daily") {
@@ -265,7 +305,7 @@ export default function MenuFlowShell() {
     }
 
     setDailyStarted(false);
-    syncDailyCompletionState();
+    void syncDailyCompletionState();
   }, [path, syncDailyCompletionState]);
 
   React.useEffect(() => {
@@ -598,6 +638,7 @@ export default function MenuFlowShell() {
                 <GameRouteScreen
                   hideHeader
                   mode="daily"
+                  onDailyRemoteCompleted={applyStoredDailyResult}
                   onQuitGame={() => {
                     setDailyStarted(false);
                   }}

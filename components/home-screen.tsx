@@ -8,6 +8,7 @@ import {
   loadDailyGameSnapshot,
 } from "../lib/daily-storage";
 import {
+  getStoredDailyResult,
   getLeagueProfile,
   isLeaguesConfigured,
   type LeagueProfile,
@@ -196,21 +197,48 @@ export default function HomeScreen() {
   }, []);
 
   React.useEffect(() => {
-    const updateUnfinishedDailyGame = () => {
-      setDailyHomeStatus(readDailyHomeStatus());
+    let cancelled = false;
+    let requestId = 0;
+
+    const updateDailyGameStatus = async () => {
+      const currentRequestId = ++requestId;
+      const localStatus = readDailyHomeStatus();
+
+      if (localStatus === "completed" || !isLeaguesConfigured()) {
+        if (!cancelled && currentRequestId === requestId) {
+          setDailyHomeStatus(localStatus);
+        }
+        return;
+      }
+
+      try {
+        const storedResult = await getStoredDailyResult(getCurrentUtcDateKey());
+        if (!cancelled && currentRequestId === requestId) {
+          setDailyHomeStatus(storedResult ? "completed" : localStatus);
+        }
+      } catch {
+        if (!cancelled && currentRequestId === requestId) {
+          setDailyHomeStatus(localStatus);
+        }
+      }
     };
 
-    updateUnfinishedDailyGame();
-    window.addEventListener("focus", updateUnfinishedDailyGame);
-    window.addEventListener("storage", updateUnfinishedDailyGame);
-    document.addEventListener("visibilitychange", updateUnfinishedDailyGame);
+    const requestDailyGameStatusUpdate = () => {
+      void updateDailyGameStatus();
+    };
+
+    requestDailyGameStatusUpdate();
+    window.addEventListener("focus", requestDailyGameStatusUpdate);
+    window.addEventListener("storage", requestDailyGameStatusUpdate);
+    document.addEventListener("visibilitychange", requestDailyGameStatusUpdate);
 
     return () => {
-      window.removeEventListener("focus", updateUnfinishedDailyGame);
-      window.removeEventListener("storage", updateUnfinishedDailyGame);
+      cancelled = true;
+      window.removeEventListener("focus", requestDailyGameStatusUpdate);
+      window.removeEventListener("storage", requestDailyGameStatusUpdate);
       document.removeEventListener(
         "visibilitychange",
-        updateUnfinishedDailyGame,
+        requestDailyGameStatusUpdate,
       );
     };
   }, []);
