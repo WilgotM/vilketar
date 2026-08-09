@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { AnimatePresence, motion } from "motion/react";
 import React from "react";
+import type { DailyLeagueScore } from "../lib/daily-league-scores";
 import { markStartedDailyGameProgress } from "../lib/daily-storage";
 import {
   loadDailyTutorialStatus,
@@ -20,6 +21,7 @@ import { GameMode, SelectionRoute } from "../types/routes";
 import DailyGameTutorial, {
   DailyGameTutorialHandle,
 } from "./daily-game-tutorial";
+import DailyLeagueScoreStrip from "./daily-league-score-strip";
 import DealAnimationLayer from "./deal-animation-layer";
 import GameOver from "./game-over";
 import Lives from "./lives";
@@ -41,6 +43,7 @@ const OPENING_DEAL_DELAY_MS = 500;
 const OPENING_DEAL_DURATION_MS = 820;
 const EDGE_SCROLL_THRESHOLD = 36;
 const EDGE_SCROLL_MAX_STEP = 10;
+const EMPTY_DAILY_LEAGUE_SCORES: DailyLeagueScore[] = [];
 
 function clampEdgeScrollProgress(progress: number) {
   return Math.max(0, Math.min(1, progress));
@@ -49,6 +52,7 @@ function clampEdgeScrollProgress(progress: number) {
 interface Props {
   dailyChallengeScore?: number | null;
   dailyDateKey?: string;
+  dailyLeagueScores?: DailyLeagueScore[];
   difficulty: GameDifficulty;
   gameMode: GameMode;
   highscore: number;
@@ -73,6 +77,7 @@ export default function Board(props: Props) {
   const {
     dailyChallengeScore = null,
     dailyDateKey,
+    dailyLeagueScores = EMPTY_DAILY_LEAGUE_SCORES,
     difficulty,
     gameMode,
     highscore,
@@ -783,6 +788,9 @@ export default function Board(props: Props) {
                   {dailyChallengeScore} poäng
                 </strong>
               </div>
+            ) : null}
+            {statusScene === "lives" ? (
+              <DailyLeagueScoreStrip scores={dailyLeagueScores} />
             ) : null}
           </div>
           {deckVisible && renderedDeckState ? (
