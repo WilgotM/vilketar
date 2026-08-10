@@ -56,6 +56,7 @@ interface Props {
   difficulty: GameDifficulty;
   gameMode: GameMode;
   highscore: number;
+  hasDailyLeagues?: boolean;
   onDailyRemoteCompleted?: (result: StoredDailyResult) => void;
   resetGame?: () => void;
   restoredFromSnapshot?: boolean;
@@ -81,6 +82,7 @@ export default function Board(props: Props) {
     difficulty,
     gameMode,
     highscore,
+    hasDailyLeagues = false,
     onDailyRemoteCompleted,
     resetGame,
     restoredFromSnapshot = false,
@@ -790,7 +792,10 @@ export default function Board(props: Props) {
               </div>
             ) : null}
             {statusScene === "lives" ? (
-              <DailyLeagueScoreStrip scores={dailyLeagueScores} />
+              <DailyLeagueScoreStrip
+                hasLeagues={hasDailyLeagues}
+                scores={dailyLeagueScores}
+              />
             ) : null}
           </div>
           {deckVisible && renderedDeckState ? (

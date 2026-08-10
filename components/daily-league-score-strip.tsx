@@ -4,10 +4,12 @@ import React from "react";
 import {
   DailyLeagueScore,
   getCompactLeagueName,
+  getDailyLeagueStripMode,
 } from "../lib/daily-league-scores";
 import * as styles from "../styles/daily-league-score-strip.css";
 
 interface Props {
+  hasLeagues: boolean;
   scores: DailyLeagueScore[];
 }
 
@@ -17,13 +19,14 @@ function leagueLabel(leagueNames: string[]): string {
   return leagueNames.join(" · ");
 }
 
-export default function DailyLeagueScoreStrip({ scores }: Props) {
+export default function DailyLeagueScoreStrip({ hasLeagues, scores }: Props) {
   const [open, setOpen] = React.useState(false);
   const reduceMotion = useReducedMotion();
   const triggerRef = React.useRef<HTMLButtonElement | null>(null);
   const closeRef = React.useRef<HTMLButtonElement | null>(null);
   const visibleScores = scores.slice(0, INLINE_SCORE_COUNT);
   const remainingCount = Math.max(0, scores.length - INLINE_SCORE_COUNT);
+  const stripMode = getDailyLeagueStripMode(hasLeagues, scores);
 
   React.useEffect(() => {
     if (!open) {
@@ -46,8 +49,17 @@ export default function DailyLeagueScoreStrip({ scores }: Props) {
     };
   }, [open]);
 
-  if (scores.length === 0) {
+  if (stripMode === "hidden") {
     return null;
+  }
+
+  if (stripMode === "empty") {
+    return (
+      <div aria-live="polite" className={styles.emptyStrip}>
+        <span className={styles.stripLabel}>Ligan idag</span>
+        <span className={styles.emptyText}>Ingen annan har spelat idag än</span>
+      </div>
+    );
   }
 
   return (

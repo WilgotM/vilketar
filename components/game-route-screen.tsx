@@ -60,6 +60,16 @@ interface Props {
   skipRouteIntro?: boolean;
 }
 
+type DailyLeagueStatus = {
+  hasLeagues: boolean;
+  scores: DailyLeagueScore[];
+};
+
+const EMPTY_DAILY_LEAGUE_STATUS: DailyLeagueStatus = {
+  hasLeagues: false,
+  scores: [],
+};
+
 function shouldRestoreDailySnapshot(
   dateKey: string,
   snapshot: ReturnType<typeof loadDailyGameSnapshot>,
@@ -152,9 +162,8 @@ export default function GameRouteScreen(props: Props) {
   const [entryReady, setEntryReady] = React.useState(false);
   const [showRouteIntro, setShowRouteIntro] = React.useState(false);
   const [restoredFromSnapshot, setRestoredFromSnapshot] = React.useState(false);
-  const [dailyLeagueScores, setDailyLeagueScores] = React.useState<
-    DailyLeagueScore[]
-  >([]);
+  const [dailyLeagueStatus, setDailyLeagueStatus] =
+    React.useState<DailyLeagueStatus>(EMPTY_DAILY_LEAGUE_STATUS);
   const freePlayDifficulty = useFreePlayDifficulty();
   const navigationSource = useNavigationSource();
   const { deckNodes, loadDecks, rootDeckId } = useDecks();
@@ -191,7 +200,7 @@ export default function GameRouteScreen(props: Props) {
 
   React.useEffect(() => {
     if (mode !== "daily") {
-      setDailyLeagueScores([]);
+      setDailyLeagueStatus(EMPTY_DAILY_LEAGUE_STATUS);
       return;
     }
 
@@ -205,18 +214,21 @@ export default function GameRouteScreen(props: Props) {
       try {
         if (!(await hasLeagueSession())) {
           if (!cancelled) {
-            setDailyLeagueScores([]);
+            setDailyLeagueStatus(EMPTY_DAILY_LEAGUE_STATUS);
           }
           return;
         }
 
         const leagues = await getMyLeagues(dateKey);
         if (!cancelled) {
-          setDailyLeagueScores(collectDailyLeagueScores(leagues));
+          setDailyLeagueStatus({
+            hasLeagues: leagues.length > 0,
+            scores: collectDailyLeagueScores(leagues),
+          });
         }
       } catch {
         if (!cancelled) {
-          setDailyLeagueScores([]);
+          setDailyLeagueStatus(EMPTY_DAILY_LEAGUE_STATUS);
         }
       }
     };
@@ -599,10 +611,11 @@ export default function GameRouteScreen(props: Props) {
             key={`${routePath}:${runNonce}`}
             dailyDateKey={mode === "daily" ? dateKey : undefined}
             dailyChallengeScore={dailyChallengeScore}
-            dailyLeagueScores={dailyLeagueScores}
+            dailyLeagueScores={dailyLeagueStatus.scores}
             difficulty={difficulty}
             gameMode={mode}
             highscore={highscore}
+            hasDailyLeagues={dailyLeagueStatus.hasLeagues}
             onDailyRemoteCompleted={onDailyRemoteCompleted}
             resetGame={mode === "free-play" ? resetGame : undefined}
             restoredFromSnapshot={restoredFromSnapshot}
@@ -632,10 +645,11 @@ export default function GameRouteScreen(props: Props) {
           key={`${routePath}:${runNonce}`}
           dailyDateKey={mode === "daily" ? dateKey : undefined}
           dailyChallengeScore={dailyChallengeScore}
-          dailyLeagueScores={dailyLeagueScores}
+          dailyLeagueScores={dailyLeagueStatus.scores}
           difficulty={difficulty}
           gameMode={mode}
           highscore={highscore}
+          hasDailyLeagues={dailyLeagueStatus.hasLeagues}
           onDailyRemoteCompleted={onDailyRemoteCompleted}
           resetGame={mode === "free-play" ? resetGame : undefined}
           restoredFromSnapshot={restoredFromSnapshot}
