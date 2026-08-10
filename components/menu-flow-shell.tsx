@@ -34,6 +34,7 @@ import {
 import { getStoredDailyResult, type StoredDailyResult } from "../lib/leagues";
 import { getShareResults } from "../lib/share";
 import { useFreePlayDifficulty } from "../lib/use-free-play-difficulty";
+import { PlayedCard } from "../types/cards";
 import { FreePlayGroupDefinition, SelectionRoute } from "../types/routes";
 import AppHead from "./app-head";
 import DailyEntryScreen from "./daily-entry-screen";
@@ -160,11 +161,13 @@ function parsePlayRoute(path: string): PlayRouteState | null {
 }
 
 function readDailyCompletionState(dailyDateKey: string): {
+  completedPlayed: PlayedCard[] | null;
   completedResults: boolean[] | null;
   completedScore: number | null;
 } {
   if (typeof window === "undefined") {
     return {
+      completedPlayed: null,
       completedResults: null,
       completedScore: null,
     };
@@ -174,12 +177,14 @@ function readDailyCompletionState(dailyDateKey: string): {
 
   if (!snapshot || snapshot.dateKey !== dailyDateKey || snapshot.lives > 0) {
     return {
+      completedPlayed: null,
       completedResults: null,
       completedScore: null,
     };
   }
 
   return {
+    completedPlayed: snapshot.played,
     completedResults: getShareResults(snapshot.played),
     completedScore:
       snapshot.played.filter((item) => item.played.correct).length - 1,
@@ -187,10 +192,12 @@ function readDailyCompletionState(dailyDateKey: string): {
 }
 
 function getStoredDailyCompletionState(result: StoredDailyResult): {
+  completedPlayed: PlayedCard[] | null;
   completedResults: boolean[];
   completedScore: number;
 } {
   return {
+    completedPlayed: null,
     completedResults: result.resultPattern
       .split("")
       .map((item) => item === "1"),
@@ -257,18 +264,23 @@ export default function MenuFlowShell() {
     path !== "/daily",
   );
   const [completedState, setCompletedState] = React.useState({
+    completedPlayed: null as PlayedCard[] | null,
     completedResults: null as boolean[] | null,
     completedScore: null as number | null,
   });
-  const { completedResults, completedScore } = completedState;
+  const { completedPlayed, completedResults, completedScore } = completedState;
 
   const applyStoredDailyResult = React.useCallback(
     (result: StoredDailyResult) => {
-      setCompletedState(getStoredDailyCompletionState(result));
+      const localCompletionState = readDailyCompletionState(dailyDateKey);
+      setCompletedState({
+        ...getStoredDailyCompletionState(result),
+        completedPlayed: localCompletionState.completedPlayed,
+      });
       setDailyStarted(false);
       setDailyCompletionReady(true);
     },
-    [],
+    [dailyDateKey],
   );
 
   const syncDailyCompletionState = React.useCallback(async () => {
@@ -298,6 +310,7 @@ export default function MenuFlowShell() {
     if (path !== "/daily") {
       setDailyCompletionReady(true);
       setCompletedState({
+        completedPlayed: null,
         completedResults: null,
         completedScore: null,
       });
@@ -700,6 +713,7 @@ export default function MenuFlowShell() {
                         completedScore === null ? (
                           <DailyEntryScreen
                             embedded
+                            completedPlayed={completedPlayed}
                             completedResults={completedResults}
                             completedScore={completedScore}
                             dailyDateKey={dailyDateKey}
@@ -708,6 +722,7 @@ export default function MenuFlowShell() {
                         ) : (
                           <DailyEntryScreen
                             embedded
+                            completedPlayed={completedPlayed}
                             completedResults={completedResults}
                             completedScore={completedScore}
                             dailyDateKey={dailyDateKey}

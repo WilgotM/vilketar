@@ -11,12 +11,16 @@ import {
 } from "../lib/daily-storage";
 import { getStoredDailyResult } from "../lib/leagues";
 import { getShareResults } from "../lib/share";
+import { PlayedCard } from "../types/cards";
 
 export default function DailyPage() {
   const router = useRouter();
   const [started, setStarted] = React.useState(false);
   const [completedResults, setCompletedResults] = React.useState<
     boolean[] | null
+  >(null);
+  const [completedPlayed, setCompletedPlayed] = React.useState<
+    PlayedCard[] | null
   >(null);
   const [completedScore, setCompletedScore] = React.useState<null | number>(
     null,
@@ -40,6 +44,7 @@ export default function DailyPage() {
     const snapshot = loadDailyGameSnapshot();
 
     if (snapshot && snapshot.dateKey === dateKey && snapshot.lives <= 0) {
+      setCompletedPlayed(snapshot.played);
       setCompletedResults(getShareResults(snapshot.played));
       setCompletedScore(
         snapshot.played.filter((item) => item.played.correct).length - 1,
@@ -52,6 +57,7 @@ export default function DailyPage() {
       setServerStatusText(null);
       const serverResult = await getStoredDailyResult(dateKey);
       if (serverResult) {
+        setCompletedPlayed(null);
         setCompletedResults(
           serverResult.resultPattern.split("").map((item) => item === "1"),
         );
@@ -67,6 +73,7 @@ export default function DailyPage() {
     }
 
     setCompletedResults(null);
+    setCompletedPlayed(null);
     setCompletedScore(null);
     return false;
   }, [dateKey]);
@@ -115,6 +122,7 @@ export default function DailyPage() {
             style={{ width: "100%", height: "100%" }}
           >
             <DailyEntryScreen
+              completedPlayed={completedPlayed}
               completedResults={completedResults}
               completedScore={completedScore}
               dailyDateKey={dateKey}
@@ -141,12 +149,17 @@ export default function DailyPage() {
               mode="daily"
               onQuitGame={() => setStarted(false)}
               onDailyRemoteCompleted={(result) => {
+                const snapshot = loadDailyGameSnapshot();
+                setCompletedPlayed(
+                  snapshot && snapshot.dateKey === dateKey
+                    ? snapshot.played
+                    : null,
+                );
                 setCompletedResults(
                   result.resultPattern.split("").map((item) => item === "1"),
                 );
                 setCompletedScore(result.score);
                 setStarted(false);
-                const snapshot = loadDailyGameSnapshot();
                 if (snapshot && snapshot.dateKey === dateKey) {
                   saveDailyGameSnapshot({
                     ...snapshot,

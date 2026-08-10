@@ -45,6 +45,13 @@ export const content = style({
   },
 });
 
+export const contentCompleted = style({
+  height: "auto",
+  justifyContent: "flex-start",
+  paddingBottom: vars.space["3xl"],
+  paddingTop: vars.space.xl,
+});
+
 export const dailyLabel = style([
   sectionLabel,
   {
