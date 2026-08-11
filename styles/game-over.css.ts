@@ -27,7 +27,9 @@ export const freePlaySummary = style([
   },
 ]);
 
-export const dailySummary = freePlaySummary;
+export const dailyCompletedView = style({
+  width: "100%",
+});
 
 export const summaryStack = style({
   display: "flex",

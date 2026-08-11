@@ -9,7 +9,7 @@ import { PlayedCard } from "../types/cards";
 import { GameDifficulty } from "../types/game";
 import { GameMode, SelectionRoute } from "../types/routes";
 import Button from "./button";
-import DailyCompletedSummary from "./daily-completed-summary";
+import DailyCompletedView from "./daily-completed-view";
 import { DAILY_DATE_LOCALE, formatDailyDate } from "./daily-meta-chips";
 import FreePlayBreadcrumbs from "./free-play-breadcrumbs";
 import Score from "./score";
@@ -162,15 +162,16 @@ export default function GameOver(props: Props) {
       >
         <motion.div
           animate={{ opacity: 1 }}
-          className={styles.dailySummary}
+          className={styles.dailyCompletedView}
           initial={{ opacity: 0 }}
           transition={{ delay: 0.14, duration: 0.28, ease: "easeOut" }}
         >
-          <DailyCompletedSummary
+          <DailyCompletedView
             dailyLabel={`Dagens spel / ${formattedDailyDate}`}
             dateKey={dailyDateKey}
             nextDailyText={nextDailyText}
             onShare={share}
+            played={played}
             score={score}
             shareText={shareText}
           />

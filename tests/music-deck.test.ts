@@ -17,11 +17,13 @@ function findNode(node: DeckNode, id: string): DeckNode | null {
   return null;
 }
 
-test("music deck contains a large playable song library", () => {
-  assert.ok(cards.length >= 500);
+test("music deck contains the merged playable song library", () => {
+  assert.ok(cards.length >= 663);
   assert.ok(cards.every((card) => card.music?.spotifyTrackId));
   assert.ok(cards.every((card) => Number.isInteger(card.year)));
   assert.ok(cards.every((card) => card.subtitle === card.music?.artist));
+  assert.ok(cards.every((card) => card.music?.previewUrl));
+  assert.ok(cards.every((card) => card.music?.artworkUrl));
 });
 
 test("music deck has no duplicate artist and song combinations", () => {
@@ -41,7 +43,7 @@ test("music card titles do not expose reissue metadata", () => {
   assert.ok(cards.every((card) => !versionLabel.test(card.title)));
 });
 
-test("stored Apple previews are secure streaming URLs", () => {
+test("stored previews are secure streaming URLs", () => {
   const storedPreviews = cards.flatMap((card) =>
     card.music?.previewUrl ? [card.music.previewUrl] : [],
   );

@@ -58,6 +58,17 @@ export const wrapper = style({
   },
 });
 
+export const wrapperDailyCompleted = style({
+  flexDirection: "column",
+  overflowX: "hidden",
+  overflowY: "auto",
+  "@media": {
+    [media.shortLandscape]: {
+      flexDirection: "column",
+    },
+  },
+});
+
 export const top = style({
   alignItems: "center",
   display: "flex",
@@ -110,9 +121,34 @@ export const topGameOver = style({
   },
 });
 
+export const topDailyCompleted = style({
+  flex: "0 0 auto",
+  minHeight: "100%",
+  paddingBottom: vars.space["3xl"],
+  paddingTop: vars.space["2xl"],
+  width: "100%",
+  "@media": {
+    [media.compact]: {
+      minHeight: "100%",
+      paddingBottom: vars.space["2xl"],
+      paddingTop: vars.space.xl,
+    },
+    [media.shortLandscape]: {
+      flex: "0 0 auto",
+      justifyContent: "flex-start",
+      paddingBottom: vars.space.xl,
+      paddingTop: vars.space.lg,
+    },
+  },
+});
+
 export const statusArea = style({
   position: "relative",
   width: `min(100%, ${vars.size.boardStatusWidth})`,
+});
+
+export const statusAreaDailyCompleted = style({
+  width: "100%",
 });
 
 export const statusLayer = style({

@@ -1,15 +1,18 @@
+import classNames from "classnames";
 import { motion } from "motion/react";
 import React from "react";
 import { DAILY_DIFFICULTY, formatTimeUntilNextDaily } from "../lib/daily";
 import { getDailyScheduleTheme } from "../lib/daily-schedule";
 import { buildDailyChallengePath, buildShareText } from "../lib/share";
-import DailyCompletedSummary from "./daily-completed-summary";
+import { PlayedCard } from "../types/cards";
+import DailyCompletedView from "./daily-completed-view";
 import { DAILY_DATE_LOCALE, formatDailyDate } from "./daily-meta-chips";
 import DailyWeekSchedule from "./daily-week-schedule";
 import PageShell from "./page-shell";
 import * as styles from "../styles/daily-entry-screen.css";
 
 interface Props {
+  completedPlayed?: PlayedCard[] | null;
   completedResults?: boolean[] | null;
   completedScore?: number | null;
   dailyDateKey: string;
@@ -44,6 +47,7 @@ function CalendarIllustration() {
 
 export default function DailyEntryScreen(props: Props) {
   const {
+    completedPlayed = null,
     completedResults = null,
     completedScore = null,
     dailyDateKey,
@@ -168,7 +172,11 @@ export default function DailyEntryScreen(props: Props) {
   const content = (
     <div className={styles.screen}>
       <div className={styles.stage}>
-        <div className={styles.content}>
+        <div
+          className={classNames(styles.content, {
+            [styles.contentCompleted]: completedScore !== null,
+          })}
+        >
           {completedScore === null ? (
             <>
               <div className={styles.welcomeHeader}>
@@ -236,15 +244,16 @@ export default function DailyEntryScreen(props: Props) {
             </>
           ) : (
             <>
-              <DailyCompletedSummary
+              <DailyCompletedView
                 dailyLabel={`Dagens spel / ${formattedDailyDate}`}
                 dateKey={dailyDateKey}
                 nextDailyText={nextDailyText}
                 onShare={share}
+                played={completedPlayed}
                 score={completedScore}
                 shareText={shareText}
               />
-              <DailyWeekSchedule />
+              {completedPlayed === null ? <DailyWeekSchedule /> : null}
             </>
           )}
         </div>

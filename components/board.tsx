@@ -141,6 +141,7 @@ export default function Board(props: Props) {
   const isDeckExhausted = state.next === null;
   const showLives = state.lives > 0 && !isDeckExhausted;
   const showGameOverSummary = gameOverPhase === "summary";
+  const showDailyCompletedView = showGameOverSummary && gameMode === "daily";
   const showLivesScene = showLives || !showGameOverSummary;
   const statusScene = showGameOverSummary ? "game-over" : "lives";
   const deckShown =
@@ -714,7 +715,12 @@ export default function Board(props: Props) {
 
   return (
     <MusicAutoplayProvider enabled={musicAutoplayEnabled}>
-      <div ref={boardRef} className={styles.wrapper}>
+      <div
+        ref={boardRef}
+        className={classNames(styles.wrapper, {
+          [styles.wrapperDailyCompleted]: showDailyCompletedView,
+        })}
+      >
         {showMusicAutoplay && !showGameOverSummary ? (
           <MusicAutoplayToggle
             enabled={musicAutoplayEnabled}
@@ -724,26 +730,34 @@ export default function Board(props: Props) {
         <div
           className={classNames(styles.top, {
             [styles.topGameOver]: showGameOverSummary,
+            [styles.topDailyCompleted]: showDailyCompletedView,
           })}
         >
-          <motion.div
-            animate={{
-              opacity:
-                gameOverPhase === "hud-exit" || showGameOverSummary ? 0 : 1,
-              y: gameOverPhase === "hud-exit" || showGameOverSummary ? -10 : 0,
-            }}
-            aria-label={`${score} poäng`}
-            aria-live="polite"
-            className={styles.scoreBadge}
-            initial={false}
-            transition={{ duration: 0.28, ease: "easeOut" }}
+          {showDailyCompletedView ? null : (
+            <motion.div
+              animate={{
+                opacity:
+                  gameOverPhase === "hud-exit" || showGameOverSummary ? 0 : 1,
+                y:
+                  gameOverPhase === "hud-exit" || showGameOverSummary ? -10 : 0,
+              }}
+              aria-label={`${score} poäng`}
+              aria-live="polite"
+              className={styles.scoreBadge}
+              initial={false}
+              transition={{ duration: 0.28, ease: "easeOut" }}
+            >
+              <span aria-hidden="true" className={styles.scoreValue}>
+                {score}
+              </span>
+              <span className={styles.scoreLabel}>poäng</span>
+            </motion.div>
+          )}
+          <div
+            className={classNames(styles.statusArea, {
+              [styles.statusAreaDailyCompleted]: showDailyCompletedView,
+            })}
           >
-            <span aria-hidden="true" className={styles.scoreValue}>
-              {score}
-            </span>
-            <span className={styles.scoreLabel}>poäng</span>
-          </motion.div>
-          <div className={styles.statusArea}>
             <AnimatePresence mode="wait">
               {statusScene === "lives" ? (
                 <motion.div
@@ -827,24 +841,26 @@ export default function Board(props: Props) {
             />
           ) : null}
         </div>
-        <motion.div
-          id="bottom"
-          ref={bottomRef}
-          layoutScroll={timelineLayoutAnimationsEnabled}
-          className={classNames(styles.bottom, {
-            [styles.bottomGameOver]: showGameOverSummary,
-          })}
-        >
-          <PlayedItemList
-            hiddenCardId={hiddenPlayedCardId}
-            isDragging={isDragging}
-            items={state.played}
-            layoutAnimationsEnabled={timelineLayoutAnimationsEnabled}
-            onOpeningAnchorChange={handleOpeningAnchorChange}
-            openingAnchorRef={openingAnchorRef}
-            previewIndex={previewIndex}
-          />
-        </motion.div>
+        {showDailyCompletedView ? null : (
+          <motion.div
+            id="bottom"
+            ref={bottomRef}
+            layoutScroll={timelineLayoutAnimationsEnabled}
+            className={classNames(styles.bottom, {
+              [styles.bottomGameOver]: showGameOverSummary,
+            })}
+          >
+            <PlayedItemList
+              hiddenCardId={hiddenPlayedCardId}
+              isDragging={isDragging}
+              items={state.played}
+              layoutAnimationsEnabled={timelineLayoutAnimationsEnabled}
+              onOpeningAnchorChange={handleOpeningAnchorChange}
+              openingAnchorRef={openingAnchorRef}
+              previewIndex={previewIndex}
+            />
+          </motion.div>
+        )}
         {openingDeal?.card ? (
           <DealAnimationLayer
             card={openingDeal.card}
