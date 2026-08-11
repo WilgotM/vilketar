@@ -22,6 +22,17 @@ export type DailyLeagueScore = {
   score: number;
 };
 
+export function getDailyLeagueStripMode(
+  hasLeagues: boolean,
+  scores: DailyLeagueScore[],
+): "hidden" | "empty" | "scores" {
+  if (!hasLeagues) {
+    return "hidden";
+  }
+
+  return scores.length === 0 ? "empty" : "scores";
+}
+
 function normalizeDisplayName(displayName: string): string {
   return displayName.trim().replace(/\s+/g, " ").toLocaleLowerCase("sv");
 }

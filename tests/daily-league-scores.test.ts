@@ -3,6 +3,7 @@ import { test } from "node:test";
 import {
   collectDailyLeagueScores,
   getCompactLeagueName,
+  getDailyLeagueStripMode,
 } from "../lib/daily-league-scores";
 
 test("daily league scores only include other members who played today", () => {
@@ -103,4 +104,9 @@ test("daily league scores merge the same person across leagues and sort by score
 test("compact league names use the first name", () => {
   assert.equal(getCompactLeagueName("  Anna Andersson  "), "Anna");
   assert.equal(getCompactLeagueName("Bosse"), "Bosse");
+});
+
+test("daily league strip only shows an empty state for league members", () => {
+  assert.equal(getDailyLeagueStripMode(true, []), "empty");
+  assert.equal(getDailyLeagueStripMode(false, []), "hidden");
 });

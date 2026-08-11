@@ -3,14 +3,12 @@ import { media } from "./foundation";
 import { vars } from "./theme.css";
 import { modalCard, overlay as overlayBase } from "./ui.css";
 
-export const strip = style({
+const stripBase = style({
   alignItems: "center",
-  appearance: "none",
   background: `color-mix(in srgb, ${vars.color.surfaceChrome} 82%, transparent)`,
   border: `${vars.size.borderWidth} solid ${vars.color.border}`,
   borderRadius: vars.radius.pill,
   color: vars.color.text,
-  cursor: "pointer",
   display: "flex",
   fontFamily: vars.font.body,
   gap: vars.space.sm,
@@ -18,22 +16,7 @@ export const strip = style({
   margin: `${vars.space.sm} auto 0`,
   maxWidth: `calc(100% - ${vars.space.md})`,
   minHeight: vars.size.chipHeight,
-  outline: "none",
   padding: `${vars.space.xxs} ${vars.space.sm}`,
-  transition: `background ${vars.duration.fast} ${vars.easing.standard}, border-color ${vars.duration.fast} ${vars.easing.standard}, transform ${vars.duration.fast} ${vars.easing.standard}`,
-  selectors: {
-    "&:hover": {
-      background: vars.color.surfaceChrome,
-      borderColor: vars.color.borderStrong,
-    },
-    "&:active": {
-      transform: "scale(0.98)",
-    },
-    "&:focus-visible": {
-      borderColor: vars.color.accentLogo,
-      boxShadow: vars.shadow.focus,
-    },
-  },
   "@media": {
     [media.compact]: {
       marginTop: vars.space.xs,
@@ -45,15 +28,55 @@ export const strip = style({
       paddingBottom: vars.space.hairline,
       paddingTop: vars.space.hairline,
     },
-    [media.reduceMotion]: {
-      transitionDuration: vars.duration.instant,
-      selectors: {
-        "&:active": {
-          transform: "none",
+  },
+});
+
+export const strip = style([
+  stripBase,
+  {
+    appearance: "none",
+    cursor: "pointer",
+    outline: "none",
+    transition: `background ${vars.duration.fast} ${vars.easing.standard}, border-color ${vars.duration.fast} ${vars.easing.standard}, transform ${vars.duration.fast} ${vars.easing.standard}`,
+    selectors: {
+      "&:hover": {
+        background: vars.color.surfaceChrome,
+        borderColor: vars.color.borderStrong,
+      },
+      "&:active": {
+        transform: "scale(0.98)",
+      },
+      "&:focus-visible": {
+        borderColor: vars.color.accentLogo,
+        boxShadow: vars.shadow.focus,
+      },
+    },
+    "@media": {
+      [media.reduceMotion]: {
+        transitionDuration: vars.duration.instant,
+        selectors: {
+          "&:active": {
+            transform: "none",
+          },
         },
       },
     },
   },
+]);
+
+export const emptyStrip = style([
+  stripBase,
+  {
+    color: vars.color.textMuted,
+  },
+]);
+
+export const emptyText = style({
+  fontSize: vars.fontSize.sm,
+  fontWeight: vars.fontWeight.medium,
+  lineHeight: vars.lineHeight.tight,
+  paddingRight: vars.space.xs,
+  whiteSpace: "nowrap",
 });
 
 export const stripLabel = style({
