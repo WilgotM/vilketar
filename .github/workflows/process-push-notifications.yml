@@ -1,0 +1,31 @@
+name: Process league push notifications
+
+on:
+  schedule:
+    - cron: "* * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: process-league-push-notifications
+  cancel-in-progress: true
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Process pending notifications
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          PUSH_CRON_SECRET: ${{ secrets.PUSH_CRON_SECRET }}
+        run: |
+          function_url="${SUPABASE_URL:-$NEXT_PUBLIC_SUPABASE_URL}/functions/v1/process-push-notifications"
+          curl --fail-with-body --silent --show-error --retry 3 \
+            --request POST "$function_url" \
+            --header "apikey: $SUPABASE_SERVICE_ROLE_KEY" \
+            --header "authorization: Bearer $SUPABASE_SERVICE_ROLE_KEY" \
+            --header "x-push-cron-secret: $PUSH_CRON_SECRET" \
+            --header "content-type: application/json" \
+            --data '{}'

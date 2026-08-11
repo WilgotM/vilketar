@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import React from "react";
 import type { League } from "../lib/leagues";
+import LeagueNotificationPrompt from "./league-notification-prompt";
 import * as styles from "../styles/leagues-screen.css";
 
 type Props = {
@@ -234,6 +235,10 @@ export default function LeagueWorkspace(props: Props) {
       </aside>
 
       <div className={styles.leagueDetail}>
+        <LeagueNotificationPrompt
+          hasLeagues={leagues.length > 0}
+          surface="leagues"
+        />
         {selectedLeague ? (
           <motion.article
             animate={{ opacity: 1, y: 0 }}
