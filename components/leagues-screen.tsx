@@ -25,6 +25,7 @@ import {
   updateLeaguePassword,
   updateLeagueName,
 } from "../lib/leagues";
+import { disableLeaguePushNotifications } from "../lib/push-notifications";
 import { getShareResults } from "../lib/share";
 import LeagueWorkspace from "./league-workspace";
 import PageShell from "./page-shell";
@@ -668,6 +669,7 @@ export default function LeaguesScreen() {
     setError(null);
     setStatusText(null);
     try {
+      await disableLeaguePushNotifications();
       await signOutLeagueAccount();
       setProfileReady(false);
       setLeagues([]);
@@ -693,6 +695,7 @@ export default function LeaguesScreen() {
     setError(null);
     setStatusText(null);
     try {
+      await disableLeaguePushNotifications();
       await deleteLeagueAccount();
       setAccountEmail("");
       setAccountPassword("");

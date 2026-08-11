@@ -91,6 +91,51 @@ self.addEventListener("message", (event) => {
   }
 });
 
+self.addEventListener("push", (event) => {
+  let payload = {};
+  try {
+    payload = event.data?.json() ?? {};
+  } catch {
+    payload = { body: event.data?.text() ?? "Någon i din liga har spelat." };
+  }
+
+  event.waitUntil(
+    self.registration.showNotification(payload.title || "Vänligor", {
+      badge: "/pwa-maskable-icon-192.png",
+      body: payload.body || "Någon i din liga har spelat dagens spel.",
+      data: payload.data || { url: "/leagues" },
+      icon: "/pwa-icon-192.png",
+      tag: payload.tag || "league-score",
+    }),
+  );
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+
+  const targetUrl = new URL(
+    event.notification.data?.url || "/leagues",
+    self.location.origin,
+  ).href;
+
+  event.waitUntil(
+    self.clients
+      .matchAll({ includeUncontrolled: true, type: "window" })
+      .then((clients) => {
+        const existingClient = clients.find(
+          (client) => new URL(client.url).origin === self.location.origin,
+        );
+        if (existingClient) {
+          return existingClient
+            .navigate(targetUrl)
+            .then(() => existingClient.focus());
+        }
+
+        return self.clients.openWindow(targetUrl);
+      }),
+  );
+});
+
 self.addEventListener("install", (event) => {
   event.waitUntil(cacheAppShell().then(() => self.skipWaiting()));
 });

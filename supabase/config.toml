@@ -2,6 +2,9 @@
 # https://supabase.com/docs/guides/local-development/cli/config
 project_id = "vilketar"
 
+[functions.process-push-notifications]
+verify_jwt = false
+
 [api]
 enabled = true
 port = 54321

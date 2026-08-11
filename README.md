@@ -103,6 +103,7 @@ Appen använder publika env-vars vid deploy:
 ```bash
 NEXT_PUBLIC_SUPABASE_URL
 NEXT_PUBLIC_SUPABASE_ANON_KEY
+NEXT_PUBLIC_VAPID_PUBLIC_KEY
 ```
 
 Om de saknas fungerar spelet ändå, men remote highscores sparas inte.
@@ -117,6 +118,22 @@ Authentication -> Sign In / Providers -> Anonymous sign-ins
 Spelaren får bara välja ett namn i appen. Bakom kulisserna skapas en anonym
 Supabase-användare så ligor, veckopoäng och dagens resultat kan kopplas till
 samma webbläsare.
+
+Liganotiser använder Web Push. `NEXT_PUBLIC_VAPID_PUBLIC_KEY` är publik och
+byggs in i webappen. Den matchande privata VAPID-nyckeln ska ligga som
+Supabase-secret `VAPID_PRIVATE_KEY`, tillsammans med valfria
+`VAPID_SUBJECT` (till exempel `mailto:hello@vilketar.se`). Edge Functionen
+`process-push-notifications` skickar den kö som skapas när ett dagsresultat
+sparas. GitHub Actions-jobbet med samma namn kör funktionen varje minut och
+behöver de befintliga secrets `SUPABASE_URL` (eller
+`NEXT_PUBLIC_SUPABASE_URL`), `SUPABASE_SERVICE_ROLE_KEY` och
+`PUSH_CRON_SECRET`.
+
+Deploya funktionen efter ändringar med:
+
+```bash
+supabase functions deploy process-push-notifications --project-ref rivzcvgbauthpoutiiog
+```
 
 Auth-mejlmallar ligger i `supabase/templates/` och kopplas i
 `supabase/config.toml`. När en anonym användare sparar sitt första konto med

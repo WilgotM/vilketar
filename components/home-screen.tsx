@@ -10,11 +10,13 @@ import {
 import {
   getStoredDailyResult,
   getLeagueProfile,
+  getMyLeagues,
   isLeaguesConfigured,
   type LeagueProfile,
 } from "../lib/leagues";
 import ButtonLink from "./button-link";
 import DailyWeekSchedule from "./daily-week-schedule";
+import LeagueNotificationPrompt from "./league-notification-prompt";
 import PageShell from "./page-shell";
 import SiteFooter from "./site-footer";
 import SiteHero from "./site-hero";
@@ -133,16 +135,31 @@ function readDailyHomeStatus(): DailyHomeStatus {
 
 export default function HomeScreen() {
   const [profile, setProfile] = React.useState<LeagueProfile | null>(null);
+  const [hasLeagues, setHasLeagues] = React.useState(false);
 
   React.useEffect(() => {
     if (!isLeaguesConfigured()) {
       return;
     }
+
+    let cancelled = false;
     void getLeagueProfile()
       .then((p) => {
-        setProfile(p);
+        if (!cancelled) {
+          setProfile(p);
+        }
+        return p ? getMyLeagues(getCurrentUtcDateKey()) : [];
+      })
+      .then((leagues) => {
+        if (!cancelled) {
+          setHasLeagues(leagues.length > 0);
+        }
       })
       .catch(() => undefined);
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   const [calendarOpen, setCalendarOpen] = React.useState(false);
@@ -402,6 +419,10 @@ export default function HomeScreen() {
                 homeTone="leagues"
                 leadingIcon="group"
                 text="Vänligor"
+              />
+              <LeagueNotificationPrompt
+                hasLeagues={hasLeagues}
+                surface="home"
               />
               <ButtonLink
                 className={styles.actionItem}
