@@ -1,4 +1,6 @@
+import classNames from "classnames";
 import React from "react";
+import { createPortal } from "react-dom";
 import {
   disableLeaguePushNotifications,
   enableLeaguePushNotifications,
@@ -104,9 +106,8 @@ function getStatusCopy(status: PushNotificationStatus) {
 
   if (status === "needs-install") {
     return {
-      description:
-        "På iPhone behöver du först lägga VilketÅr på hemskärmen. Sedan kan appen skicka notiser som vanliga appnotiser.",
-      title: "Lägg VilketÅr på hemskärmen",
+      description: "Lägg först VilketÅr på hemskärmen. Det tar bara två tryck.",
+      title: "Få liganotiser på iPhone",
     };
   }
 
@@ -128,6 +129,8 @@ export default function LeagueNotificationPrompt({
   const [feedback, setFeedback] = React.useState<string | null>(null);
   const [showGuide, setShowGuide] = React.useState(false);
   const [homeVisible, setHomeVisible] = React.useState(false);
+  const primaryActionRef = React.useRef<HTMLButtonElement | null>(null);
+  const titleId = React.useId();
 
   React.useEffect(() => {
     if (!hasLeagues) {
@@ -147,6 +150,28 @@ export default function LeagueNotificationPrompt({
       }
     }
   }, [hasLeagues, surface]);
+
+  React.useEffect(() => {
+    if (surface !== "home" || !homeVisible) {
+      return;
+    }
+
+    const previousOverflow = document.body.style.overflow;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setHomeVisible(false);
+      }
+    };
+
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", closeOnEscape);
+    primaryActionRef.current?.focus();
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [homeVisible, surface]);
 
   if (
     !hasLeagues ||
@@ -193,48 +218,67 @@ export default function LeagueNotificationPrompt({
     }
   };
 
-  return (
+  const prompt = (
     <aside
-      aria-live="polite"
+      aria-labelledby={titleId}
+      aria-live={surface === "home" ? undefined : "polite"}
+      aria-modal={surface === "home" ? true : undefined}
       className={surface === "home" ? styles.homePrompt : styles.leaguePrompt}
-      role="status"
+      role={surface === "home" ? "dialog" : "status"}
     >
-      <span className={styles.icon}>
-        <NotificationIcon />
-      </span>
-      <div className={styles.copy}>
-        <h2 className={styles.title}>{copy.title}</h2>
-        <p className={styles.description}>{copy.description}</p>
+      <div className={styles.header}>
+        <span className={styles.icon}>
+          <NotificationIcon />
+        </span>
+        <div className={styles.copy}>
+          <h2 className={styles.title} id={titleId}>
+            {copy.title}
+          </h2>
+          <p className={styles.description}>{copy.description}</p>
+        </div>
       </div>
-      {surface === "home" && !isEnabled ? (
-        <button
-          aria-label="Stäng förslaget om liganotiser"
-          className={styles.dismissAction}
-          onClick={() => setHomeVisible(false)}
-          type="button"
-        >
-          Inte nu
-        </button>
-      ) : null}
-      <div className={styles.actions}>
+      <div
+        className={classNames(styles.actions, {
+          [styles.homeActions]: surface === "home",
+        })}
+      >
         {isIosInstallGuide ? (
           <button
-            className={styles.action}
+            className={classNames(styles.action, {
+              [styles.homePrimaryAction]: surface === "home",
+            })}
             onClick={() => setShowGuide((current) => !current)}
+            ref={surface === "home" ? primaryActionRef : undefined}
             type="button"
           >
-            {showGuide ? "Dölj instruktion" : "Visa hur"}
+            {showGuide ? "Dölj" : "Visa hur"}
           </button>
         ) : status === "denied" ? null : (
           <button
-            className={isEnabled ? styles.secondaryAction : styles.action}
+            className={classNames(
+              isEnabled ? styles.secondaryAction : styles.action,
+              {
+                [styles.homePrimaryAction]: surface === "home",
+              },
+            )}
             disabled={busy}
             onClick={() => void action()}
+            ref={surface === "home" ? primaryActionRef : undefined}
             type="button"
           >
             {busy ? "Sparar..." : isEnabled ? "Stäng av" : "Aktivera notiser"}
           </button>
         )}
+        {surface === "home" && !isEnabled ? (
+          <button
+            aria-label="Stäng förslaget om liganotiser"
+            className={styles.dismissAction}
+            onClick={() => setHomeVisible(false)}
+            type="button"
+          >
+            Inte nu
+          </button>
+        ) : null}
       </div>
       {feedback ? <p className={styles.feedback}>{feedback}</p> : null}
       {showGuide && isIosInstallGuide ? (
@@ -257,4 +301,22 @@ export default function LeagueNotificationPrompt({
       ) : null}
     </aside>
   );
+
+  if (surface === "home") {
+    return createPortal(
+      <div
+        className={styles.homeOverlay}
+        onMouseDown={(event) => {
+          if (event.target === event.currentTarget) {
+            setHomeVisible(false);
+          }
+        }}
+      >
+        {prompt}
+      </div>,
+      document.body,
+    );
+  }
+
+  return prompt;
 }

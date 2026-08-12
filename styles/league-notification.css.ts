@@ -1,23 +1,29 @@
-import { style } from "@vanilla-extract/css";
-import { media } from "./foundation";
+import { keyframes, style } from "@vanilla-extract/css";
+import { media, zIndex } from "./foundation";
 import { vars } from "./theme.css";
 
+const overlayIn = keyframes({
+  from: { opacity: 0 },
+  to: { opacity: 1 },
+});
+
+const promptIn = keyframes({
+  from: { opacity: 0, transform: "translateY(0.75rem) scale(0.98)" },
+  to: { opacity: 1, transform: "translateY(0) scale(1)" },
+});
+
 export const prompt = style({
-  alignItems: "flex-start",
-  background: vars.color.surfaceChrome,
-  border: `${vars.size.borderWidth} solid ${vars.color.border}`,
+  background: `linear-gradient(145deg, color-mix(in srgb, ${vars.color.surfaceStrong} 96%, ${vars.color.accentLogo}) 0%, ${vars.color.surfaceChrome} 72%)`,
+  border: `${vars.size.borderWidth} solid ${vars.color.borderStrong}`,
   borderRadius: vars.radius.lg,
   boxShadow: vars.shadow.card,
   display: "grid",
-  gap: vars.space.lg,
-  gridTemplateColumns: "auto minmax(0, 1fr) auto",
+  gap: vars.space.md,
   padding: vars.space.lg,
   textAlign: "left",
   width: "100%",
   "@media": {
     [media.narrow]: {
-      gap: vars.space.md,
-      gridTemplateColumns: "auto minmax(0, 1fr)",
       padding: vars.space.md,
     },
   },
@@ -26,11 +32,48 @@ export const prompt = style({
 export const homePrompt = style([
   prompt,
   {
-    alignSelf: "center",
+    animation: `${promptIn} ${vars.duration.slow} ${vars.easing.emphasized} both`,
+    background: `linear-gradient(145deg, color-mix(in srgb, ${vars.color.surfaceStrong} 96%, ${vars.color.accentLogo}) 0%, ${vars.color.surfaceStrong} 72%)`,
+    boxShadow: vars.shadow.panel,
+    maxHeight: `calc(100dvh - ${vars.space["4xl"]})`,
     maxWidth: vars.size.contentWidthWide,
-    marginTop: vars.space.xs,
+    overflowY: "auto",
+    overscrollBehavior: "contain",
+    position: "relative",
+    zIndex: 1,
+    "@media": {
+      [media.reduceMotion]: {
+        animation: "none",
+      },
+    },
   },
 ]);
+
+export const homeOverlay = style({
+  alignItems: "center",
+  animation: `${overlayIn} ${vars.duration.normal} ${vars.easing.standard} both`,
+  backdropFilter: "blur(0.25rem) saturate(0.8)",
+  background: vars.color.overlay,
+  display: "grid",
+  inset: 0,
+  justifyItems: "center",
+  overflowY: "auto",
+  padding: `calc(${vars.space.lg} + env(safe-area-inset-top, 0px)) ${vars.space.lg} calc(${vars.space.lg} + env(safe-area-inset-bottom, 0px))`,
+  position: "fixed",
+  WebkitBackdropFilter: "blur(0.25rem) saturate(0.8)",
+  zIndex: zIndex.modal,
+  "@media": {
+    [media.narrow]: {
+      paddingInline: vars.space.md,
+    },
+    [media.reduceMotion]: {
+      animation: "none",
+    },
+    "screen and (max-height: 34rem)": {
+      alignItems: "start",
+    },
+  },
+});
 
 export const leaguePrompt = style([
   prompt,
@@ -38,6 +81,13 @@ export const leaguePrompt = style([
     marginBottom: vars.space.xl,
   },
 ]);
+
+export const header = style({
+  alignItems: "center",
+  display: "grid",
+  gap: vars.space.md,
+  gridTemplateColumns: "auto minmax(0, 1fr)",
+});
 
 export const icon = style({
   alignItems: "center",
@@ -47,9 +97,9 @@ export const icon = style({
   color: vars.color.accent,
   display: "flex",
   flexShrink: 0,
-  height: vars.size.controlHeight,
+  height: vars.space["4xl"],
   justifyContent: "center",
-  width: vars.size.controlHeight,
+  width: vars.space["4xl"],
 });
 
 export const copy = style({
@@ -60,15 +110,17 @@ export const copy = style({
 
 export const title = style({
   color: vars.color.text,
-  fontSize: vars.fontSize.md,
+  fontFamily: vars.font.display,
+  fontSize: vars.fontSize.lg,
   fontWeight: vars.fontWeight.bold,
+  letterSpacing: "-0.02em",
   lineHeight: vars.lineHeight.snug,
   margin: 0,
 });
 
 export const description = style({
   color: vars.color.textMuted,
-  fontSize: vars.fontSize.sm,
+  fontSize: vars.fontSize.control,
   lineHeight: vars.lineHeight.body,
   margin: 0,
   maxWidth: vars.size.contentWidth,
@@ -79,13 +131,15 @@ export const actions = style({
   display: "flex",
   flexWrap: "wrap",
   gap: vars.space.sm,
-  gridColumn: "2 / -1",
-  marginTop: vars.space.xxs,
-  "@media": {
-    [media.narrow]: {
-      gridColumn: "1 / -1",
-    },
-  },
+});
+
+export const homeActions = style({
+  display: "grid",
+  gridTemplateColumns: "minmax(0, 1fr) auto",
+});
+
+export const homePrimaryAction = style({
+  width: "100%",
 });
 
 export const action = style({
@@ -93,14 +147,14 @@ export const action = style({
   appearance: "none",
   background: vars.color.accent,
   border: 0,
-  borderRadius: vars.radius.pill,
+  borderRadius: vars.radius.md,
   color: vars.color.accentText,
   cursor: "pointer",
   display: "inline-flex",
-  fontSize: vars.fontSize.sm,
+  fontSize: vars.fontSize.control,
   fontWeight: vars.fontWeight.bold,
   justifyContent: "center",
-  minHeight: vars.size.controlHeight,
+  minHeight: vars.space["5xl"],
   padding: `0 ${vars.space.lg}`,
   selectors: {
     "&:hover": { background: vars.color.accentActive },
@@ -135,9 +189,11 @@ export const dismissAction = style({
   color: vars.color.textMuted,
   cursor: "pointer",
   display: "inline-flex",
-  fontSize: vars.fontSize.sm,
-  minHeight: vars.size.controlHeight,
-  padding: `0 ${vars.space.sm}`,
+  fontSize: vars.fontSize.control,
+  fontWeight: vars.fontWeight.semibold,
+  justifyContent: "center",
+  minHeight: vars.space["5xl"],
+  padding: `0 ${vars.space.md}`,
   selectors: {
     "&:hover": { color: vars.color.text },
     "&:focus-visible": {
@@ -151,14 +207,8 @@ export const dismissAction = style({
 export const feedback = style({
   color: vars.color.textMuted,
   fontSize: vars.fontSize.sm,
-  gridColumn: "2 / -1",
   lineHeight: vars.lineHeight.body,
   margin: 0,
-  "@media": {
-    [media.narrow]: {
-      gridColumn: "1 / -1",
-    },
-  },
 });
 
 export const guide = style({
@@ -167,19 +217,14 @@ export const guide = style({
   borderRadius: vars.radius.md,
   color: vars.color.textMuted,
   display: "grid",
-  fontSize: vars.fontSize.sm,
+  fontSize: vars.fontSize.control,
   gap: vars.space.xs,
-  gridColumn: "2 / -1",
   lineHeight: vars.lineHeight.body,
   padding: vars.space.md,
-  "@media": {
-    [media.narrow]: {
-      gridColumn: "1 / -1",
-    },
-  },
 });
 
 export const guideStep = style({
+  alignItems: "center",
   display: "flex",
   gap: vars.space.sm,
   margin: 0,
