@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import React from "react";
+import { createPortal } from "react-dom";
 import {
   disableLeaguePushNotifications,
   enableLeaguePushNotifications,
@@ -128,6 +129,8 @@ export default function LeagueNotificationPrompt({
   const [feedback, setFeedback] = React.useState<string | null>(null);
   const [showGuide, setShowGuide] = React.useState(false);
   const [homeVisible, setHomeVisible] = React.useState(false);
+  const primaryActionRef = React.useRef<HTMLButtonElement | null>(null);
+  const titleId = React.useId();
 
   React.useEffect(() => {
     if (!hasLeagues) {
@@ -147,6 +150,28 @@ export default function LeagueNotificationPrompt({
       }
     }
   }, [hasLeagues, surface]);
+
+  React.useEffect(() => {
+    if (surface !== "home" || !homeVisible) {
+      return;
+    }
+
+    const previousOverflow = document.body.style.overflow;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setHomeVisible(false);
+      }
+    };
+
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", closeOnEscape);
+    primaryActionRef.current?.focus();
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [homeVisible, surface]);
 
   if (
     !hasLeagues ||
@@ -193,18 +218,22 @@ export default function LeagueNotificationPrompt({
     }
   };
 
-  return (
+  const prompt = (
     <aside
-      aria-live="polite"
+      aria-labelledby={titleId}
+      aria-live={surface === "home" ? undefined : "polite"}
+      aria-modal={surface === "home" ? true : undefined}
       className={surface === "home" ? styles.homePrompt : styles.leaguePrompt}
-      role="status"
+      role={surface === "home" ? "dialog" : "status"}
     >
       <div className={styles.header}>
         <span className={styles.icon}>
           <NotificationIcon />
         </span>
         <div className={styles.copy}>
-          <h2 className={styles.title}>{copy.title}</h2>
+          <h2 className={styles.title} id={titleId}>
+            {copy.title}
+          </h2>
           <p className={styles.description}>{copy.description}</p>
         </div>
       </div>
@@ -219,6 +248,7 @@ export default function LeagueNotificationPrompt({
               [styles.homePrimaryAction]: surface === "home",
             })}
             onClick={() => setShowGuide((current) => !current)}
+            ref={surface === "home" ? primaryActionRef : undefined}
             type="button"
           >
             {showGuide ? "Dölj" : "Visa hur"}
@@ -233,6 +263,7 @@ export default function LeagueNotificationPrompt({
             )}
             disabled={busy}
             onClick={() => void action()}
+            ref={surface === "home" ? primaryActionRef : undefined}
             type="button"
           >
             {busy ? "Sparar..." : isEnabled ? "Stäng av" : "Aktivera notiser"}
@@ -270,4 +301,22 @@ export default function LeagueNotificationPrompt({
       ) : null}
     </aside>
   );
+
+  if (surface === "home") {
+    return createPortal(
+      <div
+        className={styles.homeOverlay}
+        onMouseDown={(event) => {
+          if (event.target === event.currentTarget) {
+            setHomeVisible(false);
+          }
+        }}
+      >
+        {prompt}
+      </div>,
+      document.body,
+    );
+  }
+
+  return prompt;
 }

@@ -1,6 +1,16 @@
-import { style } from "@vanilla-extract/css";
-import { media } from "./foundation";
+import { keyframes, style } from "@vanilla-extract/css";
+import { media, zIndex } from "./foundation";
 import { vars } from "./theme.css";
+
+const overlayIn = keyframes({
+  from: { opacity: 0 },
+  to: { opacity: 1 },
+});
+
+const promptIn = keyframes({
+  from: { opacity: 0, transform: "translateY(0.75rem) scale(0.98)" },
+  to: { opacity: 1, transform: "translateY(0) scale(1)" },
+});
 
 export const prompt = style({
   background: `linear-gradient(145deg, color-mix(in srgb, ${vars.color.surfaceStrong} 96%, ${vars.color.accentLogo}) 0%, ${vars.color.surfaceChrome} 72%)`,
@@ -22,11 +32,48 @@ export const prompt = style({
 export const homePrompt = style([
   prompt,
   {
-    alignSelf: "center",
+    animation: `${promptIn} ${vars.duration.slow} ${vars.easing.emphasized} both`,
+    background: `linear-gradient(145deg, color-mix(in srgb, ${vars.color.surfaceStrong} 96%, ${vars.color.accentLogo}) 0%, ${vars.color.surfaceStrong} 72%)`,
+    boxShadow: vars.shadow.panel,
+    maxHeight: `calc(100dvh - ${vars.space["4xl"]})`,
     maxWidth: vars.size.contentWidthWide,
-    marginTop: vars.space.xs,
+    overflowY: "auto",
+    overscrollBehavior: "contain",
+    position: "relative",
+    zIndex: 1,
+    "@media": {
+      [media.reduceMotion]: {
+        animation: "none",
+      },
+    },
   },
 ]);
+
+export const homeOverlay = style({
+  alignItems: "center",
+  animation: `${overlayIn} ${vars.duration.normal} ${vars.easing.standard} both`,
+  backdropFilter: "blur(0.25rem) saturate(0.8)",
+  background: vars.color.overlay,
+  display: "grid",
+  inset: 0,
+  justifyItems: "center",
+  overflowY: "auto",
+  padding: `calc(${vars.space.lg} + env(safe-area-inset-top, 0px)) ${vars.space.lg} calc(${vars.space.lg} + env(safe-area-inset-bottom, 0px))`,
+  position: "fixed",
+  WebkitBackdropFilter: "blur(0.25rem) saturate(0.8)",
+  zIndex: zIndex.modal,
+  "@media": {
+    [media.narrow]: {
+      paddingInline: vars.space.md,
+    },
+    [media.reduceMotion]: {
+      animation: "none",
+    },
+    "screen and (max-height: 34rem)": {
+      alignItems: "start",
+    },
+  },
+});
 
 export const leaguePrompt = style([
   prompt,
