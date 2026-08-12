@@ -49,18 +49,14 @@ function App({ Component, pageProps }: AppProps) {
               <AnimatePresence initial={false} mode="wait">
                 <motion.div
                   key={pageTransitionKey}
-                  animate={{ filter: "blur(0px)", opacity: 1, scale: 1, y: 0 }}
+                  animate={{ opacity: 1, y: 0 }}
                   className={uiStyles.pageTransitionPane}
                   exit={{
-                    filter: reduceMotion ? "blur(0px)" : "blur(5px)",
                     opacity: 0,
-                    scale: reduceMotion ? 1 : 0.985,
                     y: reduceMotion ? 0 : -10,
                   }}
                   initial={{
-                    filter: reduceMotion ? "blur(0px)" : "blur(5px)",
                     opacity: 0,
-                    scale: reduceMotion ? 1 : 0.985,
                     y: reduceMotion ? 0 : 16,
                   }}
                   transition={{

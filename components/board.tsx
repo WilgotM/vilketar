@@ -715,6 +715,14 @@ export default function Board(props: Props) {
     }
   }, [score, highscore, updateHighscore]);
 
+  React.useLayoutEffect(() => {
+    if (!showDailyCompletedView || boardRef.current === null) {
+      return;
+    }
+
+    boardRef.current.scrollTop = 0;
+  }, [showDailyCompletedView]);
+
   return (
     <MusicAutoplayProvider enabled={musicAutoplayEnabled}>
       <div

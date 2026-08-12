@@ -9,11 +9,6 @@ const shimmer = keyframes({
   "100%": { transform: "translateX(365%)" },
 });
 
-const pageWake = keyframes({
-  from: { opacity: 0, transform: "translateY(1rem) scale(0.985)" },
-  to: { opacity: 1, transform: "translateY(0) scale(1)" },
-});
-
 const appChromeBackground = `radial-gradient(circle at 12% 14%, ${vars.color.heroGlowA} 0%, transparent 28%), radial-gradient(circle at 84% 12%, ${vars.color.heroGlowB} 0%, transparent 24%), radial-gradient(circle at 50% 100%, ${vars.color.heroGlowC} 0%, transparent 30%), linear-gradient(180deg, ${vars.color.backdropStrong} 0%, ${vars.color.backdrop} 48%, ${vars.color.backdropStrong} 100%)`;
 
 export const pageTransitionRoot = style({
@@ -37,14 +32,8 @@ export const pageTransitionRoot = style({
 });
 
 export const pageTransitionPane = style({
-  animation: `${pageWake} ${vars.duration.cinematic} ${vars.easing.ios} both`,
   minHeight: "100%",
   transformOrigin: "50% 2rem",
-  "@media": {
-    [media.reduceMotion]: {
-      animation: "none",
-    },
-  },
 });
 
 export const appPage = style([

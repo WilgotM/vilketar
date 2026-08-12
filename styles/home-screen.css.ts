@@ -72,6 +72,11 @@ export const home = style({
   minHeight: "100%",
   overflow: "hidden",
   position: "relative",
+  "@media": {
+    [media.compact]: {
+      overflow: "visible",
+    },
+  },
 });
 
 export const wrapper = style({
@@ -89,7 +94,7 @@ export const wrapper = style({
   "@media": {
     [media.compact]: {
       justifyContent: "flex-start",
-      padding: `${vars.space["4xl"]} ${vars.space.lg} ${vars.space.xl}`,
+      padding: `0 ${vars.space.lg}`,
     },
     [media.shortCompactLandscape]: {
       justifyContent: "center",
@@ -110,12 +115,19 @@ export const stage = style({
   "@media": {
     [media.compact]: {
       gap: vars.space.xl,
+      justifyContent: "center",
+      minHeight: "100dvh",
+      paddingBottom: `calc(${vars.space["3xl"]} + env(safe-area-inset-bottom, 0px))`,
+      paddingTop: `calc(${vars.space["3xl"]} + env(safe-area-inset-top, 0px))`,
       width: `min(100%, ${vars.size.contentWidth})`,
     },
     [media.shortCompactLandscape]: {
       alignItems: "center",
       flexDirection: "row",
       gap: vars.space["3xl"],
+      minHeight: "auto",
+      paddingBottom: 0,
+      paddingTop: 0,
       width: "min(100%, 46rem)",
     },
     [media.reduceMotion]: {

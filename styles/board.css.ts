@@ -60,6 +60,7 @@ export const wrapper = style({
 
 export const wrapperDailyCompleted = style({
   flexDirection: "column",
+  overflowAnchor: "none",
   overflowX: "hidden",
   overflowY: "auto",
   "@media": {
