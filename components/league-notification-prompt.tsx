@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import React from "react";
 import {
   disableLeaguePushNotifications,
@@ -104,9 +105,8 @@ function getStatusCopy(status: PushNotificationStatus) {
 
   if (status === "needs-install") {
     return {
-      description:
-        "På iPhone behöver du först lägga VilketÅr på hemskärmen. Sedan kan appen skicka notiser som vanliga appnotiser.",
-      title: "Lägg VilketÅr på hemskärmen",
+      description: "Lägg först VilketÅr på hemskärmen. Det tar bara två tryck.",
+      title: "Få liganotiser på iPhone",
     };
   }
 
@@ -199,35 +199,38 @@ export default function LeagueNotificationPrompt({
       className={surface === "home" ? styles.homePrompt : styles.leaguePrompt}
       role="status"
     >
-      <span className={styles.icon}>
-        <NotificationIcon />
-      </span>
-      <div className={styles.copy}>
-        <h2 className={styles.title}>{copy.title}</h2>
-        <p className={styles.description}>{copy.description}</p>
+      <div className={styles.header}>
+        <span className={styles.icon}>
+          <NotificationIcon />
+        </span>
+        <div className={styles.copy}>
+          <h2 className={styles.title}>{copy.title}</h2>
+          <p className={styles.description}>{copy.description}</p>
+        </div>
       </div>
-      {surface === "home" && !isEnabled ? (
-        <button
-          aria-label="Stäng förslaget om liganotiser"
-          className={styles.dismissAction}
-          onClick={() => setHomeVisible(false)}
-          type="button"
-        >
-          Inte nu
-        </button>
-      ) : null}
-      <div className={styles.actions}>
+      <div
+        className={classNames(styles.actions, {
+          [styles.homeActions]: surface === "home",
+        })}
+      >
         {isIosInstallGuide ? (
           <button
-            className={styles.action}
+            className={classNames(styles.action, {
+              [styles.homePrimaryAction]: surface === "home",
+            })}
             onClick={() => setShowGuide((current) => !current)}
             type="button"
           >
-            {showGuide ? "Dölj instruktion" : "Visa hur"}
+            {showGuide ? "Dölj" : "Visa hur"}
           </button>
         ) : status === "denied" ? null : (
           <button
-            className={isEnabled ? styles.secondaryAction : styles.action}
+            className={classNames(
+              isEnabled ? styles.secondaryAction : styles.action,
+              {
+                [styles.homePrimaryAction]: surface === "home",
+              },
+            )}
             disabled={busy}
             onClick={() => void action()}
             type="button"
@@ -235,6 +238,16 @@ export default function LeagueNotificationPrompt({
             {busy ? "Sparar..." : isEnabled ? "Stäng av" : "Aktivera notiser"}
           </button>
         )}
+        {surface === "home" && !isEnabled ? (
+          <button
+            aria-label="Stäng förslaget om liganotiser"
+            className={styles.dismissAction}
+            onClick={() => setHomeVisible(false)}
+            type="button"
+          >
+            Inte nu
+          </button>
+        ) : null}
       </div>
       {feedback ? <p className={styles.feedback}>{feedback}</p> : null}
       {showGuide && isIosInstallGuide ? (
