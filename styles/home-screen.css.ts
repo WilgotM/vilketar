@@ -114,9 +114,10 @@ export const stage = style({
   zIndex: 2,
   "@media": {
     [media.compact]: {
+      flex: "1 0 auto",
       gap: vars.space.xl,
       justifyContent: "center",
-      minHeight: "100dvh",
+      minHeight: "auto",
       paddingBottom: `calc(${vars.space["3xl"]} + env(safe-area-inset-bottom, 0px))`,
       paddingTop: `calc(${vars.space["3xl"]} + env(safe-area-inset-top, 0px))`,
       width: `min(100%, ${vars.size.contentWidth})`,
