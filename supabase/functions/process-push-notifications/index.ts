@@ -55,7 +55,7 @@ const supabase = createClient(supabaseUrl, serviceRoleKey, {
 
 webpush.setVapidDetails(
   Deno.env.get("VAPID_SUBJECT") ?? "mailto:hello@vilketar.se",
-  "BL6RD9d8VSonr6WQ4THmvYJTJs54rLT8hWUGlVG0LaEhMcsFt4YKbgn8YuKIInQqLhXw4Z9axgqsLjha_wPEUoA",
+  "BNU_SZmUNQroEzCp7UNBubA3-q0q9ddJmc6SicbVpBjVbnAlc4pxgk4ubjSxa8NOq1V7O4ZGUYYdAoLKIHa9WWU",
   vapidPrivateKey,
 );
 
@@ -73,6 +73,33 @@ function isAuthorized(request: Request): boolean {
     secretKeys.includes(apiKey ?? "") ||
     secretKeys.includes(authorization?.replace(/^Bearer /, "") ?? "")
   );
+}
+
+function describePushError(error: unknown): {
+  message: string;
+  statusCode: number | null;
+} {
+  if (typeof error !== "object" || error === null) {
+    return { message: String(error), statusCode: null };
+  }
+
+  const statusCode =
+    "statusCode" in error && typeof error.statusCode === "number"
+      ? error.statusCode
+      : null;
+  const errorMessage =
+    error instanceof Error ? error.message : "Kunde inte skicka notisen.";
+  const responseBody =
+    "body" in error && typeof error.body === "string"
+      ? error.body.trim().slice(0, 500)
+      : "";
+  const details = [
+    statusCode === null ? null : `HTTP ${statusCode}`,
+    errorMessage,
+    responseBody || null,
+  ].filter((value): value is string => Boolean(value));
+
+  return { message: details.join(": "), statusCode };
 }
 
 async function claimRow(row: QueueRow): Promise<boolean> {
@@ -160,17 +187,13 @@ async function processRow(row: QueueRow) {
         .update({ last_success_at: new Date().toISOString() })
         .eq("id", subscription.id);
     } catch (caughtError) {
-      const statusCode =
-        typeof caughtError === "object" &&
-        caughtError !== null &&
-        "statusCode" in caughtError &&
-        typeof caughtError.statusCode === "number"
-          ? caughtError.statusCode
-          : null;
-      lastError =
-        caughtError instanceof Error
-          ? caughtError.message
-          : String(caughtError);
+      const pushError = describePushError(caughtError);
+      const statusCode = pushError.statusCode;
+      lastError = pushError.message;
+      console.error("Push delivery failed", {
+        error: lastError,
+        provider: new URL(subscription.endpoint).hostname,
+      });
 
       if (statusCode === 404 || statusCode === 410) {
         await supabase

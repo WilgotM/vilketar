@@ -2,9 +2,11 @@ import { supabase } from "./supabase";
 
 const VAPID_PUBLIC_KEY =
   process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY ??
-  "BL6RD9d8VSonr6WQ4THmvYJTJs54rLT8hWUGlVG0LaEhMcsFt4YKbgn8YuKIInQqLhXw4Z9axgqsLjha_wPEUoA";
+  "BNU_SZmUNQroEzCp7UNBubA3-q0q9ddJmc6SicbVpBjVbnAlc4pxgk4ubjSxa8NOq1V7O4ZGUYYdAoLKIHa9WWU";
 const SERVICE_WORKER_URL = "/service-worker.js";
 const PUSH_SETUP_TIMEOUT_MS = 15_000;
+
+let pushSyncPromise: Promise<void> | null = null;
 
 export type PushNotificationStatus =
   | "default"
@@ -91,6 +93,21 @@ function base64UrlToArrayBuffer(value: string): ArrayBuffer {
     .buffer as ArrayBuffer;
 }
 
+function applicationServerKeyMatches(subscription: PushSubscription): boolean {
+  const currentKey = subscription.options.applicationServerKey;
+  if (!currentKey) {
+    return false;
+  }
+
+  const expected = new Uint8Array(base64UrlToArrayBuffer(VAPID_PUBLIC_KEY));
+  const current = new Uint8Array(currentKey);
+  if (expected.length !== current.length) {
+    return false;
+  }
+
+  return expected.every((value, index) => value === current[index]);
+}
+
 function withTimeout<T>(promise: PromiseLike<T>, message: string): Promise<T> {
   return new Promise((resolve, reject) => {
     const timeoutId = window.setTimeout(() => {
@@ -135,6 +152,93 @@ async function getPushServiceWorkerRegistration(): Promise<ServiceWorkerRegistra
   );
 }
 
+async function savePushSubscription(
+  subscription: PushSubscription,
+): Promise<void> {
+  if (!supabase) {
+    throw new PushNotificationError("Supabase saknas.", "not-configured");
+  }
+
+  const subscriptionJson = subscription.toJSON();
+  const endpoint = subscriptionJson.endpoint;
+  const p256dh = subscriptionJson.keys?.p256dh;
+  const auth = subscriptionJson.keys?.auth;
+  if (!endpoint || !p256dh || !auth) {
+    throw new PushNotificationError("Kunde inte läsa push-prenumerationen.");
+  }
+
+  const response = await withTimeout(
+    supabase.rpc("app_save_push_subscription", {
+      p_auth: auth,
+      p_endpoint: endpoint,
+      p_p256dh: p256dh,
+      p_user_agent: navigator.userAgent,
+    }),
+    "Kunde inte spara notisinställningen. Försök igen om en liten stund.",
+  );
+  if (response.error) {
+    throw response.error;
+  }
+}
+
+async function synchronizePushSubscription(): Promise<void> {
+  if (!supabase) {
+    throw new PushNotificationError("Supabase saknas.", "not-configured");
+  }
+
+  const registration = await getPushServiceWorkerRegistration();
+  let subscription = await withTimeout(
+    registration.pushManager.getSubscription(),
+    "Kunde inte läsa notisinställningen. Försök igen om en liten stund.",
+  );
+  let staleEndpoint: string | null = null;
+
+  if (subscription && !applicationServerKeyMatches(subscription)) {
+    staleEndpoint = subscription.endpoint;
+    await withTimeout(
+      subscription.unsubscribe(),
+      "Kunde inte uppdatera notisinställningen. Försök igen om en liten stund.",
+    );
+    subscription = null;
+  }
+
+  if (!subscription) {
+    subscription = await withTimeout(
+      registration.pushManager.subscribe({
+        applicationServerKey: base64UrlToArrayBuffer(VAPID_PUBLIC_KEY),
+        userVisibleOnly: true,
+      }),
+      "Kunde inte aktivera liganotiserna. Försök igen om en liten stund.",
+    );
+  }
+
+  await savePushSubscription(subscription);
+
+  if (staleEndpoint && staleEndpoint !== subscription.endpoint) {
+    await supabase
+      .rpc("app_remove_push_subscription", { p_endpoint: staleEndpoint })
+      .then(
+        () => undefined,
+        () => undefined,
+      );
+  }
+}
+
+export function syncLeaguePushNotifications(): Promise<void> {
+  if (getPushNotificationStatus() !== "granted") {
+    return Promise.resolve();
+  }
+
+  if (!pushSyncPromise) {
+    pushSyncPromise = synchronizePushSubscription().catch((error: unknown) => {
+      pushSyncPromise = null;
+      throw error;
+    });
+  }
+
+  return pushSyncPromise;
+}
+
 export async function enableLeaguePushNotifications(): Promise<void> {
   const status = getPushNotificationStatus();
   if (status === "needs-install") {
@@ -169,41 +273,7 @@ export async function enableLeaguePushNotifications(): Promise<void> {
     );
   }
 
-  const registration = await getPushServiceWorkerRegistration();
-  let subscription = await withTimeout(
-    registration.pushManager.getSubscription(),
-    "Kunde inte läsa notisinställningen. Försök igen om en liten stund.",
-  );
-  if (!subscription) {
-    subscription = await withTimeout(
-      registration.pushManager.subscribe({
-        applicationServerKey: base64UrlToArrayBuffer(VAPID_PUBLIC_KEY),
-        userVisibleOnly: true,
-      }),
-      "Kunde inte aktivera liganotiserna. Försök igen om en liten stund.",
-    );
-  }
-
-  const subscriptionJson = subscription.toJSON();
-  const endpoint = subscriptionJson.endpoint;
-  const p256dh = subscriptionJson.keys?.p256dh;
-  const auth = subscriptionJson.keys?.auth;
-  if (!endpoint || !p256dh || !auth) {
-    throw new PushNotificationError("Kunde inte läsa push-prenumerationen.");
-  }
-
-  const response = await withTimeout(
-    supabase.rpc("app_save_push_subscription", {
-      p_auth: auth,
-      p_endpoint: endpoint,
-      p_p256dh: p256dh,
-      p_user_agent: navigator.userAgent,
-    }),
-    "Kunde inte spara notisinställningen. Försök igen om en liten stund.",
-  );
-  if (response.error) {
-    throw response.error;
-  }
+  await synchronizePushSubscription();
 }
 
 export async function disableLeaguePushNotifications(): Promise<void> {
@@ -219,6 +289,7 @@ export async function disableLeaguePushNotifications(): Promise<void> {
 
   const endpoint = subscription.endpoint;
   await subscription.unsubscribe().catch(() => false);
+  pushSyncPromise = null;
   const response = await supabase.rpc("app_remove_push_subscription", {
     p_endpoint: endpoint,
   });

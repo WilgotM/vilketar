@@ -6,6 +6,7 @@ import {
   enableLeaguePushNotifications,
   getPushNotificationStatus,
   PushNotificationError,
+  syncLeaguePushNotifications,
   type PushNotificationStatus,
 } from "../lib/push-notifications";
 import * as styles from "../styles/league-notification.css";
@@ -139,6 +140,18 @@ export default function LeagueNotificationPrompt({
 
     const nextStatus = getPushNotificationStatus();
     setStatus(nextStatus);
+
+    if (nextStatus === "granted") {
+      void syncLeaguePushNotifications().catch((error: unknown) => {
+        if (surface === "leagues") {
+          setFeedback(
+            error instanceof Error
+              ? error.message
+              : "Kunde inte uppdatera liganotiserna.",
+          );
+        }
+      });
+    }
 
     if (surface === "home") {
       const shouldShow =
