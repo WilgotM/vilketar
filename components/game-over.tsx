@@ -29,8 +29,6 @@ interface Props {
   selectionRoute?: SelectionRoute;
 }
 
-const defaultShareText = "Dela";
-
 export default function GameOver(props: Props) {
   const {
     dailyDateKey,
@@ -46,6 +44,7 @@ export default function GameOver(props: Props) {
     selectionRoute,
   } = props;
 
+  const defaultShareText = gameMode === "daily" ? "Utmana en vän" : "Dela";
   const [shareText, setShareText] = React.useState(defaultShareText);
   const savedRemoteScoreRef = React.useRef(false);
   const [nextDailyText, setNextDailyText] = React.useState(() =>
@@ -150,6 +149,7 @@ export default function GameOver(props: Props) {
     routePath,
     score,
     selectionRoute,
+    defaultShareText,
   ]);
 
   if (gameMode === "daily" && dailyDateKey) {

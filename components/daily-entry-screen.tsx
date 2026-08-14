@@ -22,7 +22,7 @@ interface Props {
   statusText?: string | null;
 }
 
-const defaultShareText = "Dela";
+const defaultShareText = "Utmana en vän";
 
 function CalendarIllustration() {
   return (

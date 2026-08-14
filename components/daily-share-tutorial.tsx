@@ -247,7 +247,7 @@ export default function DailyShareTutorial(props: Props) {
                   }}
                 >
                   <span className={styles.coachEyebrow}>Din tur</span>
-                  <strong>Tryck på Dela</strong>
+                  <strong>Tryck på {shareText}</strong>
                   <span>Din poäng kopieras direkt.</span>
                   <span aria-hidden="true" className={styles.coachArrow}>
                     ↓

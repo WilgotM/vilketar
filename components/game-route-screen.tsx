@@ -173,10 +173,14 @@ export default function GameRouteScreen(props: Props) {
     [mode, selectionRoute],
   );
   const dateKey = React.useMemo(() => getCurrentUtcDateKey(), []);
+  const challengeUrl =
+    typeof window === "undefined" || router.asPath.includes("?")
+      ? router.asPath
+      : `${window.location.pathname}${window.location.search}${window.location.hash}`;
   const dailyChallengeScore = React.useMemo(
     () =>
-      mode === "daily" ? getDailyChallengeScore(router.asPath, dateKey) : null,
-    [dateKey, mode, router.asPath],
+      mode === "daily" ? getDailyChallengeScore(challengeUrl, dateKey) : null,
+    [challengeUrl, dateKey, mode],
   );
   const dailyScheduleTheme = React.useMemo(
     () => getDailyScheduleTheme(dateKey),
