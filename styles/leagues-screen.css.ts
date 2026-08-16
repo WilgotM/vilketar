@@ -1485,7 +1485,7 @@ export const noticeIcon = style({
 });
 
 export const winner = style({
-  alignItems: "center",
+  alignItems: "start",
   background: vars.color.accentTint,
   borderBottom: `${vars.size.borderWidth} solid ${vars.color.border}`,
   borderTop: `${vars.size.borderWidth} solid ${vars.color.border}`,
@@ -1496,6 +1496,12 @@ export const winner = style({
   "@media": {
     [media.narrow]: { padding: `${vars.space.md} ${vars.space.lg}` },
   },
+});
+
+export const winnerCopy = style({
+  display: "grid",
+  gap: vars.space.xxs,
+  minWidth: 0,
 });
 
 export const winnerLabel = style({
@@ -1517,12 +1523,108 @@ export const winnerScore = style({
   color: vars.color.accentLogo,
   fontSize: vars.fontSize.base,
   fontWeight: vars.fontWeight.bold,
+  paddingTop: vars.space.sm,
+  whiteSpace: "nowrap",
+  "@media": {
+    [media.narrow]: { fontSize: vars.fontSize.sm },
+  },
+});
+
+export const winnerReason = style({
+  color: vars.color.textMuted,
+  fontSize: vars.fontSize.sm,
+  lineHeight: vars.lineHeight.snug,
+  marginTop: vars.space.xs,
+  maxWidth: "42rem",
+  textWrap: "pretty",
 });
 
 export const memberList = style({
   display: "flex",
   flexDirection: "column",
   marginTop: vars.space.lg,
+});
+
+export const standingsHeading = style({
+  alignItems: "end",
+  display: "flex",
+  gap: vars.space.lg,
+  justifyContent: "space-between",
+  padding: `${vars.space.md} ${vars.space["2xl"]} ${vars.space.lg}`,
+  "@media": {
+    [media.narrow]: {
+      padding: `${vars.space.sm} ${vars.space.lg} ${vars.space.md}`,
+    },
+  },
+});
+
+export const standingsTitle = style({
+  color: vars.color.text,
+  fontSize: vars.fontSize.xl,
+  fontWeight: vars.fontWeight.black,
+  letterSpacing: "-0.025em",
+  lineHeight: vars.lineHeight.tight,
+  margin: 0,
+});
+
+export const standingsLead = style({
+  color: vars.color.textMuted,
+  fontSize: vars.fontSize.sm,
+  lineHeight: vars.lineHeight.snug,
+  margin: `${vars.space.xxs} 0 0`,
+});
+
+export const leaderScore = style({
+  alignItems: "baseline",
+  color: vars.color.accentLogo,
+  display: "flex",
+  gap: vars.space.xs,
+  whiteSpace: "nowrap",
+});
+
+export const leaderScoreValue = style({
+  fontFamily: vars.font.display,
+  fontSize: vars.fontSize["2xl"],
+  fontWeight: vars.fontWeight.black,
+  letterSpacing: "-0.04em",
+  lineHeight: 1,
+});
+
+export const leaderScoreUnit = style({
+  fontSize: vars.fontSize.sm,
+  fontWeight: vars.fontWeight.bold,
+});
+
+export const tieBreakCallout = style({
+  alignItems: "center",
+  background: `linear-gradient(90deg, color-mix(in srgb, ${vars.color.accentLogo} 16%, transparent), color-mix(in srgb, ${vars.color.accentLogo} 6%, transparent))`,
+  borderBlock: `${vars.size.borderWidth} solid color-mix(in srgb, ${vars.color.accentLogo} 34%, ${vars.color.border})`,
+  color: vars.color.text,
+  display: "flex",
+  fontSize: vars.fontSize.sm,
+  gap: vars.space.md,
+  lineHeight: vars.lineHeight.snug,
+  padding: `${vars.space.md} ${vars.space["2xl"]}`,
+  textWrap: "pretty",
+  "@media": {
+    [media.narrow]: {
+      alignItems: "flex-start",
+      padding: `${vars.space.md} ${vars.space.lg}`,
+    },
+  },
+});
+
+export const tieBreakIcon = style({
+  alignItems: "center",
+  background: vars.color.accentLogo,
+  borderRadius: vars.radius.pill,
+  color: vars.color.accentText,
+  display: "flex",
+  flex: "0 0 1.75rem",
+  fontSize: vars.fontSize.sm,
+  fontWeight: vars.fontWeight.black,
+  height: "1.75rem",
+  justifyContent: "center",
 });
 
 export const memberListHeader = style({
@@ -1577,6 +1679,11 @@ export const memberRowCurrent = style({
   background: `linear-gradient(90deg, ${vars.color.accentTint}, color-mix(in srgb, ${vars.color.accentLogo} 13%, transparent), ${vars.color.accentTint})`,
 });
 
+export const memberRowLeader = style({
+  background: `linear-gradient(90deg, color-mix(in srgb, ${vars.color.accentLogo} 17%, transparent), color-mix(in srgb, ${vars.color.accentLogo} 7%, transparent) 58%, transparent)`,
+  boxShadow: `inset ${vars.space.xxs} 0 0 ${vars.color.accentLogo}`,
+});
+
 export const memberRank = style({
   alignItems: "center",
   border: `${vars.size.borderWidth} solid transparent`,
@@ -1599,7 +1706,8 @@ export const memberRankFirst = style({
 export const memberInfo = style({
   display: "flex",
   flexDirection: "column",
-  gap: "1px",
+  gap: vars.space.xs,
+  minWidth: 0,
 });
 
 export const memberName = style({
@@ -1642,6 +1750,30 @@ export const youLabel = style({
   fontWeight: vars.fontWeight.semibold,
 });
 
+export const leaderStatus = style({
+  alignItems: "center",
+  color: vars.color.accentLogo,
+  display: "flex",
+  fontSize: vars.fontSize.xs,
+  fontWeight: vars.fontWeight.bold,
+  gap: vars.space.xs,
+  letterSpacing: "0.02em",
+});
+
+export const leaderStatusDot = style({
+  background: vars.color.accentLogo,
+  borderRadius: vars.radius.pill,
+  boxShadow: `0 0 ${vars.space.sm} ${vars.color.accentGlow}`,
+  height: vars.space.xs,
+  width: vars.space.xs,
+});
+
+export const tiedStatus = style({
+  color: vars.color.textMuted,
+  fontSize: vars.fontSize.xs,
+  fontWeight: vars.fontWeight.semibold,
+});
+
 export const youBadge = style({
   background: `linear-gradient(135deg, ${vars.color.text} 0%, color-mix(in srgb, ${vars.color.text} 80%, transparent) 100%)`,
   borderRadius: vars.radius.sm,
@@ -1656,6 +1788,12 @@ export const youBadge = style({
 export const today = style({
   color: vars.color.accentLogo,
   fontSize: vars.fontSize.sm,
+  fontWeight: vars.fontWeight.semibold,
+});
+
+export const bestDay = style({
+  color: vars.color.textMuted,
+  fontSize: vars.fontSize.xs,
   fontWeight: vars.fontWeight.semibold,
 });
 
@@ -1675,6 +1813,38 @@ export const scoreCell = style({
   display: "flex",
   flexDirection: "column",
   gap: vars.space.xxs,
+});
+
+export const rankingRules = style({
+  alignItems: "flex-start",
+  color: vars.color.textMuted,
+  display: "flex",
+  fontSize: vars.fontSize.sm,
+  gap: vars.space.md,
+  lineHeight: vars.lineHeight.body,
+  padding: `${vars.space.lg} ${vars.space["2xl"]} ${vars.space.xl}`,
+  textWrap: "pretty",
+  "@media": {
+    [media.narrow]: {
+      fontSize: vars.fontSize.xs,
+      gap: vars.space.sm,
+      padding: `${vars.space.lg}`,
+    },
+  },
+});
+
+export const rankingRulesIcon = style({
+  alignItems: "center",
+  border: `${vars.size.borderWidth} solid ${vars.color.borderStrong}`,
+  borderRadius: vars.radius.pill,
+  color: vars.color.textMuted,
+  display: "flex",
+  flex: "0 0 1.5rem",
+  fontFamily: "Georgia, serif",
+  fontSize: vars.fontSize.xs,
+  fontWeight: vars.fontWeight.bold,
+  height: "1.5rem",
+  justifyContent: "center",
 });
 
 export const kickButton = style({

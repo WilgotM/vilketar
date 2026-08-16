@@ -9,18 +9,28 @@ let ephemeralDeviceId = "";
 
 export type LeagueMember = {
   avatarDataUrl: string | null;
+  bestDayScore: number;
   daysPlayed: number;
   displayName: string;
   isCurrentUser: boolean;
+  lastCompletedAt: string | null;
   memberId: string;
+  scoreCard: number[];
   todayResultPattern: string | null;
   todayScore: number | null;
   weekScore: number;
 };
 
-export type LeagueWinner = {
+export type LeagueResultSummary = {
+  bestDayScore: number;
   displayName: string;
+  lastCompletedAt: string | null;
+  scoreCard: number[];
   totalScore: number;
+};
+
+export type LeagueWinner = LeagueResultSummary & {
+  runnerUp: LeagueResultSummary | null;
 };
 
 export type League = {

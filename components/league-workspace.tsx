@@ -1,7 +1,12 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 import React from "react";
-import type { League } from "../lib/leagues";
+import {
+  getLeagueTieBreak,
+  rankLeagueEntries,
+  type LeagueRankingEntry,
+} from "../lib/league-ranking";
+import type { League, LeagueResultSummary } from "../lib/leagues";
 import LeagueNotificationPrompt from "./league-notification-prompt";
 import * as styles from "../styles/leagues-screen.css";
 
@@ -165,6 +170,17 @@ function todayLabel(score: number | null): string {
   return score === null ? "Inte spelat idag" : `+${score} idag`;
 }
 
+function resultSummaryAsRankingEntry(
+  result: LeagueResultSummary,
+): LeagueRankingEntry {
+  return {
+    displayName: result.displayName,
+    lastCompletedAt: result.lastCompletedAt,
+    scoreCard: result.scoreCard,
+    weekScore: result.totalScore,
+  };
+}
+
 export default function LeagueWorkspace(props: Props) {
   const {
     busy,
@@ -188,6 +204,24 @@ export default function LeagueWorkspace(props: Props) {
     leagues.find((league) => league.id === selectedLeagueId) ??
     leagues[0] ??
     null;
+  const rankedMembers = selectedLeague
+    ? rankLeagueEntries(selectedLeague.members)
+    : [];
+  const topRankedMember = rankedMembers[0] ?? null;
+  const currentLeader =
+    topRankedMember && topRankedMember.weekScore > 0 ? topRankedMember : null;
+  const currentRunnerUp = currentLeader ? (rankedMembers[1] ?? null) : null;
+  const currentTieBreak = currentLeader
+    ? getLeagueTieBreak(currentLeader, currentRunnerUp)
+    : null;
+  const previousWinner = selectedLeague?.previousWeekWinner ?? null;
+  const previousTieBreak =
+    previousWinner?.runnerUp !== null && previousWinner?.runnerUp !== undefined
+      ? getLeagueTieBreak(
+          resultSummaryAsRankingEntry(previousWinner),
+          resultSummaryAsRankingEntry(previousWinner.runnerUp),
+        )
+      : null;
 
   return (
     <section className={styles.workspace}>
@@ -380,41 +414,82 @@ export default function LeagueWorkspace(props: Props) {
               </div>
             ) : null}
 
-            {selectedLeague.previousWeekWinner ? (
+            {previousWinner ? (
               <div className={styles.winner}>
-                <div>
+                <div className={styles.winnerCopy}>
                   <div className={styles.winnerLabel}>
                     Förra veckans vinnare
                   </div>
                   <div className={styles.winnerName}>
-                    {selectedLeague.previousWeekWinner.displayName}
+                    {previousWinner.displayName}
                   </div>
+                  {previousTieBreak ? (
+                    <div className={styles.winnerReason}>
+                      Lika på {previousWinner.totalScore} poäng.{" "}
+                      {previousWinner.displayName} vann eftersom{" "}
+                      {previousTieBreak.detail}.
+                    </div>
+                  ) : null}
                 </div>
                 <div className={styles.winnerScore}>
-                  {selectedLeague.previousWeekWinner.totalScore} poäng
+                  {previousWinner.totalScore} poäng
                 </div>
               </div>
             ) : null}
 
             <div className={styles.memberList}>
+              <div className={styles.standingsHeading}>
+                <div>
+                  <h3 className={styles.standingsTitle}>Veckans ställning</h3>
+                  <p className={styles.standingsLead}>
+                    {currentLeader
+                      ? `${currentLeader.displayName} leder just nu`
+                      : "Ingen har spelat ännu"}
+                  </p>
+                </div>
+                {currentLeader ? (
+                  <div className={styles.leaderScore}>
+                    <strong className={styles.leaderScoreValue}>
+                      {currentLeader.weekScore}
+                    </strong>
+                    <span className={styles.leaderScoreUnit}>poäng</span>
+                  </div>
+                ) : null}
+              </div>
+              {currentLeader && currentTieBreak ? (
+                <div className={styles.tieBreakCallout}>
+                  <span aria-hidden="true" className={styles.tieBreakIcon}>
+                    1
+                  </span>
+                  <span>
+                    <strong>Lika på {currentLeader.weekScore} poäng.</strong>{" "}
+                    {currentLeader.displayName} leder eftersom{" "}
+                    {currentTieBreak.detail}.
+                  </span>
+                </div>
+              ) : null}
               <div className={styles.memberListHeader}>
                 <div>#</div>
                 <div>Namn</div>
-                <div className={styles.scoreHeading}>Poäng</div>
+                <div className={styles.scoreHeading}>Veckan</div>
               </div>
-              {[...selectedLeague.members]
-                .sort((a, b) => b.weekScore - a.weekScore)
-                .map((member, index) => (
+              {rankedMembers.map((member, index) => {
+                const isLeader = index === 0 && member.weekScore > 0;
+                const isTiedOnPoints =
+                  index > 0 && member.weekScore === currentLeader?.weekScore;
+
+                return (
                   <div
                     className={`${styles.memberRow} ${
                       member.isCurrentUser ? styles.memberRowCurrent : ""
-                    }`}
+                    } ${isLeader ? styles.memberRowLeader : ""}`}
                     key={member.memberId}
                   >
                     <div
                       className={`${styles.memberRank} ${
-                        index === 0 ? styles.memberRankFirst : ""
+                        isLeader ? styles.memberRankFirst : ""
                       }`}
+                      aria-label={isLeader ? "Första plats, leder" : undefined}
                     >
                       {index + 1}
                     </div>
@@ -442,6 +517,19 @@ export default function LeagueWorkspace(props: Props) {
                           <span className={styles.youLabel}>Du</span>
                         ) : null}
                       </div>
+                      {isLeader ? (
+                        <div className={styles.leaderStatus}>
+                          <span
+                            aria-hidden="true"
+                            className={styles.leaderStatusDot}
+                          />
+                          Leder ligan
+                        </div>
+                      ) : isTiedOnPoints ? (
+                        <div className={styles.tiedStatus}>
+                          Samma veckopoäng
+                        </div>
+                      ) : null}
                     </div>
                     <div className={styles.scoreCell}>
                       <div className={styles.score}>
@@ -450,6 +538,9 @@ export default function LeagueWorkspace(props: Props) {
                       </div>
                       <div className={styles.today}>
                         {todayLabel(member.todayScore)}
+                      </div>
+                      <div className={styles.bestDay}>
+                        Bästa dag {member.bestDayScore ?? 0} p
                       </div>
                       {selectedLeague.canManage && !member.isCurrentUser ? (
                         <button
@@ -465,7 +556,20 @@ export default function LeagueWorkspace(props: Props) {
                       ) : null}
                     </div>
                   </div>
-                ))}
+                );
+              })}
+              <div className={styles.rankingRules}>
+                <span aria-hidden="true" className={styles.rankingRulesIcon}>
+                  i
+                </span>
+                <span>
+                  <strong>Så utses vinnaren:</strong> Flest veckopoäng vinner.
+                  Vid lika poäng jämförs bästa dagsresultatet, sedan nästa
+                  bästa. Om hela resultatraden är lika vinner den som avslutade
+                  sitt sista spel först. Är även sluttiden identisk avgör
+                  namnordning.
+                </span>
+              </div>
             </div>
           </motion.article>
         ) : (
