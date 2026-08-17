@@ -172,6 +172,8 @@ export default function HomeScreen() {
   const calendarDragYRef = React.useRef(0);
   const calendarDidDragRef = React.useRef(false);
   const closeTimerRef = React.useRef<number | null>(null);
+  const calendarTriggerRef = React.useRef<HTMLButtonElement | null>(null);
+  const calendarCloseRef = React.useRef<HTMLButtonElement | null>(null);
 
   const closeCalendar = React.useCallback(() => {
     if (closeTimerRef.current !== null) {
@@ -265,14 +267,21 @@ export default function HomeScreen() {
       return;
     }
 
+    const trigger = calendarTriggerRef.current;
+    calendarCloseRef.current?.focus();
+
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
+        event.preventDefault();
         closeCalendar();
       }
     };
 
     window.addEventListener("keydown", closeOnEscape);
-    return () => window.removeEventListener("keydown", closeOnEscape);
+    return () => {
+      window.removeEventListener("keydown", closeOnEscape);
+      trigger?.focus();
+    };
   }, [calendarOpen, closeCalendar]);
 
   const startCalendarDrag = React.useCallback(
@@ -407,6 +416,7 @@ export default function HomeScreen() {
                   aria-expanded={calendarOpen}
                   className={styles.calendarButton}
                   onClick={showCalendar}
+                  ref={calendarTriggerRef}
                   type="button"
                 >
                   <CalendarIcon />
@@ -487,6 +497,7 @@ export default function HomeScreen() {
                     closeCalendar();
                   }
                 }}
+                ref={calendarCloseRef}
                 type="button"
               />
               <DailyWeekSchedule compact />

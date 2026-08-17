@@ -59,10 +59,14 @@ export function getDailyChallengeScore(
   asPath: string,
   currentDateKey: string,
 ): number | null {
-  const query = asPath.split("?")[1]?.split("#")[0];
-  if (!query) return null;
+  let params: URLSearchParams;
 
-  const params = new URLSearchParams(query);
+  try {
+    params = new URL(asPath, PRODUCTION_ORIGIN).searchParams;
+  } catch {
+    return null;
+  }
+
   if (params.get(DAILY_CHALLENGE_DATE_PARAM) !== currentDateKey) return null;
 
   const rawScore = params.get(DAILY_CHALLENGE_SCORE_PARAM);

@@ -53,6 +53,13 @@ test("daily challenge links carry a score that is only valid that day", () => {
 
   assert.equal(path, "/daily?utmana=14&dag=2026-03-23");
   assert.equal(getDailyChallengeScore(path, "2026-03-23"), 14);
+  assert.equal(
+    getDailyChallengeScore(
+      "https://xn--vilketr-jxa.se/daily?utmana=14&dag=2026-03-23",
+      "2026-03-23",
+    ),
+    14,
+  );
   assert.equal(getDailyChallengeScore(path, "2026-03-24"), null);
   assert.equal(
     getDailyChallengeScore(

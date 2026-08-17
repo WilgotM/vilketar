@@ -23,15 +23,40 @@ export default function QuitGameModal(props: Props) {
     open,
     title = "Lämna matchen?",
   } = props;
+  const dialogRef = React.useRef<HTMLDivElement | null>(null);
 
   React.useEffect(() => {
     if (!open) {
       return;
     }
 
+    const previouslyFocused = document.activeElement as HTMLElement | null;
+    const dialog = dialogRef.current;
+    const buttons = Array.from(
+      dialog?.querySelectorAll<HTMLButtonElement>("button:not(:disabled)") ??
+        [],
+    );
+    buttons[0]?.focus();
+
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
+        event.preventDefault();
         onCancel();
+        return;
+      }
+
+      if (event.key !== "Tab" || buttons.length === 0) {
+        return;
+      }
+
+      const firstButton = buttons[0];
+      const lastButton = buttons[buttons.length - 1];
+      if (
+        (event.shiftKey && document.activeElement === firstButton) ||
+        (!event.shiftKey && document.activeElement === lastButton)
+      ) {
+        event.preventDefault();
+        (event.shiftKey ? lastButton : firstButton)?.focus();
       }
     };
 
@@ -39,6 +64,9 @@ export default function QuitGameModal(props: Props) {
 
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
+      if (previouslyFocused && document.contains(previouslyFocused)) {
+        previouslyFocused.focus();
+      }
     };
   }, [onCancel, open]);
 
@@ -53,6 +81,7 @@ export default function QuitGameModal(props: Props) {
           exit={{ opacity: 0 }}
           initial={{ opacity: 0 }}
           onClick={onCancel}
+          ref={dialogRef}
           role="dialog"
           transition={{ duration: 0.18, ease: "easeOut" }}
         >
