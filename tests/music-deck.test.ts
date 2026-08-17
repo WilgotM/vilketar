@@ -1,11 +1,14 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
+import { LEGACY_SONG_CARD_TITLES } from "../content/music/legacy-song-card-migrations";
 import musicCards from "../public/decks/all-entertainment-music.json";
+import classicsCards from "../public/decks/all-swedish-classics-all.json";
 import deckIndex from "../public/decks/index.json";
 import { Card } from "../types/cards";
 import { DeckNode } from "../types/decks";
 
 const cards = musicCards as Card[];
+const classics = classicsCards as Card[];
 const index = deckIndex as DeckNode;
 
 function findNode(node: DeckNode, id: string): DeckNode | null {
@@ -57,4 +60,36 @@ test("music deck counts make music available in every game mode", () => {
   assert.equal(musicNode.difficultyCounts.easy, cards.length);
   assert.equal(musicNode.difficultyCounts.normal, cards.length);
   assert.equal(musicNode.difficultyCounts.hard, cards.length);
+});
+
+test("legacy song cards are removed from the Swedish classics deck", () => {
+  assert.ok(classics.every((card) => !LEGACY_SONG_CARD_TITLES.has(card.title)));
+});
+
+test("migrated legacy songs are playable music cards", () => {
+  const migratedSongs = [
+    ["Waterloo", "ABBA"],
+    ["Euphoria", "Loreen"],
+    ["Dancing On My Own", "Robyn"],
+    ["Tattoo", "Loreen"],
+    ["Öppna landskap", "Ulf Lundell"],
+    ["Lovefool", "The Cardigans"],
+    ["Heroes", "Måns Zelmerlöw"],
+    ["Staten & kapitalet", "Ebba Grön"],
+    ["Take Me to Your Heaven", "Charlotte Perrelli"],
+    ["Dom andra", "kent"],
+    ["Sakta vi gå genom stan", "Monica Zetterlund"],
+    ["Sånt är livet", "Anita Lindblom"],
+    ["Himlen runt hörnet", "Lisa Nilsson"],
+    ["Den vilda", "One More Time"],
+  ];
+
+  for (const [title, artist] of migratedSongs) {
+    const card = cards.find(
+      (candidate) => candidate.title === title && candidate.subtitle === artist,
+    );
+    assert.ok(card, `${title} by ${artist} should be in the music deck`);
+    assert.ok(card.music?.previewUrl);
+    assert.ok(card.music?.artworkUrl);
+  }
 });

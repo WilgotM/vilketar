@@ -1830,16 +1830,6 @@
     "year": 1907
   },
   {
-    "fact": "ABBA vinner Eurovision Song Contest med Waterloo.",
-    "image": "",
-    "pageViews": 420000,
-    "qid": "Q32503",
-    "subtitle": "Svensk Eurovision-klassiker",
-    "title": "”Waterloo” vinner Eurovision",
-    "wikipediaSlug": "Waterloo_(s%C3%A5ng)",
-    "year": 1974
-  },
-  {
     "fact": "USA tar bort den avsiktliga störningen som begränsat civil GPS-noggrannhet.",
     "image": "ConstellationGPS.gif",
     "pageViews": 420000,
@@ -1988,16 +1978,6 @@
     "title": "Wallenberg räddar judar i Budapest",
     "wikipediaSlug": "Raoul_Wallenberg",
     "year": 1944
-  },
-  {
-    "fact": "Dancing Queen släpps och blir en av ABBAs största låtar.",
-    "image": "",
-    "pageViews": 360000,
-    "qid": "Q870786",
-    "subtitle": "Låt av ABBA",
-    "title": "”Dancing Queen” släpps",
-    "wikipediaSlug": "Dancing_Queen",
-    "year": 1976
   },
   {
     "fact": "Gustav Vasa tar kontroll över Stockholm efter befrielsekriget.",
@@ -2520,26 +2500,6 @@
     "year": 2005
   },
   {
-    "fact": "Levels blir Aviciis internationella genombrott.",
-    "image": "",
-    "pageViews": 300000,
-    "qid": "Q2315784",
-    "subtitle": "Låt av Avicii",
-    "title": "”Levels” släpps",
-    "wikipediaSlug": "Levels",
-    "year": 2011
-  },
-  {
-    "fact": "Euphoria vinner Eurovision Song Contest för Sverige.",
-    "image": "Pht-Vugar_Ibadov_eurovision_(18).jpg",
-    "pageViews": 300000,
-    "qid": "Q192174",
-    "subtitle": "Låt framförd av Loreen",
-    "title": "”Euphoria” vinner Eurovision",
-    "wikipediaSlug": "Euphoria_(s%C3%A5ng)",
-    "year": 2012
-  },
-  {
     "fact": "Alicia Vikander får internationellt genombrott.",
     "image": "Alicia_Vikander-7756.jpg",
     "pageViews": 300000,
@@ -2558,16 +2518,6 @@
     "title": "Swish lanseras",
     "wikipediaSlug": "Swish",
     "year": 2012
-  },
-  {
-    "fact": "Wake Me Up blir en av Aviciis största låtar.",
-    "image": "",
-    "pageViews": 300000,
-    "qid": "manual-Wake_Me_Up_(Avicii-l%C3%A5t)",
-    "subtitle": "Låt av Avicii",
-    "title": "”Wake Me Up” släpps",
-    "wikipediaSlug": "Wake_Me_Up_(Avicii-l%C3%A5t)",
-    "year": 2013
   },
   {
     "fact": "Metoo får stort genomslag även i Sverige.",
@@ -3890,16 +3840,6 @@
     "year": 2009
   },
   {
-    "fact": "Dancing On My Own blir en modern svensk popklassiker.",
-    "image": "",
-    "pageViews": 260000,
-    "qid": "Q3488185",
-    "subtitle": "Låt av Robyn",
-    "title": "”Dancing On My Own” släpps",
-    "wikipediaSlug": "Dancing_on_My_Own",
-    "year": 2010
-  },
-  {
     "fact": "Charlotte Kalla vinner OS-guld.",
     "image": "20190228_FIS_NWSC_Seefeld_Medal_Ceremony_Team_Sweden_850_5868_Charlotte_Kalla.jpg",
     "pageViews": 260000,
@@ -4020,16 +3960,6 @@
     "year": 2022
   },
   {
-    "fact": "Tattoo vinner Eurovision Song Contest för Sverige.",
-    "image": "Loreen_-_Melodifestivalen_2023,_Malmö_563.jpg",
-    "pageViews": 260000,
-    "qid": "Q116908303",
-    "subtitle": "Låt framförd av Loreen",
-    "title": "”Tattoo” vinner Eurovision",
-    "wikipediaSlug": "Tattoo_(l%C3%A5t)",
-    "year": 2023
-  },
-  {
     "fact": "Svenska Dagbladet grundas.",
     "image": "Svenska_Dagbladet_wordmark.svg",
     "pageViews": 240000,
@@ -4098,16 +4028,6 @@
     "title": "Jonas Gardell slår igenom",
     "wikipediaSlug": "Jonas_Gardell",
     "year": 1985
-  },
-  {
-    "fact": "The Final Countdown blir en av Sveriges mest kända rocklåtar.",
-    "image": "",
-    "pageViews": 240000,
-    "qid": "Q1165771",
-    "subtitle": "Låt av Europe",
-    "title": "”The Final Countdown” släpps",
-    "wikipediaSlug": "The_Final_Countdown_(s%C3%A5ng)",
-    "year": 1986
   },
   {
     "fact": "Ingvar Carlsson blir Sveriges statsminister efter mordet på Olof Palme.",
@@ -5700,16 +5620,6 @@
     "year": 1980
   },
   {
-    "fact": "Sommartider blir en svensk sommarklassiker.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q7560439",
-    "subtitle": "Låt av Gyllene Tider",
-    "title": "”Sommartider” släpps",
-    "wikipediaSlug": "Sommartider",
-    "year": 1982
-  },
-  {
     "fact": "Galenskaparna och After Shave bildas i Göteborg.",
     "image": "GAs.png",
     "pageViews": 220000,
@@ -5717,16 +5627,6 @@
     "subtitle": "Svensk humorgrupp",
     "title": "Galenskaparna och After Shave bildas",
     "wikipediaSlug": "Galenskaparna_och_After_Shave",
-    "year": 1982
-  },
-  {
-    "fact": "Öppna landskap blir en av Ulf Lundells mest kända låtar.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q297660",
-    "subtitle": "Låt av Ulf Lundell",
-    "title": "”Öppna landskap” släpps",
-    "wikipediaSlug": "%C3%96ppna_landskap",
     "year": 1982
   },
   {
@@ -5748,16 +5648,6 @@
     "title": "Torgny Lindgren slår igenom",
     "wikipediaSlug": "Torgny_Lindgren",
     "year": 1982
-  },
-  {
-    "fact": "Främling blir ett av Melodifestivalens största genombrott.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q373108",
-    "subtitle": "Låt framförd av Carola",
-    "title": "”Främling” slår igenom",
-    "wikipediaSlug": "Fr%C3%A4mling_(s%C3%A5ng)",
-    "year": 1983
   },
   {
     "fact": "Svenska flaggans dag blir Sveriges nationaldag.",
@@ -5928,16 +5818,6 @@
     "title": "Suzanne Reuter slår igenom",
     "wikipediaSlug": "Suzanne_Reuter",
     "year": 1990
-  },
-  {
-    "fact": "Fångad av en stormvind vinner Eurovision Song Contest.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q1004668",
-    "subtitle": "Låt framförd av Carola",
-    "title": "”Fångad av en stormvind” vinner Eurovision",
-    "wikipediaSlug": "F%C3%A5ngad_av_en_stormvind",
-    "year": 1991
   },
   {
     "fact": "Army of Lovers får sitt internationella genombrott.",
@@ -6118,16 +5998,6 @@
     "title": "Henrik Schyffert slår igenom",
     "wikipediaSlug": "Henrik_Schyffert",
     "year": 1995
-  },
-  {
-    "fact": "Lovefool blir The Cardigans stora internationella hit.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q2547704",
-    "subtitle": "Låt av The Cardigans",
-    "title": "”Lovefool” släpps",
-    "wikipediaSlug": "Lovefool",
-    "year": 1996
   },
   {
     "fact": "Ludmila Engquist tar OS-guld på 100 meter häck.",
@@ -6460,16 +6330,6 @@
     "year": 2006
   },
   {
-    "fact": "Boten Anna blir en svensk internet- och pophit.",
-    "image": "",
-    "pageViews": 220000,
-    "qid": "Q61044229",
-    "subtitle": "Låt av Basshunter",
-    "title": "”Boten Anna” släpps",
-    "wikipediaSlug": "Boten_Anna",
-    "year": 2006
-  },
-  {
     "fact": "Mona Sahlin blir Socialdemokraternas partiledare.",
     "image": "Mona_Sahlin_in_2015-4.jpg",
     "pageViews": 220000,
@@ -6518,16 +6378,6 @@
     "title": "Samkönade äktenskap införs",
     "wikipediaSlug": "Samk%C3%B6nade_%C3%A4ktenskap_i_Sverige",
     "year": 2009
-  },
-  {
-    "fact": "Jag kommer blir en av Veronica Maggios mest kända låtar.",
-    "image": "Veronica_Maggio_-_Homecoming_Festival-4_(cropped).jpg",
-    "pageViews": 220000,
-    "qid": "Q260597",
-    "subtitle": "Låt av Veronica Maggio",
-    "title": "”Jag kommer” släpps",
-    "wikipediaSlug": "Veronica_Maggio",
-    "year": 2011
   },
   {
     "fact": "Annie Lööf blir Centerpartiets partiledare.",
@@ -6598,16 +6448,6 @@
     "title": "Sanna Nielsen vinner Melodifestivalen",
     "wikipediaSlug": "Sanna_Nielsen",
     "year": 2014
-  },
-  {
-    "fact": "Heroes vinner Eurovision Song Contest för Sverige.",
-    "image": "20150516_ESC_2015_Måns_Zelmerlöw_9958.jpg",
-    "pageViews": 220000,
-    "qid": "Q19507869",
-    "subtitle": "Låt framförd av Måns Zelmerlöw",
-    "title": "”Heroes” vinner Eurovision",
-    "wikipediaSlug": "Heroes_(M%C3%A5ns_Zelmerl%C3%B6w)",
-    "year": 2015
   },
   {
     "fact": "Svensk polis omorganiseras till en nationell myndighet.",
@@ -7050,26 +6890,6 @@
     "year": 1975
   },
   {
-    "fact": "Ebba Grön gör Staten och kapitalet till en svensk punkklassiker.",
-    "image": "",
-    "pageViews": 200000,
-    "qid": "Q10468601",
-    "subtitle": "Låt av Ebba Grön",
-    "title": "”Staten och kapitalet” släpps",
-    "wikipediaSlug": "Den_ena_handen_vet_vad_den_andra_g%C3%B6r",
-    "year": 1980
-  },
-  {
-    "fact": "Diggi-loo diggi-ley vinner Eurovision Song Contest.",
-    "image": "",
-    "pageViews": 200000,
-    "qid": "Q718759",
-    "subtitle": "Låt av Herreys",
-    "title": "”Diggi-loo diggi-ley” vinner Eurovision",
-    "wikipediaSlug": "Diggi_loo_diggi_ley",
-    "year": 1984
-  },
-  {
     "fact": "Niklas Strömstedt får sitt breda genombrott som artist.",
     "image": "Niklas_Strömstedt.jpg",
     "pageViews": 200000,
@@ -7190,16 +7010,6 @@
     "year": 1998
   },
   {
-    "fact": "Take Me to Your Heaven vinner Eurovision Song Contest.",
-    "image": "",
-    "pageViews": 200000,
-    "qid": "Q62974722",
-    "subtitle": "Låt framförd av Charlotte Perrelli",
-    "title": "”Take Me to Your Heaven” vinner Eurovision",
-    "wikipediaSlug": "Tusen_och_en_natt_(s%C3%A5ng)",
-    "year": 1999
-  },
-  {
     "fact": "Timbuktu får sitt breda genombrott i svensk hiphop.",
     "image": "Timbuktu_på_Grammisgalan_2013.jpg",
     "pageViews": 200000,
@@ -7208,16 +7018,6 @@
     "title": "Timbuktu slår igenom",
     "wikipediaSlug": "Timbuktu_(artist)",
     "year": 2000
-  },
-  {
-    "fact": "Dom andra blir en av Kents stora 2000-talshits.",
-    "image": "Kent_live_in_May_2005.jpg",
-    "pageViews": 200000,
-    "qid": "Q648786",
-    "subtitle": "Låt av Kent",
-    "title": "”Dom andra” släpps",
-    "wikipediaSlug": "Kent_(musikgrupp)",
-    "year": 2002
   },
   {
     "fact": "Johan Glans får ett brett genombrott i svensk tv-humor.",
@@ -7870,16 +7670,6 @@
     "year": 1960
   },
   {
-    "fact": "Sakta vi gå genom stan blir en svensk jazzklassiker.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q4563559",
-    "subtitle": "Låt med Monica Zetterlund",
-    "title": "”Sakta vi gå genom stan” släpps",
-    "wikipediaSlug": "Walkin'_My_Baby_Back_Home",
-    "year": 1961
-  },
-  {
     "fact": "Anita Lindblom slår igenom med Sånt är livet.",
     "image": "Thore_Skogman_and_Anita_Lindblom_1963.jpg",
     "pageViews": 180000,
@@ -7887,16 +7677,6 @@
     "subtitle": "Svensk sångerska",
     "title": "Anita Lindblom slår igenom",
     "wikipediaSlug": "Anita_Lindblom",
-    "year": 1961
-  },
-  {
-    "fact": "Sånt är livet blir en svensk schlagerklassiker.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 180000,
-    "qid": "Q10688442",
-    "subtitle": "Låt med Anita Lindblom",
-    "title": "”Sånt är livet” släpps",
-    "wikipediaSlug": "S%C3%A5nt_%C3%A4r_livet",
     "year": 1961
   },
   {
@@ -8390,16 +8170,6 @@
     "year": 1987
   },
   {
-    "fact": "Stad i ljus vinner Melodifestivalen.",
-    "image": "Disambig_grey.svg",
-    "pageViews": 180000,
-    "qid": "Q10677107",
-    "subtitle": "Låt framförd av Tommy Körberg",
-    "title": "”Stad i ljus” vinner Melodifestivalen",
-    "wikipediaSlug": "Stad_i_ljus",
-    "year": 1988
-  },
-  {
     "fact": "Spanarna börjar sändas i Sveriges Radio.",
     "image": "Ingvar_Storm.JPG",
     "pageViews": 180000,
@@ -8537,16 +8307,6 @@
     "subtitle": "Svensk artist",
     "title": "Lisa Nilsson slår igenom",
     "wikipediaSlug": "Lisa_Nilsson",
-    "year": 1992
-  },
-  {
-    "fact": "Himlen runt hörnet blir en svensk popklassiker.",
-    "image": "",
-    "pageViews": 180000,
-    "qid": "Q10524153",
-    "subtitle": "Låt av Lisa Nilsson",
-    "title": "”Himlen runt hörnet” släpps",
-    "wikipediaSlug": "Himlen_runt_h%C3%B6rnet",
     "year": 1992
   },
   {
@@ -8728,16 +8488,6 @@
     "title": "Universeum öppnar",
     "wikipediaSlug": "Universeum",
     "year": 2001
-  },
-  {
-    "fact": "Aserejé blir en stor sommarhit även i Sverige.",
-    "image": "Las_Ketchup_in_2016.jpg",
-    "pageViews": 180000,
-    "qid": "Q161245",
-    "subtitle": "Sommarhit i Sverige",
-    "title": "”Aserejé” blir sommarplåga",
-    "wikipediaSlug": "Las_Ketchup",
-    "year": 2002
   },
   {
     "fact": "Bodies Without Organs bildas.",
@@ -9227,16 +8977,6 @@
     "subtitle": "Svensk artist",
     "title": "Nanne Grönvall slår igenom",
     "wikipediaSlug": "Nanne_Gr%C3%B6nvall",
-    "year": 1996
-  },
-  {
-    "fact": "Den vilda vinner Melodifestivalen.",
-    "image": "",
-    "pageViews": 160000,
-    "qid": "Q3295887",
-    "subtitle": "Låt av One More Time",
-    "title": "”Den vilda” vinner Melodifestivalen",
-    "wikipediaSlug": "Den_vilda",
     "year": 1996
   },
   {

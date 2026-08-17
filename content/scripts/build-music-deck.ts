@@ -6,6 +6,7 @@ import {
   applyCardImageOverride,
   readCardImageOverrides,
 } from "../card-image-overrides";
+import { LEGACY_SONG_CARD_TITLES } from "../music/legacy-song-card-migrations";
 
 type MusicCandidate = {
   appleArtworkUrl?: string | null;
@@ -21,6 +22,7 @@ type MusicCandidate = {
 };
 
 const MUSIC_DECK_ID = "all-entertainment-music";
+const CLASSICS_DECK_ID = "all-swedish-classics-all";
 const CANDIDATES_FILE = path.join(
   process.cwd(),
   "content/music/vilketar-music-candidates.json",
@@ -28,6 +30,10 @@ const CANDIDATES_FILE = path.join(
 const MUSIC_DECK_FILE = path.join(
   process.cwd(),
   `public/decks/${MUSIC_DECK_ID}.json`,
+);
+const CLASSICS_DECK_FILE = path.join(
+  process.cwd(),
+  `public/decks/${CLASSICS_DECK_ID}.json`,
 );
 const INDEX_FILE = path.join(process.cwd(), "public/decks/index.json");
 const VERSION_SUFFIX =
@@ -141,14 +147,31 @@ async function main() {
 
   await writeFile(MUSIC_DECK_FILE, `${JSON.stringify(cards, null, 2)}\n`);
 
+  const classics = JSON.parse(
+    await readFile(CLASSICS_DECK_FILE, "utf8"),
+  ) as Card[];
+  const remainingClassics = classics.filter(
+    (card) => !LEGACY_SONG_CARD_TITLES.has(card.title),
+  );
+  await writeFile(
+    CLASSICS_DECK_FILE,
+    `${JSON.stringify(remainingClassics, null, 2)}\n`,
+  );
+
   const index = JSON.parse(await readFile(INDEX_FILE, "utf8")) as DeckNode;
   const musicNode = findNode(index, MUSIC_DECK_ID);
   if (!musicNode) throw new Error(`Missing ${MUSIC_DECK_ID} in deck index`);
   musicNode.difficultyCounts = countDifficulty(cards);
+  const classicsNode = findNode(index, CLASSICS_DECK_ID);
+  if (!classicsNode)
+    throw new Error(`Missing ${CLASSICS_DECK_ID} in deck index`);
+  classicsNode.difficultyCounts = countDifficulty(remainingClassics);
   hydrateCounts(index);
   await writeFile(INDEX_FILE, `${JSON.stringify(index, null, 2)}\n`);
 
-  console.log(`Built ${cards.length} music cards.`);
+  console.log(
+    `Built ${cards.length} music cards and removed ${classics.length - remainingClassics.length} legacy song cards from ${CLASSICS_DECK_ID}.`,
+  );
 }
 
 await main();
