@@ -421,6 +421,7 @@ export const heroDecorations = style({
   inset: 0,
   margin: "0 auto",
   maxWidth: "1440px",
+  overflow: "hidden",
   pointerEvents: "none",
   position: "absolute",
   zIndex: 1,
