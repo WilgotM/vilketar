@@ -5,6 +5,7 @@ import {
   applyCardImageOverride,
   readCardImageOverrides,
 } from "../card-image-overrides";
+import { LEGACY_SONG_CARD_TITLES } from "../music/legacy-song-card-migrations";
 
 const PUBLIC_DECKS_DIR = path.join(process.cwd(), "public/decks");
 const INDEX_FILE = path.join(PUBLIC_DECKS_DIR, "index.json");
@@ -12072,7 +12073,9 @@ const CLASSIC_CARDS = [
   ...EXTRA_CLASSIC_CARDS,
   ...ADDITIONAL_NON_MUSIC_CARDS,
   ...ADDITIONAL_NON_MUSIC_CARDS_2,
-].filter((card) => !isFilmOrTvCard(card));
+].filter(
+  (card) => !isFilmOrTvCard(card) && !LEGACY_SONG_CARD_TITLES.has(card.title),
+);
 void CLASSIC_CARDS;
 void VIDEO_GAME_CARDS;
 
